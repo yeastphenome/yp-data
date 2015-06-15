@@ -21,6 +21,8 @@ addpath(genpath('Utils/Matlab/'))
 %% Cooper~Fields, 2010
 % DATA = cooper_fields_2010
 
+cooper_fields_2010.pmid = 20610602;
+
 [data.txt, data.num, data.raw] = ...
     xlsread('/Users/Anastasia/Laboratory/Datasets/Phenotypes/2010_Cooper~Fields/SupplementalTable4.xlsx');
 
@@ -32,7 +34,6 @@ data.raw(inds) = {NaN};
 
 cooper_fields_2010.data = cell2mat(data.raw(2:end,3:end));
 cooper_fields_2010.desc = {'Supplemental Table 4. Log2 transformed ratios representing fold change compared to average for each identified amino acid in each of nearly 4500 samples.'};
-cooper_fields_2010.pmid = 20610602;
 
 
 % Identical ORFs with multiple values -> average
