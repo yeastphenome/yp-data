@@ -5367,7 +5367,7 @@ treatments = {'YPL'};
 
 % Load data
 [data.txt, data.num, data.raw] = ...
-    xlsread('/Users/Anastasia/Laboratory/Datasets/Phenotypes/2009_Kanki~Klionski/TableS2-2.xlsx','Sheet1');
+    xlsread('/Users/Anastasia/Laboratory/Datasets/Phenotypes/2009_Kanki~Klionsky/TableS2-2.xlsx','Sheet1');
 hits_orfs = data.raw(4:end,1);
 hits_scores = data.raw(4:end,2);
 
