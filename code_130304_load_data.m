@@ -1320,6 +1320,7 @@ insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
 
 ohya_morishita_2005.source = {'http://scmd.gi.k.u-tokyo.ac.jp/datamine/pnas/mutant_analysis_2011_10_20.tab'};
 ohya_morishita_2005.downloaddate = {'2013-03-12'};
+% watanabe_ohya_2009.pmid = 19466415; % papers share data
 ohya_morishita_2005.pmid = 16365294;
 
 phenotypes = {'Growth, flow cytometry'};
