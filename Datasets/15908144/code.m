@@ -1,0 +1,71 @@
+%% Luban~Schmidt, 2005
+% DATA = luban_schmidt_2005
+function FILENAMES = code()
+FILENAMES = {};
+luban_schmidt_2005.pmid = 15908144;
+
+phenotypes = {'petite','mtDNA intron slicing'};
+treatments = {'Gly'};
+
+% Load tested
+fid = fopen('raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt');
+C = textscan(fid, '%s\n');
+fclose(fid);
+tested_orfs = unique(upper(C{1}));
+
+% Load data
+fid = fopen('raw_data/list_of_pet_mutants.txt');
+C = textscan(fid,'%s\n');
+fclose(fid);
+pet_mutants = unique(upper(C{1}));
+
+fid = fopen('raw_data/list_of_intron_def_mutants.txt');
+C = textscan(fid,'%s\n');
+fclose(fid);
+intron_mutants = unique(upper(C{1}));
+
+inds = find(cellfun(@isempty, tested_orfs));
+
+inds = find(cellfun(@isnumeric, tested_orfs));
+
+
+tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
+
+inds = find(~strncmp('Y', tested_orfs,1));
+
+luban_schmidt_2005.orfs = tested_orfs;
+luban_schmidt_2005.data = nan(length(tested_orfs),2);
+
+missing = setdiff(pet_mutants, tested_orfs);
+
+[~,ind1,ind2] = intersect(tested_orfs, pet_mutants);
+luban_schmidt_2005.data(ind1,1) = 1;
+luban_schmidt_2005.data(isnan(luban_schmidt_2005.data(:,1)),1) = 0;
+
+luban_schmidt_2005.data(ind1,2) = 0;
+[~,ind1,ind2] = intersect(tested_orfs, intron_mutants);
+luban_schmidt_2005.data(ind1,2) = -1;
+
+luban_schmidt_2005.ph = strcat(phenotypes, '; ', treatments);
+
+a = mfilename('fullpath');
+a = a(1:end-4);
+save([a,'luban_schmidt_2005.mat'],'luban_schmidt_2005');
+return;
+
+% Save data into database
+dt = luban_schmidt_2005;
+datasets = get_datasets_for_paper(dt);
+
+[~,database_ix] = sortrows(datasets.names,[4 1 2 3]);
+[~,ph_ix] = sort(dt.ph);
+
+% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
+datasets.names(database_ix,:)
+dt.ph(ph_ix)
+
+insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+
+end
+

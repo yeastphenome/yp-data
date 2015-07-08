@@ -1,0 +1,80 @@
+ADA2	+++
+ARD1	+++
+ARP5	+++
+BUR2	+++
+CCR4	+++
+CTR1	+++
+DOA4	+++
+ERG6	+++
+FPS1	+++
+GCN5	+++
+GLY1	+++
+GSH2	+++
+HOM6	+++
+IES6	+++
+LYS7	+++
+NGG1	+++
+RAD27	+++
+REF2	+++
+RIB4	+++
+RPN4	+++
+SHP1	+++
+SMF3	+++
+SOD1	+++
+SOD2	+++
+SPT7	+++
+SPT20	+++
+TUP1	+++
+URE2	+++
+YAP1	+++
+YCF1	+++
+ATP1	++
+BCK1	++
+BRO1	++
+BUL1	++
+CYS4	++
+DID4	++
+FRE8	++
+GSH1	++
+LGE1	++
+LSM7	++
+NPL3	++
+PEP3	++
+PEP7	++
+PEP5	++
+PHO85	++
+RPS21B	++
+SLT2	++
+SNF7	++
+SRB8	++
+VAC14	++
+VMA6	++
+VPS3	++
+VPS4	++
+VPS9	++
+VPS16	++
+VPS24	++
+VPS33	++
+VPS65	++
+YCR050C	++
+ANP1	+
+ATG15	+
+CTF4	+
+DAL81	+
+FZO1	+
+GLR1	+
+ISA1	+
+MCT1	+
+MET7	+
+OPT1	+
+PAT1	+
+SNF8	+
+TRF4	+
+VPS54	+
+AKR1
+ATP15
+NHA1
+RHO4
+RVS161
+SWI3
+YPL041C
