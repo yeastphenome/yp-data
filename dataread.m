@@ -1,10 +1,17 @@
-function [filenames, DATA] = dataread(varargin) %type, #of outputs, filename, ...
+function [filenames, DATA] = dataread(varargin) %type, filename, ...
 %this function replaces all the 
 filenames = varargin{2};
 type = varargin{1};
 
 switch type
     case 'textread' %be able to grab any number of outputs
+        fid = fopen(varargin{2},'r');
+        DATA = textscan(fid, varargin{3:end});
+        if numel(DATA) == 1
+            DATA = DATA{1};
+        end
+        fclose(fid);
+    case 'textscan'
         fid = fopen(varargin{2},'r');
         DATA = textscan(fid, varargin{3:end});
         if numel(DATA) == 1
