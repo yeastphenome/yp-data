@@ -5,7 +5,7 @@ FILENAMES = {};
 gardocki_lopes_2005.pmid = 15755922;
 
 phenotypes = {'expression of PIS1'};
-treatments = {'glucose 2%','glycerol 3%'};
+treatments = {'glucose 2%';'glycerol 3%'};
 
 % Load data
 [FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/120_GENES_AFFECTING_PIS1.xlsx');
