@@ -4,7 +4,7 @@ function FILENAMES = code()
 FILENAMES = {};
 luban_schmidt_2005.pmid = 15908144;
 
-phenotypes = {'petite','mtDNA intron slicing'};
+phenotypes = {'petite';'mtDNA intron slicing'};
 treatments = {'Gly'};
 
 % Load tested

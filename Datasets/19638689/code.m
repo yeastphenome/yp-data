@@ -5,7 +5,7 @@ FILENAMES = {};
 auesukaree_harashima_2009.pmid = 19638689;
 
 phenotypes = {'growth'};
-treatments = {'EtOH','MeOH','propanol','NaCl','H2O2','37C'};
+treatments = {'EtOH';'MeOH';'propanol';'NaCl';'H2O2';'37C'};
 
 % Load tested
 [FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Mat alpha_KOset list.xlsx');
