@@ -47,11 +47,11 @@ orfs = upper(strtrim(orfs));
 missing_orfs = setdiff(orfs, tested_orfs);
 tested_orfs = [tested_orfs; missing_orfs];  % Adding 2 missing strains to the list of tested strains.
 
-chamilos_kostoyiannis_2008.orfs = tested_orfs;
-chamilos_kostoyiannis_2008.data = zeros(length(tested_orfs),1);
+chamilos_kontoyiannis_2008.orfs = tested_orfs;
+chamilos_kontoyiannis_2008.data = zeros(length(tested_orfs),1);
 [~,ind1,ind2] = intersect(tested_orfs, orfs);
-chamilos_kostoyiannis_2008.data(ind1) = raw_data(ind2);
-chamilos_kostoyiannis_2008.ph = strcat(phenotypes, '; ', treatments);
+chamilos_kontoyiannis_2008.data(ind1) = raw_data(ind2);
+chamilos_kontoyiannis_2008.ph = strcat(phenotypes, '; ', treatments);
 
 a = mfilename('fullpath');
 a = a(1:end-4);
