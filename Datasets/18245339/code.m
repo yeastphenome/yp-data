@@ -20,13 +20,18 @@ tested_orfs(inds) = [];
 
 tested_orfs = unique(upper(cellfun(@strtrim, tested_orfs,'UniformOutput',0)));
 
-inds = find(~strncmp('Y', tested_orfs,1));
+% Eliminate all spaces from within the ORF name
+tested_orfs = regexprep(tested_orfs, '\W','');
+
+inds = find(cellfun(@isempty, regexp(tested_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
 tested_orfs(inds) = [];
 
+% Load data
 [FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/Table1_Abe_Genetics.xlsx', 'Table 1 (2)');
 
 hits_orfs = data.raw(7:end,3);
 hits_data = data.raw(7:end,[26 31]);
+
 inds = find(cellfun(@isempty, hits_orfs));
 hits_orfs(inds) = [];
 hits_data(inds,:) = [];
@@ -35,22 +40,25 @@ inds = find(cellfun(@isnumeric, hits_orfs));
 hits_orfs(inds) = [];
 hits_data(inds,:) = [];
 
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
-hits_orfs = unique(upper(hits_orfs));
-inds = find(~strncmp('Y', hits_orfs,1));
+hits_orfs = upper(regexprep(hits_orfs, '\W',''));
+
+inds = find(cellfun(@isempty, regexp(hits_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
 hits_orfs(inds) = [];
 hits_data(inds,:) = [];
 
 hits_data = cell2mat(hits_data);
 hits_data = hits_data/100;  % transform percent into fractions
 
-[missing, ix] = setdiff(hits_orfs, tested_orfs);
+[missing, ix] = setdiff(hits_orfs, tested_orfs);    % nothing missing
+
+% Average data for identical ORFs that appear multiple times
+[t,t2] = grpstats(hits_data, hits_orfs, {'gname','mean'});
 
 abe_minegishi_2008.orfs = tested_orfs;
-abe_minegishi_2008.data = nan(length(tested_orfs),2);
+abe_minegishi_2008.data = zeros(length(tested_orfs),2);
 
-[~,ind1,ind2] = intersect(hits_orfs, tested_orfs);
-abe_minegishi_2008.data(ind2,:) = hits_data(ind1,:);
+[~,ind1,ind2] = intersect(t, tested_orfs);
+abe_minegishi_2008.data(ind2,:) = t2(ind1,:);
 
 abe_minegishi_2008.ph = strcat(phenotypes, '; ', treatments);
 
