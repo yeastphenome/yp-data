@@ -16,19 +16,22 @@ treatments = {''};
 inds = find(cellfun(@isnumeric, data.raw(:,2)));
 data.raw(inds,:) = [];
 
-inds = setdiff(1:length(data.raw(:,2)),strmatch('Y', data.raw(:,2)));
+% A couple of manual fixes
+data.raw(strcmp('YLR287-A', data.raw(:,2)),2) = {'YLR287C-A'};
+data.raw(strcmp('YML009c', data.raw(:,2)),2) = {'YML009C'};
+
+inds = find(cellfun(@isempty, regexp(data.raw(:,2), 'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
 data.raw(inds,:) = [];
 
 % Eliminate false positives
-inds = find(cellfun(@isempty, data.raw(:,7))==0);
+inds = find(~cellfun(@isnumeric, data.raw(:,7)));
 data.raw(inds,6) = {NaN};
-
 
 data2.orfs = upper(data.raw(:,2));
 data2.data = data.raw(:,6);
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, data2.data)==0);
+inds = find(~cellfun(@isnumeric, data2.data));
 data2.data(inds) = {NaN};
 data2.data = cell2mat(data2.data);
 
