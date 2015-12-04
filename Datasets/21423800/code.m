@@ -13,18 +13,23 @@ treatments = {'external pH 2.7';'external pH 4.0';'external pH 7.0'};
 [FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/journal.pone.0017619.s003.xlsx', 'Unsorted Data');
 
 % Get indices of the data columns
-ind_data = [4:6 7:9];
+ind_data = [4:6 8:10];
 
-
-% Eliminate anything that doesn't look like an ORF
+% Eliminate anything that doesn't have an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,2)));
-data.raw(inds,:) = [];
-
-inds = find(~strncmp('Y', data.raw(:,2),1));
 data.raw(inds,:) = [];
 
 % Eliminate white spaces before/after ORF
 data.raw(:,2) = cellfun(@strtrim, data.raw(:,2),'UniformOutput',0);
+
+% A couple of manual fixes
+data.raw(strcmp(data.raw(:,2),'YLR228 C'),2) = {'YLR228C'};
+data.raw(strcmp(data.raw(:,2), 'YML009c'),2) = {'YML009C'};
+data.raw(strcmp(data.raw(:,2), 'YMR062 C'),2) = {'YMR062C'};
+
+% Eliminate anything that doesn't look like an ORF
+inds = find(cellfun(@isempty, regexp(data.raw(:,2), 'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
+data.raw(inds,:) = [];
 
 % Make sure all the data are numbers
 t = data.raw(:,ind_data);
@@ -39,13 +44,6 @@ data2.data = cell2mat(t);
 brett_rao_2011.orfs = t;
 brett_rao_2011.data = t2;
 brett_rao_2011.ph = [strcat(phenotypes{1}, '; ', treatments); strcat(phenotypes{2},'; ', treatments)];
-
-
-% Eliminate the essential genes
-load essential_genes_100908;
-[t,ind1,ind2] = intersect(brett_rao_2011.orfs, essential_genes);
-brett_rao_2011.orfs(ind1) = [];
-brett_rao_2011.data(ind1,:) = [];
 
 a = mfilename('fullpath');
 a = a(1:end-4);
