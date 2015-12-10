@@ -13,9 +13,12 @@ tested_orfs = tested.raw(4:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = ~strncmp('Y', tested_orfs,1);
+
+tested_orfs = regexprep(tested_orfs, '\W','');
+
+inds = find(cellfun(@isempty, regexpi(tested_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
 tested_orfs(inds) = [];
+
 tested_orfs = unique(upper(tested_orfs));
 
 
@@ -27,19 +30,26 @@ fclose(fid);
 
 hits_orfs = genename2orf(hits_genenames,'noannot');
 
-hits_scores = ones(length(hits_orfs),1);
+hits_orfs(strcmp(hits_orfs,'vma12')) = {'YKL119C'};
+hits_orfs(strcmp(hits_orfs,'ada3')) = {'YDR176W'};
+hits_orfs(strcmp(hits_orfs,'rcs1')) = {'YGL071W'};
+hits_orfs(strcmp(hits_orfs,'cwh36')) = {'YCL005W-A'};
+hits_orfs(strcmp(hits_orfs,'rmd7')) = {'YER083C'};
 
 inds = cellfun(@isnumeric, hits_orfs);
 hits_orfs(inds) = [];
-hits_scores(inds) = [];
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
-inds = ~strncmp('Y', hits_orfs,1);
+
+hits_orfs = regexprep(hits_orfs,'\W','');
+
+inds = find(cellfun(@isempty, regexpi(hits_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
 hits_orfs(inds) = [];
-hits_scores(inds) = [];
-hits_orfs = upper(hits_orfs);
+
+hits_orfs = unique(upper(hits_orfs));
+
+hits_scores = ones(length(hits_orfs),1);
 
 hancock_lopes_2006.orfs = tested_orfs;
-hancock_lopes_2006.data = zeros(length(tested_orfs), length(phenotypes))+NaN;
+hancock_lopes_2006.data = zeros(length(tested_orfs), length(phenotypes));
 [~,ind1,ind2] = intersect(hits_orfs, tested_orfs);
 hancock_lopes_2006.data(ind2,1) = hits_scores(ind1,1);
 
