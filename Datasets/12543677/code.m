@@ -12,25 +12,23 @@ blackburn_avery_2003.pmid = 12543677;
 
 phenotypes = {'growth (MIC)'};
 treatments = data.raw(1,2:8)';
+data.raw(1,:) = [];
 
 % Eliminate white spaces before/after ORF
-data.raw(2:end,1) = cellfun(@strtrim, data.raw(2:end,1),'UniformOutput',0);
+data.raw(:,1) = regexprep(data.raw(:,1), '\W','');
+
+% Eliminate everything that doesn't look like an ORF
+inds = find(cellfun(@isempty, regexpi(data.raw(:,1),'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
+data.raw(inds,:) = [];
 
 % Replace 'Inf' with Inf
-t = data.raw(2:end,2:end);
+t = data.raw(:,2:end);
 t(~cellfun(@isnumeric, t)) = {Inf};
 
-blackburn_avery_2003.orfs = upper(data.raw(2:end,1));
+blackburn_avery_2003.orfs = upper(data.raw(:,1));
 blackburn_avery_2003.data = cell2mat(t);
 
 blackburn_avery_2003.ph = [strcat(phenotypes{1}, '; ', treatments)];
-
-
-% Eliminate the essential genes
-load essential_genes_100908;
-[t,ind1,ind2] = intersect(blackburn_avery_2003.orfs, essential_genes);
-blackburn_avery_2003.orfs(ind1) = [];
-blackburn_avery_2003.data(ind1,:) = [];
 
 a = mfilename('fullpath');
 a = a(1:end-4);
