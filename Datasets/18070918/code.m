@@ -1,5 +1,4 @@
 %% Ju~Xie, 2008
-% DATA = ju_xie_2008
 function FILENAMES = code()
 FILENAMES = {};
 ju_xie_2008.pmid = 18070918;
@@ -8,7 +7,7 @@ phenotypes = {'abundance of Rpn4'};
 treatments = {'standard'};
 
 % Load tested
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/mat_a_041902.xlsx', 'mat_a_041902');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/mat_a_041902.xlsx', 'mat_a_041902');
 tested_orfs = data.raw(3:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));

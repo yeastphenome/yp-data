@@ -1,5 +1,4 @@
 %% Arita~Costa, 2009
-% DATA = arita_costa_2009
 function FILENAMES = code()
 FILENAMES = {};
 arita_costa_2009.pmid = 19917080;
@@ -8,7 +7,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'NiSO4 [0.75-1.25 mM]'};
 
 % Load resistant
-[FILENAMES{end+1}, hits.raw] = dataread('xlsread','raw_data/1471-2164-10-524-S1.XLS', 'Sheet1');
+[FILENAMES{end+1}, hits.raw] = dataread('xlsread','./raw_data/1471-2164-10-524-S1.XLS', 'Sheet1');
 hits_sensitive_orfs = hits.raw(7:end,1);
 hits_resistant_orfs = hits.raw(7:end,2);
 

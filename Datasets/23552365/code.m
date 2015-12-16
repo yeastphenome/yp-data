@@ -1,5 +1,4 @@
 %% Gonzalez-Ramos~Daran, 2013
-% DATA = gonzalez_ramos_daran_2003
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth'};
 treatments = {'butanol'};
 
 % Load plate maps
-[FILENAMES{end+1}, map.raw] = dataread('xlsread','/Users/brianna/Documents/Datasets/Phenotypes/2013_Gonzalez-Ramos~Daran/Knockout collection map.xls', 'DATA');
+[FILENAMES{end+1}, map.raw] = dataread('xlsread','./raw_data/Knockout collection map.xls', 'DATA');
 map.raw(1,:) = [];
 inds = find(cellfun(@isnumeric, map.raw(:,6)));
 map.raw(inds,:) = [];
@@ -17,7 +16,7 @@ map.raw(inds,:) = [];
 map.platerowcol = [cell2mat(map.raw(:,5)) map.rowNum cell2mat(map.raw(:,7))];
 
 % Load data
-datafile = '/Users/brianna/Documents/Datasets/Phenotypes/2013_Gonzalez-Ramos~Daran/Butanol tolerance. Screening knockout collection.xlsx';
+datafile = './raw_data/Butanol tolerance. Screening knockout collection.xlsx';
 [status,sheets] = xlsfinfo(datafile);
 all_data.plate = [];
 all_data.rows = [];
@@ -25,30 +24,30 @@ all_data.cols = [];
 all_data.norm_data = [];
 
 for i = 1 : length(sheets)
-    control_plate = zeros(8,12,2)+NaN;
-    test_plate = zeros(8,12,2)+NaN;
-    plateNum = str2num(sheets{i}(3:min(length(sheets{i}),4)));
-    
-    [FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'C7:N14');
-    control_plate(:,:,1) = cell2mat(data.raw);
-    
-    [FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'Q7:AB14');
-    control_plate(:,:,2) = cell2mat(data.raw);
-    
-    [FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'C19:N26');
-    test_plate(:,:,2) = cell2mat(data.raw);
-    
-    [FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'Q19:AB26');
-    test_plate(:,:,2) = cell2mat(data.raw);
-    
-    norm_data = nanmean(test_plate,3)./nanmean(control_plate,3);
-    [cols,rows] = meshgrid(1:12,1:8);
-    
-    all_data.plate = [all_data.plate; zeros(length(norm_data(:)),1)+plateNum];
-    all_data.rows = [all_data.rows; rows(:)];
-    all_data.cols = [all_data.cols; cols(:)];
-    all_data.norm_data = [all_data.norm_data; norm_data(:)];
-    i;
+control_plate = zeros(8,12,2)+NaN;
+test_plate = zeros(8,12,2)+NaN;
+plateNum = str2num(sheets{i}(3:min(length(sheets{i}),4)));
+
+[FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'C7:N14');
+control_plate(:,:,1) = cell2mat(data.raw);
+
+[FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'Q7:AB14');
+control_plate(:,:,2) = cell2mat(data.raw);
+
+[FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'C19:N26');
+test_plate(:,:,2) = cell2mat(data.raw);
+
+[FILENAMES{end+1}, data.raw] = dataread('xlsread',datafile, sheets{i}, 'Q19:AB26');
+test_plate(:,:,2) = cell2mat(data.raw);
+
+norm_data = nanmean(test_plate,3)./nanmean(control_plate,3);
+[cols,rows] = meshgrid(1:12,1:8);
+
+all_data.plate = [all_data.plate; zeros(length(norm_data(:)),1)+plateNum];
+all_data.rows = [all_data.rows; rows(:)];
+all_data.cols = [all_data.cols; cols(:)];
+all_data.norm_data = [all_data.norm_data; norm_data(:)];
+i;
 end
 
 all_data.platerowcol = [all_data.plate all_data.rows all_data.cols];
@@ -56,7 +55,7 @@ all_data.platerowcol = [all_data.plate all_data.rows all_data.cols];
 % Average replicates
 all_data.platerowcol2 = cell(length(all_data.plate),1);
 for i = 1 : length(all_data.plate)
-    all_data.platerowcol2{i} = [num2str(all_data.plate(i)),'-', num2str(all_data.rows(i)),'-', num2str(all_data.cols(i))];
+all_data.platerowcol2{i} = [num2str(all_data.plate(i)),'-', num2str(all_data.rows(i)),'-', num2str(all_data.cols(i))];
 end
 [t,t2] = grpstats(all_data.norm_data, all_data.platerowcol2, {'gname','mean'});
 

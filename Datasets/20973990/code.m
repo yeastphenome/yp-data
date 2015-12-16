@@ -1,5 +1,4 @@
 %% Mira~Sa-Correia, 2010
-% DATA = mira_sa_correia_2010
 function FILENAMES = code()
 FILENAMES = {};
 mira_sa_correia_2010.pmid = 20973990;
@@ -8,7 +7,7 @@ phenotypes = {'growth'};
 treatments = {'acetic acid'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','/Users/brianna/Documents/Datasets/Phenotypes/2010_Mira~Sa-Correia/List of strains tested.xlsx');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/List of strains tested.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -20,7 +19,7 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','/Users/brianna/Documents/Datasets/Phenotypes/2010_Mira~Sa-Correia/1475-2859-9-79-s1.xlsx');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/1475-2859-9-79-s1.xlsx');
 hits_genenames = data.raw(9:end,1);
 hits_data = data.raw(9:end,3);
 

@@ -1,5 +1,4 @@
 %% Brett~Rao, 2011
-% DATA = brett_rao_2011
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -10,7 +9,7 @@ brett_rao_2011.pmid = 21423800;
 phenotypes = {'Growth, OD600';'Vacuolar pH (pHv)'};
 treatments = {'external pH 2.7';'external pH 4.0';'external pH 7.0'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/journal.pone.0017619.s003.xlsx', 'Unsorted Data');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/journal.pone.0017619.s003.xlsx', 'Unsorted Data');
 
 % Get indices of the data columns
 ind_data = [4:6 8:10];

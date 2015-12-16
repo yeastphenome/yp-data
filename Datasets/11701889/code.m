@@ -1,5 +1,4 @@
 %% Ooi~Boeke, 2001
-% DATA = ooi_boeke_2001
 function FILENAMES = code()
 FILENAMES = {};
 % NEED = tested genes
@@ -8,7 +7,7 @@ ooi_boeke_2001.source = {'Main PDF'};
 ooi_boeke_2001.downloaddate = {'2014-02-03'};
 ooi_boeke_2001.pmid = 11701889;
 
-[FILENAMES{end+1}, hits] = dataread('textread','raw_data/ooi_boeke_2001.txt', '%s');
+[FILENAMES{end+1}, hits] = dataread('textread','./raw_data/ooi_boeke_2001.txt', '%s');
 hits = lower(hits);
 hits(strcmp('lig4', hits)) = {'dnl4'};
 hits(strcmp('gpe2', hits)) = {'yal056w'};

@@ -1,5 +1,4 @@
 %% van Voorst~Bradt, 2006
-% DATA = van_voorst_bradt_2006
 function FILENAMES = code()
 FILENAMES = {};
 % TESTED = not available
@@ -10,7 +9,7 @@ phenotypes = {'growth [streaks on agar]'};
 treatments = {'ethanol [6%]'};
 
 % Load data
-fid = fopen('raw_data/hits_genenames.txt');
+fid = fopen('./raw_data/hits_genenames.txt');
 hits = textscan(fid,'%s');
 hits_genenames = hits{1};
 fclose(fid);

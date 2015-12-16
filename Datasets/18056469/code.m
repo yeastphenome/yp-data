@@ -1,5 +1,4 @@
 %% Xia~Flores-Rozas, 2007
-% DATA = xia_flores_rozas_2007
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth (colony size)'};
 treatments = {'doxorubicin [20 umol/L]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','/Users/brianna/Documents/Datasets/Phenotypes/2007_Xia~Flores-Rozas/Mat_a.xlsx', 'mat_a_041902');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a.xlsx', 'mat_a_041902');
 tested_orfs = tested.raw(3:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -19,7 +18,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, DATA] = dataread('textread','/Users/brianna/Documents/Datasets/Phenotypes/2007_Xia~Flores-Rozas/hits_genenames.txt', '%s %s', 'delimiter', '\t');
+[FILENAMES{end+1}, DATA] = dataread('textread','./raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
 
 hits_genenames = DATA{1};
 hits_scores_txt = DATA{2};

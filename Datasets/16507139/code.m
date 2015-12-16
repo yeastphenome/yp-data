@@ -1,5 +1,4 @@
 %% Narayanaswamy~Marcotte, 2006
-% DATA = narayanaswamy_marcotte_2006
 function FILENAMES = code()
 FILENAMES = {};
 narayanaswamy_marcotte_2006.pmid = 16507139;
@@ -8,7 +7,7 @@ phenotypes = {'expression of PIS1'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/gb-2006-7-1-r6-s2.xlsx');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/gb-2006-7-1-r6-s2.xlsx');
 
 orfs = data.raw(41:end,1);
 raw_data = data.raw(41:end,2:47);
@@ -43,7 +42,7 @@ raw_data2 = raw_data(:,final_inds);
 phenotypes2 = phenotypes(final_inds);
 
 phenotypes3 = {'slight shmoos', 'normal shmoos', 'other shmoos', 'large cells', 'small cells','round cells','pointed cells','elongated cells','pseudohyphal cells',...
-    'clumpy cells','budding cells','polarized bud growth cells'};
+'clumpy cells','budding cells','polarized bud growth cells'};
 
 % Remore OTHER as it's not clear what phenotype that is
 phenotypes2(end) = [];

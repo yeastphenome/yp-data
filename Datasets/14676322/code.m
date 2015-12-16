@@ -1,5 +1,4 @@
 %% Warringer~Blomberg, 2003
-% DATA = warringer_blomberg_2003
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -8,7 +7,7 @@ warringer_blomberg_2003.pmid = 14676322;
 phenotypes = {'Growth, lag phase';'Growth, exponential growth rate';'Growth, saturation level'};
 treatments = {'NaCl, 0.85 M'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/ORIG130305_LPI NaCl.xlsx', 'LPI');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/ORIG130305_LPI NaCl.xlsx', 'LPI');
 
 data2.orfs = upper(data.raw(5:end,1));
 data2.data = cell2mat(data.raw(5:end,2:4));
@@ -34,10 +33,10 @@ datasets = get_datasets_for_paper(warringer_blomberg_2003);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).shortname;
-    datasets_names{i,3} = datasets(i).condition_dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).shortname;
+datasets_names{i,3} = datasets(i).condition_dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

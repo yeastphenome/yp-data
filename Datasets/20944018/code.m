@@ -1,5 +1,4 @@
 %% Gresham~Botstein, 2011
-% DATA = gresham_botstein_2011
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,22 +8,22 @@ phenotypes = {'Death rate (%/hr)'};
 treatments = {'phosphate starvation';'leucine starvation'};
 
 % Dataset #1
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/TABLES4.xlsx', 'phoAbs.txt');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TABLES4.xlsx', 'phoAbs.txt');
 
 data.genenames = data.raw(2:end, 1);
 data.data = cell2mat(data.raw(2:end, 2));
 data.genenames_noannot = cell(size(data.genenames));
 % Eliminate the "_p" suffix from the genenames
 for i = 1 : length(data.genenames)
-    C = regexp(data.genenames{i},'_','split');
-    data.genenames_noannot{i} = C{1};
+C = regexp(data.genenames{i},'_','split');
+data.genenames_noannot{i} = C{1};
 end
 
 data.orfs = genename2orf(data.genenames_noannot,'noannot');
 % Eliminate the occasional suffix added by the renaming script
 for i = 1 : length(data.orfs)
-    C = regexp(data.orfs{i},'_', 'split');
-    data.orfs{i} = C{1};
+C = regexp(data.orfs{i},'_', 'split');
+data.orfs{i} = C{1};
 end
 inds = find(~strncmp('Y', data.orfs,1));
 
@@ -32,12 +31,12 @@ unique(data.orfs(inds));
 
 
 % Manual genename-to-ORF fixes
-fid =fopen('raw_data/genename_to_orf_fixes.txt');
+fid =fopen('./raw_data/genename_to_orf_fixes.txt');
 C = textscan(fid, '%s\t%s\n');
 fclose(fid);
 for i = 1 : length(C{1})
-    inds = strcmp(C{1}(i), data.orfs);
-    data.orfs(inds) = C{2}(i);
+inds = strcmp(C{1}(i), data.orfs);
+data.orfs(inds) = C{2}(i);
 end
 
 inds = find(cellfun(@isnumeric, data.orfs));
@@ -48,34 +47,34 @@ data.orfs = cellfun(@strtrim, data.orfs,'UniformOutput',0);
 
 
 % Dataset #2
-[FILENAMES{end+1}, data2.raw] = dataread('xlsread','raw_data/TABLES5.xlsx', 'leuAbs.txt');
+[FILENAMES{end+1}, data2.raw] = dataread('xlsread','./raw_data/TABLES5.xlsx', 'leuAbs.txt');
 
 data2.genenames = data2.raw(2:end, 1);
 data2.data = cell2mat(data2.raw(2:end, 2));
 data2.genenames_noannot = cell(size(data2.genenames));
 % Eliminate the "_p" suffix from the genenames
 for i = 1 : length(data2.genenames)
-    C = regexp(data2.genenames{i},'_','split');
-    data2.genenames_noannot{i} = C{1};
+C = regexp(data2.genenames{i},'_','split');
+data2.genenames_noannot{i} = C{1};
 end
 
 data2.orfs = genename2orf(data2.genenames_noannot,'noannot');
 % Eliminate the occasional suffix added by the renaming script
 for i = 1 : length(data2.orfs)
-    C = regexp(data2.orfs{i},'_', 'split');
-    data2.orfs{i} = C{1};
+C = regexp(data2.orfs{i},'_', 'split');
+data2.orfs{i} = C{1};
 end
 inds = find(~strncmp('Y', data2.orfs,1));
 
 unique(data2.orfs(inds));
 
 % Manual genename-to-ORF fixes
-fid =fopen('raw_data/genename_to_orf_fixes.txt');
+fid =fopen('./raw_data/genename_to_orf_fixes.txt');
 C = textscan(fid, '%s\t%s\n');
 fclose(fid);
 for i = 1 : length(C{1})
-    inds = strcmp(C{1}(i), data2.orfs);
-    data2.orfs(inds) = C{2}(i);
+inds = strcmp(C{1}(i), data2.orfs);
+data2.orfs(inds) = C{2}(i);
 end
 
 inds = find(cellfun(@isnumeric, data2.orfs));

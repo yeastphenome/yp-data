@@ -1,5 +1,4 @@
 %% Ralser~Lehrach, 2008
-% DATA = ralser_lehrach_2008
 function FILENAMES = code()
 FILENAMES = {};
 ralser_lehrach_2008.pmid = 19004802;
@@ -8,7 +7,7 @@ phenotypes = {'growth'};
 treatments = {'2-DG'};
 
 % Load data
-[FILENAMES{end+1}, hits_orfs] = dataread('textread','raw_data/hits_orfs.txt', '%s');
+[FILENAMES{end+1}, hits_orfs] = dataread('textread','./raw_data/hits_orfs.txt', '%s');
 hits_orfs = unique(strtrim(upper(hits_orfs)));
 
 hits_data = ones(size(hits_orfs));
@@ -18,7 +17,7 @@ hits_orfs(inds) = [];
 hits_data(inds,:) = [];
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Mat_a_obs_v2.0.xlsx');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));

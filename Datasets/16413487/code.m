@@ -1,5 +1,4 @@
 %% Alto~Dixon, 2006
-% DATA = alto_dixon_2006
 function FILENAMES = code()
 FILENAMES = {};
 alto_dixon_2006.pmid = 16413487;
@@ -9,7 +8,7 @@ phenotypes = {'growth'};
 treatments = {'IpgB2 effector protein'};
 
 % Load data
-[FILENAMES{end+1}, hits_gn] = dataread('textread','raw_data/hits.txt', '%s');
+[FILENAMES{end+1}, hits_gn] = dataread('textread','./raw_data/hits.txt', '%s');
 hits_data = ones(size(hits_gn));
 
 hits_orfs = genename2orf(hits_gn);
@@ -19,7 +18,7 @@ hits_orfs(inds) = [];
 hits_data(inds,:) = [];
 
 % Load tested
-[FILENAMES{end+1}, tested_orfs] = dataread('textread','raw_data/FG_array_genes.txt', '%s');
+[FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/FG_array_genes.txt', '%s');
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 

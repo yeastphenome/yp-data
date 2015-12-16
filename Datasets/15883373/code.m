@@ -1,5 +1,4 @@
 %% Xie~Huang, 2005
-% DATA = xie_huang_2005
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -11,8 +10,8 @@ xie_huang_2005.pmid = 15883373;
 phenotypes = {'Growth, spot intensity on cell microarray'};
 treatments = {'Rapamycin, 10 nM'; 'Rapamycin, 30 nM'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/rapa_cellarray_all.xls', 'Rapa10nm');
-[FILENAMES{end+1}, data2.raw] = dataread('xlsread','raw_data/rapa_cellarray_all.xls', 'Rapa30nm');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa10nm');
+[FILENAMES{end+1}, data2.raw] = dataread('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa30nm');
 
 % Get indices of the data columns
 ind_data = find(strcmp('Rapa/DMSO', data.raw(1,:)));
@@ -78,14 +77,14 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    if isempty(datasets(i).reporter)
-        datasets_names{i,2} = '';
-    else
-        datasets_names{i,2} = datasets(i).reporter;
-    end
-    datasets_names{i,3} = datasets(i).conditionset;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+if isempty(datasets(i).reporter)
+datasets_names{i,2} = '';
+else
+datasets_names{i,2} = datasets(i).reporter;
+end
+datasets_names{i,3} = datasets(i).conditionset;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

@@ -1,5 +1,4 @@
 %% Luban~Schmidt, 2005
-% DATA = luban_schmidt_2005
 function FILENAMES = code()
 FILENAMES = {};
 luban_schmidt_2005.pmid = 15908144;
@@ -8,18 +7,18 @@ phenotypes = {'petite';'mtDNA intron slicing'};
 treatments = {'Gly'};
 
 % Load tested
-fid = fopen('raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt');
+fid = fopen('./raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt');
 C = textscan(fid, '%s\n');
 fclose(fid);
 tested_orfs = unique(upper(C{1}));
 
 % Load data
-fid = fopen('raw_data/list_of_pet_mutants.txt');
+fid = fopen('./raw_data/list_of_pet_mutants.txt');
 C = textscan(fid,'%s\n');
 fclose(fid);
 pet_mutants = unique(upper(C{1}));
 
-fid = fopen('raw_data/list_of_intron_def_mutants.txt');
+fid = fopen('./raw_data/list_of_intron_def_mutants.txt');
 C = textscan(fid,'%s\n');
 fclose(fid);
 intron_mutants = unique(upper(C{1}));

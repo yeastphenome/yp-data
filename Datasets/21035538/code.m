@@ -1,5 +1,4 @@
 %% Uluisik~Koc, 2011
-% DATA = uluisik_koc_2011
 function FILENAMES = code()
 FILENAMES = {};
 uluisik_koc_2011.pmid = 21035538;

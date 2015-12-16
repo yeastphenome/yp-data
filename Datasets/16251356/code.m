@@ -1,5 +1,4 @@
 %% Reiner~Schneiter, 2006
-% DATA = reiner_schneiter_2006
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth'};
 treatments = {'hypoxia'};
 
 % Load tested genes
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/BY4741-MATa COLLECTION.xls', 'chr11_1yes');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/BY4741-MATa COLLECTION.xls', 'chr11_1yes');
 
 tested_orfs = data.raw(2:end,2);
 
@@ -25,17 +24,17 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load hits
-[FILENAMES{end+1}, hits] = dataread('textread','raw_data/reiner_scheiter_2006_hits.txt', '%s');
+[FILENAMES{end+1}, hits] = dataread('textread','./raw_data/reiner_scheiter_2006_hits.txt', '%s');
 
 % This list of ORFs is lacking the last character (published that way), so
 % we have to match it to the list of tested strains.
 for i = 1 : length(hits)
-    inds = find(strncmp(hits{i}, tested_orfs, length(hits{i})));
-    if length(inds) == 1
-        hits_orfs(i) = tested_orfs(inds);
-    else
-        fprintf('%s\t%d\n', hits{i}, length(inds));
-    end
+inds = find(strncmp(hits{i}, tested_orfs, length(hits{i})));
+if length(inds) == 1
+hits_orfs(i) = tested_orfs(inds);
+else
+fprintf('%s\t%d\n', hits{i}, length(inds));
+end
 end
 
 % Two ORFs (YBR039W and YNL243W) could not be found in the list of tested

@@ -1,5 +1,4 @@
 %% Yoshikawa~Shimizu, 2011
-% DATA = yoshikawa_shimizu_2011
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -11,7 +10,7 @@ yoshikawa_shimizu_2011.pmid = 21341307;
 phenotypes = {'Growth, exponential growth rate (h^-1)'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/yea_1843_supportinginforTS1.xlsx', 'Deletion');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/yea_1843_supportinginforTS1.xlsx', 'Deletion');
 
 % Get indices of the data columns
 ind_data = 5; % "Average"
@@ -52,11 +51,11 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).reporter;
-    datasets_names{i,3} = datasets(i).short_name;
-    datasets_names{i,4} = datasets(i).dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).reporter;
+datasets_names{i,3} = datasets(i).short_name;
+datasets_names{i,4} = datasets(i).dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3 4]);

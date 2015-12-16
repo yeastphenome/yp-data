@@ -1,5 +1,4 @@
 %% Peyroche~Plateau, 2012
-% DATA = peyroche_plateau_2012
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -12,7 +11,7 @@ peyroche_plateau_2012.desc = {'Relative fitness defect: rf = log2(wt(Se)/mut(Se)
 phenotypes = {'Growth, log2 ratio'};
 treatments = {'Sodium selenide, 1 uM 16 h'; 'Sodium selenide, 2 uM 16 h'; 'Sodium selenide, 1 uM 27 h'; 'Sodium selenide, 2 uM 27 h'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/journal.pone.0036343.s004.xlsx', 'data');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/journal.pone.0036343.s004.xlsx', 'data');
 
 % Get indices of the data columns
 ind_data = 5:8;
@@ -53,10 +52,10 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).reporter;
-    datasets_names{i,3} = datasets(i).conditionset;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).reporter;
+datasets_names{i,3} = datasets(i).conditionset;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

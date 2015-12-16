@@ -1,5 +1,4 @@
 %% Hartman~Tippery, 2004
-% DATA = hartman_tippery_2004
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ hartman_tippery_2004.desc = {'The loaded values are Z-scores with respect to the
 phenotypes = {'Growth, AUGC'};
 treatments = {'UNT';'HU, 50 mM';'HU, 150 mM'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/gb-2004-5-7-r49-s7.xlsx', 'data');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/gb-2004-5-7-r49-s7.xlsx', 'data');
 
 ind_orf = strmatch('ORF', data.raw(1,:));
 data2.orfs = data.raw(2:end, ind_orf);
@@ -61,10 +60,10 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).shortname;
-    datasets_names{i,3} = datasets(i).condition_dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).shortname;
+datasets_names{i,3} = datasets(i).condition_dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

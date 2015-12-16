@@ -1,5 +1,4 @@
 %% Chamilos~Kontoyiannis, 2008
-% DATA = chamilos_kontoyiannis_2008
 function FILENAMES = code()
 FILENAMES = {};
 chamilos_kontoyiannis_2008.pmid = 18212113;
@@ -8,7 +7,7 @@ phenotypes = {'growth'};
 treatments = {'gliotoxin'};
 
 % Load tested
-[FILENAMES{end+1}, tested_orfs] = dataread('textread','raw_data/tested_orfs.txt', '%s');
+[FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/tested_orfs.txt', '%s');
 
 % Validate tested
 expr = 'Y[A-P][RL][0-9]{3}[CW](-[ABC])*';
@@ -17,7 +16,7 @@ inds = find(cellfun(@isempty, regexpi(tested_orfs, expr)));
 tested_orfs = unique(upper(strtrim(tested_orfs)));
 
 % Load data
-fid = fopen('raw_data/data_genenames.txt','r');
+fid = fopen('./raw_data/data_genenames.txt','r');
 C = textscan(fid, '%s %f','delimiter','\t');
 fclose(fid);
 

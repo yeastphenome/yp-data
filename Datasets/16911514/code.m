@@ -1,5 +1,4 @@
 %% Kawahata~Iefuji, 2006
-% DATA = kawahata_iefuji_2006
 function FILENAMES = code()
 FILENAMES = {};
 kawahata_iefuji_2006.pmid = 16911514;
@@ -8,7 +7,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'lactic acid [5.1% w/v], pH [2.7]'; 'lactic acid [3.1% w/v], pH [2.9]'; 'HCl [0.28% w/v], pH [2.4]';'HCl [0.24% w/v], pH [2.6]'; 'acetic acid [0.5% w/v], pH [4.2]'; 'acetic acid [0.4% w/v], pH [4.3]'};
 
 % Load resistant
-[FILENAMES{end+1}, hits_resistant.raw] = dataread('xlsread','raw_data/hits.xlsx', 'Resistant');
+[FILENAMES{end+1}, hits_resistant.raw] = dataread('xlsread','./raw_data/hits.xlsx', 'Resistant');
 
 hits_resistant_orfs = [hits_resistant.raw(:,1); hits_resistant.raw(:,6)];
 
@@ -35,7 +34,7 @@ tmp_orfs = [hits_resistant.raw(strcmp('+', hits_resistant.raw(:,5)),1); hits_res
 hits_resistant_scores(ind2,3) = 1;
 
 % Load sensitive
-[FILENAMES{end+1}, hits_sensitive.raw] = dataread('xlsread','raw_data/hits.xlsx', 'Sensitive');
+[FILENAMES{end+1}, hits_sensitive.raw] = dataread('xlsread','./raw_data/hits.xlsx', 'Sensitive');
 
 hits_sensitive_orfs = [hits_sensitive.raw(:,1); hits_sensitive.raw(:,6)];
 

@@ -1,5 +1,4 @@
 %% Postma~Ralser, 2009
-% DATA = postma_ralser_2009
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'hibernation'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Mat_a_obs_v2.0.xlsx', 'Mat_a_obs_v2.0.txt');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx', 'Mat_a_obs_v2.0.txt');
 tested_orfs = tested.raw(2:end,1);
 
 
@@ -21,7 +20,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-fid = fopen('raw_data/hits_orfs.txt');
+fid = fopen('./raw_data/hits_orfs.txt');
 hits_orfs = textscan(fid,'%s');
 fclose(fid);
 

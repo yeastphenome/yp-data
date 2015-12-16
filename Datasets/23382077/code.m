@@ -1,5 +1,4 @@
 %% Huang~Paulovich, 2013
-% DATA = huang_paulovich_2013
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth'};
 treatments = {'MMS'};
 
 % Load plate maps
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Mat_a_obs_v4 0.xls', 'DATA');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v4 0.xls', 'DATA');
 tested_orfs = tested.raw(2:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -20,7 +19,7 @@ tested_orfs = unique(upper(tested_orfs));
 
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = dataread('textread','raw_data/huang_paulovich_2013_hits.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/huang_paulovich_2013_hits.txt', '%s');
 hits_orfs = genename2orf(hits_genenames,'noannot');
 hits_scores = -ones(length(hits_orfs),1);
 

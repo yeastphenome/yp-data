@@ -1,5 +1,4 @@
 %% Kemmer~Roberge, 2009
-% DATA = kemmer_roberge_2009
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth (colony size)'};
 treatments = {'dhMotC [60 uM]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/haploid set.xlsx', 'haploid set');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/haploid set.xlsx', 'haploid set');
 tested_orfs = tested.raw(6:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -19,7 +18,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = dataread('textread','raw_data/hits_genenames.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
 
 hits_genenames = cellfun(@strtrim, hits_genenames,'UniformOutput',0);
 hits_orfs = genename2orf(hits_genenames,'noannot');

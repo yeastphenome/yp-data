@@ -1,5 +1,4 @@
 %% Nyswaner~Garfinkel,2008
-% DATA = nyswaner_garfinkel_2008
 function FILENAMES = code()
 FILENAMES = {};
 nyswaner_garfinkel_2008.pmid = 18202368;
@@ -8,7 +7,7 @@ phenotypes = {'increased Ty1 transposon mobility'};
 treatments = {''};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Matalphakos counted.xlsx', 'Sheet2');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Matalphakos counted.xlsx', 'Sheet2');
 tested_orfs = tested.raw(6:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs));
@@ -23,7 +22,7 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/genetics.107.082602-9.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/genetics.107.082602-9.xlsx', 'Sheet1');
 hits_orfs = data.raw(:,1);
 
 inds = find(cellfun(@isempty, hits_orfs));

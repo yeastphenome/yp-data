@@ -1,5 +1,4 @@
 %% Botet~Santos, 2007
-% DATA = botet_santos_2007
 function FILENAMES = code()
 FILENAMES = {};
 % NOTES = data unnormalized; potentially batch, row/col normalization needed?
@@ -12,7 +11,7 @@ botet_santos_2007.pmid = 17873082;
 phenotypes = {'Growth, OD'};
 treatments = {'SMM, 77 h'; 'SMM, 120 h'; 'Sulfanilamide, 0.1 mg/ml, 77 h';'Sulfanilamide, 0.1 mg/ml, 120 h'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/1ScreenSULFA&MS&MS+PABA.xlsx', 'DATA');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/1ScreenSULFA&MS&MS+PABA.xlsx', 'DATA');
 
 % Get indices of the data columns
 ind_data = 15:18;
@@ -59,14 +58,14 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    if isempty(datasets(i).reporter)
-        datasets_names{i,2} = '';
-    else
-        datasets_names{i,2} = datasets(i).reporter;
-    end
-    datasets_names{i,3} = datasets(i).conditionset;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+if isempty(datasets(i).reporter)
+datasets_names{i,2} = '';
+else
+datasets_names{i,2} = datasets(i).reporter;
+end
+datasets_names{i,3} = datasets(i).conditionset;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

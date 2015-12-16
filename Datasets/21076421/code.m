@@ -1,5 +1,4 @@
 %% Baryshnikova~Myers, 2010
-% DATA = baryshnikova_myers_2010
 function FILENAMES = code()
 FILENAMES = {};
 baryshnikova_myers_2010.pmid = 21076421;
@@ -8,7 +7,7 @@ phenotypes = {'growth'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/Supplementary_data_1_SMF_standard_100209.xlsx');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Supplementary_data_1_SMF_standard_100209.xlsx');
 
 hits_orfs = data.raw(:,1);
 hits_data = data.raw(:,2);

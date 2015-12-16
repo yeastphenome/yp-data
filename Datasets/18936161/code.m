@@ -1,5 +1,4 @@
 %% Mir~Cashikar, 2009
-% DATA = mir_cashikar_2009
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth [MIC]'};
 treatments = {'heat stress (temperature [50ºC], duration [30 min])'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Mat_a.xlsx', 'mat_a_041902');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a.xlsx', 'mat_a_041902');
 tested_orfs = tested.raw(3:end,2);
 
 
@@ -21,7 +20,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-fid = fopen('raw_data/hits_orfs_scores.txt');
+fid = fopen('./raw_data/hits_orfs_scores.txt');
 hits = textscan(fid,'%s %d');
 hits_orfs = upper(hits{1});
 hits_scores = -hits{2};

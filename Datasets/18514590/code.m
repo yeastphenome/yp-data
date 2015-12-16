@@ -1,5 +1,4 @@
 %% Serero~Boiteux, 2008
-% DATA = serero_boiteux_2008
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -43,29 +42,29 @@ treatments = {'CdCl2 [100 uM]'};
 % Covert all DOC files into TXT files by running: sudo textutil -convert txt */*.DOC
 % Read the TXT files that end with "1"
 
-home_dir = 'raw_data/Deletion_mutants_list/';
+home_dir = './raw_data/Deletion_mutants_list/';
 folders = dir(home_dir);
 folders_names = {folders.name};
 folders_names(strncmp('.', folders_names,1)) = [];
 
 tested_orfs = [];
 for i = 1 : length(folders_names)
-    % Find all TXT files in the folder
-    txt_files = dir([home_dir folders_names{i} '/*.txt']);
-    txt_files_names = {txt_files.name};
-    rtf_files = dir([home_dir folders_names{i} '/*.RTF']);
-    txt_files_names = [txt_files_names; {rtf_files.name}];
-    
-    for j = 1 : length(txt_files_names)
-        % If filenames ends in "~1" or "a", load the list
-        t = regexp(txt_files_names{j},'\.','split');
-        if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
-            [FILENAMES{end+1}, tst] = dataread('textread',[home_dir folders_names{i} '/' txt_files_names{j}], '%s');
-            inds = find(strncmp('Y', tst,1));
-            tested_orfs = [tested_orfs; tst(inds)];
-        end
-    end
-    i;
+% Find all TXT files in the folder
+txt_files = dir([home_dir folders_names{i} '/*.txt']);
+txt_files_names = {txt_files.name};
+rtf_files = dir([home_dir folders_names{i} '/*.RTF']);
+txt_files_names = [txt_files_names; {rtf_files.name}];
+
+for j = 1 : length(txt_files_names)
+% If filenames ends in "~1" or "a", load the list
+t = regexp(txt_files_names{j},'\.','split');
+if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
+[FILENAMES{end+1}, tst] = dataread('textread',[home_dir folders_names{i} '/' txt_files_names{j}], '%s');
+inds = find(strncmp('Y', tst,1));
+tested_orfs = [tested_orfs; tst(inds)];
+end
+end
+i;
 end
 
 
@@ -78,7 +77,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(tested_orfs);
 
 % Load data
-[FILENAMES{end+1}, DATA] = dataread('textread','raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
+[FILENAMES{end+1}, DATA] = dataread('textread','./raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
 
 hits_genenames = DATA{1};
 hits_scores_txt = DATA{2};

@@ -1,5 +1,4 @@
 %% Kim~Cunningham, 2012
-% DATA = kim_cunningham_2012
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -8,7 +7,7 @@ kim_cunningham_2012.pmid = 22511765;
 phenotypes = {'Cell death, frequency of dead cells'};
 treatments = {'tunicamycin, 2.5 ug/ml (Z-score ln)'; 'tunicamycin + FK506, 2.5 ug/ml + 1 ug/ml (Z-score ln)'; 'dithiothreitol, 4 mM (Z-score ln)'; 'dithiothreitol, 4 mM, + FK506, 1 ug/ml (Z-score ln)'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/jbc.M112.363390-1.xlsx', 'sup table 1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/jbc.M112.363390-1.xlsx', 'sup table 1');
 
 % Get indices of the data columns
 ind_data = [14:15 17:18];
@@ -49,14 +48,14 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    if isempty(datasets(i).reporter)
-        datasets_names{i,2} = '';
-    else
-        datasets_names{i,2} = datasets(i).reporter;
-    end
-    datasets_names{i,3} = datasets(i).conditionset;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+if isempty(datasets(i).reporter)
+datasets_names{i,2} = '';
+else
+datasets_names{i,2} = datasets(i).reporter;
+end
+datasets_names{i,3} = datasets(i).conditionset;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

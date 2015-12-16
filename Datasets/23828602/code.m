@@ -1,5 +1,4 @@
 %% Ding~Bakalinsky, 2013
-% DATA = ding_bakalinsky_2013
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth [pooled CFU]'};
 treatments = {'acetic acid [122.5 mM]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);

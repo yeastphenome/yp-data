@@ -1,5 +1,4 @@
 %% Dos Santos~Sa-Correia, 2011
-% DATA = dos_santos_sa_correia_2011
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -9,7 +8,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'quinine [1.5-1.7 g/L]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','/Users/brianna/Documents/Datasets/Phenotypes/2011_Dos Santos~Sa-Correia/List of strains tested.xlsx', 'Tabelle2');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/List of strains tested.xlsx', 'Tabelle2');
 tested_orfs = tested.raw(2:end,1);
 % slow_growers = tested.raw(2:end,2);
 % inds = find(~cellfun(@isnumeric, slow_growers));
@@ -23,7 +22,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames_HS] = dataread('textread','/Users/brianna/Documents/Datasets/Phenotypes/2011_Dos Santos~Sa-Correia/hits_genenames_hs.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_HS] = dataread('textread','./raw_data/hits_genenames_hs.txt', '%s');
 
 hits_genenames_HS = cellfun(@strtrim, hits_genenames_HS,'UniformOutput',0);
 hits_orfs_HS = genename2orf(hits_genenames_HS,'noannot');
@@ -31,7 +30,7 @@ hits_scores_HS = zeros(length(hits_orfs_HS),1)-2;
 
 length(unique(upper(hits_orfs_HS)));
 
-[FILENAMES{end+1}, hits_genenames_S] = dataread('textread','/Users/brianna/Documents/Datasets/Phenotypes/2011_Dos Santos~Sa-Correia/hits_genenames_s.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_S] = dataread('textread','./raw_data/hits_genenames_s.txt', '%s');
 
 hits_genenames_S = cellfun(@strtrim, hits_genenames_S,'UniformOutput',0);
 hits_orfs_S = genename2orf(hits_genenames_S,'noannot');
@@ -39,7 +38,7 @@ hits_scores_S = zeros(length(hits_orfs_S),1)-1;
 
 length(unique(upper(hits_orfs_S)));
 
-[FILENAMES{end+1}, hits_genenames_R] = dataread('textread','/Users/brianna/Documents/Datasets/Phenotypes/2011_Dos Santos~Sa-Correia/hits_genenames_r.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_R] = dataread('textread','./raw_data/hits_genenames_r.txt', '%s');
 
 hits_genenames_R = cellfun(@strtrim, hits_genenames_R,'UniformOutput',0);
 hits_orfs_R = genename2orf(hits_genenames_R,'noannot');

@@ -1,5 +1,4 @@
 %% Parsons~Boone, 2004
-% DATA = parsons_boone_2004
 function FILENAMES = code()
 FILENAMES = {};
 % TESTED = not available
@@ -8,7 +7,7 @@ parsons_boone_2004.source = {'http://www.nature.com/nbt/journal/v22/n1/extref/nb
 parsons_boone_2004.downloaddate = {'2014-02-20'};
 parsons_boone_2004.pmid = 14661025;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/nbt919-S2.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/nbt919-S2.xlsx', 'Sheet1');
 
 inds = find(strcmp('ORF', data.raw(:,1)));
 

@@ -1,5 +1,4 @@
 %% Dunn~Jensen, 2006
-% DATA = dunn_jensen_2006
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -11,7 +10,7 @@ dunn_jensen_2006.pmid = 16267274;
 phenotypes = {'Growth, log2 hybridization ratio'};
 treatments = {'EtBr, 25 ug/ml'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/Supp_Table3.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Supp_Table3.xlsx', 'Sheet1');
 
 ind_orf = strmatch('Systemic name', data.raw(12,:));
 data2.orfs = upper(data.raw(14:end, ind_orf));
@@ -53,10 +52,10 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).shortname;
-    datasets_names{i,3} = datasets(i).condition_dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).shortname;
+datasets_names{i,3} = datasets(i).condition_dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

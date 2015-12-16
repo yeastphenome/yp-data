@@ -1,5 +1,4 @@
 %% Desmoucelles~Daignan-Fornier, 2002
-% DATA = desmoucelles_daignan_fornier_2002
 function FILENAMES = code()
 FILENAMES = {};
 % NOTE = 1) typo in data: YKR065W should be YKR065C 2) YCR002C is in the
@@ -9,8 +8,8 @@ desmoucelles_daignan_fornier_2002.source = {'manuscript PDF'};
 desmoucelles_daignan_fornier_2002.downloaddate = {'2014-02-10'};
 desmoucelles_daignan_fornier_2002.pmid = 12016207;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','Datasets/Phenotypes/2002_Desmoucelles~Daignan-Fornier/desmoucelles_daignan_fornier_2002_data.xlsx', 'data.txt');
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','Datasets/Phenotypes/2002_Desmoucelles~Daignan-Fornier/euroscarf list.xlsx', '1_1.xlwb');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/desmoucelles_daignan_fornier_2002_data.xlsx', 'data.txt');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/euroscarf list.xlsx', '1_1.xlwb');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, tested.raw(:,2)));
@@ -34,8 +33,8 @@ data.raw(inds,1) = {'YKR065C'};
 % Replace string scores with numbers
 t = data.raw(1:end,2);
 for i = 1 : length(phenotype_severity)
-    inds = find(strcmp(phenotype_severity{i}, t));
-    t(inds) = {phenotype_severity_num(i)};
+inds = find(strcmp(phenotype_severity{i}, t));
+t(inds) = {phenotype_severity_num(i)};
 end
 t(cellfun(@isnan,t))={0};
 

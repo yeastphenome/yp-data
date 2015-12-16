@@ -1,5 +1,4 @@
 %% Breslow~Weissman, 2008
-% DATA = breslow_weissman_2008
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -10,7 +9,7 @@ breslow_weissman_2008.pmid = 18622397;
 phenotypes = {'Growth, flow cytometry'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/nmeth.1234-S5.xlsx', 'Deletion growth rates');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/nmeth.1234-S5.xlsx', 'Deletion growth rates');
 
 % Get indices of the data columns
 ind_data = find(strcmp('Median Growth Rate', data.raw(1,:)));
@@ -51,14 +50,14 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    if isempty(datasets(i).reporter)
-        datasets_names{i,2} = '';
-    else
-        datasets_names{i,2} = datasets(i).reporter;
-    end
-    datasets_names{i,3} = datasets(i).conditionset;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+if isempty(datasets(i).reporter)
+datasets_names{i,2} = '';
+else
+datasets_names{i,2} = datasets(i).reporter;
+end
+datasets_names{i,3} = datasets(i).conditionset;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

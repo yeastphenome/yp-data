@@ -1,5 +1,4 @@
 %% Stepchenkova~Pavlov, 2005
-% DATA = stepchenkova_pavlov_2005
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -7,7 +6,7 @@ stepchenkova_pavlov_2005.source = {'main PDF'};
 stepchenkova_pavlov_2005.downloaddate = {'2014-03-10'};
 stepchenkova_pavlov_2005.pmid = 15932646;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/stepchenkova_pavlov_2005_hits.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/stepchenkova_pavlov_2005_hits.xlsx', 'Sheet1');
 
 hits_genenames = data.raw(:,1);
 inds = find(cellfun(@isnumeric, hits_genenames));
@@ -32,7 +31,7 @@ treatments = {'HAP';'HAP'};
 
 
 % Load tested genes
-[FILENAMES{end+1}, tested_orfs] = dataread('textread','raw_data/mat_alpha_041902.txt', '%*s %s %*s %*s %*s %*s %*s %*s', 'delimiter', '\t');
+[FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/mat_alpha_041902.txt', '%*s %s %*s %*s %*s %*s %*s %*s', 'delimiter', '\t');
 
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];

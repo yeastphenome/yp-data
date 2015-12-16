@@ -1,5 +1,4 @@
 %% Smith~Bakalinsky, 2013
-% DATA = smith_bakalinsky_2013
 function FILENAMES = code()
 FILENAMES = {};
 smith_bakalinsky_2013.pmid = 23144132;
@@ -8,7 +7,7 @@ phenotypes = {'growth [CFU]'};
 treatments = {'AuNP [10-100 ug/ml]'};
 
 % Load tested (Same as Ding~Bakalinksy, 2013)
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);
@@ -19,7 +18,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load resistant
-fid = fopen('raw_data/hits_orfs.txt');
+fid = fopen('./raw_data/hits_orfs.txt');
 hits = textscan(fid,'%s');
 hits_orfs = hits{1};
 fclose(fid);

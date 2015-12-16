@@ -1,5 +1,4 @@
 %% Alamgir~Golshani, 2010
-% DATA = alamgir_golshani_2010
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -10,7 +9,7 @@ alamgir_golshani_2010.pmid = 20691087;
 phenotypes = {'Growth, colony size'};
 treatments = {'3-AT, 22 mg/ml';'cycloheximide, 45 ng/ml';'streptomycin, 40 mg/ml';'neomycin, 5.5 mg/ml'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/1472-6769-10-6-s1.xlsx', 'Raw genome-wide data');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/1472-6769-10-6-s1.xlsx', 'Raw genome-wide data');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,1)));
@@ -55,10 +54,10 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).shortname;
-    datasets_names{i,3} = datasets(i).condition_dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).shortname;
+datasets_names{i,3} = datasets(i).condition_dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

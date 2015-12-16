@@ -1,5 +1,4 @@
 %% Huang~O'Shea, 2005
-% DATA = huang_oshea_2005
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -13,7 +12,7 @@ rows = 'ABCDEFGH';
 cols = 1:12;
 timepoints = [0:120:360];
 
-[FILENAMES{end+1}, map.raw] = dataread('xlsread','raw_data/MATa Collection.xlsx', 'MATa Collection.xls');
+[FILENAMES{end+1}, map.raw] = dataread('xlsread','./raw_data/MATa Collection.xlsx', 'MATa Collection.xls');
 
 map.orf = map.raw(5:end,2);
 map.plate = cell2mat(map.raw(5:end, 5));
@@ -27,7 +26,7 @@ map.row(inds) = [];
 map.col(inds) = [];
 
 for i = 1 : length(map.row)
-    map.row{i} = findstr(map.row{i}, rows);
+map.row{i} = findstr(map.row{i}, rows);
 end
 
 map.row = cell2mat(map.row);
@@ -40,18 +39,18 @@ map.orf = cellfun(@strtrim, map.orf,'UniformOutput',0);
 inds = ~strncmp('Y', map.orf,1);
 
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/Initial Screen Data.xls', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Initial Screen Data.xls', 'Sheet1');
 
 [all_cols, all_rows] = meshgrid(1:12,1:8);
 all_idx = sub2ind([8 12], all_rows, all_cols)';
 [~,ix] = sort(all_idx(:));
 
 for i = 1 : length(plates)
-    inds = find(map.plate == plates(i));
-    for t = 1 : length(timepoints)
-        this_data = cell2mat(data.raw(6+(i-1)*7+(t-1),2:end));
-        map.data(inds,t) = this_data(ix(map.idx(inds)));
-    end
+inds = find(map.plate == plates(i));
+for t = 1 : length(timepoints)
+this_data = cell2mat(data.raw(6+(i-1)*7+(t-1),2:end));
+map.data(inds,t) = this_data(ix(map.idx(inds)));
+end
 end
 
 map.data_avg = nanmean(map.data,2);

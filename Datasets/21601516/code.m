@@ -1,5 +1,4 @@
 %% Suzuki~Yoshida, 2011
-% DATA = suzuki_yoshida_2011
 function FILENAMES = code()
 FILENAMES = {};
 suzuki_yoshida_2011.pmid = 21601516;
@@ -8,7 +7,7 @@ phenotypes = {'glutathione abundance'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/hits_data.xlsx');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/hits_data.xlsx');
 
 hits_genes = data.raw(1:end,1);
 hits_data = cell2mat(data.raw(1:end,2));
@@ -25,7 +24,7 @@ hits_orfs = t;
 hits_data = t2;
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/YKOmatalpha_GSH_list070508.xlsx');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/YKOmatalpha_GSH_list070508.xlsx');
 tested_orfs = tested.raw(3:end,3);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));

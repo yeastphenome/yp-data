@@ -1,5 +1,4 @@
 %% Fillingham~Andrews, 2009
-% DATA = fillingham_andrews_2009
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -11,7 +10,7 @@ fillingham_andrews_2009.pmid = 19683497;
 phenotypes = {'HTA1 expression, z-score of log2 GFP:RFP'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/mmc3.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/mmc3.xlsx', 'Sheet1');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,1)));
@@ -49,10 +48,10 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).shortname;
-    datasets_names{i,3} = datasets(i).condition_dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).shortname;
+datasets_names{i,3} = datasets(i).condition_dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

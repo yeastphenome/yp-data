@@ -1,5 +1,4 @@
 %% Bleackley~MacGillivray, 2011
-% DATA = bleackley_macgillivray_2011
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -12,7 +11,7 @@ bleackley_macgillivray_2011.pmid = 21212869;
 phenotypes = {'Growth, colony size'};
 treatments = {'Iron, Fe(NH4)2(SO4)2 (10 mM)';'Copper, CuCl2 (7 mM)';'Manganese, MnCl2 (4 mM)';'Nickel, NiCl2 (3 mM)';'Zinc, ZnCl2 (7 mM)'; 'Cobalt, CoCl2 (2.5 mM)'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/metallomicsbleackley raw data.xls', 'rawdata');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/metallomicsbleackley raw data.xls', 'rawdata');
 
 % Get indices of the data columns
 ind_data = 3:2:13;
@@ -54,10 +53,10 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    datasets_names{i,2} = datasets(i).short_name;
-    datasets_names{i,3} = datasets(i).dose;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+datasets_names{i,2} = datasets(i).short_name;
+datasets_names{i,3} = datasets(i).dose;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

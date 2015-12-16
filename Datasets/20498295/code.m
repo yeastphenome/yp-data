@@ -1,5 +1,4 @@
 %% Dakshinamurthy~Garfinkel, 2010
-% DATA = dakshinamurthy_garfinkel_2010
 function FILENAMES = code()
 FILENAMES = {};
 dakshinamurthy_garfinkel_2010.pmid = 20498295;
@@ -7,12 +6,12 @@ dakshinamurthy_garfinkel_2010.pmid = 20498295;
 phenotypes = {'decreased Ty1 transposon mobility'};
 treatments = {''};
 
-load Datasets/Phenotypes_standard/18202368/nyswaner_garfinkel_2008;
+load /Datasets/18202368/nyswaner_garfinkel_2008;
 dakshinamurthy_garfinkel_2010.orfs = nyswaner_garfinkel_2008.orfs;      % Same screen, positive & negative phenotypes analyzed separately
 dakshinamurthy_garfinkel_2010.data = zeros(length(dakshinamurthy_garfinkel_2010.orfs),1);
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/TableS1-2.xlsx', 'Sheet2');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TableS1-2.xlsx', 'Sheet2');
 hits_orfs = data.raw(:,2);
 hits_data = data.raw(:,3);
 

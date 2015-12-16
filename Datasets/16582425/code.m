@@ -1,5 +1,4 @@
 %% Hancock~Lopes, 2006
-% DATA = hancock_lopes_2006
 function FILENAMES = code()
 FILENAMES = {};
 hancock_lopes_2006.pmid = 16582425;
@@ -8,7 +7,7 @@ phenotypes = {'Opi-'};
 treatments = {''};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
 tested_orfs = tested.raw(4:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);
@@ -20,7 +19,6 @@ inds = find(cellfun(@isempty, regexpi(tested_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC]
 tested_orfs(inds) = [];
 
 tested_orfs = unique(upper(tested_orfs));
-
 
 % Load data
 fid = fopen('raw_data/hits_genenames.txt');

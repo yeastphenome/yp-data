@@ -1,5 +1,4 @@
 %% Kanki~Klionsky, 2009
-% DATA = kanki_klionsky_2009
 function FILENAMES = code()
 FILENAMES = {};
 kanki_klionsky_2009.pmid = 19793921;
@@ -8,7 +7,7 @@ phenotypes = {'mitophagy'};
 treatments = {'YPL'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/TableS2-2.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TableS2-2.xlsx', 'Sheet1');
 hits_orfs = data.raw(4:end,1);
 hits_scores = data.raw(4:end,2);
 
@@ -33,23 +32,23 @@ hits_scores = cell2mat(hits_scores);
 hits_orfs_u = unique(hits_orfs);
 hits_scores_u = zeros(length(hits_orfs_u),1)+NaN;
 for i = 1 : length(hits_orfs_u)
-    inds = find(strcmp(hits_orfs_u{i}, hits_orfs));
-    if length(inds) == 1
-        hits_scores_u(i) = hits_scores(inds);
-    elseif length(inds) == 2
-        tmp = prod(hits_scores(inds));
-        if isnan(tmp) || tmp < 0    % If at least one of the values is NaN or the values are of opposite sign, set them to NaN
-            hits_scores_u(i) = NaN;
-        else
-            hits_scores_u(i) = hits_scores(inds(1));    % If the values are of the same sign, pick the first number (they are the same)
-        end
-    else
-        fprintf('%s\t', hits_orfs_u{i});
-        for j = 1 : length(inds)
-            fprintf('%d,', hits_scores(inds(j)));
-        end
-        fprintf('\n');
-    end
+inds = find(strcmp(hits_orfs_u{i}, hits_orfs));
+if length(inds) == 1
+hits_scores_u(i) = hits_scores(inds);
+elseif length(inds) == 2
+tmp = prod(hits_scores(inds));
+if isnan(tmp) || tmp < 0    % If at least one of the values is NaN or the values are of opposite sign, set them to NaN
+hits_scores_u(i) = NaN;
+else
+hits_scores_u(i) = hits_scores(inds(1));    % If the values are of the same sign, pick the first number (they are the same)
+end
+else
+fprintf('%s\t', hits_orfs_u{i});
+for j = 1 : length(inds)
+fprintf('%d,', hits_scores(inds(j)));
+end
+fprintf('\n');
+end
 end
 
 kanki_klionsky_2009.orfs = hits_orfs_u;

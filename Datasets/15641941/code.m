@@ -1,5 +1,4 @@
 %% Outten~Culotta, 2005
-% DATA = outten_culotta_2005
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -7,7 +6,7 @@ outten_culotta_2005.source = {'http://www.biochemj.org/bj/388/bj3880093add.pdf'}
 outten_culotta_2005.downloaddate = {'2014-03-10'};
 outten_culotta_2005.pmid = 15641941;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/outten_culotta_2005.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/outten_culotta_2005.xlsx', 'Sheet1');
 
 hits_orfs = data.raw(:,1);
 
@@ -27,7 +26,7 @@ treatments = {'hyperoxia'};
 
 
 % Load tested genes
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/Yeast Knockout -BY4741.xlsx', 'mat_a_060701.txt');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Yeast Knockout -BY4741.xlsx', 'mat_a_060701.txt');
 
 tested_orfs = data.raw(2:end,2);
 

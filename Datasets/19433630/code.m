@@ -1,5 +1,4 @@
 %% Copic~Miller, 2009
-% DATA = copic_miller_2009
 function FILENAMES = code()
 FILENAMES = {};
 copic_miller_2009.pmid = 19433630;
@@ -8,7 +7,7 @@ phenotypes = {'Kar2 secretion'};
 treatments = {''};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/mat_alpha_obs_v1.0.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/mat_alpha_obs_v1.0.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,1);
 
 inds = cellfun(@isnumeric, tested_orfs);
@@ -19,7 +18,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/TableS1.xlsx', 'TABLE S1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TableS1.xlsx', 'TABLE S1');
 hits_orfs = data.raw(5:end,1);
 hits_notes = data.raw(5:end,3);
 hits_scores = data.raw(5:end,6);

@@ -1,5 +1,4 @@
 %% Galvan Marquez~Smith, 2013
-% DATA = galvan_marquez_smith_2013
 function FILENAMES = code()
 FILENAMES = {};
 
@@ -11,7 +10,7 @@ galvan_marquez_smith_2013.pmid = 23624539;
 phenotypes = {'Growth, colony size'};
 treatments = {'Chitosan'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','raw_data/Chitosan Effect on GDA (raw data). Exp. 1 to 3. Imelda Galvan, 2013-1.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Chitosan Effect on GDA (raw data). Exp. 1 to 3. Imelda Galvan, 2013-1.xlsx', 'Sheet1');
 
 % Get indices of the data columns
 ind_data = find(strcmp('Ratio', data.raw(1,:)));
@@ -59,14 +58,14 @@ datasets = get_datasets_for_paper(dt);
 datasets_ids = zeros(length(datasets),1);
 datasets_names = cell(length(datasets),3);
 for i = 1 : length(datasets)
-    datasets_ids(i,1) = datasets(i).id;
-    datasets_names{i,1} = datasets(i).name;
-    if isempty(datasets(i).reporter)
-        datasets_names{i,2} = '';
-    else
-        datasets_names{i,2} = datasets(i).reporter;
-    end
-    datasets_names{i,3} = datasets(i).conditionset;
+datasets_ids(i,1) = datasets(i).id;
+datasets_names{i,1} = datasets(i).name;
+if isempty(datasets(i).reporter)
+datasets_names{i,2} = '';
+else
+datasets_names{i,2} = datasets(i).reporter;
+end
+datasets_names{i,3} = datasets(i).conditionset;
 end
 
 [~,database_ix] = sortrows(datasets_names,[1 2 3]);

@@ -1,5 +1,4 @@
 %% Lam~Conibear, 2006
-% DATA = lam_conibear_2006
 function FILENAMES = code()
 FILENAMES = {};
 % TESTED = not available
@@ -9,7 +8,7 @@ phenotypes = {'polytopic membrane protein trafficking'};
 treatments = {''};
 
 % Load data
-fid = fopen('raw_data/hits_genes_data.txt');
+fid = fopen('./raw_data/hits_genes_data.txt');
 C = textscan(fid, '%s\t%.3f\n');
 fclose(fid);
 

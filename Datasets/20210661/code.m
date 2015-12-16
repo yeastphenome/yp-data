@@ -1,5 +1,4 @@
 %% Teixeira~Sa-Correia, 2010
-% DATA = teixeira_sa_correia_2010
 function FILENAMES = code()
 FILENAMES = {};
 teixeira_sa_correia_2010.pmid = 20210661;
@@ -8,7 +7,7 @@ phenotypes = {'growth'};
 treatments = {'Glu, 30%'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','/Users/brianna/Documents/Datasets/Phenotypes/2010_Teixeira~Sa-Correia/List of strains tested.xlsx');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/List of strains tested.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -20,7 +19,7 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = dataread('textread','/Users/brianna/Documents/Datasets/Phenotypes/2010_Teixeira~Sa-Correia/hits_genenames.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
 inds = find(cellfun(@isempty, hits_genenames) | cellfun(@isnumeric, hits_genenames));
 hits_genenames(inds) = [];
 hits_genenames = strtrim(hits_genenames);

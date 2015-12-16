@@ -1,5 +1,4 @@
 %% Auesukaree~Harashima, 2009
-% DATA = auesukaree_harashima_2009
 function FILENAMES = code()
 FILENAMES = {};
 auesukaree_harashima_2009.pmid = 19638689;
@@ -8,7 +7,7 @@ phenotypes = {'growth'};
 treatments = {'EtOH';'MeOH';'propanol';'NaCl';'H2O2';'37C'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','raw_data/Mat alpha_KOset list.xlsx');
+[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat alpha_KOset list.xlsx');
 tested_orfs = tested.raw(4:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -20,12 +19,12 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, data_hits{1}] = dataread('textread','raw_data/ethanol_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{2}] = dataread('textread','raw_data/methanol_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{3}] = dataread('textread','raw_data/propanol_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{4}] = dataread('textread','raw_data/nacl_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{5}] = dataread('textread','raw_data/h2o2_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{6}] = dataread('textread','raw_data/heat_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{1}] = dataread('textread','./raw_data/ethanol_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{2}] = dataread('textread','./raw_data/methanol_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{3}] = dataread('textread','./raw_data/propanol_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{4}] = dataread('textread','./raw_data/nacl_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{5}] = dataread('textread','./raw_data/h2o2_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{6}] = dataread('textread','./raw_data/heat_sensitivity_hits.txt', '%s');
 
 data_hits_orfs = cell(size(data_hits));
 
@@ -87,8 +86,8 @@ auesukaree_harashima_2009.orfs = tested_orfs;
 auesukaree_harashima_2009.data = zeros(length(tested_orfs),length(treatments));
 
 for i = 1 : length(treatments)
-    [~,ind1,ind2] = intersect(data_hits_orfs{i}, tested_orfs);
-    auesukaree_harashima_2009.data(ind2,i) = -1;
+[~,ind1,ind2] = intersect(data_hits_orfs{i}, tested_orfs);
+auesukaree_harashima_2009.data(ind2,i) = -1;
 end
 
 auesukaree_harashima_2009.ph = strcat(phenotypes, '; ', treatments);
