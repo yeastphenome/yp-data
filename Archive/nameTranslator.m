@@ -4,8 +4,7 @@
 
 function newNames = nameTranslator(typehave, typeneed, oldNames)
 
-toSystematic = load('toSystematic.mat');
-toSystematic = toSystematic.toSystematic;
+load('toSystematic.mat');
 
 switch upper(typehave)
     case 'DBID'

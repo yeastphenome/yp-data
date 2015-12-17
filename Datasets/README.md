@@ -4,11 +4,11 @@ YeastPhenome.org Dataset README File
 The Basics
 ----------
 
-The current folder contains:
+This folder contains:
 
-1. the raw data corresponding to this publication (`/raw_data/*`): usually, text or Excel files;
+1. the raw data corresponding to this publication (`/raw_data/*`): in most cases, text or Excel files;
 2. the filtered, edited & re-formatted data (`*.mat`): Matlab structure;
-3. the code used to transform #1 to #2 (`code.m`): Matlab function.
+3. the code used to transform #1 into #2 (`code.m`): Matlab function.
 
 Running `code.m` will regenerate the `*.mat` file from the `raw_data/` and output the list of files that were used in the process:
 
@@ -25,7 +25,7 @@ The raw data files are used as input to the `code.m` function which performs a n
 The list of checks includes:
 
 * naming conversions (common names -> systematic ORF names)
-* naming errors (typos in the ORF names)
+* naming errors (typos, spaces or capitalization errors in the ORF names)
 * unexpected values ("N/A", "blank", "empty", etc. -> "NaN")
 
 The list of conversions includes:
