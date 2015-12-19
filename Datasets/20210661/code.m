@@ -1,5 +1,8 @@
 %% Teixeira~Sa-Correia, 2010
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 teixeira_sa_correia_2010.pmid = 20210661;
 
@@ -24,19 +27,12 @@ inds = find(cellfun(@isempty, hits_genenames) | cellfun(@isnumeric, hits_genenam
 hits_genenames(inds) = [];
 hits_genenames = strtrim(hits_genenames);
 
-hits_orfs = genename2orf(hits_genenames);
-hits_orfs(strcmp('opi9', hits_orfs)) = {'YLR338W'};
-hits_orfs(strcmp('ppa1', hits_orfs)) = [];  % ambiguous genename
-hits_orfs(strcmp('soy1', hits_orfs)) = {'YBR194W'};
-
-hits_orfs = upper(hits_orfs);
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
+hits_orfs = translate(hits_genenames);
+hits_orfs(~isorf(hits_orfs)) = [];
 
 hits_orfs = unique(hits_orfs);
 
-
-[missing, ix] = setdiff(hits_orfs, tested_orfs);
+[missing, ix] = setdiff(hits_orfs, tested_orfs2);
 hits_orfs(strcmp('YML009W-B',hits_orfs)) = {'YML010W-A'};
 
 teixeira_sa_correia_2010.orfs = tested_orfs;

@@ -1,5 +1,8 @@
 %% Mira~Sa-Correia, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 mira_sa_correia_2009.pmid = 19220866;
 
@@ -13,40 +16,27 @@ tested_orfs = tested.raw(2:end,1);
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(strtrim(upper(tested_orfs)));
-
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 [FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
 [FILENAMES{end+1}, hits_genenames_moderate] = dataread('textread','./raw_data/hits_genenames_moderate.txt', '%s');
 
-hits_genenames = strtrim(lower(hits_genenames));
-hits_genenames_moderate = strtrim(lower(hits_genenames_moderate));
+hits_genenames = cleanGenename(hits_genenames);
+hits_genenames_moderate = cleanGenename(hits_genenames_moderate);
 
 hits_genenames_strong = setdiff(hits_genenames, hits_genenames_moderate);
 
 
-hits_orfs_moderate = genename2orf(hits_genenames_moderate);
-hits_orfs_moderate(strcmp('set7', hits_orfs_moderate)) = {'YDR257C'};
-hits_orfs_moderate = unique(upper(hits_orfs_moderate));
+hits_orfs_moderate = translate(hits_genenames_moderate);
+hits_orfs_moderate = unique(hits_orfs_moderate);
 
-hits_orfs_strong = genename2orf(hits_genenames_strong);
-hits_orfs_strong(strcmp('mrp16', hits_orfs_strong)) = [];    % typo? genename doesn't exist
-hits_orfs_strong(strcmp('rhr2', hits_orfs_strong)) = {'YIL053W'};
-hits_orfs_strong(strcmp('tfp1', hits_orfs_strong)) = {'YDL185W'};
-hits_orfs_strong(strcmp('tfp3', hits_orfs_strong)) = {'YPL234C'};
-hits_orfs_strong = unique(upper(hits_orfs_strong));
-
-inds = find(~strncmp('Y', hits_orfs_moderate,1));
-hits_orfs_moderate(inds) = [];
-
-inds = find(~strncmp('Y', hits_orfs_strong,1));
-hits_orfs_strong(inds) = [];
+[hits_orfs_strong, translated] = translate(hits_genenames_strong);
+hits_orfs_strong(~translated) = [];
+hits_orfs_strong = unique(hits_orfs_strong);
 
 [missing, ix] = setdiff(hits_orfs_strong, tested_orfs);
-hits_orfs_strong(ix) = [];      % 3 ORFs eliminated from the hit list
+hits_orfs_strong(ix) = [];      % 1 ORF eliminated from the hit list
 
 [missing, ix] = setdiff(hits_orfs_moderate, tested_orfs);
 

@@ -1,5 +1,8 @@
 %% Stepchenkova~Pavlov, 2005
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 stepchenkova_pavlov_2005.source = {'main PDF'};
@@ -13,10 +16,7 @@ inds = find(cellfun(@isnumeric, hits_genenames));
 hits_genenames(inds) = [];
 data.raw(inds,:) = [];
 
-hits_orfs = genename2orf(hits_genenames,'noannot');
-
-% Eliminate white spaces before/after ORF
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
+hits_orfs = translate(hits_genenames);
 
 hits_scores = cell2mat(data.raw(:,2:3));
 
@@ -36,13 +36,8 @@ treatments = {'HAP';'HAP'};
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-
-% Eliminate anything that doesn't look like an ORF
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-
-tested_orfs = unique(upper(tested_orfs));
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs(~isorf(tested_orfs)) = [];
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);

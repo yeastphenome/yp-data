@@ -1,5 +1,8 @@
 %% Dos Santos~Sa-Correia, 2011
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 dos_santos_sa_correia_2011.pmid = 21960436;
@@ -16,35 +19,39 @@ tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-tested_orfs = unique(upper(tested_orfs));
+
+tested_orfs = upper(regexprep(tested_orfs, '\W',''));
+inds = find(~isorf(tested_orfs));   % Fix the missing "-" in the ORF names
+for i = 1 : length(inds)
+    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
+end
+
+tested_orfs = unique(tested_orfs);
 
 % Load data
 [FILENAMES{end+1}, hits_genenames_HS] = dataread('textread','./raw_data/hits_genenames_hs.txt', '%s');
 
-hits_genenames_HS = cellfun(@strtrim, hits_genenames_HS,'UniformOutput',0);
-hits_orfs_HS = genename2orf(hits_genenames_HS,'noannot');
+hits_genenames_HS = regexprep(hits_genenames_HS,'\W','');
+hits_orfs_HS = translate(hits_genenames_HS);
 hits_scores_HS = zeros(length(hits_orfs_HS),1)-2;
-
-length(unique(upper(hits_orfs_HS)));
 
 [FILENAMES{end+1}, hits_genenames_S] = dataread('textread','./raw_data/hits_genenames_s.txt', '%s');
 
-hits_genenames_S = cellfun(@strtrim, hits_genenames_S,'UniformOutput',0);
-hits_orfs_S = genename2orf(hits_genenames_S,'noannot');
+hits_genenames_S = regexprep(hits_genenames_S,'\W','');
+hits_orfs_S = translate(hits_genenames_S);
 hits_scores_S = zeros(length(hits_orfs_S),1)-1;
-
-length(unique(upper(hits_orfs_S)));
 
 [FILENAMES{end+1}, hits_genenames_R] = dataread('textread','./raw_data/hits_genenames_r.txt', '%s');
 
-hits_genenames_R = cellfun(@strtrim, hits_genenames_R,'UniformOutput',0);
-hits_orfs_R = genename2orf(hits_genenames_R,'noannot');
-hits_scores_R = zeros(length(hits_orfs_R),1)+1;
+hits_genenames_R = upper(regexprep(hits_genenames_R,'\W',''));
+hits_genenames_R(ismember(hits_genenames_R,{'YDL159WA'})) = {'YDL159W-A'};
+hits_genenames_R(ismember(hits_genenames_R,{'YDR194WA'})) = {'YDR194W-A'};
+hits_genenames_R(ismember(hits_genenames_R,{'YJL077WB'})) = {'YJL077W-B'};
+hits_genenames_R(ismember(hits_genenames_R,{'YMR194CB'})) = {'YMR194C-B'};
+[hits_orfs_R, translated] = translate(hits_genenames_R);
+hits_orfs_R(~translated) = [];
 
-length(unique(upper(hits_orfs_R)));
+hits_scores_R = zeros(length(hits_orfs_R),1)+1;
 
 % Adjust the overlapping strains as follows: eliminate HS from S; eliminate
 % HS ^ R and S ^ R from both
@@ -61,12 +68,6 @@ hits_orfs_R(ind2) = []; hits_scores_R(ind2) = [];
 
 hits_orfs = [hits_orfs_HS; hits_orfs_S; hits_orfs_R];
 hits_scores = [hits_scores_HS; hits_scores_S; hits_scores_R];
-
-length(unique(hits_orfs));
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_scores(inds) = [];
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 

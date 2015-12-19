@@ -1,5 +1,8 @@
 %% Gatbonton~Bedalov, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 gatbonton_bedalov_2006.source = {'main PDF'};
@@ -8,20 +11,9 @@ gatbonton_bedalov_2006.pmid = 16552446;
 
 [FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/gatbonton_bedalov_2006_hits.xlsx', 'Sheet1');
 
-hits_orfs = genename2orf(data.raw(:,1),'noannot');
-
-% Adjust the genenames that couldn't be mapped automatically
-hits_orfs(strcmpi('apg17', hits_orfs)) = {'YLR423C'};
-hits_orfs(strcmpi('fyv13', hits_orfs)) = {'YGR160W'};
-hits_orfs(strcmpi('sig1', hits_orfs)) = {'YER068W'};
-hits_orfs(strcmpi('srb10', hits_orfs)) = {'YPL042C'};
-hits_orfs(strcmpi('srb9', hits_orfs)) = {'YDR443C'};
-hits_orfs(strcmpi('ssn6', hits_orfs)) = {'YBR112C'};
-hits_orfs(strcmpi('vps22', hits_orfs)) = {'YPL002C'};
-hits_orfs(strcmpi('vps23', hits_orfs)) = {'YCL008C'};
-
-% Eliminate white spaces before/after ORF
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
+[hits_orfs, translated] = translate(data.raw(:,1));
+hits_orfs(~translated) = [];
+data.raw(~translated,:) = [];
 
 hits_scores = cell2mat(data.raw(:,3));
 
@@ -43,16 +35,11 @@ tested_orfs = data.raw(2:end,1);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-
-% Eliminate anything that doesn't look like an ORF
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);
-
-tested_orfs = unique(tested_orfs);
 
 % Create dataset
 gatbonton_bedalov_2006.orfs = tested_orfs;

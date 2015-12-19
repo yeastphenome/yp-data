@@ -1,5 +1,8 @@
 %% Begley~Samson, 2002
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % NOTE = data sorting fixed (lower=slower)
 
@@ -37,18 +40,23 @@ ind_data5 = find(strcmp('exp 3 highest control/dose 1', data.raw(1,:))); ind_dat
 ind_data6 = find(strcmp('exp 3 lowest control/dose 1', data.raw(1,:))); ind_data6 = [ind_data6:ind_data6+3];
 
 % Extract the most relevant information, ignore the rest.
-all_strings = cellfun(@num2str, data.raw(:,ind_orf),'UniformOutput',0);
-ind_not_empty = setdiff(1:size(data.raw,1), find(strcmp('NaN', all_strings)))';
+inds = find(cellfun(@isnumeric, data.raw(:,ind_orf)));
+data.raw(inds,:) = [];
 
-data2.orfs = data.raw(ind_not_empty,ind_orf);
-data2.conditions = data.raw(ind_not_empty, ind_condition);
-data2.data = data.raw(ind_not_empty, [ind_data1 ind_data2 ind_data3 ind_data4 ind_data5 ind_data6]);
+data2.orfs = data.raw(:,ind_orf);
+data2.conditions = data.raw(:, ind_condition);
+data2.data = data.raw(:, [ind_data1 ind_data2 ind_data3 ind_data4 ind_data5 ind_data6]);
 data2.experiments = data.raw(1,[ind_data1 ind_data2 ind_data3 ind_data4 ind_data5 ind_data6]);
 
-% Eliminate the first row (table headers)
-data2.orfs(1) = [];
-data2.conditions(1) = [];
-data2.data(1,:) = [];
+% Eliminate anything that doesn't look like an ORF
+data2.orfs(strcmp('YKLO72W', data2.orfs)) = {'YKL072W'};
+data2.orfs(strcmp('YOLO57W', data2.orfs)) = {'YOL057W'};
+data2.orfs(strcmp('YOLO62C', data2.orfs)) = {'YOL062C'};
+
+[data2.orfs, translated] = translate(data2.orfs);
+data2.orfs(~translated) = [];
+data2.data(~translated,:) = [];
+data2.conditions(~translated,:) = [];
 
 % Find weird values, before converting the data cell array into a matrix
 t = find(~cellfun(@isnumeric, data2.data));
@@ -74,46 +82,34 @@ data2.data_avg(:,4) = nanmean(data2.data(:,4:4:end),2);
 
 for ic = 1 : length(treatments)
 
-inds_cond = strmatch(treatments{ic}, data2.conditions);
+    inds_cond = strmatch(treatments{ic}, data2.conditions);
 
-data3(ic).orfs = upper(data2.orfs(inds_cond));
-data3(ic).data = data2.data_avg(inds_cond,:);
+    data3(ic).orfs = data2.orfs(inds_cond);
+    data3(ic).data = data2.data_avg(inds_cond,:);
 
-% Average data for identical ORFs that appear multiple times in each
-% dataset
-[t,t2] = grpstats(data3(ic).data, data3(ic).orfs, {'gname','mean'});
-data4(ic).orfs = t;
-data4(ic).data = t2;
+    % Average data for identical ORFs that appear multiple times in each
+    % dataset
+    [t,t2] = grpstats(data3(ic).data, data3(ic).orfs, {'gname','mean'});
+    data4(ic).orfs = t;
+    data4(ic).data = t2;
 
-% Make sure the final list of all ORFs is comprehensive
-if ic == 1
-begley_samson_2002.orfs = data4(ic).orfs;
-begley_samson_2002.data = zeros(length(data4(ic).orfs),length(doses(:)))+NaN;
-begley_samson_2002.ph = cell(length(doses(:)),1);
+    % Make sure the final list of all ORFs is comprehensive
+    if ic == 1
+        begley_samson_2002.orfs = data4(ic).orfs;
+        begley_samson_2002.data = zeros(length(data4(ic).orfs),length(doses(:)))+NaN;
+        begley_samson_2002.ph = cell(length(doses(:)),1);
+    end
+    inds = find(~ismember(data4(ic).orfs, begley_samson_2002.orfs));
+    begley_samson_2002.orfs = [begley_samson_2002.orfs; data4(ic).orfs(inds)];
+
+    % Now it is possible to intersect this dataset with the comprehensive
+    % list, align and append all the values
+    [C, ia,ib] = intersect(begley_samson_2002.orfs, data4(ic).orfs);
+    begley_samson_2002.data(ia,4*(ic-1)+1:4*(ic-1)+4) = data4(ic).data(ib,:);
+    begley_samson_2002.ph(4*(ic-1)+1:4*(ic-1)+4) = strcat(phenotype, {'; '}, treatments(ic),{', '}, doses(ic,:))';
+
+
 end
-inds = find(~ismember(data4(ic).orfs, begley_samson_2002.orfs));
-begley_samson_2002.orfs = [begley_samson_2002.orfs; data4(ic).orfs(inds)];
-
-% Now it is possible to intersect this dataset with the comprehensive
-% list, align and append all the values
-[C, ia,ib] = intersect(begley_samson_2002.orfs, data4(ic).orfs);
-begley_samson_2002.data(ia,4*(ic-1)+1:4*(ic-1)+4) = data4(ic).data(ib,:);
-begley_samson_2002.ph(4*(ic-1)+1:4*(ic-1)+4) = strcat(phenotype, {'; '}, treatments(ic),{', '}, doses(ic,:))';
-
-
-end
-
-% A few genenames to rename
-genenames = {'RAD14','REV1','MAG1'};
-orfs = genename2orf(genenames,'noannot');
-[t,ind1,ind2] = intersect(begley_samson_2002.orfs, genenames);
-begley_samson_2002.orfs(ind1) = orfs(ind2);
-
-% Eliminate anything that doesn't look like an ORF
-inds = find(~strncmp('Y', begley_samson_2002.orfs,1));
-begley_samson_2002.orfs(inds) = [];
-begley_samson_2002.data(inds,:) = [];
-
 
 a = mfilename('fullpath');
 a = a(1:end-4);

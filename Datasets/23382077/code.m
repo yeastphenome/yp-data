@@ -1,5 +1,8 @@
 %% Huang~Paulovich, 2013
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 huang_paulovich_2013.pmid = 23382077;
@@ -10,17 +13,21 @@ treatments = {'MMS'};
 % Load plate maps
 [FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v4 0.xls', 'DATA');
 tested_orfs = tested.raw(2:end,2);
-inds = find(cellfun(@isnumeric, tested_orfs));
-tested_orfs(inds) = [];
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+tested_orfs(cellfun(@isnumeric, tested_orfs)) = [];
 
+tested_orfs = regexprep(tested_orfs, '\W','');
 tested_orfs = unique(upper(tested_orfs));
+tested_orfs(ismember(tested_orfs,{'YLR287A'})) = {'YLR287C-A'};
+tested_orfs(~isorf(tested_orfs)) = [];
 
 
 % Load data
 [FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/huang_paulovich_2013_hits.txt', '%s');
-hits_orfs = genename2orf(hits_genenames,'noannot');
+
+hits_genenames = regexprep(hits_genenames, '\W','');
+hits_orfs = translate(hits_genenames);
+hits_orfs(~isorf(hits_orfs)) = [];
+
 hits_scores = -ones(length(hits_orfs),1);
 
 % Check if all the hits are in the tested space

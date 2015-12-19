@@ -1,7 +1,6 @@
 %% Chan~Zheng, 2000
 function FILENAMES = code()
 FILENAMES = {};
-% NEED = tested genes
 
 chan_zheng_2000.source = {'Supplementary Table 3'};
 chan_zheng_2000.downloaddate = {'2014-01-31'};
@@ -12,23 +11,14 @@ chan_zheng_2000.pmid = 11078525;
 phenotypes = {'growth'};
 treatments = {'rapamycin, 25 nM'};
 
-% Eliminate white spaces before/after ORF
-data.raw(:,1) = cellfun(@strtrim, data.raw(:,1),'UniformOutput',0);
+% Eliminate all white spaces & capitalize
+data.raw(:,1) = upper(regexprep(data.raw(:,1),'\W',''));
 
-chan_zheng_2000.orfs = upper(data.raw(:,1));
+chan_zheng_2000.orfs = data.raw(:,1);
 chan_zheng_2000.data = cell2mat(data.raw(:,2));
 chan_zheng_2000.ph = [strcat(phenotypes, '; ', treatments)];
 
-
-% Eliminate the essential genes
-load essential_genes_100908;
-[t,ind1,ind2] = intersect(chan_zheng_2000.orfs, essential_genes);
-chan_zheng_2000.orfs(ind1) = [];
-chan_zheng_2000.data(ind1,:) = [];
-
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'chan_zheng_2000.mat'],'chan_zheng_2000');
+save('./chan_zheng_2000.mat','chan_zheng_2000');
 return;
 
 % Save data into database

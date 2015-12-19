@@ -1,5 +1,8 @@
 %% Ju~Xie, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 ju_xie_2008.pmid = 18070918;
 
@@ -14,31 +17,20 @@ inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
 % Validate tested
-expr = 'Y[A-P][RL][0-9]{3}[CW](-[ABC])*';
-inds = find(cellfun(@isempty, regexpi(tested_orfs, expr)));
-
 tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
-
 tested_orfs = unique(upper(strtrim(tested_orfs)));
+tested_orfs(~isorf(tested_orfs)) = [];
 
 % Load data
-fid = fopen('raw_data/hits.txt','r');
+fid = fopen('./raw_data/hits.txt','r');
 C = textscan(fid, '%s');
 fclose(fid);
 
 genenames = C{1};
 
-orfs = genename2orf(genenames);
+orfs = translate(genenames);
+orfs(~isorf(orfs)) = [];
 
-orfs(strcmp('cvt9',orfs)) = {'YPR049C'};
-
-inds = find(cellfun(@isempty, orfs) | cellfun(@isnumeric, orfs));
-orfs(inds) = [];
-
-inds = find(~strncmp('Y', orfs,1));
-orfs(inds) = [];
-
-orfs = upper(strtrim(orfs));
 data = ones(size(orfs));
 
 missing_orfs = setdiff(orfs, tested_orfs);

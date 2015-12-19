@@ -1,7 +1,9 @@
 %% van Voorst~Bradt, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
-% TESTED = not available
 
 van_voorst_bradt_2006.pmid = 16598687;
 
@@ -14,17 +16,9 @@ hits = textscan(fid,'%s');
 hits_genenames = hits{1};
 fclose(fid);
 
-hits_orfs = genename2orf(hits_genenames,'noannot');
-
-% Adjustments
-hits_orfs(strcmpi('ada3', hits_orfs)) = {'YDR176W'};
-hits_orfs(strcmpi('vps39', hits_orfs)) = {'YDL077C'};
+hits_orfs = translate(hits_genenames);
 
 hits_scores = -ones(length(hits_orfs),1);
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_scores(inds) = [];
 
 van_voorst_bradt_2006.orfs = hits_orfs;
 van_voorst_bradt_2006.data = hits_scores;

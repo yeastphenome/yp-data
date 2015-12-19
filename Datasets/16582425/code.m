@@ -1,5 +1,8 @@
 %% Hancock~Lopes, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 hancock_lopes_2006.pmid = 16582425;
 
@@ -13,36 +16,21 @@ tested_orfs = tested.raw(4:end,2);
 inds = cellfun(@isnumeric, tested_orfs);
 tested_orfs(inds) = [];
 
-tested_orfs = regexprep(tested_orfs, '\W','');
+tested_orfs = cleanOrf(tested_orfs);
+tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
 
-inds = find(cellfun(@isempty, regexpi(tested_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
-tested_orfs(inds) = [];
-
-tested_orfs = unique(upper(tested_orfs));
+tested_orfs = unique(tested_orfs);
 
 % Load data
-fid = fopen('raw_data/hits_genenames.txt');
+fid = fopen('./raw_data/hits_genenames.txt');
 hits_genenames = textscan(fid, '%s');
 hits_genenames = hits_genenames{1};
 fclose(fid);
 
-hits_orfs = genename2orf(hits_genenames,'noannot');
+[hits_orfs, translated] = translate(hits_genenames);
+hits_orfs(~translated) = [];
 
-hits_orfs(strcmp(hits_orfs,'vma12')) = {'YKL119C'};
-hits_orfs(strcmp(hits_orfs,'ada3')) = {'YDR176W'};
-hits_orfs(strcmp(hits_orfs,'rcs1')) = {'YGL071W'};
-hits_orfs(strcmp(hits_orfs,'cwh36')) = {'YCL005W-A'};
-hits_orfs(strcmp(hits_orfs,'rmd7')) = {'YER083C'};
-
-inds = cellfun(@isnumeric, hits_orfs);
-hits_orfs(inds) = [];
-
-hits_orfs = regexprep(hits_orfs,'\W','');
-
-inds = find(cellfun(@isempty, regexpi(hits_orfs,'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
-hits_orfs(inds) = [];
-
-hits_orfs = unique(upper(hits_orfs));
+hits_orfs = unique(hits_orfs);
 
 hits_scores = ones(length(hits_orfs),1);
 

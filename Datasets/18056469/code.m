@@ -1,5 +1,8 @@
 %% Xia~Flores-Rozas, 2007
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 xia_flores_rozas_2007.pmid = 18056469;
@@ -12,10 +15,9 @@ treatments = {'doxorubicin [20 umol/L]'};
 tested_orfs = tested.raw(3:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-tested_orfs = unique(upper(tested_orfs));
+
+tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 [FILENAMES{end+1}, DATA] = dataread('textread','./raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
@@ -23,15 +25,9 @@ tested_orfs = unique(upper(tested_orfs));
 hits_genenames = DATA{1};
 hits_scores_txt = DATA{2};
 
-hits_genenames = cellfun(@strtrim, hits_genenames,'UniformOutput',0);
-hits_orfs = genename2orf(hits_genenames,'noannot');
+hits_genenames = cleanGenename(hits_genenames);
+hits_orfs = translate(hits_genenames);
 hits_scores = -cellfun(@length, hits_scores_txt);
-
-length(unique(upper(hits_orfs)));
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_scores(inds) = [];
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 

@@ -1,5 +1,8 @@
 %% Bishop~Avery, 2007
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 bishop_avery_2007.pmid = 17176259;
@@ -14,42 +17,22 @@ tested_orfs = tested.raw(3:end,2);
 tested_orfs = [tested_orfs; tested.raw(3:end,2)];
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-tested_orfs = unique(upper(tested_orfs));
+
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 [FILENAMES{end+1}, hits_genenames_resistant] = dataread('textread','./raw_data/hits_genenames_resistant.txt', '%s');
 
-hits_genenames_resistant = upper(hits_genenames_resistant);
-hits_orfs_resistant = genename2orf(hits_genenames_resistant,'noannot');
-hits_orfs_resistant = cellfun(@strtrim, hits_orfs_resistant,'UniformOutput',0);
-hits_orfs_resistant = unique(upper(hits_orfs_resistant));
+hits_orfs_resistant = translate(hits_genenames_resistant);
+hits_orfs_resistant = unique(hits_orfs_resistant);
 
 hits_scores_resistant = ones(length(hits_orfs_resistant),1);
 
-inds = find(~strncmp('Y', hits_orfs_resistant,1));
-hits_orfs_resistant(inds) = [];
-hits_scores_resistant(inds) = [];
-
-
 [FILENAMES{end+1}, hits_genenames_sensitive] = dataread('textread','./raw_data/hits_genenames_sensitive.txt', '%s');
-
-hits_genenames_sensitive = upper(hits_genenames_sensitive);
-hits_orfs_sensitive = genename2orf(hits_genenames_sensitive,'noannot');
-
-% Adjustments
-hits_orfs_sensitive(strcmpi('FMP18', hits_orfs_sensitive)) = {'YKR065C'};
-
-hits_orfs_sensitive = cellfun(@strtrim, hits_orfs_sensitive,'UniformOutput',0);
-hits_orfs_sensitive = unique(upper(hits_orfs_sensitive));
+hits_orfs_sensitive = translate(hits_genenames_sensitive);
+hits_orfs_sensitive = unique(hits_orfs_sensitive);
 
 hits_scores_sensitive = -ones(length(hits_orfs_sensitive),1);
-
-inds = find(~strncmp('Y', hits_orfs_sensitive,1));
-hits_orfs_sensitive(inds) = [];
-hits_scores_sensitive(inds) = [];
 
 overlapping = intersect(hits_orfs_resistant, hits_orfs_sensitive);
 

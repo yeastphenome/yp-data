@@ -1,5 +1,8 @@
 %% Alto~Dixon, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 alto_dixon_2006.pmid = 16413487;
 
@@ -11,11 +14,7 @@ treatments = {'IpgB2 effector protein'};
 [FILENAMES{end+1}, hits_gn] = dataread('textread','./raw_data/hits.txt', '%s');
 hits_data = ones(size(hits_gn));
 
-hits_orfs = genename2orf(hits_gn);
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_data(inds,:) = [];
+hits_orfs = translate(hits_gn);
 
 % Load tested
 [FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/FG_array_genes.txt', '%s');

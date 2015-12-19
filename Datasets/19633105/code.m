@@ -1,5 +1,8 @@
 %% Teixeira~Sa-Correia, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 teixeira_sa_correia_2009.pmid = 19633105;
 
@@ -13,10 +16,7 @@ tested_orfs = tested.raw(2:end,1);
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(strtrim(upper(tested_orfs)));
-
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 [FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TableS1_suplementary_material.xlsx');
@@ -24,19 +24,10 @@ hits_genenames = data.raw(7:end,1);
 inds = find(cellfun(@isempty, hits_genenames) | cellfun(@isnumeric, hits_genenames));
 hits_genenames(inds) = [];
 
-hits_orfs = genename2orf(hits_genenames);
-hits_orfs(strcmp('opi8', hits_orfs))= {'YKR035C'};
-hits_orfs(strcmp('opi9', hits_orfs)) = {'YLR338W'};
-hits_orfs(strcmp('ppa1', hits_orfs)) = [];  % ambiguous genename
-hits_orfs(strcmp('rlr1', hits_orfs)) = {'YNL139C'};
-hits_orfs(strcmp('soy1', hits_orfs)) = {'YBR194W'};
-hits_orfs(strcmp('tfp3', hits_orfs)) = {'YPL234C'};
-hits_orfs(strcmp('vps66', hits_orfs)) = {'YPR139C'};
+hits_genenames = cleanGenename(hits_genenames);
 
-hits_orfs = upper(hits_orfs);
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-
+[hits_orfs, translated] = translate(hits_genenames);
+hits_orfs(~translated) = [];
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 hits_orfs(ix) = [];      % 24 ORFs eliminated from the hit list (the list contains hits from both the hap and the het collection, but the list of tested strains is only available for the hap collection)

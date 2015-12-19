@@ -1,5 +1,8 @@
 %% Sambade~Kane, 2005
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 sambade_kane_2005.pmid = 15937126;
@@ -12,36 +15,22 @@ treatments = {'pH [7.5] CaCl2 [60 mM]'};
 tested_orfs = tested.raw(4:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-tested_orfs = unique(upper(tested_orfs));
+
+tested_orfs = upper(regexprep(tested_orfs, '\W',''));
+inds = find(~isorf(tested_orfs)); % Fix the missing "-" in the ORF names
+for i = 1 : length(inds)
+    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
+end
+tested_orfs(ismember(tested_orfs,{'YLR287-A'})) = {'YLR287C-A'};
+tested_orfs = unique(tested_orfs);
 
 % Load data
 [FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
 
 hits_genenames = upper(hits_genenames);
-hits_orfs = genename2orf(hits_genenames,'noannot');
-
-hits_orfs(strcmpi('ada3', hits_orfs)) = {'YDR176W'};
-hits_orfs(strcmpi('cak1', hits_orfs)) = {'YFL029C'};
-hits_orfs(strcmpi('cwh36', hits_orfs)) = {'YCL007C'};
-hits_orfs(strcmpi('rcs1', hits_orfs)) = {'YGL071W'};
-hits_orfs(strcmpi('rmd7', hits_orfs)) = {'YER083C'};
-hits_orfs(strcmpi('vma1', hits_orfs)) = {'YDL185W'};
-hits_orfs(strcmpi('vma12', hits_orfs)) = {'YKL119C'};
-hits_orfs(strcmpi('vma16', hits_orfs)) = {'YHR026W'};
-hits_orfs(strcmpi('vma3', hits_orfs)) = {'YEL027W'};
-
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
+hits_orfs = translate(hits_genenames);
 
 hits_scores = -ones(length(hits_orfs),1);
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_scores(inds) = [];
-
-hits_orfs = upper(hits_orfs);
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 
@@ -49,7 +38,7 @@ hits_orfs = upper(hits_orfs);
 hits_orfs(strcmpi('YHR039C-A', hits_orfs)) = {'YHR039C-B'};
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
-tested_orfs = [tested_orfs; missing];   % 1 orfs to be added
+tested_orfs = [tested_orfs; missing];   % 2 orfs to be added
 
 sambade_kane_2005.orfs = tested_orfs;
 sambade_kane_2005.data = zeros(length(tested_orfs), length(phenotypes));

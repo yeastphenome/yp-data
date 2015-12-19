@@ -1,5 +1,8 @@
 %% Giorgini~Muchowski, 2005
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 giorgini_muchowski_2005.pmid = 15806102;
@@ -9,15 +12,11 @@ giorgini_muchowski_2005.pmid = 15806102;
 phenotypes = {'growth (pooled CFU)'};
 treatments = {'Htt103Q'};
 
-% Eliminate white spaces before/after ORF
-hits(:,1) = cellfun(@strtrim, hits,'UniformOutput',0);
+% Eliminate white spaces before/after gene names
+hits(:,1) = cleanGenename(hits);
 
 % Translate genenames to ORF
-hits_orfs = genename2orf(hits,'noannot');
-
-% Manually adjust the genenames that couldn't be matched
-hits_orfs(strcmpi('arg7', hits_orfs)) = {'YMR062C'};
-hits_orfs(strcmpi('YBR089C-A', hits_orfs)) = {'YBR090C-A'}; % the current version YBR089C-A is not in the tested_orfs list
+hits_orfs = translate(hits);
 
 % Hits = LOF suppressors of Htt103Q sensitivity, so positive score.
 scores = ones(length(hits_orfs),1);
@@ -26,10 +25,13 @@ scores = ones(length(hits_orfs),1);
 [FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v2(1).0.xlsx', 'DATA');
 inds = find(cellfun(@isnumeric, tested.raw(:,2)));
 tested.raw(inds,:) = [];
+
 tested_orfs = unique(upper(tested.raw(2:end,2)));
+tested_orfs(strcmp(tested_orfs,'YLR287-A')) = {'YLR287C-A'};
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);
+tested_orfs = [tested_orfs; missing];
 
 % Create dataset
 giorgini_muchowski_2005.orfs = tested_orfs;

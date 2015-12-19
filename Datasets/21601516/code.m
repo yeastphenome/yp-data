@@ -1,5 +1,8 @@
 %% Suzuki~Yoshida, 2011
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 suzuki_yoshida_2011.pmid = 21601516;
 
@@ -12,12 +15,8 @@ treatments = {'standard'};
 hits_genes = data.raw(1:end,1);
 hits_data = cell2mat(data.raw(1:end,2));
 
-hits_genes = strtrim(lower(hits_genes));
-hits_orfs = genename2orf(hits_genes);
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_data(inds,:) = [];
+hits_genes = regexprep(hits_genes,'\W','');
+hits_orfs = translate(hits_genes);
 
 [t,t2] = grpstats(hits_data,hits_orfs,{'gname','mean'});
 hits_orfs = t;
@@ -30,10 +29,11 @@ tested_orfs = tested.raw(3:end,3);
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(strtrim(upper(tested_orfs)));
+tested_orfs = regexprep(tested_orfs, '\W','');
 
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+tested_orfs = unique(upper(tested_orfs));
+tested_orfs(~isorf(tested_orfs)) = [];
+
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 

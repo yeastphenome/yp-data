@@ -1,5 +1,8 @@
 %% Lam~Conibear, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % TESTED = not available
 lam_conibear_2006.pmid = 16818716;
@@ -15,22 +18,7 @@ fclose(fid);
 hits_genes = C{1};
 hits_data = C{2};
 
-hits_orfs = genename2orf(hits_genes,'noannot');
-hits_orfs(strcmp('CHS4', hits_orfs)) = {'YBL061C'};
-
-inds = find(cellfun(@isempty, hits_orfs));
-hits_orfs(inds) = [];
-hits_data(inds) = [];
-
-inds = find(cellfun(@isnumeric, hits_orfs));
-hits_orfs(inds) = [];
-hits_data(inds) = [];
-
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_data(inds) = [];
+hits_orfs = translate(hits_genes);
 
 lam_conibear_2006.orfs = hits_orfs;
 lam_conibear_2006.data = hits_data;

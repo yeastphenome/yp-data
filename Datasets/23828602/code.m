@@ -1,5 +1,8 @@
 %% Ding~Bakalinsky, 2013
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 ding_bakalinsky_2013.pmid = 23828602;
@@ -13,26 +16,20 @@ tested_orfs = tested.raw(2:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = ~strncmp('Y', tested_orfs,1);
-tested_orfs(inds) = [];
-tested_orfs = unique(upper(tested_orfs));
+
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
-fid = fopen('raw_data/hits_genenames_R.txt');
+fid = fopen('./raw_data/hits_genenames_R.txt');
 hits_genenames_R = textscan(fid,'%s');
 fclose(fid);
 
 hits_genenames_R = hits_genenames_R{1};
 
-hits_genenames_R = cellfun(@strtrim, hits_genenames_R,'UniformOutput',0);
-hits_genenames_R = unique(upper(hits_genenames_R));
-hits_orfs_R = unique(genename2orf(hits_genenames_R,'noannot'));
+hits_genenames_R = cleanGenename(hits_genenames_R);
+hits_orfs_R = translate(hits_genenames_R);
+hits_orfs_R = unique(hits_orfs_R);
 hits_scores_R = zeros(length(hits_orfs_R),1)+1;
-
-inds = find(~strncmp('Y', hits_orfs_R,1));
-hits_orfs_R(inds) = [];
-hits_scores_R(inds) = [];
 
 [missing, ix] = setdiff(hits_orfs_R, tested_orfs);
 

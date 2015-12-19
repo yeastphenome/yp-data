@@ -1,5 +1,8 @@
 %% Chamilos~Kontoyiannis, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 chamilos_kontoyiannis_2008.pmid = 18212113;
 
@@ -9,11 +12,11 @@ treatments = {'gliotoxin'};
 % Load tested
 [FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/tested_orfs.txt', '%s');
 
-% Validate tested
-expr = 'Y[A-P][RL][0-9]{3}[CW](-[ABC])*';
-inds = find(cellfun(@isempty, regexpi(tested_orfs, expr)));
-
-tested_orfs = unique(upper(strtrim(tested_orfs)));
+tested_orfs = upper(regexprep(tested_orfs, '\W',''));
+inds = find(~isorf(tested_orfs));
+for i = 1 : length(inds)
+    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
+end
 
 % Load data
 fid = fopen('./raw_data/data_genenames.txt','r');
@@ -30,18 +33,7 @@ raw_data = raw_data./raw_data(inds)-1;
 genenames(inds) = [];
 raw_data(inds) = [];
 
-orfs = genename2orf(genenames);
-orfs = upper(strtrim(orfs));
-
-inds = find(cellfun(@isempty, orfs) | cellfun(@isnumeric, orfs));
-orfs(inds) = [];
-raw_data(inds,:) = [];
-
-inds = find(~strncmp('Y', orfs,1));
-orfs(inds) = [];
-raw_data(inds,:) = [];
-
-orfs = upper(strtrim(orfs));
+orfs = translate(genenames);
 
 missing_orfs = setdiff(orfs, tested_orfs);
 tested_orfs = [tested_orfs; missing_orfs];  % Adding 2 missing strains to the list of tested strains.

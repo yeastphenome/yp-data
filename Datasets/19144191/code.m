@@ -1,5 +1,8 @@
 %% Kemmer~Roberge, 2009
 function FILENAMES = code()
+
+addpath(genpath('../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 kemmer_roberge_2009.pmid = 19144191;
@@ -12,23 +15,20 @@ treatments = {'dhMotC [60 uM]'};
 tested_orfs = tested.raw(6:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-tested_orfs = unique(upper(tested_orfs));
+
+tested_orfs = cleanOrf(tested_orfs);
+tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
+
+tested_orfs = unique(tested_orfs);
 
 % Load data
 [FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
 
-hits_genenames = cellfun(@strtrim, hits_genenames,'UniformOutput',0);
-hits_orfs = genename2orf(hits_genenames,'noannot');
-hits_orfs = unique(upper(hits_orfs));
+hits_genenames = cleanGenename(hits_genenames);
+hits_orfs = translate(hits_genenames);
+hits_orfs = unique(hits_orfs);
 
 hits_scores = -ones(length(hits_orfs),1);
-
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_scores(inds) = [];
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 

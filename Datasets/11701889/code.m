@@ -1,7 +1,8 @@
 %% Ooi~Boeke, 2001
 function FILENAMES = code()
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
-% NEED = tested genes
 
 ooi_boeke_2001.source = {'Main PDF'};
 ooi_boeke_2001.downloaddate = {'2014-02-03'};
@@ -16,11 +17,9 @@ phenotypes = {'NHEJ defect'};
 treatments = {''};
 
 % Transform gene names into ORFs
-hits_orf = genename2orf(hits);
-tmp = split_by_delimiter('_',hits_orf);
-hits_orf = tmp(:,1);
+hits_orf = translate(upper(hits));
 
-ooi_boeke_2001.orfs = upper(hits_orf);
+ooi_boeke_2001.orfs = hits_orf;
 ooi_boeke_2001.data = -ones(size(hits_orf));
 ooi_boeke_2001.ph = [strcat(phenotypes, '; ', treatments)];
 
@@ -31,9 +30,7 @@ load essential_genes_100908;
 ooi_boeke_2001.orfs(ind1) = [];
 ooi_boeke_2001.data(ind1,:) = [];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'ooi_boeke_2001.mat'],'ooi_boeke_2001');
+save('./ooi_boeke_2001.mat','ooi_boeke_2001');
 return;
 
 % % Save data into database

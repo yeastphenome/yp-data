@@ -1,5 +1,8 @@
 %% Serrano~Arino, 2004
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 serrano_arino_2004.source = {'main PDF'};
@@ -12,15 +15,10 @@ phenotypes = {'growth (colony size)'};
 treatments = {'pH 6-2.-7.5'};
 
 % Eliminate white spaces before/after ORF
-data.raw(:,1) = cellfun(@strtrim, data.raw(:,1),'UniformOutput',0);
+data.raw(:,1) = regexprep(data.raw(:,1),'\W','');
 
 % Translate genenames to ORF
-data.raw(:,4) = genename2orf(data.raw(:,1),'noannot');
-
-% Manually adjust the genenames that couldn't be matched
-data.raw(strcmpi('cwh36', data.raw(:,4)),4) = {'YCL007C'};
-data.raw(strcmpi('lys7', data.raw(:,4)),4) = {'YMR038C'};
-data.raw(strcmpi('rcs1', data.raw(:,4)),4) = {'YGL071W'};
+data.raw(:,4) = translate(data.raw(:,1));
 
 hits_orfs = data.raw(:,4);
 scores = cell2mat(data.raw(:,2));
@@ -31,10 +29,17 @@ scores = scores - 6;
 
 % Load tested genes
 [FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/BY4741.xlsx', 'Tabelle1');
-tested_orfs = unique(upper(tested.raw(2:end,2)));
+tested_orfs = upper(regexprep(tested.raw(2:end,2), '\W',''));
+inds = find(~isorf(tested_orfs));
+for i = 1 : length(inds)
+    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
+end
+
+tested_orfs = unique(tested_orfs);
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);
+tested_orfs = [tested_orfs; missing];
 
 % Create dataset
 serrano_arino_2004.orfs = tested_orfs;
