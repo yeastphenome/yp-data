@@ -15,18 +15,14 @@ treatments = {'MMS'};
 tested_orfs = tested.raw(2:end,2);
 tested_orfs(cellfun(@isnumeric, tested_orfs)) = [];
 
-tested_orfs = regexprep(tested_orfs, '\W','');
-tested_orfs = unique(upper(tested_orfs));
-tested_orfs(ismember(tested_orfs,{'YLR287A'})) = {'YLR287C-A'};
-tested_orfs(~isorf(tested_orfs)) = [];
-
+tested_orfs(ismember(tested_orfs,{'YLR287-A'})) = {'YLR287C-A'};
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 [FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/huang_paulovich_2013_hits.txt', '%s');
 
-hits_genenames = regexprep(hits_genenames, '\W','');
+hits_genenames = cleanGenename(hits_genenames);
 hits_orfs = translate(hits_genenames);
-hits_orfs(~isorf(hits_orfs)) = [];
 
 hits_scores = -ones(length(hits_orfs),1);
 

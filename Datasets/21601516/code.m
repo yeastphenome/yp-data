@@ -15,7 +15,7 @@ treatments = {'standard'};
 hits_genes = data.raw(1:end,1);
 hits_data = cell2mat(data.raw(1:end,2));
 
-hits_genes = regexprep(hits_genes,'\W','');
+hits_genes = cleanGenename(hits_genes);
 hits_orfs = translate(hits_genes);
 
 [t,t2] = grpstats(hits_data,hits_orfs,{'gname','mean'});
@@ -29,11 +29,7 @@ tested_orfs = tested.raw(3:end,3);
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = regexprep(tested_orfs, '\W','');
-
-tested_orfs = unique(upper(tested_orfs));
-tested_orfs(~isorf(tested_orfs)) = [];
-
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 

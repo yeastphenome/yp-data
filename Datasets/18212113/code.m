@@ -12,11 +12,7 @@ treatments = {'gliotoxin'};
 % Load tested
 [FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/tested_orfs.txt', '%s');
 
-tested_orfs = upper(regexprep(tested_orfs, '\W',''));
-inds = find(~isorf(tested_orfs));
-for i = 1 : length(inds)
-    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
-end
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 fid = fopen('./raw_data/data_genenames.txt','r');

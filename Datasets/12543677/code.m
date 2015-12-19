@@ -1,5 +1,8 @@
 %% Blackburn~Avery, 2003
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % TESTED = not available
 
@@ -14,10 +17,10 @@ treatments = data.raw(1,2:8)';
 data.raw(1,:) = [];
 
 % Eliminate white spaces before/after ORF
-data.raw(:,1) = regexprep(data.raw(:,1), '\W','');
+data.raw(:,1) = cleanOrf(data.raw(:,1));
 
 % Eliminate everything that doesn't look like an ORF
-inds = find(cellfun(@isempty, regexpi(data.raw(:,1),'Y[A-P][RL][0-9]{3}[CW](-[ABC])*')));
+inds = find(~isorf(data.raw(:,1)));
 data.raw(inds,:) = [];
 
 % Replace 'Inf' with Inf

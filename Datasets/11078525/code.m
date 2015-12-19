@@ -1,5 +1,8 @@
 %% Chan~Zheng, 2000
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 chan_zheng_2000.source = {'Supplementary Table 3'};
@@ -12,7 +15,7 @@ phenotypes = {'growth'};
 treatments = {'rapamycin, 25 nM'};
 
 % Eliminate all white spaces & capitalize
-data.raw(:,1) = upper(regexprep(data.raw(:,1),'\W',''));
+data.raw(:,1) = upper(cleanOrf(data.raw(:,1)));
 
 chan_zheng_2000.orfs = data.raw(:,1);
 chan_zheng_2000.data = cell2mat(data.raw(:,2));

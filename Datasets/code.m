@@ -21,13 +21,13 @@ hit_data = ones(size(hit_strains)); % if the dataset is binary
 hit_data = data(:,2:4); % if the dataset is discrete or binary
     
 % Eliminate all white spaces & capitalize
-hit_strains = upper(regexprep(hit_strains,'\W',''));
+hit_strains = cleanGenename(hit_strains);
 
 % If in gene name form, transform into ORF name
 hit_strains = translate(hit_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(cellfun(@isempty, regexpi(hit_strains,'Y[A-P][RL][0-9]{3}[CW](-[A-E])*')));
+inds = find(~isorf(hit_strains));
 disp(hit_strains(inds));  
 
 % If possible, fix the problem (typos, omissions etc.)
@@ -45,13 +45,13 @@ hit_strains(ismember(hit_strains, {'BLANK'})) = [];
 [FILENAMES{end+1}, tested_strains] = dataread('xlsread','./raw_data/tested_strains.xlsx', 'Spreadsheet name');
 
 % Eliminate all white spaces & capitalize
-tested_strains = upper(regexprep(tested_strains,'\W',''));
+tested_strains = cleanGenename(tested_strains);
 
 % If in gene name form, transform into ORF name
 tested_strains = translate(tested_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(cellfun(@isempty, regexpi(tested_strains,'Y[A-P][RL][0-9]{3}[CW](-[A-E])*')));
+inds = find(~isorf(tested_strains));
 disp(tested_strains(inds));  
 
 % If possible, fix the typo

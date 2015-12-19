@@ -15,7 +15,7 @@ phenotypes = {'growth (colony size)'};
 treatments = {'pH 6-2.-7.5'};
 
 % Eliminate white spaces before/after ORF
-data.raw(:,1) = regexprep(data.raw(:,1),'\W','');
+data.raw(:,1) = cleanGenename(data.raw(:,1));
 
 % Translate genenames to ORF
 data.raw(:,4) = translate(data.raw(:,1));
@@ -29,13 +29,7 @@ scores = scores - 6;
 
 % Load tested genes
 [FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/BY4741.xlsx', 'Tabelle1');
-tested_orfs = upper(regexprep(tested.raw(2:end,2), '\W',''));
-inds = find(~isorf(tested_orfs));
-for i = 1 : length(inds)
-    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
-end
-
-tested_orfs = unique(tested_orfs);
+tested_orfs = unique(upper(cleanOrf(tested.raw(2:end,2))));
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);

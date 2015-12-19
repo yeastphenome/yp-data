@@ -16,18 +16,12 @@ tested_orfs = tested.raw(4:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = upper(regexprep(tested_orfs, '\W',''));
-inds = find(~isorf(tested_orfs)); % Fix the missing "-" in the ORF names
-for i = 1 : length(inds)
-    tested_orfs{inds(i)} = [tested_orfs{inds(i)}(1:end-1) '-' tested_orfs{inds(i)}(end)];
-end
 tested_orfs(ismember(tested_orfs,{'YLR287-A'})) = {'YLR287C-A'};
-tested_orfs = unique(tested_orfs);
+
+tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
 [FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
-
-hits_genenames = upper(hits_genenames);
 hits_orfs = translate(hits_genenames);
 
 hits_scores = -ones(length(hits_orfs),1);
