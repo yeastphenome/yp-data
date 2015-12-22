@@ -1,5 +1,8 @@
 %% Brett~Rao, 2011
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 brett_rao_2011.source = {'http://www.plosone.org/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pone.0017619.s003'};

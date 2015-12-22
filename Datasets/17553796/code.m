@@ -1,5 +1,8 @@
 %% Thevissen~Francois, 2007
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 thevissen_francois_2007.pmid = 17553796;

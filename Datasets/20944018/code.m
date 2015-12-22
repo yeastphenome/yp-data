@@ -18,8 +18,8 @@ data.data = cell2mat(data.raw(2:end, 2));
 data.genenames_noannot = cell(size(data.genenames));
 % Eliminate the "_p" suffix from the genenames
 for i = 1 : length(data.genenames)
-    C = regexp(data.genenames{i},'_','split');
-    data.genenames_noannot{i} = C{1};
+C = regexp(data.genenames{i},'_','split');
+data.genenames_noannot{i} = C{1};
 end
 
 [data.orfs, translated] = translate(data.genenames_noannot);
@@ -35,8 +35,8 @@ data2.data = cell2mat(data2.raw(2:end, 2));
 data2.genenames_noannot = cell(size(data2.genenames));
 % Eliminate the "_p" suffix from the genenames
 for i = 1 : length(data2.genenames)
-    C = regexp(data2.genenames{i},'_','split');
-    data2.genenames_noannot{i} = C{1};
+C = regexp(data2.genenames{i},'_','split');
+data2.genenames_noannot{i} = C{1};
 end
 
 [data2.orfs, translated] = translate(data2.genenames_noannot);

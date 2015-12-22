@@ -1,5 +1,8 @@
 %% Gaupel~Tenniswood, 2014
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 gaupel_tenniswood_2004.pmid = 24968945;
 

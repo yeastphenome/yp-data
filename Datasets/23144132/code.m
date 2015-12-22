@@ -1,5 +1,8 @@
 %% Smith~Bakalinsky, 2013
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 smith_bakalinsky_2013.pmid = 23144132;
 

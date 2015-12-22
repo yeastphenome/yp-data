@@ -1,5 +1,8 @@
 %% Gonzalez-Ramos~Daran, 2013
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 gonzalez_ramos_daran_2003.pmid = 23552365;

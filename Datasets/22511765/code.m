@@ -1,5 +1,8 @@
 %% Kim~Cunningham, 2012
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 kim_cunningham_2012.pmid = 22511765;

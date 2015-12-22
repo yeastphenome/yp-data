@@ -1,5 +1,8 @@
 %% Hellauer~Turcotte, 2005
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 hellauer_turcotte_2005.source = {'main PDF'};

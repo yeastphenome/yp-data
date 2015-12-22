@@ -1,5 +1,8 @@
 %% Desmoucelles~Daignan-Fornier, 2002
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % NOTE = 1) typo in data: YKR065W should be YKR065C 2) YCR002C is in the
 % result, but not in tested.

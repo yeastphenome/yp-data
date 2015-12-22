@@ -82,31 +82,31 @@ data2.data_avg(:,4) = nanmean(data2.data(:,4:4:end),2);
 
 for ic = 1 : length(treatments)
 
-    inds_cond = strmatch(treatments{ic}, data2.conditions);
+inds_cond = strmatch(treatments{ic}, data2.conditions);
 
-    data3(ic).orfs = data2.orfs(inds_cond);
-    data3(ic).data = data2.data_avg(inds_cond,:);
+data3(ic).orfs = data2.orfs(inds_cond);
+data3(ic).data = data2.data_avg(inds_cond,:);
 
-    % Average data for identical ORFs that appear multiple times in each
-    % dataset
-    [t,t2] = grpstats(data3(ic).data, data3(ic).orfs, {'gname','mean'});
-    data4(ic).orfs = t;
-    data4(ic).data = t2;
+% Average data for identical ORFs that appear multiple times in each
+% dataset
+[t,t2] = grpstats(data3(ic).data, data3(ic).orfs, {'gname','mean'});
+data4(ic).orfs = t;
+data4(ic).data = t2;
 
-    % Make sure the final list of all ORFs is comprehensive
-    if ic == 1
-        begley_samson_2002.orfs = data4(ic).orfs;
-        begley_samson_2002.data = zeros(length(data4(ic).orfs),length(doses(:)))+NaN;
-        begley_samson_2002.ph = cell(length(doses(:)),1);
-    end
-    inds = find(~ismember(data4(ic).orfs, begley_samson_2002.orfs));
-    begley_samson_2002.orfs = [begley_samson_2002.orfs; data4(ic).orfs(inds)];
+% Make sure the final list of all ORFs is comprehensive
+if ic == 1
+begley_samson_2002.orfs = data4(ic).orfs;
+begley_samson_2002.data = zeros(length(data4(ic).orfs),length(doses(:)))+NaN;
+begley_samson_2002.ph = cell(length(doses(:)),1);
+end
+inds = find(~ismember(data4(ic).orfs, begley_samson_2002.orfs));
+begley_samson_2002.orfs = [begley_samson_2002.orfs; data4(ic).orfs(inds)];
 
-    % Now it is possible to intersect this dataset with the comprehensive
-    % list, align and append all the values
-    [C, ia,ib] = intersect(begley_samson_2002.orfs, data4(ic).orfs);
-    begley_samson_2002.data(ia,4*(ic-1)+1:4*(ic-1)+4) = data4(ic).data(ib,:);
-    begley_samson_2002.ph(4*(ic-1)+1:4*(ic-1)+4) = strcat(phenotype, {'; '}, treatments(ic),{', '}, doses(ic,:))';
+% Now it is possible to intersect this dataset with the comprehensive
+% list, align and append all the values
+[C, ia,ib] = intersect(begley_samson_2002.orfs, data4(ic).orfs);
+begley_samson_2002.data(ia,4*(ic-1)+1:4*(ic-1)+4) = data4(ic).data(ib,:);
+begley_samson_2002.ph(4*(ic-1)+1:4*(ic-1)+4) = strcat(phenotype, {'; '}, treatments(ic),{', '}, doses(ic,:))';
 
 
 end

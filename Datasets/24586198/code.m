@@ -1,5 +1,8 @@
 %% Garay~DeLuna, 2014
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 garay_deluna_2014.pmid = 24586198;

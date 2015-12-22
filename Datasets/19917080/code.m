@@ -1,5 +1,8 @@
 %% Arita~Costa, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 arita_costa_2009.pmid = 19917080;
 

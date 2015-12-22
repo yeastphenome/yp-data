@@ -1,5 +1,8 @@
 %% Chesi~Gitler, 2012
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 chesi_gitler_2012.pmid = 22457822;

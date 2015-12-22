@@ -1,5 +1,8 @@
 %% Burston~Conibear, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % TESTED = not available
 burston_conibear_2009.pmid = 19506040;

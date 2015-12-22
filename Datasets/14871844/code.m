@@ -1,5 +1,8 @@
 %% Aouida~Ramotar, 2004
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 aouida_ramotar_2004.pmid = 14871844;
 

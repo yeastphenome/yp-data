@@ -1,5 +1,8 @@
 %% Ralser~Lehrach, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 ralser_lehrach_2008.pmid = 19004802;
 

@@ -1,5 +1,8 @@
 %% Narayanaswamy~Marcotte, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 narayanaswamy_marcotte_2006.pmid = 16507139;
 

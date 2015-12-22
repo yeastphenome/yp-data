@@ -1,5 +1,8 @@
 %% Galvan~Smith, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 galvan_smith_2008.pmid = 17950387;

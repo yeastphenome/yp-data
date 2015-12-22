@@ -1,5 +1,8 @@
 %% Matsufuji~Nakagawa, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 matsufuji_nakagawa_2008.pmid = 19061187;

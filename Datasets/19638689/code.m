@@ -53,8 +53,8 @@ auesukaree_harashima_2009.orfs = tested_orfs;
 auesukaree_harashima_2009.data = zeros(length(tested_orfs),length(treatments));
 
 for i = 1 : length(treatments)
-    [~,ind1,ind2] = intersect(data_hits_orfs{i}, tested_orfs);
-    auesukaree_harashima_2009.data(ind2,i) = -1;
+[~,ind1,ind2] = intersect(data_hits_orfs{i}, tested_orfs);
+auesukaree_harashima_2009.data(ind2,i) = -1;
 end
 
 auesukaree_harashima_2009.ph = strcat(phenotypes, '; ', treatments);

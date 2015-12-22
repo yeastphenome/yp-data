@@ -1,5 +1,8 @@
 %% Baryshnikova~Myers, 2010
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 baryshnikova_myers_2010.pmid = 21076421;
 

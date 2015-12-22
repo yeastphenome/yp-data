@@ -1,5 +1,8 @@
 %% Botet~Santos, 2007
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % NOTES = data unnormalized; potentially batch, row/col normalization needed?
 

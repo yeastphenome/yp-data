@@ -1,5 +1,8 @@
 %% Chavel~Cullen, 2010
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 chavel_cullen_2010.source = {'http://www.plosgenetics.org/article/fetchSingleRepresentation.action?uri=info:doi/10.1371/journal.pgen.1000883.s011'};

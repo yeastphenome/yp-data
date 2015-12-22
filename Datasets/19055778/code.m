@@ -1,5 +1,8 @@
 %% Alamgir~Golshani, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 alamgir_golshani_2008.pmid = 19055778;
 

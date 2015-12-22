@@ -54,12 +54,12 @@ txt_files_names = [txt_files_names {rtf_files.name}]';
 
 tested_orfs = [];
 for j = 1 : length(txt_files_names)
-    % If filenames ends in "~1" or "a", load the list
-    t = regexp(txt_files_names{j},'\.','split');
-    if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
-        [FILENAMES{end+1}, tst] = dataread('textread',['./raw_data/' txt_files_names{j}], '%s');
-        tested_orfs = [tested_orfs; tst(isorf(tst))];
-    end
+% If filenames ends in "~1" or "a", load the list
+t = regexp(txt_files_names{j},'\.','split');
+if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
+[FILENAMES{end+1}, tst] = dataread('textread',['./raw_data/' txt_files_names{j}], '%s');
+tested_orfs = [tested_orfs; tst(isorf(tst))];
+end
 end
 
 tested_orfs = unique(tested_orfs);

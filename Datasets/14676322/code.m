@@ -1,5 +1,8 @@
 %% Warringer~Blomberg, 2003
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 warringer_blomberg_2003.pmid = 14676322;

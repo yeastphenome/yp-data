@@ -1,5 +1,8 @@
 %% Kawahata~Iefuji, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 kawahata_iefuji_2006.pmid = 16911514;
 

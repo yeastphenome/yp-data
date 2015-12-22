@@ -1,5 +1,8 @@
 %% Mir~Cashikar, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 mir_cashikar_2009.pmid = 18936161;

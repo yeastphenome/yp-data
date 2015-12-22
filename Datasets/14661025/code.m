@@ -1,5 +1,8 @@
 %% Parsons~Boone, 2004
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 % TESTED = not available
 

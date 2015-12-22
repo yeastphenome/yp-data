@@ -1,5 +1,8 @@
 %% Hartman~Tippery, 2004
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 hartman_tippery_2004.pmid = 15239834;

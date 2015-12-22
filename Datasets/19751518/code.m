@@ -1,5 +1,8 @@
 %% Merz~Westermann, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 merz_westermann_2009.pmid = 19751518;
 

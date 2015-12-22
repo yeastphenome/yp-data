@@ -1,5 +1,8 @@
 %% Reiner~Schneiter, 2006
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 reiner_schneiter_2006.pmid = 16251356;

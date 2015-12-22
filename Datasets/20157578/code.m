@@ -1,5 +1,8 @@
 %% Postma~Ralser, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 postma_ralser_2009.pmid = 20157578;

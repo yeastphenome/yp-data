@@ -1,5 +1,8 @@
 %% Uluisik~Koc, 2011
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 uluisik_koc_2011.pmid = 21035538;
 

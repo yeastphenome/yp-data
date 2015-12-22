@@ -1,5 +1,8 @@
 %% Cooper~Fields, 2010
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 cooper_fields_2010.pmid = 20610602;

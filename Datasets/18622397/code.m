@@ -1,5 +1,8 @@
 %% Breslow~Weissman, 2008
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 breslow_weissman_2008.source = {'http://www.nature.com/nmeth/journal/v5/n8/extref/nmeth.1234-S4.xls'};

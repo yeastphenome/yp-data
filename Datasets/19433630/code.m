@@ -1,5 +1,8 @@
 %% Copic~Miller, 2009
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 copic_miller_2009.pmid = 19433630;
 

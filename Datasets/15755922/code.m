@@ -1,5 +1,8 @@
 %% Gardocki~Lopes, 2005
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 gardocki_lopes_2005.pmid = 15755922;
 

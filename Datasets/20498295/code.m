@@ -1,5 +1,8 @@
 %% Dakshinamurthy~Garfinkel, 2010
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 dakshinamurthy_garfinkel_2010.pmid = 20498295;
 

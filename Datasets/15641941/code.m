@@ -1,5 +1,8 @@
 %% Outten~Culotta, 2005
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 outten_culotta_2005.source = {'http://www.biochemj.org/bj/388/bj3880093add.pdf'};

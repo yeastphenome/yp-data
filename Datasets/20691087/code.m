@@ -1,5 +1,8 @@
 %% Alamgir~Golshani, 2010
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 
 alamgir_golshani_2010.source = {'http://www.biomedcentral.com/content/supplementary/1472-6769-10-6-s1.xls'};
