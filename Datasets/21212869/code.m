@@ -44,9 +44,7 @@ bleackley_macgillivray_2011.orfs = t;
 bleackley_macgillivray_2011.data = t2;
 bleackley_macgillivray_2011.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'bleackley_macgillivray_2011.mat'],'bleackley_macgillivray_2011');
+save('./bleackley_macgillivray_2011.mat','bleackley_macgillivray_2011');
 return;
 
 % Save data into database

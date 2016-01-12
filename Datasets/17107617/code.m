@@ -110,9 +110,7 @@ freimoser_amrhein_2006.orfs = all_data.orf_u;
 freimoser_amrhein_2006.data = all_data.data_avg;
 freimoser_amrhein_2006.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'freimoser_amrhein_2006.mat'],'freimoser_amrhein_2006');
+save('./freimoser_amrhein_2006.mat','freimoser_amrhein_2006');
 return;
 
 % Save data into database

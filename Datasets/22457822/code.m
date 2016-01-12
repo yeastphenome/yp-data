@@ -60,9 +60,7 @@ chesi_gitler_2012.orfs = t;
 chesi_gitler_2012.data = t2;
 chesi_gitler_2012.ph = strcat(phenotypes, '; ', treatments, '; ', num2str(concentrations), ' mM');
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'chesi_gitler_2012.mat'],'chesi_gitler_2012');
+save('./chesi_gitler_2012.mat','chesi_gitler_2012');
 return;
 
 % Save data into database

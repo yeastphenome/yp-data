@@ -41,9 +41,7 @@ ju_xie_2008.data = zeros(length(tested_orfs),1);
 ju_xie_2008.data(ind1) = data(ind2);
 ju_xie_2008.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'ju_xie_2008.mat'],'ju_xie_2008');
+save('./ju_xie_2008.mat','ju_xie_2008');
 return;
 
 % Save data into database

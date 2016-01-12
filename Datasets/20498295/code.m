@@ -44,9 +44,7 @@ dakshinamurthy_garfinkel_2010.data(ind1,1) = hits_data(ind2);
 
 dakshinamurthy_garfinkel_2010.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'dakshinamurthy_garfinkel_2010.mat'],'dakshinamurthy_garfinkel_2010');
+save('./dakshinamurthy_garfinkel_2010.mat','dakshinamurthy_garfinkel_2010');
 return;
 
 % Save data into database

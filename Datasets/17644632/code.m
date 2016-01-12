@@ -54,9 +54,7 @@ cheng_bakalinsky_2007.data(ind2,1) = hits_scores(ind1);
 
 cheng_bakalinsky_2007.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'cheng_bakalinsky_2007.mat'],'cheng_bakalinsky_2007');
+save('./cheng_bakalinsky_2007.mat','cheng_bakalinsky_2007');
 return;
 
 % Save data into database

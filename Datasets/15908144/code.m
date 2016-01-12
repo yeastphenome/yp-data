@@ -50,9 +50,7 @@ luban_schmidt_2005.data(ind1,2) = -1;
 
 luban_schmidt_2005.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'luban_schmidt_2005.mat'],'luban_schmidt_2005');
+save('./luban_schmidt_2005.mat','luban_schmidt_2005');
 return;
 
 % Save data into database

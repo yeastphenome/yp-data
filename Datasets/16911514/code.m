@@ -77,9 +77,7 @@ kawahata_iefuji_2006.data(ind2,[2 4 6]) = hits_sensitive_scores(ind1,:);
 
 kawahata_iefuji_2006.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'kawahata_iefuji_2006.mat'],'kawahata_iefuji_2006');
+save('./kawahata_iefuji_2006.mat','kawahata_iefuji_2006');
 return;
 
 % Save data into database

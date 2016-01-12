@@ -40,9 +40,7 @@ parsons_boone_2004.ph = [strcat(phenotypes{1}, '; ', treatments)];
 % parsons_boone_2004.orfs(ind1) = [];
 % parsons_boone_2004.data(ind1,:) = [];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'parsons_boone_2004.mat'],'parsons_boone_2004');
+save('./parsons_boone_2004.mat','parsons_boone_2004');
 return;
 
 % Save data into database

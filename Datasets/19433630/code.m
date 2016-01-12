@@ -48,9 +48,7 @@ copic_miller_2009.data(ind2,1) = hits_scores(ind1);
 
 copic_miller_2009.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'copic_miller_2009.mat'],'copic_miller_2009');
+save('./copic_miller_2009.mat','copic_miller_2009');
 return;
 
 % Save data into database

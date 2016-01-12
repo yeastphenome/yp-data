@@ -37,9 +37,7 @@ begley_samson_2004.data = t2;
 
 begley_samson_2004.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'begley_samson_2004.mat'],'begley_samson_2004');
+save('./begley_samson_2004.mat','begley_samson_2004');
 return;
 
 % Save data into database

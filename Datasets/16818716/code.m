@@ -25,9 +25,7 @@ lam_conibear_2006.data = hits_data;
 
 lam_conibear_2006.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'lam_conibear_2006.mat'],'lam_conibear_2006');
+save('./lam_conibear_2006.mat','lam_conibear_2006');
 return;
 
 % Save data into database

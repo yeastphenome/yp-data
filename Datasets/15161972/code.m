@@ -74,9 +74,7 @@ load essential_genes_100908;
 askree_mceachern_2004.orfs(ind1) = [];
 askree_mceachern_2004.data(ind1,:) = [];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'askree_mceachern_2004.mat'],'askree_mceachern_2004');
+save('./askree_mceachern_2004.mat','askree_mceachern_2004');
 return;
 
 % Save data into database

@@ -59,9 +59,7 @@ end
 
 auesukaree_harashima_2009.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'auesukaree_harashima_2009.mat'],'auesukaree_harashima_2009');
+save('./auesukaree_harashima_2009.mat','auesukaree_harashima_2009');
 return;
 
 % Save data into database

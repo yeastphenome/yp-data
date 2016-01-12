@@ -42,9 +42,7 @@ yoshikawa_shimizu_2011.orfs = t;
 yoshikawa_shimizu_2011.data = t2;
 yoshikawa_shimizu_2011.ph = phenotypes;
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'yoshikawa_shimizu_2011.mat'],'yoshikawa_shimizu_2011');
+save('./yoshikawa_shimizu_2011.mat','yoshikawa_shimizu_2011');
 return;
 
 % Save data into database

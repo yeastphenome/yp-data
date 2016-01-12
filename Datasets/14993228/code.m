@@ -44,9 +44,7 @@ serrano_arino_2004.data(ind1,:) = scores(ind2,:);
 serrano_arino_2004.ph = [strcat(phenotypes{1}, '; ', treatments)];
 
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'serrano_arino_2004.mat'],'serrano_arino_2004');
+save('./serrano_arino_2004.mat','serrano_arino_2004');
 return;
 
 % Save data into database

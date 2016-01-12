@@ -32,9 +32,7 @@ blackburn_avery_2003.data = cell2mat(t);
 
 blackburn_avery_2003.ph = [strcat(phenotypes{1}, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'blackburn_avery_2003.mat'],'blackburn_avery_2003');
+save('./blackburn_avery_2003.mat','blackburn_avery_2003');
 return;
 
 % Save data into database

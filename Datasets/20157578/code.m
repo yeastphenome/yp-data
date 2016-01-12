@@ -46,9 +46,7 @@ postma_ralser_2009.data(ind2,1) = hits_scores(ind1);
 
 postma_ralser_2009.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'postma_ralser_2009.mat'],'postma_ralser_2009');
+save('./postma_ralser_2009.mat','postma_ralser_2009');
 return;
 
 % Save data into database

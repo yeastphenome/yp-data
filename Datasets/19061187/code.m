@@ -49,9 +49,7 @@ matsufuji_nakagawa_2008.data(ind2,1) = hits_scores(ind1);
 
 matsufuji_nakagawa_2008.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'matsufuji_nakagawa_2008.mat'],'matsufuji_nakagawa_2008');
+save('./matsufuji_nakagawa_2008.mat','matsufuji_nakagawa_2008');
 return;
 
 % Save data into database

@@ -72,9 +72,7 @@ gaupel_tenniswood_2004.data(ind2,:) = hits_data(ind1,:);
 
 gaupel_tenniswood_2004.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'gaupel_tenniswood_2004.mat'],'gaupel_tenniswood_2004');
+save('./gaupel_tenniswood_2004.mat','gaupel_tenniswood_2004');
 return;
 
 % Save data into database

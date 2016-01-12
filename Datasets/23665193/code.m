@@ -51,9 +51,7 @@ hirasawa_shimizu_2013.orfs = t;
 hirasawa_shimizu_2013.data = t2;
 hirasawa_shimizu_2013.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'hirasawa_shimizu_2013.mat'],'hirasawa_shimizu_2013');
+save('./hirasawa_shimizu_2013.mat','hirasawa_shimizu_2013');
 return;
 
 % Save data into database

@@ -43,9 +43,7 @@ teixeira_sa_correia_2010.data(ind2) = -1;
 
 teixeira_sa_correia_2010.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'teixeira_sa_correia_2010.mat'],'teixeira_sa_correia_2010');
+save('./teixeira_sa_correia_2010.mat','teixeira_sa_correia_2010');
 return;
 
 % Save data into database

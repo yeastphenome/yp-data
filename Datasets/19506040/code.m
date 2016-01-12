@@ -39,9 +39,7 @@ burston_conibear_2009.data = cell2mat([hits_data_a hits_data_alpha]);
 
 burston_conibear_2009.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'burston_conibear_2009.mat'],'burston_conibear_2009');
+save('./burston_conibear_2009.mat','burston_conibear_2009');
 return;
 
 % Save data into database

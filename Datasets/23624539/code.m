@@ -49,9 +49,7 @@ load essential_genes_100908;
 galvan_marquez_smith_2013.orfs(ind1) = [];
 galvan_marquez_smith_2013.data(ind1,:) = [];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'galvan_marquez_smith_2013.mat'],'galvan_marquez_smith_2013');
+save('./galvan_marquez_smith_2013.mat','galvan_marquez_smith_2013');
 return;
 
 % Save data into database

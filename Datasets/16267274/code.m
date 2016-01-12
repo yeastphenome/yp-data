@@ -43,9 +43,7 @@ dunn_jensen_2006.orfs = t;
 dunn_jensen_2006.data = 1./t2;  % reverse the ratio so that the lower the value, the sicker the mutant.
 dunn_jensen_2006.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'dunn_jensen_2006.mat'],'dunn_jensen_2006');
+save('./dunn_jensen_2006.mat','dunn_jensen_2006');
 return;
 
 % Save data into database

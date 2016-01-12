@@ -111,9 +111,7 @@ begley_samson_2002.ph(4*(ic-1)+1:4*(ic-1)+4) = strcat(phenotype, {'; '}, treatme
 
 end
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'begley_samson_2002.mat'],'begley_samson_2002');
+save('./begley_samson_2002.mat','begley_samson_2002');
 return;
 
 

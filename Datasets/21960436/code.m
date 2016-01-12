@@ -71,9 +71,7 @@ dos_santos_sa_correia_2011.data(ind2,1) = hits_scores(ind1);
 
 dos_santos_sa_correia_2011.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'dos_santos_sa_correia_2011.mat'],'dos_santos_sa_correia_2011');
+save('./dos_santos_sa_correia_2011.mat','dos_santos_sa_correia_2011');
 return;
 
 % Save data into database

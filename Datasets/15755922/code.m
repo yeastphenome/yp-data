@@ -47,9 +47,7 @@ gardocki_lopes_2005.orfs = t2;
 gardocki_lopes_2005.data = t;
 gardocki_lopes_2005.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'gardocki_lopes_2005.mat'],'gardocki_lopes_2005');
+save('./gardocki_lopes_2005.mat','gardocki_lopes_2005');
 return;
 
 % Save data into database

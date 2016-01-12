@@ -33,9 +33,7 @@ garay_deluna_2014.data = hits_scores;
 
 garay_deluna_2014.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'garay_deluna_2014.mat'],'garay_deluna_2014');
+save('./garay_deluna_2014.mat','garay_deluna_2014');
 return;
 
 % Save data into database

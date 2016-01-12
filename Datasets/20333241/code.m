@@ -46,9 +46,7 @@ chavel_cullen_2010.orfs = t;
 chavel_cullen_2010.data = t2;
 chavel_cullen_2010.ph = phenotypes;
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'chavel_cullen_2010.mat'],'chavel_cullen_2010');
+save('./chavel_cullen_2010.mat','chavel_cullen_2010');
 return;
 
 % Save data into database

@@ -42,9 +42,7 @@ giorgini_muchowski_2005.data(ind1,:) = scores(ind2,:);
 giorgini_muchowski_2005.ph = [strcat(phenotypes{1}, '; ', treatments)];
 
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'giorgini_muchowski_2005.mat'],'giorgini_muchowski_2005');
+save('./giorgini_muchowski_2005.mat','giorgini_muchowski_2005');
 return;
 
 % Save data into database

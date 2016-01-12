@@ -49,9 +49,7 @@ botet_santos_2007.orfs = t;
 botet_santos_2007.data = t2;
 botet_santos_2007.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'botet_santos_2007.mat'],'botet_santos_2007');
+save('./botet_santos_2007.mat','botet_santos_2007');
 return;
 
 % Save data into database

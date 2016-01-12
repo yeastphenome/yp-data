@@ -56,9 +56,7 @@ load essential_genes_100908;
 desmoucelles_daignan_fornier_2002.orfs(ind1) = [];
 desmoucelles_daignan_fornier_2002.data(ind1,:) = [];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'desmoucelles_daignan_fornier_2002.mat'],'desmoucelles_daignan_fornier_2002');
+save('./desmoucelles_daignan_fornier_2002.mat','desmoucelles_daignan_fornier_2002');
 return;
 
 % Save data into database

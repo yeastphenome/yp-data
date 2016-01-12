@@ -50,9 +50,7 @@ gatbonton_bedalov_2006.data(ind1,:) = hits_scores(ind2,:);
 gatbonton_bedalov_2006.ph = [strcat(phenotypes{1}, '; ', treatments)];
 
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'gatbonton_bedalov_2006.mat'],'gatbonton_bedalov_2006');
+save('./gatbonton_bedalov_2006.mat','gatbonton_bedalov_2006');
 return;
 
 % Save data into database

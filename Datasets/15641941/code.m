@@ -63,9 +63,7 @@ outten_culotta_2005.data(ind1,:) = hits_scores(ind2,:);
 
 outten_culotta_2005.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'outten_culotta_2005.mat'],'outten_culotta_2005');
+save('./outten_culotta_2005.mat','outten_culotta_2005');
 return;
 
 % Save data into database

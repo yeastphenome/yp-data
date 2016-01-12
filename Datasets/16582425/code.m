@@ -41,9 +41,7 @@ hancock_lopes_2006.data(ind2,1) = hits_scores(ind1,1);
 
 hancock_lopes_2006.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'hancock_lopes_2006.mat'],'hancock_lopes_2006');
+save('./hancock_lopes_2006.mat','hancock_lopes_2006');
 return;
 
 % Save data into database

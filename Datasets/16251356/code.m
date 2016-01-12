@@ -61,9 +61,7 @@ reiner_schneiter_2006.data(ind1,:) = hits_scores(ind2,:);
 
 reiner_schneiter_2006.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'reiner_schneiter_2006.mat'],'reiner_schneiter_2006');
+save('./reiner_schneiter_2006.mat','reiner_schneiter_2006');
 return;
 
 % Save data into database

@@ -40,9 +40,7 @@ ding_bakalinsky_2013.data(ind2,1) = hits_scores_R(ind1);
 
 ding_bakalinsky_2013.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'ding_bakalinsky_2013.mat'],'ding_bakalinsky_2013');
+save('./ding_bakalinsky_2013.mat','ding_bakalinsky_2013');
 return;
 
 % Save data into database

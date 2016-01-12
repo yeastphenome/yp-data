@@ -43,9 +43,7 @@ smith_bakalinsky_2013.data(ind2,1) = hits_scores(ind1);
 
 smith_bakalinsky_2013.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'smith_bakalinsky_2013.mat'],'smith_bakalinsky_2013');
+save('./smith_bakalinsky_2013.mat','smith_bakalinsky_2013');
 return;
 
 % Save data into database

@@ -56,9 +56,7 @@ mira_sa_correia_2009.data(ind2) = hits_data_moderate(ind1);
 
 mira_sa_correia_2009.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'mira_sa_correia_2009.mat'],'mira_sa_correia_2009');
+save('./mira_sa_correia_2009.mat','mira_sa_correia_2009');
 return;
 
 % Save data into database

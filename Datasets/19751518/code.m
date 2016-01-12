@@ -43,9 +43,7 @@ merz_westermann_2009.data(ind2,:) = hits_data(ind1,:);
 
 merz_westermann_2009.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'merz_westermann_2009.mat'],'merz_westermann_2009');
+save('./merz_westermann_2009.mat','merz_westermann_2009');
 return;
 
 % Save data into database

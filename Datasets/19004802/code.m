@@ -41,9 +41,7 @@ ralser_lehrach_2008.data(ind2,:) = hits_data(ind1,:);
 
 ralser_lehrach_2008.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'ralser_lehrach_2008.mat'],'ralser_lehrach_2008');
+save('./ralser_lehrach_2008.mat','ralser_lehrach_2008');
 return;
 
 % Save data into database

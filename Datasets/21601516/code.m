@@ -41,9 +41,7 @@ suzuki_yoshida_2011.data(ind2,:) = hits_data(ind1,:);
 
 suzuki_yoshida_2011.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'suzuki_yoshida_2011.mat'],'suzuki_yoshida_2011');
+save('./suzuki_yoshida_2011.mat','suzuki_yoshida_2011');
 return;
 
 % Save data into database

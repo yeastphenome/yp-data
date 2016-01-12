@@ -85,9 +85,7 @@ serero_boiteux_2008.data(ind2,1) = hits_scores(ind1);
 
 serero_boiteux_2008.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'serero_boiteux_2008.mat'],'serero_boiteux_2008');
+save('./serero_boiteux_2008.mat','serero_boiteux_2008');
 return;
 
 % Save data into database

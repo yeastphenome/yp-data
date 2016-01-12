@@ -46,9 +46,7 @@ abe_minegishi_2008.data(ind2,:) = t2(ind1,:);
 
 abe_minegishi_2008.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'abe_minegishi_2008.mat'],'abe_minegishi_2008');
+save('./abe_minegishi_2008.mat','abe_minegishi_2008');
 return;
 
 % Save data into database

@@ -25,9 +25,7 @@ van_voorst_bradt_2006.data = hits_scores;
 
 van_voorst_bradt_2006.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'van_voorst_bradt_2006.mat'],'van_voorst_bradt_2006');
+save('./van_voorst_bradt_2006.mat','van_voorst_bradt_2006');
 return;
 
 % Save data into database

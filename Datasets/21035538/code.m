@@ -95,9 +95,7 @@ hits_data(ix,:) = [];
 uluisik_koc_2011.data(ind2,ind4) = hits_data(ind1,ind3);
 
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'uluisik_koc_2011.mat'],'uluisik_koc_2011');
+save('./uluisik_koc_2011.mat','uluisik_koc_2011');
 return;
 
 % Save data into database

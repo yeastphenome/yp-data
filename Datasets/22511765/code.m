@@ -39,9 +39,7 @@ kim_cunningham_2012.orfs = t;
 kim_cunningham_2012.data = t2;
 kim_cunningham_2012.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'kim_cunningham_2012.mat'],'kim_cunningham_2012');
+save('./kim_cunningham_2012.mat','kim_cunningham_2012');
 return;
 
 % Save data into database

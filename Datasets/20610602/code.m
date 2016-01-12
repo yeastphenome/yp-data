@@ -24,9 +24,7 @@ cooper_fields_2010.desc = {'Supplemental Table 4. Log2 transformed ratios repres
 cooper_fields_2010.orfs = t;
 cooper_fields_2010.data = t2;
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'cooper_fields_2010.mat'],'cooper_fields_2010');
+save('./cooper_fields_2010.mat','cooper_fields_2010');
 return;
 
 % Save data into database

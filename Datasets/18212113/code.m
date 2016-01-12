@@ -40,9 +40,7 @@ chamilos_kontoyiannis_2008.data = zeros(length(tested_orfs),1);
 chamilos_kontoyiannis_2008.data(ind1) = raw_data(ind2);
 chamilos_kontoyiannis_2008.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'chamilos_kontoyiannis_2008.mat'],'chamilos_kontoyiannis_2008');
+save('./chamilos_kontoyiannis_2008.mat','chamilos_kontoyiannis_2008');
 return;
 
 % Save data into database

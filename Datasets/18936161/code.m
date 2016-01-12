@@ -42,9 +42,7 @@ mir_cashikar_2009.data(ind2,1) = hits_scores(ind1);
 
 mir_cashikar_2009.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'mir_cashikar_2009.mat'],'mir_cashikar_2009');
+save('./mir_cashikar_2009.mat','mir_cashikar_2009');
 return;
 
 % Save data into database

@@ -47,9 +47,7 @@ brett_rao_2011.orfs = t;
 brett_rao_2011.data = t2;
 brett_rao_2011.ph = [strcat(phenotypes{1}, '; ', treatments); strcat(phenotypes{2},'; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'brett_rao_2011.mat'],'brett_rao_2011');
+save('./brett_rao_2011.mat','brett_rao_2011');
 return;
 
 % Save data into database

@@ -59,9 +59,7 @@ narayanaswamy_marcotte_2006.data = t;
 narayanaswamy_marcotte_2006.ph = strcat(phenotypes3, '; ', treatments);
 narayanaswamy_marcotte_2006.ph = narayanaswamy_marcotte_2006.ph';
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'narayanaswamy_marcotte_2006.mat'],'narayanaswamy_marcotte_2006');
+save('./narayanaswamy_marcotte_2006.mat','narayanaswamy_marcotte_2006');
 return;
 
 % Save data into database

@@ -34,9 +34,7 @@ orij_smits_2012.data = hits_scores;
 
 orij_smits_2012.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'orij_smits_2012.mat'],'orij_smits_2012');
+save('./orij_smits_2012.mat','orij_smits_2012');
 return;
 
 % Save data into database

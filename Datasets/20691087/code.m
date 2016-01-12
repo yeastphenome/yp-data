@@ -45,9 +45,7 @@ alamgir_golshani_2010.orfs = t;
 alamgir_golshani_2010.data = t2;
 alamgir_golshani_2010.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'alamgir_golshani_2010.mat'],'alamgir_golshani_2010');
+save('./alamgir_golshani_2010.mat','alamgir_golshani_2010');
 return;
 
 % Save data into database

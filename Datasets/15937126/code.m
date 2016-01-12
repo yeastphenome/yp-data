@@ -41,9 +41,7 @@ sambade_kane_2005.data(ind2,1) = hits_scores(ind1);
 
 sambade_kane_2005.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'sambade_kane_2005.mat'],'sambade_kane_2005');
+save('./sambade_kane_2005.mat','sambade_kane_2005');
 return;
 
 % Save data into database

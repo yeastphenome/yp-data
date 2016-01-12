@@ -45,9 +45,7 @@ kemmer_roberge_2009.data(ind2,1) = hits_scores(ind1);
 
 kemmer_roberge_2009.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'kemmer_roberge_2009.mat'],'kemmer_roberge_2009');
+save('./kemmer_roberge_2009.mat','kemmer_roberge_2009');
 return;
 
 % Save data into database

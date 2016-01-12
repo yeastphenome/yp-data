@@ -41,9 +41,7 @@ breslow_weissman_2008.orfs = t;
 breslow_weissman_2008.data = t2;
 breslow_weissman_2008.ph = phenotypes;
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'breslow_weissman_2008.mat'],'breslow_weissman_2008');
+save('./breslow_weissman_2008.mat','breslow_weissman_2008');
 return;
 
 % Save data into database

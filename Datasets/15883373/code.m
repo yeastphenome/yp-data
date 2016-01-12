@@ -68,9 +68,7 @@ load essential_genes_100908;
 xie_huang_2005.orfs(ind1) = [];
 xie_huang_2005.data(ind1,:) = [];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'xie_huang_2005.mat'],'xie_huang_2005');
+save('./xie_huang_2005.mat','xie_huang_2005');
 return;
 
 % Save data into database

@@ -56,9 +56,7 @@ svensson_samson_2011.orfs = t;
 svensson_samson_2011.data = t2;
 svensson_samson_2011.ph = strcat(phenotypes, {'; '} , treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'svensson_samson_2011.mat'],'svensson_samson_2011');
+save('./svensson_samson_2011.mat','svensson_samson_2011');
 return;
 
 % Save data into database

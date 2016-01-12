@@ -39,9 +39,7 @@ fillingham_andrews_2009.orfs = t;
 fillingham_andrews_2009.data = t2;
 fillingham_andrews_2009.ph = phenotypes;
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'fillingham_andrews_2009.mat'],'fillingham_andrews_2009');
+save('./fillingham_andrews_2009.mat','fillingham_andrews_2009');
 return;
 
 % Save data into database

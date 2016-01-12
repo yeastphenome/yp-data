@@ -51,9 +51,7 @@ stepchenkova_pavlov_2005.data(ind1,:) = hits_scores(ind2,:);
 stepchenkova_pavlov_2005.ph = [strcat(phenotypes, '; ', treatments)];
 
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'stepchenkova_pavlov_2005.mat'],'stepchenkova_pavlov_2005');
+save('./stepchenkova_pavlov_2005.mat','stepchenkova_pavlov_2005');
 return;
 
 % Save data into database

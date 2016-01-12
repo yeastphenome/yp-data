@@ -103,9 +103,7 @@ gonzalez_ramos_daran_2003.orfs = t;
 gonzalez_ramos_daran_2003.data = t2;
 gonzalez_ramos_daran_2003.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'gonzalez_ramos_daran_2003.mat'],'gonzalez_ramos_daran_2003');
+save('./gonzalez_ramos_daran_2003.mat','gonzalez_ramos_daran_2003');
 return;
 
 % Save data into database

@@ -84,9 +84,7 @@ schmidt_boyer_2012.data(ind2,3) = hits_scores(ind1);
 
 schmidt_boyer_2012.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'schmidt_boyer_2012.mat'],'schmidt_boyer_2012');
+save('./schmidt_boyer_2012.mat','schmidt_boyer_2012');
 return;
 
 

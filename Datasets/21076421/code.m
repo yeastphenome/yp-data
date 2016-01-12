@@ -39,9 +39,7 @@ baryshnikova_myers_2010.orfs = t2;
 baryshnikova_myers_2010.data = t;
 baryshnikova_myers_2010.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'baryshnikova_myers_2010.mat'],'baryshnikova_myers_2010');
+save('./baryshnikova_myers_2010.mat','baryshnikova_myers_2010');
 return;
 
 % Save data into database

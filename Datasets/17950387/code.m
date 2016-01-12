@@ -47,9 +47,7 @@ galvan_smith_2008.orfs = t;
 galvan_smith_2008.data = t2;
 galvan_smith_2008.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'galvan_smith_2008.mat'],'galvan_smith_2008');
+save('./galvan_smith_2008.mat','galvan_smith_2008');
 return;
 
 % Save data into database

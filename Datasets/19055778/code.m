@@ -67,9 +67,7 @@ alamgir_golshani_2008.data = data_avg.data;
 
 alamgir_golshani_2008.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'alamgir_golshani_2008.mat'],'alamgir_golshani_2008');
+save('./alamgir_golshani_2008.mat','alamgir_golshani_2008');
 return;
 
 % Save data into database

@@ -38,9 +38,7 @@ zhou_costa_2009.data = hits_scores;
 
 zhou_costa_2009.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'zhou_costa_2009.mat'],'zhou_costa_2009');
+save('./zhou_costa_2009.mat','zhou_costa_2009');
 return;
 
 % Save data into database

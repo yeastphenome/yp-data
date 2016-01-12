@@ -52,9 +52,7 @@ yoshikawa_shimizu_2009.orfs = t;
 yoshikawa_shimizu_2009.data = t2;
 yoshikawa_shimizu_2009.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'yoshikawa_shimizu_2009.mat'],'yoshikawa_shimizu_2009');
+save('./yoshikawa_shimizu_2009.mat','yoshikawa_shimizu_2009');
 return;
 
 % Save data into database

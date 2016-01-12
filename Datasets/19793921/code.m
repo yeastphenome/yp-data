@@ -59,9 +59,7 @@ kanki_klionsky_2009.data = hits_scores_u;
 
 kanki_klionsky_2009.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'kanki_klionsky_2009.mat'],'kanki_klionsky_2009');
+save('./kanki_klionsky_2009.mat','kanki_klionsky_2009');
 return;
 
 % Save data into database

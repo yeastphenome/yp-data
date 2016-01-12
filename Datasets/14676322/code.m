@@ -26,9 +26,7 @@ warringer_blomberg_2003.orfs = t;
 warringer_blomberg_2003.data = t2;
 warringer_blomberg_2003.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'warringer_blomberg_2003.mat'],'warringer_blomberg_2003');
+save('./warringer_blomberg_2003.mat','warringer_blomberg_2003');
 return;
 
 % Save data into database

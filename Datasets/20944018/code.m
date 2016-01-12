@@ -58,9 +58,7 @@ gresham_botstein_2011.data(ind1,2) = data2.data_avg(ind2);
 
 gresham_botstein_2011.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'gresham_botstein_2011.mat'],'gresham_botstein_2011');
+save('./gresham_botstein_2011.mat','gresham_botstein_2011');
 return;
 
 % Save data into database

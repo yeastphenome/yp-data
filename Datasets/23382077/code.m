@@ -37,9 +37,7 @@ huang_paulovich_2013.data(ind1,:) = hits_scores(ind2,:);
 
 huang_paulovich_2013.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'huang_paulovich_2013.mat'],'huang_paulovich_2013');
+save('./huang_paulovich_2013.mat','huang_paulovich_2013');
 return;
 
 % Save data into database

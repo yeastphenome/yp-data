@@ -29,9 +29,7 @@ alto_dixon_2006.data(ind2,:) = hits_data(ind1,:);
 
 alto_dixon_2006.ph = strcat(phenotypes, '; ', treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'alto_dixon_2006.mat'],'alto_dixon_2006');
+save('./alto_dixon_2006.mat','alto_dixon_2006');
 return;
 
 % TODO: Save data into database

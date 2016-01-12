@@ -65,9 +65,7 @@ huang_oshea_2005.orfs = map.orf_u;
 huang_oshea_2005.data = map.data_avg_avg;
 huang_oshea_2005.ph = [strcat(phenotypes, '; ', treatments)];
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'huang_oshea_2005.mat'],'huang_oshea_2005');
+save('./huang_oshea_2005.mat','huang_oshea_2005');
 return;
 
 % Save data into database

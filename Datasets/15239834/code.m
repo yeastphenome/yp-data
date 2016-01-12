@@ -51,9 +51,7 @@ hartman_tippery_2004.orfs = t;
 hartman_tippery_2004.data = t2;
 hartman_tippery_2004.ph = strcat(phenotypes, {'; '}, treatments);
 
-a = mfilename('fullpath');
-a = a(1:end-4);
-save([a,'hartman_tippery_2004.mat'],'hartman_tippery_2004');
+save('./hartman_tippery_2004.mat','hartman_tippery_2004');
 return;
 
 % Save data into database
