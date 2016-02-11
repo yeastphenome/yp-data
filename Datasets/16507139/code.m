@@ -10,7 +10,7 @@ phenotypes = {'expression of PIS1'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/gb-2006-7-1-r6-s2.xlsx');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/gb-2006-7-1-r6-s2.xlsx');
 
 orfs = data.raw(41:end,1);
 raw_data = data.raw(41:end,2:47);

@@ -10,7 +10,7 @@ chesi_gitler_2012.pmid = 22457822;
 phenotypes = {'Growth, colony size'};
 treatments = {'Manganese'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/yeast deletions Mn.xlsx', 'single deletion');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/yeast deletions Mn.xlsx', 'single deletion');
 
 crr = zeros(size(data.raw,2)-1,3);  % Concentration, within-round replicate, round
 for i = 2 : length(data.raw(1,:))

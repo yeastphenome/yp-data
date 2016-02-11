@@ -16,7 +16,7 @@ doses(2,:) = {'0.01%','0.02%','0.025%','0.03%'};
 doses(3,:) = {'0.25 mM','0.5 mM','0.75 mM','1 mM'};
 doses(4,:) = {'25 J/m2','50 J/m2','75 J/m2','100 J/m2'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/ORIG130404_Begley2001raw.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/ORIG130404_Begley2001raw.xlsx', 'Sheet1');
 
 % Find the column with the systematic ORF name
 ind_orf = find(strcmp('ORF', data.raw(1,:)));

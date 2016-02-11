@@ -10,8 +10,8 @@ treatments = {'ethanol, 30C', 'ethanol, 37C'};
 %% Hit Strains
 
 % Load hit strains and tested strains
-[FILENAMES{end+1}, data] = dataread('xlsread', './raw_data/nar-03484-z-2014-File007.xlsx', 'Suppl_TabS1');
-[FILENAMES{end+1}, dataAll] = dataread('xlsread', './raw_data/Tigano et al NAR 2015_List of tested yeast mutant strains.xlsx', 'Foglio1');
+[FILENAMES{end+1}, data] = readdata('xlsread', './raw_data/nar-03484-z-2014-File007.xlsx', 'Suppl_TabS1');
+[FILENAMES{end+1}, dataAll] = readdata('xlsread', './raw_data/Tigano et al NAR 2015_List of tested yeast mutant strains.xlsx', 'Foglio1');
 
 % Get list of ORFs from both sets of ORFs
 hit_orfs = data(4:end,1);
@@ -56,8 +56,8 @@ hit_data = cell2mat(hit_data);
 [hit_orfs, hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
 
 % Check to see all hit_orfs are in all_orfs
-  % missing_orfs = setdiff(hit_orfs, all_orfs); 
-  % disp(missing_orfs);
+% missing_orfs = setdiff(hit_orfs, all_orfs); 
+% disp(missing_orfs);
 
 % Find indices for hit_orfs in all_orfs 
 [~, ind1, ind2] = intersect(all_orfs, hit_orfs);
@@ -73,4 +73,3 @@ tigano_ottonello_2015.data = all_data;
 save('./tigano_ottonello_2015.mat','tigano_ottonello_2015');
 
 end
-

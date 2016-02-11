@@ -14,7 +14,7 @@ bleackley_macgillivray_2011.pmid = 21212869;
 phenotypes = {'Growth, colony size'};
 treatments = {'Iron, Fe(NH4)2(SO4)2 (10 mM)';'Copper, CuCl2 (7 mM)';'Manganese, MnCl2 (4 mM)';'Nickel, NiCl2 (3 mM)';'Zinc, ZnCl2 (7 mM)'; 'Cobalt, CoCl2 (2.5 mM)'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/metallomicsbleackley raw data.xls', 'rawdata');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/metallomicsbleackley raw data.xls', 'rawdata');
 
 % Get indices of the data columns
 ind_data = 3:2:13;

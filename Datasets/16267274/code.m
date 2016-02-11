@@ -13,7 +13,7 @@ dunn_jensen_2006.pmid = 16267274;
 phenotypes = {'Growth, log2 hybridization ratio'};
 treatments = {'EtBr, 25 ug/ml'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Supp_Table3.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Supp_Table3.xlsx', 'Sheet1');
 
 ind_orf = strmatch('Systemic name', data.raw(12,:));
 data2.orfs = upper(data.raw(14:end, ind_orf));

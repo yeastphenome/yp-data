@@ -10,7 +10,7 @@ treatments = {'NaAsO2, 0.2 mM'; 'NaAsO2, 0.4 mM'};
 %% Hit Strains
 
 % Load hit strains
-[FILENAMES{end+1}, data] = dataread('xlsread', './raw_data/c5mt00261c1.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data] = readdata('xlsread', './raw_data/c5mt00261c1.xlsx', 'Sheet1');
 
 % Get the list of ORFs
 hit_strains = data(4:end, 1);

@@ -13,7 +13,7 @@ svensson_samson_2011.pmid = 21978764;
 phenotypes = {'Growth, GI50'};
 treatments = {'MMS'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/1752-0509-5-157-s1.xlsx', '2. Gi50 and R2 all strains');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/1752-0509-5-157-s1.xlsx', '2. Gi50 and R2 all strains');
 
 % Get indices of the data columns
 ind_data = 4;

@@ -9,7 +9,7 @@ gatbonton_bedalov_2006.source = {'main PDF'};
 gatbonton_bedalov_2006.downloaddate = {'2014-03-10'};
 gatbonton_bedalov_2006.pmid = 16552446;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/gatbonton_bedalov_2006_hits.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/gatbonton_bedalov_2006_hits.xlsx', 'Sheet1');
 
 [hits_orfs, translated] = translate(data.raw(:,1));
 hits_orfs(~translated) = [];
@@ -29,7 +29,7 @@ treatments = {''};
 
 
 % Load tested genes
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/genelist_altered_020806.xlsx', 'mat alpha copy.txt');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/genelist_altered_020806.xlsx', 'mat alpha copy.txt');
 
 tested_orfs = data.raw(2:end,1);
 inds = find(cellfun(@isnumeric, tested_orfs));

@@ -13,8 +13,8 @@ xie_huang_2005.pmid = 15883373;
 phenotypes = {'Growth, spot intensity on cell microarray'};
 treatments = {'Rapamycin, 10 nM'; 'Rapamycin, 30 nM'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa10nm');
-[FILENAMES{end+1}, data2.raw] = dataread('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa30nm');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa10nm');
+[FILENAMES{end+1}, data2.raw] = readdata('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa30nm');
 
 % Get indices of the data columns
 ind_data = find(strcmp('Rapa/DMSO', data.raw(1,:)));

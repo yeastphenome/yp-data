@@ -10,7 +10,7 @@ phenotypes = {'growth (spot assay)'};
 treatments = {'MMS';'t-BuOOH';'4NQO';'UV score'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Begley2003.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Begley2003.xlsx', 'Sheet1');
 
 hits_orfs = data.raw(2:end,1);
 hits_data = data.raw(2:end,7:10);

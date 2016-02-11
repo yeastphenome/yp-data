@@ -10,7 +10,7 @@ warringer_blomberg_2003.pmid = 14676322;
 phenotypes = {'Growth, lag phase';'Growth, exponential growth rate';'Growth, saturation level'};
 treatments = {'NaCl, 0.85 M'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/ORIG130305_LPI NaCl.xlsx', 'LPI');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/ORIG130305_LPI NaCl.xlsx', 'LPI');
 
 data2.orfs = upper(data.raw(5:end,1));
 data2.data = cell2mat(data.raw(5:end,2:4));

@@ -10,7 +10,7 @@ phenotypes = {'growth (culture turbidity)'};
 treatments = {'high pressure';'low temperature'};
 
 % Load tested strains
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/mat_alpha_041902.xlsx', 'mat_alpha_041902.txt');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/mat_alpha_041902.xlsx', 'mat_alpha_041902.txt');
 
 tested_orfs = tested.raw(4:end,3);
 
@@ -19,7 +19,7 @@ tested_orfs(inds) = [];
 
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Table1_Abe_Genetics.xlsx', 'Table 1 (2)');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Table1_Abe_Genetics.xlsx', 'Table 1 (2)');
 
 hits_orfs = data.raw(7:end,3);
 hits_data = data.raw(7:end,[26 31]);

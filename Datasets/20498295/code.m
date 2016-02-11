@@ -14,7 +14,7 @@ dakshinamurthy_garfinkel_2010.orfs = nyswaner_garfinkel_2008.orfs;      % Same s
 dakshinamurthy_garfinkel_2010.data = zeros(length(dakshinamurthy_garfinkel_2010.orfs),1);
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TableS1-2.xlsx', 'Sheet2');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/TableS1-2.xlsx', 'Sheet2');
 hits_orfs = data.raw(:,2);
 hits_data = data.raw(:,3);
 

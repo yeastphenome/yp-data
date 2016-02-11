@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'gliotoxin'};
 
 % Load tested
-[FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/tested_orfs.txt', '%s');
+[FILENAMES{end+1}, tested_orfs] = readdata('textread','./raw_data/tested_orfs.txt', '%s');
 
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 

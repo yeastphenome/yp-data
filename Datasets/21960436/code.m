@@ -11,7 +11,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'quinine [1.5-1.7 g/L]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/List of strains tested.xlsx', 'Tabelle2');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/List of strains tested.xlsx', 'Tabelle2');
 tested_orfs = tested.raw(2:end,1);
 % slow_growers = tested.raw(2:end,2);
 % inds = find(~cellfun(@isnumeric, slow_growers));
@@ -23,19 +23,19 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames_HS] = dataread('textread','./raw_data/hits_genenames_hs.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_HS] = readdata('textread','./raw_data/hits_genenames_hs.txt', '%s');
 
 hits_genenames_HS = cleanGenename(hits_genenames_HS);
 hits_orfs_HS = translate(hits_genenames_HS);
 hits_scores_HS = zeros(length(hits_orfs_HS),1)-2;
 
-[FILENAMES{end+1}, hits_genenames_S] = dataread('textread','./raw_data/hits_genenames_s.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_S] = readdata('textread','./raw_data/hits_genenames_s.txt', '%s');
 
 hits_genenames_S = cleanGenename(hits_genenames_S);
 hits_orfs_S = translate(hits_genenames_S);
 hits_scores_S = zeros(length(hits_orfs_S),1)-1;
 
-[FILENAMES{end+1}, hits_genenames_R] = dataread('textread','./raw_data/hits_genenames_r.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_R] = readdata('textread','./raw_data/hits_genenames_r.txt', '%s');
 
 hits_genenames_R = upper(cleanGenename(hits_genenames_R));
 [hits_orfs_R, translated] = translate(hits_genenames_R);

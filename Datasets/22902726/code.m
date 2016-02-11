@@ -11,7 +11,7 @@ phenotypes = {'growth (OD)';'growth (colony size)';'growth (MIC)'};
 treatments = {'boric acid'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/BA sensitivity comprehensive data file.xlsx', 'Strain list');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/BA sensitivity comprehensive data file.xlsx', 'Strain list');
 tested_orfs = tested.raw(2:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -21,7 +21,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/BA sensitivity comprehensive data file.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/BA sensitivity comprehensive data file.xlsx', 'Sheet1');
 
 % Dataset1: Tested = all; hits = liquid
 hits_orfs = data.raw(3:end,1);

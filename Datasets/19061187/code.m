@@ -11,7 +11,7 @@ phenotypes = {'growth (colony size)'};
 treatments = {'acetaldehyde [35 mM]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/S.c 5000.xlsx', 'remake');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/S.c 5000.xlsx', 'remake');
 tested_orfs = tested.raw(3:end,3);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -21,7 +21,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, hits_orfs] = dataread('textread','./raw_data/hits_orfs.txt', '%s');
+[FILENAMES{end+1}, hits_orfs] = readdata('textread','./raw_data/hits_orfs.txt', '%s');
 
 hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
 hits_orfs = unique(upper(hits_orfs));

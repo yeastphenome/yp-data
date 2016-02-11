@@ -11,9 +11,9 @@ phenotypes = {'growth (colony size)'};
 treatments = {'Ni(NO3)2 [2.5-4 mM]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mata_DeletionArray+slow_growers.xlsx', '96');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mata_DeletionArray+slow_growers.xlsx', '96');
 tested_orfs = tested.raw(3:end,2);
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mata_DeletionArray+slow_growers.xlsx', 'slow growers');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mata_DeletionArray+slow_growers.xlsx', 'slow growers');
 tested_orfs = [tested_orfs; tested.raw(3:end,2)];
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -21,14 +21,14 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames_resistant] = dataread('textread','./raw_data/hits_genenames_resistant.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_resistant] = readdata('textread','./raw_data/hits_genenames_resistant.txt', '%s');
 
 hits_orfs_resistant = translate(hits_genenames_resistant);
 hits_orfs_resistant = unique(hits_orfs_resistant);
 
 hits_scores_resistant = ones(length(hits_orfs_resistant),1);
 
-[FILENAMES{end+1}, hits_genenames_sensitive] = dataread('textread','./raw_data/hits_genenames_sensitive.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_sensitive] = readdata('textread','./raw_data/hits_genenames_sensitive.txt', '%s');
 hits_orfs_sensitive = translate(hits_genenames_sensitive);
 hits_orfs_sensitive = unique(hits_orfs_sensitive);
 

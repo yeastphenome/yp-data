@@ -10,7 +10,7 @@ phenotypes = {'mitophagy'};
 treatments = {'YPL'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/TableS2-2.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/TableS2-2.xlsx', 'Sheet1');
 hits_orfs = data.raw(4:end,1);
 hits_scores = data.raw(4:end,2);
 

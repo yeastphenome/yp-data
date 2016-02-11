@@ -11,7 +11,7 @@ phenotypes = {'chronological life span'};
 treatments = {'standard'};
 
 % Load hits
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/journal.pgen.1004168.s013.xlsx', 'Genome-wide CLS screen');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/journal.pgen.1004168.s013.xlsx', 'Genome-wide CLS screen');
 hits_orfs = data.raw(2:end,1);
 hits_scores = data.raw(2:end,3);
 

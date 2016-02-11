@@ -11,7 +11,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'hibernation'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx', 'Mat_a_obs_v2.0.txt');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx', 'Mat_a_obs_v2.0.txt');
 tested_orfs = tested.raw(2:end,1);
 
 

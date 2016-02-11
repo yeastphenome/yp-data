@@ -14,7 +14,7 @@ peyroche_plateau_2012.desc = {'Relative fitness defect: rf = log2(wt(Se)/mut(Se)
 phenotypes = {'Growth, log2 ratio'};
 treatments = {'Sodium selenide, 1 uM 16 h'; 'Sodium selenide, 2 uM 16 h'; 'Sodium selenide, 1 uM 27 h'; 'Sodium selenide, 2 uM 27 h'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/journal.pone.0036343.s004.xlsx', 'data');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/journal.pone.0036343.s004.xlsx', 'data');
 
 % Get indices of the data columns
 ind_data = 5:8;

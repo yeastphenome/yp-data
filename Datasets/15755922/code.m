@@ -10,7 +10,7 @@ phenotypes = {'expression of PIS1'};
 treatments = {'glucose 2%';'glycerol 3%'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/120_GENES_AFFECTING_PIS1.xlsx');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/120_GENES_AFFECTING_PIS1.xlsx');
 
 orfs = data.raw(8:end,2);
 raw_data = data.raw(8:end,[11 14]);

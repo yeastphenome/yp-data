@@ -14,7 +14,7 @@ botet_santos_2007.pmid = 17873082;
 phenotypes = {'Growth, OD'};
 treatments = {'SMM, 77 h'; 'SMM, 120 h'; 'Sulfanilamide, 0.1 mg/ml, 77 h';'Sulfanilamide, 0.1 mg/ml, 120 h'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/1ScreenSULFA&MS&MS+PABA.xlsx', 'DATA');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/1ScreenSULFA&MS&MS+PABA.xlsx', 'DATA');
 
 % Get indices of the data columns
 ind_data = 15:18;

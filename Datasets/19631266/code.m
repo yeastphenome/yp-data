@@ -11,7 +11,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'NaAsO2 [0.075-1 mM]'};
 
 % Load hits
-[FILENAMES{end+1}, hits.raw] = dataread('xlsread','./raw_data/table.xlsx', 'table.csv');
+[FILENAMES{end+1}, hits.raw] = readdata('xlsread','./raw_data/table.xlsx', 'table.csv');
 hits_orfs = hits.raw(4:end,1);
 hits_scores = hits.raw(4:end,4);
 

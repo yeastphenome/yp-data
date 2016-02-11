@@ -13,7 +13,7 @@ galvan_marquez_smith_2013.pmid = 23624539;
 phenotypes = {'Growth, colony size'};
 treatments = {'Chitosan'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Chitosan Effect on GDA (raw data). Exp. 1 to 3. Imelda Galvan, 2013-1.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Chitosan Effect on GDA (raw data). Exp. 1 to 3. Imelda Galvan, 2013-1.xlsx', 'Sheet1');
 
 % Get indices of the data columns
 ind_data = find(strcmp('Ratio', data.raw(1,:)));

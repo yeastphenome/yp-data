@@ -7,7 +7,7 @@ FILENAMES = {};
 
 giorgini_muchowski_2005.pmid = 15806102;
 
-[FILENAMES{end+1}, hits] = dataread('textread','./raw_data/giorgini_muchowski_2005_hits.txt', '%s');
+[FILENAMES{end+1}, hits] = readdata('textread','./raw_data/giorgini_muchowski_2005_hits.txt', '%s');
 
 phenotypes = {'growth (pooled CFU)'};
 treatments = {'Htt103Q'};
@@ -22,7 +22,7 @@ hits_orfs = translate(hits);
 scores = ones(length(hits_orfs),1);
 
 % Load tested genes
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a_obs_v2(1).0.xlsx', 'DATA');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a_obs_v2(1).0.xlsx', 'DATA');
 inds = find(cellfun(@isnumeric, tested.raw(:,2)));
 tested.raw(inds,:) = [];
 

@@ -12,7 +12,7 @@ chavel_cullen_2010.pmid = 20333241;
 phenotypes = {'Msb2p secretion'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/journal.pgen.1000883.s011.xlsx', 'Complete Screen');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/journal.pgen.1000883.s011.xlsx', 'Complete Screen');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,2)));

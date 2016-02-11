@@ -11,7 +11,7 @@ phenotypes = {'growth [MIC]'};
 treatments = {'heat stress (temperature [50ºC], duration [30 min])'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat_a.xlsx', 'mat_a_041902');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a.xlsx', 'mat_a_041902');
 tested_orfs = tested.raw(3:end,2);
 
 

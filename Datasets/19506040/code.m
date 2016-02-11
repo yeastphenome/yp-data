@@ -11,7 +11,7 @@ phenotypes = {'endocytosis (MatA)';'endocytosis (MatAlpha)'};
 treatments = {''};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/JCB_200811116_TS1.xlsx', 'TableS1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/JCB_200811116_TS1.xlsx', 'TableS1');
 
 hits_orfs = data.raw(6:end,2);
 hits_data_a = data.raw(6:end,4);

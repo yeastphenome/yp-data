@@ -12,7 +12,7 @@ alamgir_golshani_2010.pmid = 20691087;
 phenotypes = {'Growth, colony size'};
 treatments = {'3-AT, 22 mg/ml';'cycloheximide, 45 ng/ml';'streptomycin, 40 mg/ml';'neomycin, 5.5 mg/ml'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/1472-6769-10-6-s1.xlsx', 'Raw genome-wide data');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/1472-6769-10-6-s1.xlsx', 'Raw genome-wide data');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,1)));

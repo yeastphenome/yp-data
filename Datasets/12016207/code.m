@@ -11,8 +11,8 @@ desmoucelles_daignan_fornier_2002.source = {'manuscript PDF'};
 desmoucelles_daignan_fornier_2002.downloaddate = {'2014-02-10'};
 desmoucelles_daignan_fornier_2002.pmid = 12016207;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/desmoucelles_daignan_fornier_2002_data.xlsx', 'data.txt');
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/euroscarf list.xlsx', '1_1.xlwb');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/desmoucelles_daignan_fornier_2002_data.xlsx', 'data.txt');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/euroscarf list.xlsx', '1_1.xlwb');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, tested.raw(:,2)));

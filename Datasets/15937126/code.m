@@ -11,7 +11,7 @@ phenotypes = {'growth (colony size)'};
 treatments = {'pH [7.5] CaCl2 [60 mM]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/ResGen 384 well set 14 plates.xlsx', 'ResGen MATa -384');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/ResGen 384 well set 14 plates.xlsx', 'ResGen MATa -384');
 tested_orfs = tested.raw(4:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -21,7 +21,7 @@ tested_orfs(ismember(tested_orfs,{'YLR287-A'})) = {'YLR287C-A'};
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = readdata('textread','./raw_data/hits_genenames.txt', '%s');
 hits_orfs = translate(hits_genenames);
 
 hits_scores = -ones(length(hits_orfs),1);

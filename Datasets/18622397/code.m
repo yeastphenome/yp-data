@@ -12,7 +12,7 @@ breslow_weissman_2008.pmid = 18622397;
 phenotypes = {'Growth, flow cytometry'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/nmeth.1234-S5.xlsx', 'Deletion growth rates');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/nmeth.1234-S5.xlsx', 'Deletion growth rates');
 
 % Get indices of the data columns
 ind_data = find(strcmp('Median Growth Rate', data.raw(1,:)));

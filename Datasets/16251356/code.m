@@ -11,7 +11,7 @@ phenotypes = {'growth'};
 treatments = {'hypoxia'};
 
 % Load tested genes
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/BY4741-MATa COLLECTION.xls', 'chr11_1yes');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/BY4741-MATa COLLECTION.xls', 'chr11_1yes');
 
 tested_orfs = data.raw(2:end,2);
 
@@ -27,7 +27,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load hits
-[FILENAMES{end+1}, hits] = dataread('textread','./raw_data/reiner_scheiter_2006_hits.txt', '%s');
+[FILENAMES{end+1}, hits] = readdata('textread','./raw_data/reiner_scheiter_2006_hits.txt', '%s');
 
 % This list of ORFs is lacking the last character (published that way), so
 % we have to match it to the list of tested strains.

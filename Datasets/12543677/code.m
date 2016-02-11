@@ -10,7 +10,7 @@ blackburn_avery_2003.source = {'manuscript PDF'};
 blackburn_avery_2003.downloaddate = {'2014-02-12'};
 blackburn_avery_2003.pmid = 12543677;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/blackburn_avery_2003_data.xlsx', 'data.txt');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/blackburn_avery_2003_data.xlsx', 'data.txt');
 
 phenotypes = {'growth (MIC)'};
 treatments = data.raw(1,2:8)';

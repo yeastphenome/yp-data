@@ -11,7 +11,7 @@ yoshikawa_shimizu_2009.desc = {'The final values are treated divided by untreate
 phenotypes = {'Growth, exponential growth rate'};
 treatments = {'UNT';'EtOH, 5%';'EtOH, 8%';'NaCl, 1 M'};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/FYR_456_sm_tableS1.xlsx', 'data');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/FYR_456_sm_tableS1.xlsx', 'data');
 
 data2.orfs = upper(data.raw(3:end, 1));
 

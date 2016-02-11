@@ -7,7 +7,7 @@ FILENAMES = {};
 
 cooper_fields_2010.pmid = 20610602;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/SupplementalTable4.xlsx');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/SupplementalTable4.xlsx');
 
 cooper_fields_2010.orfs = upper(data.raw(2:end,1));
 cooper_fields_2010.ph = data.raw(1,3:end)';

@@ -9,7 +9,7 @@ hellauer_turcotte_2005.source = {'main PDF'};
 hellauer_turcotte_2005.downloaddate = {'2014-03-04'};
 hellauer_turcotte_2005.pmid = 16061773;
 
-[FILENAMES{end+1}, DATA] = dataread('textread','./raw_data/hits_all.txt', '%s %d');
+[FILENAMES{end+1}, DATA] = readdata('textread','./raw_data/hits_all.txt', '%s %d');
 
 hits_orfs = DATA{1};
 scores = DATA{2};
@@ -21,7 +21,7 @@ treatments = {'tirapazamine'};
 hits_orfs(:,1) = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
 
 % Load tested genes
-[FILENAMES{end+1}, tested_orfs] = dataread('textread','./raw_data/ORF.txt', '%s');
+[FILENAMES{end+1}, tested_orfs] = readdata('textread','./raw_data/ORF.txt', '%s');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(~strncmp('Y', tested_orfs,1));

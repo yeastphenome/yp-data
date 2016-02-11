@@ -9,7 +9,7 @@ chan_zheng_2000.source = {'Supplementary Table 3'};
 chan_zheng_2000.downloaddate = {'2014-01-31'};
 chan_zheng_2000.pmid = 11078525;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/chan_zheng_2000_HAP.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/chan_zheng_2000_HAP.xlsx', 'Sheet1');
 
 phenotypes = {'growth'};
 treatments = {'rapamycin, 25 nM'};

@@ -10,7 +10,7 @@ phenotypes = {'growth [CFU]'};
 treatments = {'AuNP [10-100 ug/ml]'};
 
 % Load tested (Same as Ding~Bakalinksy, 2013)
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);

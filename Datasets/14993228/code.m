@@ -9,7 +9,7 @@ serrano_arino_2004.source = {'main PDF'};
 serrano_arino_2004.downloaddate = {'2014-03-03'};
 serrano_arino_2004.pmid = 14993228;
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/serrano_arino_2004.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/serrano_arino_2004.xlsx', 'Sheet1');
 
 phenotypes = {'growth (colony size)'};
 treatments = {'pH 6-2.-7.5'};
@@ -28,7 +28,7 @@ scores = cell2mat(data.raw(:,2));
 scores = scores - 6;
 
 % Load tested genes
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/BY4741.xlsx', 'Tabelle1');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/BY4741.xlsx', 'Tabelle1');
 tested_orfs = unique(upper(cleanOrf(tested.raw(2:end,2))));
 
 % Check if all the hits are in the tested space

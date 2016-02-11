@@ -11,7 +11,7 @@ phenotypes = {'growth'};
 treatments = {'Gly, 3%'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/gb-2009-10-9-r95-s1.xlsx');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/gb-2009-10-9-r95-s1.xlsx');
 hits_orfs = data.raw(3:end,1);
 hits_orfs = unique(strtrim(upper(hits_orfs)));
 
@@ -22,7 +22,7 @@ hits_orfs(inds) = [];
 hits_data(inds,:) = [];
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/pet-Screen.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/pet-Screen.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));

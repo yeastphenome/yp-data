@@ -10,7 +10,7 @@ phenotypes = {'Opi-'};
 treatments = {''};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
 tested_orfs = tested.raw(4:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);

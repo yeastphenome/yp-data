@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'propionic acid'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/List of strains tested.xlsx');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/List of strains tested.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -19,8 +19,8 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = dataread('textread','./raw_data/hits_genenames.txt', '%s');
-[FILENAMES{end+1}, hits_genenames_moderate] = dataread('textread','./raw_data/hits_genenames_moderate.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = readdata('textread','./raw_data/hits_genenames.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_moderate] = readdata('textread','./raw_data/hits_genenames_moderate.txt', '%s');
 
 hits_genenames = cleanGenename(hits_genenames);
 hits_genenames_moderate = cleanGenename(hits_genenames_moderate);

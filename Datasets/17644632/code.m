@@ -11,7 +11,7 @@ phenotypes = {'growth (MIC)'};
 treatments = {'oxalic acid'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -21,7 +21,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/Supplementary_Table_1.xlsx', 'Table 1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Supplementary_Table_1.xlsx', 'Table 1');
 
 % Dataset1: Tested = all; hits = liquid
 hits_orfs = data.raw(4:end,2);

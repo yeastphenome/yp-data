@@ -13,7 +13,7 @@ fillingham_andrews_2009.pmid = 19683497;
 phenotypes = {'HTA1 expression, z-score of log2 GFP:RFP'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/mmc3.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/mmc3.xlsx', 'Sheet1');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,1)));

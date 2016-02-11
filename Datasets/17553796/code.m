@@ -11,7 +11,7 @@ phenotypes = {'growth [MIC]'};
 treatments = {'miconazole [0.025-12.5 ug/ml]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Euroscarf library.xlsx', 'Tabelle1');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Euroscarf library.xlsx', 'Tabelle1');
 tested_orfs = tested.raw(2:end,2);
 
 

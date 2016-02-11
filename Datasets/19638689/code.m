@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'EtOH';'MeOH';'propanol';'NaCl';'H2O2';'37C'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = dataread('xlsread','./raw_data/Mat alpha_KOset list.xlsx');
+[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat alpha_KOset list.xlsx');
 tested_orfs = tested.raw(4:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -19,12 +19,12 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(cleanOrf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, data_hits{1}] = dataread('textread','./raw_data/ethanol_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{2}] = dataread('textread','./raw_data/methanol_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{3}] = dataread('textread','./raw_data/propanol_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{4}] = dataread('textread','./raw_data/nacl_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{5}] = dataread('textread','./raw_data/h2o2_sensitivity_hits.txt', '%s');
-[FILENAMES{end+1}, data_hits{6}] = dataread('textread','./raw_data/heat_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{1}] = readdata('textread','./raw_data/ethanol_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{2}] = readdata('textread','./raw_data/methanol_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{3}] = readdata('textread','./raw_data/propanol_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{4}] = readdata('textread','./raw_data/nacl_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{5}] = readdata('textread','./raw_data/h2o2_sensitivity_hits.txt', '%s');
+[FILENAMES{end+1}, data_hits{6}] = readdata('textread','./raw_data/heat_sensitivity_hits.txt', '%s');
 
 data_hits_orfs = cell(size(data_hits));
 

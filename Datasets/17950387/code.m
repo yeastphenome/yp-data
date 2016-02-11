@@ -11,12 +11,12 @@ phenotypes = {'growth'};
 treatments = {'chimaphilin'};
 
 % Load plate maps
-[FILENAMES{end+1}, map.raw] = dataread('xlsread','./raw_data/yGDA-Master_Plate_list_Combined(New).xlsx', 'Sheet1');
+[FILENAMES{end+1}, map.raw] = readdata('xlsread','./raw_data/yGDA-Master_Plate_list_Combined(New).xlsx', 'Sheet1');
 map.raw(1,:) = [];
 map.platerowcol = cell2mat(map.raw(:,4:6));
 
 % Load data
-[FILENAMES{end+1}, data.raw] = dataread('xlsread','./raw_data/IMELDA 08Feb2006GDAraw data.xls', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/IMELDA 08Feb2006GDAraw data.xls', 'Sheet1');
 data.raw(1,:) = [];
 data.platerowcol = cell2mat(data.raw(:,1:3));
 data.orfs = cell(size(data.raw,1),1);
