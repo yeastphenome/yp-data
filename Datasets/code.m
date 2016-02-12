@@ -75,7 +75,7 @@ tested_strains = [tested_strains; missing];
 % If the dataset is quantitative:
 firstauthor_lastauthor_YYYY.orfs = hit_strains;
 firstauthor_lastauthor_YYYY.ph = strcat(phenotypes, '; ', treatments);
-firstauthor_lastauthor_YYYY.data = hits_data;
+firstauthor_lastauthor_YYYY.data = hit_data;
 
 
 % If the dataset is discrete/binary and the tested strains were provided separately:
