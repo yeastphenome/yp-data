@@ -1,0 +1,271 @@
+Table 1 	 					
+Genes related to protein glycosylation whose deletion results in ldb phenotype 	 					
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a) 	 	
+YBL082C 	RHK1/ALG3 	"DolP-Man dependent alpha-1,3-mannosyl transferase of the ER "	3	R1 	 	
+YBR015C 	MNN2/LDB8 	"Golgi alpha-1,2-mannosyltransferase "	1	R2 	 	
+YDL232W 	OST4 	3.6 kDa subunit of ER DolPP-oligosaccharide/protein glycosyltransferase (OST) 	1	R1 	 	
+YDR245W 	MNN10 	Subunit of Golgi mannan polymerase II (Man Pol II) 	1	R2 	 	
+YEL036C 	ANP1/MNN8 	Subunit of Golgi Man Pol II 	1	R1 	 	
+YEL042W 	GDA1 	GDPase of Golgi membrane 	2	WT 	 	
+YGL038C 	OCH1/LDB12 	"Golgi alpha-1,6-mannosyltransferase "	1	R3 	 	
+YGR036C 	CAX4 	Pyrophosphatase involved in N-glycosylation 	1	R4 	 	
+YJL183W 	MNN11 	Subunit of Golgi Man Pol II 	1	R2 	 	
+YJL186W 	MNN5 	"Golgi alpha-1,2-mannosyl transferase "	1	R1 	 	
+YJR075W 	HOC1 	Subunit of Golgi Man Pol II 	2	R1 	 	
+YKL201C 	MNN4 	Required for Man-P transfer to oligosaccharides 	1	WT 	 	
+YML115C 	VAN1/LDB13 	Subunit of Golgi Man Pol I 	2	R3 	 	
+YNL219C 	ALG9 	ER mannosyltransferase (Dol-PP-linked oligosaccharide biosynthesis) 	3	R1 	 	
+YOR002W 	ALG6 	Glucosyltransferase (Dol-PP-linked oligosaccharide biosynthesis) 	3	R1 	 	
+YOR085W 	OST3 	34 kDa gamma-subunit of ER OST 	2	WT 	 	
+YPL053C 	KTR6/MNN6 	Golgi mannosylphosphate transferase to oligosaccharides 	1	WT 	 	
+YPL050C 	MNN9 	Subunit of Golgi Man Pol I and Man Pol II 	1	R3 	 	
+YPL227C 	ALG5 	UDP-Glc:DolP glucosyltransferase 	3	WT 	 	
+(a) See Fig. 3. 				 		
+						
+Table 2 				 		
+Genes related to vacuolar acidifcation whose deletion results in ldb phenotype 			 			
+ORF 	Gene name 	Short description 	Ldb group 	Invertase sizea 	 	
+YBR127C 	VMA2 	Vacuolar ATPase V1 domain subunit B 	2	WT 	 	
+YCL005W-A 	VMA9/LDB10 	Vacuolar ATPase V0 domain subunit e 	2	R1 	 	
+YDL185W 	TFP1/VMA1 	Vacuolar ATPase V1 domain subunit A 	2	WT 	 	
+YEL027W 	CUP5/VMA3 	Vacuolar ATPase V0 domain subunit c 	2	R1 	 	
+YEL051W 	VMA8 	Vacuolar ATPase V1 domain subunit D 	3	WT 	 	
+YGR020C 	VMA7 	Vacuolar ATPase V1 domain subunit F 	2	WT 	 	
+YGR105W 	VMA21 	Required for the biogenesis of a functional vacuolar ATPase 	3	WT 	 	
+YHR026W 	PPA1/VMA16 	Vacuolar ATPase V0 domain subunit c	3	R1 	 	
+YHR039C-A 	VMA10 	Vacuolar ATPase V1 domain subunit G 	2	WT 	 	
+YHR060W 	VMA22 	Required for the biogenesis of a functional vacuolar ATPase 	2	WT 	 	
+YKL080W 	VMA5 	Vacuolar ATPase V1 domain subunit C 	2	WT 	 	
+YKL119C 	VPH2/VMA12 	Required for the biogenesis of a functional vacuolar ATPase 	2	R2 	 	
+YLR447C 	VMA6 	Vacuolar ATPase V0 domain subunit d 	3	WT 	 	
+YOR332W 	VMA4 	Vacuolar ATPase V1 domain subunit E 	2	WT 	 	
+YPL234C 	TFP3/VMA11 	Vacuolar ATPase V0 domain subunit c' 	3	WT 	 	
+YPR036W 	VMA13/CLS11 	Vacuolar ATPase V1 domain subunit H 	3	R1 	 	
+(a) See Fig. 3. 		 				
+						
+Table 3 	 					
+Genes related to vacuolar targeting whose deletion results in ldb phenotype 	 					
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a) 	 	
+YBR097W 	VPS15 	Serine/threonine protein kinase involved in Golgi retention/vacuolar targeting 	2	R4 	 	
+YCR044C 	PER1/COS16 	Vacuolar membrane protein involved in Mn2+ homeostasis 	2	WT 	 	
+YDR027C 	VPS54 	Required for integrity of actin cytoskeleton 	3	WT 	 	
+YDR080W 	VPS41 	Involved in vacuole organization and biogenesis 	3	WT 	 	
+YDR200C 	VPS64 	Involved in protein-vacuolar targeting 	3	WT 	 	
+YDR264C 	AKR1 	Palmitoyltransferase involved in endocytosis 	2	WT 	 	
+YDR372C 	VPS74 	Involved in protein-vacuolar targeting 	1	R3 	 	
+YDR495C 	VPS3 	Involved in protein-vacuolar targeting 	2	R4 	 	
+YGL095C 	VPS45 	Protein of the Sec1p family essential for vacuolar protein sorting 	3	R2 	 	
+YJR001W 	AVT1 	Neutral aa transporter to vacuole 	3	WT 	 	
+YKL041W 	VPS24 	Involved in late endosome to vacuole transport 	2	WT 	 	
+YLR240W 	VPS34 	Phosphatidylinositol 3-kinase 	3	R4 	 	
+YLR261C 	VPS63 	Involved in protein-vacuolar targeting 	3	WT 	 	
+YLR322W 	VPS65 	Involved in protein-vacuolar targeting 	3	R2 	 	
+YLR396C 	VPS33 	Late endosome to vacuole transport 	3	R2 	 	
+YNL059C 	ARP5 	Involved in protein-vacuolar targeting. Part of the carboxypeptidase Y pathway 	3	WT 	 	
+YNL297C 	MON2 	Involved in protein-vacuolar targeting 	3	R4 	 	
+YOR036W 	PEP12/VPS6 	T-snare activity involved in Golgi-to-vacuole transport 	3	R4 	 	
+YPL045W 	VPS16 	Involved in protein-vacuolar targeting (endosome to vacuole) 	2	R4 	 	
+YPR087W 	VPS69 	Involved in protein-vacuolar targeting 	2	WT 	 	
+YPR139C 	VPS66 	Involved in protein-vacuolar targeting 	2	WT 	 	
+(a) See Fig. 3. 				 		
+						
+Table 4 				 		
+Genes related to secretion-transport of proteins whose deletion results in ldb phenotype 			 			
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a) 	 	
+YBL047C 	EDE1/BUD15 	EH domain protein involved in endocytosis 	3	R1 	 	
+YBR171W 	SEC66 	Subunit of Sec63 complex 	2	R1 	 	
+YDR159W 	SAC3 	Component of the nuclear pore involved in nuclear export of mRNA and protein 	2	WT 	 	
+YDR414C 	ERD1/LDB2 	Involved in retention of ER proteins 	1	WT 	 	
+YEL031W 	SPF1 	ER membrane P-type ATPase 	3	R2 	 	
+YER122C 	GLO3 	ARF GTPase activator of Golgi 	2	R4 	 	
+YER151C 	UBP3 	Ubiquitin-speciWc protease 	2	R4 	 	
+YGL167C 	PMR1/LDB1 	Ca2+/Mn2+ ATPase of Golgi 	1	R3 	 	
+YGL206C 	CHC1 	Clathrin heavy chain 	1	R1 	 	
+YGL223C 	COG1/COD3/LDB11 	Subunit of Golgi transport complex 	1	R3 	 	
+YGL005C 	COG7/COD5 	Subunit of Golgi transport complex 	2	WT 	 	
+YGL054C 	ERV14 	14 kDa protein on ER-derived vesicles 	3	R2 	 	
+YKL179C 	COY1 	Golgi membrane protein 	3	WT 	 	
+YLR262C 	YPT6 	GTPase of Golgi 	3	WT 	 	
+YML071C 	COG8/DOR1 	Subunit of Golgi transport complex 	2	R4 	 	
+YMR091C 	NPL6 	Role in nuclear protein import 	3	R4 	 	
+YNL041C 	COG6/COD2 	Subunit of Golgi transport complex 	2	WT 	 	
+YNL051W 	COG5/COD4 	Subunit of Golgi transport complex 	2	WT 	 	
+YNL084C 	END3 	EH domain protein involved in endocytosis 	3	R2 	 	
+YNR051C 	BRE5 	Involved in protein deubiquitination 	2	R1 	 	
+YOR216C 	RUD3 	Involved in the structural organization of the cis-Golgi 	2	R3 	 	
+(a) See Fig. 3. 		 				
+						
+Table 5 	 					
+Genes related to actin-cytoskeleton organization whose deletion results in ldb phenotype 	 					
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a) 	 	
+YAL047C 	SPC72/LDB4 	Structural constituent of cytoskeleton (spindle pole body outer plaque) 	2	R2 	 	
+YNL225C 	CNM6 7 	Structural constituent of cytoskeleton (spindle pole body outer plaque) 	3	WT 	 	
+YCR002C 	CDC10 	Structural constituent of cytoskeleton (septin ring) 	1	WT 	 	
+YDL225W 	SHS1 	Structural component cytoskeleton (septin ring) 	3	WT 	 	
+YMR294W 	JNM1 	Structural constituent of cytoskeleton 	3	WT 	 	
+YNL243W 	SLA2 	Structural constituent of cytoskeleton (actin patch„endocytosis) 	1	WT 	 	
+YLR370C 	ARC18 	Structural constituent of cytoskeleton (Arp2/3 complex subunit) 	2	WT 	 	
+YBL007C 	SLA1 	Cytoskeletal protein binding protein (actin cortical patch assembly„endocytosis) 	2	R2 	 	
+YCR009C 	RVS161 	Cytoskeletal protein binding protein (actin cable/cortical patch„endocytosis) 	2	R1 	 	
+YDR129C 	SAC6 	Actin Wlament bundling protein (actin cortical patch„endocytosis) 	2	R1 	 	
+YDR150W 	NUM1 	Tubulin binding protein (nuclear migration) 	3	WT 	 	
+YGR078C 	PAC10 	Tubulin binding polypeptide 	3	WT 	 	
+YLR337C 	VRP1 	Actin binding protein„cytoskeletal organization (actin cortical patch„endocytosis) 	2	R1 	 	
+YML094W 	GIM5 	Binds tubulin and participates in tubulin folding 	3	WT 	 	
+YMR032W 	HOF1 	Cytoslkeletal protein binding protein (contractil ring) 	2	R1 	 	
+YOR035C 	SHE4 	Protein-binding protein required for actin cytoskeleton organization (endocytosis) 	3	R1 	 	
+YPR141C 	KAR3 	Microtubule motor in spindle pole body. Functions in mitosis and meiosis 	3	WT 	 	
+YJL179W 	PFD1 	Protein with chaperone activity involved in actin organization 	3	R1 	 	
+YAL016W 	TPD3 	Protein phosphatase involved in actin organization 	2	WT 	 	
+YDL047W 	SIT4 	Protein serine/threonine phosphatase activity 	2	R1 	 	
+YER155C 	BEM2 	GTPase activating protein (GAP) 	2	WT 	 	
+YEL061C 	CIN8 	Involved in mitotic spindle assembly 	3	WT 	 	
+(a) See Fig. 3. 				 		
+						
+Table 6 				 		
+Genes related to transcription whose deletion results in ldb phenotype 			 			
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a) 	 	
+YBR112C 	CYC8 	General transcriptional corepressor (acts with Tup1p) 	3	R4d 	 	
+YCR084C 	TUP1 	General repressor of transcription (acts with Cyc8p) 	3	R2 	 	
+YDL005C 	MED2 	RNA polymerase II holoenzyme/mediator subunit 	2	WT 	 	
+YDR138W 	HPR1 	Component of the RNA polymerase II complex 	3	WT 	 	
+YDR195W 	REF2 	Involved in transcription termination from Pol II promoter 	2	WT 	 	
+YDR310C 	SUM1 	Transcriptional repressor activity 	3	WT 	 	
+YER111C 	SWI4 	Transcription factor 	3	WT 	 	
+YGL025C 	PGD1 	RNA polymerase II transcription mediator activity 	2	WT 	 	
+YGL070C 	RPB9 	RNA polymerase II core subunit 	3	R1 	 	
+YHR041C 	SRB2 	RNA polymerase II holoenzyme/mediator subunit 	3	WT 	 	
+YHR167W 	THP2 	Involved in transcription elongation from Pol II promoter 	3	R2 	 	
+YIL154C 	IMP2Í 	Transcription factor 	3	WT 	 	
+YJL127C 	SPT10 	Transcriptional regulator 	3	WT 	 	
+YJL140W 	RPB4 	RNA polymerase II fourth largest subunit 	2	WT 	 	
+YLR182W 	SWI6 	Transcription factor 	1	WT 	 	
+YNL025C 	SSN8 	RNA polymerase II transcription factor activity 	3	R2 	 	
+YNL139C 	RLR1/LDB5 	Nucleic acid binding protein involved in RNA elongation from Pol II promoter 	2	R2 	 	
+YNR010W 	CSE2 	RNA polymerase II transcription mediator activity 	3	R1 	 	
+YOL051W 	GAL11 	RNA polymerase II transcription mediator activity 	3	WT 	 	
+YOL072W 	THP1 	Protein-binding protein involved in RNA elongation from Pol II promoter 	2	WT 	 	
+YOL148C 	SPT20 	Transcription factor 	3	WT 	 	
+YPL086C 	ELP3 	RNA polymerase II elongator subunit 	3	WT 	 	
+YPL129W 	TAF14 	Transcription initiation factor TFIIF small subunit 	3	R4 	 	
+YPL254W 	HFI1 	Transcription factor 	2	WT 	 	
+YPR072W 	NOT5 	"Member of NOT complex, a global negative regulator of transcription "	2	WT 	 	
+(a) See Fig. 3. 		 				
+						
+Table 7 	 					
+Genes encoding protein kinases or related to signal transduction whose deletion results in ldb phenotype 	 					
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a)	 	
+YAL056W 	GPB2 	Protein with signal transducer activity 	3	WT 	 	
+YDR017C 	KCS1 	Inositol polyphosphate kinase 	2	WT 	 	
+YDR226W 	ADK1 	Adenylate kinase 	2	R2 	 	
+YDR477W 	SNF1 	Serine/threonine protein kinase 	2	R3 	 	
+YDR507C 	GIN4 	Serine/threonine protein kinase 	2	WT 	 	
+YDR173C 	ARG82 	Inositol/phosphatidylinositol kinase 	2	WT 	 	
+YDR523C 	SPS1 	Serine/threonine protein kinase 	3	R1 	 	
+YGR092W 	DBF2 	Protein kinase 	3	WT 	 	
+YGR262C 	BUD32/LDB14 	Serine/threonine protein kinase 	1	R1 	 	
+YKL048C 	ELM1/LDB9 	Protein kinase 	2	WT 	 	
+YLR226W 	BUR2 	"Cyclin-dependent protein kinase, intrinsic regulatory activity "	3	R1 	 	
+YLR362W 	STE11 	Involved in the mating signaling pathway 	3	WT 	 	
+YLR423C 	ATG17 	Required for activation of Apg1 protein kinase 	3	WT 	 	
+YLR425W 	TUS1 	Part of the cell integrity signaling pathway 	3	WT 	 	
+YNL298W 	CLA4 	Serine/threonine protein kinase 	3	WT 	 	
+YOL081W 	IRA2 	GTPase activating protein 	3	WT 	 	
+YPL031C 	PHO85/LDB15 	Cyclin-dependent protein kinase 	1	WT 	 	
+(a) See Fig. 3. 					 	
+						
+Table 8 					 	
+Genes related to cell wall organization whose deletion results in ldb phenotype 			 			
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a)	 	
+YBR078W 	ECM33 	Involved in cell wall organization and biogenesis 	2	R1 	 	
+YDR293C 	SSD1 	RNA-binding protein 	3	WT 	 	
+YDR077W 	SED1 	Cell surface glycoprotein (putative) 	3	WT 	 	
+YMR307W 	GAS1 	"Cell surface glycoprotein with Beta-1,3-glucanosyl transferase activity "	2	WT 	 	
+YPR159W 	KRE6 	Beta-Glucan synthase (putative) 	2	WT 	 	
+YNL322C 	KRE1 	Structural constituent of cell wall 	3	WT 	 	
+(a) See Fig. 3. 					 	
+						
+Table 9 					 	
+Genes related to protein synthesis/degradation 			 			
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a)	 	
+YDL020C 	RPN4 	Involved in ubiquitin-dependent protein degradation 	3	WT 	 	
+YDR069C 	DOA4 	Ubiquitin-specific protease 	3	R3 	 	
+YDR144C 	MKC7 	Aspartic-type signal peptidase 	3	WT 	 	
+YGL058W 	RAD6 	Ubiquitin-conjugating enzyme 	3	R1 	 	
+YGL240W 	DOC1 	Involved in ubiquitin-dependent protein catabolism 	3	WT 	 	
+YIL052C 	RPL34B 	Structural constituent of ribosome 	3	WT 	 	
+YJR090C 	GRR1 	Component of the SCF ubiquitin_ligase complex 	3	R2 	 	
+YKL054C 	DEF1 	Involved in ubiquitin-dependent protein catabolism 	3	WT 	 	
+YLR244C 	MAP1 	Methionine aminopeptidase 	2	R3 	 	
+YMR116C 	ASC1 	G-Beta like protein that interacts with the translational machinery 	2	WT 	 	
+YNL238W 	KEX2 	Ca2+-dependent serine protease 	3	R1 	 	
+YPR163C 	TIF3 	Translation initiation factor eIF-4B 	2	WT 	 	
+(a) See Fig. 3. 		 				
+						
+Table 10	 					
+Genes related to nucleic acid synthesis/modification whose deletion results in ldb phenotype	 					
+ORF	Gene name	Short description	Ldb group	Invertase size(a)	 	
+YCR020W-B	HTL1	Interacts with RSC	2	R1	 	
+YDR364C	CDC40	Pre-mRNA splicing factor	2	WT	 	
+YDR378C	LSM6	Pre-mRNA splicing factor	3	R1	 	
+YER116C	SLX8	Possible role in resolving recombination intermediates during DNA replication	3	R1	 	
+YGL163C	RAD54	Involved in the recombinational repair of double-strand breaks in DNA	3	R1	 	
+YGR056W	RSC1	"Member of RSC complex, which remodels the structure of chromatin"	3	WT	 	
+YHR191C	CTF8	DNA replication factor C complex	3	WT	 	
+YLR318W	EST2	Telomerase reverse transcriptase	3	WT	 	
+YLR320W	MMS22	Involved in double strand brake repair	3	WT	 	
+YMR125W	STO1	"Involved in nuclear mRNA splicing, via spliceosome"	3	R1	 	
+YNL133C	FYV6	Involved in double-strand break repair	3	R1	 	
+YNL250W	RAD50	Involved in processing double-strand DNA breaks	3	WT	 	
+(a) See Fig. 3.					 	
+						
+Table 11					 	
+Genes of various functions (miscellaneous) whose deletion results in ldb phenotype			 			
+ORF	Gene name	Short description	Ldb group	Invertase size(a)	 	
+YBL006C	LDB7	Unknown	2	WT	 	
+YBL058W	SHP1	Regulator of phosphoprotein phosphatase 1	2	R4	 	
+YBR200W	BEM1	Protein-binding protein with SH3-domain	2	WT	 	
+YDL100C	ARR4	"ATPase, involved in resistance to heat and metal stress"	3	R4	 	
+YER014C-A	BUD25	Bud-site selection	3	WT	 	
+YGL020C	MDM39	Involved in mitocohondrion organization and biogenesis	2	R4	 	
+YGL033W	HOP2	Meiosis specific	3	R1	 	
+YGL084C	GUP1	Glycerol transporter (putative)	2	R1	 	
+YGL168W	HUR1	Hydroxyurea resistance	1	R4	 	
+YHR050W	SMF2	Involved in manganese ion transport	2	WT	 	
+YIL097W	FYV10	Involved in negative regulation of gluconeogenesis	3	WT	 	
+YJL062W	LAS21	GPI anchor biosynthesis	2	WT	 	
+YJL080C	SCP160	RNA-binding protein involved in chromosome segregation/mRNA localization	2	R1	 	
+YJL184W	GON7/LDB6	Unknown	1	R1	 	
+YLR242C	ARV1	Protein involved in sterol distribution	2	R1	 	
+YLR369W	SSQ1	Mitochondrial HSP70 family chaperone	2	WT	 	
+YML062C	MFT1	Mitochondrial targeting protein	3	WT	 	
+YNL064C	YDJ1	Essential for post-translational protein translocation	2	WT	 	
+YNR027W	BUD17	Protein involved in bud-site selection	3	WT	 	
+YOR198C	BFR1	"Involved in mRNA metabolism, chromosomal segregation and perhaps secretion"	3	WT	 	
+YOR258W	HNT3	Member of the histidine triad (HIT) superfamily of nucleotide-binding proteins	3	WT	 	
+YPL024W	NCE4	Involved in cell separation	3	WT	 	
+YPL262W	FUM1	Fumarase (fumarate hydralase)	3	WT	 	
+YGL133C	ITC1	Weak ldb phenotype expressed only in the MAT alpha background Required for repression of a-specific genes	3	WT	 	
+(a) See Fig. 3.		 				
+						
+Table 12 	 					
+Uncharacterized and dubious ORFs whose deletion results in ldb phenotype 	 					
+ORF 	Gene name 	Short description 	Ldb group 	Invertase size(a) 	Proposed name 	overlap with 
+YCL005W 		Uncharacterized 	3	WT 	LDB16 	
+YBL083C 		Dubious 	3	WT 		RHK1/ALG3 
+YBR113W 		Dubious 	3	R4 		CYC8 
+YCL007C 	CWH36 	Dubious 	2	R1 		VMA9/LDB10 
+YDL146W 		Uncharacterized 	3	WT 	LDB17 	
+YDR149C 		Dubious 	3	WT 		NUM1 
+YDR199w 		Dubious 	3	WT 		VPS64 
+YEL059W 		Dubious 	1 (alpha)	WT 		
+YGL024W 		Dubious 	2	WT 		PGD1 
+YKL118W 		Dubious 	2	R2 		VPH2/VMA12 
+YKL202W 		Dubious 	1	WT 		MNN4 
+YLL049W 		Uncharacterized 	3	WT 	LDB18 	
+YML095C-A 		Dubious 	3	WT 		GIM5 
+YLR338W 		Dubious 	2	R1 		VRP1 
+YNL296W 		Dubious 	3	R4 		MON2 
+YOL050C 		Dubious 	3	WT 		GAL11 
+YOR322C 		Uncharacterized 	3	R1 	LDB19 	
+(a) See Fig. 3. 		 				
