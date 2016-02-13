@@ -1,5 +1,8 @@
 %% FirstAuthor~LastAuthor, YYYY
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 firstauthor_lastauthor_YYYY.pmid = 12345678;
 
@@ -10,7 +13,7 @@ treatments = {'condition1'; 'condition2'};
 %% Hit strains
 
 % Load hit strains
-[FILENAMES{end+1}, data] = dataread('xlsread','./raw_data/data.xlsx', 'Spreadsheet name');
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/data.xlsx', 'Spreadsheet name');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
