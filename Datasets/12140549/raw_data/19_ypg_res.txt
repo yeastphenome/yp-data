@@ -1,0 +1,1533 @@
+YLL044W	184.723348	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR052W	 55.816766	INESSENTIAL	IES3	biological_process unknown, molecular_function unknown, 
+YMR250W	 51.110911	INESSENTIAL	GAD1	glutamate decarboxylase, amino acid metabolism, glutamate decarboxylase, cellular_component unknown
+YMR230W	 44.218332	INESSENTIAL	RPS10B	Ribosomal protein S10B, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YPL178W	 35.576125	INESSENTIAL	CBC2	Small subunit of the nuclear cap binding complex 
+YOR080W	 33.055475	INESSENTIAL	DIA2	Digs Into Agar, invasive growth, molecular_function unknown, cellular_component unknown
+YDR101C	 31.148499	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL157W	 29.170263	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR061W	 28.630129	INESSENTIAL	RPL22A	Ribosomal protein L22A (L1c) (rp4) (YL31), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLL045C	 26.405774	INESSENTIAL	RPL8B	Ribosomal protein L8B (L4B) (rp6) (YL5), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YJL144W	 26.320829	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL073W	 23.485202	INESSENTIAL	LHS1	novel member of the Hsp70 family of molecular chaperones that localizes to the lumen of the endoplasmic reticulum: 
+YNL228W	 23.266370	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR181C	 23.049196	INESSENTIAL	RPS6B	40S ribosomal gene product S6B (S10B) (rp9) (YS4), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YGL147C	 23.006366	INESSENTIAL	RPL9A	Ribosomal protein L9A (L8A) (rp24) (YL11), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOR198C	 20.887165	INESSENTIAL	BFR1	involved in secretion, cytokinesis*, molecular_function unknown, cellular_component unknown
+YMR193C-A	 20.059987	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR043C	 19.910832	INESSENTIAL	POL32	third (55 kDa) subunit of DNA polymerase delta, nucleotide-excision repair*, delta DNA polymerase, delta DNA polymerase
+YOR293W	 19.854546	INESSENTIAL	RPS10A	Ribosomal protein S10A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOR079C	 19.833877	INESSENTIAL	ATX2	manganese-trafficking protein, oxidative stress response,
+YDL118W	 19.146483	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL088W	 17.509051	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR194W	 16.015068	INESSENTIAL	RPL36A	Ribosomal protein L36A (L39) (YL39), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YBR106W	 16.010117	INESSENTIAL	PHO88	regulator of Pho81, involved in regulating phosphate transport, phosphate transport,
+YOR183W	 15.878122	INESSENTIAL	FYV12	biological_process unknown, molecular_function unknown, cellular_component unknown
+YCL037C	 15.658257	INESSENTIAL	SRO9	RNA binding protein with La motif 
+YMR125W	 14.962104	INESSENTIAL	STO1	transcriptional activator of glycolytic genes 
+YNL227C	 14.292948	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR219W	 13.963627	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR500C	 13.853495	INESSENTIAL	RPL37B	60S ribosomal protein L37B (L43) (YL35), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YEL054C	 13.742936	INESSENTIAL	RPL12A	Ribosomal protein L12A (L15A) (YL23), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOL050C	 13.671983	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL109W	 13.597553	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER156C	 13.483925	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR463W	 12.561378	INESSENTIAL	STP1	Nuclear-localized protein containing zinc finger motifs, tRNA splicing,
+YHR203C	 12.546177	INESSENTIAL	RPS4B	Ribosomal protein S4B (YS6) (rp5) (S7B), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDR315C	 12.466705	INESSENTIAL	IPK1	inositol 1,3,4,5,6-pentakisphosphate 2-kinase (IP5 2-kinase)
+YBR191W	 12.359950	INESSENTIAL	RPL21A	Ribosomal protein L21A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YDR083W	 12.337972	INESSENTIAL	RRP8	biological_process unknown, molecular_function unknown, 
+YER139C	 12.125974	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR264W	 11.943871	INESSENTIAL	RPS28B	Ribosomal protein S28B (S33B) (YS27), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YEL061C	 11.919300	INESSENTIAL	CIN8	kinesin-related protein involved in establishment and maintenance of mitotic spindle, mitotic chromosome segregation*, microtubule motor, kinesin*
+YPR159W	 11.398690	INESSENTIAL	KRE6	potential beta-glucan synthase 
+YKR057W	 10.911446	INESSENTIAL	RPS21A	Ribosomal protein S21A (S26A) (YS25), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YPR057W	 10.279830	INESSENTIAL	BRR1	Spliceosomal snRNP component, mRNA splicing,
+YMR242C	  9.879415	INESSENTIAL	RPL20A	Ribosomal protein L20A (L18A), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOR091W	  9.719456	INESSENTIAL		biological_process unknown, molecular_function unknown, cytoplasm
+YJL117W	  9.600695	INESSENTIAL	PHO86	Putative inorganic phosphate transporter, transport,
+YFL018C	  9.479042	INESSENTIAL	LPD1	dihydrolipoamide dehydrogenase precursor (mature protein is the E3 component of alpha-ketoacid dehydrogenase complexes), serine biosynthesis*, dihydrolipoamide dehydrogenase, mitochondrial matrix*
+YNR004W	  9.428881	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL205C	  9.356448	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL133C	  8.800053	INESSENTIAL	RPL16A	Ribosomal protein L16A (L21A) (rp22) (YL15), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YBL039C	  8.789592	INESSENTIAL	URA7	CTP synthase, highly homologus to URA8 CTP synthase,CTP synthase, 
+YMR219W	  8.753237	INESSENTIAL	ESC1	involved in silencing,molecular_function unknown, 
+YOL121C	  8.743944	INESSENTIAL	RPS19A	40S ribosomal protein S19A (S16aA) (rp55A) (YS16A), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YNL121C	  8.673069	INESSENTIAL	TOM70	70 kDa mitochondrial specialized import receptor of the outer membrane, mitochondrial translocation, protein transporter, mitochondrial outer membrane translocase complex
+YBR031W	  8.505998	INESSENTIAL	RPL4A	Ribosomal protein L4A (L2A) (rp2) (YL2), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLR388W	  8.436640	INESSENTIAL	RPS29A	Ribosomal protein S29A (S36A) (YS29), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOL086C	  8.205085	INESSENTIAL	ADH1	Alcohol dehydrogenase,acylglycerone-phosphate reductase,
+YDL136W	  8.199974	INESSENTIAL	RPL35B	Ribosomal protein L35B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YCR094W	  8.190079	INESSENTIAL	CDC50	involved in cell cycle 
+YER077C	  7.983508	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL130W	  7.947260	INESSENTIAL	RPP1B	Ribosomal protein P1B (L44') (YP1beta) (Ax), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGL012W	  7.946598	INESSENTIAL	ERG4	Sterol C-24 reductase, ergosterol biosynthesis, sterol C-24(28) reductase, endoplasmic reticulum
+YBR194W	  7.919389	INESSENTIAL		biological_process unknown, molecular_function unknown, cytoplasm
+YCR077C	  7.885177	INESSENTIAL	PAT1	Necessary for accurate chromosome transmission during cell 
+YPR087W	  7.845139	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL177W	  7.754758	INESSENTIAL	RPL17B	Ribosomal protein L17B (L20B) (YL17), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YBR133C	  7.688187	INESSENTIAL	HSL7	regulator of Swe1p kinase, bud growth*, protein kinase inhibitor, cytokinetic ring (sensu Saccharomyces)
+YGR148C	  7.669221	INESSENTIAL	RPL24B	Ribosomal protein L24B (rp29) (YL21) (L30B), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YOR308C	  7.435554	INESSENTIAL	SNU66	66kD U4 U6.U5 snRNP associated protein 
+YOL115W	  7.325825	INESSENTIAL	TRF4	homologous to Trf5p and Top1p, associates with Smc1p and Smc2p, mitotic chromosome condensation*, DNA-directed DNA polymerase, nucleus
+YNL226W	  7.318532	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL271C	  7.185851	INESSENTIAL	BNI1	contains formin homology domains; homologous to BNR1 (BNI1 related protein), establishment of cell polarity (sensu Saccharomyces)*, cytoskeletal regulatory protein binding, actin cap (sensu Saccharomyces)*
+YHL009C	  7.148151	INESSENTIAL	YAP3	bZip DNA binding proteins, transcription,
+YJL122W	  7.087975	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL046W	  7.060938	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL067C	  7.043470	INESSENTIAL	RTG1	Transcription factor (bHLH) involved in interorganelle communication between mitochondria, peroxisomes, and nucleus 
+YBR266C	  7.016393	INESSENTIAL		probable membrane protein, biological_process unknown, molecular_function unknown, 
+YGL078C	  6.971892	INESSENTIAL	DBP3	ATP-dependent RNA helicase CA3 of the DEAD DEAH box family, 35S primary transcript processing*, ATP dependent RNA helicase, nucleolus
+YIL009C-A	  6.943269	INESSENTIAL	EST3	181aa protein - 20.5 kD,molecular_function unknown, 
+YNL031C	  6.811204	INESSENTIAL	HHT2	Histone H3 (HHT1 and HHT2 code for identical proteins) 
+YER040W	  6.797115	INESSENTIAL	GLN3	Transcriptional activator of nitrogen-regulated genes,transcription factor, 
+YOR182C	  6.651479	INESSENTIAL	RPS30B	Ribosomal protein S30B, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOR078W	  6.437148	INESSENTIAL	BUD21	BUD site selection, biological_process unknown, molecular_function unknown, 
+YOL041C	  6.391669	INESSENTIAL	NOP12	NucleOlar Protein; isolated as a mutant exhibiting synthetic lethality with a nop2 ts allele., biological_process unknown, molecular_function unknown, 
+YKL007W	  6.238878	INESSENTIAL	CAP1	alpha subunit of capping protein, cell wall organization and biogenesis*, F-actin capping, actin cortical patch (sensu Saccharomyces)*
+YKL074C	  6.129876	INESSENTIAL	MUD2	involved in early pre-mRNA splicing, lariat formation, 5'-splice site cleavage*, pre-mRNA splicing factor*, commitment complex
+YDR154C	  6.078315	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL079C	  5.937586	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL214C	  5.818946	INESSENTIAL	THI6	TMP pyrophosphorylase, hydroxyethylthiazole kinase, vitamin B1 biosynthesis, hydroxyethylthiazole kinase*, cellular_component unknown
+YMR120C	  5.792548	INESSENTIAL	ADE17	5-aminoimidazole-4-carboxamide ribonucleotide (AICAR) transformylase IMP cyclohydrolase,IMP cyclohydrolase, 
+YDR447C	  5.777753	INESSENTIAL	RPS17B	Ribosomal protein S17B (rp51B), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YKL212W	  5.725308	INESSENTIAL	SAC1	integral membrane protein localizing to the ER and Golgi 
+YLR402W	  5.721718	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR287C-A	  5.699046	INESSENTIAL	RPS30A	Ribosomal protein S30A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDR184C	  5.359617	INESSENTIAL	ATC1	nuclear protein that interacts with Aip3 
+YNL323W	  5.272479	INESSENTIAL	LEM3	cell surface receptor linked signal transduction, molecular_function unknown, integral membrane protein
+YNL070W	  5.266037	INESSENTIAL	TOM7	translocase of the outer mito. membrane, mitochondrial translocation, protein transporter, mitochondrial outer membrane translocase complex
+YHR200W	  5.022849	INESSENTIAL	RPN10	homolog of the mammalian S5a protein, component of 26S proteasome, ubiquitin-dependent protein degradation, multicatalytic endopeptidase, 19S proteasome regulatory particle
+YGR118W	  5.011958	INESSENTIAL	RPS23A	Ribosomal protein S23A (S28A) (rp37) (YS14), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YER074W	  4.948539	INESSENTIAL	RPS24A	40S ribosomal protein S24A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YGR034W	  4.908101	INESSENTIAL	RPL26B	Ribosomal protein L26B (L33B) (YL33), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YDR385W	  4.702759	INESSENTIAL	EFT2	translation elongation factor 2 (EF-2), protein synthesis elongation, translation elongation factor, ribosome
+YJL204C	  4.628604	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR048W	  4.623998	INESSENTIAL	RPS11B	Ribosomal protein S11B (S18B) (rp41B) (YS12), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YKR074W	  4.610534	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR283C	  4.607488	INESSENTIAL	SSH1	Probable SEC61 protein homolog, co-translational membrane targeting, protein transporter, translocon
+YBR126C	  4.481668	INESSENTIAL	TPS1	56 kD synthase subunit of trehalose-6-phosphate synthase phosphatase complex, stress response*, alpha,alpha-trehalose-phosphate synthase (UDP-forming), alpha,alpha-trehalose-phosphate synthase (UDP-forming)
+YDL062W	  4.459251	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR146C	  4.405707	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR032W	  4.380513	INESSENTIAL	HOF1	SH3 domain containing-protein, cytokinesis, cytoskeletal protein binding protein, cytokinetic ring (sensu Saccharomyces)
+YML026C	  4.316004	INESSENTIAL	RPS18B	Ribosomal protein S18B, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YBL065W	  4.303512	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL114C	  4.274485	INESSENTIAL	APN1	major apurinic apyrimidinic endonuclease 3'-repair diesterase,DNA-(apurinic or apyrimidinic site) lyase, 
+YAL021C	  4.262843	INESSENTIAL	CCR4	95 kDa containng leucine rich tandem repeats 
+YBL047C	  4.245859	INESSENTIAL	EDE1	USO1 homolog (S. cerevisiae), cytoskeletal-related transport protein, Ca++ binding, biological_process unknown*, molecular_function unknown, actin cortical patch (sensu Saccharomyces)
+YIL034C	  4.219191	INESSENTIAL	CAP2	beta subunit of capping protein, cell wall organization and biogenesis*, F-actin capping, actin cortical patch (sensu Saccharomyces)*
+YPR139C	  4.145214	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL090W	  4.045661	INESSENTIAL	MRP21	Component of the small subunit of mitochondrial ribosomes, protein biosynthesis*, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YIL017C	  4.006865	INESSENTIAL	VID28	vacuole import and degradation,molecular_function unknown, 
+YER007C-A	  3.970236	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR153W	  3.929641	INESSENTIAL	PDR5	multidrug resistance transporter,transporter,
+YOL054W	  3.836627	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL103C	  3.820630	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL133W	  3.774815	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR006C	  3.741101	INESSENTIAL	MRPL13	mitochondrial ribosomal protein YmL13, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YNL248C	  3.715397	INESSENTIAL	RPA49	49-kDa alpha subunit of RNA polymerase A, transcription from Pol I promoter, DNA-directed RNA polymerase I, DNA-directed RNA polymerase I
+YHR050W	  3.595712	INESSENTIAL	SMF2	localized to mitochondrial membrane, manganese ion transport, manganese ion transporter, mitochondrial membrane
+YBL087C	  3.535372	INESSENTIAL	RPL23A	Ribosomal protein L23A (L17aA) (YL32), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YCL029C	  3.523914	INESSENTIAL	BIK1	Microtubule-binding protein, mitotic anaphase B*, microtubule binding, spindle pole body*
+YER020W	  3.521069	INESSENTIAL	GPA2	nucleotide binding regulatory protein, pseudohyphal growth*, heterotrimeric G-protein GTPase, cellular_component unknown
+YLR290C	  3.520472	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL083C	  3.508981	INESSENTIAL	RPS16B	Ribosomal protein S16B (rp61R), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YCR031C	  3.497059	INESSENTIAL	RPS14A	Ribosomal protein S14A (rp59A), protein biosynthesis*, structural protein of ribosome*, cytosolic small ribosomal (40S)-subunit
+YHR191C	  3.483036	INESSENTIAL	CTF8	(putative) kinetochore protein 
+YBR267W	  3.438402	INESSENTIAL		Probable Zn-finger protein (C2H2 type), biological_process unknown, molecular_function unknown, 
+YJR145C	  3.388345	INESSENTIAL	RPS4A	Ribosomal protein S4A (YS6) (rp5) (S7A), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YKR094C	  3.365498	INESSENTIAL	RPL40B	Ribosomal protein L40B, protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YNL169C	  3.293042	INESSENTIAL	PSD1	Phosphatidylserine Decarboxylase 1,phosphatidylserine decarboxylase, 
+YMR256C	  3.236887	INESSENTIAL	COX7	subunit VII of cytochrome c oxidase,cytochrome-c oxidase, 
+YDL041W	  3.225914	INESSENTIAL	KRE26	biological_process unknown, molecular_function unknown, 
+YNL091W	  3.175108	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR153C	  3.129154	INESSENTIAL	SPO16	sporulation protein,molecular_function unknown, 
+YDL063C	  3.111392	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL126W	  3.015098	INESSENTIAL	YPK1	76.5 kDa Serine threonine protein kinase with similarity to protein kinase C, is 90% identical to Ypk2p, biological_process unknown, protein kinase, 
+YFR032C-A	  3.014839	INESSENTIAL	RPL29	Ribosomal protein L29 (YL43), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLR286C	  2.901613	INESSENTIAL	CTS1	Endochitinase,chitinase, 
+YCR028C	  2.888431	INESSENTIAL	FEN2	Amino acid permease, biological_process unknown, molecular_function unknown, 
+YKR092C	  2.885828	INESSENTIAL	SRP40	nucleolar protein that is immunologically and structurally related to rat Nopp140, a nonribosomal protein of the nucleolus and coiled bodies., nucleocytoplasmic transport, chaperone, nucleolus
+YBL079W	  2.854998	INESSENTIAL	NUP170	Nucleoporin highly similar to Nup157p and to mammalian Nup155p (nup170 mutant can be complemented with NUP155), mRNA-nucleus export*, structural protein, nuclear pore
+YKL006W	  2.834459	INESSENTIAL	RPL14A	Ribosomal protein L14A, protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YBR038W	  2.786786	IN	CHS2	chitin synthase 2, cytokinesis*, chitin synthase, cytokinetic ring (sensu Saccharomyces)
+YMR002W	  2.764325	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL147W	  2.743696	INESSENTIAL	LSM7	Sm-like protein 
+YGL200C	  2.725280	INESSENTIAL	EMP24	type I transmemebrane protein, component of COPII-coated, ER-derived transport vesicles 
+YOR071C	  2.717856	INESSENTIAL		transport,
+YJR105W	  2.710767	INESSENTIAL	ADO1	adenosine kinase, biological_process unknown, molecular_function unknown, cellular_component unknown
+YGL252C	  2.703618	INESSENTIAL	RTG2	involved in interorganelle communication between mitochondria, peroxisomes, and nucleus,molecular_function unknown, 
+YBR059C	  2.701463	INESSENTIAL	AKL1	Serine-threonine protein kinase, biological_process unknown, protein kinase, 
+YJR094W-A	  2.697998	INESSENTIAL	RPL43B	Ribosomal protein L43B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YNL096C	  2.691477	INESSENTIAL	RPS7B	Ribosomal protein S7B (rp30), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YNL021W	  2.683646	INESSENTIAL	HDA1	histone deacetylase, shares sequence similarity with Rpd3p, Hos1p, Hos2p, and Hos3p, chromatin architecture*, histone deacetylase, histone deacetylase complex
+YGL253W	  2.677159	INESSENTIAL	HXK2	Hexokinase II (PII) (also called Hexokinase B), glycolysis*, hexokinase, cytosol
+YGR027C	  2.647740	INESSENTIAL	RPS25A	Ribosomal protein S25A (S31A) (rp45) (YS23), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YIL020C	  2.627443	INESSENTIAL	HIS6	phosphoribosyl-5-amino-1-phosphoribosyl-4-imidazolecarboxiamide isomerase, histidine biosynthesis, 1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide isomerase, cell
+YBR282W	  2.624016	INESSENTIAL	MRPL27	Mitochondrial ribosomal protein MRPL27 (YmL27), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YBR069C	  2.613391	INESSENTIAL	TAT1	Amino acid transport protein for valine, leucine, isoleucine, and tyrosine, transport, amino acid permease,
+YBR276C	  2.595329	INESSENTIAL	PPS1	dual specificity protein phosphatase,protein tyrosine phosphatase, 
+YGR240C	  2.578645	INESSENTIAL	PFK1	phosphofructokinase alpha subunit, glycolysis, 6-phosphofructokinase, 6-phosphofructokinase
+YMR158W	  2.571294	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR408C	  2.569785	INESSENTIAL	ADE8	glycinamide ribotide transformylase,phosphoribosylglycinamide formyltransferase, 
+YMR143W	  2.495905	INESSENTIAL	RPS16A	Ribosomal protein S16A (rp61R), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YIL134W	  2.338085	INESSENTIAL	FLX1	mitochondrial inner membrane carrier protein for FAD, mitochondrial transport, flavin adenine dinucleotide transporter, mitochondrion
+YHR066W	  2.332454	INESSENTIAL	SSF1	homologous to Ssf2p,molecular_function unknown, 
+YOR369C	  2.298012	INESSENTIAL	RPS12	40S ribosomal protein S12, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YPL239W	  2.263362	INESSENTIAL	YAR1	YAR1 encodes a 200-amino-acid protein with two ANK repeat motifs and an acidic C terminus rich in PEST-like sequences, biological_process unknown, molecular_function unknown, 
+YGL244W	  2.220803	INESSENTIAL	RTF1	Nuclear protein, transcription,
+YOR104W	  2.207211	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YML047C	  2.135653	INESSENTIAL	PRM6	pheromone-regulated membrane protein, mating (sensu Saccharomyces), molecular_function unknown, integral membrane protein
+YNL208W	  2.115923	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER002W	  2.080662	INESSENTIAL		biological_process unknown, molecular_function unknown, nucleus*
+YGR214W	  2.080450	INESSENTIAL	RPS0A	Ribosomal protein S0A, protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDL035C	  2.069475	INESSENTIAL	GPR1	G-protein coupled receptor 
+YOR295W	  2.068746	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR272C	  2.056042	INESSENTIAL	HSM3	Hsm3p may be a member of the yeast MutS homolog family, mismatch repair, molecular_function unknown, 
+YCR028C-A	  2.049142	INESSENTIAL	RIM1	Single-stranded zinc finger DNA-binding protein 
+YLL024C	  2.044643	INESSENTIAL	SSA2	member of 70 kDa heat shock protein family, protein folding*, chaperone*, cytoplasm*
+YBR275C	  2.038732	INESSENTIAL	RIF1	RAP1-interacting factor, involved in establishment of repressed chromatin, chromatin silencing at telomere*, molecular_function unknown, telomere
+YDL061C	  2.001352	INESSENTIAL	RPS29B	Ribosomal protein S29B (S36B) (YS29), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDL074C	  1.989347	INESSENTIAL	BRE1	biological_process unknown, molecular_function unknown, 
+YOR258W	  1.981799	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL246W	  1.973930	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR083W	  1.916831	INESSENTIAL	TRX3	mitochondrial thioredoxin, oxidative stress response, thioredoxin, mitochondrion
+YER117W	  1.911253	INESSENTIAL	RPL23B	Ribosomal protein L23B (L17aB) (YL32), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLR110C	  1.883718	INESSENTIAL	CCW12	biological_process unknown, molecular_function unknown, 
+YOL028C	  1.882680	INESSENTIAL	YAP7	basic leucine zipper (bZIP) transcription factor, transcription,
+YGR081C	  1.879226	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL018W	  1.874488	INESSENTIAL	RPL2B	Ribosomal protein L2B (L5B) (rp8) (YL6), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLR096W	  1.841174	INESSENTIAL	KIN2	Serine threonine protein kinase 
+YIL139C	  1.828499	INESSENTIAL	REV7	subunit of DNA polymerase-zeta (Pol-zeta), an enzyme whose sole function appears to be translesion synthesis, DNA repair*, zeta DNA polymerase, nucleus
+YML014W	  1.806450	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLL002W	  1.799105	INESSENTIAL	REM50	diepoxybutane and mitomycin C resistance,molecular_function unknown,
+YML102C-A	  1.783768	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR061C	  1.783654	INESSENTIAL	ADE6	5'-phosphoribosylformyl glycinamidine synthetase,phosphoribosylformylglycinamidine synthase, 
+YNR050C	  1.771223	INESSENTIAL	LYS9	Saccharopine dehydrogenase (NADP+, L-glutamate forming) (saccharopine reductase) (EC 1.5.1.10),saccharopine dehydrogenase (NADP+, L-glutamate forming),
+YMR181C	  1.764440	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR274W	  1.761229	INESSENTIAL	CHK1	Protein kinase Chk1, cell cycle,
+YHR091C	  1.747184	INESSENTIAL	MSR1	Arginyl-tRNA synthetase,arginine--tRNA ligase, 
+YLR412W	  1.743141	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL039W	  1.723817	INESSENTIAL	RPP2A	60S acidic ribosomal protein P2A (L44) (A2) (YP2alpha), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YNL223W	  1.694618	INESSENTIAL	AUT2	Anchor protein. Mediates attachment of autophagosomes to microtubules., autophagy*, microtubule binding, microtubule associated protein
+YOR381W	  1.678180	INESSENTIAL	FRE3	similar to FRE2, biological_process unknown, molecular_function unknown, 
+YLR193C	  1.660760	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL093C	  1.628829	INESSENTIAL	RSM25	protein of the small subunit of the mitochondrial ribosome 
+YKL205W	  1.594406	INESSENTIAL	LOS1	nuclear protein LOS1, tRNA splicing,
+YGR057C	  1.576137	INESSENTIAL	LST7	involved in transport of nitrogen-regulated permeases,molecular_function unknown, 
+YOR049C	  1.511331	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR083C	  1.503844	INESSENTIAL	EMP70	endosomal membrane protein 
+YLR406C	  1.499120	INESSENTIAL	RPL31B	Ribosomal protein L31B (L34B) (YL28), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YBR277C	  1.497428	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL106W	  1.475344	INESSENTIAL	AAT1	aspartate aminotransferase, mitochondrial, aspartate catabolism, aspartate aminotransferase, mitochondrion
+YLR190W	  1.463714	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER119C-A	  1.449700	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLL007C	  1.426660	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR271W	  1.416727	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR303C	  1.370771	INESSENTIAL	ADH2	alcohol dehydrogenase II, glycolysis, acylglycerone-phosphate reductase,
+YJL136C	  1.362706	INESSENTIAL	RPS21B	Ribosomal protein S21B (S26B) (YS25), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YIL011W	  1.324720	INESSENTIAL	TIR3	biological_process unknown, molecular_function unknown, 
+YOR234C	  1.319127	INESSENTIAL	RPL33B	Ribosomal protein L33B (L37B) (rp47) (YL37), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YDL082W	  1.317141	INESSENTIAL	RPL13A	Ribosomal protein L13A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLR448W	  1.316018	INESSENTIAL	RPL6B	60S ribosomal subunit protein L6B (L17B) (rp18) (YL16), protein biosynthesis*, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YDL081C	  1.285218	INESSENTIAL	RPP1A	Acidic ribosomal protein P1A (YP1alpha) (A1), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YCR007C	  1.254667	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER131W	  1.253493	INESSENTIAL	RPS26B	Ribosomal protein S26B, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDR157W	  1.214368	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR111W	  1.209824	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR192C	  1.203161	INESSENTIAL	TDH3	Glyceraldehyde-3-phosphate dehydrogenase 3, glycolysis*, glyceraldehyde 3-phosphate dehydrogenase (phosphorylating), cytosol*
+YKR099W	  1.203045	INESSENTIAL	BAS1	transcription factor,transcription factor, 
+YNL325C	  1.178836	INESSENTIAL	FIG4	Homologous to the ATP ADP exchanger Sac1p,molecular_function unknown, 
+YER049W	  1.168278	INESSENTIAL		biological_process unknown, molecular_function unknown, cellular_component unknown
+YIL090W	  1.156953	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR342W	  1.151870	INESSENTIAL	FKS1	1,3-beta-D-glucan synthase, cell wall organization and biogenesis*, 1,3-beta-glucan synthase, actin cap (sensu Saccharomyces)*
+YNL024C	  1.150972	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR018W	  1.133889	INESSENTIAL	RLF2	p90 subunit of yeast omatin Assembly Factor-I (CAF-I) 
+YIR037W	  1.126722	INESSENTIAL	HYR1	putative glutathione-peroxidase, stress response, glutathione peroxidase, cellular_component unknown
+YBR141C	  1.118144	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR009C	  1.117182	INESSENTIAL		biological_process unknown, molecular_function unknown, cytoplasm
+YMR164C	  1.102370	INESSENTIAL	MSS11	Predicted 758 amino acid polypeptide with poly-glutamine and poly-asparagine domains 
+YLR046C	  1.095673	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL013C	  1.080654	INESSENTIAL	HRD1	required to degrade misfolded ER lumenal and integral membrane proteins,molecular_function unknown,
+YBR173C	  1.043076	INESSENTIAL	UMP1	20S proteasome maturation factor 
+YOL006C	  1.018033	INESSENTIAL	TOP1	topoisomerase I, transcription regulation from Pol II promoter*, DNA topoisomerase I, nucleus
+YDR540C	  1.017146	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR284W	  1.016751	INESSENTIAL	YKU70	DNA binding protein, DNA repair,
+YGR056W	  1.012218	INESSENTIAL	RSC1	Member of RSC complex, chromatin modeling, molecular_function unknown, nucleosome remodeling complex
+YOR165W	  0.987780	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER056C-A	  0.987710	INESSENTIAL	RPL34A	Ribosomal protein L34A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YPR017C	  0.984098	INESSENTIAL	DSS4	GDP dissociation factor for Sec4p 
+YJL145W	  0.980530	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL218W	  0.970288	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL234W	  0.968080	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHL033C	  0.967109	INESSENTIAL	RPL8A	Ribosomal protein L8A (rp6) (YL5) (L4A), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YIL015C-A	  0.959087	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR184W	  0.928965	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR031W	  0.924276	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR048W	  0.919121	INESSENTIAL	ARE1	Acyl-CoA cholesterol acyltransferase (sterol-ester synthetase),sterol O-acyltransferase,
+YLR270W	  0.918716	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR157W	  0.907703	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR126C	  0.896774	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR121C	  0.879253	INESSENTIAL	RPL15B	Ribosomal protein L15B (YL10) (L13B) (rp15R), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YMR182C	  0.860086	INESSENTIAL	RGM1	Putative transcriptional repressor with proline-rich zinc fingers, transcription,
+YJR129C	  0.855264	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER164W	  0.837436	INESSENTIAL	CHD1	transcriptional regulator, transcription,
+YPL068C	  0.812931	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR132C	  0.810500	INESSENTIAL	PHB1	mitochondrial protein, prohibitin homolog; similar to S. cerevisiae Phb2p, proteolysis and peptidolysis*, molecular_function unknown, mitochondrion
+YGR041W	  0.810189	INESSENTIAL	BUD9	involved in bud-site selection, polar budding, molecular_function unknown, cell
+YJR131W	  0.791001	INESSENTIAL	MNS1	specific alpha-mannosidase,mannosyl-oligosaccharide 1,2-alpha-mannosidase, 
+YOR061W	  0.790768	INESSENTIAL	CKA2	alpha' subunit of casein kinase II, establishment of cell polarity (sensu Saccharomyces)*, casein kinase II, casein kinase II
+YJR111C	  0.790248	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL213C	  0.782501	INESSENTIAL	FYV14	biological_process unknown, molecular_function unknown, cellular_component unknown
+YPL226W	  0.772733	INESSENTIAL	NEW1	This gene encodes a protein with an Q N-rich amino terminal domain that acts as a prion, termed [NU]+., biological_process unknown, molecular_function unknown, 
+YHR207C	  0.755637	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL083W	  0.749194	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL242W	  0.738780	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR085C	  0.733049	INESSENTIAL	ARP6	Actin-related protein, biological_process unknown, molecular_function unknown, cell
+YGR026W	  0.732796	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR012W	  0.711392	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL220C	  0.709910	INESSENTIAL	FRE2	Ferric reductase, iron homeostasis,
+YEL013W	  0.708113	INESSENTIAL	VAC8	An armadillo repeat-containing protein localized on the vacuolar membrane, protein-vacuolar targeting*, molecular_function unknown, vacuole
+YNL108C	  0.704051	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR147W	  0.702447	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR294W	  0.702377	INESSENTIAL	JNM1	Coiled-coil domain protein required for proper nuclear migration during mitosis (but not during conjugation), mitotic anaphase B, structural protein of cytoskeleton, dynactin complex
+YOR304C-A	  0.692989	INESSENTIAL		biological_process unknown,
+YML102W	  0.667950	INESSENTIAL	CAC2	p60 subunit of the yeast omatin Assembly Factor-I (CAF-I) 
+YLR138W	  0.666012	INESSENTIAL	NHA1	Putative Na+ H+ antiporter 
+YDR156W	  0.665378	INESSENTIAL	RPA14	RNA polymerase I subunit A14, transcription from Pol I promoter, DNA-directed RNA polymerase I, DNA-directed RNA polymerase I
+YJL124C	  0.665043	INESSENTIAL	LSM1	involved in mRNA stablity 
+YJL134W	  0.663414	INESSENTIAL	LCB3	putative plasma membrane transporter capable of transporting sphingoid long chain bases into cells, sphingolipid metabolism,
+YNR019W	  0.647181	INESSENTIAL	ARE2	Acyl-CoA cholesterol acyltransferase (sterol-ester synthetase),sterol O-acyltransferase,
+YGR193C	  0.642149	INESSENTIAL	PDX1	Protein X component of mitochondrial pyruvate dehydrogenase complex, glycolysis, pyruvate dehydrogenase, 
+YML128C	  0.640091	INESSENTIAL	MSC1	biological_process unknown, molecular_function unknown, cellular_component unknown
+YJL183W	  0.639395	INESSENTIAL	MNN11	mannosyltransferase complex component, biological_process unknown,
+YMR223W	  0.632306	INESSENTIAL	UBP8	putative deubiquitinating enzyme, deubiquitylation, ubiquitin-specific protease, cellular_component unknown
+YJR087W	  0.631622	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL299W	  0.627350	INESSENTIAL	TRF5	exhibits homology to Trf4p and Top1p, sister chromatid cohesion, DNA-directed DNA polymerase, nucleus
+YMR171C	  0.623944	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFL004W	  0.610557	INESSENTIAL	VTC2	polyphosphate synthetase (putative) 
+YNL106C	  0.607951	INESSENTIAL	INP52	inositol polyphosphate 5-phosphatase,inositol-1,4,5-triphosphate 5-phosphatase,
+YMR300C	  0.604630	INESSENTIAL	ADE4	phosphoribosylpyrophosphate amidotransferase,amidophosphoribosyltransferase, 
+YDR125C	  0.602822	INESSENTIAL	ECM18	(putative) involved in cell wall biogenesis,molecular_function unknown, 
+YLR126C	  0.583207	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFR031C-A	  0.575733	INESSENTIAL	RPL2A	Ribosomal protein L2A (L5A) (rp8) (YL6), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YDR158W	  0.545077	INESSENTIAL	HOM2	aspartic beta semi-aldehyde dehydrogenase,aspartate-semialdehyde dehydrogenase, 
+YOR167C	  0.537401	INESSENTIAL	RPS28A	Ribosomal protein S28A (S33A) (YS27), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YHR038W	  0.533664	INESSENTIAL	FIL1	Putative mitochondrial ribosome recycling factor, protein biosynthesis, translation termination factor, mitochondrion
+YPR024W	  0.528691	INESSENTIAL	YME1	Mitochondrial member of the CDC48 PAS1 SEC18 family of ATPases, mitochondrion organization and biogenesis, ATP-dependent peptidase, mitochondrial inner membrane
+YOR051C	  0.524867	INESSENTIAL		biological_process unknown, molecular_function unknown, nucleus
+YDR049W	  0.511397	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR100C	  0.499104	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFR018C	  0.493674	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR146W	  0.488119	INESSENTIAL	CRP1	biological_process unknown, molecular_function unknown, cellular_component unknown
+YKL176C	  0.483403	INESSENTIAL	LST4	Required for amino acid permease transport from the Golgi to the cell surface,molecular_function unknown, 
+YOR154W	  0.481741	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR060W	  0.475557	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL335W	  0.475522	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR288C	  0.473923	INESSENTIAL	APM3	clathrin associated protein medium chain 
+YPL062W	  0.466608	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFL041W	  0.464535	INESSENTIAL	FET5	multicopper oxidase, type 1 integral membrane protein, iron transport, multicopper ferroxidase iron transport mediator, membrane fraction
+YIL037C	  0.460029	INESSENTIAL	PRM2	pheromone-regulated membrane protein, mating (sensu Saccharomyces), molecular_function unknown, integral membrane protein
+YDL223C	  0.444646	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL091C-A	  0.442229	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR304C-A	  0.425844	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL077C	  0.412515	INESSENTIAL	ICS3	Increased Copper Sensitivity,molecular_function unknown, 
+YJL150W	  0.410293	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL043C	  0.406728	INESSENTIAL	CBR1	cytochrome b reductase,cytochrome b5 reductase,
+YBR168W	  0.390645	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR471W	  0.364420	INESSENTIAL	RPL27B	Ribosomal protein L27B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGL117W	  0.340352	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL216C	  0.338345	INESSENTIAL	RRI1	biological_process unknown, molecular_function unknown, cellular_component unknown
+YDR444W	  0.333664	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YEL068C	  0.331643	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL213C	  0.323728	INESSENTIAL	DOA1	phospholipase A2-activating protein, ubiquitin-dependent protein degradation, molecular_function unknown, cellular_component unknown
+YDR450W	  0.311662	INESSENTIAL	RPS18A	Ribosomal protein S18A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YJR106W	  0.307152	INESSENTIAL	ECM27	(putative) involved in cell wall biogenesis,molecular_function unknown, 
+YMR107W	  0.301368	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL135C	  0.299584	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR182W	  0.289302	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR232W	  0.284568	INESSENTIAL	FUS2	involved in cell fusion 
+YLR434C	  0.279534	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL060W	  0.266401	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR119W-A	  0.265142	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNR013C	  0.262717	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL148W	  0.260465	INESSENTIAL	RPA34	unshared RNA polymerase I subunit, transcription from Pol I promoter, DNA-directed RNA polymerase I, DNA-directed RNA polymerase I
+YDL127W	  0.258502	INESSENTIAL	PCL2	G1 cyclin, cell cycle,
+YLR344W	  0.253044	INESSENTIAL	RPL26A	Ribosomal protein L26A (L33A) (YL33), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YEL067C	  0.248548	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR195C	  0.246102	INESSENTIAL	MSI1	p50 subunit of the yeast omatin Assembly Factor-I (CAF-I) negative regulator of ras-mediated cAMP induction; homologous to beta subunit of GTP-binding proteins, DNA repair*, molecular_function unknown, chromatin silencing complex*
+YNL135C	  0.237275	INESSENTIAL	FPR1	peptidylprolyl cis-trans isomerase, biological_process unknown, peptidylprolyl isomerase, cytoplasm
+YKL075C	  0.231618	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL152C	  0.230244	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL105W	  0.223355	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL048W	  0.223052	INESSENTIAL	CAM1	Calcium and phospholipid binding protein homologous to translation elongation factor 1-gamma (EF-1gamma) 
+YOR209C	  0.218141	INESSENTIAL	NPT1	nicotinate phosphoribosyl transferase (putative),nicotinate phosphoribosyltransferase, 
+YMR289W	  0.217910	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR320C	  0.215699	INESSENTIAL	SWA2	Auxilin-like protein,molecular_function unknown, 
+YMR101C	  0.211876	INESSENTIAL	SRT1	cis-prenyltransferase homologue, protein glycosylation,
+YDL160C	  0.202903	INESSENTIAL	DHH1	(putative) DEAD box RNA helicase, transcription, RNA helicase, 
+YER129W	  0.200397	INESSENTIAL	PAK1	DNA polymerase alpha suppressing protein kinase, protein phosphorylation*, protein kinase, cell
+YBR251W	  0.197307	INESSENTIAL	MRPS5	Probable mitochondrial ribosomal protein S5, protein biosynthesis, structural protein of ribosome, mitochondrial ribosome
+YGL180W	  0.194288	INESSENTIAL	APG1	Protein kinase, autophagy, protein serine/threonine kinase, cytosol
+YBR074W	  0.188251	INESSENTIAL		Homolog to aminopeptidase Y (S. cerevisiae), biological_process unknown, molecular_function unknown, 
+YHR073W	  0.186671	INESSENTIAL	OSH3	Oxysterol-binding protein, biological_process unknown, molecular_function unknown, 
+YBR090C-A	  0.185526	INESSENTIAL		
+YLL040C	  0.184189	INESSENTIAL	VPS13	component of peripheral vacuolar membrane protein complex 
+YNL202W	  0.173946	INESSENTIAL	SPS19	peroxisomal 2,4-dienoyl-CoA reductase, sporulation (sensu Saccharomyces)*, 2,4-dienoyl-CoA reductase (NADPH), peroxisomal matrix
+YIR004W	  0.172023	INESSENTIAL	DJP1	involved in peroxisome biogenesis,molecular_function unknown,
+YCL074W	  0.169103	INESSENTIAL		Reverse transcriptase 
+YPL140C	  0.168321	INESSENTIAL	MKK2	protein kinase, protein phosphorylation*, MAP kinase kinase, cellular_component unknown
+YLR131C	  0.164908	INESSENTIAL	ACE2	zinc finger transcription factor, G1-specific transcription in mitotic cell cycle, transcription activating factor, nucleus*
+YIL067C	  0.152891	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL191W	  0.148347	INESSENTIAL	RPS14B	Ribosomal protein S14B (rp59B), protein biosynthesis*, structural protein of ribosome*, cytosolic small ribosomal (40S)-subunit
+YKL053C-A	  0.141011	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR077W	  0.123714	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL151C	  0.120994	INESSENTIAL	FYV3	biological_process unknown, molecular_function unknown, cellular_component unknown
+YDL052C	  0.115162	INESSENTIAL	SLC1	putative 1-acyl-sn-gylcerol-3-phosphate acyl transferase,1-acylglycerol-3-phosphate O-acyltransferase, 
+YJL135W	  0.114163	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL165C	  0.112870	INESSENTIAL	HAL5	(putative) protein kinase 
+YGR204W	  0.110603	INESSENTIAL	ADE3	encodes the cytoplasmic trifunctional enzyme C1-tetrahydrofolate synthase,formate--tetrahydrofolate ligase, 
+YBL091C	  0.108155	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YAR002C-A	  0.103355	INESSENTIAL	ERP1	p24 protein involved in membrane trafficking,molecular_function unknown, 
+YDR248C	  0.099111	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR085C	  0.097847	INESSENTIAL	RPL11B	60S ribosomal protein L11B (L16B) (rp39B) (YL22), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGR068C	  0.096537	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR479C	  0.090758	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL207W	  0.081535	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR072W	  0.080674	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR486C	  0.066396	INESSENTIAL	VPS60	biological_process unknown, molecular_function unknown, cellular_component unknown
+YBL067C	  0.066140	INESSENTIAL	UBP13	ubiquitin carboxyl-terminal hydrolase, deubiquitylation, ubiquitin-specific protease, cellular_component unknown
+YPL253C	  0.063869	INESSENTIAL	VIK1	Cik1p homolog, microtubule-based process, microtubule motor, spindle pole body
+YKL048C	  0.061411	INESSENTIAL	ELM1	protein kinase, protein phosphorylation*, protein kinase, cytokinetic ring (sensu Saccharomyces)
+YPL156C	  0.047793	INESSENTIAL	PRM4	pheromone-regulated membrane protein, mating (sensu Saccharomyces), molecular_function unknown, integral membrane protein
+YJL075C	  0.047371	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL142C	  0.034376	INESSENTIAL	CRD1	Cardiolipin synthase, lipid biosynthesis, cardiolipin synthase, 
+YNL148C	  0.034035	INESSENTIAL	ALF1	cofactor B, post-chaperonine tubulin folding pathway*, cochaperone, microtubule
+YPR115W	  0.027521	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR060C	  0.020302	INESSENTIAL	ARO7	chorismate mutase,chorismate mutase,
+YEL064C	  0.016541	INESSENTIAL		similar to amino acid transport proteins, biological_process unknown, molecular_function unknown, 
+YDR384C	  0.005071	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL177W	  0.002621	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR175W	 -0.002938	INESSENTIAL		Probable GTP-binding protein, biological_process unknown, molecular_function unknown, 
+YDR382W	 -0.010095	INESSENTIAL	RPP2B	Ribosomal protein P2B (YP2beta) (L45), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YMR224C	 -0.016729	INESSENTIAL	MRE11	localizes to discrete sites in rad50s mutants. Mre11p, Rad50p, Mer2p and Xrs2p function in a complex by immunoprecipitation and two-hybrid analyses; mutations in these genes have similar phenotypes. mRNA is induced in meiosis, DNA repair*, endonuclease, nucleus
+YGR242W	 -0.027779	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR142W	 -0.029998	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR251W	 -0.033020	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR144C	 -0.038203	INESSENTIAL	EFD1	Enhanced Frequency of Direct-repeat recombination,molecular_function unknown, 
+YBR025C	 -0.042823	INESSENTIAL		probable purine nucleotide-binding protein, biological_process unknown, molecular_function unknown, cytoplasm
+YDL197C	 -0.043354	INESSENTIAL	ASF2	Anti-silencing protein, involved in transcription, transcription,
+YOR276W	 -0.046849	INESSENTIAL	CAF20	mRNA cap-binding protein (eIF4F) 20K subunit 
+YOL138C	 -0.049666	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL014W	 -0.053272	INESSENTIAL	HEF3	biological_process unknown, molecular_function unknown, 
+YIL023C	 -0.054862	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR014W	 -0.070323	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL233W	 -0.077082	INESSENTIAL	BNI4	Is required to link Chs3p and Chs4p to the septins, cytokinesis, molecular_function unknown, cytokinetic ring (sensu Saccharomyces)
+YMR193W	 -0.094299	INESSENTIAL	MRPL24	Mitochondrial ribosomal protein MRPL24 (YmL24), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YDL088C	 -0.095096	INESSENTIAL	ASM4	Nuclear pore complex protein, mRNA-nucleus export*, structural protein, nuclear pore
+YNL230C	 -0.096689	INESSENTIAL	ELA1	elongin A, RNA elongation from Pol II promoter, transcription elongation factor, transcription elongation factor complex
+YDR200C	 -0.098703	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL055C	 -0.117384	INESSENTIAL	OAR1	3-oxoacyl-[acyl-carrier-protein] reductase, respiration,
+YNL069C	 -0.120065	INESSENTIAL	RPL16B	Ribosomal protein L16B (L21B) (rp23) (YL15), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YLR032W	 -0.125208	INESSENTIAL	RAD5	putative ATPase DNA helicase, DNA repair, DNA helicase,
+YOL014W	 -0.131427	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR433W	 -0.136870	INESSENTIAL	KRE22	biological_process unknown, molecular_function unknown, 
+YFL001W	 -0.139362	INESSENTIAL	DEG1	Depressed growth-rate protein, RNA processing, pseudouridylate synthase, nucleus*
+YMR156C	 -0.140016	INESSENTIAL	TPP1	DNA 3' phosphatase, biological_process unknown, molecular_function unknown, cellular_component unknown
+YBR084C-A	 -0.149203	INESSENTIAL	RPL19A	Ribosomal protein L19A (L23A) (rpl5L) (YL14), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YJR026W	 -0.157601	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL066C	 -0.164186	INESSENTIAL	SEF1	putative transcription factor, transcription,
+YOR170W	 -0.169461	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL068C	 -0.174434	INESSENTIAL	HST1	Homolog of SIR2 
+YKL065C	 -0.181627	INESSENTIAL	YET1	Yeast endoplasmic reticulum 25 kDa transmembrane protein, biological_process unknown,
+YDL122W	 -0.191406	INESSENTIAL	UBP1	Ubiquitin-specific protease, deubiquitylation, ubiquitin-specific protease, cytoplasm
+YPL125W	 -0.193796	INESSENTIAL	KAP120	karyopherin 
+YDR151C	 -0.195984	INESSENTIAL	CTH1	member of the CCCH zinc finger protein family that has two or more repeats of a novel zinc finger motif consisting of Cys and His residues in the form Cx8Cx5Cx3H [where x is a variable amino acid (aa)], biological_process unknown, molecular_function unknown, 
+YDR451C	 -0.200255	INESSENTIAL	YHP1	biological_process unknown, molecular_function unknown, 
+YMR132C	 -0.202562	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR018C	 -0.204855	INESSENTIAL	POM34	nuclear pore integral membrane protein 
+YLR036C	 -0.210782	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR071C	 -0.211584	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL050W	 -0.212730	INESSENTIAL	PCL7	PHO85 cyclin, cell cycle, cyclin, 
+YER068W	 -0.217631	INESSENTIAL	MOT2	putative zinc finger protein, mating (sensu Saccharomyces),
+YBL052C	 -0.223460	INESSENTIAL	SAS3	involved in silencing at HMR,molecular_function unknown, 
+YHR029C	 -0.235395	INESSENTIAL		Thymidylate synthase (putative; weak), biological_process unknown, molecular_function unknown, 
+YAR015W	 -0.237879	INESSENTIAL	ADE1	phosphoribosyl amino imidazolesuccinocarbozamide synthetase,phosphoribosylaminoimidazole-succinocarboxamide synthase, 
+YNL300W	 -0.239613	INESSENTIAL	TOS6	biological_process unknown, molecular_function unknown, 
+YIR017C	 -0.242332	INESSENTIAL	MET28	transcriptional activator in the Cbf1p-Met4p-Met28p complex, transcription regulation from Pol II promoter*, specific RNA polymerase II transcription factor, nucleus
+YOR321W	 -0.246307	INESSENTIAL	PMT3	dolichyl phosphate-D-mannose:protein O-D-mannosyltransferase, O-linked glycosylation, dolichyl-phosphate-mannose--protein mannosyltransferase, endoplasmic reticulum
+YLR024C	 -0.249621	INESSENTIAL	UBR2	ubiquitin-protein ligase (E3), polyubiquitylation*, ubiquitin--protein ligase, cellular_component unknown
+YEL049W	 -0.256461	INESSENTIAL	PAU2	similar to members of the seripauperin (PAU) family, biological_process unknown, molecular_function unknown, 
+YDL119C	 -0.260086	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL079W	 -0.263480	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR264W	 -0.263876	INESSENTIAL	CUE1	Ubc7p binding and recruitment protein 
+YHR127W	 -0.264315	INESSENTIAL	HSN1	(H)igh copy (S)uppressor of (N)34 dominant negative allele of SEC4. Suppression is very specific to this allele. It has no affect on the analogous YPT1 allele. No homology or known function., biological_process unknown,
+YOR195W	 -0.280271	INESSENTIAL	SLK19	possible leucine zipper, meiosis*, molecular_function unknown, centromere
+YDL005C	 -0.284170	INESSENTIAL	MED2	Stoichiometric member of mediator complex, transcription from Pol II promoter, RNA polymerase II transcription mediator, mediator complex
+YOR096W	 -0.286739	INESSENTIAL	RPS7A	Ribosomal protein S7A (rp30), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YGR276C	 -0.297987	INESSENTIAL	RNH70	ribonuclease H, DNA replication*, 3'-5' exonuclease*, cell
+YPR122W	 -0.302270	INESSENTIAL	AXL1	putative homolog of human insulin-degrading endoprotease, axial budding*, metalloendopeptidase, intracellular
+YNL166C	 -0.306303	IN	BNI5	bud neck protein, biological_process unknown, molecular_function unknown, 
+YIL045W	 -0.307369	INESSENTIAL	PIG2	Protein with 30% identity to protein corresponding to YER054 
+YML068W	 -0.309085	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNR010W	 -0.321683	INESSENTIAL	CSE2	Component of RNA polymerase II mediator subcomplex, transcription from Pol II promoter*, RNA polymerase II transcription mediator, mediator complex
+YJL188C	 -0.323930	INESSENTIAL	BUD19	biological_process unknown, molecular_function unknown, 
+YGL234W	 -0.333262	INESSENTIAL	ADE5	glycinamide ribotide synthetase and aminoimidazole ribotide synthetase,phosphoribosylformylglycinamidine cyclo-ligase,
+YDL106C	 -0.342184	INESSENTIAL	PHO2	Homeobox-domain containing transcription fractor which is a positive regulator of PHO5 and other genes.,transcription factor,
+YNL336W	 -0.350527	INESSENTIAL	COS1	similar to subtelomerically-encoded proteins, biological_process unknown, molecular_function unknown, 
+YPL183W-A	 -0.351976	INESSENTIAL		protein biosynthesis, structural protein of ribosome, mitochondrion
+YOR092W	 -0.355232	INESSENTIAL	ECM3	involved in cell wall biogenesis (putative),molecular_function unknown, 
+YDR004W	 -0.357268	INESSENTIAL	RAD57	RecA homolog (similar to DMC1, RAD51, and RAD55), interacts with Rad 55p by two-hybrid analysis 
+YGL110C	 -0.359712	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR174C	 -0.360734	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL031W	 -0.364118	INESSENTIAL	SHE1	biological_process unknown,
+YHR008C	 -0.366677	INESSENTIAL	SOD2	Manganese-containing superoxide dismutase,superoxide dismutase, 
+YLR449W	 -0.367428	INESSENTIAL	FPR4	60 kDa nuclear FK506 binding protein, biological_process unknown, peptidylprolyl isomerase, nucleolus
+YHR004C	 -0.371894	INESSENTIAL	NEM1	Nuclear Envelope Morphology, nuclear organization and biogenesis,
+YKR048C	 -0.373330	INESSENTIAL	NAP1	nucleosome assembly protein I 
+YPR049C	 -0.377235	INESSENTIAL	CVT9	biological_process unknown, molecular_function unknown, 
+YKR049C	 -0.377576	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR173C	 -0.384695	INESSENTIAL	ARG82	dual-specificity inositol 1,4,5-trisphosphate 6-kinase inositol 1,4,5,6-tetrakisphosphate 3-kinase (IP3 6- IP4 3-kinase)
+YLL013C	 -0.386066	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER120W	 -0.394512	INESSENTIAL	SCS2	involved in inositol metabolism, regulator of INO1 expression 
+YOR090C	 -0.396266	INESSENTIAL	PTC5	Type 2C Protein Phosphatase, biological_process unknown, protein phosphatase type 2C, cellular_component unknown
+YDL095W	 -0.401498	INESSENTIAL	PMT1	dolichyl phosphate-D-mannose:protein O-D-mannosyltransferase, O-linked glycosylation, dolichyl-phosphate-mannose--protein mannosyltransferase, endoplasmic reticulum membrane
+YPL137C	 -0.404008	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR051W	 -0.414010	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCL034W	 -0.421427	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR136C	 -0.422115	INESSENTIAL	SPL2	17 kDa protein, cell cycle, protein kinase inhibitor, 
+YMR278W	 -0.422242	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR309C	 -0.422857	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER123W	 -0.424237	INESSENTIAL	YCK3	plasma membrane-bound casein kinase I homolog, cell proliferation,
+YGL031C	 -0.425390	INESSENTIAL	RPL24A	Ribosomal protein L24A (rp29) (YL21) (L30A), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YBL071C	 -0.428374	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFR024C-A	 -0.432172	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL058W	 -0.435130	INESSENTIAL	SHP1	putative regulatory subunit for Glc7p, a phosphatase required for glucose repression, sporulation (sensu Saccharomyces)*, molecular_function unknown, cellular_component unknown
+YHL006C	 -0.437164	INESSENTIAL	SHU1	suppressor of HU sensitivity of sgs1 mutations, biological_process unknown, molecular_function unknown, 
+YPR140W	 -0.439033	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR244W	 -0.444240	INESSENTIAL	PEX5	69-kDa protein containing tetratricopeptide repeat (TPR), protein-peroxisome targeting*, peroxisome targeting sequence binding*, cytosol*
+YDL069C	 -0.444357	INESSENTIAL	CBS1	translational activator of cytochrome b, protein biosynthesis, molecular_function unknown, mitochondrial inner membrane
+YMR294W-A	 -0.446919	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR130W	 -0.447924	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR033W	 -0.461253	INESSENTIAL	MGA2	transcription,
+YJL080C	 -0.466030	INESSENTIAL	SCP160	May be required during cell division for faithful partitioning of the ER-nuclear envelope membranes, involved in control of mitotic chromsome transmission,molecular_function unknown, 
+YPR106W	 -0.467981	INESSENTIAL	ISR1	protein kinase,protein kinase, 
+YOL162W	 -0.468832	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL012C	 -0.476503	INESSENTIAL	VTC4	polyphosphate synthetase (putative) 
+YDR293C	 -0.480184	INESSENTIAL	SSD1	cell cycle, RNA binding, cytoplasm
+YPR028W	 -0.482779	INESSENTIAL	YIP2	Similar to human polyposis locus protein 1 (YPD), biological_process unknown, molecular_function unknown, 
+YDL210W	 -0.482952	INESSENTIAL	UGA4	GABA-specific transport protein, transport,
+YDL204W	 -0.494740	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFR016C	 -0.511359	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR311C	 -0.513231	INESSENTIAL	HSD1	biological_process unknown, molecular_function unknown, cellular_component unknown
+YGR050C	 -0.515543	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YEL045C	 -0.518865	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR253C	 -0.524898	INESSENTIAL		biological_process unknown,
+YDR147W	 -0.525270	INESSENTIAL	EKI1	Ethanolamine Kinase, phospholipid metabolism, ethanolamine kinase, 
+YLR192C	 -0.531092	INESSENTIAL	HCR1	High Copy suppressor of RPG1, biological_process unknown, molecular_function unknown, 
+YER061C	 -0.531446	INESSENTIAL	CEM1	Protein homologous to beta-keto-acyl synthase, hexadecanal biosynthesis, 3-oxoacyl-[acyl-carrier protein] synthase, mitochondrion
+YFL019C	 -0.534756	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR183W	 -0.537406	INESSENTIAL	GND1	Phosphogluconate Dehydrogenase (Decarboxylating),phosphogluconate dehydrogenase (decarboxylating), 
+YFL011W	 -0.541791	INESSENTIAL	HXT10	high-affinity hexose transporter, transport,
+YGL243W	 -0.542761	INESSENTIAL	TAD1	tRNA-specific adenosine deaminase 1 (TAD1); Tad1p scADAT1, tRNA processing,
+YHR151C	 -0.542799	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL025C	 -0.544360	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR049C-A	 -0.549299	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR044C	 -0.554109	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR038W	 -0.558042	INESSENTIAL	ORM1	biological_process unknown, molecular_function unknown, 
+YIL072W	 -0.561498	INESSENTIAL	HOP1	DNA binding protein, meiosis, DNA binding, meiotic chromosome
+YOR086C	 -0.562381	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR201W	 -0.562954	INESSENTIAL	ARR3	Putative membrane protein involved in arsenite transport,arsenite transporter, 
+YCL063W	 -0.572622	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR121W	 -0.574696	INESSENTIAL	THI22	THI for thiamine metabolism. Transcribed in the presence of low level of thiamine (10-8M) and turned off in the presence of high level (10-6M) of thiamine. Under the positive control of THI2 and THI3., vitamin B1 biosynthesis, phosphomethylpyrimidine kinase, cellular_component unknown
+YCL032W	 -0.577517	INESSENTIAL	STE50	STE50 
+YOL152W	 -0.583346	INESSENTIAL	FRE7	similar to FRE2, biological_process unknown, molecular_function unknown, 
+YFR023W	 -0.584455	INESSENTIAL	PES4	poly(A) binding protein; related to PES4 protein homolog YHR015w, DNA dependent DNA replication, molecular_function unknown, nucleus
+YIR034C	 -0.590257	INESSENTIAL	LYS1	saccharopine dehydrogenase,saccharopine dehydrogenase (NAD+, L-lysine forming), 
+YHR001W-A	 -0.590563	INESSENTIAL	QCR10	8.5 kDa subunit of the ubiqunol-cytochrome c oxidoreductase complex,ubiquinol-cytochrome-c reductase, 
+YPL071C	 -0.596192	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR125C	 -0.596677	INESSENTIAL	ENT3	Ent3p, actin filament organization*, cytoskeletal adaptor, actin cortical patch (sensu Saccharomyces)
+YLR349W	 -0.601033	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL057C	 -0.610002	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL028W	 -0.610179	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR033W	 -0.610298	INESSENTIAL	MRH1	Membrane protein Related to Hsp30p; Localized by immunofluorescence to cell membranes, primarily the plasma membrane. A punctuate immunofluorescence pattern was observed within cell buds. The nuclear envelope, but not the vacuole or mitochondrial membranes, are also immunostained., biological_process unknown, molecular_function unknown, plasma membrane
+YMR098C	 -0.615908	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL138C	 -0.617552	INESSENTIAL	TIF2	translation initiation factor eIF4A, protein synthesis initiation*, translation initiation factor*, cytoplasm*
+YPR063C	 -0.621852	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR035C	 -0.623120	INESSENTIAL	PDX3	pyridoxine (pyridoxiamine) phosphate oxidase,pyridoxamine-phosphate oxidase, 
+YIL132C	 -0.623180	INESSENTIAL	CSM2	biological_process unknown, molecular_function unknown, 
+YJR107W	 -0.628765	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR112W	 -0.633918	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL076C	 -0.635841	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL096W	 -0.645608	INESSENTIAL	TOS8	biological_process unknown, molecular_function unknown, 
+YPR004C	 -0.651207	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR033W	 -0.651333	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL001W	 -0.658018	INESSENTIAL	DOM34	Involved in protein translation,molecular_function unknown, 
+YDR221W	 -0.659670	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR317W	 -0.660413	INESSENTIAL	FAA1	long chain fatty acyl:CoA synthetase,long-chain-fatty-acid-CoA-ligase, 
+YHR021C	 -0.666547	INESSENTIAL	RPS27B	40S Ribosomal protein S27B (rp61) (YS20), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YLR065C	 -0.667708	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER115C	 -0.673320	INESSENTIAL	SPR6	involved in sporulation,molecular_function unknown, 
+YPR045C	 -0.673423	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL005W	 -0.678321	INESSENTIAL		protein disulfide isomerase 
+YLL014W	 -0.681760	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL059W	 -0.683222	INESSENTIAL	GPD2	Glycerol-3-phosphate dehydrogenase (NAD+),UDP-N-acetylmuramate dehydrogenase,
+YLR168C	 -0.687962	INESSENTIAL	MSF1	possibly involved in intramitochondrial sorting, biological_process unknown,
+YCR043C	 -0.688075	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL090W	 -0.688385	INESSENTIAL	RHO2	GTP-binding protein of the rho subfamily, establishment of cell polarity (sensu Saccharomyces)*, signal transducer*, intracellular
+YGR106C	 -0.692106	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR051W	 -0.692146	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL188W	 -0.692387	INESSENTIAL	POS5	involved in oxidative stress, biological_process unknown, molecular_function unknown, 
+YDR153C	 -0.693407	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL087C	 -0.697043	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR210C	 -0.700849	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNR032C-A	 -0.703075	INESSENTIAL	HUB1	ubiquitin-like modifier 
+YNL302C	 -0.706122	INESSENTIAL	RPS19B	Ribosomal protein S19B (rp55B) (S16aB) (YS16B), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YBR279W	 -0.706553	INESSENTIAL	PAF1	RNA polymerase II-associated protein, transcription,
+YHR081W	 -0.706749	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL029C	 -0.718874	INESSENTIAL	KTR5	Putative mannosyltransferase, cell wall organization and biogenesis*, mannosyltransferase, Golgi apparatus
+YBL096C	 -0.719564	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR367W	 -0.724840	INESSENTIAL	SCP1	Calponin homolog, biological_process unknown, actin binding, cellular_component unknown
+YML109W	 -0.728113	INESSENTIAL	ZDS2	Zds1 homolog, establishment of cell polarity (sensu Saccharomyces),
+YGR097W	 -0.728732	INESSENTIAL	ASK10	transcriptional activator of the SKN7 mediated 'two-component' regulatory system, stress response,
+YDR465C	 -0.729221	INESSENTIAL	RMT2	Protein arginine methyltransferase, arginine metabolism,
+YNR075W	 -0.731523	INESSENTIAL	COS10	Protein with strong similarity to subtelomerically-encoded proteins such as Cos5p, Ybr302p, Cos3p, Cos1p, Cos4p, Cos8p, Cos6p, Cos9p, biological_process unknown, molecular_function unknown, 
+YIL159W	 -0.739811	INESSENTIAL	BNR1	involved in actin filament organization, osmotic response*, molecular_function unknown, cytokinetic ring (sensu Saccharomyces)
+YNL293W	 -0.744697	INESSENTIAL	MSB3	Multicopy Suppressor of Bud Emergence, actin filament organization*, RAB GTPase activator, bud tip*
+YGR044C	 -0.746495	INESSENTIAL	RME1	zinc finger protein; negative regulator of meiosis; directly repressed by a1-a2 regulator, meiosis, transcription factor,
+YLR324W	 -0.747882	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR216C	 -0.753418	INESSENTIAL	SKY1	Serine Protein Kinase, biological_process unknown, protein kinase, 
+YMR115W	 -0.756977	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR063C	 -0.757644	INESSENTIAL	SPT4	Zn-finger protein, transcriptional regulator, transcription,
+YLL058W	 -0.759872	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR089W	 -0.762760	INESSENTIAL	FIG2	predicted GPI-anchored cell wall protein, mating (sensu Saccharomyces),
+YPR040W	 -0.766404	INESSENTIAL	SDF1	biological_process unknown, molecular_function unknown, 
+YPR003C	 -0.774526	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL181W	 -0.775500	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL173C	 -0.777461	INESSENTIAL	MDG1	Involved in G-protein mediated signal transduction, signal transduction of mating signal (sensu Saccharomyces), molecular_function unknown, plasma membrane
+YBR273C	 -0.779704	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL027W	 -0.784595	INESSENTIAL	SMA1	biological_process unknown, molecular_function unknown, 
+YBR240C	 -0.787697	INESSENTIAL	THI2	Probable Zn-finger protein, vitamin B1 biosynthesis, transcription activating factor, cellular_component unknown
+YGL175C	 -0.791520	INESSENTIAL	SAE2	involved in meiotic recombination,molecular_function unknown,
+YIL066C	 -0.809553	INESSENTIAL	RNR3	Ribonucleotide reductase (ribonucleoside-diphosphate reductase) large subunit, DNA replication, ribonucleoside-diphosphate reductase, cellular_component unknown
+YDR076W	 -0.813825	INESSENTIAL	RAD55	RecA homolog (related to DMC1, RAD51, RAD57), interacts with Rad51p and Rad57p by two-hybrid analysis 
+YDR255C	 -0.817949	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR052C	 -0.823645	INESSENTIAL	NHP6A	11-kDa nonhistone chromosomal protein, transcription regulation from Pol II promoter*, chromatin binding, chromatin
+YKR059W	 -0.828630	INESSENTIAL	TIF1	translation initiation factor eIF4A, protein synthesis initiation, translation initiation factor, ribosome
+YEL009C	 -0.836409	INESSENTIAL	GCN4	transcriptional activator of amino acid biosynthetic genes,transcription factor,
+YCR020W-B	 -0.839061	INESSENTIAL	HTL1	high-temperature lethal, biological_process unknown, molecular_function unknown, 
+YOR270C	 -0.842702	INESSENTIAL	VPH1	vacuolar ATPase V0 domain subunit a (100 kDa), vacuolar acidification*, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YOR106W	 -0.844717	INESSENTIAL	VAM3	member of the syntaxin family of proteins; predicted C-terminal TMD, non-selective vesicle fusion*, t-SNARE, vacuolar membrane
+YJR088C	 -0.845186	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL133C	 -0.847937	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL244C	 -0.848277	INESSENTIAL	HUT1	yeast homologue of UDP-galactose transporter-related gene 
+YBL022C	 -0.848499	INESSENTIAL	PIM1	mitochondrial ATP-dependent protease, heat shock response*, ATP-dependent peptidase, mitochondrial matrix
+YDR286C	 -0.851471	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL053W	 -0.857529	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR047C	 -0.858389	INESSENTIAL	BUD23	Protein carboxyl methylase, biological_process unknown, molecular_function unknown, 
+YDR007W	 -0.870758	INESSENTIAL	TRP1	n-(5'-phosphoribosyl)-anthranilate isomerase, amino acid metabolism, phosphoribosylanthranilate isomerase, cytoplasm
+YER089C	 -0.882069	INESSENTIAL	PTC2	Protein phosphatase type 2C,protein phosphatase type 2C, 
+YDR242W	 -0.883473	INESSENTIAL	AMD2	putative amidase,amidase, 
+YAL058C-A	 -0.887635	INESSENTIAL	KRE20	biological_process unknown, molecular_function unknown, 
+YOR191W	 -0.890877	INESSENTIAL	RIS1	contains motifs that are present in a family of DNA-dependent ATPases, the SWI2 SNF2-like proteins 
+YER182W	 -0.893987	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR418C	 -0.894446	INESSENTIAL	CDC73	RNA polymerase II accessory protein, transcription,
+YBR169C	 -0.895421	INESSENTIAL	SSE2	HSP70 family member, highly homologous to Sse1p, protein folding, heat shock protein, cytoplasm
+YER056C	 -0.896133	INESSENTIAL	FCY2	purine-cytosine permease, transport,
+YLR055C	 -0.898273	INESSENTIAL	SPT8	transcription factor, probable member of histone acetyltransferase SAGA complex SAGA complex
+YCR044C	 -0.898769	INESSENTIAL	PER1	Protein Processing in the ER,molecular_function unknown, 
+YFR044C	 -0.902545	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR270C	 -0.905483	INESSENTIAL		Probable ATP GTP-binding protein, biological_process unknown, molecular_function unknown, 
+YIL100W	 -0.911750	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER178W	 -0.914132	INESSENTIAL	PDA1	alpha subunit of pyruvate dehydrogenase (E1 alpha),pyruvate dehydrogenase (lipoamide), 
+YOL148C	 -0.916804	INESSENTIAL	SPT20	transcription factor, member of the histone acetyltransferase SAGA complex SAGA complex
+YPR043W	 -0.920646	INESSENTIAL	RPL43A	Ribosomal protein L43A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YHR013C	 -0.922217	INESSENTIAL	ARD1	subunit of the major N alpha-acetyltransferase; complexes with Nat1p, protein acetylation, peptide alpha-N-acetyltransferase, 
+YEL044W	 -0.922453	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR083C	 -0.926695	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR103W	 -0.935738	INESSENTIAL	SIF2	535 amino acid protein containing 4 WD-40 repeats and a nuclear localization signal,molecular_function unknown,
+YLR455W	 -0.937289	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR095W	 -0.942633	INESSENTIAL	SFC1	mitochondrial succinate-fumarate transport protein, fumarate transport*, succinate/fumarate antiporter, mitochondrial inner membrane
+YKL222C	 -0.947316	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR031C	 -0.948277	INESSENTIAL	RRM3	DNA helicase,DNA helicase,
+YGR289C	 -0.952330	INESSENTIAL	MAL11	Alpha-glucoside transporter; maltose permease, alpha-glucoside transport, general alpha-glucoside:hydrogen symporter, membrane fraction
+YLR325C	 -0.952779	INESSENTIAL	RPL38	Ribosomal protein L38, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YPL047W	 -0.952835	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR254C	 -0.953561	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL146W	 -0.960147	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR185W	 -0.962018	INESSENTIAL	RPL37A	60S ribosomal protein L37A (L43) (YL35), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YEL046C	 -0.963177	INESSENTIAL	GLY1	Threonine Aldolase,threonine aldolase, 
+YHR079C	 -0.963467	INESSENTIAL	IRE1	Ire1p is a transmembrane protein that has both serine-threonine kinase and endoribonuclease activities, myo-inositol metabolism*, protein serine/threonine kinase*, endoplasmic reticulum membrane*
+YHR011W	 -0.966760	INESSENTIAL	DIA4	Seryl-tRNA synthetase, pseudohyphal growth*, serine--tRNA ligase, cellular_component unknown
+YLR037C	 -0.968012	INESSENTIAL	DAN2	biological_process unknown, molecular_function unknown, 
+YPR099C	 -0.968510	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL087W	 -0.972289	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFL030W	 -0.975230	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR170C	 -0.977967	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL062W	 -0.979829	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR378C	 -0.984061	INESSENTIAL	LSM6	Sm-like protein,molecular_function unknown, 
+YNR040W	 -0.986741	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR202W	 -0.987785	INESSENTIAL	ERG2	C-8 sterol isomerase, ergosterol biosynthesis, C-8 sterol isomerase, endoplasmic reticulum
+YDR121W	 -0.992857	INESSENTIAL	DPB4	DNA polymerase II (epsilon) 4th subunit, lagging strand elongation*, epsilon DNA polymerase, epsilon DNA polymerase
+YGL240W	 -0.997871	INESSENTIAL	DOC1	component of the anaphase-promoting complex, ubiquitin-dependent protein degradation*, enzyme activator, anaphase-promoting complex
+YER065C	 -1.001931	INESSENTIAL	ICL1	isocitrate lyase,isocitrate lyase, 
+YGL258W	 -1.003945	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR317W	 -1.016355	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL114C	 -1.016616	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL073C	 -1.018867	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR171W	 -1.021228	INESSENTIAL	HSP42	heat shock protein similar to HSP26, involved in cytoskeleton assembly, stress response*, chaperone*, cytoskeleton
+YDL144C	 -1.022657	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL270C	 -1.022696	INESSENTIAL	ALP1	Basic amino acid permease, transport, basic amino acid permease, 
+YER088C	 -1.025002	INESSENTIAL	DOT6	nuclear protein with Myb domain involved in telomeric silencing 
+YOR315W	 -1.027334	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR038C	 -1.030338	INESSENTIAL	LYS7	copper chaperone for superoxide dismutase Sod1p, oxidative stress response,
+YNL133C	 -1.032025	INESSENTIAL	FYV6	biological_process unknown, molecular_function unknown, cellular_component unknown
+YHR033W	 -1.043580	INESSENTIAL		Pro1p (Gamma-glutamyl kinase), biological_process unknown, molecular_function unknown, 
+YGR025W	 -1.047087	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR038C	 -1.049542	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR140W	 -1.051813	INESSENTIAL	FYV9	biological_process unknown, molecular_function unknown, cellular_component unknown
+YOR228C	 -1.052081	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNR021W	 -1.054822	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER080W	 -1.058069	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR050W	 -1.059120	INESSENTIAL	ISY1	interacts with the spliceosome, mRNA splicing, molecular_function unknown, spliceosome
+YPL097W	 -1.061101	INESSENTIAL	MSY1	Tyrosyl-tRNA synthetase,tyrosine--tRNA ligase, 
+YDR252W	 -1.062344	INESSENTIAL	BTT1	negative regulator of RNA polymerase II, nascent polypeptide association, chaperone, nascent polypeptide-associated complex
+YKL056C	 -1.063446	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL257W	 -1.065848	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL199C	 -1.065901	INESSENTIAL	YKT9	Protein of unknown function, biological_process unknown, molecular_function unknown, 
+YLR371W	 -1.066068	INESSENTIAL	ROM2	GDP-GTP Exchange Protein (GEP) for Rho1p, establishment of cell polarity (sensu Saccharomyces)*, signal transducer*, bud tip
+YIL032C	 -1.066659	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER130C	 -1.072520	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER176W	 -1.073484	INESSENTIAL	ECM32	DNA Helicase I 
+YDL135C	 -1.080420	INESSENTIAL	RDI1	Rho GDP dissociation inhibitor, actin cytoskeleton reorganization*, signal transducer*, cytosol
+YIR020W-B	 -1.082983	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL061W	 -1.095491	INESSENTIAL	ALD6	Cytosolic Aldehyde Dehydrogenase, carbohydrate metabolism*, aldehyde dehydrogenase, cytoplasm
+YER090W	 -1.101478	INESSENTIAL	TRP2	anthranilate synthase Component I,anthranilate synthase, 
+YOR277C	 -1.108844	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR030C	 -1.114909	INESSENTIAL	RAD28	involved in DNA repair, has WD repeats, DNA repair, molecular_function unknown, 
+YEL038W	 -1.114915	INESSENTIAL	UTR4	biological_process unknown, molecular_function unknown, 
+YGR233C	 -1.128345	INESSENTIAL	PHO81	Pho85 kinase inhibitor, cell cycle,
+YNL198C	 -1.131555	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR178W	 -1.132246	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR039C	 -1.138685	INESSENTIAL	MSC7	Aldehyde dehydrogenases, biological_process unknown, molecular_function unknown, 
+YPL106C	 -1.139565	INESSENTIAL	SSE1	HSP70 family member, highly homologous to Ssa1p and Sse2p, protein folding, cochaperone, cytoplasm
+YBL019W	 -1.144996	INESSENTIAL	APN2	AP endonuclease, DNA repair,
+YBL068W	 -1.147175	INESSENTIAL	PRS4	ribose-phosphate pyrophosphokinase 4, histidine biosynthesis*, ribose-phosphate pyrophosphokinase, cytoplasm
+YPL216W	 -1.147845	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR386W	 -1.148775	INESSENTIAL	PHR1	photolyase,deoxyribodipyrimidine photolyase, 
+YML022W	 -1.152322	INESSENTIAL	APT1	Adenine phosphoribosyltransferase, AMP biosynthesis, adenine phosphoribosyltransferase, 
+YGL144C	 -1.153282	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR312C	 -1.155040	INESSENTIAL	RPL20B	60S ribosomal protein L20B (L18B), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOR016C	 -1.157265	INESSENTIAL	ERP4	p24 protein involved in membrane trafficking,molecular_function unknown, 
+YIR009W	 -1.162114	INESSENTIAL	MSL1	encodes YU2B, a component of yeast U2 snRNP, mRNA splicing,
+YOR141C	 -1.168291	INESSENTIAL	ARP8	actin-related protein, biological_process unknown, molecular_function unknown, cell
+YBR026C	 -1.169254	INESSENTIAL	MRF1	Nuclear protein that binds to T-rich strand of core consensus sequence of autonomously replicating sequence, respiration, DNA binding, nucleus
+YBL006C	 -1.173336	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR061W	 -1.173554	INESSENTIAL	KTR2	putative mannosyltransferase; type 2 membrane protein, N-linked glycosylation*, mannosyltransferase, Golgi apparatus
+YHR059W	 -1.174476	INESSENTIAL	FYV4	biological_process unknown, molecular_function unknown, cellular_component unknown
+YOL052C	 -1.177317	INESSENTIAL	SPE2	S-adenosylmethionine decarboxylase,adenosylmethionine decarboxylase, 
+YNL266W	 -1.181981	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR509W	 -1.186977	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL020C	 -1.188257	INESSENTIAL	RPN4	ubiquitin-mediated 26S proteasome subunit, ubiquitin-dependent protein degradation, multicatalytic endopeptidase, 19S proteasome regulatory particle
+YNR052C	 -1.188351	INESSENTIAL	POP2	Putative transcription factor 
+YKL147C	 -1.189272	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL058W	 -1.196442	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCL062W	 -1.198530	INESSENTIAL		
+YEL031W	 -1.202796	INESSENTIAL	SPF1	P-type ATPase, transport,
+YCR032W	 -1.204780	INESSENTIAL	BPH1	(putative) acetic acid export pump, transport,
+YDR453C	 -1.205229	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR021C	 -1.215623	INESSENTIAL	REC107	ds break formation complex subunit, meiotic recombination, molecular_function unknown, cellular_component unknown
+YHR048W	 -1.218476	INESSENTIAL		biological_process unknown,
+YOR286W	 -1.222900	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR490C	 -1.224208	INESSENTIAL	PKH1	Ser Thr protein kinase, biological_process unknown,
+YJL159W	 -1.224293	INESSENTIAL	HSP150	Heat shock protein, secretory glycoprotein, cell wall organization and biogenesis, cell wall structural protein, cell wall
+YER121W	 -1.227603	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR265W	 -1.228496	INESSENTIAL	RBL2	beta-tubulin binding protein, post-chaperonine tubulin folding pathway*, cochaperone, cytoplasm
+YJR091C	 -1.231680	INESSENTIAL	JSN1	Benomyl dependent tubulin mutant,molecular_function unknown, 
+YLR373C	 -1.239213	INESSENTIAL	VID22	vacuole import and degradation,molecular_function unknown, 
+YKL221W	 -1.250003	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR304C	 -1.252296	INESSENTIAL	CYP5	Cyclophilin D, Peptidyl-prolyl cis-trans isomerase D, stress response, peptidylprolyl isomerase, endoplasmic reticulum
+YOL110W	 -1.252933	INESSENTIAL	SHR5	involved in RAS localization and palmitoylation, RAS protein signal transduction*, molecular_function unknown, cellular_component unknown
+YFL036W	 -1.253734	INESSENTIAL	RPO41	mitohcondrial RNA polymerase, mitochondrial genome maintenance*, DNA-directed RNA polymerase, mitochondrial matrix
+YNL269W	 -1.257143	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR064W	 -1.260341	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL318C	 -1.266260	INESSENTIAL	HXT14	Member of the hexose transporter family, transport,
+YFR045W	 -1.266814	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL185C	 -1.269993	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR371W	 -1.270570	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR099W	 -1.277020	INESSENTIAL	YUH1	ubiquitin hydrolase, deubiquitylation, ubiquitin-specific protease, cytoplasm
+YGL035C	 -1.280450	INESSENTIAL	MIG1	C2H2 zinc finger protein which resembles the mammalian Egr and Wilms tumour proteins, transcription regulation from Pol II promoter*, transcription co-repressor*, nucleus*
+YJL169W	 -1.282348	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL064C	 -1.282862	INESSENTIAL	YDJ1	yeast dnaJ homolog (nuclear envelope protein); heat shock protein 
+YBL070C	 -1.283811	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL128C	 -1.285151	INESSENTIAL		biological_process unknown, protein kinase, 
+YGR266W	 -1.287093	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR145W	 -1.289827	INESSENTIAL	ASN1	asparagine synthetase,asparagine synthase (glutamine-hydrolyzing), 
+YPR148C	 -1.291528	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR030C	 -1.295398	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL206C	 -1.300763	INESSENTIAL	CHC1	presumed vesicle coat protein 
+YCL022C	 -1.306314	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR013C	 -1.307400	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR263C	 -1.309874	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR028C	 -1.311009	INESSENTIAL	REG1	regulator of phosphatase Glc7p, involved in glucose repression, glycogen metabolism*, protein phosphatase type 1, cytoplasm*
+YIL047C	 -1.323930	INESSENTIAL	SYG1	plasma membrane protein, signal transduction, molecular_function unknown, plasma membrane
+YMR088C	 -1.326519	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR209C	 -1.333380	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR015C	 -1.334704	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL193W	 -1.337373	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL208W	 -1.339186	INESSENTIAL	SIP2	component of Snf1 protein complex involved in response to glucose starvation, transcription,
+YJL052W	 -1.341078	INESSENTIAL	TDH1	Glyceraldehyde-3-phosphate dehydrogenase 1, glycolysis*, glyceraldehyde 3-phosphate dehydrogenase (phosphorylating), cytosol*
+YPL041C	 -1.341761	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL067W	 -1.345825	INESSENTIAL	RPL9B	Ribosomal protein L9B (L8B) (rp24) (YL11), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YKR003W	 -1.345954	INESSENTIAL	OSH6	biological_process unknown, molecular_function unknown, 
+YKL183W	 -1.351118	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL089C	 -1.356359	INESSENTIAL	HAL9	putative transcription factor; contains a zinc finger 
+YML073C	 -1.358144	INESSENTIAL	RPL6A	Ribosomal protein L6A (L17A) (rp18) (YL16), protein biosynthesis*, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YDL211C	 -1.359252	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR032C	 -1.359379	INESSENTIAL	HMS1	myc-family transcription factor homolog, pseudohyphal growth,
+YGR285C	 -1.360136	INESSENTIAL	ZUO1	Zuotin, putative Z-DNA binding protein, protein folding, chaperone, cytosol*
+YPR167C	 -1.363664	INESSENTIAL	MET16	3'phosphoadenylylsulfate reductase, methionine metabolism*, phosphoadenylyl-sulfate reductase (thioredoxin), cellular_component unknown
+YML122C	 -1.365093	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YML096W	 -1.367087	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR271C	 -1.368774	INESSENTIAL	URA10	Orotate phosphoribosyltransferase 2,orotate phosphoribosyltransferase, 
+YLL051C	 -1.372578	INESSENTIAL	FRE6	similar to FRE2, biological_process unknown, molecular_function unknown, 
+YHR078W	 -1.373089	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR273C	 -1.374577	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR282C	 -1.378990	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR226C	 -1.381192	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHL013C	 -1.389310	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR068W	 -1.390430	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR019C	 -1.392417	INESSENTIAL	MUC1	cell surface flocculin with structure similar to serine threonine-rich GPI-anchored cell wall proteins,glucan 1,4-alpha-glucosidase,
+YDL200C	 -1.397790	INESSENTIAL	MGT1	6-O-methylguanine-DNA methylase,methylated-DNA--[protein]-cysteine S-methyltransferase, 
+YOL160W	 -1.402658	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR098C	 -1.403354	INESSENTIAL	GIT1	permease involved in the uptake of glycerophosphoinositol (GroPIns), biological_process unknown, molecular_function unknown, 
+YHR181W	 -1.404185	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCL028W	 -1.405073	INESSENTIAL	RNQ1	transferable epigenetic modifier, biological_process unknown, molecular_function unknown, 
+YPL268W	 -1.407745	INESSENTIAL	PLC1	phosphoinositide-specific phospholipase C, pseudohyphal growth*, 1-phosphatidylinositol-4,5-biphosphate phosphodiesterase, cellular_component unknown
+YOR359W	 -1.407818	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR109C	 -1.408098	INESSENTIAL	CLB6	B-type cyclin, G1/S transition of mitotic cell cycle*, cyclin, cellular_component unknown
+YLR341W	 -1.409243	INESSENTIAL	SMA2	biological_process unknown, molecular_function unknown, 
+YOL122C	 -1.425749	INESSENTIAL	SMF1	has been localized to both the plasma membrane and the mitochondrial membrane, manganese ion transport, manganese ion transporter, plasma membrane*
+YLR058C	 -1.427168	INESSENTIAL	SHM2	serine hydroxymethyltransferase,glycine hydroxymethyltransferase,
+YJL098W	 -1.428121	INESSENTIAL	SAP185	Sit4p-associated protein, G1/S transition of mitotic cell cycle, protein serine/threonine phosphatase, cytoplasm
+YGL227W	 -1.430381	INESSENTIAL	VID30	TOR inhibitory protein, similar to Dictyostelium discoideum non-receptor tyrosine kinase,molecular_function unknown, 
+YDL090C	 -1.435308	INESSENTIAL	RAM1	beta subunit of farnesyltransferase 
+YKR101W	 -1.437858	INESSENTIAL	SIR1	repressor of silent mating loci, chromatin silencing at HML and HMR (sensu Saccharomyces)*,chromatin silencing complex
+YOL032W	 -1.440809	INESSENTIAL		biological_process unknown, molecular_function unknown, cellular_component unknown
+YHR184W	 -1.441927	INESSENTIAL	SSP1	involved in meiosis, nuclear division and spore formation,molecular_function unknown,
+YNL177C	 -1.441980	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL096W	 -1.443613	INESSENTIAL	MRPL49	mitochondrial ribosomal protein of the large subunit, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YJL189W	 -1.444313	INESSENTIAL	RPL39	Ribosomal protein L39 (L46) (YL40), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YDR448W	 -1.445279	INESSENTIAL	ADA2	transcription factor, member of ADA and SAGA, two transcriptional adaptor HAT (histone acetyltransferase)complexes SAGA complex
+YCR066W	 -1.448069	INESSENTIAL	RAD18	Zn finger protein, putative ATPase 
+YPL105C	 -1.451894	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL116W	 -1.453108	INESSENTIAL	NUP84	Protein with homology to mammalian Nup107p, mRNA-nucleus export*, structural protein, nuclear pore
+YNL167C	 -1.453170	INESSENTIAL	SKO1	CREB like repressor, bZIP protein that binds to CRE motifs, interacts with Mig1p, transcription,
+YCL061C	 -1.456871	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR205C	 -1.456927	INESSENTIAL	PFK2	phosphofructokinase beta subunit, glycolysis, 6-phosphofructokinase, 6-phosphofructokinase
+YPL080C	 -1.457352	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR441C	 -1.457930	INESSENTIAL	APT2	Adenine Phosphoribosyltransferase,adenine phosphoribosyltransferase, 
+YGR053C	 -1.458230	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR149C	 -1.459040	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR300C	 -1.461536	INESSENTIAL	PRO1	gamma-glutamyl kinase,glutamate 5-kinase, 
+YOR161C	 -1.463158	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL168C	 -1.464545	INESSENTIAL	SET2	transcription factor containing a SET domain 
+YJL196C	 -1.467401	INESSENTIAL	ELO1	Elongation enzyme 1, fatty acid metabolism,
+YDR266C	 -1.468602	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR221C	 -1.469770	INESSENTIAL	PDB1	beta subunit of pyruvate dehydrogenase (E1 beta),pyruvate dehydrogenase (lipoamide), 
+YFL016C	 -1.472166	INESSENTIAL	MDJ1	DnaJ homolog involved in mitochondrial biogenesis and protein folding, protein folding*, heat shock protein, mitochondrial inner membrane
+YDR417C	 -1.472621	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR119W	 -1.472902	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL301C	 -1.473248	INESSENTIAL	RPL18B	Ribosomal protein L18B (rp28B), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGL085W	 -1.473390	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL118W	 -1.476498	INESSENTIAL	MRP51	Component of small subunit of the mitochondrial ribosome, protein biosynthesis*, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YJL180C	 -1.477784	INESSENTIAL	ATP12	(putative) involved F1F0-ATPase complex assembly, protein complex assembly, chaperone, mitochondrial matrix
+YJR117W	 -1.477946	INESSENTIAL	STE24	zinc metallo-protease that catalyzes the first step of N-terminal processing of the yeast a-factor precursor 
+YMR251W-A	 -1.478687	INESSENTIAL	HOR7	hyperosmolarity-responsive gene, stress response, molecular_function unknown, membrane fraction
+YNL164C	 -1.483006	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR159C	 -1.486169	INESSENTIAL	NSR1	nuclear localization sequence binding protein, rRNA processing*, RNA binding, nucleolus
+YOR267C	 -1.488724	INESSENTIAL		biological_process unknown,
+YDL169C	 -1.490471	INESSENTIAL	UGX2	biological_process unknown, molecular_function unknown, 
+YLR091W	 -1.490996	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL179W	 -1.493004	INESSENTIAL	PFD1	bovine prefoldin subunit 1 homolog (putative), protein folding,
+YNR037C	 -1.502970	INESSENTIAL	RSM19	protein of the small subunit of the mitochondrial ribosome 
+YPL008W	 -1.503106	INESSENTIAL	CHL1	kinetochore protein in the DEAH box family, mitosis,
+YGL140C	 -1.504147	INESSENTIAL		biological_process unknown,
+YNR005C	 -1.505778	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR144W	 -1.510490	INESSENTIAL	MGM101	(putative) nucleic acid interactor, mitochondrial genome maintenance,
+YIR005W	 -1.510566	INESSENTIAL	IST3	biological_process unknown, molecular_function unknown, cellular_component unknown
+YNL214W	 -1.513760	INESSENTIAL	PEX17	23 kDa peroxisome associated protein, binds Pex14p, peroxisome organization and biogenesis, protein binding, peroxisomal membrane
+YOL132W	 -1.514995	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNR032W	 -1.516690	INESSENTIAL	PPG1	Serine threonine protein phosphatase type 2A,protein serine/threonine phosphatase, 
+YDL188C	 -1.516820	INESSENTIAL	PPH22	serine-threonine protein phosphatase 2A, protein biosynthesis*, protein phosphatase type 2A, protein phosphatase type 2A
+YFL042C	 -1.520302	INESSENTIAL		biological_process unknown, molecular_function unknown, cellular_component unknown
+YOR073W	 -1.526168	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR168W	 -1.526287	INESSENTIAL		GTP-binding protein, biological_process unknown, molecular_function unknown, 
+YFR057W	 -1.533190	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR297W	 -1.533574	INESSENTIAL	PRC1	carboxypeptidase Y (proteinase C),carboxypeptidase C,
+YGR290W	 -1.536506	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YML131W	 -1.537668	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHL011C	 -1.538935	INESSENTIAL	PRS3	ribose-phosphate pyrophosphokinase 3, histidine biosynthesis*, ribose-phosphate pyrophosphokinase, cytoplasm
+YAL023C	 -1.540500	INESSENTIAL	PMT2	dolichyl phosphate-D-mannose:protein O-D-mannosyltransferase, O-linked glycosylation, dolichyl-phosphate-mannose--protein mannosyltransferase, endoplasmic reticulum
+YOL033W	 -1.543358	INESSENTIAL	MSE1	Mitochondrial glutamyl-tRNA synthetase,glutamate--tRNA ligase, 
+YPR138C	 -1.551339	INESSENTIAL	MEP3	NH4+ transporter, highly similar to Mep1p and Mep2p, transport,
+YPL018W	 -1.551624	INESSENTIAL	CTF19	kinetochore protein 
+YML036W	 -1.552944	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR272W	 -1.554521	INESSENTIAL	GLO2	Cytoplasmic glyoxylase-II, carbohydrate metabolism, hydroxyacylglutathione hydrolase, cytoplasm
+YBR166C	 -1.555839	INESSENTIAL	TYR1	Prephenate dehydrogenase (NADP+),prephenate dehydrogenase (NADP+), 
+YOR268C	 -1.555999	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL139C	 -1.558325	INESSENTIAL	RLR1	Involved in transcription, transcription,nucleus
+YFL006W	 -1.561440	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR261C	 -1.562024	INESSENTIAL	APL6	putative beta adaptin component of the membrane-associate clathrin assembly complex 
+YCL026C	 -1.562720	INESSENTIAL	FRM2	involved in fatty acid signaling,molecular_function unknown, 
+YKL169C	 -1.568038	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL232W	 -1.570678	INESSENTIAL	SSO1	post-Golgi t-SNARE, non-selective vesicle fusion*, t-SNARE, integral plasma membrane protein
+YPR096C	 -1.574159	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL188C	 -1.574448	INESSENTIAL	PXA2	peroxisomal ABC transporter 2, transport,
+YPL036W	 -1.577013	INESSENTIAL	PMA2	plasma membrane ATPase 
+YLR023C	 -1.582432	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER048C	 -1.582844	INESSENTIAL	CAJ1	homologous to E. coli DnaJ, biological_process unknown, molecular_function unknown, 
+YPL202C	 -1.587905	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR045W	 -1.589369	INESSENTIAL	TOM6	outer mitochondrial membrane protein, component of the mitochondiral protein translocation complex, associates with TOM40, mitochondrial translocation, protein transporter, mitochondrial outer membrane translocase complex
+YHR045W	 -1.592402	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL044W	 -1.593726	INESSENTIAL	PEX15	44 kDa phosphorylated integral peroxisomal membrane protein, protein-peroxisome targeting*, molecular_function unknown, peroxisomal membrane
+YDL222C	 -1.596181	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR073C	 -1.600072	INESSENTIAL	SSK22	protein kinase, protein phosphorylation*, MAP kinase kinase kinase, cellular_component unknown
+YBL032W	 -1.602383	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL150C	 -1.603781	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR056W	 -1.603905	INESSENTIAL	ERG3	C-5 sterol desaturase, ergosterol biosynthesis, C-5 sterol desaturase, endoplasmic reticulum
+YDR314C	 -1.604839	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL069C	 -1.607620	INESSENTIAL	RPS24B	40S ribosomal protein S24B, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDR360W	 -1.608525	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL076C	 -1.610613	INESSENTIAL	RPL7A	Ribosomal protein L7A (L6A) (rp11) (YL8), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YHR010W	 -1.612661	INESSENTIAL	RPL27A	Ribosomal protein L27A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOR375C	 -1.612722	INESSENTIAL	GDH1	NADP-specific glutamate dehydrogenase,glutamate dehydrogenase (NADP+),
+YER046W-A	 -1.616439	INESSENTIAL		
+YDL198C	 -1.618662	INESSENTIAL	YHM1	(putative) mitochondrial carrier protein, transport,
+YER060W	 -1.619236	INESSENTIAL	FCY21	purine-cytosine permease, transport,
+YDL059C	 -1.621885	INESSENTIAL	RAD59	The RAD59 gene product has homology to the Rad52 protein.,molecular_function unknown, 
+YDL183C	 -1.633989	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR255W	 -1.636972	INESSENTIAL	GFD1	GREAT for FULL DEAD box protein activity, mRNA-nucleus export, molecular_function unknown, cytoplasm*
+YLR423C	 -1.637587	INESSENTIAL	APG17	involved in autophagy, autophagy, molecular_function unknown, 
+YHR115C	 -1.640362	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR067W	 -1.642440	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR159W	 -1.648892	INESSENTIAL	SAC3	Leucine permease transcriptional regulator, mitosis*, molecular_function unknown, nucleus
+YDR312W	 -1.652866	INESSENTIAL	SSF2	possibly involved in mating 
+YOR331C	 -1.655802	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR440W	 -1.656097	INESSENTIAL	DOT1	involved in meiosis and transcriptional silencing,molecular_function unknown,
+YPR129W	 -1.658610	INESSENTIAL	SCD6	suppressor of clathrin deficiency 
+YLR333C	 -1.660023	INESSENTIAL	RPS25B	Ribosomal protein S25B (S31B) (rp45) (YS23), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOR291W	 -1.662919	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL137C	 -1.670169	INESSENTIAL	GLG2	glycogen synthesis initiator, glycogen metabolism,
+YDR152W	 -1.670649	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL129W	 -1.673114	INESSENTIAL	ANC1	transcription initiation factor TFIIF small subunit, transcription initiation from Pol II promoter*, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex*
+YJL084C	 -1.674501	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL072W	 -1.676716	INESSENTIAL	THP1	THO2 - HPR1 Phenotype, biological_process unknown, molecular_function unknown, 
+YLR374C	 -1.680188	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER034W	 -1.682961	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR089W	 -1.686559	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR080C	 -1.687348	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR074W	 -1.688855	INESSENTIAL	MOG1	nuclear protein that interacts with GTP-Gsp1p, biological_process unknown, molecular_function unknown, 
+YHR039C-B	 -1.688925	INESSENTIAL		
+YPL163C	 -1.694829	INESSENTIAL	SVS1	Serine and threonine rich protein.,molecular_function unknown, 
+YGL013C	 -1.694917	INESSENTIAL	PDR1	zinc-finger transcription factor of the Zn(2)-Cys(6) binuclear cluster domain type, transport,
+YOL136C	 -1.697378	INESSENTIAL	PFK27	6-phosphofructo-2-kinase,6-phosphofructo-2-kinase, 
+YKR001C	 -1.699726	INESSENTIAL	VPS1	putative GTP-binding protein; similar to mammalian Mx proteins, protein-vacuolar targeting*, GTPase, membrane fraction
+YLR073C	 -1.699765	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YEL057C	 -1.702468	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFR013W	 -1.702928	INESSENTIAL	IOC3	ISWI One Complex, biological_process unknown, molecular_function unknown, 
+YBR034C	 -1.704119	INESSENTIAL	HMT1	nuclear protein arginine methyltransferase (mono- and asymmetrically dimethylating enzyme) 
+YLL039C	 -1.704202	INESSENTIAL	UBI4	ubiquitin, stress response*, protein degradation tagging, cytoplasm
+YKL070W	 -1.706172	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR222C	 -1.707189	INESSENTIAL	FAT2	Probable AMP-binding protein, lipid transport, plasma membrane long-chain fatty acid transporter, 
+YGL054C	 -1.716512	INESSENTIAL	ERV14	14 KDa protein found on ER-derived vesicles, ER to Golgi transport*, molecular_function unknown, endoplasmic reticulum membrane
+YBL027W	 -1.717531	INESSENTIAL	RPL19B	Ribosomal protein L19B (YL14) (L23B) (rpl5L), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGR008C	 -1.720612	INESSENTIAL	STF2	ATPase stabilizing factor, ATP synthesis coupled proton transport, molecular_function unknown, hydrogen-transporting ATP synthase
+YCR101C	 -1.723564	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL223C	 -1.723695	INESSENTIAL	GRE1	hydrophilic polypeptide with no known homology, biological_process unknown, molecular_function unknown, 
+YIL173W	 -1.726212	INESSENTIAL	VTH1	potential membrane glycoprotein with strong similarity to Vth2 and Pep1 Vps10,molecular_function unknown, 
+YGR150C	 -1.726893	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR166C	 -1.727012	INESSENTIAL	MRP2	14 kDa mitochondrial ribosomal protein; homologous to E. coli S14 protein, protein biosynthesis, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YNL275W	 -1.727374	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLL017W	 -1.732867	INESSENTIAL		
+YOR008C	 -1.734206	INESSENTIAL	KIM1	diepoxybutane and mitomycin C resistance,molecular_function unknown, 
+YDR393W	 -1.737438	INESSENTIAL	SHE9	similar to Arabidopsis Cip1, lethal when overexpressed, biological_process unknown, molecular_function unknown, 
+YGL101W	 -1.737908	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR037W	 -1.741621	INESSENTIAL	PUT2	delta-1-pyrroline-5-carboxylate dehydrogenase,1-pyrroline-5-carboxylate dehydrogenase, 
+YDR262W	 -1.745434	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL264C	 -1.747652	INESSENTIAL		biological_process unknown,
+YDR333C	 -1.751029	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER167W	 -1.752901	INESSENTIAL	BCK2	Serine threonine protein kinase, cell cycle control, molecular_function unknown, cellular_component unknown
+YDR285W	 -1.753601	INESSENTIAL	ZIP1	synaptonemal complex protein, meiosis*,synaptonemal complex
+YIL038C	 -1.757851	INESSENTIAL	NOT3	CCR4 trascriptional complex component, transcription,
+YOR162C	 -1.763219	INESSENTIAL	YRR1	transcription factor, transport,
+YHL034C	 -1.764888	INESSENTIAL	SBP1	Single-strand nucleic acid binding protein, RNA processing,
+YDL175C	 -1.771392	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR137W	 -1.777113	INESSENTIAL	RGP1	involved in mitotic growth, biological_process unknown, molecular_function unknown, 
+YER042W	 -1.778602	INESSENTIAL	MXR1	peptide methionine sulfoxide reductase, oxidative stress response, protein-methionine-S-oxide reductase, cellular_component unknown
+YGL220W	 -1.779647	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YML054C	 -1.780758	INESSENTIAL	CYB2	Cytochrome b2 [L--lactate cytochrome-c oxidoreductase],L-lactate dehydrogenase (cytochrome), 
+YMR319C	 -1.781674	INESSENTIAL	FET4	Low-affinity Fe(II) transport protein, low affinity iron transport, iron transporter, integral plasma membrane protein
+YDR256C	 -1.782936	INESSENTIAL	CTA1	catalase A, oxygen and radical metabolism, catalase, peroxisomal matrix
+YIL028W	 -1.788202	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR049C	 -1.790305	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YEL063C	 -1.790859	INESSENTIAL	CAN1	arginine permease, transport, basic amino acid permease, 
+YGL241W	 -1.791638	INESSENTIAL	KAP114	Kap114p 
+YPL098C	 -1.794416	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL170C	 -1.799007	INESSENTIAL	ASG7	An a-specific gene that is induced to a higher expression level by alpha factor, mating (sensu Saccharomyces), molecular_function unknown, cellular_component unknown
+YOR327C	 -1.799046	INESSENTIAL	SNC2	vesicle-associated membrane protein (synaptobrevin) homolog, endocytosis*, v-SNARE, Golgi-plasma membrane transport vesicle
+YOR011W	 -1.806220	INESSENTIAL	AUS1	ABC (ATP-binding cassette) protein involved in Uptake of Sterols. 
+YJR110W	 -1.807918	INESSENTIAL		Gene product shows sequence similarity to conserved myotubularin dual specificity phosphatase (PTP DSP) gene family (Laporte et al. (1998) Hum Mol Gen 7:1703), biological_process unknown, molecular_function unknown, 
+YHR204W	 -1.814826	INESSENTIAL	HTM1	degradation lectin 
+YCR088W	 -1.818173	INESSENTIAL	ABP1	Actin binding protein, establishment of cell polarity (sensu Saccharomyces)*, actin binding, cytoskeleton
+YDR354W	 -1.820397	INESSENTIAL	TRP4	anthranilate phosphoribosyl transferase,anthranilate phosphoribosyltransferase, 
+YDR296W	 -1.820809	INESSENTIAL	MHR1	Involved in mitochondrial homologous DNA recombination,molecular_function unknown,
+YAR050W	 -1.821143	INESSENTIAL	FLO1	FLO1 putative cell wall glycoprotein, flocculation,
+YDL179W	 -1.821602	INESSENTIAL	PCL9	Cyclin, cell cycle,
+YER155C	 -1.822144	INESSENTIAL	BEM2	Rho-type GTPase activating protein (GAP), establishment of cell polarity (sensu Saccharomyces)*, signal transducer*, intracellular
+YAR002W	 -1.830207	INESSENTIAL	NUP60	nuclear pore protein 
+YCR003W	 -1.830451	INESSENTIAL	MRPL32	Mitochondrial ribosomal protein MRPL32 (YmL32), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YOR024W	 -1.834434	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL023C	 -1.837118	INESSENTIAL	FAP1	Transcription factor homolog; similarity to Drosophila melanogaster shuttle craft protein; similarity to human NFX1 protein; similarity to human DNA-binding protein tenascin 
+YJL141C	 -1.837411	INESSENTIAL	YAK1	Serine-threonine protein kinase 
+YCL040W	 -1.840056	INESSENTIAL	GLK1	Glucokinase, glycolysis, glucokinase, cytosol
+YMR161W	 -1.845367	INESSENTIAL	HLJ1	similar to E. coli DnaJ, biological_process unknown, molecular_function unknown, 
+YML124C	 -1.847954	INESSENTIAL	TUB3	alpha-tubulin, mitotic chromosome segregation*, structural protein of cytoskeleton, spindle pole body*
+YOR292C	 -1.848734	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL123W	 -1.853098	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL214C	 -1.853869	INESSENTIAL	PRR2	biological_process unknown, protein kinase, cellular_component unknown
+YNR036C	 -1.855195	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR042C	 -1.855916	INESSENTIAL		Probable membrane-bound small GTPase, biological_process unknown, molecular_function unknown, 
+YER055C	 -1.858230	INESSENTIAL	HIS1	ATP phosphoribosyltransferase, histidine biosynthesis, ATP phosphoribosyltransferase, cell
+YDR205W	 -1.859505	INESSENTIAL	MSC2	biological_process unknown, molecular_function unknown, 
+YKL057C	 -1.864547	INESSENTIAL	NUP120	100-kDa protein (predicted molecular weight is 120 kDa) with two leucine zipper motifs, coiled-coil region, and some homology to Nup133p, mRNA-nucleus export*, structural protein, nuclear pore
+YBL055C	 -1.869350	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL063C	 -1.869429	INESSENTIAL	MRPL8	Mitochondrial ribosomal protein MRPL8 (YmL8) (E. coli L17), protein biosynthesis*, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YFL025C	 -1.870596	INESSENTIAL	BST1	negative regulator of COPII vesicle formation 
+YDR388W	 -1.872090	INESSENTIAL	RVS167	(putative) cytoskeletal protein, endocytosis*, cytoskeletal protein binding protein, actin cortical patch (sensu Saccharomyces)
+YDL192W	 -1.877010	INESSENTIAL	ARF1	ADP-ribosylation factor, ER to Golgi transport*, ARF small monomeric GTPase, cytosol*
+YMR152W	 -1.877176	INESSENTIAL	YIM1	Mitochondrial inner membrane protease, similar to E. coli leader peptidase, mitochondrial processing, peptidase, mitochondrial inner membrane*
+YFL043C	 -1.878453	INESSENTIAL		
+YPL024W	 -1.878709	INESSENTIAL	NCE4	involved in cell separation 
+YDL134C-A	 -1.880674	INESSENTIAL		
+YMR169c	 -1.884339	INESSENTIAL	ALD3	aldehyde dehydrogenase, stress response, aldehyde dehydrogenase, cytoplasm
+YPL241C	 -1.885275	INESSENTIAL	CIN2	involved in microtubule function, microtubule-based process, molecular_function unknown, microtubule
+YPL039W	 -1.885424	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFR001W	 -1.889660	INESSENTIAL	LOC1	Double-stranded RNA-binding protein 
+YLR001C	 -1.891246	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL095W	 -1.893076	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCL058C	 -1.893739	INESSENTIAL	FYV5	biological_process unknown, molecular_function unknown, cellular_component unknown
+YOL023W	 -1.894102	INESSENTIAL	IFM1	mitochondrial initiation factor 2, protein synthesis initiation, translation initiation factor, mitochondrion
+YNL206C	 -1.894557	INESSENTIAL	RTT106	Regulator of Ty1 Transposition - same phenotype as RTT101 - RTT105, disruption causes increase in Ty1 transposition. Isolated from the same screen as the other named RTT genes.,molecular_function unknown, 
+YLL043W	 -1.895944	INESSENTIAL	FPS1	glycerol channel protein, transport*, transporter, integral plasma membrane protein
+YMR142C	 -1.897330	INESSENTIAL	RPL13B	Ribosomal protein L13B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YER091C	 -1.897651	INESSENTIAL	MET6	vitamin B12-(cobalamin)-independent isozyme of methionine synthase (also called N5-methyltetrahydrofolate homocysteine methyltransferase or 5-methyltetrahydropteroyl triglutamate homocysteine methyltransferase), methionine metabolism, 5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase, cytosol
+YPL005W	 -1.898262	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR028W	 -1.899466	INESSENTIAL	DAL4	allantoin permease,allantoin permease, 
+YGR283C	 -1.899698	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR234W	 -1.900967	INESSENTIAL	TOP3	DNA Topoisomerase III, meiotic recombination*, DNA topoisomerase I,
+YBL069W	 -1.904967	INESSENTIAL	AST1	involved in targeting of plasma membrane [H+]ATPase 
+YGR273C	 -1.904979	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YFL053W	 -1.906470	INESSENTIAL	DAK2	dihydroxyacetone kinase,glycerone kinase, 
+YDR452W	 -1.909535	INESSENTIAL	PHM5	vacuolar polyphosphatase 
+YKL215C	 -1.912477	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER073W	 -1.912490	INESSENTIAL	ALD5	mitochondrial Aldehyde Dehydrogenase, metabolism, aldehyde dehydrogenase, mitochondrion
+YNL283C	 -1.913750	INESSENTIAL	WSC2	Putative integral membrane protein containing novel cysteine motif. Similarity to SLG1 (WSC1), WSC3 and WSC4, cell wall organization and biogenesis*, molecular_function unknown, membrane fraction
+YGR224W	 -1.916009	INESSENTIAL	AZR1	MFS-MDR, transport, transporter, membrane
+YBL060W	 -1.919048	INESSENTIAL		has homology to the sec7 domain of gtp exchange factors, biological_process unknown, molecular_function unknown, 
+YPR154W	 -1.920656	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL005C	 -1.922126	INESSENTIAL	MRP7	Mitochondrial ribosomal protein MRP7 (YmL2) (E. coli L27), protein biosynthesis, structural protein of ribosome*, mitochondrial large ribosomal-subunit
+YLR068W	 -1.926483	INESSENTIAL	FYV7	biological_process unknown, molecular_function unknown, cellular_component unknown
+YMR287C	 -1.929458	INESSENTIAL	MSU1	component of 3'-5'exonuclease complex 
+YPR072W	 -1.934620	INESSENTIAL	NOT5	member of the NOT complex, a global negative regulator of transcription, transcription,
+YJL029C	 -1.935885	INESSENTIAL	VPS53	Vps53p is a hydrophilic protein that is peripherally associated with the late Golgi and forms a stable complex with Vps52p and Vps54p.,molecular_function unknown, 
+YDR027C	 -1.937782	INESSENTIAL	LUV1	involved in vacuole biogenesis,molecular_function unknown,
+YBR172C	 -1.938370	INESSENTIAL	SMY2	Kinesin-related protein suppressing myosin defects (MYO2), cytoskeleton organization and biogenesis, molecular_function unknown, cellular_component unknown
+YPL029W	 -1.938723	INESSENTIAL	SUV3	putative ATP-dependent helicase,RNA helicase,
+YOR076C	 -1.943845	INESSENTIAL	SKI7	biological_process unknown, molecular_function unknown, 
+YNR014W	 -1.946261	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL189W	 -1.946728	INESSENTIAL	GUP2	Putative active glycerol transporter 
+YJL186W	 -1.946823	INESSENTIAL	MNN5	putative Golgi alpha-1,2-mannosyltransferase, protein glycosylation,
+YKL206C	 -1.947478	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR028W	 -1.949058	INESSENTIAL	SAP190	Type 2A-related protein phosphatase, G1/S transition of mitotic cell cycle, protein serine/threonine phosphatase, cytoplasm
+YGL181W	 -1.949492	INESSENTIAL	GTS1	Glycine-threonine-serine repeat protein, sporulation (sensu Saccharomyces)*, specific RNA polymerase II transcription factor, cytoplasm
+YER047C	 -1.953294	INESSENTIAL	SAP1	member of the AAA ATPase family of proteins 
+YDR480W	 -1.964555	INESSENTIAL	DIG2	MAP kinase-associated protein, invasive growth,
+YGL089C	 -1.964665	INESSENTIAL	MF	alpha mating factor, pheromone response, pheromone, extracellular
+YKL033W-A	 -1.964814	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR077C	 -1.965010	INESSENTIAL	NMD2	Highly acidic C-terminus, mRNA catabolism,
+YNL305C	 -1.965052	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL024C	 -1.965140	INESSENTIAL	APS3	similar to Aps1p and mammalian small subunit (sigma-2 adaptin) of plasma membrane-associated clathrin assembly complex (AP-2) 
+YGR282C	 -1.965231	INESSENTIAL	BGL2	Cell wall endo-beta-1,3-glucanase, cell wall organization and biogenesis, glucan 1,3-beta-glucosidase, cell wall
+YNL080C	 -1.968700	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR263C	 -1.968938	INESSENTIAL	DIN7	involved in DNA repair, DNA repair, nuclease, cellular_component unknown
+YDR079W	 -1.969140	INESSENTIAL	PET100	cytochrome c oxidase-specific assembly factor, cytochrome c oxidase biogenesis, molecular_function unknown, cellular_component unknown
+YGR072W	 -1.970377	INESSENTIAL	UPF3	involved in decay of mRNA containing nonsense codons, mRNA catabolism, molecular_function unknown,
+YDR216W	 -1.971884	INESSENTIAL	ADR1	positive transcriptional regulator of ADH2 and peroxisomal protein genes 
+YNL280C	 -1.978880	INESSENTIAL	ERG24	sterol C-14 reductase, ergosterol biosynthesis, C-14 sterol reductase, endoplasmic reticulum
+YGL214W	 -1.979466	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL173W	 -1.979656	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL044C	 -1.979896	INESSENTIAL	MTF2	involved in mRNA splicing, mRNA processing, RNA binding, mitochondrion
+YGL212W	 -1.979914	INESSENTIAL	VAM7	hydrophilic protein, heptad repeat motif, non-selective vesicle fusion*, v-SNARE, Golgi-vacuole transport vesicle
+YDR424C	 -1.982218	INESSENTIAL	DYN2	putative light chain of dynein, microtubule-based process*, microtubule motor, cell
+YGR260W	 -1.982374	INESSENTIAL	TNA1	Tna1p is a high affinity nicotinic acid plasma membrane permease, nicotinamide mononucleotide transport, nicotinamide mononucleotide permease, integral plasma membrane protein
+YLR220W	 -1.983501	INESSENTIAL	CCC1	Possible transmembrane Ca2+ transporter, iron homeostasis*, molecular_function unknown, membrane fraction*
+YGL195W	 -1.993454	INESSENTIAL	GCN1	translational activator of GCN4 through activation of GCN2 in response to starvation 
+YLR226W	 -1.993622	INESSENTIAL	BUR2	involved in transcriptional regulation, mitotic chromosome segregation, molecular_function unknown, cellular_component unknown
+YNR027W	 -1.997899	INESSENTIAL	BUD17	biological_process unknown, molecular_function unknown, 
+YDR306C	 -1.999886	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNR033W	 -2.006574	INESSENTIAL	ABZ1	para-aminobenzoate synthase, PABA synthase, ribosomal large subunit nucleus export, para-aminobenzoic acid (PABA) synthase, cellular_component unknown
+YDR332W	 -2.013478	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YML024W	 -2.017428	INESSENTIAL	RPS17A	Ribosomal protein S17A (rp51A), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDL172C	 -2.020310	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL127C	 -2.022198	INESSENTIAL	SOH1	SOH1 encodes a novel 14-kD protein with limited sequence similarity to RNA polymerases. The Soh1 protein interacts with a DNA repair protein, Rad5p, in a two-hybrid system assay., biological_process unknown, molecular_function unknown, 
+YGR262C	 -2.026689	INESSENTIAL	BUD32	biological_process unknown, molecular_function unknown, cellular_component unknown
+YCR062W	 -2.027942	INESSENTIAL		
+YKR050W	 -2.028530	INESSENTIAL	TRK2	membrane protein; low affinity potassium transport, transport,
+YPL274W	 -2.039150	INESSENTIAL	SAM3	High affinity S-adenosylMethionine Permease, sulfur amino acid transport, amino acid-polyamine transporter, cellular_component unknown
+YLR327C	 -2.042072	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR286C	 -2.042630	INESSENTIAL	BIO2	Biotin synthase,biotin synthase, 
+YER067W	 -2.050816	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER054C	 -2.054045	INESSENTIAL	GIP2	(putative) regulator of Glc7, a PP1 family protein phosphatase 
+YPL186C	 -2.054401	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR338W	 -2.055425	INESSENTIAL	KRE21	biological_process unknown, molecular_function unknown, 
+YPR008W	 -2.059934	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR441C	 -2.060629	INESSENTIAL	RPS1A	Ribosomal protein S1A (rp10A), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YGL126W	 -2.064580	INESSENTIAL	SCS3	involved in inositol biosynthesis, phospholipid metabolism,
+YNL128W	 -2.066445	INESSENTIAL	TEP1	Putative protein tyrosine phosphatase, biological_process unknown, protein phosphatase, 
+YKR034W	 -2.068850	INESSENTIAL	DAL80	negative regulator of multiple nitrogen catabolic genes,transcription factor,
+YMR075C-A	 -2.070456	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR110C	 -2.071128	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YAL058W	 -2.072216	INESSENTIAL	CNE1	Calnexin and calreticulin homolog 
+YDL075W	 -2.072541	INESSENTIAL	RPL31A	Ribosomal protein L31A (L34A) (YL28), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YKL005C	 -2.079642	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR005W	 -2.080551	INESSENTIAL	APL1	beta-adaptin, large subunit of the clathrin-associated protein complex, vesicle transport, vesicle transport, coated vesicle
+YHR106W	 -2.083070	INESSENTIAL	TRR2	mitochondrial thioredoxin reductase, oxidative stress response, thioredoxin reductase (NADPH), mitochondrion
+YER019C-A	 -2.084763	INESSENTIAL	SBH2	homologous to Sbh1p, co-translational membrane targeting, protein transporter, translocon
+YLR035C	 -2.085932	INESSENTIAL	MLH2	MutL Homolog, DNA repair,
+YPR061C	 -2.089067	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL012C	 -2.091831	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL125C	 -2.093066	INESSENTIAL	HNT1	similarity to protein kinase C inhibitor-I, biological_process unknown, nucleotide binding, cellular_component unknown
+YMR103C	 -2.093735	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR125W	 -2.096826	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR244C	 -2.099482	INESSENTIAL	MAP1	methionine aminopeptidase,methionyl aminopeptidase, 
+YMR116C	 -2.105762	INESSENTIAL	ASC1	G-beta like protein 
+YGR016W	 -2.105812	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR076W	 -2.107445	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL274C	 -2.108122	INESSENTIAL		biological_process unknown,
+YBL002W	 -2.110522	INESSENTIAL	HTB2	Histone H2B (HTB1 and HTB2 code for nearly identical proteins) 
+YLR067C	 -2.114894	INESSENTIAL	PET309	involved in COX1 mRNA stability, protein biosynthesis*, molecular_function unknown, mitochondrial inner membrane
+YBR076W	 -2.122207	INESSENTIAL	ECM8	involved in cell wall biogenesis,molecular_function unknown, 
+YGR037C	 -2.125078	INESSENTIAL	ACB1	Acyl-CoA-binding protein (ACBP) Diazepam binding inhibitor (DBI) endozepine (EP), fatty acid metabolism, acyl-CoA binding, cellular_component unknown
+YGL246C	 -2.127458	INESSENTIAL	RAI1	biological_process unknown, molecular_function unknown, 
+YEL033W	 -2.127758	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER150W	 -2.129586	INESSENTIAL	SPI1	similar to Sed1; highly expressed in stationary phase, biological_process unknown, molecular_function unknown, cell wall
+YPL053C	 -2.130262	INESSENTIAL	KTR6	mannosylphosphate transferase, cell wall organization and biogenesis*, mannosylphosphate transferase, membrane fraction
+YDL185W	 -2.130853	INESSENTIAL	TFP1	vacuolar ATPase V1 domain subunit A (69 kDa), vacuolar acidification*, hydrogen-transporting two-sector ATPase*, hydrogen-transporting ATPase V1 domain
+YGR040W	 -2.131584	INESSENTIAL	KSS1	MAP protein kinase homolog involved in pheromone signal transduction, protein phosphorylation*, MAP kinase, nucleus
+YGR181W	 -2.131797	INESSENTIAL	TIM13	Subunit of mitochondrial protein import machinery, mitochondrial translocation, protein transporter, mitochondrial intermembrane space
+YPR199C	 -2.132516	INESSENTIAL	ARR1	Putative transcription factor involved in arsenite and arsenate resistance, transcription,
+YPR093C	 -2.139286	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER122C	 -2.148859	INESSENTIAL	GLO3	Zinc-finger-containing protein with similarity to Gcs1p and Sps18p, ER to Golgi transport*, ARF GTPase activator, secretory vesicle*
+YPL203W	 -2.154068	INESSENTIAL	TPK2	cAMP-dependent protein kinase catalytic subunit, protein phosphorylation*, protein serine/threonine kinase*, cytoplasm*
+YER173W	 -2.156383	INESSENTIAL	RAD24	(putative) cell cycle exonuclease 
+YDR283C	 -2.158826	INESSENTIAL	GCN2	eukaryotic initiation factor 2 alpha (eIF2-alpha) kinase 
+YLR315W	 -2.165080	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL081W	 -2.169298	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YEL065W	 -2.171042	INESSENTIAL	SIT1	Ferrioxamine B permease, transport,
+YDR535C	 -2.171819	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR180C	 -2.173457	INESSENTIAL	RNR4	Ribonucleotide Reductase, DNA replication, ribonucleoside-diphosphate reductase, nucleus
+YBR056W	 -2.178228	INESSENTIAL		Homolog to glucan-1,3--glucosidase (EC 3.2.1.5; S. cerevisiae) 2, biological_process unknown, molecular_function unknown, 
+YPL260W	 -2.182435	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL013W	 -2.183092	INESSENTIAL	HEX3	involved in hexose metabolism,molecular_function unknown, 
+YLR124W	 -2.184017	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR335W	 -2.195014	INESSENTIAL	NUP2	nuclear pore complex protein with central repetitive domain similar to that of NSP1 and NUP1, mRNA-nucleus export*, structural protein, nuclear pore
+YBL005W	 -2.196811	INESSENTIAL	PDR3	Pleiotropic drug resistance protein 3, transport, transcription factor,
+YMR083W	 -2.197211	INESSENTIAL	ADH3	alcohol dehydrogenase isoenzyme III,acylglycerone-phosphate reductase, 
+YFR019W	 -2.197527	INESSENTIAL	FAB1	type II PI(4)P5-kinase (PIP4,5 kinase) similar to human PIP5K-II, vacuole organization and biogenesis, 1-phosphatidylinositol-3-phosphate 5-kinase, vacuolar membrane
+YMR069W	 -2.197788	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR004C	 -2.200106	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR165W	 -2.200582	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR147C	 -2.201731	INESSENTIAL	MRPL6	Mitochondrial ribosomal protein MRPL6 (YmL6), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YGR076C	 -2.205705	INESSENTIAL	MRPL25	Mitochondrial ribosomal protein MRPL25 (YmL25), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YHR067W	 -2.207095	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR245W	 -2.208068	INESSENTIAL	MNN10	galactosyltransferase, actin filament organization*, alpha-1,6-mannosyltransferase, mannosyltransferase complex
+YHR134W	 -2.210418	INESSENTIAL	WSS1	Weak suppressor of smt3 mutant, biological_process unknown, molecular_function unknown, 
+YML013W	 -2.221001	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR529C	 -2.223499	INESSENTIAL	QCR7	ubiquinol-cytochrome c oxidoreductase subunit 7 (14 kDa),ubiquinol-cytochrome-c reductase,
+YJR075W	 -2.223820	INESSENTIAL	HOC1	putative mannosyltransferase, cell wall mannoprotein biosynthesis*, alpha-1,6-mannosyltransferase, mannosyltransferase complex
+YLR328W	 -2.226702	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL098C	 -2.227323	INESSENTIAL	FMC1	Formation of Mitochondrial Cytochromes 1 
+YLR447C	 -2.229104	INESSENTIAL	VMA6	vacuolar ATPase V0 domain subunit d (36 kDa), vacuolar acidification*, hydrogen-transporting two-sector ATPase, vacuolar membrane*
+YMR066W	 -2.233178	INESSENTIAL	SOV1	(putative) involved in respiration,molecular_function unknown, 
+YGR272C	 -2.234730	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER019W	 -2.238131	INESSENTIAL	ISC1	InositolphosphoSphingolipids-phospholipase C, phospholipid metabolism, phospholipase C, 
+YCR037C	 -2.242146	INESSENTIAL	PHO87	phosphate permease, transport,
+YBR293W	 -2.244405	INESSENTIAL		Probable multidrug resistance protein, biological_process unknown,
+YKL029C	 -2.245556	INESSENTIAL	MAE1	mitochondrial malic enzyme, amino acid metabolism*, malate dehydrogenase (oxaloacetate decarboxylating), mitochondrion
+YLR320W	 -2.248904	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL010C	 -2.252683	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR310C	 -2.256330	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER166W	 -2.258645	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL153C	 -2.261781	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER032W	 -2.263305	INESSENTIAL	FIR1	Putative participant in 3' mRNA processing, mRNA polyadenylation, molecular_function unknown, cellular_component unknown
+YDR181C	 -2.265280	INESSENTIAL	SAS4	involved in silencing at telomeres, HML, and HMR,molecular_function unknown, 
+YOL070C	 -2.266519	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL216C	 -2.267250	INESSENTIAL		alpha-glucosidase 
+YOR349W	 -2.267783	INESSENTIAL	CIN1	involved in chromosome segregation, post-chaperonine tubulin folding pathway*, cochaperone, microtubule
+YKL204W	 -2.270038	INESSENTIAL	EAP1	probable purine nucleotide-binding protein, translational regulation, initiation, adenosinetriphosphatase, eukaryotic translation initiation factor 4F complex
+YLR240W	 -2.271246	INESSENTIAL	VPS34	phosphatidylinositol 3-kinase, protein phosphorylation*, protein kinase*, membrane fraction
+YOR241W	 -2.273142	INESSENTIAL	MET7	Folylpolyglutamate synthetase,folylpolyglutamate synthase, 
+YDR253C	 -2.274427	INESSENTIAL	MET32	zinc finger DNA binding factor, transcriptional regulator of sulfur amino acid metabolism, highly homologous to Met31p, methionine metabolism, transcription factor, 
+YDL194W	 -2.275836	INESSENTIAL	SNF3	glucose sensor, transport, glucose permease, 
+YLR074C	 -2.280018	INESSENTIAL	BUD20	BUD site selection, biological_process unknown, molecular_function unknown, cellular_component unknown
+YLL016W	 -2.283525	INESSENTIAL	SDC25	GDP GTP exchange factor for Ras, biological_process unknown*, molecular_function unknown*, cellular_component unknown
+YER154W	 -2.285349	INESSENTIAL	OXA1	involved in cytochrome c oxidase and ATP synthase assembly, mitochondrial translocation, protein transporter, mitochondrial inner membrane
+YDR284C	 -2.285451	INESSENTIAL	DPP1	Diacylglycerol Pyrophosphate Phosphatase, phospholipid metabolism,
+YPL269W	 -2.294423	INESSENTIAL	KAR9	Component of cortical adaptor complex that orients microtubules, mitosis*, molecular_function unknown, cortex
+YCR069W	 -2.301192	INESSENTIAL	SCC3	cyclophilin homolog, stress response, peptidylprolyl isomerase, endoplasmic reticulum
+YPL089C	 -2.312393	INESSENTIAL	RLM1	serum response factor-like protein, signal transduction, transcription factor, nucleus
+YPR077C	 -2.315333	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL013C	 -2.318955	INESSENTIAL	MAD3	spindle checkpoint complex subunit, mitotic spindle checkpoint, molecular_function unknown, nucleus
+YPL031C	 -2.320487	INESSENTIAL	PHO85	cyclin-dependent protein kinase, protein phosphorylation*, cyclin-dependent protein kinase*, 
+YLL015W	 -2.322701	INESSENTIAL	BPT1	ABC-type transmembrane transporter; highly homologous to human MRP1 and to C. elegans mrp-1, bilirubin transport, bilirubin transporter, cellular_component unknown
+YOR085W	 -2.324620	INESSENTIAL	OST3	34-kDa, gamma subunit of oligosaccharyl transferase glycoprotein complex, protein glycosylation, dolichyl-diphosphooligosaccharide-protein glycosyltransferase, integral membrane protein
+YCR067C	 -2.330850	INESSENTIAL	SED4	Intracellular transport protein 
+YGR259C	 -2.334438	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL110W	 -2.339681	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL078W	 -2.340109	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR008C	 -2.343169	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR009W	 -2.343643	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL168W	 -2.347147	INESSENTIAL	SFA1	Long-chain alcohol dehydrogenase (glutathione-dependent formaldehyde dehydrogenase),acylglycerone-phosphate reductase, 
+YJL206C-A	 -2.348732	INESSENTIAL		
+YLR422W	 -2.357164	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR020W	 -2.357244	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER046W	 -2.358541	INESSENTIAL	SPO73	biological_process unknown, molecular_function unknown, 
+YPL078C	 -2.360407	INESSENTIAL	ATP4	F(1)F(0)-ATPase complex delta subunit, mitochondrial, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, stator stalk
+YGL174W	 -2.361278	INESSENTIAL	BUD13	biological_process unknown, molecular_function unknown, 
+YJL115W	 -2.365020	INESSENTIAL	ASF1	involved in silencing, transcription,
+YDR226W	 -2.365152	INESSENTIAL	ADK1	adenylate kinase,adenylate kinase,
+YLR431C	 -2.367002	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR469W	 -2.367058	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR260W	 -2.372233	INESSENTIAL	LCB5	sphingoid long chain base (LCB) kinase, sphingolipid metabolism,
+YLR331C	 -2.375659	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR046C	 -2.376344	INESSENTIAL	IMG1	mitochondrial ribosomal protein, protein biosynthesis, structural protein of ribosome, mitochondrial ribosome
+YPR163C	 -2.376369	INESSENTIAL	TIF3	Translation initiation factor eIF-4B, protein synthesis initiation, translation initiation factor, ribosome
+YAL047C	 -2.379464	INESSENTIAL	SPC72	component of spindle pole bodies, microtubule nucleation*, structural protein of cytoskeleton, outer plaque of spindle pole body
+YPR101W	 -2.379633	INESSENTIAL	SNT309	Component of a protein complex associated with the splicing factor Prp19p., mRNA splicing,
+YOL141W	 -2.379993	INESSENTIAL	PPM2	carboxy methyl transferase; homolog of PPM1, protein modification,
+YJL046W	 -2.384481	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER039C	 -2.391375	INESSENTIAL	HVG1	(putative) nucleotide sugar transporter 
+YGL058W	 -2.391793	INESSENTIAL	RAD6	Ubiquitin conjugating (E2) enzyme. The C-terminal 23 residues are critical for sporulation and histone polyubiquitinating activity, but not UV repair or induced mutagenesis., ubiquitin-dependent protein degradation*, ubiquitin conjugating enzyme, nucleus
+YMR291W	 -2.396164	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR027C	 -2.396185	INESSENTIAL	DAL1	allantoinase,allantoinase, 
+YDL094C	 -2.396545	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR162W	 -2.396965	INESSENTIAL	TIF4631	mRNA cap-binding protein (eIF-4F), 150K subunit , highly homologous to Tif4632p, homologs of mammalian p220, protein synthesis initiation, translation initiation factor, ribosome
+YDL227C	 -2.401663	IN	HO	Homothallic switching endonuclease 
+YGL141W	 -2.403454	INESSENTIAL	HUL5	ubiquitin-protein ligase (E3), polyubiquitylation*, ubiquitin--protein ligase, cellular_component unknown
+YNL295W	 -2.405763	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR292W	 -2.408154	INESSENTIAL	GOT1	membrane protein,molecular_function unknown, 
+YGL105W	 -2.413753	INESSENTIAL	ARC1	G4 nucleic acid binding protein, involved in tRNA aminoacylation 
+YMR179W	 -2.415403	INESSENTIAL	SPT21	non-specific DNA binding protein, transcription,
+YPL236C	 -2.415667	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR316C	 -2.419439	INESSENTIAL	COT1	involved in cobalt accumulation, zinc ion transport*, di-, tri-valent inorganic cation transporter*, vacuole
+YGR231C	 -2.421964	INESSENTIAL	PHB2	mitochondrial protein, prohibitin homolog; homolog of mammalian BAP37 and S. cerevisiae Phb1p, proteolysis and peptidolysis*, molecular_function unknown, mitochondrion
+YHR034C	 -2.424505	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR133W	 -2.426109	INESSENTIAL	CKI1	choline kinase, phosphatidylcholine biosynthesis, choline kinase, cytosol
+YNL153C	 -2.426875	INESSENTIAL	GIM3	bovine prefoldin subunit 4 homolog (putative), protein folding,
+YPL035C	 -2.427203	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR029C	 -2.428967	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL263C	 -2.429811	INESSENTIAL	KEL3	Kelch-repeat protein, similar to Kel1 and Kel2, biological_process unknown, molecular_function unknown, 
+YGL219C	 -2.432879	INESSENTIAL		biological_process unknown, molecular_function unknown, cellular_component unknown
+YEL042W	 -2.440126	INESSENTIAL	GDA1	Guanosine diphosphatase of Golgi membrane,guanosine-diphosphatase, 
+YJR113C	 -2.444772	INESSENTIAL	RSM7	protein of the small subunit of the mitochondrial ribosome 
+YDR323C	 -2.445214	INESSENTIAL	PEP7	cytosolic and peripheral membrane protein with three zinc fingers; cysteine rich regions of amino acids are essential for function, non-selective vesicle fusion*, vesicle fusion, cytoplasm*
+YMR206W	 -2.448355	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL054W	 -2.448481	INESSENTIAL		Homolog to myb transforming proteins, biological_process unknown, molecular_function unknown, 
+YJR108W	 -2.448835	INESSENTIAL	ABM1	ABerrant Microtubules,molecular_function unknown, 
+YNR047W	 -2.451495	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR038C	 -2.454151	INESSENTIAL	GTT1	Glutathione transferase, glutathione metabolism, glutathione transferase, 
+YPR031W	 -2.454909	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR372W	 -2.454924	INESSENTIAL	SUR4	involved in fatty acid biosynthesis, fatty acid biosynthesis*, molecular_function unknown, endoplasmic reticulum membrane
+YMR279C	 -2.456123	INESSENTIAL		biological_process unknown,
+YMR295C	 -2.456854	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL315C	 -2.458107	INESSENTIAL	ATP11	F1FO ATPase assembly protein, protein complex assembly, chaperone, mitochondrial matrix
+YDR446W	 -2.461470	INESSENTIAL	ECM11	(putative) involved in cell wall biogenesis,molecular_function unknown, 
+YDR058C	 -2.464192	INESSENTIAL	TGL2	Triglyceride Lipase,triacylglycerol lipase, 
+YKL139W	 -2.466235	INESSENTIAL	CTK1	alpha subunit of the kinase which phosphorylates the RNA polymerase largest subunit CTD (carboxyl-terminal domain), protein phosphorylation*, protein kinase, 
+YOR010C	 -2.466714	INESSENTIAL	TIR2	induced by cold shock, cell wall organization and biogenesis*, molecular_function unknown, cell wall
+YNL160W	 -2.468698	INESSENTIAL	YGP1	YGP1 encodes gp37, a glycoprotein synthesized in response to nutrient limitation which is homologous to the sporulation-specific SPS100 gene, stress response*, molecular_function unknown, cellular_component unknown
+YIR023W	 -2.471674	INESSENTIAL	DAL81	Transcriptional activator for allantoin and GABA catabolic genes, contains a Zn[2]-Cys[6] fungal-type binuclear cluster domain in the N-terminal region, transcription,
+YKL170W	 -2.472786	INESSENTIAL	MRPL38	mitochondrial ribosomal protein L14, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YDR025W	 -2.474122	INESSENTIAL	RPS11A	Ribosomal protein S11A (S18A) (rp41A) (YS12), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOR383C	 -2.476410	INESSENTIAL	FIT3	biological_process unknown, molecular_function unknown, 
+YNL009W	 -2.477047	INESSENTIAL	IDP3	peroxisomal NADP-dependent isocitrate dehydrogenase, fatty acid beta-oxidation*, isocitrate dehydrogenase (NADP+), peroxisome
+YER137C	 -2.481617	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR028C	 -2.481697	INESSENTIAL		Probable ser thr-specific protein kinase, homolog to YKR2 and YPK1 (S. cerevisiae), biological_process unknown, molecular_function unknown, 
+YEL037C	 -2.484047	INESSENTIAL	RAD23	ubiquitin-like protein, nucleotide-excision repair, damaged DNA binding, repairosome*
+YER072W	 -2.486379	INESSENTIAL	VTC1	Homolog of S. pombe nrf1 (78% identical in predicted amino acid sequence) 
+YKL003C	 -2.496528	INESSENTIAL	MRP17	Mitochondrial ribosomal protein MRP17, protein biosynthesis, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YLR425W	 -2.498265	INESSENTIAL	TUS1	1307 AA, hydrophilic protein., biological_process unknown, molecular_function unknown,
+YPR116W	 -2.501450	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL173C	 -2.506287	INESSENTIAL	KEM1	cytoplasmic 5'-to-3' exonuclease., 35S primary transcript processing*, 5'-3' exoribonuclease, cytoplasm
+YER114C	 -2.510153	INESSENTIAL	BOI2	involved in bud formation, has SH3 domain, establishment of cell polarity (sensu Saccharomyces)*, molecular_function unknown, cell
+YGR012W	 -2.515373	INESSENTIAL		
+YHL025W	 -2.516500	INESSENTIAL	SNF6	subunit of the chromatin remodeling Snf Swi complex, chromatin modeling, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex
+YOR318C	 -2.516832	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL042C	 -2.521176	INESSENTIAL	SIR2	regulator of silencing at HML, HMR, telomeres, and rDNA, chromatin silencing at HML and HMR (sensu Saccharomyces)*, histone deacetylase, nucleolus*
+YCR071C	 -2.521253	INESSENTIAL	IMG2	similar to Drosophila gonadal protein Z600; involved in mitochondrial DNA maitenance,molecular_function unknown, 
+YGR036C	 -2.521871	INESSENTIAL	CAX4	CAX4p contains 3 short stretches of amino acids that are characteristic for a wide variety of phosphatases, including lipid phosphatases and a protein phosphatase.,molecular_function unknown,
+YHR189W	 -2.523791	INESSENTIAL		
+YIL145C	 -2.527331	INESSENTIAL	PAN6	pantoate--beta-alanine ligase 
+YKL096W-A	 -2.529280	INESSENTIAL	CWP2	cell wall mannoprotein, biological_process unknown,
+YDR001C	 -2.530793	INESSENTIAL	NTH1	neutral trehalase, stress response*, alpha,alpha-trehalase, cellular_component unknown
+YJR019C	 -2.533565	INESSENTIAL	TES1	peroxisomal acyl-CoA thioesterase, fatty acid metabolism,
+YKR047W	 -2.541596	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL320W	 -2.544274	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHL024W	 -2.544778	INESSENTIAL	RIM4	RNA-binding protein of the RRM class (putative),molecular_function unknown,
+YKR075C	 -2.545531	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR075W	 -2.548912	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR215W	 -2.549192	INESSENTIAL	RSM27	protein of the small subunit of the mitochondrial ribosome 
+YNR066C	 -2.549435	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR348C	 -2.552595	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL138C	 -2.553898	INESSENTIAL	TPM2	Tropomyosin isoform 2, establishment of cell polarity (sensu Saccharomyces)*, actin lateral binding, cytokinetic ring (sensu Saccharomyces)*
+YJL118W	 -2.554041	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL023C	 -2.555478	INESSENTIAL	PIB2	similar to Fab1 and Vps27; involved in telomere-proximal repression of gene expression,molecular_function unknown, 
+YER134C	 -2.555524	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR329C	 -2.558731	INESSENTIAL	PEX3	48-kDa peroxisomal integral membrane protein, protein-peroxisome targeting*, molecular_function unknown, peroxisomal membrane
+YJL006C	 -2.560884	INESSENTIAL	CTK2	cyclin-like protein, protein phosphorylation*, cyclin, 
+YLL030C	 -2.562999	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR189W	 -2.569644	INESSENTIAL	RPS9B	Ribosomal protein S9B (S13) (rp21) (YS11), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YIL027C	 -2.570827	INESSENTIAL	KRE27	biological_process unknown, molecular_function unknown, 
+YNL235C	 -2.575129	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR031C	 -2.576162	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR233W	 -2.578388	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR092W	 -2.578978	INESSENTIAL	UBC13	ubiquitin-conjugating enzyme, polyubiquitylation*, ubiquitin conjugating enzyme, nucleus
+YER079W	 -2.590500	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL090C	 -2.591497	INESSENTIAL	RPS6A	Ribosomal protein S6A (S10A) (rp9) (YS4), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YKR020W	 -2.592317	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR083W	 -2.595296	INESSENTIAL	TEC1	transcription factor of the TEA ATTS DNA-binding domain family, regulator of Ty1 expression, pseudohyphal growth, specific RNA polymerase II transcription factor, nucleus
+YIL085C	 -2.598962	INESSENTIAL	KTR7	(putative) mannosyltransferase, cell wall organization and biogenesis*, mannosyltransferase, Golgi apparatus
+YDR198C	 -2.599442	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL284C	 -2.601902	INESSENTIAL	MRPL10	Mitochondrial ribosomal protein MRPL10 (YmL10), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YMR198W	 -2.605780	INESSENTIAL	CIK1	spindle pole body associated protein, mitotic chromosome segregation*, microtubule motor, cytoplasmic microtubule*
+YML063W	 -2.612810	INESSENTIAL	RPS1B	Ribosomal protein S1B (rp10B), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YMR100W	 -2.619540	INESSENTIAL	MUB1	involved in bud site selection,molecular_function unknown, 
+YAL056W	 -2.620469	INESSENTIAL		G protein effector, biological_process unknown, molecular_function unknown, 
+YAL016W	 -2.626500	INESSENTIAL	TPD3	protein phosphatase 2A regulatory subunit A, protein biosynthesis*, protein phosphatase type 2A, protein phosphatase type 2A
+YDR080W	 -2.626815	INESSENTIAL	VPS41	component of vacuolar membrane protein complex 
+YMR266W	 -2.629292	INESSENTIAL	RSN1	biological_process unknown, molecular_function unknown, 
+YDR345C	 -2.629566	INESSENTIAL	HXT3	Low-affinity glucose transporter, transport,
+YHR064C	 -2.629619	INESSENTIAL	PDR13	Hsp70 Protein 
+YGR062C	 -2.638564	INESSENTIAL	COX18	required for mitochondrial cytochrome oxidase activity, cytochrome c oxidase biogenesis, molecular_function unknown, mitochondrial membrane
+YNL068C	 -2.638738	INESSENTIAL	FKH2	Fork Head homolog two, biological_process unknown, molecular_function unknown, 
+YGR270W	 -2.639386	INESSENTIAL	YTA7	26S proteasome ATPase 
+YJL172W	 -2.639520	INESSENTIAL	CPS1	carboxypeptidase yscS,gly-X carboxypeptidase, 
+YBL100C	 -2.642574	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR227W	 -2.646900	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL093C	 -2.648230	INESSENTIAL	ROX3	RNA polymerase II holoenzyme mediator subunit, transcription from Pol II promoter, RNA polymerase II transcription mediator, mediator complex
+YDR466W	 -2.648976	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHL022C	 -2.653752	INESSENTIAL	SPO11	Encodes one of the earliest meiosis-specific recombination functions. 
+YGL162W	 -2.654637	INESSENTIAL	SUT1	hypoxic gene family involved in sterol transport, transport,
+YJR084W	 -2.655078	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR039C	 -2.656301	INESSENTIAL	YPS6	GPI-anchored aspartic protease,aspartic-type endopeptidase, 
+YMR267W	 -2.669972	INESSENTIAL	PPA2	mitochondrial inorganic pyrophosphatase, respiration, inorganic diphosphatase, mitochondrion
+YNR029C	 -2.674498	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL042C	 -2.676307	INESSENTIAL	FUI1	uridine permease, transport,
+YNL037C	 -2.680800	INESSENTIAL	IDH1	alpha-4-beta-4 subunit of mitochondrial isocitrate dehydrogenase 1, tricarboxylic acid cycle*, isocitrate dehydrogenase (NAD+), mitochondrial matrix
+YML094W	 -2.682855	INESSENTIAL	GIM5	bovine prefoldin subunit 5 homolog (putative), protein folding,
+YPL229W	 -2.682934	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR247C	 -2.689446	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR261C	 -2.700741	INESSENTIAL	EXG2	Exo-1,3-b-glucanase,glucan 1,3-beta-glucosidase, 
+YAL026C	 -2.702242	INESSENTIAL	DRS2	Membrane-spanning Ca-ATPase (P-type),member of the cation transport (E1-E2) ATPases, post Golgi transport, adenosinetriphosphatase*, Golgi membrane
+YDR318W	 -2.705167	INESSENTIAL	MCM21	involved in minichromosome maintenance,molecular_function unknown, 
+YER059W	 -2.707291	INESSENTIAL	PCL6	PHO85 cyclin, cell cycle,
+YDR199W	 -2.724234	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL003C	 -2.725068	INESSENTIAL	PET8	mitochondrial carrier protein family, biological_process unknown, molecular_function unknown, cellular_component unknown
+YMR072W	 -2.725685	INESSENTIAL	ABF2	HMG-1 homolog, mitochondrial, mitochondrial genome maintenance,
+YJL182C	 -2.727931	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR006C	 -2.731657	INESSENTIAL	ICL2	Isocitrate lyase, may be nonfunctional,isocitrate lyase, 
+YEL059W	 -2.735307	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL003C	 -2.738239	INESSENTIAL	HTA2	Histone H2A (HTA1 and HTA2 code for nearly identical proteins) 
+YIL096C	 -2.740400	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL257C	 -2.741148	INESSENTIAL	SIP3	Putative transcriptional activator 
+YLR242C	 -2.741416	INESSENTIAL	ARV1	similar to Nup120p and C.elegans R05H5.5 protein and Nup120p, biological_process unknown, molecular_function unknown, 
+YNL199C	 -2.743097	INESSENTIAL	GCR2	Transcription factor, glycolysis,
+YLR403W	 -2.744482	INESSENTIAL	SFP1	split zinc finger protein, biological_process unknown,
+YPR036W	 -2.747000	INESSENTIAL	VMA13	vacuolar ATPase V1 domain subunit H (54 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YLR048W	 -2.752448	INESSENTIAL	RPS0B	Ribosomal protein S0B, protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YER060W-A	 -2.753161	INESSENTIAL	FCY22	purine-cytosine permease, transport,
+YGR268C	 -2.755343	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR015C	 -2.763241	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL086C	 -2.765999	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKR082W	 -2.771106	INESSENTIAL	NUP133	nuclear pore protein, mRNA-nucleus export*, structural protein, nuclear pore
+YHL030W	 -2.775381	INESSENTIAL	ECM29	involved in cell wall biogenesis,molecular_function unknown, 
+YCR024C	 -2.786624	INESSENTIAL		Asn-tRNA synthetase, protein biosynthesis, asparagine--tRNA ligase*, mitochondrion
+YGR054W	 -2.786935	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHL014C	 -2.790276	INESSENTIAL	YLF2	GTP-binding protein and glycogen phosphorylase (weak), biological_process unknown, molecular_function unknown,
+YDR337W	 -2.792615	INESSENTIAL	MRPS28	Mitochondrial ribosomal protein MRPS28 (E. coli S15), protein biosynthesis*, structural protein of ribosome*, mitochondrial small ribosomal-subunit
+YPR100W	 -2.799917	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBL101C	 -2.803465	INESSENTIAL	ECM21	involved in cell wall biogenesis,molecular_function unknown, 
+YOL098C	 -2.803791	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPL079W	 -2.806806	INESSENTIAL	RPL21B	Ribosomal protein L21B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOR301W	 -2.806990	INESSENTIAL	RAX1	Similar to B-chains of the insulin-related hormone superfamily.,molecular_function unknown, 
+YLR139C	 -2.816283	INESSENTIAL	SLS1	73 kDa mitochondrial integral membrane protein 
+YKL054C	 -2.817230	INESSENTIAL	VID31	vacuole import and degradation,molecular_function unknown, 
+YIR024C	 -2.823685	INESSENTIAL	GIF1	(putative) involved in cell cycle control,molecular_function unknown, 
+YMR246W	 -2.826571	INESSENTIAL	FAA4	long-chain fatty acid--CoA ligase and synthetase 4,long-chain-fatty-acid-CoA-ligase, 
+YPL234C	 -2.828543	INESSENTIAL	TFP3	vacuolar ATPase V0 domain subunit c' (17 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YGL104C	 -2.835412	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR299W	 -2.843710	INESSENTIAL	MAL32	Maltase,alpha-glucosidase,
+YLR295C	 -2.846870	INESSENTIAL	ATP14	ATP synthase subunit h, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, F0 sector
+YLR427W	 -2.847155	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL081W	 -2.848496	INESSENTIAL	TEF4	Translation elongation factor EF-1gamma, protein synthesis elongation, translation elongation factor, ribosome
+YDR297W	 -2.849304	INESSENTIAL	SUR2	Syringomycin response protein 2, sphingolipid metabolism, sphingosine hydroxylase, endoplasmic reticulum
+YJL190C	 -2.850112	INESSENTIAL	RPS22A	Ribosomal protein S22A (S24A) (rp50) (YS22), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YBL011W	 -2.863289	INESSENTIAL	SCT1	suppressor of choline-transport mutants, biological_process unknown,
+YNL185C	 -2.864938	INESSENTIAL	MRPL19	mitochondrial ribosomal protein of the large subunit, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YLR322W	 -2.865710	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YEL051W	 -2.871371	INESSENTIAL	VMA8	vacuolar ATPase V1 domain subunit D, vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YER118C	 -2.881730	INESSENTIAL	SHO1	Transmembrane osmosensor, pseudohyphal growth*, osmosensor, plasma membrane
+YHL026C	 -2.882272	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL211C	 -2.886801	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL016W	 -2.901645	INESSENTIAL	KAP122	karyopherin-beta family protein 
+YCR091W	 -2.907828	INESSENTIAL	KIN82	Putative serine threonine protein kinase most similar to cyclic nucleotide-dependent protein kinase subfamily and the protein kinase C subfamily, biological_process unknown, protein kinase, 
+YJR024C	 -2.909522	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGR101W	 -2.912965	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YAL059W	 -2.915300	INESSENTIAL	ECM1	putative transmembrane domain protein involved in cell wall biogenesis,molecular_function unknown, 
+YFL023W	 -2.926577	INESSENTIAL	FYV11	biological_process unknown, molecular_function unknown, cellular_component unknown
+YER001W	 -2.926855	INESSENTIAL	MNN1	Alpha-1,3-mannosyltransferase, O-linked glycosylation*, alpha-1,3-mannosyltransferase, Golgi apparatus
+YNL030W	 -2.926881	INESSENTIAL	HHF2	Histone H4 (HHF1 and HHF2 code for identical proteins) 
+YNL008C	 -2.929128	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOL131W	 -2.930016	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR519W	 -2.935707	INESSENTIAL	FKB2	FKBP (FK506 binding protein) 13; peptidylprolyl cis-trans isomerase activity, biological_process unknown, peptidylprolyl isomerase, endoplasmic reticulum membrane
+YMR040W	 -2.937658	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR262C	 -2.941382	INESSENTIAL	YPT6	highly homologous to the human GTPase, Rab6 
+YMR228W	 -2.942035	INESSENTIAL	MTF1	Mitochondrial RNA polymerase specificity factor, transcription from mitochondrial promoter, transcription factor, mitochondrial matrix
+YDR195W	 -2.944681	INESSENTIAL	REF2	RNA-binding protein, involved in mRNA processing,molecular_function unknown, 
+YCL042W	 -2.947490	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL107W	 -2.953464	INESSENTIAL	MSS2	cox1 pre-mRNA splicing factor,molecular_function unknown, 
+YDR470C	 -2.960496	INESSENTIAL	UGO1	mitochondrial fusion, molecular_function unknownmitochondrial outer membrane
+YNR073C	 -2.966922	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR268W	 -2.969333	INESSENTIAL	MRPL37	Probable mitochondrial protein L37, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YJR090C	 -2.976117	INESSENTIAL	GRR1	cyclin F box protein, ubiquitin-dependent protein degradation*, ubiquitin--protein ligase*, nuclear ubiquitin ligase complex
+YGR165W	 -2.980560	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR034W	 -2.982520	INESSENTIAL	PET191	involved in cytochrome c oxidase assembly, cytochrome c oxidase biogenesis, molecular_function unknown, mitochondrial inner membrane
+YLR420W	 -2.986947	INESSENTIAL	URA4	dihydrooratase,dihydroorotase, 
+YDR138W	 -2.992990	INESSENTIAL	HPR1	involved in mitosis, recombination; similar to TOP1 across 2 regions, DNA recombination, molecular_function unknown, nucleus
+YER050C	 -2.995931	INESSENTIAL	RSM18	protein of the small subunit of the mitochondrial ribosome 
+YIL049W	 -2.999010	INESSENTIAL	DFG10	involved in filamentous growth,molecular_function unknown, 
+YLR345W	 -3.001564	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDL047W	 -3.003460	INESSENTIAL	SIT4	type 2A related protein phosphatase, G1/S transition of mitotic cell cycle, protein serine/threonine phosphatase, cytoplasm
+YJL003W	 -3.006933	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR054W	 -3.010063	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL187W	 -3.018343	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR273W	 -3.018749	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YBR108W	 -3.030724	INESSENTIAL		Probable transcription factor, biological_process unknown, molecular_function unknown, 
+YPL109C	 -3.032288	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR532C	 -3.034792	INESSENTIAL	KRE28	biological_process unknown, molecular_function unknown, 
+YMR237W	 -3.039198	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL084C	 -3.039984	INESSENTIAL	SDS3	(putative) transcriptional regulator 
+YGL070C	 -3.052543	INESSENTIAL	RPB9	RNA polymerase II subunit, transcription from Pol II promoter, DNA-directed RNA polymerase II, DNA-directed RNA polymerase II, core
+YMR322C	 -3.063479	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YHR092C	 -3.063511	INESSENTIAL	HXT4	High-affinity glucose transporter, transport,
+YHR051W	 -3.064300	INESSENTIAL	COX6	subunit VI of cytochrome c oxidase,cytochrome-c oxidase, 
+YHR154W	 -3.074669	INESSENTIAL	ESC4	involved in silencing,molecular_function unknown, 
+YMR188C	 -3.075837	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL328C	 -3.076358	INESSENTIAL	MDJ2	Mitochindrial chaperonin, protein folding, molecular_function unknown, mitochondrial inner membrane
+YDL045W-A	 -3.076781	INESSENTIAL	MRP10	homologous to Yml37p, component of the 37 S subunit of mitochondrial ribosomes, protein biosynthesis, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YEL027W	 -3.076798	INESSENTIAL	CUP5	vacuolar ATPase V0 domain subunit c (17 kDa), endocytosis*, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YIL166C	 -3.078926	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR091C	 -3.080517	INESSENTIAL	NPL6	involved in nuclear protein targeting,molecular_function unknown, 
+YNR055C	 -3.081538	INESSENTIAL	HOL1	Putative ion transporter similar to the major facilitator superfamily of transporters, transport,
+YDR298C	 -3.084695	INESSENTIAL	ATP5	ATP synthase subunit 5; oligomycin sensitivity-conferring protein, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, stator stalk
+YGL036W	 -3.085641	INESSENTIAL	MTC2	Mtf1 Two Hybrid Clone 2, biological_process unknown, molecular_function unknown, 
+YNR022C	 -3.086138	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJR063W	 -3.087268	INESSENTIAL	RPA12	A12.2 subunit of RNA polymerase I, transcription from Pol I promoter, DNA-directed RNA polymerase I, DNA-directed RNA polymerase I
+YBR112C	 -3.102525	INESSENTIAL	CYC8	Transcription regulatory protein, transcription,
+YLR031W	 -3.104083	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR132W	 -3.106952	INESSENTIAL	RPS23B	Ribosomal protein S23B (S28B) (rp37) (YS14), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YCL010C	 -3.116395	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR065W	 -3.122924	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL231C	 -3.126726	INESSENTIAL	PDR16	homologous to Pdr17p and Sec14p,molecular_function unknown, 
+YLR428C	 -3.133129	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR062C	 -3.133874	INESSENTIAL	BUD28	biological_process unknown, molecular_function unknown, cellular_component unknown
+YPL004C	 -3.135001	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YPR131C	 -3.150637	INESSENTIAL	NAT3	N-terminal acetyltransferase 
+YKL009W	 -3.160061	INESSENTIAL	MRT4	involved in mRNA decay,molecular_function unknown, 
+YML095C	 -3.164706	INESSENTIAL	RAD10	ssDNA endonuclease, DNA repair,
+YBL043W	 -3.171985	INESSENTIAL	ECM13	(putative) involved in cell wall biogenesis,molecular_function unknown, 
+YOR054C	 -3.177858	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER014C-A	 -3.180991	INESSENTIAL	BUD25	bud site selection, biological_process unknown, molecular_function unknown, cellular_component unknown
+YIR026C	 -3.181264	INESSENTIAL	YVH1	nitrogen starvation-induced protein phosphatase, meiosis*, protein tyrosine phosphatase, 
+YDR287W	 -3.182179	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL210W	 -3.186174	INESSENTIAL	MER1	encodes protein with RNA-binding motifs required for MRE2-dependent mRNA splicing, meiosis, pre-mRNA splicing factor, nucleus
+YMR060C	 -3.192989	INESSENTIAL	TOM37	mitochondrial import receptor, heterodimerizes with Tom70p, preferentially recognizes the mature regions of precursor proteins associated with ATP-dependent cytosolic chaperones, mitochondrial translocation, protein transporter, mitochondrial outer membrane translocase complex
+YBR212W	 -3.203531	INESSENTIAL	NGR1	negative growth regulatory protein, biological_process unknown,
+YLR050C	 -3.205408	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YKL218C	 -3.208021	INESSENTIAL	SRY1	Pyridoxal-5'phosphate-dependent enzyme homologous to mouse glial serine racemase, serine metabolism,
+YNL138W	 -3.213494	INESSENTIAL	SRV2	70-kDa adenylyl cyclase-associated protein, cytoskeleton organization and biogenesis*, cytoskeletal protein binding protein*, actin cortical patch (sensu Saccharomyces)
+YMR070W	 -3.227020	INESSENTIAL	MOT3	2 Cys2-His2 zinc fingers at c-terminus, glutamine and asparagine rich, mating (sensu Saccharomyces),
+YMR027W	 -3.242765	INESSENTIAL	HRT2	High level expression reduced Ty3 Transposition,molecular_function unknown, 
+YGL124C	 -3.254052	INESSENTIAL	MON1	molecular_function unknown 
+YPL271W	 -3.270501	INESSENTIAL	ATP15	nuclear gene for ATP synthase epsilon subunit, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, central stalk
+YLR043C	 -3.282513	INESSENTIAL	TRX1	thioredoxin, oxidative stress response*, thioredoxin, cytosol
+YDR295C	 -3.305552	INESSENTIAL	PLO2	Ploidy-related, biological_process unknown, molecular_function unknown, 
+YGL143C	 -3.309033	INESSENTIAL	MRF1	Mitochondrial polypeptide chain release factor, protein biosynthesis*, translation release factor, mitochondrion
+YDR418W	 -3.309684	INESSENTIAL	RPL12B	Ribosomal protein L12B (L15B) (YL23), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YKL157W	 -3.311595	INESSENTIAL	APE2	aminopeptidase yscII, peptide metabolism, leucyl aminopeptidase, cytoplasm*
+YKR085C	 -3.316057	INESSENTIAL	MRPL20	22.3 kDa mitochondrial ribosomal large subunit protein YmL20; homologous to L17 of E. coli, protein biosynthesis*, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YGR287C	 -3.321615	INESSENTIAL		alpha-glucosidase 
+YIL149C	 -3.323179	INESSENTIAL	MLP2	colied-coil protein (putative), similar to myosin and TPR, protein-nucleus import, molecular_function unknown, nuclear membrane*
+YBR285W	 -3.325203	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR414C	 -3.328625	INESSENTIAL	ERD1	involved in rentention of lumenal ER proteins 
+YOR003W	 -3.331334	INESSENTIAL	YSP3	subtilisin-like protease III 
+YPL193W	 -3.336993	INESSENTIAL	RSA1	RiboSome Assembly, ribosomal large subunit assembly and maintenance, molecular_function unknown, nucleoplasm
+YAL048C	 -3.339223	INESSENTIAL		molecular_function unknown 
+YHR162W	 -3.350034	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR179C	 -3.350197	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLL047W	 -3.379923	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YER070W	 -3.388336	INESSENTIAL	RNR1	ribonucleotide reductase, DNA replication, ribonucleoside-diphosphate reductase, cytosol
+YLR235C	 -3.394303	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR382W	 -3.397046	INESSENTIAL	FIT2	biological_process unknown, molecular_function unknown, 
+YJL198W	 -3.400667	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCL030C	 -3.404394	INESSENTIAL	HIS4	histidinol dehydrogenase, histidine biosynthesis, histidinol dehydrogenase*, cell
+YAL046C	 -3.405855	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YNL059C	 -3.408886	INESSENTIAL	ARP5	Actin-related protein, biological_process unknown, molecular_function unknown, cell
+YMR089C	 -3.421019	INESSENTIAL	YTA12	mitochondrial membrane ATPase of the CDC48 PAS1 SEC18 (AAA) family, protein complex assembly*, adenosinetriphosphatase*, mitochondrial inner membrane
+YBR280C	 -3.439520	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YGL129C	 -3.451321	INESSENTIAL	RSM23	protein of the small subunit of the mitochondrial ribosome 
+YGR160W	 -3.451398	INESSENTIAL	FYV13	biological_process unknown, molecular_function unknown, cellular_component unknown
+YHR046C	 -3.457553	INESSENTIAL		Inositol monophosphatase, biological_process unknown, molecular_function unknown, 
+YMR014W	 -3.457876	INESSENTIAL	BUD22	BUD site selection, biological_process unknown, molecular_function unknown, 
+YOR302W	 -3.473710	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YDR129C	 -3.487757	INESSENTIAL	SAC6	fibrim homolog (actin-filament bundling protein), endocytosis*, actin cross-linking, actin cortical patch (sensu Saccharomyces)*
+YGR257C	 -3.501421	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIL128W	 -3.519230	INESSENTIAL	MET18	regulator of TFIIH, transcription from Pol II promoter*, RNA polymerase II transcription factor, nucleoplasm
+YJL102W	 -3.524394	INESSENTIAL	MEF2	mitochondrial elongation factor G-like protein, protein synthesis elongation, translation elongation factor, mitochondrion
+YJL184W	 -3.542556	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR078C	 -3.576855	INESSENTIAL	CTF18	(putative) involved in chromosome transmission during mitosis,molecular_function unknown,
+YLR312W-A	 -3.582398	INESSENTIAL	MRPL15	Mitochondrial ribosomal protein MRPL15 (YmL15), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YOR026W	 -3.584612	INESSENTIAL	BUB3	cell cycle checkpoint protein, mitotic spindle checkpoint, molecular_function unknown, cellular_component unknown
+YDR024W	 -3.602976	INESSENTIAL	FYV1	biological_process unknown, molecular_function unknown, cellular_component unknown
+YHR028C	 -3.604971	INESSENTIAL	DAP2	Dipeptidyl aminopeptidase B (DPAP B) 
+YPL045W	 -3.604973	INESSENTIAL	VPS16	Vacuolar sorting protein, protein-vacuolar targeting*, molecular_function unknown, vacuolar membrane*
+YNL015W	 -3.609507	INESSENTIAL	PBI2	Proteinase inhibitor that inhibits protease Prb1p (yscB), biological_process unknown,
+YKL162C-A	 -3.631724	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YOR187W	 -3.647789	INESSENTIAL	TUF1	Translation elongation factor Tu, mitochondrial 
+YER135C	 -3.676188	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLR044C	 -3.734920	INESSENTIAL	PDC1	pyruvate decarboxylase,alpha-1,3-mannosyl-glycoprotein beta-1,2-N-acetylglucosaminyltransferase, 
+YGL254W	 -3.750711	INESSENTIAL	FZF1	putative transcription factor, has five zinc fingers
+YJL140W	 -3.750733	INESSENTIAL	RPB4	fourth-largest subunit of RNA polymerase II, transcription from Pol II promoter, DNA-directed RNA polymerase II, DNA-directed RNA polymerase II, core
+YKL142W	 -3.764622	INESSENTIAL	MRP8	mitochondrial ribosomal protein, protein biosynthesis, structural protein of ribosome, mitochondrial ribosome
+YGR086C	 -3.807918	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR041C	 -3.864616	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YCR063W	 -3.868792	INESSENTIAL	BUD31	G10-like protein, biological_process unknown, molecular_function unknown, cellular_component unknown
+YDL157C	 -3.869559	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YIR042C	 -3.879604	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YMR024W	 -3.894832	INESSENTIAL	MRPL3	Mitochondrial ribosomal protein MRPL3 (YmL3), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YDR507C	 -3.910522	INESSENTIAL	GIN4	putative serine threonine kinase, protein phosphorylation*, protein kinase, bud neck
+YNL330C	 -3.975086	INESSENTIAL	RPD3	histone deacetylase, chromatin architecture*, histone deacetylase, histone deacetylase complex
+YPL034W	 -4.153809	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YLL023C	 -4.158422	INESSENTIAL		biological_process unknown, molecular_function unknown, 
+YJL059W	 -4.200772	INESSENTIAL	YHC3	Homolog of human CLN3, biological_process unknown, molecular_function unknown,
