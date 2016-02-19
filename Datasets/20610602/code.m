@@ -8,8 +8,6 @@ FILENAMES = {};
 cooper_fields_2010.pmid = 20610602;
 
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/SupplementalTable4.xlsx');
-<<<<<<< HEAD
-=======
 
 cooper_fields_2010.orfs = data.raw(2:end,1);
 cooper_fields_2010.orfs = clean_orf(cooper_fields_2010.orfs);
@@ -19,7 +17,6 @@ disp(cooper_fields_2010.orfs(inds));
 
 % Fix the typo
 cooper_fields_2010.orfs(strcmp('YML048WA-', cooper_fields_2010.orfs)) = {'YML048W-A'};
->>>>>>> origin/master
 
 cooper_fields_2010.ph = data.raw(1,3:end)';
 
