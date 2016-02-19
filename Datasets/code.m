@@ -1,5 +1,8 @@
 %% FirstAuthor~LastAuthor, YYYY
 function FILENAMES = code()
+
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
 FILENAMES = {};
 firstauthor_lastauthor_YYYY.pmid = 12345678;
 
@@ -10,7 +13,7 @@ treatments = {'condition1'; 'condition2'};
 %% Hit strains
 
 % Load hit strains
-[FILENAMES{end+1}, data] = dataread('xlsread','./raw_data/data.xlsx', 'Spreadsheet name');
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/data.xlsx', 'Spreadsheet name');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
@@ -21,13 +24,13 @@ hit_data = ones(size(hit_strains)); % if the dataset is binary
 hit_data = data(:,2:4); % if the dataset is discrete or binary
     
 % Eliminate all white spaces & capitalize
-hit_strains = cleanGenename(hit_strains);
+hit_strains = clean_genename(hit_strains);
 
 % If in gene name form, transform into ORF name
 hit_strains = translate(hit_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(~isorf(hit_strains));
+inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds));  
 
 % If possible, fix the problem (typos, omissions etc.)
@@ -42,16 +45,16 @@ hit_strains(ismember(hit_strains, {'BLANK'})) = [];
 %% Tested strains (only if the dataset is not quantitative and the tested strains are provided separately)
 
 % Load tested strains
-[FILENAMES{end+1}, tested_strains] = dataread('xlsread','./raw_data/tested_strains.xlsx', 'Spreadsheet name');
+[FILENAMES{end+1}, tested_strains] = read_data('xlsread','./raw_data/tested_strains.xlsx', 'Spreadsheet name');
 
 % Eliminate all white spaces & capitalize
-tested_strains = cleanGenename(tested_strains);
+tested_strains = clean_genename(tested_strains);
 
 % If in gene name form, transform into ORF name
 tested_strains = translate(tested_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(~isorf(tested_strains));
+inds = find(~is_orf(tested_strains));
 disp(tested_strains(inds));  
 
 % If possible, fix the typo
