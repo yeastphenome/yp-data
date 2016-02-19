@@ -23,10 +23,6 @@ inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds)); 
 
 % Get data from hits
-fid = fopen('./johnson_wu_2015.txt','w');
-write_matrix_file(fid, johnson_wu_2015.orfs, johnson_wu_2015.ph, johnson_wu_2015.data);
-fclose(fid);
-
 hit_data = cell2mat(data(4:end, 2:7)); 
 wt_data = cell2mat(data(3,2:7));
 
@@ -60,3 +56,8 @@ johnson_wu_2015.data = hit_data;
 
 save('./johnson_wu_2015.mat','johnson_wu_2015');
 
+fid = fopen('./johnson_wu_2015.txt','w');
+write_matrix_file(fid, johnson_wu_2015.orfs, johnson_wu_2015.ph, johnson_wu_2015.data);
+fclose(fid);
+
+end
