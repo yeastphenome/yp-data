@@ -41,5 +41,9 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+fid = fopen('./van_voorst_bradt_2006.txt','w');
+write_matrix_file(fid, van_voorst_bradt_2006.orfs, van_voorst_bradt_2006.ph, van_voorst_bradt_2006.data);
+fclose(fid);
+
 end
 

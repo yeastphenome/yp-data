@@ -10,7 +10,7 @@ phenotypes = {'mitophagy'};
 treatments = {'YPL'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/TableS2-2.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/TableS2-2.xlsx', 'Sheet1');
 hits_orfs = data.raw(4:end,1);
 hits_scores = data.raw(4:end,2);
 
@@ -74,6 +74,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./kanki_klionsky_2009.txt','w');
+write_matrix_file(fid, kanki_klionsky_2009.orfs, kanki_klionsky_2009.ph, kanki_klionsky_2009.data);
+fclose(fid);
 
 end
 

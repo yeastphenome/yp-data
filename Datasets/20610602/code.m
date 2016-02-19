@@ -7,7 +7,7 @@ FILENAMES = {};
 
 cooper_fields_2010.pmid = 20610602;
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/SupplementalTable4.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/SupplementalTable4.xlsx');
 
 cooper_fields_2010.orfs = upper(data.raw(2:end,1));
 cooper_fields_2010.ph = data.raw(1,3:end)';
@@ -29,6 +29,10 @@ return;
 
 % Save data into database
 insert_data_into_db(cooper_fields_2010);
+
+fid = fopen('./cooper_fields_2010.txt','w');
+write_matrix_file(fid, cooper_fields_2010.orfs, cooper_fields_2010.ph, cooper_fields_2010.data);
+fclose(fid);
 
 end
 

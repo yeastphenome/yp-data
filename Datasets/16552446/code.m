@@ -9,7 +9,7 @@ gatbonton_bedalov_2006.source = {'main PDF'};
 gatbonton_bedalov_2006.downloaddate = {'2014-03-10'};
 gatbonton_bedalov_2006.pmid = 16552446;
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/gatbonton_bedalov_2006_hits.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/gatbonton_bedalov_2006_hits.xlsx', 'Sheet1');
 
 [hits_orfs, translated] = translate(data.raw(:,1));
 hits_orfs(~translated) = [];
@@ -29,14 +29,14 @@ treatments = {''};
 
 
 % Load tested genes
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/genelist_altered_020806.xlsx', 'mat alpha copy.txt');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/genelist_altered_020806.xlsx', 'mat alpha copy.txt');
 
 tested_orfs = data.raw(2:end,1);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
 tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);
@@ -66,6 +66,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./gatbonton_bedalov_2006.txt','w');
+write_matrix_file(fid, gatbonton_bedalov_2006.orfs, gatbonton_bedalov_2006.ph, gatbonton_bedalov_2006.data);
+fclose(fid);
 
 end
 

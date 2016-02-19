@@ -10,7 +10,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'NiSO4 [0.75-1.25 mM]'};
 
 % Load resistant
-[FILENAMES{end+1}, hits.raw] = readdata('xlsread','./raw_data/1471-2164-10-524-S1.XLS', 'Sheet1');
+[FILENAMES{end+1}, hits.raw] = read_data('xlsread','./raw_data/1471-2164-10-524-S1.XLS', 'Sheet1');
 hits_sensitive_orfs = hits.raw(7:end,1);
 hits_resistant_orfs = hits.raw(7:end,2);
 
@@ -62,6 +62,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./arita_costa_2009.txt','w');
+write_matrix_file(fid, arita_costa_2009.orfs, arita_costa_2009.ph, arita_costa_2009.data);
+fclose(fid);
 
 end
 

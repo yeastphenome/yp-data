@@ -10,7 +10,7 @@ phenotypes = {'increased Ty1 transposon mobility'};
 treatments = {''};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Matalphakos counted.xlsx', 'Sheet2');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Matalphakos counted.xlsx', 'Sheet2');
 tested_orfs = tested.raw(6:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs));
@@ -25,7 +25,7 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/genetics.107.082602-9.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/genetics.107.082602-9.xlsx', 'Sheet1');
 hits_orfs = data.raw(:,1);
 
 inds = find(cellfun(@isempty, hits_orfs));
@@ -68,6 +68,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./nyswaner_garfinkel_2008.txt','w');
+write_matrix_file(fid, nyswaner_garfinkel_2008.orfs, nyswaner_garfinkel_2008.ph, nyswaner_garfinkel_2008.data);
+fclose(fid);
 
 end
 

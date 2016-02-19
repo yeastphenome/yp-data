@@ -15,7 +15,7 @@ rows = 'ABCDEFGH';
 cols = 1:12;
 timepoints = [0:120:360];
 
-[FILENAMES{end+1}, map.raw] = readdata('xlsread','./raw_data/MATa Collection.xlsx', 'MATa Collection.xls');
+[FILENAMES{end+1}, map.raw] = read_data('xlsread','./raw_data/MATa Collection.xlsx', 'MATa Collection.xls');
 
 map.orf = map.raw(5:end,2);
 map.plate = cell2mat(map.raw(5:end, 5));
@@ -42,7 +42,7 @@ map.orf = cellfun(@strtrim, map.orf,'UniformOutput',0);
 inds = ~strncmp('Y', map.orf,1);
 
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Initial Screen Data.xls', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/Initial Screen Data.xls', 'Sheet1');
 
 [all_cols, all_rows] = meshgrid(1:12,1:8);
 all_idx = sub2ind([8 12], all_rows, all_cols)';
@@ -80,6 +80,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./huang_oshea_2005.txt','w');
+write_matrix_file(fid, huang_oshea_2005.orfs, huang_oshea_2005.ph, huang_oshea_2005.data);
+fclose(fid);
 
 end
 

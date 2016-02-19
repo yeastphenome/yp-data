@@ -11,7 +11,7 @@ phenotypes = {'growth'};
 treatments = {'hypoxia'};
 
 % Load tested genes
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/BY4741-MATa COLLECTION.xls', 'chr11_1yes');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/BY4741-MATa COLLECTION.xls', 'chr11_1yes');
 
 tested_orfs = data.raw(2:end,2);
 
@@ -27,7 +27,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load hits
-[FILENAMES{end+1}, hits] = readdata('textread','./raw_data/reiner_scheiter_2006_hits.txt', '%s');
+[FILENAMES{end+1}, hits] = read_data('textread','./raw_data/reiner_scheiter_2006_hits.txt', '%s');
 
 % This list of ORFs is lacking the last character (published that way), so
 % we have to match it to the list of tested strains.
@@ -76,6 +76,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./reiner_schneiter_2006.txt','w');
+write_matrix_file(fid, reiner_schneiter_2006.orfs, reiner_schneiter_2006.ph, reiner_schneiter_2006.data);
+fclose(fid);
 
 end
 

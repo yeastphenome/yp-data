@@ -11,7 +11,7 @@ phenotypes = {'Death rate (%/hr)'};
 treatments = {'phosphate starvation';'leucine starvation'};
 
 % Dataset #1
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/TABLES4.xlsx', 'phoAbs.txt');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/TABLES4.xlsx', 'phoAbs.txt');
 
 data.genenames = data.raw(2:end, 1);
 data.data = cell2mat(data.raw(2:end, 2));
@@ -28,7 +28,7 @@ data.data(~translated,:) = [];
 
 
 % Dataset #2
-[FILENAMES{end+1}, data2.raw] = readdata('xlsread','./raw_data/TABLES5.xlsx', 'leuAbs.txt');
+[FILENAMES{end+1}, data2.raw] = read_data('xlsread','./raw_data/TABLES5.xlsx', 'leuAbs.txt');
 
 data2.genenames = data2.raw(2:end, 1);
 data2.data = cell2mat(data2.raw(2:end, 2));
@@ -74,6 +74,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./gresham_botstein_2011.txt','w');
+write_matrix_file(fid, gresham_botstein_2011.orfs, gresham_botstein_2011.ph, gresham_botstein_2011.data);
+fclose(fid);
 
 end
 

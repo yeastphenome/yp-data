@@ -11,7 +11,7 @@ phenotypes = {'growth [MIC]'};
 treatments = {'heat stress (temperature [50ºC], duration [30 min])'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a.xlsx', 'mat_a_041902');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a.xlsx', 'mat_a_041902');
 tested_orfs = tested.raw(3:end,2);
 
 
@@ -57,6 +57,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./mir_cashikar_2009.txt','w');
+write_matrix_file(fid, mir_cashikar_2009.orfs, mir_cashikar_2009.ph, mir_cashikar_2009.data);
+fclose(fid);
 
 end
 

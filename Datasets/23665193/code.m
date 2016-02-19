@@ -11,7 +11,7 @@ phenotypes = {'lactate production'};
 treatments = {''};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/data_from_S1_PDF.xlsx', 'Mutants');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/data_from_S1_PDF.xlsx', 'Mutants');
 data.raw(1,:) = [];
 data2.genenames = [data.raw(:,1); data.raw(:,4); data.raw(:,7); data.raw(:,10)];
 data2.data = [data.raw(:,2:3); data.raw(:,5:6); data.raw(:,8:9); data.raw(:,11:12)];
@@ -20,9 +20,9 @@ inds = find(cellfun(@isnumeric, data2.genenames));
 data2.genenames(inds) = [];
 data2.data(inds,:) = [];
 
-data2.genenames = upper(cleanGenename(data2.genenames));
+data2.genenames = upper(clean_genename(data2.genenames));
 
-inds = find(~isgenename(data2.genenames) & ~isorf(data2.genenames));
+inds = find(~is_genename(data2.genenames) & ~is_orf(data2.genenames));
 data2.genenames(inds) = [];
 data2.data(inds,:) = [];
 
@@ -34,7 +34,7 @@ data2.data = cell2mat(data2.data);
 data2.data = nanmean(data2.data,2);
 
 % Load controls
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/data_from_S1_PDF.xlsx', 'CTRL');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/data_from_S1_PDF.xlsx', 'CTRL');
 data.raw(1,:) = [];
 ctrl_data = [data.raw(:,2:3); data.raw(:,5:6); data.raw(:,8:9); data.raw(:,11:12)];
 ctrl_data = reshape(ctrl_data,[],1);
@@ -68,6 +68,10 @@ dt.ph(ph_ix)
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 
+
+fid = fopen('./hirasawa_shimizu_2013.txt','w');
+write_matrix_file(fid, hirasawa_shimizu_2013.orfs, hirasawa_shimizu_2013.ph, hirasawa_shimizu_2013.data);
+fclose(fid);
 
 end
 

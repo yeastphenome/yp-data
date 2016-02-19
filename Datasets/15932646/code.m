@@ -9,7 +9,7 @@ stepchenkova_pavlov_2005.source = {'main PDF'};
 stepchenkova_pavlov_2005.downloaddate = {'2014-03-10'};
 stepchenkova_pavlov_2005.pmid = 15932646;
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/stepchenkova_pavlov_2005_hits.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/stepchenkova_pavlov_2005_hits.xlsx', 'Sheet1');
 
 hits_genenames = data.raw(:,1);
 inds = find(cellfun(@isnumeric, hits_genenames));
@@ -31,13 +31,13 @@ treatments = {'HAP';'HAP'};
 
 
 % Load tested genes
-[FILENAMES{end+1}, tested_orfs] = readdata('textread','./raw_data/mat_alpha_041902.txt', '%*s %s %*s %*s %*s %*s %*s %*s', 'delimiter', '\t');
+[FILENAMES{end+1}, tested_orfs] = read_data('textread','./raw_data/mat_alpha_041902.txt', '%*s %s %*s %*s %*s %*s %*s %*s', 'delimiter', '\t');
 
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
-tested_orfs(~isorf(tested_orfs)) = [];
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
+tested_orfs(~is_orf(tested_orfs)) = [];
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);
@@ -66,6 +66,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./stepchenkova_pavlov_2005.txt','w');
+write_matrix_file(fid, stepchenkova_pavlov_2005.orfs, stepchenkova_pavlov_2005.ph, stepchenkova_pavlov_2005.data);
+fclose(fid);
 
 end
 

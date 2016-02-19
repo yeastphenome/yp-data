@@ -11,7 +11,7 @@ phenotypes = {'growth [MIC]'};
 treatments = {'miconazole [0.025-12.5 ug/ml]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Euroscarf library.xlsx', 'Tabelle1');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Euroscarf library.xlsx', 'Tabelle1');
 tested_orfs = tested.raw(2:end,2);
 
 
@@ -60,6 +60,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./thevissen_francois_2007.txt','w');
+write_matrix_file(fid, thevissen_francois_2007.orfs, thevissen_francois_2007.ph, thevissen_francois_2007.data);
+fclose(fid);
 
 end
 

@@ -10,13 +10,13 @@ phenotypes = {'Opi-'};
 treatments = {''};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
 tested_orfs = tested.raw(4:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);
 tested_orfs(inds) = [];
 
-tested_orfs = cleanOrf(tested_orfs);
+tested_orfs = clean_orf(tested_orfs);
 tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
 
 tested_orfs = unique(tested_orfs);
@@ -57,6 +57,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./hancock_lopes_2006.txt','w');
+write_matrix_file(fid, hancock_lopes_2006.orfs, hancock_lopes_2006.ph, hancock_lopes_2006.data);
+fclose(fid);
 
 end
 

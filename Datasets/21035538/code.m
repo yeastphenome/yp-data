@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'BA, 20 mM';'BA, 30 mM';'BA, 40 mM';'BA, 50 mM'; 'BA, 60 mM'; 'BA, 70 mM';'BA, 100 mM';'BA, 125 mM';'BA, 150 mM'};
 
 % Load tested
-[FILENAMES{end+1}, tested_orfs] = readdata('textread','./raw_data/tested_strains.txt', '%s');
+[FILENAMES{end+1}, tested_orfs] = read_data('textread','./raw_data/tested_strains.txt', '%s');
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -27,7 +27,7 @@ uluisik_koc_2011.data = zeros(length(tested_orfs),length(treatments));
 uluisik_koc_2011.ph = strcat(phenotypes, '; ', treatments);
 
 % Load data 1
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/mmc2.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mmc2.xlsx');
 hits_orfs = data.raw(4:end,1);
 hits_data = data.raw(4:end,2:5);
 hits_treatments = {'BA, 100 mM','BA, 125 mM','BA, 150 mM'};
@@ -61,7 +61,7 @@ hits_data(inds,:) = [];
 uluisik_koc_2011.data(ind2,ind4) = hits_data(ind1,ind3);
 
 % Load data 2
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/mmc3.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mmc3.xlsx');
 hits_orfs = data.raw(4:end,1);
 hits_data = data.raw(4:end,2:8);
 hits_treatments = {'BA, 20 mM';'BA, 30 mM';'BA, 40 mM';'BA, 50 mM';'BA, 60 mM';'BA, 70 mM'};
@@ -110,6 +110,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./uluisik_koc_2011.txt','w');
+write_matrix_file(fid, uluisik_koc_2011.orfs, uluisik_koc_2011.ph, uluisik_koc_2011.data);
+fclose(fid);
 
 end
 

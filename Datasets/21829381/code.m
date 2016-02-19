@@ -10,19 +10,19 @@ treatments = {'SC'; 'YPD'};
 %% Hit strains
 
 % Load hit strains
-[FILENAMES{end+1}, data] = readdata('read_matrix_file','./raw_data/hits.txt');
+[FILENAMES{end+1}, data] = read_data('read_matrix_file','./raw_data/hits.txt');
 
 % Get the list of ORFs and the correponding data 
 hit_strains = data.labels_row(:,1);
 
 % Get the data itself
 hit_data = data.data; % if the dataset is discrete or binary
-    
+
 % Eliminate all white spaces & capitalize
-hit_strains = cleanOrf(hit_strains);
+hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(~isorf(hit_strains));
+inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds));  
 
 % Normalize to WT
@@ -45,6 +45,10 @@ fei_yang_2011.data = hit_data;
 %% Save
 
 save('./fei_yang_2011.mat','fei_yang_2011');
+
+fid = fopen('./fei_yang_2011.txt','w');
+write_matrix_file(fid, fei_yang_2011.orfs, fei_yang_2011.ph, fei_yang_2011.data);
+fclose(fid);
 
 end
 

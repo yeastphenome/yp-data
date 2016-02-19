@@ -10,7 +10,7 @@ parsons_boone_2004.source = {'http://www.nature.com/nbt/journal/v22/n1/extref/nb
 parsons_boone_2004.downloaddate = {'2014-02-20'};
 parsons_boone_2004.pmid = 14661025;
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/nbt919-S2.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/nbt919-S2.xlsx', 'Sheet1');
 
 inds = find(strcmp('ORF', data.raw(:,1)));
 
@@ -58,6 +58,10 @@ datasets.names(database_ix(adj_ix),:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix(adj_ix)));
+
+fid = fopen('./parsons_boone_2004.txt','w');
+write_matrix_file(fid, parsons_boone_2004.orfs, parsons_boone_2004.ph, parsons_boone_2004.data);
+fclose(fid);
 
 end
 

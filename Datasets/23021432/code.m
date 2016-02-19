@@ -11,7 +11,7 @@ phenotypes = {'cytosolic pH'};
 treatments = {'standard'};
 
 % Load hits
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/pH Screen raw.xlsx', 'initial screens');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/pH Screen raw.xlsx', 'initial screens');
 hits_orfs = data.raw(2:end,1);
 hits_scores = data.raw(2:end,3:4);
 
@@ -49,6 +49,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./orij_smits_2012.txt','w');
+write_matrix_file(fid, orij_smits_2012.orfs, orij_smits_2012.ph, orij_smits_2012.data);
+fclose(fid);
 
 end
 

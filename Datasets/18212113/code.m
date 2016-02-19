@@ -10,9 +10,9 @@ phenotypes = {'growth'};
 treatments = {'gliotoxin'};
 
 % Load tested
-[FILENAMES{end+1}, tested_orfs] = readdata('textread','./raw_data/tested_orfs.txt', '%s');
+[FILENAMES{end+1}, tested_orfs] = read_data('textread','./raw_data/tested_orfs.txt', '%s');
 
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 % Load data
 fid = fopen('./raw_data/data_genenames.txt','r');
@@ -56,6 +56,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./chamilos_kontoyiannis_2008.txt','w');
+write_matrix_file(fid, chamilos_kontoyiannis_2008.orfs, chamilos_kontoyiannis_2008.ph, chamilos_kontoyiannis_2008.data);
+fclose(fid);
 
 end
 

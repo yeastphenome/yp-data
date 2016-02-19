@@ -11,7 +11,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'hibernation'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx', 'Mat_a_obs_v2.0.txt');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx', 'Mat_a_obs_v2.0.txt');
 tested_orfs = tested.raw(2:end,1);
 
 
@@ -61,6 +61,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./postma_ralser_2009.txt','w');
+write_matrix_file(fid, postma_ralser_2009.orfs, postma_ralser_2009.ph, postma_ralser_2009.data);
+fclose(fid);
 
 end
 

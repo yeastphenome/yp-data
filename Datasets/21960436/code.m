@@ -11,7 +11,7 @@ phenotypes = {'growth [spot assay]'};
 treatments = {'quinine [1.5-1.7 g/L]'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/List of strains tested.xlsx', 'Tabelle2');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/List of strains tested.xlsx', 'Tabelle2');
 tested_orfs = tested.raw(2:end,1);
 % slow_growers = tested.raw(2:end,2);
 % inds = find(~cellfun(@isnumeric, slow_growers));
@@ -20,24 +20,24 @@ tested_orfs = tested.raw(2:end,1);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames_HS] = readdata('textread','./raw_data/hits_genenames_hs.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_HS] = read_data('textread','./raw_data/hits_genenames_hs.txt', '%s');
 
-hits_genenames_HS = cleanGenename(hits_genenames_HS);
+hits_genenames_HS = clean_genename(hits_genenames_HS);
 hits_orfs_HS = translate(hits_genenames_HS);
 hits_scores_HS = zeros(length(hits_orfs_HS),1)-2;
 
-[FILENAMES{end+1}, hits_genenames_S] = readdata('textread','./raw_data/hits_genenames_s.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_S] = read_data('textread','./raw_data/hits_genenames_s.txt', '%s');
 
-hits_genenames_S = cleanGenename(hits_genenames_S);
+hits_genenames_S = clean_genename(hits_genenames_S);
 hits_orfs_S = translate(hits_genenames_S);
 hits_scores_S = zeros(length(hits_orfs_S),1)-1;
 
-[FILENAMES{end+1}, hits_genenames_R] = readdata('textread','./raw_data/hits_genenames_r.txt', '%s');
+[FILENAMES{end+1}, hits_genenames_R] = read_data('textread','./raw_data/hits_genenames_r.txt', '%s');
 
-hits_genenames_R = upper(cleanGenename(hits_genenames_R));
+hits_genenames_R = upper(clean_genename(hits_genenames_R));
 [hits_orfs_R, translated] = translate(hits_genenames_R);
 hits_orfs_R(~translated) = [];
 hits_scores_R = zeros(length(hits_orfs_R),1)+1;
@@ -86,6 +86,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./dos_santos_sa_correia_2011.txt','w');
+write_matrix_file(fid, dos_santos_sa_correia_2011.orfs, dos_santos_sa_correia_2011.ph, dos_santos_sa_correia_2011.data);
+fclose(fid);
 
 end
 

@@ -11,7 +11,7 @@ phenotypes = {'chronological life span'};
 treatments = {'standard'};
 
 % Load hits
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/journal.pgen.1004168.s013.xlsx', 'Genome-wide CLS screen');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/journal.pgen.1004168.s013.xlsx', 'Genome-wide CLS screen');
 hits_orfs = data.raw(2:end,1);
 hits_scores = data.raw(2:end,3);
 
@@ -48,6 +48,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./garay_deluna_2014.txt','w');
+write_matrix_file(fid, garay_deluna_2014.orfs, garay_deluna_2014.ph, garay_deluna_2014.data);
+fclose(fid);
 
 end
 

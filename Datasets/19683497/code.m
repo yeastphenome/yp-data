@@ -13,7 +13,7 @@ fillingham_andrews_2009.pmid = 19683497;
 phenotypes = {'HTA1 expression, z-score of log2 GFP:RFP'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/mmc3.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mmc3.xlsx', 'Sheet1');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,1)));
@@ -63,6 +63,10 @@ datasets_names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
+
+fid = fopen('./fillingham_andrews_2009.txt','w');
+write_matrix_file(fid, fillingham_andrews_2009.orfs, fillingham_andrews_2009.ph, fillingham_andrews_2009.data);
+fclose(fid);
 
 end
 

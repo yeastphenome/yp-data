@@ -10,19 +10,23 @@ treatments = {'NaAsO2, 0.2 mM'; 'NaAsO2, 0.4 mM'};
 %% Hit Strains
 
 % Load hit strains
-[FILENAMES{end+1}, data] = readdata('xlsread', './raw_data/c5mt00261c1.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data] = read_data('xlsread', './raw_data/c5mt00261c1.xlsx', 'Sheet1');
 
 % Get the list of ORFs
 hit_strains = data(4:end, 1);
 
 % Clean up ORFs
-hit_strains = cleanOrf(hit_strains);
+hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(~isorf(hit_strains));
+inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds)); 
 
 % Get data from hits
+fid = fopen('./johnson_wu_2015.txt','w');
+write_matrix_file(fid, johnson_wu_2015.orfs, johnson_wu_2015.ph, johnson_wu_2015.data);
+fclose(fid);
+
 hit_data = cell2mat(data(4:end, 2:7)); 
 wt_data = cell2mat(data(3,2:7));
 

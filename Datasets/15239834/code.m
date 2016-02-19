@@ -11,7 +11,7 @@ hartman_tippery_2004.desc = {'The loaded values are Z-scores with respect to the
 phenotypes = {'Growth, AUGC'};
 treatments = {'UNT';'HU, 50 mM';'HU, 150 mM'};
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/gb-2004-5-7-r49-s7.xlsx', 'data');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/gb-2004-5-7-r49-s7.xlsx', 'data');
 
 ind_orf = strmatch('ORF', data.raw(1,:));
 data2.orfs = data.raw(2:end, ind_orf);
@@ -75,6 +75,10 @@ datasets_names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
+
+fid = fopen('./hartman_tippery_2004.txt','w');
+write_matrix_file(fid, hartman_tippery_2004.orfs, hartman_tippery_2004.ph, hartman_tippery_2004.data);
+fclose(fid);
 
 end
 

@@ -12,7 +12,7 @@ chavel_cullen_2010.pmid = 20333241;
 phenotypes = {'Msb2p secretion'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/journal.pgen.1000883.s011.xlsx', 'Complete Screen');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/journal.pgen.1000883.s011.xlsx', 'Complete Screen');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, data.raw(:,2)));
@@ -70,6 +70,10 @@ datasets_names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
+
+fid = fopen('./chavel_cullen_2010.txt','w');
+write_matrix_file(fid, chavel_cullen_2010.orfs, chavel_cullen_2010.ph, chavel_cullen_2010.data);
+fclose(fid);
 
 end
 

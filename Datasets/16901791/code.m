@@ -9,7 +9,7 @@ phenotypes = {'sensitivity'};
 %% Hit Strains
 
 % Load hit strains and tested strains
-[FILENAMES{end+1}, data] = readdata('xlsread', './raw_data/mmc8.xlsx', 'Supplementary Table 7');
+[FILENAMES{end+1}, data] = read_data('xlsread', './raw_data/mmc8.xlsx', 'Supplementary Table 7');
 
 % Get list of ORFs from both sets of ORFs
 hit_orfs = data(4:end,1);
@@ -22,10 +22,10 @@ inds = find(cellfun(@isnumeric, hit_orfs));
 hit_orfs(inds) = [];
 
 % Clean up ORFs
-hit_orfs = cleanOrf(hit_orfs);
+hit_orfs = clean_orf(hit_orfs);
 
 % Find anything that doesn't look like an ORF
-inds = find(~isorf(hit_orfs));
+inds = find(~is_orf(hit_orfs));
 disp(hit_orfs(inds)); 
 
 % Make sure all are unique
@@ -53,5 +53,9 @@ parsons_boone_2006.data = hit_data;
 %% Save
 
 save('./parsons_boone_2006.mat','parsons_boone_2006');
+
+fid = fopen('./parsons_boone_2006.txt','w');
+write_matrix_file(fid, parsons_boone_2006.orfs, parsons_boone_2006.ph, parsons_boone_2006.data);
+fclose(fid);
 
 end

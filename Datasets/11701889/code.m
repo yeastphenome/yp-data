@@ -8,7 +8,7 @@ ooi_boeke_2001.source = {'Main PDF'};
 ooi_boeke_2001.downloaddate = {'2014-02-03'};
 ooi_boeke_2001.pmid = 11701889;
 
-[FILENAMES{end+1}, hits] = readdata('textread','./raw_data/ooi_boeke_2001.txt', '%s');
+[FILENAMES{end+1}, hits] = read_data('textread','./raw_data/ooi_boeke_2001.txt', '%s');
 hits = lower(hits);
 hits(strcmp('lig4', hits)) = {'dnl4'};
 hits(strcmp('gpe2', hits)) = {'yal056w'};
@@ -45,6 +45,10 @@ return;
 % dt.ph(ph_ix)
 %
 % insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./ooi_boeke_2001.txt','w');
+write_matrix_file(fid, ooi_boeke_2001.orfs, ooi_boeke_2001.ph, ooi_boeke_2001.data);
+fclose(fid);
 
 end
 

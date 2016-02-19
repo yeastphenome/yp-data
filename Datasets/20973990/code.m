@@ -10,16 +10,16 @@ phenotypes = {'growth'};
 treatments = {'acetic acid'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/List of strains tested.xlsx');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/List of strains tested.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/1475-2859-9-79-s1.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/1475-2859-9-79-s1.xlsx');
 hits_genenames = data.raw(9:end,1);
 hits_data = data.raw(9:end,3);
 
@@ -27,7 +27,7 @@ inds = find(cellfun(@isempty, hits_genenames) | cellfun(@isnumeric, hits_genenam
 hits_genenames(inds) = [];
 hits_data(inds,:) = [];
 
-hits_genenames = cleanGenename(hits_genenames);
+hits_genenames = clean_genename(hits_genenames);
 
 [hits_orfs,translated] = translate(hits_genenames);
 hits_orfs(~translated) = [];
@@ -72,6 +72,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./mira_sa_correia_2010.txt','w');
+write_matrix_file(fid, mira_sa_correia_2010.orfs, mira_sa_correia_2010.ph, mira_sa_correia_2010.data);
+fclose(fid);
 
 end
 

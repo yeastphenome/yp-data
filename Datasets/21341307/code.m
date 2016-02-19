@@ -13,7 +13,7 @@ yoshikawa_shimizu_2011.pmid = 21341307;
 phenotypes = {'Growth, exponential growth rate (h^-1)'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/yea_1843_supportinginforTS1.xlsx', 'Deletion');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/yea_1843_supportinginforTS1.xlsx', 'Deletion');
 
 % Get indices of the data columns
 ind_data = 5; % "Average"
@@ -67,6 +67,10 @@ datasets_names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
+
+fid = fopen('./yoshikawa_shimizu_2011.txt','w');
+write_matrix_file(fid, yoshikawa_shimizu_2011.orfs, yoshikawa_shimizu_2011.ph, yoshikawa_shimizu_2011.data);
+fclose(fid);
 
 end
 

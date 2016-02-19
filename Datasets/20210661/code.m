@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'Glu, 30%'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/List of strains tested.xlsx');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/List of strains tested.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -22,13 +22,13 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = readdata('textread','./raw_data/hits_genenames.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = read_data('textread','./raw_data/hits_genenames.txt', '%s');
 inds = find(cellfun(@isempty, hits_genenames) | cellfun(@isnumeric, hits_genenames));
 hits_genenames(inds) = [];
 hits_genenames = strtrim(hits_genenames);
 
 hits_orfs = translate(hits_genenames);
-hits_orfs(~isorf(hits_orfs)) = [];
+hits_orfs(~is_orf(hits_orfs)) = [];
 
 hits_orfs = unique(hits_orfs);
 
@@ -58,6 +58,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./teixeira_sa_correia_2010.txt','w');
+write_matrix_file(fid, teixeira_sa_correia_2010.orfs, teixeira_sa_correia_2010.ph, teixeira_sa_correia_2010.data);
+fclose(fid);
 
 end
 

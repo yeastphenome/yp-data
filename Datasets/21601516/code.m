@@ -10,12 +10,12 @@ phenotypes = {'glutathione abundance'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/hits_data.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/hits_data.xlsx');
 
 hits_genes = data.raw(1:end,1);
 hits_data = cell2mat(data.raw(1:end,2));
 
-hits_genes = cleanGenename(hits_genes);
+hits_genes = clean_genename(hits_genes);
 hits_orfs = translate(hits_genes);
 
 [t,t2] = grpstats(hits_data,hits_orfs,{'gname','mean'});
@@ -23,13 +23,13 @@ hits_orfs = t;
 hits_data = t2;
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/YKOmatalpha_GSH_list070508.xlsx');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/YKOmatalpha_GSH_list070508.xlsx');
 tested_orfs = tested.raw(3:end,3);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 
@@ -56,5 +56,9 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+fid = fopen('./suzuki_yoshida_2011.txt','w');
+write_matrix_file(fid, suzuki_yoshida_2011.orfs, suzuki_yoshida_2011.ph, suzuki_yoshida_2011.data);
+fclose(fid);
+
 end
 

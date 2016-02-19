@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'CG-1521'};
 
 % Load data (1)
-[FILENAMES{end+1}, data_sens.raw] = readdata('xlsread','./raw_data/1471-2164-15-528-s1.xlsx', 'Top sensitive strains');
+[FILENAMES{end+1}, data_sens.raw] = read_data('xlsread','./raw_data/1471-2164-15-528-s1.xlsx', 'Top sensitive strains');
 
 hits_orfs1 = data_sens.raw(2:end,1);
 hits_data1 = -cell2mat(data_sens.raw(2:end,3));
@@ -26,7 +26,7 @@ hits_orfs1 = t;
 hits_data1 = t2;
 
 % Load data (2)
-[FILENAMES{end+1}, data_res.raw] = readdata('xlsread','./raw_data/1471-2164-15-528-s1.xlsx', 'Top resistant strains');
+[FILENAMES{end+1}, data_res.raw] = read_data('xlsread','./raw_data/1471-2164-15-528-s1.xlsx', 'Top resistant strains');
 
 hits_orfs2 = data_res.raw(2:end,1);
 hits_data2 = -cell2mat(data_res.raw(2:end,3));
@@ -51,7 +51,7 @@ hits_orfs = [hits_orfs1; hits_orfs2];
 hits_data = [hits_data1; hits_data2];
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/CompleteDeletionLibrary.xlsx');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/CompleteDeletionLibrary.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -88,6 +88,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./gaupel_tenniswood_2004.txt','w');
+write_matrix_file(fid, gaupel_tenniswood_2004.orfs, gaupel_tenniswood_2004.ph, gaupel_tenniswood_2004.data);
+fclose(fid);
 
 end
 

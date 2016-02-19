@@ -10,7 +10,7 @@ phenotypes = {'expression of PIS1'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/gb-2006-7-1-r6-s2.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/gb-2006-7-1-r6-s2.xlsx');
 
 orfs = data.raw(41:end,1);
 raw_data = data.raw(41:end,2:47);
@@ -77,6 +77,10 @@ ph_ix = 1:length(dt.ph);
 
 insert_data_into_db(dt, ph_ix, [548 549 592:601]);
 
+
+fid = fopen('./narayanaswamy_marcotte_2006.txt','w');
+write_matrix_file(fid, narayanaswamy_marcotte_2006.orfs, narayanaswamy_marcotte_2006.ph, narayanaswamy_marcotte_2006.data);
+fclose(fid);
 
 end
 

@@ -57,15 +57,15 @@ for j = 1 : length(txt_files_names)
 % If filenames ends in "~1" or "a", load the list
 t = regexp(txt_files_names{j},'\.','split');
 if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
-[FILENAMES{end+1}, tst] = readdata('textread',['./raw_data/' txt_files_names{j}], '%s');
-tested_orfs = [tested_orfs; tst(isorf(tst))];
+[FILENAMES{end+1}, tst] = read_data('textread',['./raw_data/' txt_files_names{j}], '%s');
+tested_orfs = [tested_orfs; tst(is_orf(tst))];
 end
 end
 
 tested_orfs = unique(tested_orfs);
 
 % Load data
-[FILENAMES{end+1}, DATA] = readdata('textread','./raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
+[FILENAMES{end+1}, DATA] = read_data('textread','./raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
 
 hits_genenames = DATA{1};
 hits_scores_txt = DATA{2};
@@ -100,6 +100,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./serero_boiteux_2008.txt','w');
+write_matrix_file(fid, serero_boiteux_2008.orfs, serero_boiteux_2008.ph, serero_boiteux_2008.data);
+fclose(fid);
 
 end
 

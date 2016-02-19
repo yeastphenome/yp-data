@@ -10,7 +10,7 @@ phenotypes = {'abundance of Rpn4'};
 treatments = {'standard'};
 
 % Load tested
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/mat_a_041902.xlsx', 'mat_a_041902');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mat_a_041902.xlsx', 'mat_a_041902');
 tested_orfs = data.raw(3:end,2);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -19,7 +19,7 @@ tested_orfs(inds) = [];
 % Validate tested
 tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
 tested_orfs = unique(upper(strtrim(tested_orfs)));
-tested_orfs(~isorf(tested_orfs)) = [];
+tested_orfs(~is_orf(tested_orfs)) = [];
 
 % Load data
 fid = fopen('./raw_data/hits.txt','r');
@@ -29,7 +29,7 @@ fclose(fid);
 genenames = C{1};
 
 orfs = translate(genenames);
-orfs(~isorf(orfs)) = [];
+orfs(~is_orf(orfs)) = [];
 
 data = ones(size(orfs));
 
@@ -57,6 +57,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./ju_xie_2008.txt','w');
+write_matrix_file(fid, ju_xie_2008.orfs, ju_xie_2008.ph, ju_xie_2008.data);
+fclose(fid);
 
 end
 

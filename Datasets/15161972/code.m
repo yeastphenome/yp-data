@@ -13,7 +13,7 @@ askree_mceachern_2004.pmid = 15161972;
 phenotypes = {'Telomere length'};
 treatments = {''};
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/01263Table3.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/01263Table3.xlsx', 'Sheet1');
 
 % Get indices of the data columns
 ind_data = 3:4;
@@ -46,7 +46,7 @@ data2.orfs = upper(data.raw(:,1));
 data2.data(:,1) = nanmean(cell2mat(t),2);
 
 % Load the tested genes
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/S.cerftpmata.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/S.cerftpmata.xlsx', 'Sheet1');
 tested_orfs = data.raw(:,2);
 inds = find(cellfun(@isnumeric, tested_orfs));
 tested_orfs(inds) = [];
@@ -89,6 +89,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./askree_mceachern_2004.txt','w');
+write_matrix_file(fid, askree_mceachern_2004.orfs, askree_mceachern_2004.ph, askree_mceachern_2004.data);
+fclose(fid);
 
 end
 

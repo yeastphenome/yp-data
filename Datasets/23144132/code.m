@@ -10,7 +10,7 @@ phenotypes = {'growth [CFU]'};
 treatments = {'AuNP [10-100 ug/ml]'};
 
 % Load tested (Same as Ding~Bakalinksy, 2013)
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 
 inds = cellfun(@isnumeric, tested_orfs);
@@ -59,6 +59,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./smith_bakalinsky_2013.txt','w');
+write_matrix_file(fid, smith_bakalinsky_2013.orfs, smith_bakalinsky_2013.ph, smith_bakalinsky_2013.data);
+fclose(fid);
 
 end
 

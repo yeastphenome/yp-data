@@ -67,5 +67,9 @@ dt.ph(ph_ix)
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 
+fid = fopen('./luban_schmidt_2005.txt','w');
+write_matrix_file(fid, luban_schmidt_2005.orfs, luban_schmidt_2005.ph, luban_schmidt_2005.data);
+fclose(fid);
+
 end
 

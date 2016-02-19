@@ -11,8 +11,8 @@ desmoucelles_daignan_fornier_2002.source = {'manuscript PDF'};
 desmoucelles_daignan_fornier_2002.downloaddate = {'2014-02-10'};
 desmoucelles_daignan_fornier_2002.pmid = 12016207;
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/desmoucelles_daignan_fornier_2002_data.xlsx', 'data.txt');
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/euroscarf list.xlsx', '1_1.xlwb');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/desmoucelles_daignan_fornier_2002_data.xlsx', 'data.txt');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/euroscarf list.xlsx', '1_1.xlwb');
 
 % Eliminate anything that doesn't look like an ORF
 inds = find(cellfun(@isnumeric, tested.raw(:,2)));
@@ -72,6 +72,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./desmoucelles_daignan_fornier_2002.txt','w');
+write_matrix_file(fid, desmoucelles_daignan_fornier_2002.orfs, desmoucelles_daignan_fornier_2002.ph, desmoucelles_daignan_fornier_2002.data);
+fclose(fid);
 
 end
 

@@ -11,12 +11,12 @@ phenotypes = {'growth'};
 treatments = {'chimaphilin'};
 
 % Load plate maps
-[FILENAMES{end+1}, map.raw] = readdata('xlsread','./raw_data/yGDA-Master_Plate_list_Combined(New).xlsx', 'Sheet1');
+[FILENAMES{end+1}, map.raw] = read_data('xlsread','./raw_data/yGDA-Master_Plate_list_Combined(New).xlsx', 'Sheet1');
 map.raw(1,:) = [];
 map.platerowcol = cell2mat(map.raw(:,4:6));
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/IMELDA 08Feb2006GDAraw data.xls', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/IMELDA 08Feb2006GDAraw data.xls', 'Sheet1');
 data.raw(1,:) = [];
 data.platerowcol = cell2mat(data.raw(:,1:3));
 data.orfs = cell(size(data.raw,1),1);
@@ -62,6 +62,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./galvan_smith_2008.txt','w');
+write_matrix_file(fid, galvan_smith_2008.orfs, galvan_smith_2008.ph, galvan_smith_2008.data);
+fclose(fid);
 
 end
 

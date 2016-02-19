@@ -10,7 +10,7 @@ phenotypes = {'expression of PIS1'};
 treatments = {'glucose 2%';'glycerol 3%'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/120_GENES_AFFECTING_PIS1.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/120_GENES_AFFECTING_PIS1.xlsx');
 
 orfs = data.raw(8:end,2);
 raw_data = data.raw(8:end,[11 14]);
@@ -64,6 +64,10 @@ ph_ix = 1:length(dt.ph);
 % dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, [575 576]);
+
+fid = fopen('./gardocki_lopes_2005.txt','w');
+write_matrix_file(fid, gardocki_lopes_2005.orfs, gardocki_lopes_2005.ph, gardocki_lopes_2005.data);
+fclose(fid);
 
 end
 

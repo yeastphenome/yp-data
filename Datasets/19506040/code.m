@@ -11,7 +11,7 @@ phenotypes = {'endocytosis (MatA)';'endocytosis (MatAlpha)'};
 treatments = {''};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/JCB_200811116_TS1.xlsx', 'TableS1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/JCB_200811116_TS1.xlsx', 'TableS1');
 
 hits_orfs = data.raw(6:end,2);
 hits_data_a = data.raw(6:end,4);
@@ -54,6 +54,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./burston_conibear_2009.txt','w');
+write_matrix_file(fid, burston_conibear_2009.orfs, burston_conibear_2009.ph, burston_conibear_2009.data);
+fclose(fid);
 
 end
 

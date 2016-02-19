@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'bleomycin'};
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/HU haploid.xlsx');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/HU haploid.xlsx');
 tested_orfs = tested.raw(4:end,5);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -22,7 +22,7 @@ inds = find(~strncmp('Y', tested_orfs,1));
 tested_orfs(inds) = [];
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/CAN_2-1-04_Aouida.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/CAN_2-1-04_Aouida.xlsx');
 hits_orfs = data.raw(:,1);
 hits_orfs = strtrim(upper(hits_orfs));
 
@@ -69,6 +69,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./aouida_ramotar_2004.txt','w');
+write_matrix_file(fid, aouida_ramotar_2004.orfs, aouida_ramotar_2004.ph, aouida_ramotar_2004.data);
+fclose(fid);
 
 end
 

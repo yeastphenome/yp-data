@@ -10,7 +10,7 @@ kim_cunningham_2012.pmid = 22511765;
 phenotypes = {'Cell death, frequency of dead cells'};
 treatments = {'tunicamycin, 2.5 ug/ml (Z-score ln)'; 'tunicamycin + FK506, 2.5 ug/ml + 1 ug/ml (Z-score ln)'; 'dithiothreitol, 4 mM (Z-score ln)'; 'dithiothreitol, 4 mM, + FK506, 1 ug/ml (Z-score ln)'};
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/jbc.M112.363390-1.xlsx', 'sup table 1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/jbc.M112.363390-1.xlsx', 'sup table 1');
 
 % Get indices of the data columns
 ind_data = [14:15 17:18];
@@ -67,6 +67,10 @@ datasets_names(database_ix([2 1 4 3]),:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets_ids(database_ix(([2 1 4 3]))));
+
+fid = fopen('./kim_cunningham_2012.txt','w');
+write_matrix_file(fid, kim_cunningham_2012.orfs, kim_cunningham_2012.ph, kim_cunningham_2012.data);
+fclose(fid);
 
 end
 

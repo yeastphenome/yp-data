@@ -7,13 +7,13 @@ FILENAMES = {};
 
 giorgini_muchowski_2005.pmid = 15806102;
 
-[FILENAMES{end+1}, hits] = readdata('textread','./raw_data/giorgini_muchowski_2005_hits.txt', '%s');
+[FILENAMES{end+1}, hits] = read_data('textread','./raw_data/giorgini_muchowski_2005_hits.txt', '%s');
 
 phenotypes = {'growth (pooled CFU)'};
 treatments = {'Htt103Q'};
 
 % Eliminate white spaces before/after gene names
-hits(:,1) = cleanGenename(hits);
+hits(:,1) = clean_genename(hits);
 
 % Translate genenames to ORF
 hits_orfs = translate(hits);
@@ -22,7 +22,7 @@ hits_orfs = translate(hits);
 scores = ones(length(hits_orfs),1);
 
 % Load tested genes
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a_obs_v2(1).0.xlsx', 'DATA');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v2(1).0.xlsx', 'DATA');
 inds = find(cellfun(@isnumeric, tested.raw(:,2)));
 tested.raw(inds,:) = [];
 
@@ -57,6 +57,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./giorgini_muchowski_2005.txt','w');
+write_matrix_file(fid, giorgini_muchowski_2005.orfs, giorgini_muchowski_2005.ph, giorgini_muchowski_2005.data);
+fclose(fid);
 
 end
 

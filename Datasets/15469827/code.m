@@ -10,7 +10,7 @@ phenotypes = {'growth (spot assay)'};
 treatments = {'MMS';'t-BuOOH';'4NQO';'UV score'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Begley2003.xlsx', 'Sheet1');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/Begley2003.xlsx', 'Sheet1');
 
 hits_orfs = data.raw(2:end,1);
 hits_data = data.raw(2:end,7:10);
@@ -52,6 +52,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./begley_samson_2004.txt','w');
+write_matrix_file(fid, begley_samson_2004.orfs, begley_samson_2004.ph, begley_samson_2004.data);
+fclose(fid);
 
 end
 

@@ -12,7 +12,7 @@ treatments = {''};
 
 folder = './raw_data/';
 
-[FILENAMES{end+1}, map.raw] = readdata('xlsread',[folder 'Strains_plates_annotation.xlsx']);
+[FILENAMES{end+1}, map.raw] = read_data('xlsread',[folder 'Strains_plates_annotation.xlsx']);
 
 map.orf = map.raw(4:end, 4);
 map.plate = map.raw(4:end,1);
@@ -53,7 +53,7 @@ ind_file = find(strcmp(file_names{i}, C{1}));
 for j = 1 : length(sheets)
 ind_sheet = find(strcmp(sheets{j}, C{2}(ind_file)));
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread',[folder 'Archive/' file_names{i}], sheets{j});
+[FILENAMES{end+1}, data.raw] = read_data('xlsread',[folder 'Archive/' file_names{i}], sheets{j});
 
 
 
@@ -125,6 +125,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./freimoser_amrhein_2006.txt','w');
+write_matrix_file(fid, freimoser_amrhein_2006.orfs, freimoser_amrhein_2006.ph, freimoser_amrhein_2006.data);
+fclose(fid);
 
 end
 

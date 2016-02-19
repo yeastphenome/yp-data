@@ -10,8 +10,8 @@ treatments = {'ethanol, 30C', 'ethanol, 37C'};
 %% Hit Strains
 
 % Load hit strains and tested strains
-[FILENAMES{end+1}, data] = readdata('xlsread', './raw_data/nar-03484-z-2014-File007.xlsx', 'Suppl_TabS1');
-[FILENAMES{end+1}, dataAll] = readdata('xlsread', './raw_data/Tigano et al NAR 2015_List of tested yeast mutant strains.xlsx', 'Foglio1');
+[FILENAMES{end+1}, data] = read_data('xlsread', './raw_data/nar-03484-z-2014-File007.xlsx', 'Suppl_TabS1');
+[FILENAMES{end+1}, dataAll] = read_data('xlsread', './raw_data/Tigano et al NAR 2015_List of tested yeast mutant strains.xlsx', 'Foglio1');
 
 % Get list of ORFs from both sets of ORFs
 hit_orfs = data(4:end,1);
@@ -22,17 +22,17 @@ inds = find(cellfun(@isnumeric, all_orfs));
 all_orfs(inds) = [];
 
 % Clean up ORFs
-hit_orfs = cleanGenename(hit_orfs);
-all_orfs = cleanGenename(all_orfs);
+hit_orfs = clean_genename(hit_orfs);
+all_orfs = clean_genename(all_orfs);
 
 % Standardize ORFs
 hit_orfs = translate(hit_orfs);
 all_orfs = translate(all_orfs);
 
 % Find anything that doesn't look like an ORF
-inds = find(~isorf(hit_orfs));
+inds = find(~is_orf(hit_orfs));
 disp(hit_orfs(inds)); 
-inds = find(~isorf(all_orfs));
+inds = find(~is_orf(all_orfs));
 disp(all_orfs(inds));
 
 % Make sure all are unique
@@ -71,5 +71,9 @@ tigano_ottonello_2015.data = all_data;
 %% Save
 
 save('./tigano_ottonello_2015.mat','tigano_ottonello_2015');
+
+fid = fopen('./tigano_ottonello_2015.txt','w');
+write_matrix_file(fid, tigano_ottonello_2015.orfs, tigano_ottonello_2015.ph, tigano_ottonello_2015.data);
+fclose(fid);
 
 end

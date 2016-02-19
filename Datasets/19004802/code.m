@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'2-DG'};
 
 % Load data
-[FILENAMES{end+1}, hits_orfs] = readdata('textread','./raw_data/hits_orfs.txt', '%s');
+[FILENAMES{end+1}, hits_orfs] = read_data('textread','./raw_data/hits_orfs.txt', '%s');
 hits_orfs = unique(strtrim(upper(hits_orfs)));
 
 hits_data = ones(size(hits_orfs));
@@ -20,7 +20,7 @@ hits_orfs(inds) = [];
 hits_data(inds,:) = [];
 
 % Load tested
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v2.0.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
 inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
@@ -56,6 +56,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./ralser_lehrach_2008.txt','w');
+write_matrix_file(fid, ralser_lehrach_2008.orfs, ralser_lehrach_2008.ph, ralser_lehrach_2008.data);
+fclose(fid);
 
 end
 

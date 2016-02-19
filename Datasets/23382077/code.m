@@ -11,17 +11,17 @@ phenotypes = {'growth'};
 treatments = {'MMS'};
 
 % Load plate maps
-[FILENAMES{end+1}, tested.raw] = readdata('xlsread','./raw_data/Mat_a_obs_v4 0.xls', 'DATA');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v4 0.xls', 'DATA');
 tested_orfs = tested.raw(2:end,2);
 tested_orfs(cellfun(@isnumeric, tested_orfs)) = [];
 
 tested_orfs(ismember(tested_orfs,{'YLR287-A'})) = {'YLR287C-A'};
-tested_orfs = unique(upper(cleanOrf(tested_orfs)));
+tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 % Load data
-[FILENAMES{end+1}, hits_genenames] = readdata('textread','./raw_data/huang_paulovich_2013_hits.txt', '%s');
+[FILENAMES{end+1}, hits_genenames] = read_data('textread','./raw_data/huang_paulovich_2013_hits.txt', '%s');
 
-hits_genenames = cleanGenename(hits_genenames);
+hits_genenames = clean_genename(hits_genenames);
 hits_orfs = translate(hits_genenames);
 
 hits_scores = -ones(length(hits_orfs),1);
@@ -53,6 +53,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./huang_paulovich_2013.txt','w');
+write_matrix_file(fid, huang_paulovich_2013.orfs, huang_paulovich_2013.ph, huang_paulovich_2013.data);
+fclose(fid);
 
 end
 

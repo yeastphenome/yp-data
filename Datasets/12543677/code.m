@@ -10,17 +10,17 @@ blackburn_avery_2003.source = {'manuscript PDF'};
 blackburn_avery_2003.downloaddate = {'2014-02-12'};
 blackburn_avery_2003.pmid = 12543677;
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/blackburn_avery_2003_data.xlsx', 'data.txt');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/blackburn_avery_2003_data.xlsx', 'data.txt');
 
 phenotypes = {'growth (MIC)'};
 treatments = data.raw(1,2:8)';
 data.raw(1,:) = [];
 
 % Eliminate white spaces before/after ORF
-data.raw(:,1) = cleanOrf(data.raw(:,1));
+data.raw(:,1) = clean_orf(data.raw(:,1));
 
 % Eliminate everything that doesn't look like an ORF
-inds = find(~isorf(data.raw(:,1)));
+inds = find(~is_orf(data.raw(:,1)));
 data.raw(inds,:) = [];
 
 % Replace 'Inf' with Inf
@@ -48,6 +48,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./blackburn_avery_2003.txt','w');
+write_matrix_file(fid, blackburn_avery_2003.orfs, blackburn_avery_2003.ph, blackburn_avery_2003.data);
+fclose(fid);
 
 end
 

@@ -10,7 +10,7 @@ phenotypes = {'growth'};
 treatments = {'standard'};
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Supplementary_data_1_SMF_standard_100209.xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/Supplementary_data_1_SMF_standard_100209.xlsx');
 
 hits_orfs = data.raw(:,1);
 hits_data = data.raw(:,2);
@@ -54,6 +54,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./baryshnikova_myers_2010.txt','w');
+write_matrix_file(fid, baryshnikova_myers_2010.orfs, baryshnikova_myers_2010.ph, baryshnikova_myers_2010.data);
+fclose(fid);
 
 end
 

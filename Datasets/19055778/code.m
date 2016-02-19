@@ -10,14 +10,14 @@ phenotypes = {'growth [colony size]'};
 treatments = {'paromomycin'};
 
 % Load tested
-[FILENAMES{end+1}, map.raw] = readdata('xlsread','./raw_data/Master plate list -- part 1.xlsx', 'Sheet2-Corrected');
+[FILENAMES{end+1}, map.raw] = read_data('xlsread','./raw_data/Master plate list -- part 1.xlsx', 'Sheet2-Corrected');
 map.orf = map.raw(2:end,2);
 map.plate = cell2mat(map.raw(2:end,4));
 map.row = cell2mat(map.raw(2:end,5));
 map.col = cell2mat(map.raw(2:end,6));
 
 
-[FILENAMES{end+1}, map2.raw] = readdata('xlsread','./raw_data/Master plate list -- part2.xlsx', 'Sheet2-Corrected');
+[FILENAMES{end+1}, map2.raw] = read_data('xlsread','./raw_data/Master plate list -- part2.xlsx', 'Sheet2-Corrected');
 [rinds,cinds] = find(~cellfun(@isnumeric, map2.raw(:,4:6)));
 map2.raw(unique(rinds),:) = [];
 map2.orf = map2.raw(:,2);
@@ -33,7 +33,7 @@ map.col = [map.col; map2.col];
 map.inds = sub2ind([length(unique(map.plate)), length(unique(map.row)), length(unique(map.col))], map.plate, map.row, map.col);
 
 % Load data
-[FILENAMES{end+1}, data.raw] = readdata('xlsread','./raw_data/Plate_Analyzer_Alamgir_13mgmLParomomycin_08Dec05(1).xlsx');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/Plate_Analyzer_Alamgir_13mgmLParomomycin_08Dec05(1).xlsx');
 data.plate = cell2mat(data.raw(2:end,1));
 data.row = cell2mat(data.raw(2:end,2));
 data.col = cell2mat(data.raw(2:end,3));
@@ -83,6 +83,10 @@ dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
+
+fid = fopen('./alamgir_golshani_2008.txt','w');
+write_matrix_file(fid, alamgir_golshani_2008.orfs, alamgir_golshani_2008.ph, alamgir_golshani_2008.data);
+fclose(fid);
 
 end
 

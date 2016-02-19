@@ -11,7 +11,7 @@ phenotypes = {'growth'};
 treatments = {'butanol'};
 
 % Load plate maps
-[FILENAMES{end+1}, map.raw] = readdata('xlsread','./raw_data/Knockout collection map.xls', 'DATA');
+[FILENAMES{end+1}, map.raw] = read_data('xlsread','./raw_data/Knockout collection map.xls', 'DATA');
 map.raw(1,:) = [];
 inds = find(cellfun(@isnumeric, map.raw(:,6)));
 map.raw(inds,:) = [];
@@ -31,16 +31,16 @@ control_plate = zeros(8,12,2)+NaN;
 test_plate = zeros(8,12,2)+NaN;
 plateNum = str2num(sheets{i}(3:min(length(sheets{i}),4)));
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread',datafile, sheets{i}, 'C7:N14');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread',datafile, sheets{i}, 'C7:N14');
 control_plate(:,:,1) = cell2mat(data.raw);
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread',datafile, sheets{i}, 'Q7:AB14');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread',datafile, sheets{i}, 'Q7:AB14');
 control_plate(:,:,2) = cell2mat(data.raw);
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread',datafile, sheets{i}, 'C19:N26');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread',datafile, sheets{i}, 'C19:N26');
 test_plate(:,:,2) = cell2mat(data.raw);
 
-[FILENAMES{end+1}, data.raw] = readdata('xlsread',datafile, sheets{i}, 'Q19:AB26');
+[FILENAMES{end+1}, data.raw] = read_data('xlsread',datafile, sheets{i}, 'Q19:AB26');
 test_plate(:,:,2) = cell2mat(data.raw);
 
 norm_data = nanmean(test_plate,3)./nanmean(control_plate,3);
@@ -118,6 +118,10 @@ datasets.names(database_ix,:)
 dt.ph(ph_ix)
 
 insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
+
+fid = fopen('./gonzalez_ramos_daran_2003.txt','w');
+write_matrix_file(fid, gonzalez_ramos_daran_2003.orfs, gonzalez_ramos_daran_2003.ph, gonzalez_ramos_daran_2003.data);
+fclose(fid);
 
 end
 
