@@ -45,24 +45,9 @@ dakshinamurthy_garfinkel_2010.data(ind1,1) = hits_data(ind2);
 dakshinamurthy_garfinkel_2010.ph = strcat(phenotypes, '; ', treatments);
 
 save('./dakshinamurthy_garfinkel_2010.mat','dakshinamurthy_garfinkel_2010');
-return;
-
-% Save data into database
-dt = dakshinamurthy_garfinkel_2010;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[4 1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./dakshinamurthy_garfinkel_2010.txt','w');
 write_matrix_file(fid, dakshinamurthy_garfinkel_2010.orfs, dakshinamurthy_garfinkel_2010.ph, dakshinamurthy_garfinkel_2010.data);
 fclose(fid);
 
 end
-

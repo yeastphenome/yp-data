@@ -69,38 +69,9 @@ xie_huang_2005.orfs(ind1) = [];
 xie_huang_2005.data(ind1,:) = [];
 
 save('./xie_huang_2005.mat','xie_huang_2005');
-return;
-
-% Save data into database
-dt = xie_huang_2005;
-
-datasets = get_datasets_for_paper(dt);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-if isempty(datasets(i).reporter)
-datasets_names{i,2} = '';
-else
-datasets_names{i,2} = datasets(i).reporter;
-end
-datasets_names{i,3} = datasets(i).conditionset;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets_names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
-
 
 fid = fopen('./xie_huang_2005.txt','w');
 write_matrix_file(fid, xie_huang_2005.orfs, xie_huang_2005.ph, xie_huang_2005.data);
 fclose(fid);
 
 end
-

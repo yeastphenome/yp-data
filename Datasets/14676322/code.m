@@ -27,26 +27,6 @@ warringer_blomberg_2003.data = t2;
 warringer_blomberg_2003.ph = strcat(phenotypes, {'; '}, treatments);
 
 save('./warringer_blomberg_2003.mat','warringer_blomberg_2003');
-return;
-
-% Save data into database
-datasets = get_datasets_for_paper(warringer_blomberg_2003);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-datasets_names{i,2} = datasets(i).shortname;
-datasets_names{i,3} = datasets(i).condition_dose;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(warringer_blomberg_2003.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-
-insert_data_into_db(warringer_blomberg_2003, ph_ix, datasets_ids(database_ix));
-
 
 fid = fopen('./warringer_blomberg_2003.txt','w');
 write_matrix_file(fid, warringer_blomberg_2003.orfs, warringer_blomberg_2003.ph, warringer_blomberg_2003.data);

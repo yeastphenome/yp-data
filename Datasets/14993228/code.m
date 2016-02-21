@@ -45,20 +45,6 @@ serrano_arino_2004.ph = [strcat(phenotypes{1}, '; ', treatments)];
 
 
 save('./serrano_arino_2004.mat','serrano_arino_2004');
-return;
-
-% Save data into database
-dt = serrano_arino_2004;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[4 1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./serrano_arino_2004.txt','w');
 write_matrix_file(fid, serrano_arino_2004.orfs, serrano_arino_2004.ph, serrano_arino_2004.data);

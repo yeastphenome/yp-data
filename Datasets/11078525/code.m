@@ -22,24 +22,9 @@ chan_zheng_2000.data = cell2mat(data.raw(:,2));
 chan_zheng_2000.ph = [strcat(phenotypes, '; ', treatments)];
 
 save('./chan_zheng_2000.mat','chan_zheng_2000');
-return;
-
-% Save data into database
-dt = chan_zheng_2000;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./chan_zheng_2000.txt','w');
 write_matrix_file(fid, chan_zheng_2000.orfs, chan_zheng_2000.ph, chan_zheng_2000.data);
 fclose(fid);
 
 end
-

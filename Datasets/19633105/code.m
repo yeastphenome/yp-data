@@ -41,25 +41,9 @@ teixeira_sa_correia_2009.data(ind2) = -1;
 teixeira_sa_correia_2009.ph = strcat(phenotypes, '; ', treatments);
 
 save('./teixeira_sa_correia_2009.mat','teixeira_sa_correia_2009');
-return;
-
-% Save data into database
-dt = teixeira_sa_correia_2009;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-database_ix = database_ix(2);
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./teixeira_sa_correia_2009.txt','w');
 write_matrix_file(fid, teixeira_sa_correia_2009.orfs, teixeira_sa_correia_2009.ph, teixeira_sa_correia_2009.data);
 fclose(fid);
 
 end
-

@@ -30,24 +30,9 @@ alto_dixon_2006.data(ind2,:) = hits_data(ind1,:);
 alto_dixon_2006.ph = strcat(phenotypes, '; ', treatments);
 
 save('./alto_dixon_2006.mat','alto_dixon_2006');
-return;
-
-% TODO: Save data into database
-dt = alto_dixon_2006;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./alto_dixon_2006.txt','w');
 write_matrix_file(fid, alto_dixon_2006.orfs, alto_dixon_2006.ph, alto_dixon_2006.data);
 fclose(fid);
 
 end
-

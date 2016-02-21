@@ -42,23 +42,9 @@ suzuki_yoshida_2011.data(ind2,:) = hits_data(ind1,:);
 suzuki_yoshida_2011.ph = strcat(phenotypes, '; ', treatments);
 
 save('./suzuki_yoshida_2011.mat','suzuki_yoshida_2011');
-return;
 
-% Save data into database
-dt = suzuki_yoshida_2011;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 fid = fopen('./suzuki_yoshida_2011.txt','w');
 write_matrix_file(fid, suzuki_yoshida_2011.orfs, suzuki_yoshida_2011.ph, suzuki_yoshida_2011.data);
 fclose(fid);
 
 end
-

@@ -57,21 +57,6 @@ desmoucelles_daignan_fornier_2002.orfs(ind1) = [];
 desmoucelles_daignan_fornier_2002.data(ind1,:) = [];
 
 save('./desmoucelles_daignan_fornier_2002.mat','desmoucelles_daignan_fornier_2002');
-return;
-
-% Save data into database
-dt = desmoucelles_daignan_fornier_2002;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[4 1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
-
 
 fid = fopen('./desmoucelles_daignan_fornier_2002.txt','w');
 write_matrix_file(fid, desmoucelles_daignan_fornier_2002.orfs, desmoucelles_daignan_fornier_2002.ph, desmoucelles_daignan_fornier_2002.data);

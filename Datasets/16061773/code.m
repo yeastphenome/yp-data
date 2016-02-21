@@ -40,24 +40,9 @@ hellauer_turcotte_2005.ph = [strcat(phenotypes{1}, '; ', treatments)];
 
 
 save('./hellauer_turcotte_2005.mat','hellauer_turcotte_2005');
-return;
-
-% Save data into database
-dt = hellauer_turcotte_2005;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[4 1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./hellauer_turcotte_2005.txt','w');
 write_matrix_file(fid, hellauer_turcotte_2005.orfs, hellauer_turcotte_2005.ph, hellauer_turcotte_2005.data);
 fclose(fid);
 
 end
-

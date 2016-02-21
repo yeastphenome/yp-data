@@ -96,24 +96,9 @@ uluisik_koc_2011.data(ind2,ind4) = hits_data(ind1,ind3);
 
 
 save('./uluisik_koc_2011.mat','uluisik_koc_2011');
-return;
-
-% Save data into database
-dt = uluisik_koc_2011;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./uluisik_koc_2011.txt','w');
 write_matrix_file(fid, uluisik_koc_2011.orfs, uluisik_koc_2011.ph, uluisik_koc_2011.data);
 fclose(fid);
 
 end
-

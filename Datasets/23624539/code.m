@@ -50,37 +50,9 @@ galvan_marquez_smith_2013.orfs(ind1) = [];
 galvan_marquez_smith_2013.data(ind1,:) = [];
 
 save('./galvan_marquez_smith_2013.mat','galvan_marquez_smith_2013');
-return;
-
-% Save data into database
-dt = galvan_marquez_smith_2013;
-
-datasets = get_datasets_for_paper(dt);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-if isempty(datasets(i).reporter)
-datasets_names{i,2} = '';
-else
-datasets_names{i,2} = datasets(i).reporter;
-end
-datasets_names{i,3} = datasets(i).conditionset;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets_names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
 
 fid = fopen('./galvan_marquez_smith_2013.txt','w');
 write_matrix_file(fid, galvan_marquez_smith_2013.orfs, galvan_marquez_smith_2013.ph, galvan_marquez_smith_2013.data);
 fclose(fid);
 
 end
-

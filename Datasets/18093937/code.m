@@ -60,5 +60,9 @@ szymanski_goodman_2007.data = [hit_data{1} hit_data{2}];
 
 save('./szymanski_goodman_2007.mat','szymanski_goodman_2007');
 
+fid = fopen('./szymanski_goodman_2007.txt','w');
+write_matrix_file(fid, szymanski_goodman_2007.orfs, szymanski_goodman_2007.ph, szymanski_goodman_2007.data);
+fclose(fid);
+
 end
 

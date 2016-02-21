@@ -48,26 +48,9 @@ gardocki_lopes_2005.data = t;
 gardocki_lopes_2005.ph = strcat(phenotypes, '; ', treatments);
 
 save('./gardocki_lopes_2005.mat','gardocki_lopes_2005');
-return;
-
-% Save data into database
-dt = gardocki_lopes_2005;
-
-% datasets = get_datasets_for_paper(dt);
-%
-% [~,database_ix] = sortrows(datasets.names);
-% [~,ph_ix] = sort(dt.ph);
-ph_ix = 1:length(dt.ph);
-%
-% % Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-% datasets.names(database_ix,:)
-% dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, [575 576]);
 
 fid = fopen('./gardocki_lopes_2005.txt','w');
 write_matrix_file(fid, gardocki_lopes_2005.orfs, gardocki_lopes_2005.ph, gardocki_lopes_2005.data);
 fclose(fid);
 
 end
-

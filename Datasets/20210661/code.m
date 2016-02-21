@@ -32,7 +32,7 @@ hits_orfs(~is_orf(hits_orfs)) = [];
 
 hits_orfs = unique(hits_orfs);
 
-[missing, ix] = setdiff(hits_orfs, tested_orfs2);
+[missing, ix] = setdiff(hits_orfs, tested_orfs);
 hits_orfs(strcmp('YML009W-B',hits_orfs)) = {'YML010W-A'};
 
 teixeira_sa_correia_2010.orfs = tested_orfs;
@@ -44,24 +44,9 @@ teixeira_sa_correia_2010.data(ind2) = -1;
 teixeira_sa_correia_2010.ph = strcat(phenotypes, '; ', treatments);
 
 save('./teixeira_sa_correia_2010.mat','teixeira_sa_correia_2010');
-return;
-
-% Save data into database
-dt = teixeira_sa_correia_2010;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./teixeira_sa_correia_2010.txt','w');
 write_matrix_file(fid, teixeira_sa_correia_2010.orfs, teixeira_sa_correia_2010.ph, teixeira_sa_correia_2010.data);
 fclose(fid);
 
 end
-

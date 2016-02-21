@@ -40,33 +40,9 @@ fillingham_andrews_2009.data = t2;
 fillingham_andrews_2009.ph = phenotypes;
 
 save('./fillingham_andrews_2009.mat','fillingham_andrews_2009');
-return;
-
-% Save data into database
-dt = fillingham_andrews_2009;
-
-datasets = get_datasets_for_paper(dt);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-datasets_names{i,2} = datasets(i).shortname;
-datasets_names{i,3} = datasets(i).condition_dose;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets_names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
 
 fid = fopen('./fillingham_andrews_2009.txt','w');
 write_matrix_file(fid, fillingham_andrews_2009.orfs, fillingham_andrews_2009.ph, fillingham_andrews_2009.data);
 fclose(fid);
 
 end
-

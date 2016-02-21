@@ -50,5 +50,9 @@ jorgensen_tyers_2002.data = hit_data;
 
 save('./jorgensen_tyers_2002.mat','jorgensen_tyers_2002');
 
+fid = fopen('./jorgensen_tyers_2002.txt','w');
+write_matrix_file(fid, jorgensen_tyers_2002.orfs, jorgensen_tyers_2002.ph, jorgensen_tyers_2002.data);
+fclose(fid);
+
 end
 

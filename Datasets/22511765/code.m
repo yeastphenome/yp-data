@@ -40,37 +40,9 @@ kim_cunningham_2012.data = t2;
 kim_cunningham_2012.ph = strcat(phenotypes, {'; '}, treatments);
 
 save('./kim_cunningham_2012.mat','kim_cunningham_2012');
-return;
-
-% Save data into database
-dt = kim_cunningham_2012;
-
-datasets = get_datasets_for_paper(dt);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-if isempty(datasets(i).reporter)
-datasets_names{i,2} = '';
-else
-datasets_names{i,2} = datasets(i).reporter;
-end
-datasets_names{i,3} = datasets(i).conditionset;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets_names(database_ix([2 1 4 3]),:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets_ids(database_ix(([2 1 4 3]))));
 
 fid = fopen('./kim_cunningham_2012.txt','w');
 write_matrix_file(fid, kim_cunningham_2012.orfs, kim_cunningham_2012.ph, kim_cunningham_2012.data);
 fclose(fid);
 
 end
-

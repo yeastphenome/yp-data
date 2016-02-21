@@ -47,5 +47,9 @@ corbacho_hernandez_2005.data = hit_data;
 
 save('./corbacho_hernandez_2005.mat','corbacho_hernandez_2005');
 
+fid = fopen('./corbacho_hernandez_2005.txt','w');
+write_matrix_file(fid, corbacho_hernandez_2005.orfs, corbacho_hernandez_2005.ph, corbacho_hernandez_2005.data);
+fclose(fid);
+
 end
 

@@ -176,5 +176,9 @@ giaever_johnston_2002.data = all_data3;
 
 save('./giaever_johnston_2002.mat','giaever_johnston_2002');
 
+fid = fopen('./giaever_johnston_2002.txt','w');
+write_matrix_file(fid, giaever_johnston_2002.orfs, giaever_johnston_2002.ph, giaever_johnston_2002.data);
+fclose(fid);
+
 end
 

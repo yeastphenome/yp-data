@@ -41,25 +41,9 @@ chamilos_kontoyiannis_2008.data(ind1) = raw_data(ind2);
 chamilos_kontoyiannis_2008.ph = strcat(phenotypes, '; ', treatments);
 
 save('./chamilos_kontoyiannis_2008.mat','chamilos_kontoyiannis_2008');
-return;
-
-% Save data into database
-dt = chamilos_kontoyiannis_2008;
-
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% % Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./chamilos_kontoyiannis_2008.txt','w');
 write_matrix_file(fid, chamilos_kontoyiannis_2008.orfs, chamilos_kontoyiannis_2008.ph, chamilos_kontoyiannis_2008.data);
 fclose(fid);
 
 end
-

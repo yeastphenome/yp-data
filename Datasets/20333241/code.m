@@ -47,33 +47,9 @@ chavel_cullen_2010.data = t2;
 chavel_cullen_2010.ph = phenotypes;
 
 save('./chavel_cullen_2010.mat','chavel_cullen_2010');
-return;
-
-% Save data into database
-dt = chavel_cullen_2010;
-
-datasets = get_datasets_for_paper(dt);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-datasets_names{i,2} = datasets(i).shortname;
-datasets_names{i,3} = datasets(i).condition_dose;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets_names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
 
 fid = fopen('./chavel_cullen_2010.txt','w');
 write_matrix_file(fid, chavel_cullen_2010.orfs, chavel_cullen_2010.ph, chavel_cullen_2010.data);
 fclose(fid);
 
 end
-

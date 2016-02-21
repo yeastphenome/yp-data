@@ -44,33 +44,9 @@ dunn_jensen_2006.data = 1./t2;  % reverse the ratio so that the lower the value,
 dunn_jensen_2006.ph = strcat(phenotypes, {'; '}, treatments);
 
 save('./dunn_jensen_2006.mat','dunn_jensen_2006');
-return;
-
-% Save data into database
-dt = dunn_jensen_2006;
-
-datasets = get_datasets_for_paper(dt);
-datasets_ids = zeros(length(datasets),1);
-datasets_names = cell(length(datasets),3);
-for i = 1 : length(datasets)
-datasets_ids(i,1) = datasets(i).id;
-datasets_names{i,1} = datasets(i).name;
-datasets_names{i,2} = datasets(i).shortname;
-datasets_names{i,3} = datasets(i).condition_dose;
-end
-
-[~,database_ix] = sortrows(datasets_names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets_names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
 
 fid = fopen('./dunn_jensen_2006.txt','w');
 write_matrix_file(fid, dunn_jensen_2006.orfs, dunn_jensen_2006.ph, dunn_jensen_2006.data);
 fclose(fid);
 
 end
-

@@ -42,24 +42,9 @@ ralser_lehrach_2008.data(ind2,:) = hits_data(ind1,:);
 ralser_lehrach_2008.ph = strcat(phenotypes, '; ', treatments);
 
 save('./ralser_lehrach_2008.mat','ralser_lehrach_2008');
-return;
-
-% Save data into database
-dt = ralser_lehrach_2008;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./ralser_lehrach_2008.txt','w');
 write_matrix_file(fid, ralser_lehrach_2008.orfs, ralser_lehrach_2008.ph, ralser_lehrach_2008.data);
 fclose(fid);
 
 end
-

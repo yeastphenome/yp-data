@@ -41,23 +41,6 @@ parsons_boone_2004.ph = [strcat(phenotypes{1}, '; ', treatments)];
 % parsons_boone_2004.data(ind1,:) = [];
 
 save('./parsons_boone_2004.mat','parsons_boone_2004');
-return;
-
-% Save data into database
-dt = parsons_boone_2004;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[4 1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-adj_ix = [4 6 8 1 2 3 5 7 9 10 11 12];
-[~,adj_ix] = sort(adj_ix);
-
-datasets.names(database_ix(adj_ix),:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix(adj_ix)));
 
 fid = fopen('./parsons_boone_2004.txt','w');
 write_matrix_file(fid, parsons_boone_2004.orfs, parsons_boone_2004.ph, parsons_boone_2004.data);

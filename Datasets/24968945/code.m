@@ -73,25 +73,9 @@ gaupel_tenniswood_2004.data(ind2,:) = hits_data(ind1,:);
 gaupel_tenniswood_2004.ph = strcat(phenotypes, '; ', treatments);
 
 save('./gaupel_tenniswood_2004.mat','gaupel_tenniswood_2004');
-return;
-
-% Save data into database
-dt = gaupel_tenniswood_2004;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
-
 
 fid = fopen('./gaupel_tenniswood_2004.txt','w');
 write_matrix_file(fid, gaupel_tenniswood_2004.orfs, gaupel_tenniswood_2004.ph, gaupel_tenniswood_2004.data);
 fclose(fid);
 
 end
-

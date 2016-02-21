@@ -60,25 +60,9 @@ end
 auesukaree_harashima_2009.ph = strcat(phenotypes, '; ', treatments);
 
 save('./auesukaree_harashima_2009.mat','auesukaree_harashima_2009');
-return;
-
-% Save data into database
-dt = auesukaree_harashima_2009;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-ph_ix = ph_ix([2 3 4 5 6 1]);
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./auesukaree_harashima_2009.txt','w');
 write_matrix_file(fid, auesukaree_harashima_2009.orfs, auesukaree_harashima_2009.ph, auesukaree_harashima_2009.data);
 fclose(fid);
 
 end
-

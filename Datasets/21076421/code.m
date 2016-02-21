@@ -40,24 +40,9 @@ baryshnikova_myers_2010.data = t;
 baryshnikova_myers_2010.ph = strcat(phenotypes, '; ', treatments);
 
 save('./baryshnikova_myers_2010.mat','baryshnikova_myers_2010');
-return;
-
-% Save data into database
-dt = baryshnikova_myers_2010;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./baryshnikova_myers_2010.txt','w');
 write_matrix_file(fid, baryshnikova_myers_2010.orfs, baryshnikova_myers_2010.ph, baryshnikova_myers_2010.data);
 fclose(fid);
 
 end
-

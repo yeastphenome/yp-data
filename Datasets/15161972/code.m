@@ -5,7 +5,6 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
 
-
 askree_mceachern_2004.source = {'http://www.pnas.org/content/suppl/2004/05/20/0401263101.DC1/01263Table3.xls; Michael McEachern'};
 askree_mceachern_2004.downloaddate = {'2013-07-17'};
 askree_mceachern_2004.pmid = 15161972;
@@ -67,7 +66,6 @@ askree_mceachern_2004.data = zeros(length(tested_orfs),length(phenotypes));
 askree_mceachern_2004.data(ind2,:) = data3.data(ind1,:);
 
 
-
 % Eliminate the essential genes
 load essential_genes_100908;
 [t,ind1,ind2] = intersect(askree_mceachern_2004.orfs, essential_genes);
@@ -75,24 +73,9 @@ askree_mceachern_2004.orfs(ind1) = [];
 askree_mceachern_2004.data(ind1,:) = [];
 
 save('./askree_mceachern_2004.mat','askree_mceachern_2004');
-return;
-
-% Save data into database
-dt = askree_mceachern_2004;
-datasets = get_datasets_for_paper(dt);
-
-[~,database_ix] = sortrows(datasets.names,[1 2 3]);
-[~,ph_ix] = sort(dt.ph);
-
-% Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-datasets.names(database_ix,:)
-dt.ph(ph_ix)
-
-insert_data_into_db(dt, ph_ix, datasets.ids(database_ix));
 
 fid = fopen('./askree_mceachern_2004.txt','w');
 write_matrix_file(fid, askree_mceachern_2004.orfs, askree_mceachern_2004.ph, askree_mceachern_2004.data);
 fclose(fid);
 
 end
-
