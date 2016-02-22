@@ -11,9 +11,7 @@ phenotypes = {'polytopic membrane protein trafficking'};
 treatments = {''};
 
 % Load data
-fid = fopen('./raw_data/hits_genes_data.txt');
-C = textscan(fid, '%s\t%.3f\n');
-fclose(fid);
+[FILENAMES, C] = read_data('fopen', './raw_data/hits_genes_data.txt', '%s\t%.3f\n');
 
 hits_genes = C{1};
 hits_data = C{2};

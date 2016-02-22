@@ -23,9 +23,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-fid = fopen('./raw_data/hits_orfs.txt');
-hits_orfs = textscan(fid,'%s');
-fclose(fid);
+[FILENAMES, hits_orfs] = read_data('fopen', './raw_data/hits_orfs.txt', '%s');
 
 hits_orfs = unique(hits_orfs{1});
 hits_scores = zeros(length(hits_orfs),1)+1;

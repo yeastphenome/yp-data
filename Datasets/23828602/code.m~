@@ -20,7 +20,10 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(clean_orf(tested_orfs)));
 
 % Load data
-[FILENAMES, hits_genenames_R] = read_data('fopen', './raw_data/hits_genenames_R.txt', '%s');
+[FILENAMES, 
+fid = fopen('./raw_data/hits_genenames_R.txt');
+hits_genenames_R = textscan(fid,'%s');
+fclose(fid);
 
 hits_genenames_R = hits_genenames_R{1};
 

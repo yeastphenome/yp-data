@@ -21,10 +21,8 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load resistant
-fid = fopen('./raw_data/hits_orfs.txt');
-hits = textscan(fid,'%s');
+[FILENAMES, hits] = read_data('fopen', './raw_data/hits_orfs.txt', '%s');
 hits_orfs = hits{1};
-fclose(fid);
 
 inds = cellfun(@isnumeric, hits_orfs);
 hits_orfs(inds) = [];

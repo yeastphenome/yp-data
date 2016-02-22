@@ -10,20 +10,14 @@ phenotypes = {'petite';'mtDNA intron slicing'};
 treatments = {'Gly'};
 
 % Load tested
-fid = fopen('./raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt');
-C = textscan(fid, '%s\n');
-fclose(fid);
+[FILENAMES, C] = read_data('fopen', './raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt', '%s\n');
 tested_orfs = unique(upper(C{1}));
 
 % Load data
-fid = fopen('./raw_data/list_of_pet_mutants.txt');
-C = textscan(fid,'%s\n');
-fclose(fid);
+[FILENAMES, C] = read_data('fopen', './raw_data/list_of_pet_mutants.txt', '%s\n');
 pet_mutants = unique(upper(C{1}));
 
-fid = fopen('./raw_data/list_of_intron_def_mutants.txt');
-C = textscan(fid,'%s\n');
-fclose(fid);
+[FILENAMES, C] = read_data('fopen', './raw_data/list_of_intron_def_mutants.txt', '%s\n');
 intron_mutants = unique(upper(C{1}));
 
 inds = find(cellfun(@isempty, tested_orfs));

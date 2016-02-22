@@ -23,11 +23,9 @@ tested_orfs(inds) = [];
 tested_orfs = unique(upper(tested_orfs));
 
 % Load data
-fid = fopen('raw_data/hits_orfs_scores.txt');
-hits = textscan(fid,'%s %d');
+[FILENAMES, hits] = read_data('fopen', 'raw_data/hits_orfs_scores.txt', '%s %d');
 hits_orfs = upper(hits{1});
 hits_scores = -hits{2};
-fclose(fid);
 
 inds = find(~strncmp('Y', hits_orfs,1));
 hits_orfs(inds) = [];
