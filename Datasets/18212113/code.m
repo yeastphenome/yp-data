@@ -12,12 +12,10 @@ treatments = {'gliotoxin'};
 % Load tested
 [FILENAMES{end+1}, tested_orfs] = read_data('textread','./raw_data/tested_orfs.txt', '%s');
 
-tested_orfs = unique(upper(clean_orf(tested_orfs)));
+tested_orfs = unique(clean_orf(tested_orfs));
 
 % Load data
-fid = fopen('./raw_data/data_genenames.txt','r');
-C = textscan(fid, '%s %f','delimiter','\t');
-fclose(fid);
+[FILENAMES{end+1}, C] = read_data('textscan', './raw_data/data_genenames.txt', '%s %f','delimiter','\t');
 
 genenames = C{1};
 raw_data = C{2};
