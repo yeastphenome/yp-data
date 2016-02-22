@@ -22,7 +22,7 @@ tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
 tested_orfs = unique(tested_orfs);
 
 % Load data
-[FILENAMES, hits_genenames] = read_data('fopen', './raw_data/hits_genenames.txt', '%s');
+[FILENAMES, hits_genenames] = read_data('textscan', './raw_data/hits_genenames.txt', '%s');
 hits_genenames = hits_genenames{1};
 
 [hits_orfs, translated] = translate(hits_genenames);

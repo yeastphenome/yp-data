@@ -22,7 +22,7 @@ tested_orfs = unique(upper(strtrim(tested_orfs)));
 tested_orfs(~is_orf(tested_orfs)) = [];
 
 % Load data
-[FILENAMES, C] = read_data('fopen', './raw_data/hits.txt', '%s');
+[FILENAMES, C] = read_data('textscan', './raw_data/hits.txt', '%s');
 
 genenames = C{1};
 

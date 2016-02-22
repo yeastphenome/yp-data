@@ -11,7 +11,7 @@ phenotypes = {'growth [streaks on agar]'};
 treatments = {'ethanol [6%]'};
 
 % Load data
-[FILENAMES, hits] = read_data('fopen', './raw_data/hits_genenames.txt', '%s');
+[FILENAMES, hits] = read_data('textscan', './raw_data/hits_genenames.txt', '%s');
 hits_genenames = hits{1};
 
 hits_orfs = translate(hits_genenames);
