@@ -93,5 +93,11 @@ firstauthor_lastauthor.data(ind2,:) = hit_data(ind1,:);
 
 save('./firstauthor_lastauthor_YYYY.mat','firstauthor_lastauthor_YYYY');
 
+%% Print out
+
+fid = fopen('./firstauthor_lastauthor_YYYY.txt','w');
+write_matrix_file(fid, firstauthor_lastauthor_YYYY.orfs, firstauthor_lastauthor_YYYY.ph, firstauthor_lastauthor_YYYY.data);
+fclose(fid);
+
 end
 
