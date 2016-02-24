@@ -1,0 +1,379 @@
+YCR028C-A RIM1, binds single-stranded DNA, required for DNA replication in mitochondria
+YDR296W	MHR1, involved in repair, recombination and maintenance of mitochondrial DNA
+YHR120W MSH1, involved in mitochondrial DNA repair
+YJR144W MGM101, mitochondrial genome maintenance protein
+YML061C PIF1, single-stranded DNA-dependent ATPase and 5'-3' DNA helicase
+YMR072W ABF2, DNA-binding protein required for maintenance, transmission and recombination
+of mitochondrial genome
+YOL095C HMI1, mitochondrial DNA helicase involved in maintenance of integrity of
+mitochondrial genome
+YOR330C MIP1, mitochondrial DNA-directed DNA polymerase
+YDL044C MTF2, mitochondrial protein involved in mRNA splicing and protein synthesis
+YDR194C MSS116, mitochondrial RNA helicase of the DEAD box family, required for splicing of
+group II introns of COX1 and COB
+YDR332W Member of the DEAD-box family of predicted RNA helicases, mitochondrial
+localization predicted
+YFL036W RPO41, RNA polymerase, mitochondrial
+YHL038C CBP2, required for splicing of the COB aI5 intron and for efficient splicing of 21S
+mitochondrial rRNA (LSU) intron
+YIR021W MRS1, protein involved in mitochondrial RNA splicing of COB mRNA
+YJL209W CBP1, required for COB mRNA stability or 5' processing
+YKL208W CBT1, required for 3' end processing of the mitochondrial COB mRNA
+YLR067C PET309, required for stability and translation of COX1 mRNA
+YMR228W MTF1, mitochondrial RNA polymerase specificity factor
+YMR287C MSU1, component of a mitochondrial 3'-5' exonuclease complex that is essential for
+mitochondrial biogenesis
+YPL029W SUV3, mitochondrial RNA helicase
+YPR134W MSS18, involved in splicing a15beta intron of the mitochondrial COX1 transcript
+YBL038W MRPL16, mitochondrial ribosomal protein
+YBL090W MRP21, mitochondrial ribosomal protein
+YBR251W MRPS5, mitochondrial ribosomal protein
+YBR268W MRPL37, mitochondrial ribosmal protein
+YBR282W MRPL27, mitochondrial ribosomal protein
+YCR003W MRPL32, mitochondrial ribosomal protein
+YCR046C IMG1, putative mitochondrial ribosomal protein
+YDL045W-A MRP10, mitochondrial ribosomal protein
+YDL202W MRPL11, mitochondrial ribosomal protein
+YDR115W Mitochondrial ribosomal protein
+YDR175C RSM24, mitochondrial ribosomal protein
+YDR237W MRPL7, mitochondrial ribosomal protein
+YDR322W MRPL35, mitochondrial ribosomal subunit
+YDR337W MRPS28, mitochondrial ribosomal protein
+YDR347W MRP1, mitochondrial ribosomal protein
+YDR405W MRP20, mitochondrial ribosomal protein
+YDR462W MRPL28, mitochondrial ribosomal protein
+YEL050C RML2, mitochondrial ribosomal protein L2 of the large subunit
+YER050C RSM18, component of the mitochondrial ribosomal small subunit
+YGL129C RSM23, mitochondrial ribosomal protein
+YGR076C MRPL25, mitochondrial ribosomal protein
+YGR215W RSM27, mitochondrial ribosomal protein
+YGR220C MRPL9, mitochondrial ribosomal protein
+YHR147C MRPL6, mitochondrial ribosomal protein
+YIL093C RSM53, mitochondrial ribosome small subunit
+YJL063C MRPL8, mitochondrial ribosomal protein of the large subunit
+YJL096W MRPL49, mitochondrial ribosomal protein of the large subunit
+YJR113C RSM7, probable mitochondrial ribosomal
+YKL003C MRP17, mitochondrial ribosomal protein
+YKL138C MRPL31, mitochondrial ribosomal protein
+YKL155C RSM22, mitochondrial ribosomal protein
+YKL167C MRP49, mitochondrial ribosomal protein of the large subunit
+YKL170W MRPL38, mitochondrial ribosomal protein
+YKR006C MRPL13, mitochondrial ribosomal protein
+YKR085C MRPL20, mitochondrial ribosomal protein
+YLR312W-A MRPL15, mitochondrial ribosomal protein
+YLR439W MRPL4, mitochondrial ribosomal protein of the large subunit
+YMR188C Weak similarity to prokaryotic 30S ribosomal protein
+YMR193W MRPL24, mitochondrial ribosomal protein of the large subunit
+YMR286W MRPL33, mitochondrial ribosomal protein of the large subunit
+YNL005C MRP7, mitochondrial ribosomal protein
+YNL081C Putative mitochondrial ribosomal protein of the small subunit
+YNL252C MRPL17, mitochondrial ribosomal protein
+YNL284C MRPL10, mitochondrial ribosomal protein of the large subunit
+YNR036C Putative mitochondrial ribosomal protein
+YNR037C RSM19, putative mitochondrial ribosomal protein
+YOR150W MRPL23, Mitochondrial ribosomal protein
+YOR158W PET123, mitochondrial ribosomal protein
+YPL013C Similarity to Neurospora crassa mitochondrial ribosomal protein S24
+YPL118W MRP51, mitochondrial ribosomal protein of the small subunit
+YPL173W MRPL40, mitochondrial ribosomal protein of the large subunit
+YPL183W-A Possible mitochondrial ribosomal protein
+YPR166C MRP2, mitochondrial ribosomal protein
+YCR024C Asparaginyl-tRNA synthetase, mitochondrial
+YDR268W MSW1, Trp-tRNA synthetase, mitochondrial
+YER087W Similarity to E. coli prolyl-tRNA synthetase
+YGR171C MSM1, Met-tRNA synthetase, mitochondrial
+YHR011W DIA4, tRNA synthetase, may be involved in mitochondrial function
+YHR091C MSR1, arginyl-tRNA synthetase of mitochondria
+YLR382C NAM2, leucyl-tRNA synthetase, mitochondrial,
+YNL073W MSK1, lysyl-tRNA synthetase, mitochondrial
+YOL033W MSE1, glutamyl-tRNA synthetase, mitochondrial
+YPL040C ISM1, isoleucyl-tRNA synthetase, mitochondrial
+YPL097W MSY1, tyrosyl-tRNA synthetase, mitochondrial
+YPL104W MSD1, aspartyl-tRNA synthetase, mitochondrial
+YPR047W MSF1, Phe-tRNA synthetase, mitochondrial
+YBL080C PET112, may have a general role in mitochondrial translation
+YDL069C CBS1, translational activator of COB mRNA
+YDL107W MSS2, protein involved in Cox2 expression
+YDR197W CBS2, translational activator for cyt b
+YER153C PET122, translational activator required for mitochondrial translation of COX3
+YGL143C MRF1, mitochondrial peptide chain release factor
+YGR222W PET54, specific translational activator for COX3
+YHR038W FIL1, mitochondrial ribosome recycling factor
+YJL023C PET130, required for mitochondrial protein synthesis
+YJL102W MEF2, mitochondrial translation elongation factor
+YLR069C MEF1, mitochondrial translation elongation factor G
+YLR203C MSS51, mitochondrial protein required for respiratory growth and translation of 
+YMR064W AEP1, required for accumulation of transcript of ATP9/OLI1
+YMR257C PET111, required for mitochondrial translation of COX2 mRNA
+YMR282C AEP2, required for the expression of Atp9p
+YNR045W PET494, translational activator required for mitochondrial translation of COX3
+YOL023W IFM1, mitochondrial translation initiation factor 2
+YOR187W TUF1, translation elongation factor Tu, mitochondrial
+YOR201C PET56, ribose methyltransferase for mitochondrial 21S rRNA
+Respiratory chain
+Succinate dehydrogenase complex (complex II)
+YKL148C SDH1, succinate dehydrogenase (ubiquinone) flavoprotein (Fp) subunit
+Cytochrome bc1 complex (Ubiquinol-cytochrome c reductase complex, complex III)
+YBL045C COR1, ubiquinol cytochrome c reductase core protein 1
+YDR529C QCR7, ubiquinol cytochrome c reductase subunit 7
+YEL024W RIP1, ubiquinol cytochrome c reductase iron-sulfur protein
+YJL166W QCR8, ubiquinol cytochrome c reductase subunit 8
+YOR065W CYT1, cytochrome c1
+YPR191W QCR2, ubiquinol cytochrome c reductase core protein 2
+Cytochrome c oxidase (complex IV)
+YDL067C COX9, cytochrome c oxidase subunit VIIA
+YHR051W COX6, cytochrome c oxidase subunit VI
+YLR038C COX12, cytochrome-c oxidase, subunit VIb
+YMR256C COX7, cytochrome c oxidase, subunit VII
+YNL052W COX5A, cytochrome c oxidase subunit Va
+F0/F1 ATP synthase (complex V)
+YBL099W ATP1, alpha subunit of F1-ATP synthase
+YDR298C ATP5, subunit 5 of F0-ATP synthase, oligomycin sensitivity-conferring subunit
+YDR377W ATP17, ATP synthase subunit f
+YJR121W ATP2, beta subunit of F1-ATP synthase
+YKL016C ATP7, ATP synthase subunit d
+YLR295C ATP14, ATP synthase subunit h
+YML081C-A ATP18, ATP synthase subunit i (or subunit j)
+YPL078C ATP4, subunit 4 of F0-ATP synthase
+YPL271W ATP15, epsilon subunit of F1-ATP synthase
+Assembly factors
+YAL039C CYC3, holocytochrome c synthase (cytochrome c heme lyase)
+YBR037C SCO1, role in copper transport or insertion of copper into cytochrome oxidase
+YDR079W PET100, required for assembly of cytochrome c oxidase
+YDR231C COX20, involved in maturation of Cox2p and its assembly into COX
+YDR375C BCS1, required for expression of functional Rieske iron-sulfur protein
+YER058W PET117, involved in assembly of cytochrome oxidase
+YER141W COX15, required for cytochrome oxidase assembly
+YGR062C COX18, required for activity of mitochondrial cytochrome oxidase
+YGR112W SHY1, mitochondrial protein required for respiration, assembly of cytochrome c
+oxidase complex
+YGR174C CBP4, ubiquinol-cytochrome c reductase assembly factor
+YJL180C ATP12, F1-ATP synthase assembly protein
+YJR034W PET191, involved in assembly of cytochrome oxidase
+YKL087C CYT2, holocytochrome-c1 synthase (CC1HL)
+YLR393W ATP10, required for F1-F0 ATP synthase assembly
+YML129C COX14, required for assembly of cytochrome oxidase
+YNL315C ATP11, F1-ATP synthase assembly protein
+YPL215W CBP3, required for assembly of cytochrome bc1 complex
+Mitochondrial enzymes
+YAL044C GCV3, glycine decarboxylase hydrogen carrier protein H subunit
+YBR003W COQ1, hexaprenyl pyrophosphate synthetase
+YDR148C KGD2, 2-oxoglutarate dehydrogenase complex E2 component
+YDR204W COQ4, involved in biosynthesis of coenzyme Q
+YDR226W ADK1, adenylate kinase (GTP:AMP phosphotransferase), cytoplasmic and
+mitochondrial
+YER014W HEM14, protoporphyrinogen oxidase
+YER061C CEM1, beta-ketoacyl-ACP synthase, mitochondrial
+YFL018C LPD1, dihydrolipoamide dehydrogenase, (E3) component of pyruvate dehydrogenase
+complex
+YGR255C COQ6, monooxygenase required for coenzyme Q (ubiquinone) biosynthesis
+YHR008C SOD2, manganese superoxide dismutase, mitochondrial
+YIL125W KGD1, alpha-Ketoglutarate dehydrogenase
+YLR304C ACO1, aconitase
+YMR267W PPA2, inorganic pyrophosphatase, mitochondrial
+YNR041C COQ2, para-hydroxybenzoate-polyprenyltransferase
+YPL132W COX11, required for heme A synthesis
+YPL172C COX10, farnesyl transferase required for heme A synthesis
+YPL262W FUM1, fumarate hydratase
+Lipids biosynthesis, mitochondrial
+YKL055C OAR1, 3-oxoacyl-[acyl-carrier-protein] reductase (mitochondrial type II fatty acid
+synthase)
+YOR196C LIP5, lipoic acid synthase (mitochondrial matrix)
+YOR221C MCT1, malonyl CoA:acyl carrier protein transferase (mitochondrial type II fatty acid
+synthase)
+YPL148C PPT2, acyl carrier-protein synthase, phosphopantetheine protein transferase for
+Acp1p (maybe mitochondrial)
+Mitochondrial proteases and peptidases
+YER017C AFG3, involved in proteolytic and chaperone activities at the inner membrane
+YKL134C OCT1, mitochondrial intermediate peptidase
+YMR035W IMP2, catalytic subunit of the mitochondrial inner membrane protease Imp
+YMR089C YTA12, involved in proteolytic and chaperone activities in the inner membrane
+YMR150C IMP1, catalytic subunit of the mitochondrial inner membrane protease Imp
+Mitochondrial carrier proteins
+YDL198C YHM1, protein of the mitochondrial carrier (MCF) family that when overexpressed
+suppresses loss of Abf2p
+YGR257C mitochondrial carrier family (MCF) of membrane transporters
+YJR077C MIR1, phosphate transporter of the mitochondrial carrier (MCF) family
+YNL003C PET8, mitochondrial carrier (MCF) family
+Mitochondrial morphology
+YAL010C MDM10, involved in mitochondrial morphology and inheritance
+YBR179C FZO1, transmembrane GTPase required for mitochondrial fusion
+YLL006W MMM1, essential for maintenance of mitochondrial shape and structure
+YOL009C MDM12, mitochondrial morphology and inheritance protein
+YOR211C MGM1, peripheral membrane protein required for mitochondrial morphology
+Other mitochondrial factors
+YER154W OXA1, component of the mitochondrial protein export machinery
+YFL016C MDJ1, involved in mitochondrial biogenesis and protein folding, member of DnaJ
+family of protein chaperones
+YLL027W ISA1, mitochondrial protein required for normal iron metabolism
+YLR139C SLS1, protein involved in mitochondrial metabolism
+YLR239C LIP2, similarity to E. coli LipB protein, a lipoic acid ligase, mitochondrial localization
+predicted
+YLR369W SSQ1, mitochondrial heat shock protein 70 involved in biogenesis of iron-sulfur
+proteins
+YOR125C CAT5, required for derepression of gluconeogenic enzymes and for coenzyme Q
+(ubiquinone) biosynthesis
+YPR067W ISA2, mitochondrial protein required for iron metabolism
+KNOWN NON-MITOCHONDRIAL PROTEINS
+Vacuole
+V-ATPase subunits
+YBR127C VMA2, vacuolar H(+)-ATPase (V-ATPase) regulatory subunit
+YDL185W VMA1, catalytic subunit (subunit A) of the vacuolar H(+) ATPase V1 complex
+YEL027W CUP5, V-ATPase 16 kDa proteolipid subunit of membrane (V0) sector
+YEL051W VMA8, vacuolar H(+)-ATPase (V-ATPase) subunit of the V1 catalytic sector
+YHR039C-B VMA10, vacuolar H(+)-ATPase (V-ATPase) 13 kDa subunit
+YKL080W VMA5, vacuolar H(+)-ATPase (V-ATPase) hydrophilic subunit (subunit C)
+YLR447C VMA6, vacuolar H(+)-ATPase (V-ATPase) 36 kDa subunit
+YOR332W VMA4, vacuolar H(+)-ATPase hydrophilic subunit (subunit E)
+YPL234C VMA11, proteolipid component of V-ATPase
+YPR036W VMA13, vacuolar H(+)-ATPase (V-ATPase) 54 kDa subunit of V1 sector)
+V-ATPase assembly
+YGR105W VMA21, required for vacuolar H(+)-ATPase (V-ATPase) assembly
+YHR060W VMA22, protein involved in vacuolar H(+)-ATPase assembly or function
+YKL119C VPH2, vacuolar H(+)-ATPase (V-ATPase) assembly protein acting in the ER
+Vacuolar inheritance and protein sorting factors
+YDR027C LUV1, Vps52p-Vps53p-Vps54p complex, involved in protein sorting in the Golgi
+YDR323C PEP7, vacuolar segregation protein required for vacuole inheritance
+YJL029C VPS53, subunit of the Vps52p-Vps53p-Vps54p complex
+YKL002W DID4, class E vacuolar protein-sorting (vps) factor
+YKL054C VID31, involved in vacuolar import and degradation
+YKR001C VPS1, vacuolar sorting protein, member of the dynamin family of GTPases
+YLL040C VPS13, involved in vacuolar sorting
+YLR148W PEP3, vacuolar protein involved in vacuolar protein sorting
+YLR240W VPS34, phosphatidylinositol 3-kinase required for vacuolar protein sorting
+YLR396C VPS33, vacuolar sorting protein of the Sec1p family
+YOR036W PEP12, syntaxin homolog (t-SNARE) involved in Golgi to vacuole transport
+YPL045W VPS16, vacuolar sorting protein
+Lipids biosynthesis, non-mitochondrial or unspecified
+YLR056W ERG3, C-5 sterol desaturase (microsomal membrane)
+YLR260W LCB5, long chain base kinase, involved in sphingolipid metabolism
+Transcription (nuclear)
+SWI-SNF global transcription activator complex
+YBR289W SNF5, component of SWI-SNF global transcription activator complex
+YHL025W SNF6, component of SWI-SNF global transcription activator complex
+YJL176C SWI3, component of SWI-SNF global transcription activator complex
+YOR290C SNF2, component of SWI-SNF global transcription activator complex
+YBL021C HAP3, component of heterotrimeric CCAAT-binding factor
+YGL237C HAP2, component of heterotrimeric CCAAT-binding factor
+YKL109W HAP4, component of heterotrimeric CCAAT-binding factor
+YOR358W HAP5, component of heterotrimeric CCAAT-binding factor
+YBR112C SSN6, general repressor of RNA polymerase II transcription
+YCR084C TUP1, repressor of RNA polymerase II transcription
+YDL056W MBP1, transcription factor that collaborates with Swi6p
+YER068W MOT2 (SIG1), zinc finger transcriptional repressor
+YGL070C RPB9, RNA polymerase II, non-essential subunit, not shared
+YGL071W RCS1, transcription factor regulates genes involved in iron uptake and cell size
+YGL115W SNF4, involved in derepression of glucose-repressed genes
+YIL154C involved in control of mitochondrial sugar utilization and repair of oxidative DNA
+YJR122W CAF17, component of the CCR4 transcription complex
+YMR021C MAC1, transcription factor involved in induction of genes required for the 
+YMR280C CAT8, transcription factor required for derepression of gluconeogenic enzymes
+YPL254W HFI1, component of the ADA complex
+YAL012W CYS3, cystathionine gamma-lyase
+YGR155W CYS4, cystathionine beta-synthase
+YJL101C GSH1, gamma-glutamylcysteine synthetase
+YLR377C FBP1, fructose-1,6-bisphosphatase
+YOL143C RIB4, riboflavin biosynthesis pathway enzyme
+YOR241W MET7, involved in methionine biosynthesis and maintenance of the mitochondrial
+YAL016W TPD3, protein serine/threonine phosphatase 2A (PP2A) regulatory subunit A
+YAL047C SPC72, component of the cytoplasmic plaque of the spindle pole body
+YBL007C SLA1, involved in assembly of cortical actin cytoskeleton
+YBR026C Nuclear protein essential for mitochondrial respiratory function, binds 
+YCL007C CWH36, may be involved in generation of mannoprotein layer of the cell wall
+YCR009C RVS161, roles in endocytosis and in cell fusion
+YDR069C DOA4, ubiquitin-specific protease
+YDR129C SAC6, actin filament bundling protein, fimbrin; essential for polarized secretion
+YDR195W REF2, involved in mRNA 3'-end formation prior to polyadenylation
+YDR270W CCC2, copper-transporting P-type ATPase
+YDR388W RVS167, protein that affects actin distribution and bipolar budding
+YDR477W SNF1, serine/threonine protein kinase essential for derepression of glucose-
+YDR507C GIN4, serine/threonine-protein kinase required for septin organization at the bud 
+YDR518W EUG1, protein disulfide isomerase
+YER014C-A BUD25, involved in bipolar budding
+YER122C GLO3, GTPase-activating protein (GAP) for ADP-ribosylation factors
+YER145C FTR1, iron permease that mediates high-affinity iron uptake
+YFR019W FAB1, phosphatidylinositol-3-phosphate 5-kinase involved in orientation or 
+YGL135W RPL1B, large subunit ribosomal protein L1
+YGL206C CHC1, clathrin heavy chain
+YGR167W CLC1, clathrin light chain
+YGR180C RNR4, component of ribonucleotide reductase small subunit
+YIL018W RPL2B, ribosomal protein L2
+YIL036W CST6, similarity to Mei4p and to cAMP response element binding proteins
+YIL047C SYG1, member of the divalent anion:Na+ (DASS) family of membrane transporters
+YJR040W GEF1, voltage-gated chloride channel
+YJR090C GRR1, F-box protein required for glucose repression
+YKL212W SAC1, polyphosphoinositide phosphatase, role in Golgi function and actin
+cytoskeleton organization
+YLL009C COX17, cytoplasmic; involved in delivery of copper ions to COX
+YLL018C-A COX19, protein required for cytochrome c oxidase activity
+YLR234W TOP3, DNA topoisomerase III
+YML094W GIM5, prefoldin subunit 5, component of the Gim protein complex
+YMR058W FET3, cell surface ferroxidase
+YMR138W CIN4, GTP-binding protein involved in chromosome segregation
+YNL064C YDJ1, involved in protein import into mitochondria and ER
+YNL138W SRV2, adenylate cyclase-associated protein
+YOL001W PHO80, cyclin that interacts with Pho85p protein kinase
+YOL148C SPT20, component of the nucleosomal histone acetyltransferase
+YPL174C NIP100, mitotic spindle positioning protein
+YPL268W PLC1, phosphoinositide-specific phospholipase C
+YPR124W CTR1, copper transport protein
+YBR163W Unknown function 0.7918
+YCR071C Unknown function, required for mitochondrial genome integrity 0.8852
+YDR065W Unknown function, induced during sporulation 0.8993
+YDR350C Unknown function 0.9860
+YDR533C Unknown function 0.3019
+YER077C Unknown function 0.9003
+YGL107C Unknown function 0.8069
+YGR101W Unknown function, possibly involved in respiration 0.9943
+YGR102C Unknown function 0.9053
+YGR150C Unknown function 0.8414
+YGR165W Unknown function, may be involved in mitochondrial translation 0.9687
+YHR059W Unknown function 0.9569
+YHR067W Unknown function 0.6258
+YHR168W Unknown function, contains a GTP-binding domain 0.7207
+YHR194W Unknown function 0.9986
+YIL015C-A Unknown function 0.0369
+YIL060W Unknown function, 100% identical with YHR145C 0.1339
+YJL003W Unknown function 0.6828
+YJL046W Similarity to lipoate-protein ligase A 0.5938
+YLL033W Unknown function 0.1183
+YLR091W Unknown function 0.1484
+YLR149C Unknown function 0.0326
+YLR201C Unknown function 0.5153
+YLR218C Unknown function 0.6055
+YLR270W Unknown function 0.2066
+YMR066W Unknown function 0.9695
+YMR097C Unknown function 0.7437
+YMR098C Unknown function 0.4850
+YMR158W Unknown function, weak similarity to E. coli ribosomal protein S8 0.9495
+YMR293C May be involved in mitochondrial function 0.7531
+YNL080C Unknown function 0.0085
+YNL177C Unknown function, may be involved in mitochondrial translation 0.8901
+YOR147W Unknown function 0.9989
+YOR205C Unknown function 0.9130
+YOR305W Unknown function 0.7450
+YPL005W Unknown function 0.9450
+YPR100W Unknown function 0.9191
+YPR116W Unknown function 0.3664
+YBL100C Unknown function, overlaps with ATP1
+YDL032W Unknown function, overlaps with YDL033C and DBP10 promoter
+YDL068W Unknown function, overlaps with CBS1
+YDR114C Unknown function, overlaps with YDR115W
+YDR230W Unknown function, overlaps with COX20
+YGL218W Unknown function, overlaps with YGL219c
+YGR219W Unknown function, overlaps with MRPL9
+YHL005C Unknown function, overlaps with MRP4 promoter
+YJL022W Unknown function, overlaps with PET130
+YJL120W Unknown function, overlaps with RPE1
+YJL175W Unknown function, overlaps with SWI3
+YKL118W Unknown function, overlaps with VPH2
+YKL169C Unknown function, overlaps with MRPL38
+YLR202C Unknown function, overlaps with YLR201C and MSS51
+YNL184C Unknown function, overlaps with MRPL19
+YNR025C Unknown function, overlaps with YNR024w
+YNR042W Unknown function, overlaps with COQ2
+YOR200W Unknown function, overlaps with PET56
+YOR331C Unknown function, overlaps with VMA4
+YOR333C Unknown function, overlaps with MRS2
+YPR099C Unknown function, overlaps with YPR100W
+YPR123C Unknown function, overlaps with CTR1
