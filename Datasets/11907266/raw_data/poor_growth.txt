@@ -1,0 +1,64 @@
+YBL058W SHP1, potential regulatory subunit for Glc7p
+YBR191W RPL21A, ribosomal protein L21
+YCR047C Similarity to rat methylglycine transferase
+YCR053W THR4, threonine synthase
+YDL006W PTC1, protein serine/threonine phosphatase of the PP2C family
+YDL047W SIT4, protein serine/threonine phosphatase
+YDL117W CYK3, possibly involved in cytokinesis
+YDR116C Probable component of mitochondrial ribosomes
+YDR176W NGG1, component of two nucleosomal histone acetyltransferase complexes
+YDR178W SDH4, membrane anchor subunit in the succinate dehydrogenase complex
+YDR202C RAV2, involved in regulation of vacuolar H+-ATPase assembly
+YDR269C Unknown function, questionable ORF
+YDR271C Unknown function, questionable ORF
+YDR448W ADA2, component of two nucleosomal histone acetyltransferase complexes
+YDR512C Unknown function; questionable ORF
+YGL020C Unknown function
+YGL025C PGD1, component of RNA polymerase II holoenzyme
+YGL038C OCH1, alpha-1,6-mannosyltransferase
+YGL058W RAD6, ubiquitin conjugating (E2) enzyme
+YGL064C Member of the DEAD-box RNA helicase family
+YGL084C GUP1, unknown function, putative glycerol transporter
+YGL095C VPS45, Sec1p family of vacuolar protein sorting
+YGL167C PMR1, Ca2+-transporting P-type ATPase
+YGL168W Unknown function; questionable ORF
+YGL219C Unknown function
+YGR020C VMA7, vacuolar H(+)-ATPase 14 kDa subunit of the catalytic (V0) sector
+YGR036C CWH8, involved in generation of the mannoprotein layer of the cell wall
+YGR183C QCR9, ubiquinol cytochrome c reductase subunit 9
+YGR188C BUB1, serine/threonine protein kinase
+YGR252W GCN5, component of two nucleosomal histone acetyltransferase complexes
+YGR262C BUD32, may be involved in polar bud site selection
+YHR026W PPA1, proteolipid of the vacuolar H(+)-ATPase
+YHR041C SRB2, component of the RNA polymerase II holoenzyme
+YHR116W Unknown function, may be involved in mitochondrial translation
+YIL157C Unknown function
+YIR005W IST3, role in sodium tolerance
+YJL075C Unknown function; questionable ORF
+YJL121C RPE1, ribulose-5-phosphate 3-epimerase
+YJR118C Unknown function, possibly involved in mitochondrial DNA maintenance
+YJR120W Required for respiratory growth
+YKR021W Unknown function
+YLR358C Unknown function
+YML090W Unknown function
+YML112W CTK3, C-terminal domain (RNA polymerase II CTD) kinase gamma subunit
+YMR054W STV1, subunit of V0 sector of V-ATPase
+YMR123W Unknown function
+YMR311C GLC8, modulator of protein serine/threonine phosphatase Glc7p
+YNL067W RPL9B, ribosomal protein L9, nearly identical to Rpl9Ap
+YNL120C Unknown function, questionable ORF
+YNL133C Required for viability following exposure to toxin
+YNL139C RLR1, pleiotropic regulatory properties
+YNL259C ATX1, antioxidant protein and metal homeostasis factor
+YNL296W Unknown function; questionable ORF
+YNR020C Unknown function
+YOR026W BUB3, checkpoint protein required for cell cycle arrest
+YOR073W Unknown function
+YOR334W MRS2, splicing of mitochondrial introns; also involved in other mitochondrial function
+YPL024W NCE4, negative regulator of CTS1 expression
+YPL031C PHO85, cyclin-dependent protein kinase
+YPL060W Similarity to Mrs2p
+YPL183W-A Possible mitochondrial ribosomal protein
+YPL188W POS5, involved in sensitivity to peroxide
+YPR066W UBA3, Rub1-activating enzyme, similar to ubiquitin-activating E1 proteins
+YPR134W MSS18, involved in splicing a15beta intron of the COX1 transcript
