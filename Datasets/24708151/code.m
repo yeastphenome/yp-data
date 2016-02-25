@@ -18,9 +18,6 @@ hit_strains = data(2:end, 3);
 % Clean up ORFs
 hit_strains = clean_orf(hit_strains);
 
-% Standardize ORFs
-hit_strains = translate(hit_strains);
-
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds)); 
