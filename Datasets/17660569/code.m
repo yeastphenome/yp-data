@@ -15,7 +15,7 @@ treatments = {'SC -His'};
 % Load hit strains
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/hit_list.xlsx', 'Sheet1');
 
-% Get the list of ORFs and the correponding data 
+% Get the list of ORFs
 hit_strains = data(3:end,1);
 
 % Get the data itself
@@ -39,13 +39,38 @@ hit_data = cellfun(@length, hit_data);
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
+%% Load tested strains
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/deletion database.xlsx', 'Sheet1');
+
+% Get the list of ORFs
+tested_strains = data(2:end,2);
+
+% Eliminate all white spaces & capitalize
+tested_strains = clean_orf(tested_strains);
+
+% Fix typos
+tested_strains(strcmp('YPL006', tested_strains)) = {'YPL006W'};
+tested_strains(strcmp('YDR007', tested_strains)) = {'YDR007W'};
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_strains));
+disp(tested_strains(inds)); 
+
+tested_strains(inds) = [];
+
+tested_strains = unique(tested_strains);
+
+[missing,~] = setdiff(hit_strains, tested_strains); % 0 found.
+
 
 %% Prepare final dataset
 
-% If the dataset is quantitative:
-wilson_vanhoof_2007.orfs = hit_strains;
+wilson_vanhoof_2007.orfs = tested_strains;
 wilson_vanhoof_2007.ph = strcat(phenotypes, '; ', treatments);
-wilson_vanhoof_2007.data = hit_data;
+wilson_vanhoof_2007.data = zeros(length(wilson_vanhoof_2007.orfs), length(wilson_vanhoof_2007.ph));
+
+[~,ind1,ind2] = intersect(hit_strains, tested_strains);
+wilson_vanhoof_2007.data(ind2,:) = hit_data(ind1,:);
 
 %% Save
 
