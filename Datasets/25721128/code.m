@@ -27,20 +27,22 @@ disp(hit_strains(inds));
 inds = find(~is_orf(hit_strains2));
 disp(hit_strains2(inds));
 
-% Get data from hits
-hit_data = nan(length(hit_strains), 2);
-hit_data(:,1) = cell2mat(data(11:end, 8));
+% Retrieve data from files
+hit_data = data(11:end, 8);
+hit_data2 = data2(11:end, 8);
 
-hit_data2 = cell2mat(data2(11:end, 8));
+% Average any repeated value
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+[hit_strains2, hit_data2] = grpstats(hit_data2, hit_strains2, {'gname','mean'});
 
-% Put all the ORFs in the second dataset (that aren't in the first)
-% with the rest
-Lia = find(~ismember(hit_strains2, hit_strains));
-hit_strains = [hit_strains; hit_strains2(Lia)];
 
-% Find indices for hit_strains2 in hit_strains 
-[~, ind1, ind2] = intersect(hit_strains, hit_strains2);
-hit_data(ind1, 2) = hit_data2(ind2);
+% Retrieve data from individual files and put them in the data
+hit_strains3 = unique([hit_strains; hit_strains2]);
+hit_data3 = nan(length(hit_strains3),2);
+[~,ind1,ind2] = intersect(hit_strains3, hit_strains);
+hit_data3(ind1,1) = cell2mat(hit_data(ind2));
+[~,ind1,ind2] = intersect(hit_strains3, hit_strains2);
+hit_data3(ind1,2) = hit_data2(ind2);
 
 % Average any repeated value
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
