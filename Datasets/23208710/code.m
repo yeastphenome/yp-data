@@ -4,8 +4,8 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 lis_bobek_2013.pmid = 23208710;
 
-phenotypes = {'sensitivity'};
-treatments = {'MUC7 12-mer, 10 ?M'; 'histatin 12-mer, 20 ?M'; 'cathelicidin KR20, 10 ?M'; 'peptide w/ lactoferricin amino acids 1 to 11, 12 ?M'};
+phenotypes = {'growth'};
+treatments = {'MUC7 12-mer, 10 uM'; 'histatin 12-mer, 20 uM'; 'cathelicidin KR20, 10 uM'; 'peptide w/ lactoferricin amino acids 1 to 11, 12 uM'};
 
 %% Hit Strains
 
@@ -23,7 +23,7 @@ inds = find(~is_orf(strains));
 disp(strains(inds)); 
 
 % Get data from hits
-hit_data = cell2mat(data(2:end, 2:5)); 
+hit_data = -cell2mat(data(2:end, 2:5)); 
 
 % Average any repeated value
 [strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
