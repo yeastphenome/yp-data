@@ -44,6 +44,14 @@ hit_data3(ind1,1) = cell2mat(hit_data(ind2));
 [~,ind1,ind2] = intersect(hit_strains3, hit_strains2);
 hit_data3(ind1,2) = hit_data2(ind2);
 
+<<<<<<< HEAD
+% Prepare final dataset
+hendry_brown_2015.orfs = hit_strains3;
+hendry_brown_2015.ph = strcat(phenotypes, '; ', treatments);
+hendry_brown_2015.data = hit_data3;
+
+%% Save
+=======
 % Average any repeated value
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
@@ -54,6 +62,7 @@ hendry_brown_2015.data = hit_data;
 
 %% Save
 
+>>>>>>> origin/master
 save('./hendry_brown_2015.mat','hendry_brown_2015');
 
 fid = fopen('./hendry_brown_2015.txt','w');
