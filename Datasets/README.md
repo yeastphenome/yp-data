@@ -6,9 +6,9 @@ The Basics
 
 This folder contains:
 
-1. the raw data corresponding to this publication (`/raw_data/*`): in most cases, text or Excel files;
-2. the filtered, edited & re-formatted data (`*.mat`): Matlab structure;
-3. the code used to transform #1 into #2 (`code.m`): Matlab function.
+1. the raw data from this publication (`/raw_data/*`): in most cases, 1 or more text or Excel files;
+2. the filtered, edited & re-formatted data (`*.mat`): a Matlab structure;
+3. the code used to transform #1 into #2 (`code.m`): a Matlab function.
 
 Running `code.m` will regenerate the `*.mat` file from the `raw_data/` and output the list of files that were used in the process:
 
@@ -18,11 +18,14 @@ Running `code.m` will regenerate the `*.mat` file from the `raw_data/` and outpu
 The Details
 -----------
 
-The raw data files (#1) are identical to the ones provided by the authors in the original publication or in their personal communication with the curators of Yeastphenome.org. No edits to the content or even the name of the file were performed. The only exception is when the raw data was derived from a PDF (main text or supplement): in that case, the data were extracted from PDF and saved as a text file.
+The raw data files (#1) are identical to what was provided by the authors in the original publication or in their personal communication with the curators of Yeastphenome.org. No edits to the content or even the name of the file were performed, with the exception of:
+
+* PDF -> text file conversions
+* XLS -> XLSX conversions (ensures a more stable and consistent loading process)
 
 The raw data files are used as input to the `code.m` function which performs a number of standard checks and converts the data into a common format. 
 
-The list of checks includes:
+Some of the checks include:
 
 * naming conversions (common names -> systematic ORF names)
 * naming errors (typos, spaces or capitalization errors in the ORF names)
