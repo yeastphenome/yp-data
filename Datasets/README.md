@@ -6,11 +6,12 @@ The Basics
 
 This folder contains:
 
-1. the raw data from this publication (`/raw_data/*`): in most cases, 1 or more text or Excel files;
-2. the filtered, edited & re-formatted data (`*.mat`): a Matlab structure;
-3. the code used to transform #1 into #2 (`code.m`): a Matlab function.
+1. the filtered, edited & re-formatted data from this publication (`.txt`): a tab-delimited matrix in TXT format;
+2. the filtered, edited & re-formatted data from this publication (`.mat`): a Matlab structure;
+3. the raw data from which #1 and #2 were derived (`/raw_data/*`): in most cases, 1 or more text or Excel files;
+4. the code used to transform #1 into #2 (`code.m`): a Matlab function.
 
-Running `code.m` will regenerate the `*.mat` file from the `raw_data/` and output the list of files that were used in the process:
+Running `code.m` will regenerate the `.mat` and the `.txt` file from the `raw_data/*` files and output the list of files that were used in the process:
 
     filenames = code();
 
