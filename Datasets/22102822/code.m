@@ -5,7 +5,7 @@ FILENAMES = {};
 berry_gasch_2011.pmid = 22102822;
 
 phenotypes = {'growth'};
-treatment = {'elesclomol-Cu'};
+treatment = {'control', '0.4 mM H202', '2.5 mM DDT', '0.7 M NaCl', 'Heat Shock', '20 uM tunicamycin', '2.5 mM DDT, H2O2', '0.7 M NaCl, H2O2', 'Heat Shock, H2O2', '20 uM tunicamycin, H2O2'};
 
 %% Hit Strains
 
@@ -24,8 +24,7 @@ disp(strains(inds));
 
 % Get data from hits
 hit_data = data(2:end, 2:end);
-
-%hit_data(strcmp('NA', hit_data)) = {0};
+hit_data(strcmp('NA', hit_data)) = {NaN};
 indx = ~cellfun(@isnumeric, hit_data);
 hit_data(indx) = {0};
 hit_data = cell2mat(hit_data);
