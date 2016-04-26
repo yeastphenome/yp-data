@@ -36,89 +36,49 @@ hit_cond = data(1, 2:end);
 % find all the conditions with "sample0"
 indx = strfind(hit_cond, 'Sample0');
 indx = find(~(cellfun(@isempty, indx)));
-cond_one_data = sum(hit_data(:, indx), 2) ./ length(indx);
+cond_one_data = nanmean(hit_data(:,indx),2);
 
 % Condition 2: Sample 2 vs Sample 1
 % find all the conditions with "sample2"
 indx = strfind(hit_cond, 'Sample2');
 indx = find(~(cellfun(@isempty, indx)));
-cond_two_data = sum(hit_data(:, indx), 2) ./ length(indx);
+cond_two_data = nanmean(hit_data(:,indx),2);
 
 % Condition 3: Sample 3 vs Sample 1
 % should have 4 different sets of these
 % A. the conditions with DTT
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample1');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'DTT');
-indx = find(~(cellfun(@isempty, indx)));
-cond_threeA_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample3 vs Sample1.*')));
+cond_threeA_data = nanmean(hit_data(:,indx),2);
 
 % B. the conditions with NaCl
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample1');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'NaCl');
-indx = find(~(cellfun(@isempty, indx)));
-cond_threeB_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample3 vs Sample1.*')));
+cond_threeB_data = nanmean(hit_data(:,indx),2);
 
 % C. the conditions with HS
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample1');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'HS');
-indx = find(~(cellfun(@isempty, indx)));
-cond_threeC_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample3 vs Sample1.*')));
+cond_threeC_data = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample1');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'TM');
-indx = find(~(cellfun(@isempty, indx)));
-cond_threeD_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1.*')));
+cond_threeD_data = nanmean(hit_data(:,indx),2);
 
 % Condition 4: Sample 4 vs Sample 3
 % should have 4 different sets of these
 % A. the conditions with DTT
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample4');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'DTT');
-indx = find(~(cellfun(@isempty, indx)));
-cond_fourA_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample4 vs Sample3.*')));
+cond_fourA_data = nanmean(hit_data(:,indx),2);
 
 % B. the conditions with NaCl
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample4');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'NaCl');
-indx = find(~(cellfun(@isempty, indx)));
-cond_fourB_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample4 vs Sample3.*')));
+cond_fourB_data = nanmean(hit_data(:,indx),2);
 
 % C. the conditions with HS
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample4');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'HS');
-indx = find(~(cellfun(@isempty, indx)));
-cond_fourC_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample4 vs Sample3.*')));
+cond_fourC_data = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = strfind(hit_cond, 'Sample3');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'Sample4');
-indx = find(~(cellfun(@isempty, indx)));
-indx = strfind(hit_cond(indx), 'TM');
-indx = find(~(cellfun(@isempty, indx)));
-cond_fourD_data = sum(hit_data(:, indx), 2) ./ length(indx);
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4 vs Sample3.*')));
+cond_fourD_data = nanmean(hit_data(:,indx),2);
 
 final_data = [cond_one_data cond_two_data cond_threeA_data cond_threeB_data cond_threeC_data cond_threeD_data cond_fourA_data cond_fourB_data cond_fourC_data cond_fourD_data];
 
