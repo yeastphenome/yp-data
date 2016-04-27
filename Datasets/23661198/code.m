@@ -5,7 +5,7 @@ FILENAMES = {};
 vahey_voldman_2013.pmid = 23661198;
 
 phenotypes = {'conductivity'};
-treatment = {'electrical frequency of 300 kHz', 'electrical frequency of 10 MHz'};
+treatment = {'electrical frequency of 300 kHz'; 'electrical frequency of 10 MHz'};
 
 %% Hit Strains
 
@@ -23,9 +23,9 @@ inds = find(~is_orf(strains));
 disp(strains(inds)); 
 
 % Get data from hits
-hit_data = data{3};
-hit_data(:,2) = data{4};
-indx = ~cellfun(@isnumeric, hit_data);
+hit_data = [data{3} data{4}];
+hit_data = cellfun(@str2num, hit_data, 'UniformOutput',0);
+indx = cellfun(@isempty, hit_data);
 hit_data(indx) = {NaN};
 hit_data = cell2mat(hit_data);
 
