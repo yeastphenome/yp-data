@@ -26,7 +26,7 @@ disp(strains(inds));
 hit_data = data(2:end, 2:end);
 hit_data(strcmp('NA', hit_data)) = {NaN};
 indx = ~cellfun(@isnumeric, hit_data);
-hit_data(indx) = {0};
+hit_data(indx) = {NaN};
 hit_data = cell2mat(hit_data);
 
 %% Get Conditions and Corresponding data
@@ -47,37 +47,37 @@ cond_two_data = nanmean(hit_data(:,indx),2);
 % Condition 3: Sample 3 vs Sample 1
 % should have 4 different sets of these
 % A. the conditions with DTT
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample3 vs Sample1.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample3 vs Sample1 Array')));
 cond_threeA_data = nanmean(hit_data(:,indx),2);
 
 % B. the conditions with NaCl
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample3 vs Sample1.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample3 vs Sample1 Array')));
 cond_threeB_data = nanmean(hit_data(:,indx),2);
 
 % C. the conditions with HS
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample3 vs Sample1.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample3 vs Sample1 Array')));
 cond_threeC_data = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1 Array')));
 cond_threeD_data = nanmean(hit_data(:,indx),2);
 
 % Condition 4: Sample 4 vs Sample 3
 % should have 4 different sets of these
 % A. the conditions with DTT
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample4 vs Sample3.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample4[A-Z]? vs Sample3 Array')));
 cond_fourA_data = nanmean(hit_data(:,indx),2);
 
 % B. the conditions with NaCl
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample4 vs Sample3.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample4[A-Z]? vs Sample3 Array')));
 cond_fourB_data = nanmean(hit_data(:,indx),2);
 
 % C. the conditions with HS
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample4 vs Sample3.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample4[A-Z]? vs Sample3 Array')));
 cond_fourC_data = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4 vs Sample3.*')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4[A-Z]? vs Sample3 Array')));
 cond_fourD_data = nanmean(hit_data(:,indx),2);
 
 final_data = [cond_one_data cond_two_data cond_threeA_data cond_threeB_data cond_threeC_data cond_threeD_data cond_fourA_data cond_fourB_data cond_fourC_data cond_fourD_data];
