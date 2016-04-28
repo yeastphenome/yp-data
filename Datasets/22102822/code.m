@@ -5,12 +5,12 @@ FILENAMES = {};
 berry_gasch_2011.pmid = 22102822;
 
 phenotypes = {'growth'};
-treatment = {'control barcode hybridization (microarray)', '0.4 mM H202 barcode hybridization (microarray)', '2.5 mM DDT barcode hybridization (microarray)',... 
-               '0.7 M NaClbarcode hybridization (microarray)', 'Heat Shock barcode hybridization (microarray)', '20 uM tunicamycin barcode hybridization (microarray)', ...
-               '2.5 mM DDT, H2O2 barcode hybridization (microarray)', '0.7 M NaCl, H2O2 barcode hybridization (microarray)', 'Heat Shock, H2O2 barcode hybridization (microarray)', ...
-               '20 uM tunicamycin, H2O2 barcode hybridization (microarray)', 'control barcode sequencing', '0.4 mM H202 barcode sequencing', '2.5 mM DDT barcode sequencing', ...
-               '0.7 M NaCl barcode sequencing', 'Heat Shock barcode sequencing', '20 uM tunicamycin barcode sequencing','2.5 mM DDT, H2O2 barcode sequencing', '0.7 M NaCl, H2O2 barcode sequencing', ...
-               'Heat Shock, H2O2 barcode sequencing', '20 uM tunicamycin, H2O2 barcode sequencing'};
+treatment = {'control barcode hybridization (microarray)'; '0.4 mM H202 barcode hybridization (microarray)'; '2.5 mM DDT barcode hybridization (microarray)'; ... 
+               '0.7 M NaClbarcode hybridization (microarray)'; 'Heat Shock barcode hybridization (microarray)'; '20 uM tunicamycin barcode hybridization (microarray)'; ...
+               '2.5 mM DDT, H2O2 barcode hybridization (microarray)'; '0.7 M NaCl, H2O2 barcode hybridization (microarray)'; 'Heat Shock, H2O2 barcode hybridization (microarray)'; ...
+               '20 uM tunicamycin, H2O2 barcode hybridization (microarray)'; 'control barcode sequencing'; '0.4 mM H202 barcode sequencing'; '2.5 mM DDT barcode sequencing'; ...
+               '0.7 M NaCl barcode sequencing'; 'Heat Shock barcode sequencing'; '20 uM tunicamycin barcode sequencing';'2.5 mM DDT, H2O2 barcode sequencing'; '0.7 M NaCl, H2O2 barcode sequencing'; ...
+               'Heat Shock, H2O2 barcode sequencing'; '20 uM tunicamycin, H2O2 barcode sequencing'};
 
 %% Hit Strains
 
@@ -40,14 +40,12 @@ hit_cond = data(1, 2:end);
 % MicroArray Data
 % Condition 1: Sample 1 vs Sample 0
 % find all the conditions with "sample0"
-indx = strfind(hit_cond, 'Sample1 vs Sample0 Array');
-indx = find(~(cellfun(@isempty, indx)));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'Sample1 vs Sample0 Array')));
 cond_one_data = nanmean(hit_data(:,indx),2);
 
 % Condition 2: Sample 2 vs Sample 1
 % find all the conditions with "sample2"
-indx = strfind(hit_cond, 'Sample2 vs Sample1 Array'); 
-indx = find(~(cellfun(@isempty, indx)));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'Sample2 vs Sample1 Array')));
 cond_two_data = nanmean(hit_data(:,indx),2);
 
 % Condition 3: Sample 3 vs Sample 1
@@ -83,56 +81,54 @@ indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample4[A-Z]? vs Sample
 cond_fourC_data = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4[A-Z]? vs Sample3 Array')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4[A-Z]? vs Sample3 Array')));        % <<<< EMPTY
 cond_fourD_data = nanmean(hit_data(:,indx),2);
 
 % Sequencing
 % Condition 1: Sample 1 vs Sample 0
 % find all the conditions with "sample0"
-indx = strfind(hit_cond, 'Sample1 vs Sample0 (DN)?(UP?)');
-indx = find(~(cellfun(@isempty, indx)));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'Sample1 vs Sample0 [(DN)(UP)]')));
 cond_one_data_seq = nanmean(hit_data(:,indx),2);
 
 % Condition 2: Sample 2 vs Sample 1
 % find all the conditions with "sample2"
-indx = strfind(hit_cond, 'Sample2 vs Sample1 (DN)?(UP?)'); 
-indx = find(~(cellfun(@isempty, indx)));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'Sample2 vs Sample1 [(DN)(UP)]')));
 cond_two_data_seq = nanmean(hit_data(:,indx),2);
 
 % Condition 3: Sample 3 vs Sample 1
 % should have 4 different sets of these
 % A. the conditions with DTT
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample3 vs Sample1 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample3 vs Sample1 [(DN)(UP)]')));
 cond_threeA_data_seq = nanmean(hit_data(:,indx),2);
 
 % B. the conditions with NaCl
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample3 vs Sample1 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample3 vs Sample1 [(DN)(UP)]')));
 cond_threeB_data_seq = nanmean(hit_data(:,indx),2);
 
 % C. the conditions with HS
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample3 vs Sample1 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample3 vs Sample1 [(DN)(UP)]')));
 cond_threeC_data_seq = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1 [(DN)(UP)]')));
 cond_threeD_data_seq = nanmean(hit_data(:,indx),2);
 
 % Condition 4: Sample 4 vs Sample 3
 % should have 4 different sets of these
 % A. the conditions with DTT
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample4[A-Z]? vs Sample3 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'DTT[0-9] Sample4[A-Z]? vs Sample3 [(DN)(UP)]')));
 cond_fourA_data_seq = nanmean(hit_data(:,indx),2);
 
 % B. the conditions with NaCl
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample4[A-Z]? vs Sample3 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'NaCl[0-9] Sample4[A-Z]? vs Sample3 [(DN)(UP)]')));
 cond_fourB_data_seq = nanmean(hit_data(:,indx),2);
 
 % C. the conditions with HS
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample4[A-Z]? vs Sample3 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample4[A-Z]? vs Sample3 [(DN)(UP)]')));
 cond_fourC_data_seq = nanmean(hit_data(:,indx),2);
 
 % D. the conditions with TM
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4[A-Z]? vs Sample3 (DN)?(UP?)')));
+indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample4[A-Z]? vs Sample3 [(DN)(UP)]')));
 cond_fourD_data_seq = nanmean(hit_data(:,indx),2);
 
 
