@@ -51,6 +51,7 @@ hit_data = [concentration_one concentration_two];
 johnson_wu_2015.orfs = hit_strains;
 johnson_wu_2015.ph = strcat(phenotypes, '; ', treatments);
 johnson_wu_2015.data = hit_data;
+johnson_wu_2015.dataset_ids = [697; 698];
 
 %% Save
 
