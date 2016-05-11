@@ -1,0 +1,418 @@
+779	04_02_11_14:1,3-diallylurea:10000:um::::20gen:hom_09_02:new scanner
+778	04_01_14_05:1,3-diallylurea:20000:um::::20gen:hom_09_02:new scanner
+780	03_12_09_02:1,4-dimethylendothall:100:um::::20gen:hom_09_02:new scanner
+781	04_01_14_06:1,7-octadiene:0.25:%::::20gen:hom_09_02:new scanner
+782	04_02_11_13:1,8-nonadiene:0.49:%::::20gen:hom_09_02:new scanner
+783	04_01_14_07:1,8-nonadiene:0.99:%::::20gen:hom_09_02:new scanner
+784	04_03_09_07:2-cyanoethyl acrylate:360000:um::::-5gen:hom_09_02:new scanner
+786	01_06_29_03:23 degrees C::::::15gen:hom_05_01:old scanner
+786	01_07_17_03:23 degrees C::::::15gen:hom_05_01:old scanner
+785	01_06_26_08:23 degrees C::::::5gen:hom_05_01:old scanner
+788	01_06_14_02:25 degrees C::::::15gen:hom_05_01:old scanner
+787	01_06_08_04:25 degrees C::::::5gen:hom_05_01:old scanner
+790	01_06_13_05:37 degrees C::::::20gen:hom_05_01:old scanner
+790	01_06_13_07:37 degrees C::::::20gen:hom_05_01:old scanner
+790	01_07_24_09:37 degrees C::::::20gen:hom_05_01:old scanner
+789	01_05_31_04:37 degrees C::::::5gen:hom_05_01:old scanner
+789	01_06_19_04:37 degrees C::::::5gen:hom_05_01:old scanner
+789	01_07_24_08:37 degrees C::::::5gen:hom_05_01:old scanner
+791	04_08_03_07:4NQO:0.0313:um::::-5gen:hom_09_02:new scanner
+791	04_08_05_01:4NQO:0.0313:um::::-5gen:hom_09_02:new scanner
+792	01_09_14_07:5-fluorouracil:9.6:um::::20gen:hom_05_01:old scanner
+793	02_10_10_04:5-fluorouracil:19.1:um::::20gen:hom_05_01:old scanner
+795	01_09_14_06:5-fluorouracil:19.2:um::::15gen:hom_05_01:old scanner
+794	02_09_27_04:5-fluorouracil:19.2:um::::5gen:hom_05_01:old scanner
+797	01_09_14_05:5-fluorouracil:38.46:um::::15gen:hom_05_01:old scanner
+798	02_10_10_02:5-fluorouracil:38.5:um::::20gen:hom_05_01:old scanner
+796	02_09_27_02:5-fluorouracil:38.5:um::::5gen:hom_05_01:old scanner
+799	03_01_28_07:5-fluorouracil:250:um::::20gen:hom_05_01:old scanner
+800	04_11_17_17:acetic acid:50:um:::ug/ml:20gen:hom_09_02:new scanner
+801	03_08_14_08:aclacinomycin A:32.25:um::::20gen:hom_09_02:new scanner
+802	03_01_16_06:acriflavinium hydrochloride:250:um::::20gen:hom_05_01:old scanner
+802	03_02_19_01:acriflavinium hydrochloride:250:um::::20gen:hom_05_01:old scanner
+802	03_02_19_02:acriflavinium hydrochloride:250:um::::20gen:hom_05_01:old scanner
+803	02_02_05_05:adenine dropout::::::5gen:hom_05_01:old scanner
+804	03_10_08_02:adenophostin A:500:um::::20gen:hom_09_02:new scanner
+805	03_10_08_08:AG 957 (Biomol):500:um::::20gen:hom_09_02:new scanner
+806	03_01_28_03:aklavin hydrochloride:250:um::::20gen:hom_05_01:old scanner
+806	03_02_19_05:aklavin hydrochloride:250:um::::20gen:hom_05_01:old scanner
+806	03_02_19_06:aklavin hydrochloride:250:um::::20gen:hom_05_01:old scanner
+807	03_12_18_12:alizarin:66:um::::20gen:hom_09_02:new scanner
+808	04_01_14_03:allyl disulfide:0.01:%::::20gen:hom_09_02:new scanner
+809	03_11_26_03:allyl disulfide:0.016:%::::20gen:hom_09_02:new scanner
+810	03_11_06_12:allyl disulfide:0.06:%::::20gen:hom_09_02:new scanner
+811	04_01_14_02:allyl sulfide:0.12:%::::20gen:hom_09_02:new scanner
+812	03_02_05_10:alverine citrate:500:um::::20gen:hom_05_01:old scanner
+812	03_02_05_11:alverine citrate:500:um::::20gen:hom_05_01:old scanner
+813	03_02_07_08:amphotericin B:0.31:um::::20gen:hom_05_01:old scanner
+813	03_02_07_09:amphotericin B:0.31:um::::20gen:hom_05_01:old scanner
+814	03_08_14_13:amsacrine:500:um::::20gen:hom_09_02:new scanner
+815	04_02_24_12:angelicin:62.5:um::::-5gen:hom_09_02:new scanner
+815	04_03_17_14:angelicin:62.5:um::::-5gen:hom_09_02:new scanner
+816	04_02_24_11:angelicin irradiated:62.5:um::::-5gen:hom_09_02:new scanner
+816	04_03_17_12:angelicin irradiated:62.5:um::::-5gen:hom_09_02:new scanner
+816	04_03_25_06:angelicin irradiated:62.5:um::::-5gen:hom_09_02:new scanner
+817	02_02_05_04:arginine dropout::::::5gen:hom_05_01:old scanner
+818	05_08_09_06:aureobasidin A:0.02:ug/ml::::-5gen:hom_09_02:new scanner
+819	02_07_03_02:bathophenanthroline disulfonate:75:um::::20gen:hom_05_01:old scanner
+820	02_06_05_04:bathophenanthroline disulfonate:100:um::::20gen:hom_05_01:old scanner
+820	02_07_03_01:bathophenanthroline disulfonate:100:um::::20gen:hom_05_01:old scanner
+821	03_08_14_06:BCNU:62.5:um::::20gen:hom_09_02:new scanner
+822	02_06_05_06:BCS:100:um::::20gen:hom_05_01:old scanner
+823	02_06_05_05:BCS:200:um::::20gen:hom_05_01:old scanner
+824	04_03_02_11:benomyl:10:ug/ml::::-5gen:hom_09_02:new scanner
+824	04_03_02_12:benomyl:10:ug/ml::::-5gen:hom_09_02:new scanner
+825	04_03_10_05:benomyl:10:ug/ml::::5gen:hom_09_02:new scanner
+826	05_05_13_07:benzaldehyde:0.003:%::::-5gen:hom_09_02:new scanner
+827	03_01_16_01:berberine chloride:125:um::::20gen:hom_05_01:old scanner
+827	03_02_05_03:berberine chloride:125:um::::20gen:hom_05_01:old scanner
+828	04_11_24_10:biotin partial drop-out:25:%::::10gen:hom_09_02:new scanner
+828	04_12_17_09:biotin partial drop-out:25:%::::10gen:hom_09_02:new scanner
+828	04_12_17_10:biotin partial drop-out:25:%::::10gen:hom_09_02:new scanner
+829	05_05_13_12:bisphenol:125:um::::-5gen:hom_09_02:new scanner
+830	04_05_18_03:bleomycin:1.13:ug/ml::::-5gen:hom_09_02:new scanner
+830	04_05_18_04:bleomycin:1.13:ug/ml::::-5gen:hom_09_02:new scanner
+831	04_05_18_01:bleomycin:1.7:ug/ml::::-5gen:hom_09_02:new scanner
+831	04_05_18_02:bleomycin:1.7:ug/ml::::-5gen:hom_09_02:new scanner
+832	03_08_27_09:busulfan:500:um::::20gen:hom_09_02:new scanner
+833	03_09_10_11:busulfan:1000:um::::20gen:hom_09_02:new scanner
+834	04_11_24_01:calcium pantothenate partial drop-out:25:%::::10gen:hom_09_02:new scanner
+835	04_01_14_09:calyculin A:2.5:um::::20gen:hom_09_02:new scanner
+836	04_03_25_01:camptothecin:30:ug/ml::::-5gen:hom_09_02:new scanner
+836	04_03_30_01:camptothecin:30:ug/ml::::-5gen:hom_09_02:new scanner
+990	04_05_12_10:camptothecin:30:ug/ml::::20gen:hom_09_02:new scanner
+837	04_07_16_08:camptothecin:30000:ug/ml::::20gen:hom_09_02:new scanner
+838	05_02_24_09:cantharidin:100:um::::-5gen:hom_09_02:new scanner
+991	03_11_26_15:cantharidin:100:um::::20gen:hom_09_02:new scanner
+839	04_05_12_09:cantharidin:200:um::::20gen:hom_09_02:new scanner
+840	03_10_08_03:cantharidin:250:um::::20gen:hom_09_02:new scanner
+841	04_07_01_11:cantharidin analog:125:ug/ml::::20gen:hom_09_02:new scanner
+841	04_07_01_12:cantharidin analog:125:ug/ml::::20gen:hom_09_02:new scanner
+842	04_07_01_09:cantharidin analog:250:ug/ml::::20gen:hom_09_02:new scanner
+842	04_07_01_10:cantharidin analog:250:ug/ml::::20gen:hom_09_02:new scanner
+843	03_10_08_12:cantharidin disodium:100:um::::20gen:hom_09_02:new scanner
+844	04_03_25_02:carboplatin:15:mm::::-5gen:hom_09_02:new scanner
+844	04_03_30_02:carboplatin:15:mm::::-5gen:hom_09_02:new scanner
+845	03_08_27_11:carboplatin:250:um::::20gen:hom_09_02:new scanner
+846	03_09_11_03:carboplatin:500:um::::20gen:hom_09_02:new scanner
+847	04_02_24_06:carboplatin:700:um::::-5gen:hom_09_02:new scanner
+844	04_03_09_01:carboplatin:15000:um::::-5gen:hom_09_02:new scanner
+848	03_02_05_12:caspofungin:1:nm::::20gen:hom_05_01:old scanner
+848	03_02_05_13:caspofungin:1:nm::::20gen:hom_05_01:old scanner
+849	03_09_11_08:CdCl2:7.81:um::::20gen:hom_09_02:new scanner
+850	04_02_06_01:chemical diversity labs 14a:6.2:um::::20gen:hom_09_02:new scanner
+851	04_02_06_02:chemical diversity labs 14f:6.2:um::::20gen:hom_09_02:new scanner
+852	04_02_06_04:chemical diversity labs 1c10:0.75:um::::20gen:hom_09_02:new scanner
+853	04_02_06_03:chemical diversity labs 1c10:1.5:um::::20gen:hom_09_02:new scanner
+854	03_11_26_09:chemical diversity labs 218:250:um::::20gen:hom_09_02:new scanner
+855	03_11_26_13:chemical diversity labs 232:62:um::::20gen:hom_09_02:new scanner
+856	03_11_26_11:chemical diversity labs 246:62:um::::20gen:hom_09_02:new scanner
+857	03_11_26_12:chemical diversity labs 275:62:um::::20gen:hom_09_02:new scanner
+858	04_02_06_05:chemical diversity labs 3f2:12.5:um::::20gen:hom_09_02:new scanner
+859	03_11_26_10:chemical diversity labs 41:500:um::::20gen:hom_09_02:new scanner
+860	03_11_26_08:chemical diversity labs 6842:62:um::::20gen:hom_09_02:new scanner
+861	03_11_06_07:chlorambucil:15.63:um::::20gen:hom_09_02:new scanner
+862	03_08_27_10:chlorambucil:250:um::::20gen:hom_09_02:new scanner
+862	03_11_06_08:chlorambucil:250:um::::20gen:hom_09_02:new scanner
+863	03_09_10_12:chlorambucil:500:um::::20gen:hom_09_02:new scanner
+864	04_02_06_06:CID 144303:1.9:um::::20gen:hom_09_02:new scanner
+865	03_08_14_07:CID 403818:125:um::::20gen:hom_09_02:new scanner
+866	04_02_06_07:CID 604586:31.25:um::::20gen:hom_09_02:new scanner
+867	04_02_11_08:CID 621889:125:um::::20gen:hom_09_02:new scanner
+868	04_02_06_08:CID 622648:31.25:um::::20gen:hom_09_02:new scanner
+869	04_02_06_09:CID 630688:250:um::::20gen:hom_09_02:new scanner
+870	04_02_06_10:CID 632839:62.5:um::::20gen:hom_09_02:new scanner
+871	04_02_06_11:CID 652287:500:um::::20gen:hom_09_02:new scanner
+872	04_02_06_12:CID 678146:1.9:um::::20gen:hom_09_02:new scanner
+873	04_02_06_13:CID 683517:15.6:um::::20gen:hom_09_02:new scanner
+874	04_02_11_09:CID 688028:1.9:um::::20gen:hom_09_02:new scanner
+875	04_02_11_10:CID 693573:250:um::::20gen:hom_09_02:new scanner
+876	04_02_11_12:CID 697443:0.95:um::::20gen:hom_09_02:new scanner
+877	03_03_26_11:cisplatin:31.25:um::::20gen:hom_05_01:old scanner
+877	03_03_26_12:cisplatin:31.25:um::::20gen:hom_05_01:old scanner
+878	03_03_20_11:cisplatin:62.5:um::::20gen:hom_05_01:old scanner
+878	03_03_20_12:cisplatin:62.5:um::::20gen:hom_05_01:old scanner
+879	03_04_04_11:cisplatin:66:um::::20gen:hom_05_01:old scanner
+879	03_04_04_12:cisplatin:66:um::::20gen:hom_05_01:old scanner
+880	01_09_18_04:cisplatin:125:um::::20gen:hom_05_01:old scanner
+880	03_03_20_09:cisplatin:125:um::::20gen:hom_05_01:old scanner
+880	03_03_20_10:cisplatin:125:um::::20gen:hom_05_01:old scanner
+880	03_04_04_07:cisplatin:125:um::::20gen:hom_05_01:old scanner
+880	03_04_04_08:cisplatin:125:um::::20gen:hom_05_01:old scanner
+880	03_08_14_14:cisplatin:125:um::::20gen:hom_09_02:new scanner
+880	03_10_20_03:cisplatin:125:um::::20gen:hom_09_02:new scanner
+881	03_02_05_06:cisplatin:133.2:um::::20gen:hom_05_01:old scanner
+881	03_02_05_07:cisplatin:133.2:um::::20gen:hom_05_01:old scanner
+882	03_04_04_05:cisplatin:250:um::::20gen:hom_05_01:old scanner
+882	03_04_04_06:cisplatin:250:um::::20gen:hom_05_01:old scanner
+992	04_02_24_05:cisplatin:500:um::::-5gen:hom_09_02:new scanner
+992	04_03_17_06:cisplatin:500:um::::-5gen:hom_09_02:new scanner
+883	03_04_04_03:cisplatin:500:um::::20gen:hom_05_01:old scanner
+883	03_04_04_04:cisplatin:500:um::::20gen:hom_05_01:old scanner
+993	01_09_18_06:clotrimazole:1:um::::20gen:hom_05_01:old scanner
+994	01_09_18_05:clotrimazole:2:um::::20gen:hom_05_01:old scanner
+884	03_09_11_11:CoCl2:1250:um::::20gen:hom_09_02:new scanner
+885	05_05_13_10:curcumin:150:um::::-5gen:hom_09_02:new scanner
+886	03_09_11_06:CuSO4:10000:um::::20gen:hom_09_02:new scanner
+995	02_07_03_04:CuSO4:12000:um::::20gen:hom_05_01:old scanner
+887	03_11_26_07:cycloheximide:32.3:um::::20gen:hom_09_02:new scanner
+888	04_03_09_06:DMAEC:240000:um::::-5gen:hom_09_02:new scanner
+888	04_03_17_15:DMAEC:240000:um::::-5gen:hom_09_02:new scanner
+889	03_11_20_09:DMSO 4%::::::20gen:hom_09_02:new scanner
+890	02_07_03_03:FeCl4:5000:um::::20gen:hom_05_01:old scanner
+890	03_09_11_07:FeCl4:5000:um::::20gen:hom_09_02:new scanner
+891	04_05_17_07:FK506:0.05:ug/ml:NaCl:600:mm:20gen:hom_09_02:new scanner
+892	04_05_17_10:FK506:0.1:ug/ml:NaCl:600:mm:20gen:hom_09_02:new scanner
+893	03_12_18_15:FK506:50:um::::20gen:hom_09_02:new scanner
+894	04_01_14_10:FK506:62.5:um::::20gen:hom_09_02:new scanner
+895	03_12_18_14:FK506:100:um::::20gen:hom_09_02:new scanner
+896	03_12_18_13:FK506:200:um::::20gen:hom_09_02:new scanner
+897	03_12_18_16:FK506::::::20gen:hom_09_02:new scanner
+898	02_10_10_05:floxuridine:3.37:um::::20gen:hom_05_01:old scanner
+996	02_09_27_06:floxuridine:3.37:um::::5gen:hom_05_01:old scanner
+899	04_12_17_11:folic acid drop-out::::::10gen:hom_09_02:new scanner
+899	04_12_17_12:folic acid drop-out::::::10gen:hom_09_02:new scanner
+900	03_01_16_05:formestane:62.5:um::::20gen:hom_05_01:old scanner
+997	04_11_17_05:H2O2:5:mm::::5gen:hom_09_02:new scanner
+997	04_11_17_06:H2O2:5:mm::::5gen:hom_09_02:new scanner
+901	03_01_16_02:hexestrol:125:um::::20gen:hom_05_01:old scanner
+902	03_09_11_14:HgCl2:62.5:um::::20gen:hom_09_02:new scanner
+903	03_11_06_10:hydroxyurea:25000:um::::20gen:hom_09_02:new scanner
+998	04_02_24_04:hydroxyurea:50000:um::::-5gen:hom_09_02:new scanner
+999	03_11_06_09:hydroxyurea:50000:um::::20gen:hom_09_02:new scanner
+999	03_11_21_04:hydroxyurea:50000:um::::20gen:hom_09_02:new scanner
+1000	04_03_09_03:hydroxyurea:100000:um::::-5gen:hom_09_02:new scanner
+1001	03_11_21_05:hydroxyurea:100000:um::::20gen:hom_09_02:new scanner
+1002	04_03_09_04:hydroxyurea:200000:um::::-5gen:hom_09_02:new scanner
+904	03_08_19_04:hygromycin:0.4:um::::20gen:hom_09_02:new scanner
+905	03_11_26_06:hygromycin:13.75:um::::20gen:hom_09_02:new scanner
+906	03_10_08_10:indirubin:1000:um::::20gen:hom_09_02:new scanner
+907	04_11_24_03:inositol drop-out::::::10gen:hom_09_02:new scanner
+1003	02_02_05_06:isoleucine dropout::::::5gen:hom_05_01:old scanner
+908	03_09_11_13:K2Cr2O7:125:um::::20gen:hom_09_02:new scanner
+909	04_10_28_20:L-dopa:12.5:ug/ml::::20gen:hom_09_02:new scanner
+909	04_11_04_07:L-dopa:12.5:ug/ml::::20gen:hom_09_02:new scanner
+910	04_01_23_05:latrunculin:0.78:um::::-5gen:hom_09_02:new scanner
+910	05_02_24_11:latrunculin:0.78:um::::-5gen:hom_09_02:new scanner
+	04_01_23_06:latrunculin:0.78:um::::0gen:hom_09_02:new scanner
+1005	04_01_23_08:latrunculin:0.78:um::::10gen:hom_09_02:new scanner
+1004	04_01_23_07:latrunculin:0.78:um::::5gen:hom_09_02:new scanner
+911	03_11_26_05:latrunculin:0.975:um::::20gen:hom_09_02:new scanner
+912	04_09_28_08:latrunculin:3:um::::-5gen:hom_09_02:new scanner
+913	05_03_25_01:LiCl:100:mm::::-5gen:hom_09_02:new scanner
+915	05_03_25_02:LiCl:100:mm:FK506:1:ug/ml:-5gen:hom_09_02:new scanner
+913	05_04_20_01:LiCl:100:mm::::-5gen:hom_09_02:new scanner
+914	04_11_10_01:LiCl:150:mm::::20gen:hom_09_02:new scanner
+914	04_11_10_02:LiCl:150:mm::::20gen:hom_09_02:new scanner
+1006	02_07_11_10:lovastatin:77.2:um::::20gen:hom_05_01:old scanner
+1007	02_07_11_09:lovastatin:154.5:um::::20gen:hom_05_01:old scanner
+1008	02_01_29_02:lysine dropout::::::20gen:hom_05_01:old scanner
+1008	02_01_30_03:lysine dropout::::::20gen:hom_05_01:old scanner
+1009	02_02_05_02:lysine dropout::::::5gen:hom_05_01:old scanner
+1009	02_02_07_02:lysine dropout::::::5gen:hom_05_01:old scanner
+1009	02_02_13_01:lysine dropout::::::5gen:hom_05_01:old scanner
+916	03_01_16_04:mebendazole:1000:um::::20gen:hom_05_01:old scanner
+917	03_08_27_12:mechlorethamine:31.25:um::::20gen:hom_09_02:new scanner
+917	03_10_20_12:mechlorethamine:31.25:um::::20gen:hom_09_02:new scanner
+918	03_12_09_16:mechlorethamine:62.5:um::::-5gen:hom_09_02:new scanner
+918	03_12_19_01:mechlorethamine:62.5:um::::-5gen:hom_09_02:new scanner
+918	04_01_21_09:mechlorethamine:62.5:um::::-5gen:hom_09_02:new scanner
+	03_12_10_05:mechlorethamine:62.5:um::::0gen:hom_09_02:new scanner
+	03_12_19_02:mechlorethamine:62.5:um::::0gen:hom_09_02:new scanner
+	04_01_21_11:mechlorethamine:62.5:um::::0gen:hom_09_02:new scanner
+1010	03_12_10_09:mechlorethamine:62.5:um::::10gen:hom_09_02:new scanner
+1010	03_12_19_06:mechlorethamine:62.5:um::::10gen:hom_09_02:new scanner
+1010	04_01_21_15:mechlorethamine:62.5:um::::10gen:hom_09_02:new scanner
+1011	02_12_18_13:mechlorethamine:62.5:um::::20gen:hom_05_01:old scanner
+1011	03_02_05_04:mechlorethamine:62.5:um::::20gen:hom_05_01:old scanner
+1011	03_02_05_05:mechlorethamine:62.5:um::::20gen:hom_05_01:old scanner
+1011	03_03_20_07:mechlorethamine:62.5:um::::20gen:hom_05_01:old scanner
+1011	03_03_20_08:mechlorethamine:62.5:um::::20gen:hom_05_01:old scanner
+1011	03_08_27_13:mechlorethamine:62.5:um::::20gen:hom_09_02:new scanner
+1011	03_09_11_05:mechlorethamine:62.5:um::::20gen:hom_09_02:new scanner
+1012	03_12_10_07:mechlorethamine:62.5:um::::5gen:hom_09_02:new scanner
+1012	03_12_19_04:mechlorethamine:62.5:um::::5gen:hom_09_02:new scanner
+1012	04_01_21_13:mechlorethamine:62.5:um::::5gen:hom_09_02:new scanner
+919	03_09_10_01:melphalan:250:um::::20gen:hom_09_02:new scanner
+920	03_09_11_02:melphalan:500:um::::20gen:hom_09_02:new scanner
+921	03_11_20_11:melphalan:2000:um::::20gen:hom_09_02:new scanner
+922	02_12_18_11:methotrexate:250:um::::20gen:hom_05_01:old scanner
+922	03_02_07_06:methotrexate:250:um::::20gen:hom_05_01:old scanner
+922	03_02_07_07:methotrexate:250:um::::20gen:hom_05_01:old scanner
+1013	05_02_24_13:methotrexate:500:um::::-5gen:hom_09_02:new scanner
+924	03_01_16_03:methoxsalen:500:um::::20gen:hom_05_01:old scanner
+924	03_02_07_04:methoxsalen:500:um::::20gen:hom_05_01:old scanner
+1014	01_09_18_08:miconazole:25:nm::::20gen:hom_05_01:old scanner
+925	01_09_18_07:miconazole:50:nm::::20gen:hom_05_01:old scanner
+925	03_02_05_08:miconazole:50:nm::::20gen:hom_05_01:old scanner
+925	03_02_05_09:miconazole:50:nm::::20gen:hom_05_01:old scanner
+1015	01_09_19_05:miconazole:100:um::::20gen:hom_05_01:old scanner
+926	01_11_20_05:minimal media:400:um::::15gen:hom_05_01:old scanner
+1017	02_03_12_02:minimal media:400:um::::5gen:hom_05_01:old scanner
+1018	04_08_04_02:minimal media::::::-10gen:hom_09_02:new scanner
+1019	03_06_06_01:minimal media::::::-5gen:hom_09_02:old scanner
+1019	03_06_06_06:minimal media::::::-5gen:hom_09_02:old scanner
+1019	04_03_02_05:minimal media::::::-5gen:hom_09_02:new scanner
+	03_06_06_02:minimal media::::::0gen:hom_09_02:old scanner
+	03_06_06_03:minimal media::::::0gen:hom_09_02:old scanner
+	03_06_06_07:minimal media::::::0gen:hom_09_02:old scanner
+	03_06_06_08:minimal media::::::0gen:hom_09_02:old scanner
+	04_03_02_06:minimal media::::::0gen:hom_09_02:new scanner
+1020	03_06_06_05:minimal media::::::10gen:hom_09_02:old scanner
+1020	03_06_06_10:minimal media::::::10gen:hom_09_02:old scanner
+1020	04_03_02_08:minimal media::::::10gen:hom_09_02:new scanner
+1020	04_08_03_06:minimal media::::::10gen:hom_09_02:new scanner
+926	01_11_28_03:minimal media::::::15gen:hom_05_01:old scanner
+1016	01_07_27_22:minimal media::::::20gen:hom_05_01:old scanner
+1016	01_11_28_04:minimal media::::::20gen:hom_05_01:old scanner
+1017	01_07_27_21:minimal media::::::5gen:hom_05_01:old scanner
+1017	03_06_06_04:minimal media::::::5gen:hom_09_02:old scanner
+1017	03_06_06_09:minimal media::::::5gen:hom_09_02:old scanner
+1017	04_03_02_07:minimal media::::::5gen:hom_09_02:new scanner
+927	04_03_25_03:mitomycin c:1:mm::::-5gen:hom_09_02:new scanner
+927	04_03_30_03:mitomycin c:1:mm::::-5gen:hom_09_02:new scanner
+927	04_02_24_02:mitomycin c:1000:um::::-5gen:hom_09_02:new scanner
+927	04_03_17_03:mitomycin c:1000:um::::-5gen:hom_09_02:new scanner
+1021	04_03_17_08:mitomycin c:1000:um::::10gen:hom_09_02:new scanner
+1022	03_01_28_05:mitomycin c:1000:um::::20gen:hom_05_01:old scanner
+1022	03_02_19_03:mitomycin c:1000:um::::20gen:hom_05_01:old scanner
+1022	03_02_19_04:mitomycin c:1000:um::::20gen:hom_05_01:old scanner
+1022	03_11_21_03:mitomycin c:1000:um::::20gen:hom_09_02:new scanner
+928	04_02_24_03:MMS:0.002:%::::-5gen:hom_09_02:new scanner
+928	04_03_17_04:MMS:0.002:%::::-5gen:hom_09_02:new scanner
+928	04_03_25_04:MMS:0.002:%::::-5gen:hom_09_02:new scanner
+1023	04_03_17_09:MMS:0.002:%::::10gen:hom_09_02:new scanner
+1024	04_01_14_08:MMS:0.002:%::::20gen:hom_09_02:new scanner
+1025	04_03_09_02:MMS:0.004:%::::-5gen:hom_09_02:new scanner
+929	04_11_17_03:MnCl2:1:mm::::20gen:hom_09_02:new scanner
+929	04_11_17_04:MnCl2:1:mm::::20gen:hom_09_02:new scanner
+930	04_11_17_07:MnCl2:2:mm::::20gen:hom_09_02:new scanner
+930	04_11_17_08:MnCl2:2:mm::::20gen:hom_09_02:new scanner
+931	04_10_28_19:MPP+:250:ug/ml::::20gen:hom_09_02:new scanner
+931	04_11_04_06:MPP+:250:ug/ml::::20gen:hom_09_02:new scanner
+932	03_01_09_13:mycophenolic acid:125:um::::20gen:hom_05_01:old scanner
+933	05_08_09_05:myriocin:0.2:ug/ml::::-5gen:hom_09_02:new scanner
+934	04_05_17_06:NaCl:600:mm:::mm:20gen:hom_09_02:new scanner
+935	04_11_10_09:NaCl:700:um::::20gen:hom_09_02:new scanner
+935	04_11_10_10:NaCl:700:um::::20gen:hom_09_02:new scanner
+1026	01_12_11_03:NaCl:1000:um::::15gen:hom_05_01:old scanner
+1026	01_12_11_04:NaCl:1000:um::::15gen:hom_05_01:old scanner
+936	04_08_25_09:NaF:10000:um::::20gen:hom_09_02:new scanner
+936	04_08_25_10:NaF:10000:um::::20gen:hom_09_02:new scanner
+937	04_08_25_07:NaF:20000:um::::20gen:hom_09_02:new scanner
+937	04_08_25_08:NaF:20000:um::::20gen:hom_09_02:new scanner
+938	04_11_24_05:niacin drop-out::::::10gen:hom_09_02:new scanner
+1027	02_02_22_03:nitric oxide:800:um::::20gen:hom_05_01:old scanner
+1028	01_11_20_06:nitric oxide::::::20gen:hom_05_01:old scanner
+1028	01_11_20_07:nitric oxide::::::20gen:hom_05_01:old scanner
+939	04_02_24_10:no drug irradiated::::::-5gen:hom_09_02:new scanner
+939	04_03_09_05:no drug irradiated::::::-5gen:hom_09_02:new scanner
+940	04_09_16_15:nocodazole:10:ug/ml::::-5gen:hom_09_02:new scanner
+940	04_09_16_16:nocodazole:10:ug/ml::::-5gen:hom_09_02:new scanner
+941	03_12_09_03:norcantharidin:100:um::::20gen:hom_09_02:new scanner
+942	03_11_06_11:norcantharidin:2500:um::::20gen:hom_09_02:new scanner
+942	03_11_26_14:norcantharidin:2500:um::::20gen:hom_09_02:new scanner
+1029	01_08_28_11:nystatin:5:um::::20gen:hom_05_01:old scanner
+1030	01_12_04_03:nystatin:10:um::::15gen:hom_05_01:old scanner
+1030	01_12_04_04:nystatin:10:um::::15gen:hom_05_01:old scanner
+1031	01_12_04_01:nystatin:10:um::::5gen:hom_05_01:old scanner
+1031	01_12_04_02:nystatin:10:um::::5gen:hom_05_01:old scanner
+943	03_09_10_02:oxaliplatin:1000:um::::20gen:hom_09_02:new scanner
+944	04_02_24_07:oxaliplatin:4000:um::::-5gen:hom_09_02:new scanner
+944	04_03_17_07:oxaliplatin:4000:um::::-5gen:hom_09_02:new scanner
+1032	03_11_20_10:oxaliplatin:4000:um::::20gen:hom_09_02:new scanner
+945	04_11_24_04:PABA drop-out::::::10gen:hom_09_02:new scanner
+946	04_03_02_10:papuamide B:0.37:ug/ml::::-5gen:hom_09_02:new scanner
+1033	04_03_02_16:papuamide B:0.37:ug/ml::::20gen:hom_09_02:new scanner
+947	04_03_02_09:papuamide B:0.7:ug/ml::::-5gen:hom_09_02:new scanner
+1034	04_03_02_15:papuamide B:0.7:ug/ml::::20gen:hom_09_02:new scanner
+948	03_12_19_15:papuamide B:1:ug/ml::::20gen:hom_09_02:new scanner
+949	04_10_28_21:paraquat:5000:um::::20gen:hom_09_02:new scanner
+949	04_11_04_08:paraquat:5000:um::::20gen:hom_09_02:new scanner
+950	04_08_26_05:parkinson-inducing peptide:250:um::::20gen:hom_09_02:new scanner
+950	04_08_26_06:parkinson-inducing peptide:250:um::::20gen:hom_09_02:new scanner
+951	03_01_28_04:parthenolide:1000:um::::20gen:hom_05_01:old scanner
+952	05_03_25_03:pH7.5::::::-5gen:hom_09_02:new scanner
+953	05_03_25_04:pH7.5:::FK506:1:ug/ml:-5gen:hom_09_02:new scanner
+1035	01_12_11_05:pH8::::::15gen:hom_05_01:old scanner
+1035	01_12_11_06:pH8::::::15gen:hom_05_01:old scanner
+1035	01_12_13_02:pH8::::::15gen:hom_05_01:old scanner
+1036	01_07_27_18:pH8::::::20gen:hom_05_01:old scanner
+1036	04_11_17_01:pH8::::::20gen:hom_09_02:new scanner
+1036	04_11_17_02:pH8::::::20gen:hom_09_02:new scanner
+954	05_05_13_09:potassium disulfite:2500:um::::-5gen:hom_09_02:new scanner
+955	04_01_14_04:propyl disulfide:0.49:%::::20gen:hom_09_02:new scanner
+956	04_02_24_14:psoralen:0.5:um::::-5gen:hom_09_02:new scanner
+956	04_03_17_13:psoralen:0.5:um::::-5gen:hom_09_02:new scanner
+957	03_08_14_11:psoralen:62.5:um::::20gen:hom_09_02:new scanner
+958	04_02_24_13:psoralen irradiated:0.5:um::::-5gen:hom_09_02:new scanner
+958	04_03_17_10:psoralen irradiated:0.5:um::::-5gen:hom_09_02:new scanner
+958	04_03_17_11:psoralen irradiated:0.5:um::::-5gen:hom_09_02:new scanner
+958	04_03_25_05:psoralen irradiated:0.5:um::::-5gen:hom_09_02:new scanner
+959	03_12_19_13:ptp2:2:um::::20gen:hom_09_02:new scanner
+960	03_12_19_12:ptp2:3:um::::20gen:hom_09_02:new scanner
+961	04_11_24_02:pyridoxine HCl partial drop-out:12.5:%::::10gen:hom_09_02:new scanner
+962	03_09_11_15:rapamycin:4.88:nm::::20gen:hom_09_02:new scanner
+963	03_11_26_02:rapamycin:5:nm::::20gen:hom_09_02:new scanner
+964	04_01_14_12:rapamycin:6:nm::::20gen:hom_09_02:new scanner
+965	04_01_22_09:rapamycin:9:nm::::-5gen:hom_09_02:new scanner
+	04_01_22_10:rapamycin:9:nm::::0gen:hom_09_02:new scanner
+1037	04_01_23_01:rapamycin:9:nm::::10gen:hom_09_02:new scanner
+1038	04_01_22_11:rapamycin:9:nm::::5gen:hom_09_02:new scanner
+966	03_10_08_05:rhizoxin:200:um::::20gen:hom_09_02:new scanner
+967	03_10_08_07:RO 106-9920 (Calbio):125:um::::20gen:hom_09_02:new scanner
+968	04_08_26_07:rotenone:250:um::::20gen:hom_09_02:new scanner
+969	03_01_28_01:sanguinarine sulfate:250:um::::20gen:hom_05_01:old scanner
+970	03_09_11_12:sodium arsenite:625:um::::20gen:hom_09_02:new scanner
+971	04_11_10_03:sorbitol:1:m::::20gen:hom_09_02:new scanner
+971	04_11_10_04:sorbitol:1:m::::20gen:hom_09_02:new scanner
+1039	01_12_11_02:sorbitol:1.5:m::::15gen:hom_05_01:old scanner
+1039	01_11_28_02:sorbitol:1.5e+06:um::::15gen:hom_05_01:old scanner
+1039	01_12_11_01:sorbitol:1.5e+06:um::::15gen:hom_05_01:old scanner
+1039	01_12_13_01:sorbitol:1.5e+06:um::::15gen:hom_05_01:old scanner
+1040	01_07_27_20:sorbitol:1.5e+06:um::::20gen:hom_05_01:old scanner
+1041	01_07_27_19:sorbitol:1.5e+06:um::::5gen:hom_05_01:old scanner
+1041	01_11_28_01:sorbitol:1.5e+06:um::::5gen:hom_05_01:old scanner
+972	03_10_08_06:splitomicin:250:um::::20gen:hom_09_02:new scanner
+973	03_08_27_15:staurosporine:6.25:um::::20gen:hom_09_02:new scanner
+973	03_09_11_04:staurosporine:6.25:um::::20gen:hom_09_02:new scanner
+974	03_08_27_14:streptovitacin:31.25:um::::20gen:hom_09_02:new scanner
+975	04_03_25_07:streptozotocin:2:mm::::-5gen:hom_09_02:new scanner
+1042	04_07_16_09:streptozotocin:2:mm::::20gen:hom_09_02:new scanner
+975	04_03_17_16:streptozotocin:2000:um::::-5gen:hom_09_02:new scanner
+1042	03_10_08_13:streptozotocin:2000:um::::20gen:hom_09_02:new scanner
+1043	02_01_23_05:synthetic complete::::::15gen:hom_05_01:old scanner
+1043	02_01_29_01:synthetic complete::::::15gen:hom_05_01:old scanner
+1043	02_01_30_02:synthetic complete::::::15gen:hom_05_01:old scanner
+1043	02_03_13_01:synthetic complete::::::15gen:hom_05_01:old scanner
+1044	02_02_22_02:synthetic complete::::::20gen:hom_05_01:old scanner
+1045	02_02_05_01:synthetic complete::::::5gen:hom_05_01:old scanner
+1045	02_02_07_01:synthetic complete::::::5gen:hom_05_01:old scanner
+1045	02_02_20_01:synthetic complete::::::5gen:hom_05_01:old scanner
+1045	02_03_12_01:synthetic complete::::::5gen:hom_05_01:old scanner
+976	02_12_18_12:teniposide:500:um::::20gen:hom_05_01:old scanner
+977	03_10_08_04:terreic acid:1000:um::::20gen:hom_09_02:new scanner
+978	03_01_28_06:thiabendazole:250:um::::20gen:hom_05_01:old scanner
+979	04_11_24_06:thiamine HCl drop-out::::::10gen:hom_09_02:new scanner
+980	05_05_13_11:thimerosal:125:nm::::-5gen:hom_09_02:new scanner
+981	03_08_14_12:thio-tepa:1000:um::::20gen:hom_09_02:new scanner
+1046	02_02_07_04:threonine dropout::::::5gen:hom_05_01:old scanner
+1046	02_02_20_02:threonine dropout::::::5gen:hom_05_01:old scanner
+982	03_10_08_11:tryptanthrin:250:um::::20gen:hom_09_02:new scanner
+1047	02_01_23_04:tryptophan dropout::::::15gen:hom_05_01:old scanner
+1048	02_02_05_03:tryptophan dropout::::::5gen:hom_05_01:old scanner
+1048	02_02_07_03:tryptophan dropout::::::5gen:hom_05_01:old scanner
+1048	02_02_13_02:tryptophan dropout::::::5gen:hom_05_01:old scanner
+1049	02_02_07_05:tyrosine dropout::::::5gen:hom_05_01:old scanner
+983	03_10_20_02:tyrphostin:200:um::::20gen:hom_09_02:new scanner
+984	04_10_26_06:vitamin drop-out control media:0:::::10gen:hom_09_02:new scanner
+985	03_12_19_09:wiskostatin:19:um::::20gen:hom_09_02:new scanner
+986	03_12_19_08:wiskostatin:29:um::::20gen:hom_09_02:new scanner
+987	03_10_08_09:wortmannin:50:um::::20gen:hom_09_02:new scanner
+988	04_03_18_06:xanthohumol:6.2:um::::20gen:hom_09_02:new scanner
+988	04_03_18_07:xanthohumol:6.2:um::::20gen:hom_09_02:new scanner
+1050	01_06_14_07:YP glycerol::::::15gen:hom_05_01:old scanner
+1050	01_06_28_04:YP glycerol::::::15gen:hom_05_01:old scanner
+1051	01_06_14_05:YP glycerol::::::5gen:hom_05_01:old scanner
+1051	01_06_26_10:YP glycerol::::::5gen:hom_05_01:old scanner
+989	03_09_11_09:ZnCl2:1875:um::::20gen:hom_09_02:new scanner
