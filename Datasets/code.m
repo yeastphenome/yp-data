@@ -10,7 +10,7 @@ firstauthor_lastauthor_YYYY.pmid = 12345678;
 % the paper's page on www.yeastphenome.org & save the file to ./extras
 
 % Load the list
-[FILENAMES{end+1}, d] = read_data('textread', './extras/YeastPhenome_<PMID>_datasets_list.txt','%d %s','delimiter','\t');
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(firstauthor_lastauthor_YYYY.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
