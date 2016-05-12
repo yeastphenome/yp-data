@@ -1,0 +1,12 @@
+400	Camptothecin
+399	Hydroxyurea
+406	Benomyl
+404	Caffeine
+408	Cycloheximide
+398	CsA
+397	FK506
+401	Fluconazole
+405	Rapamycin
+407	Sulfometuron methyl
+402	Tunicamycin
+403	Wortmannin
