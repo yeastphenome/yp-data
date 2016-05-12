@@ -6,13 +6,16 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 firstauthor_lastauthor_YYYY.pmid = 12345678;
 
-phenotypes = {'phenotype1'; 'phenotype2'};
-treatments = {'condition1'; 'condition2'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
 
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', './extras/YeastPhenome_<PMID>_datasets_list.txt','%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
 
-%% Hit strains
+%% Load the data
 
-% Load hit strains
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/data.xlsx', 'Spreadsheet name');
 
 % Get the list of ORFs and the correponding data 
@@ -22,7 +25,7 @@ hit_strains = data(:,1);
 % Get the data itself
 hit_data = ones(size(hit_strains)); % if the dataset is binary
 hit_data = data(:,2:4); % if the dataset is discrete or binary
-    
+   
 % Eliminate all white spaces & capitalize
 hit_strains = clean_genename(hit_strains);
 
@@ -41,6 +44,14 @@ hit_strains(ismember(hit_strains, {'BLANK'})) = [];
 
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [1 2 3 4 5 6];
+[hit_data_ids, hit_data] = grpstats(hit_data', hit_data_ids, {'gname','mean'});
+hit_data = hit_data';
+hit_data_ids = cellfun(@str2num, hit_data_ids);
 
 %% Tested strains (only if the dataset is not quantitative and the tested strains are provided separately)
 
@@ -75,16 +86,22 @@ tested_strains = [tested_strains; missing];
 
 %% Prepare final dataset
 
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
 % If the dataset is quantitative:
 firstauthor_lastauthor_YYYY.orfs = hit_strains;
-firstauthor_lastauthor_YYYY.ph = strcat(phenotypes, '; ', treatments);
+firstauthor_lastauthor_YYYY.ph = hit_data_names;
 firstauthor_lastauthor_YYYY.data = hit_data;
-
+firstauthor_lastauthor_YYYY.dataset_ids = hit_data_ids;
 
 % If the dataset is discrete/binary and the tested strains were provided separately:
 firstauthor_lastauthor_YYYY.orfs = tested_strains;
-firstauthor_lastauthor_YYYY.ph = strcat(phenotypes, '; ', treatments);
+firstauthor_lastauthor_YYYY.ph = hit_data_names;
 firstauthor_lastauthor_YYYY.data = zeros(length(firstauthor_lastauthor_YYYY.orfs),length(firstauthor_lastauthor_YYYY.ph));
+firstauthor_lastauthor_YYYY.dataset_ids = hit_data_ids;
 
 [~,ind1,ind2] = intersect(hit_strains, firstauthor_lastauthor_YYYY.orfs);
 firstauthor_lastauthor.data(ind2,:) = hit_data(ind1,:);

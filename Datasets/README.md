@@ -1,6 +1,12 @@
 YeastPhenome.org Dataset README File
 ====================================
 
+Disclaimer
+----------
+
+THESE DATA MAY CONTAIN ERRORS. YeastPhenome.org is currently running in beta version. The data are available for download, but we cannot guarantee that no errors or code bugs have been introduced by the processing pipeline. This warning will be removed after all cross-checks and validations have been completed. In the meantime, please, be careful when using the data.
+
+
 The Basics
 ----------
 
