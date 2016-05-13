@@ -1,4 +1,4 @@
-%% Choi~Basrai, 2015
+%% Choy~Basrai, 2015
 function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
@@ -79,8 +79,6 @@ final_data(ind2,2) = hit_data2(ind1);
 
 final_data = nanmean(final_data, 2);
 
-final_data = 1 ./ final_data;
-
 %% Prepare final dataset
 
 % Match the dataset ids with the dataset standard names
@@ -92,7 +90,7 @@ hit_data_names(ind2) = datasets.standard_name(ind1);
 choy_basrai_2015.orfs = final_strains;
 choy_basrai_2015.ph = hit_data_names;
 choy_basrai_2015.data = final_data;
-choy_basrai_2015.dataset_ids = hit_dataset_ids;
+choy_basrai_2015.dataset_ids = hit_data_ids;
 
 %% Save
 
