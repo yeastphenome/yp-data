@@ -1,0 +1,1 @@
+768	hap a | growth (colony size) | nicotinamide [120 mM]
