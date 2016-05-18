@@ -1,0 +1,82 @@
+192A4-Stichloroside 	676
+4-Hydroxytamoxifen 	613
+Abietic acid 	604
+Actinomycin 	614
+Agelasine E 	615
+Alamethicin 	616
+Amantadine hydrochloride 	617
+Amiodarone 	618
+Amphotericin 	619
+Anisomycin 	620
+Artemisinin 	621
+Basiliskamide 	622
+Benomyl 	623
+Brefeldin A 	624
+Caffeine 	625
+Calcium ionophore 	626
+Camptothecin 	610
+Caspofungin 	627
+Cerulenin 	628
+CG4-Theopalauamide 	679
+Chlorpromazine 	629
+Cisplatin 	630
+Clomiphene 	631
+Clotrimazole 	632
+Conine 	607
+Cyclopiazonic acid 	633
+Cytochalasin A 	634
+Desipramine 	635
+Doxycycline 	636
+Dyclonine 	637
+Emetine 	638
+Emodin 	639
+Extract 00-132 	640
+Extract 00-192 	641
+Extract 00-243 	642
+Extract 00-303C 	643
+Extract 00-89 	644
+Extract 6592 	645
+Extract 95-57 	646
+Fenpropimorph 	647
+FK506 	648
+Fluconazole 	649
+Geldanamycin 	650
+Haloperidol 	651
+Harmine 	652
+Hoechst 	653
+Hydrogen peroxide 	654
+Hydroxyethilhidrazine 	612
+Hydroxyurea 	655
+Hygromycin B 	656
+Latrunculin B 	657
+LY-294,002 	658
+Menthol 	609
+Mitomycin C 	660
+MMS 	659
+Neomycin sulfate 	661
+Nigericin 	662
+Nocodazole 	663
+Nystatin 	664
+Oligomycin 	665
+Papuamide B 	666
+Parthenolide 	667
+Pentamidine 	668
+Phenantroline 	611
+Phenylarsine oxide 	669
+Plumbagin 	670
+Radicicol 	671
+Raloxifene 	672
+Rapamycin 	673
+Sodium Azide 	674
+Staurosporine 	675
+Sulfometuron methyl 	677
+Tamoxifen 	678
+Thialysine 	680
+Trichostatin A 	681
+Trifluoroperazine 	682
+Tunicamycin 	683
+U73122 	684
+Usnic acid 	608
+Valinomycin 	686
+Verrucarin 	687
+Wortmannin 	688
