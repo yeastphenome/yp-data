@@ -1,0 +1,2 @@
+746	hap a | rDNA copy number | YPD [standard]
+756	hap a | rDNA stability | YPD [standard]
