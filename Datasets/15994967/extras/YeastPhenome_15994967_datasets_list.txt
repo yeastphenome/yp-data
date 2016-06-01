@@ -1,0 +1,1 @@
+183	hom | growth (pooled CFU) | cisplatin [160 umol/L] | discrete | discrete | discrete
