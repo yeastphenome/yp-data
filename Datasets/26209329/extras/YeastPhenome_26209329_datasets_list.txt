@@ -1,0 +1,1 @@
+767	hap alpha | protein transport | dimethyl sulfoxide [1%], Sortin2 [47 uM], YPD [standard] | discrete | discrete | discrete
