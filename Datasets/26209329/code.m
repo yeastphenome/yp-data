@@ -47,7 +47,7 @@ final_data = zeros(size(tested_orfs));
 
 % Separate sensitive vs resistant in hit_data
 hit_data = data(3:end, 4);
-hit_data(strcmp('R', hit_data)) = {1};
+hit_data(strcmp('R', hit_data)) = {-2};
 indx = ~cellfun(@isnumeric, hit_data);
 hit_data(indx) = {-1};
 hit_data = cell2mat(hit_data);
