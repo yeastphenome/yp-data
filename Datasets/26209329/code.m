@@ -27,29 +27,36 @@ tested_orfs = clean_orf(tested_orfs);
 
 % Find anything that doesn't look like an ORF and remove it
 inds = find(~is_orf(tested_orfs));
-tested_orfs(inds, :) = [];
+tested_orfs(inds) = [];
+
+tested_orfs = unique(tested_orfs);
 
 %% Hit Strains
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/40659_2015_32_MOESM1_ESM.xlsx', 'Sheet1');
 
+data = data(3:end,:);
+
 % Get the list of ORFs
-hit_orfs = data(3:end, 1);
+hit_orfs = data(:, 1);
 hit_orfs = clean_orf(hit_orfs);
 
 % Find anything that doesn't look like an ORF and remove it
-inds = cellfun(@isnumeric, hit_orfs);
-hit_orfs(inds, :) = [];
-data(inds, :) = [];
+hit_orfs(strcmp('YCR020-W', hit_orfs)) = {'YCR020W-B'};
+hit_orfs(strcmp('YJL0045W', hit_orfs)) = {'YJL045W'};
+inds = find(~is_orf(hit_orfs));
+disp(hit_orfs(inds));
+
+hit_orfs(inds) = [];
+data(inds,:) = [];
 
 %% Data
 % Make an array of zeros
 final_data = zeros(size(tested_orfs));
 
 % Separate sensitive vs resistant in hit_data
-hit_data = data(3:end, 4);
+hit_data = data(:,4);
 hit_data(strcmp('R', hit_data)) = {-2};
-indx = ~cellfun(@isnumeric, hit_data);
-hit_data(indx) = {-1};
+hit_data(strcmp('Wt', hit_data)) = {-1};
 hit_data = cell2mat(hit_data);
 
 % Match the hit names with all the names

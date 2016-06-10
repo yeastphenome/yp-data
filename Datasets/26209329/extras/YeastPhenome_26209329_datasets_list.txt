@@ -1,1 +1,1 @@
-767	hap alpha | protein transport | dimethyl sulfoxide [1%], Sortin2 [47 uM], YPD [standard] | discrete | discrete | discrete
+767	hap alpha | transport to/from cell surface (CPY) | dimethyl sulfoxide [1%], Sortin2 [47 uM], YPD [standard] | discrete | discrete | discrete
