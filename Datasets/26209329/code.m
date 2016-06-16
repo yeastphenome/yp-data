@@ -1,4 +1,4 @@
-%% Jiang~Zhang, 2014
+%% Vasquez-Soto~Norambuena, 2015
 function FILENAMES = code()
 
 addpath(genpath('../../Yeast-Matlab-Utils/'));
