@@ -1,0 +1,1 @@
+771	hom | growth (colony size) | cadmium dichloride [100 uM] | discrete | discrete | discrete
