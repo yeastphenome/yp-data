@@ -65,7 +65,7 @@ data.dataname(ind2) = datasets.standard_name(ind1);
 % If the dataset is quantitative:
 lee_giaever_2014.orfs = data.labels_row;
 lee_giaever_2014.ph = data.dataname;
-lee_giaever_2014.data = data.data;
+lee_giaever_2014.data = -data.data;         % taking the opposite because the data are fitness scores = log2(ctrl/sample)
 lee_giaever_2014.dataset_ids = data.datasetid;
 
 
