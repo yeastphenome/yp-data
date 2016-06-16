@@ -24,11 +24,10 @@ tested_orfs = all_orfs(3:end,2);
 
 % Clean them up
 tested_orfs = clean_orf(tested_orfs);
-tested_orfs = translate(tested_orfs);
+
+tested_orfs(strcmp('YELOO1C', tested_orfs)) = {'YEL001C'};
 
 % Find anything that doesn't look like an ORF and remove it
-tested_orfs(strcmp('YMR41W', tested_orfs)) = {''};
-tested_orfs(strcmp('YEL001C', tested_orfs)) = {''};
 inds = find(~is_orf(tested_orfs));
 tested_orfs(inds) = [];
 
@@ -44,7 +43,6 @@ hit_orfs = clean_orf(hit_orfs);
 % Find anything that doesn't look like an ORF and remove it
 inds = find(~is_orf(hit_orfs));
 hit_orfs(inds) = [];
-data(inds,:) = [];
 
 %% Data
 % Make an array of zeros
