@@ -1,0 +1,2 @@
+694	hap alpha | growth (spot assay) | ethanol [2%], temperature [37ºC] | discrete | discrete | discrete
+695	hap alpha | growth (spot assay) | ethanol [2%], temperature [30°C] | discrete | discrete | discrete
