@@ -1,0 +1,2 @@
+606	hap a | abundance of a specific protein/peptide (Rnr3) | methyl methanesulfonate [0.03%] | quantitative | quantitative | quantitative
+693	hap a | abundance of a specific protein/peptide (Rnr3) | YPD [standard] | quantitative | quantitative | quantitative
