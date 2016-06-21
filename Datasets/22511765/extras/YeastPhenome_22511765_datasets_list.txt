@@ -1,0 +1,2 @@
+19	hap a | cell death (frequency of dead cells) | tunicamycin [2.5 ug/ml] | quantitative | quantitative | quantitative
+243	hap a | cell death (frequency of dead cells) | tacrolimus (anhydrous) [1 ug/ml], tunicamycin [2.5 ug/ml] | quantitative | quantitative | quantitative
