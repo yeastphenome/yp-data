@@ -6,9 +6,6 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 schmidt_boyer_2012.pmid = 22902726;
 
-phenotypes = {'growth (OD)';'growth (colony size)';'growth (MIC)'};
-treatments = {'boric acid'};
-
 % MANUAL. Download the list of dataset ids and standard names from
 % the paper's page on www.yeastphenome.org & save the file to ./extras
 
