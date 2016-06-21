@@ -6,15 +6,18 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 luban_schmidt_2005.pmid = 15908144;
 
-phenotypes = {'growth';'growth (after introduction of intronless mtDNA)'};
-treatments = {'Gly'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
 
-% Load tested
-[FILENAMES, tested_orfs] = read_data('textscan', './raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt', '%s\n');
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(luban_schmidt_2005.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+%% Load tested
+
+[FILENAMES{end+1}, tested_orfs] = read_data('textscan', './raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt', '%s\n');
 tested_orfs = clean_orf(tested_orfs);
-
-inds = find(~is_orf(tested_orfs));
-disp(tested_orfs(inds));
 
 tested_orfs(strcmp('YBL098\V', tested_orfs)) = {'YBL098W'};
 tested_orfs(strcmp('YDR07SW', tested_orfs)) = {'YDR075W'};
@@ -30,41 +33,50 @@ tested_orfs(strcmp('YNL09SC', tested_orfs)) = {'YNL095C'};
 tested_orfs(strcmp('YPLOI8W', tested_orfs)) = {'YPL018W'};
 tested_orfs(strcmp('YPL07LC', tested_orfs)) = {'YPL071C'};
 
+inds = find(~is_orf(tested_orfs));
+disp(tested_orfs(inds));
+
 tested_orfs = unique(tested_orfs);
 
-% Load data
-[FILENAMES, pet_mutants] = read_data('textscan', './raw_data/list_of_pet_mutants.txt', '%s');
-pet_mutants = clean_orf(pet_mutants);
+%% Load data
 
-inds = find(~is_orf(pet_mutants));
-disp(pet_mutants(inds));
+[FILENAMES{end+1}, hit_orfs] = read_data('textscan', './raw_data/list_of_pet_mutants.txt', '%s');
+hit_orfs = clean_orf(hit_orfs);
 
-pet_mutants = unique(pet_mutants);
+inds = find(~is_orf(hit_orfs));
+disp(hit_orfs(inds));
 
-[FILENAMES, intron_mutants] = read_data('textscan', './raw_data/list_of_intron_def_mutants.txt', '%s');
-intron_mutants = clean_orf(intron_mutants);
+hit_orfs = unique(hit_orfs);
+hit_data = ones(size(hit_orfs));
 
-inds = find(~is_orf(intron_mutants));
-disp(intron_mutants(inds));
+missing = setdiff(hit_orfs, tested_orfs);
 
-intron_mutants = unique(intron_mutants);
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [417];
 
+%% Prepare the final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is discrete/binary and the tested strains were provided separately:
 luban_schmidt_2005.orfs = tested_orfs;
-luban_schmidt_2005.data = nan(length(tested_orfs),2);
+luban_schmidt_2005.ph = hit_data_names;
+luban_schmidt_2005.data = zeros(length(luban_schmidt_2005.orfs),length(luban_schmidt_2005.ph));
+luban_schmidt_2005.dataset_ids = hit_data_ids;
 
-missing = setdiff(pet_mutants, tested_orfs);
+[~,ind1,ind2] = intersect(hit_orfs, luban_schmidt_2005.orfs);
+luban_schmidt_2005.data(ind2,:) = hit_data(ind1,:);
 
-[~,ind1,ind2] = intersect(tested_orfs, pet_mutants);
-luban_schmidt_2005.data(ind1,1) = 1;
-luban_schmidt_2005.data(isnan(luban_schmidt_2005.data(:,1)),1) = 0;
-
-luban_schmidt_2005.data(ind1,2) = 0;
-[~,ind1,ind2] = intersect(tested_orfs, intron_mutants);
-luban_schmidt_2005.data(ind1,2) = -1;
-
-luban_schmidt_2005.ph = strcat(phenotypes, '; ', treatments);
+%% Save
 
 save('./luban_schmidt_2005.mat','luban_schmidt_2005');
+
+%% Print out
 
 fid = fopen('./luban_schmidt_2005.txt','w');
 write_matrix_file(fid, luban_schmidt_2005.orfs, luban_schmidt_2005.ph, luban_schmidt_2005.data);
