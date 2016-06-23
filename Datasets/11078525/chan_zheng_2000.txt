@@ -1,4 +1,4 @@
-ORF	growth;rapamycin, 25 nM
+ORF	hap a | growth (streaks on agar) | sirolimus [25 nM] | discrete | discrete | discrete
 YDR099W	0.100
 YAL009W	0.010
 YCL008C	0.010
