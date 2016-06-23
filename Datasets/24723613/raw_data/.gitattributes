@@ -1,1 +1,0 @@
-fitness_defect_matrix_hom.txt filter=lfs diff=lfs merge=lfs -text
