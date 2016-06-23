@@ -4,71 +4,83 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-
-
-xie_huang_2005.source = {'Jing Huang'};
-xie_huang_2005.downloaddate = {'2013-03-21'};
 xie_huang_2005.pmid = 15883373;
 
-phenotypes = {'Growth, spot intensity on cell microarray'};
-treatments = {'Rapamycin, 10 nM'; 'Rapamycin, 30 nM'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
 
-[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa10nm');
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(xie_huang_2005.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+
+%% 
+[FILENAMES{end+1}, data1.raw] = read_data('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa10nm');
 [FILENAMES{end+1}, data2.raw] = read_data('xlsread','./raw_data/rapa_cellarray_all.xls', 'Rapa30nm');
 
 % Get indices of the data columns
-ind_data = find(strcmp('Rapa/DMSO', data.raw(1,:)));
+ind_data1 = find(strcmp('Rapa/DMSO', data1.raw(1,:)));
 ind_data2 = find(strcmp('Rapa/DMSO', data2.raw(1,:)));
 
+hit_orfs1 = data1.raw(:,3);
+hit_orfs2 = data2.raw(:,3);
+
+hit_data1 = data1.raw(:,ind_data1);
+hit_data2 = data2.raw(:,ind_data2);
+
 % Eliminate anything that doesn't look like an ORF
-inds = find(cellfun(@isnumeric, data.raw(:,3)));
-data.raw(inds,:) = [];
-inds = find(cellfun(@isnumeric, data2.raw(:,3)));
-data2.raw(inds,:) = [];
+hit_orfs1 = clean_orf(hit_orfs1);
+hit_orfs2 = clean_orf(hit_orfs2);
 
-inds = setdiff(1:length(data.raw(:,3)),strmatch('Y', data.raw(:,3)));
-data.raw(inds,:) = [];
-inds = setdiff(1:length(data2.raw(:,3)), strmatch('Y', data2.raw(:,3)));
-data2.raw(inds,:) = [];
+inds = find(~is_orf(hit_orfs1));
+disp(hit_orfs1(inds));
+hit_orfs1(inds) = [];
+hit_data1(inds,:) = [];
 
-% Eliminate white spaces before/after ORF
-data.raw(:,3) = cellfun(@strtrim, data.raw(:,3),'UniformOutput',0);
-data2.raw(:,3) = cellfun(@strtrim, data2.raw(:,3),'UniformOutput',0);
+inds = find(~is_orf(hit_orfs2));
+disp(hit_orfs2(inds));
+hit_orfs2(inds) = [];
+hit_data2(inds,:) = [];
 
-data3.orfs = upper(data.raw(:,3));
-data3.data = data.raw(:,ind_data);
-
-% Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, data3.data)==0);
-data3.data(inds) = {NaN};
-data3.data = cell2mat(data3.data);
-
-data4.orfs = upper(data2.raw(:,3));
-data4.data = data2.raw(:,ind_data2);
-inds = find(cellfun(@isnumeric, data4.data)==0);
-data4.data(inds) = {NaN};
-data4.data = cell2mat(data4.data);
+hit_data1 = cell2mat(hit_data1);
+hit_data2 = cell2mat(hit_data2);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data3.data, data3.orfs, {'gname','mean'});
-xie_huang_2005.orfs = t;
-xie_huang_2005.data = t2;
-xie_huang_2005.ph = strcat(phenotypes, '; ', treatments);
+[hit_orfs1,hit_data1] = grpstats(hit_data1, hit_orfs1, {'gname','mean'});
+[hit_orfs2,hit_data2] = grpstats(hit_data2, hit_orfs2, {'gname','mean'});
 
-[t,t2] = grpstats(data4.data, data4.orfs, {'gname','mean'});
+hit_orfs = unique([hit_orfs1; hit_orfs2]);
+hit_data = nan(length(hit_orfs),2);
 
-[t3,ind1,ind2] = intersect(xie_huang_2005.orfs, t);
-xie_huang_2005.data(ind1,end+size(t2,2)) = t2(ind2,:);
+[~,ind1,ind2] = intersect(hit_orfs1, hit_orfs);
+hit_data(ind2,1) = hit_data1(ind1);
+[~,ind1,ind2] = intersect(hit_orfs2, hit_orfs);
+hit_data(ind2,2) = hit_data2(ind1);
 
-% The list contains both non-essential deletions and essential heterozygous
-% mutants. Eliminate the essential genes
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [55; 56];
 
-load essential_genes_100908;
-[t,ind1,ind2] = intersect(xie_huang_2005.orfs, essential_genes);
-xie_huang_2005.orfs(ind1) = [];
-xie_huang_2005.data(ind1,:) = [];
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+xie_huang_2005.orfs = hit_orfs;
+xie_huang_2005.data = hit_data;
+xie_huang_2005.ph = hit_data_names;
+xie_huang_2005.dataset_ids = hit_data_ids;
+
+%% Save
 
 save('./xie_huang_2005.mat','xie_huang_2005');
+
+
+%% Print out
 
 fid = fopen('./xie_huang_2005.txt','w');
 write_matrix_file(fid, xie_huang_2005.orfs, xie_huang_2005.ph, xie_huang_2005.data);

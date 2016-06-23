@@ -1,0 +1,2 @@
+55	hap a | growth (colony size) | sirolimus [10 nM] | quantitative | discrete | quantitative
+56	hap a | growth (colony size) | sirolimus [30 nM] | quantitative | discrete | quantitative
