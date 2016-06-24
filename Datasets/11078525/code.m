@@ -20,6 +20,7 @@ datasets.standard_name = d{2};
 
 hit_orfs = data.raw(:,1);
 hit_data = cell2mat(data.raw(:,2));
+hit_data = log10(hit_data);
 
 hit_orfs = clean_orf(hit_orfs);
 
@@ -53,4 +54,9 @@ fid = fopen('./chan_zheng_2000.txt','w');
 write_matrix_file(fid, chan_zheng_2000.orfs, chan_zheng_2000.ph, chan_zheng_2000.data);
 fclose(fid);
 
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(chan_zheng_2000)
 end
