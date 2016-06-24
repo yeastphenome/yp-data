@@ -116,5 +116,12 @@ fid = fopen('./firstauthor_lastauthor_YYYY.txt','w');
 write_matrix_file(fid, firstauthor_lastauthor_YYYY.orfs, firstauthor_lastauthor_YYYY.ph, firstauthor_lastauthor_YYYY.data);
 fclose(fid);
 
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(firstauthor_lastauthor_YYYY)
+end
+
 end
 
