@@ -1,0 +1,2 @@
+466	hom | growth (relative abundance in pooled culture) | UVC [200 J/m2] | Birrell GW~Brown JM, 2001
+745	hom | growth (relative abundance in pooled culture) | UVB [6,400 J/m2] | Birrell GW~Brown JM, 2001
