@@ -1,0 +1,4 @@
+489	hom | growth (relative abundance in pooled culture) | cisplatin [1 mM] | Wu HI~Brown JM, 2004
+4749	hom | growth (relative abundance in pooled culture) | oxaliplatin [10 mM] | Wu HI~Brown JM, 2004
+4750	hom | growth (relative abundance in pooled culture) | mitomycin C [0.5 mM] | Wu HI~Brown JM, 2004
+4754	hom | growth (relative abundance in pooled culture) | cisplatin [0.23 mM] | Wu HI~Brown JM, 2004
