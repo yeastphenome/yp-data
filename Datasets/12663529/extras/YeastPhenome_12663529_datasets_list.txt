@@ -1,0 +1,3 @@
+81	hap alpha | growth (area of killing zone) | K1 killer toxin [unknown] | quantitative | quantitative only for hits | quantitative only for hits
+82	hom | growth (area of killing zone) | K1 killer toxin [unknown] | quantitative | quantitative only for hits | quantitative only for hits
+83	het | growth (area of killing zone) | K1 killer toxin [unknown] | quantitative | quantitative only for hits | quantitative only for hits
