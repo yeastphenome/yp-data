@@ -1,0 +1,165 @@
+PHO80 YOL001W Cyclin that interacts with Pho85p protein kinase 48 85 63 S S wt
+PHO85 YPL031C Cyclin-dependent protein kinase 56 wt 37 R S S
+PTP3 YER075C Protein tyrosine phosphatase 65 wt 63 R wt wt
+CKA2 YOR061W Casein kinase II 	 chain 65 wt 63 R wt wt
+SAC7a YDR389W GTPase-activating protein for Rho1p 67 wt 85 S wt wt
+ELM1 YKL048C ser/thr-specific kinase 69 wt 58 S wt S
+PTC1 YDL006W Protein serine/threonine phosphatase 2c 71 wt 64
+KIN3 YAR018C ser/thr protein kinase 72 wt 70
+SAP155 YFR040W Sit4p-associated protein 73 wt 62
+SAP190 YKR028W Sit4p-associated protein 74 wt 75
+GPA2a YER020W Guanine nucleotide-binding regulatory protein 74 wt 83 wt wt wt
+RRD1 YIL153W Phosphotyrosyl phosphatase activator 75 wt 69
+MKS1 YNL076W Negative regulator of Ras-cAMP pathway 82 wt 83
+GLC8 YMR311C Regulatory subunit for ser/thr phosphatase Glc7p 83 wt 69
+PHO86 YJL117W Inorganic phosphate transporter 83 wt 70
+SAL6 YPL179W Phosphoprotein phosphatase 85 wt 67
+2. Transcription (21 genes)
+SSN6 YBR112C General repressor of transcription 0 81 0
+TUP1 YCR084C General transcription repressor 0 83 0
+CTK3 YML112W CTD kinase, gamma subunit; RNA Pol II regulation 0 wt 0
+SNF12 YNR023W Component of SWI/SNF global transcription activator complex 0 wt NA
+CCR4 YAL021C Transcriptional regulator 42 wt 57 R wt wt
+POP2 YNR052C Required for glucose derepression 60 wt 70
+ELP4 YPL101W Subunit of RNA Pol II elongator complex 68 wt 76 S wt wt
+ADA2 YDR448W General transcriptional adaptor or coactivator 69 wt 63
+CTK1 YKL139W CTD kinase, alpha subunit; RNA Pol II regulation 70 wt 58
+ACE2 YLR131C Metallothionein expression activator 71 wt 75 R R wt
+SIR4 YDR227W Silencing regulatory and DNA-repair protein 72 wt NA wt wt wt
+IK13 YLR384C Elongator complex; RNA Pol II-associated protein 73 wt 75
+SSN3 YPL042C Cyclin-dependent CTD kinase 73 wt 78
+SIR1 YKR101W Silencing regulatory protein 73 wt 80
+FUN30 YAL019W Member of the Snf2p family of ATP-dependent DNA helicases 76 wt 72
+EPL6 YMR312W Subunit of RNA Pol II elongator complex 79 wt 58
+ELP3 YPL086C Histone and other protein acetyltransferase 80 wt 65
+SPT10 YJL127C Transcription regulatory protein 80 wt 70
+SAP30 YMR263W Component of the Rpd3p-Sin3p histone deacetylase complex 82 wt 65
+SIG1 YER068W Transcriptional repressor 83 wt 32 S S S
+TAF14 YPL129W TFIIF subunit (transcription initiation factor), 30 kD 85 wt 56 S S S
+3. Actin organization (7 genes)
+ARC18 YLR370C Subunit of the Arp2/3 complex 0 wt 0
+VRP1a YLR337C Verprolin, involved in cytoskeletal organization 0 wt 0 R S S
+LAS17a YOR181W Component of actin cortical patches 0 wt NA S S S
+SAC6 YDR129C Actin filament bundling protein, fimbrin 49 wt 57 S S wt
+VIP1 YLR410W Involved in cortical actin function 62 wt 72
+NBP2 YDR162C Nap1p-binding protein 70 85 73
+SLA2 YNL243W Cytoskeleton assembly control protein 71 wt NA S S S
+4. Lipid/sterol synthesis (9 genes)
+PLC1 YPL268W Lipid, fatty-acid, and sterol metabolism and signal transduction 0 wt 0
+ERG2 YMR202W C-8 sterol isomerase 55 wt 51 S S S
+ERG28 YER044C Protein involved in synthesis of ergosterol 57 wt 52 S S S
+IPK1a YDR315C IP5 kinase 66 wt 79
+ERG4a YGL012W Sterol C-24 reductase 73 wt 70 S S S
+DEP1 YAL013W Regulator of phospholipid metabolism 73 wt 72
+OSH1a YAR044W Similarity to human oxysterol binding protein (OSBP) 77 wt 72
+SUR4a YLR372W Sterol isomerase, fatty acid elongase 83 wt 74
+LCB83 YJL134W Sphingoid base-phosphate phosphatase, putative regulator 84 wt 84
+5. Secretion/endocytosis (23 genes)
+ERV41a YML067C COPII ER-Golgi vesicle protein 0 wt 0
+CLC1 YGR167W Clathrin light chain 0 wt 0 S S S
+KRE11a YGR166W TRAPPII Golgi vesicular transport protein 0 wt 0 S wt S
+LUV1 YDR027C Involved in protein sorting in the late Golgi 0 wt 0
+SAC1a YKL212W Role in Golgi function and actin cytoskeleton organization 0 wt 0 S S S
+SHE4a YOR035C Required for mother-cell-specific gene expression and for endocytosis 0 wt 0 S S wt
+SWA2 YDR320C Clathrin-binding protein required for normal clathrin function 0 wt 0 S S S
+RCY1 YJL204C F-box protein involved in endocytic membrane traffic 0 wt 0 S S S
+SAC2 YDR484W Suppressor of actin mutation, involved in vesicular transport 0 wt NA
+ERV46 YAL042W Vesicular transport between Golgi and ER 38 wt 42 wt wt wt
+VPS74 YDR372C Vacuolar protein sorting 53 wt 70 S S S
+VAC8a YEL013W Required for vacuole inheritance and vacuole targeting 55 79 65 wt wt wt
+CHC1 YGL206C Clathrin heavy chain 59 wt 0
+COD3a YGL223C Complex with Sec34p-Sec35p involved in vesicle transport to the Golgi 59 wt 69 S S S
+YPT6 YLR262C GTP-binding protein of the rab family 69 wt 73
+ERV14a YGL054C Strong similarity to D. melanogaster cni protein 71 wt 76
+COD2 YNL041C Complex with Sec34p-Sec35p involved in vesicle transport to the Golgi 73 wt 73
+ARL3 YPL051W Required for transport from ER to Golgi and Golgi to vacuoles 73 wt 80
+VPS61a YDR136C Vacuolar protein sorting 78 wt 67
+VPS67a YKR020W Vacuolar protein sorting 78 wt 68
+VPS1 YKR001C Member of the dynamin family of GTPases; vacuolar sorting protein 79 wt 68
+PEP3a YLR148W Vacuolar protein sorting 84 wt 57 S S S
+END3a YNL084C Required for endocytosis and cytoskeletal organization 85 wt 70
+6. Protein glycosylation (13 genes)
+CWH41 YGL027C ER glucosidase I 0 wt 0 S S wt
+GDA1 YEL042W Guanosine diphosphatase 0 wt 0 S S S
+ROT2a YBR229C ER glucosidase II, catalytic subunit 0 wt 0 S S S
+YUR1a YJL139C Mannosyltransferase 0 wt 0
+OST3 YOR085W Oligosaccharyltransferase gamma subunit 0 92 33 S S S
+PMT1 YDL095W Mannosyltransferase 0 wt 68
+KRE2 YDR483W -1,2-Mannosyltransferase 0 wt NA
+CWH8 YGR036C Dolichol-P-phosphatase 0 wt 75 S S S
+ALG6 YOR002W Glucosyltransferase 53 wt 72 S wt S
+ALG8 YOR067C Glucosyltransferase 61 wt 79 S wt S
+MNN5a YJL186W Putative mannosyltransferase 64 wt 81
+ALG5 YPL227C Dolichol-P-glucose synthetase 70 wt 79 S wt S
+PMT2a YAL023C Mannosyltransferase 77 wt 56 S wt S
+7. Protein modification or degradation (6 genes)
+MAK10 YEL053C Subunit of Mak3p-10p-31p N-terminal acetyltransferase 56 wt 73 R wt S
+KEX1a YGL203C Carboxypeptidase (YSC-) 57 wt 70 S R S
+DOC1 YGL240W Component of the anaphase-promoting complex 67 wt 80
+BTS1a YPL069C Geranylgeranyl diphosphate synthase 72 wt 65
+VPS27a YNR006W Vacuolar protein sorting-associated protein 80 wt 67
+YPS7 YDR349C GPI-anchored aspartic protease 83 wt 58 S S S
+8. Cell wall organization (8 genes)
+KRE1a YNL322C GPI-anchored plasma membrane protein 0 62 0 S S S
+KRE6a YPR159W cis-Golgi glucanase-like protein 0 72 0 S S S
+FKS1a YLR342W 1,3--d-Glucan synthase-associated protein 0 85 0 S S wt
+CNE1a YAL058W Calnexin, regulation of secretion and cell wall organization 0 wt 0 S S S
+SMI1a YGR229C -1,3-Glucan synthesis protein 0 wt 0 S S S
+SBE22a YHR103W Similarity to budding protein Sbe2p 77 91 80
+SCW4 YGR279C Glucanase gene family member 84 wt 72
+ECM30 YLR436C Involved in cell wall biogenesis and architecture 84 wt 73
+9. Mitochondrial, respiratory, and ATP metabolism (17 genes)
+ILM1 YJR118C Possibly involved in mitochondrial DNA maintenance 0 wt 0
+ATP2 YJR121W F1F0-ATPase complex, F1 -subunit 0 wt 65
+IMG2 YCR071C Required for integrity of mitochodrial genome 0 wt 75
+NAM2 YLR382C Leucine-tRNA ligase precursor, mitochondrial 54 78 79
+OCT1 YKL134C Mitochondrial intermediate peptidase 60 wt 79
+OXA1 YER154W Cytochrome oxidase biogenesis protein 65 wt 83
+DIA4 YHR011W May be involved in mitochondrial function 70 wt 60
+MRPL8 YJL063C Ribosomal protein L17, mitochondrial 70 wt 73
+MGM101 YJR144W Mitochondrial genome maintenance protein 70 wt 76
+MRPL38 YKL170W Ribosomal protein of the large subunit, mitochondrial 71 wt 81
+MRPL33 YMR286W Ribosomal protein of the large subunit, mitochondrial 72 wt 77
+MMM1 YLL006W Required for mitochondrial shape and structure 73 wt 66
+ISA2 YPR067W Mitochondrial protein required for iron metabolism 73 wt 72
+MRPL27 YBR282W Ribosomal protein YmL27 precursor, mitochondrial 74 wt 74
+IMG1 YCR046C Ribosomal protein, mitochondrial 81 wt 73
+ATP15 YPL271W F1F0-ATPase complex, F1 epsilon subunit 84 wt 55 wt S S
+BCS1 YDR375C Mitochondrial protein, involved in the assembly of cytb cl complex 85 wt 81
+10. Ungrouped genes (16 genes)
+SOD1 YJR104C Copper-zinc superoxide dismutase 0 wt 0
+UTH1a YKR042W Involved in the aging process 0 wt 0 wt wt wt
+DRS2 YAL026C P-type calcium-ATPase 0 wt 56 wt S S
+NPL3 YDR432W Nucleolar protein 31 wt 0 S S S
+LEM3 YNL323W Protein with similarity to Ycx1p, mutant is sensitive to brefeldin A 44 wt 45 S wt S
+GLY1a YEL046C l-threonine aldolase, low specificity 45 wt 55 S S S
+ATS1 YAL020C -Tubulin suppressor 71 wt 78
+YTA7 YGR270W 26S proteasome subunit 74 wt 80
+DFG5 YMR238W Required for filamentous growth, cell polarity, and cellular elongation 74 wt 80
+THP1a YOL072W Hypothetical protein 76 70 0 S S S
+CDC50 YCR094W Cell division cycle mutant 77 wt 62
+NEW1 YPL226W Member of the nontransporter group of the ABC superfamily 77 wt 66
+LYS7 YMR038C Copper chaperone for superoxide dismutase Sod1p 78 wt 62
+FPS1a YLL043W Glycerol channel protein 79 wt 65 S S S
+UTR1 YJR049C Associated with ferric reductase activity 84 wt 70
+PEX12 YMR026C Required for biogenesis of peroxisomes—peroxin 84 wt 72
+11. Genes of currently unknown function or poorly characterized (19 genes)
+BUD14 YAR014C Protein of unknown function 54 wt 47 S S S
+YFR043C Hypothetical protein 55 wt 70 wt wt wt
+a YKL037W Weak similarity to Caenorhabditis elegans ubc-2 protein 59 wt 67 S S S
+a YGL007W Questionable ORF 63 wt 70
+a YNL213C Hypothetical protein 67 wt NA R S wt
+PIN4a YBL051C Similarity to Schizosaccharomyces pombe Z66568_C protein 70 wt 70
+YOR154W Similarity to hypothetical Arabidopsis thaliana proteins 71 wt 84
+YLR270W Strong similarity to YOR173w 71 wt NA R wt wt
+YNL063W Similarity to S-adenosyl methionine-dependent methyl-transferase 73 wt 76
+MON2 YNL297C Unknown function, sensitive to monensin and brefeldin A 80 wt 70
+TOS1 YBR162C Protein with similarity to Aga1p 81 wt 66
+YER140W Hypothetical protein 82 wt 66
+SYS1a YJL004C Multicopy suppressor of ypt6 82 wt 74
+YLL007C Hypothetical protein 83 wt 67
+EAF6a YJR082C Hypothetical protein 83 wt 76
+YDR126W Similarity to hypothetical protein YLR246w and YOL003c 84 wt 66
+YGR263C Weak similarity to Escherichia coli lipase like enzyme 84 wt 68
+KRE27 YIL027C K1 toxin resistance phenotype; has a hydrophobic domain 85 80 54
+YBR284W Similarity to AMP deaminase 85 wt 70
