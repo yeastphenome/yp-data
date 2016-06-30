@@ -1,0 +1,27 @@
+499	hom | growth (relative abundance in pooled culture) | antimycin A [1 ug/ml], hydrogen peroxide [1 mM] | Brown JA~Brown JM, 2006
+4751	hom | growth (relative abundance in pooled culture) | actinomycin D [400 uM] | Brown JA~Brown JM, 2006
+4752	hom | growth (relative abundance in pooled culture) | antimycin A [1 ug/ml] | Brown JA~Brown JM, 2006
+4753	hom | growth (relative abundance in pooled culture) | cytarabine [400 uM] | Brown JA~Brown JM, 2006
+4755	hom | growth (relative abundance in pooled culture) | arsenic [20-100 uM] | Brown JA~Brown JM, 2006
+4756	hom | growth (relative abundance in pooled culture) | benomyl [10-15 uM] | Brown JA~Brown JM, 2006
+4757	hom | growth (relative abundance in pooled culture) | bleomycin [0.01 U/ml] | Brown JA~Brown JM, 2006
+4758	hom | growth (relative abundance in pooled culture) | caffeine [6 mM] | Brown JA~Brown JM, 2006
+4759	hom | growth (relative abundance in pooled culture) | Calcofluor White [3 ug/ml] | Brown JA~Brown JM, 2006
+4760	hom | growth (relative abundance in pooled culture) | camptothecin [250-300 uM] | Brown JA~Brown JM, 2006
+4761	hom | growth (relative abundance in pooled culture) | camptothecin [5 ug/ml] | Brown JA~Brown JM, 2006
+4762	hom | growth (relative abundance in pooled culture) | doxorubicin [0.2 mM] | Brown JA~Brown JM, 2006
+4763	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [3 mM] | Brown JA~Brown JM, 2006
+4764	hom | growth (relative abundance in pooled culture) | hydroxyurea [100 mM] | Brown JA~Brown JM, 2006
+4765	hom | growth (relative abundance in pooled culture) | hygromycin B [7 ug/ml] | Brown JA~Brown JM, 2006
+4766	hom | growth (relative abundance in pooled culture) | idarubicin [50-100 uM] | Brown JA~Brown JM, 2006
+4767	hom | growth (relative abundance in pooled culture) | ethanol [75%], lovastatin [100 ug/ml] | Brown JA~Brown JM, 2006
+4768	hom | growth (relative abundance in pooled culture) | mechlorethamine [20 uM] | Brown JA~Brown JM, 2006
+4769	hom | growth (relative abundance in pooled culture) | melphalan [800 uM] | Brown JA~Brown JM, 2006
+4770	hom | growth (relative abundance in pooled culture) | methyl methanesulfonate [0.03%] | Brown JA~Brown JM, 2006
+4771	hom | growth (relative abundance in pooled culture) | antimycin A [1 ug/ml], raffinose [6%] | Brown JA~Brown JM, 2006
+4772	hom | growth (relative abundance in pooled culture) | topotecan [20 uM] | Brown JA~Brown JM, 2006
+4773	hom | growth (relative abundance in pooled culture) | tirapazamine [250-300 uM] | Brown JA~Brown JM, 2006
+4774	hom | growth (relative abundance in pooled culture) | UVA [36-288 J/cm2] | Brown JA~Brown JM, 2006
+4775	hom | growth (relative abundance in pooled culture) | wortmannin [1.5 uM] | Brown JA~Brown JM, 2006
+4776	hom | growth (relative abundance in pooled culture) | YPD [standard] | Brown JA~Brown JM, 2006
+4777	hom | growth (relative abundance in pooled culture) | GLYE [standard] | Brown JA~Brown JM, 2006
