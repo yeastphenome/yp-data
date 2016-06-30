@@ -156,7 +156,7 @@ YNL063W Similarity to S-adenosyl methionine-dependent methyl-transferase 73 wt 7
 MON2 YNL297C Unknown function, sensitive to monensin and brefeldin A 80 wt 70
 TOS1 YBR162C Protein with similarity to Aga1p 81 wt 66
 YER140W Hypothetical protein 82 wt 66
-SYS1a YJL004C Multicopy suppressor of ypt6 82 wt 74
+SYS1a YJL004C Multicopy suppressor of yptSix 82 wt 74
 YLL007C Hypothetical protein 83 wt 67
 EAF6a YJR082C Hypothetical protein 83 wt 76
 YDR126W Similarity to hypothetical protein YLR246w and YOL003c 84 wt 66
