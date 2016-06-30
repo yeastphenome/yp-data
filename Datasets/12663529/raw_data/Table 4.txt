@@ -1,0 +1,48 @@
+1. Resistant (death zone
+90% of the wild type; 28
+
+ 3 genes)
+RSP5 YER125W Ubiquitin-protein ligase 59
+GLC7 YER133W ser/thr phosphoprotein phosphatase 1, catalytic chain 69
+PUP2 YGR253C 20S proteasome subunit(5) 70
+CCT4 YDL143W Component of chaperonin-containing T-complex 72
+ARC35 YNR035C Subunit of the Arp2/3 complex 73
+CCT7 YJL111W Component of chaperonin-containing T-complex 78
+SMD3 YLR147C Strong similarity to small nuclear ribonucleoprotein D3 80 wt wt wt
+NSA2 YER126C K1 toxin resistance phenotype; nuclear protein 81
+ARP3 YJR065C Actin-related protein 82
+ARC15 YIL062C Subunit of the Arp2/3 complex 83
+SFH1 YLR321C Subunit of the RSC complex 83 wt wt wt
+CCT2 YIL142W Chaperonin of the TCP1 ring complex, cytosolic 84
+CCT5 YJR064W T-complex protein 1, epsilon subunit 84
+TAD3 YLR316C Subunit of tRNA-specific adenosine-34 deaminase 85b
+BIG1a YHR101C Big cells phenotype 85 wt wt S
+GCD7 YLR291C Translation initiation factor eIF2b, 43-kD subunit 85 wt wt wt
+SEC53 YFL045C Phosphomannomutase 86
+SSL2 YIL143C DNA helicase 86
+ACC1a YNR016C Acetyl-CoA carboxylase 87
+CDC25a YLR310C GDP/GTP exchange factor for Ras1p and Ras2p 87 wt wt wt
+GAA1 YLR088W Required for attachment of GPI anchor onto proteins 87 wt wt wt
+TAF3 YPL011C Component of the TBP-associated protein complex 87 wt wt wt
+TIP20 YGL145W Required for ER-to-Golgi transport 87
+TRS120 YDR407C Weak similarity to Myo1p 87 wt wt wt
+CEG1 YGL130W mRNA guanylyltransferase (mRNA capping enzyme,-subunit) 88
+MEX67 YPL169C Factor for nuclear mRNA export 88 wt wt wt
+LSG1 YGL099W Required for normal growth, morphology, mating, sporulation 89
+ERG27 YLR100W 3-Keto sterol reductase, required for ergosterol biosynthesis 89 wt wt wt
+CDC3 YLR314C Cell division control protein 89 wt wt wt
+New KRE genes
+KRE29 YER038C Two-hybrid interaction with Ym1023p and Lys14p 76
+KRE33a YNL132W Unknown function, Amp1p-interaction complex (20 members) 83
+2. Hypersensitive (death zone 110% of the wild type; 11 genes)
+TUB1 YML085C tubulin 135
+RPB8 YOR224C DNA-directed RNA polymerase I, II, III 16 kD subunit 128 S wt wt
+RPS13 YDR064W Ribosomal protein 122 wt wt wt
+RPS15 YOL040C 40S small subunit ribosomal protein 121 wt wt wt
+RPB3 YIL021W DNA-directed RNA-polymerase II, 45 kD 118 wt wt wt
+RPS3 YNL178W Ribosomal protein S3.e 118 wt wt wt
+RPB7 YDR404C DNA-directed RNA polymerase II, 19-kD subunit 117 wt wt wt
+AUT2 YNL223W Essential for autophagy 116 S wt S
+RPO26 YPR187W DNA-directed RNA polymerase I, II, III 18-kD subunit 116 wt wt wt
+TSC10 YBR265W 3-ketosphinganine reductase 115 S wt S
+PKC1 YBL105C Regulates MAP kinase cascade involved in regulating cell wall metabolism wtc
