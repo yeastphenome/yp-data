@@ -4,51 +4,81 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-
-alamgir_golshani_2010.source = {'http://www.biomedcentral.com/content/supplementary/1472-6769-10-6-s1.xls'};
-alamgir_golshani_2010.downloaddate = {'2013-03-06'};
 alamgir_golshani_2010.pmid = 20691087;
+
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(alamgir_golshani_2010.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
 
 phenotypes = {'Growth, colony size'};
 treatments = {'3-AT, 22 mg/ml';'cycloheximide, 45 ng/ml';'streptomycin, 40 mg/ml';'neomycin, 5.5 mg/ml'};
 
+%%
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/1472-6769-10-6-s1.xlsx', 'Raw genome-wide data');
 
 % Eliminate anything that doesn't look like an ORF
-inds = find(cellfun(@isnumeric, data.raw(:,1)));
-data.raw(inds,:) = [];
+hit_orfs = data.raw(:,1);
+hit_data = data.raw(:,3:14);
 
-inds = setdiff(1:length(data.raw(:,1)),strmatch('Y', data.raw(:,1)));
-data.raw(inds,:) = [];
+hit_orfs = clean_orf(hit_orfs);
 
-data2.orfs = upper(data.raw(:, 1));
-data2.data = data.raw(:, 3:14);
+hit_orfs(strcmp('YPL072WA', hit_orfs)) = {'YPL072W-A'};
+inds = find(~is_orf(hit_orfs));
+disp(hit_orfs(inds));
+
+hit_orfs(inds) = [];
+hit_data(inds,:) = []; 
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, data2.data)==0);
-data2.data(inds) = {NaN};
-data2.data = cell2mat(data2.data);
+inds = find(~cellfun(@isnumeric, hit_data));
+hit_data(inds) = {NaN};
+hit_data = cell2mat(hit_data);
 
 % Eliminate zeros
-data2.data(data2.data == 0) = NaN;
-
-% Average the 3 replicates
-data3.orfs = data2.orfs;
-data3.data(:,1) = nanmean(data2.data(:,1:3),2);
-data3.data(:,2) = nanmean(data2.data(:,4:6),2);
-data3.data(:,3) = nanmean(data2.data(:,7:9),2);
-data3.data(:,4) = nanmean(data2.data(:,10:12),2);
+hit_data(hit_data == 0) = NaN;
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data3.data, data3.orfs, {'gname','mean'});
-alamgir_golshani_2010.orfs = t;
-alamgir_golshani_2010.data = t2;
-alamgir_golshani_2010.ph = strcat(phenotypes, {'; '}, treatments);
+[hit_orfs,hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
+
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [9 9 9 10 10 10 7 7 7 8 8 8];
+[hit_data_ids, hit_data] = grpstats(hit_data', hit_data_ids, {'gname','mean'});
+hit_data = hit_data';
+hit_data_ids = cellfun(@str2num, hit_data_ids);
+
+%% Prepare the final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+alamgir_golshani_2010.orfs = hit_orfs;
+alamgir_golshani_2010.data = hit_data;
+alamgir_golshani_2010.ph = hit_data_names;
+alamgir_golshani_2010.dataset_ids = hit_data_ids;
+
+%% Save
 
 save('./alamgir_golshani_2010.mat','alamgir_golshani_2010');
+
+%% Print out
 
 fid = fopen('./alamgir_golshani_2010.txt','w');
 write_matrix_file(fid, alamgir_golshani_2010.orfs, alamgir_golshani_2010.ph, alamgir_golshani_2010.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(alamgir_golshani_2010)
+end
 
 end
