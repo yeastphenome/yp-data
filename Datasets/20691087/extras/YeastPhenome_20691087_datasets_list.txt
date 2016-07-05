@@ -1,0 +1,4 @@
+7	hap a | growth (colony size) | streptomycin [40 mg/ml] | Alamgir M~Golshani A, 2010
+8	hap a | growth (colony size) | neomycin [5.5 mg/ml] | Alamgir M~Golshani A, 2010
+9	hap a | growth (colony size) | amitrole [22 mg/ml] | Alamgir M~Golshani A, 2010
+10	hap a | growth (colony size) | cycloheximide [45 ng/ml] | Alamgir M~Golshani A, 2010
