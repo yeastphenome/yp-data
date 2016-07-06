@@ -6,8 +6,15 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 alamgir_golshani_2008.pmid = 19055778;
 
-phenotypes = {'growth [colony size]'};
-treatments = {'paromomycin'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(alamgir_golshani_2008.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+%%
 
 % Load tested
 [FILENAMES{end+1}, map.raw] = read_data('xlsread','./raw_data/Master plate list -- part 1.xlsx', 'Sheet2-Corrected');
@@ -49,28 +56,49 @@ inds = find(cellfun(@isempty, data.orf));       % 26 positions present in data d
 data.orf(inds) = [];
 data.data(inds) = [];
 
-inds = cellfun(@isnumeric, data.orf);
+data.orf = clean_orf(data.orf);
+
+data.orf(strcmp('YPL072WA', data.orf)) = {'YPL072W-A'};
+inds = find(~is_orf(data.orf));
+disp(data.orf(inds));
+
 data.orf(inds) = [];
 data.data(inds) = [];
 
-data.orf = cellfun(@strtrim, data.orf,'UniformOutput',0);
+[data.orf, data.data] = grpstats(data.data,data.orf,{'gname','mean'});
 
-inds = ~strncmp('Y', data.orf,1);
-data.orf(inds) = [];
-data.data(inds) = [];
-data.orf = upper(data.orf);
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [142];
 
-[data_avg.orf, data_avg.data] = grpstats(data.data,data.orf,{'gname','mean'});
+%% Prepare the final dataset
 
-alamgir_golshani_2008.orfs = data_avg.orf;
-alamgir_golshani_2008.data = data_avg.data;
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
 
-alamgir_golshani_2008.ph = strcat(phenotypes, '; ', treatments);
+alamgir_golshani_2008.orfs = data.orf;
+alamgir_golshani_2008.data = data.data;
+alamgir_golshani_2008.ph = hit_data_names;
+alamgir_golshani_2008.dataset_ids = hit_data_ids;
+
+%% Save
 
 save('./alamgir_golshani_2008.mat','alamgir_golshani_2008');
+
+%% Print out
 
 fid = fopen('./alamgir_golshani_2008.txt','w');
 write_matrix_file(fid, alamgir_golshani_2008.orfs, alamgir_golshani_2008.ph, alamgir_golshani_2008.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(alamgir_golshani_2008)
+end
 
 end
