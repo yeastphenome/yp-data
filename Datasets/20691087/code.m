@@ -14,9 +14,6 @@ alamgir_golshani_2010.pmid = 20691087;
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
-phenotypes = {'Growth, colony size'};
-treatments = {'3-AT, 22 mg/ml';'cycloheximide, 45 ng/ml';'streptomycin, 40 mg/ml';'neomycin, 5.5 mg/ml'};
-
 %%
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/1472-6769-10-6-s1.xlsx', 'Raw genome-wide data');
 
@@ -38,8 +35,10 @@ inds = find(~cellfun(@isnumeric, hit_data));
 hit_data(inds) = {NaN};
 hit_data = cell2mat(hit_data);
 
-% Eliminate zeros
-hit_data(hit_data == 0) = NaN;
+% From looking at the data, it appears that the numbers indicate
+% sensitivity, not growth, so we will revert their sign, such that higher
+% values indicate better growth and lower values indicate the opposite.
+hit_data = -hit_data;
 
 % Average data for identical ORFs that appear multiple times
 [hit_orfs,hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
