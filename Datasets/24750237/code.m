@@ -23,15 +23,11 @@ datasets.standard_name = d{2};
 hit_strains = data(2:end,6);
 
 % Get the data itself
-hit_data = data(2:end,4);
-hit_data = cell2mat(hit_data);
+hit_data = data(2:end,5);
+hit_data = -cell2mat(hit_data);
 
-% Transform the data to fit
-hit_data = hit_data - 2;
-hit_data = hit_data * -1;
-   
 % Eliminate all white spaces & capitalize
-hit_strains = clean_genename(hit_strains);
+hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
