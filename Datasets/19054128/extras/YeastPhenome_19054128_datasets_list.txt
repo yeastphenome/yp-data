@@ -1,0 +1,3 @@
+4	hap alpha | growth (exponential growth rate) | EtOH (ethanol [8%]) | Yoshikawa K~Shimizu H, 2009
+5	hap alpha | growth (exponential growth rate) | sodium chloride [1 M] | Yoshikawa K~Shimizu H, 2009
+523	hap alpha | growth (exponential growth rate) | EtOH (ethanol [5%]) | Yoshikawa K~Shimizu H, 2009
