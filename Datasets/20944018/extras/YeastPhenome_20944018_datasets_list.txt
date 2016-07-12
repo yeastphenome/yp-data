@@ -1,0 +1,2 @@
+93	hap alpha | cell death | phosphate starvation [unknown] | Gresham D~Botstein D, 2011
+451	hap alpha | cell death | leucine starvation [unknown] | Gresham D~Botstein D, 2011

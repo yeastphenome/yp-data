@@ -1,4 +1,4 @@
-ORF	Death rate (%/hr); phosphate starvation	Death rate (%/hr); leucine starvation
+ORF	hap alpha | cell death | phosphate starvation [unknown] | Gresham D~Botstein D, 2011	hap alpha | cell death | leucine starvation [unknown] | Gresham D~Botstein D, 2011
 YAL002W	0.013	0.024
 YAL004W	0.002	0.044
 YAL005C	0.003	0.038
