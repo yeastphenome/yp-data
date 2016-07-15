@@ -23,30 +23,28 @@ hit_strains = {};
 hit_data = [];
 for i = 1:length(data)
     C = strsplit(data{i}, ' ');
-    strain = C(1);
-    strain = regexp(data{i}, '([\w+-]+)[*|/|\s]', 'tokens');
-    strain = translate(strain{1});
-    if is_orf(strain)
-        hit_strains = [hit_strains; strain];
-        if length(C{end}) == 3
-            hit_data = [hit_data; -3];
-        elseif length(C{end}) == 2
-            hit_data = [hit_data; -2];
-        elseif length(C{end}) == 1
-            hit_data = [hit_data; -1];
-        end
-    end
+    tmp = strsplit(C{1}, '/');
+    hit_strains(i,1) = tmp(1);
+    hit_data(i,1) = -length(C{end});
 end
+
+hit_strains = clean_genename(hit_strains);
+hit_strains(strcmp('KIM3', hit_strains)) = {'YPR164W'}; % old name, no longer used in SGD, fixed manually
+
+[hit_strains, translated] = translate(hit_strains);
+
+hit_strains(~translated) = [];
+hit_data(~translated) = [];
 
 %% Tested strains
 
-% Load tested strains
 [FILENAMES{end+1}, tested_strains] = read_data('xlsread','./raw_data/Old array position-before Dec 8, 05.xlsx', 'Sheet1');
 tested_strains = tested_strains(2:end, 4);
 
+tested_strains = clean_orf(tested_strains);
+
 % If possible, fix the typo
-tested_strains(ismember(tested_strains, {'YPL072WA'})) = {'YPL072W'};
-tested_strains(ismember(tested_strains, {'YMR`317W'})) = {'YMR317W'};
+tested_strains(ismember(tested_strains, {'YPL072WA'})) = {'YPL072W-A'};
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(tested_strains));
@@ -54,6 +52,13 @@ tested_strains(inds) = [];
 
 % Finally, take the unique set
 tested_strains = unique(tested_strains);
+
+% Make sure the that all the hits are part of the tested set
+[missing,~] = setdiff(hit_strains, tested_strains);
+disp(missing);
+
+% 1 missing hit, adding to tested
+tested_strains = [tested_strains; missing];
 
 % Intersect the tested with the hits
 all_data = zeros(length(tested_strains), 1);
