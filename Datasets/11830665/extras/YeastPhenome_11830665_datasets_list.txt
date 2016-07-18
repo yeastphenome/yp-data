@@ -1,0 +1,2 @@
+471	hom | growth (relative abundance in pooled culture) | bortezomib [260 uM] | Fleming JA~Blackman RK, 2002
+1308	hom | growth (relative abundance in pooled culture) | PS-519 [8 uM] | Fleming JA~Blackman RK, 2002
