@@ -1,4 +1,4 @@
-ORF	chronological life span;standard
+ORF	hap a | chronological lifespan | standard [standard] | Garay E~Deluna A, 2014
 YPL262W	0.946
 YGL124C	0.948
 YOR106W	0.948
@@ -3774,7 +3774,7 @@ YLR441C	1.018
 YDR522C	1.018
 YHR167W	1.018
 YJR073C	1.018
-YLR287-A	1.018
+YLR287C-A	1.018
 YGR122W	1.018
 YOL110W	1.018
 YDL232W	1.018

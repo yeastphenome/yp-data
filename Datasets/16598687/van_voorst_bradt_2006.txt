@@ -1,4 +1,4 @@
-ORF	growth [streaks on agar];ethanol [6%]
+ORF	hap alpha | growth (streaks on agar) | EtOH (ethanol [6%]) | van Voorst F~Brandt A, 2006
 YCR046C	-1.000
 YHR039C-A	-1.000
 YOR270C	-1.000

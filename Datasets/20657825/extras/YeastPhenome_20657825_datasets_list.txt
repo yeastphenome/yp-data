@@ -1,0 +1,4 @@
+4711	hap a | chronological lifespan | time [9 days] | Fabrizio P~Longo VD, 2010
+4781	hap a | chronological lifespan | time [11 days] | Fabrizio P~Longo VD, 2010
+4782	hap a | chronological lifespan | time [15 days] | Fabrizio P~Longo VD, 2010
+4783	hap a | chronological lifespan | time [20 days] | Fabrizio P~Longo VD, 2010

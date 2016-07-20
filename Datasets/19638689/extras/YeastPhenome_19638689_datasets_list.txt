@@ -1,0 +1,6 @@
+162	hap alpha | growth (spot assay) | EtOH (ethanol [10%]) | Auesukaree C~Harashima S, 2009
+432	hap alpha | growth (spot assay) | methanol [16%] | Auesukaree C~Harashima S, 2009
+433	hap alpha | growth (spot assay) | propan-1-ol [7%] | Auesukaree C~Harashima S, 2009
+434	hap alpha | growth (spot assay) | sodium chloride [1 M] | Auesukaree C~Harashima S, 2009
+435	hap alpha | growth (spot assay) | hydrogen peroxide [5 mM] | Auesukaree C~Harashima S, 2009
+436	hap alpha | growth (spot assay) | temperature [37ºC] | Auesukaree C~Harashima S, 2009

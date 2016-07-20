@@ -1,0 +1,4 @@
+1306	hom | chronological lifespan | time [1 week] | Powers RW 3rd~Fields S, 2006
+4778	hom | chronological lifespan | time [2 weeks] | Powers RW 3rd~Fields S, 2006
+4779	hom | chronological lifespan | time [5 weeks] | Powers RW 3rd~Fields S, 2006
+4780	hom | chronological lifespan | time [7 weeks] | Powers RW 3rd~Fields S, 2006

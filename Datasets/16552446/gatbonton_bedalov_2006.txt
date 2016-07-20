@@ -1,4 +1,4 @@
-ORF	telomere length;
+ORF	hap a | telomere length | standard [standard] | Gatbonton T~Bedalov A, 2006
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
@@ -4772,3 +4772,4 @@ YPR198W	0.000
 YPR199C	0.000
 YPR200C	0.000
 YPR201W	0.000
+YBL041W	-3.000
