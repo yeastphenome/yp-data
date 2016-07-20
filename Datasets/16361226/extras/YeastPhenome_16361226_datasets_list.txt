@@ -1,0 +1,3 @@
+108	hap alpha | growth (culture turbidity) | DiKU+Trp (DiKU+Trp [unknown]) | Cai H~Becker JM, 2006
+245	hap alpha | growth (culture turbidity) | DiKU-Trp (DiKU-Trp [unknown]) | Cai H~Becker JM, 2006
+246	hap alpha | growth (culture turbidity) | HLKU [unknown] | Cai H~Becker JM, 2006
