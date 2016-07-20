@@ -1,4 +1,4 @@
-ORF	growth;EtOH
+ORF	hap a | growth (spot assay) | EtOH (ethanol [8%]) | Teixeira MC~Sa Correia I, 2009
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000

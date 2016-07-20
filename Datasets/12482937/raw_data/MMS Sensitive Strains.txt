@@ -1,0 +1,103 @@
+AAT2* 3  Amino acid metabolism +++
+RAD1*† 0  DNA repair +
+ANC1*† 0  Pol II transcription +++
+RAD5/REV2* 2  DNA repair +++
+AOR1* 1  Unknown +++
+RAD6* 0  DNA repair +++
+APN1 0  DNA repair +++
+RAD9*† 3  Cell cycle control ++
+ARO1 2  Amino acid metabolism +++
+RAD17 1  Cell cycle control +++
+ARO7 2  Amino acid metabolism +++
+RAD18* 0  DNA repair +
+ASF1* 3  DNA synthesis +++
+RAD24* 2  Cell cycle control +++
+BDF1* 1  Meiosis +++
+RAD27* 3  DNA synthesis +++
+BUD25 3  Cell polarity +++
+RAD50*† 3  DNA repair +++
+BUR2 0  Pol II transcription +++
+RAD51*† 3  DNA repair +++
+CAC2* 1  DNA repair +++
+RAD52* 3  DNA repair +++
+CDC40* 0  Meiosis +++
+RAD54* 3  DNA repair +++
+CDC50* 2  Cell cycle control +++
+RAD55* 3  DNA repair +++
+CHL1*† 0  Mitosis ++
+RAD57*† 3  DNA repair +++
+CIK1 2  Meiosis +++
+RAD59* 1  DNA repair +++
+CSE2 3  Mitosis +
+REM50 3  DNA repair +++
+CTF18* 0  Cell cycle control +++
+REV3* 0  DNA repair +++
+CTF4/POB1* 2  DNA synthesis +++
+RPB9* 2  Pol II transcription ++
+CTF8 1  Chromatinchromosome structure +++
+RRN10 3  Pol I transcription +
+DCC1 1  Chromatinchromosome structure +++
+RTT101* 2  Protein modification +++
+DDC1 1  Cell cycle control +++
+SAE2 2  Meiosis +++
+DEG1 2  Protein synthesis ++
+SEC66 2  Cell cycle control +++
+DOA1* 2  Protein degradation +++
+SGS1*† 3  DNA repair +++
+DUN1* 1  DNA repair +++
+SIT4* 2  Cell cycle control +
+ERG3* 3  Lipid, fatty acid, sterol metabolism ++
+SLX4 2  DNA repair +++
+ESC4 3  Chromatinchromosome structure +++
+SOD1*† 3  Amino acid metabolism +++
+GRR1* 3  Amino acid metabolism +++
+SPT4* 1  Recombination +
+HOF1*† 3  Cytokinesis ++
+SRB2 2  Pol II transcription +
+HPR1 0  Recombination +++
+SRB5 2  Pol II transcription ++
+HPR5/SRS2 2  DNA repair +++
+SW16* 2  Cell cycle control +++
+HTL1 0  Unknown +++
+TOM37* 2  Protein translocation ++
+ISC1* 3  Lipid, fatty acid, sterol metabolism +
+TOP3* 3  DNA repair +++
+KIM3/MMS1 2  Cell stress +++
+UBC13* 3  DNA repair +++
+KRE22 1  Unknown +++
+UBP6* 2  Protein modification +++
+LSM1* 2  RNA turnover +++
+UME6 3  Meiosis +
+LSM6* 2  RNA splicing ++
+VID21 1  Unknown +++
+LYS7* 2  Amino acid metabolism +++
+VID31* 1  Unknown +++
+MAG1 2  DNA repair +++
+VMA21 2  Small molecule transport +++
+MEC3 1  Cell cycle control +++
+VPS36 2  Amino acid metabolism ++
+MED1 2  Unknown ++
+XRS2 3  DNA repair +++
+MET18/MMS19 0  Amino acid metabolism +++
+YBL006C 1  Unknown ++
+MMS2* 3  DNA repair +++
+YBR099C 2  Unknown +++
+MMS22 3  DNA repair +++
+YCK3* 2  Unknown +++
+MMS4/SLX2 2  DNA repair +++
+YEL045C 2  Unknown +++
+MRE11*† 3  DNA repair +++
+YJL161W 1  Unknown +
+MUS81 3  DNA repair +++
+YLR218C* 3  Unknown +
+NAT3* 3  Protein modification +++
+YLR235C 3  Unknown +++
+NCE4 2  Cell wall maintenance +++
+YLR376C 2  Unknown +++
+NPL6 2  Nuclear–cytoplasmic transport +
+YMC2*† 2  Small molecule transport +++
+NUP133 0  Nuclear–cytoplasmic transport +
+YMR031W-A 2  Unknown +++
+NUP84* 1  Nuclear–cytoplasmic transport +++
+YOR275C* 3  Cell stress +++
+POL32 2  DNA synthesis +++

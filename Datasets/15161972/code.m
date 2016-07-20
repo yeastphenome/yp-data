@@ -4,78 +4,99 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-
-askree_mceachern_2004.source = {'http://www.pnas.org/content/suppl/2004/05/20/0401263101.DC1/01263Table3.xls; Michael McEachern'};
-askree_mceachern_2004.downloaddate = {'2013-07-17'};
 askree_mceachern_2004.pmid = 15161972;
 
-phenotypes = {'Telomere length'};
-treatments = {''};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(askree_mceachern_2004.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+%% Load data
 
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/01263Table3.xlsx', 'Sheet1');
 
 % Get indices of the data columns
 ind_data = 3:4;
 
-
-% Eliminate anything that doesn't look like an ORF
-inds = find(cellfun(@isnumeric, data.raw(:,1)));
-data.raw(inds,:) = [];
+hit_orfs = data.raw(:,1);
+hit_data = data.raw(:,ind_data);
 
 % Set data for inconsistent mutants to NaN
-inds = find(strncmp('*Y', data.raw(:,1),2));
-data.raw(inds,ind_data) = {NaN};
+inds = find(strncmp('*Y', hit_orfs,2));
+hit_data(inds,:) = {NaN};
 
-% Eliminate the asterisk before the ORF name
-temp_orfs = char(data.raw(inds,1));
-data.raw(inds,1) = cellstr(temp_orfs(:,2:end));
+% Eliminate anything that doesn't look like an ORF
+hit_orfs = clean_orf(hit_orfs);
+inds = find(~is_orf(hit_orfs));
+disp(hit_orfs(inds));
 
-inds = find(~strncmp('Y', data.raw(:,1),1));
-data.raw(inds,:) = [];
-
-% Eliminate white spaces before/after ORF
-data.raw(:,1) = cellfun(@strtrim, data.raw(:,1),'UniformOutput',0);
+hit_orfs(inds) = [];
+hit_data(inds,:) = [];
 
 % Make sure all the data are numbers
-t = data.raw(:,ind_data);
-inds = find(~cellfun(@isnumeric, t));
-t(inds) = {NaN};
+inds = find(~cellfun(@isnumeric, hit_data));
+hit_data(inds) = {NaN};
 
-data2.orfs = upper(data.raw(:,1));
-data2.data(:,1) = nanmean(cell2mat(t),2);
-
-% Load the tested genes
-[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/S.cerftpmata.xlsx', 'Sheet1');
-tested_orfs = data.raw(:,2);
-inds = find(cellfun(@isnumeric, tested_orfs));
-tested_orfs(inds) = [];
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds,:) = [];
+hit_data = nanmean(cell2mat(hit_data),2);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data2.data, data2.orfs, {'gname','mean'});
-data3.orfs = t;
-data3.data = t2;
+[hit_orfs,hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
 
-% Put everything together
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [113];
+
+%% Load the tested genes
+
+[FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/S.cerftpmata.xlsx', 'Sheet1');
+
+tested_orfs = data.raw(:,2);
+tested_orfs = clean_orf(tested_orfs);
+
+tested_orfs(strcmp('YOLO57W', tested_orfs)) = {'YOL057W'};
+tested_orfs(strcmp('YOLO62C', tested_orfs)) = {'YOL062C'};
+tested_orfs(strcmp('YKLO72W', tested_orfs)) = {'YKL072W'};
+tested_orfs(strcmp('YJL206-A', tested_orfs)) = {'YJL206C-A'};
+tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
+
+inds = find(~is_orf(tested_orfs));
+tested_orfs(inds) = [];
+
+tested_orfs = unique(tested_orfs);
+
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
 askree_mceachern_2004.orfs = tested_orfs;
-askree_mceachern_2004.ph = phenotypes;
-askree_mceachern_2004.data = zeros(length(tested_orfs),length(phenotypes));
-[t,ind1,ind2] = intersect(data3.orfs, askree_mceachern_2004.orfs);
-askree_mceachern_2004.data(ind2,:) = data3.data(ind1,:);
+askree_mceachern_2004.ph = hit_data_names;
+askree_mceachern_2004.data = zeros(length(tested_orfs),length(hit_data_names));
+[~,ind1,ind2] = intersect(hit_orfs, askree_mceachern_2004.orfs);
+askree_mceachern_2004.data(ind2,:) = hit_data(ind1,:);
+askree_mceachern_2004.dataset_ids = hit_data_ids;
 
-
-% Eliminate the essential genes
-load essential_genes_100908;
-[t,ind1,ind2] = intersect(askree_mceachern_2004.orfs, essential_genes);
-askree_mceachern_2004.orfs(ind1) = [];
-askree_mceachern_2004.data(ind1,:) = [];
+%% Save
 
 save('./askree_mceachern_2004.mat','askree_mceachern_2004');
+
+%% Print out
 
 fid = fopen('./askree_mceachern_2004.txt','w');
 write_matrix_file(fid, askree_mceachern_2004.orfs, askree_mceachern_2004.ph, askree_mceachern_2004.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(askree_mceachern_2004)
+end
 
 end
