@@ -1,0 +1,78 @@
+490	het | growth (relative abundance in pooled culture) | flucytosine [200 ng/mL], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+556	het | growth (relative abundance in pooled culture) | 5-fluoro-2'-deoxyuridine [300 uM], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4845	het | growth (relative abundance in pooled culture) | 5-fluorouracil [2 uM], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4846	het | growth (relative abundance in pooled culture) | actinomycin D [20 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4847	het | growth (relative abundance in pooled culture) | amitriptyline [125 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4848	het | growth (relative abundance in pooled culture) | amphotericin B [600 ng/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4849	het | growth (relative abundance in pooled culture) | cytarabine [500 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4850	het | growth (relative abundance in pooled culture) | asulam [250 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4851	het | growth (relative abundance in pooled culture) | minimal complete [standard], atenolol [4 mg/ml] | Lum PY~Shoemaker DD, 2004
+4852	het | growth (relative abundance in pooled culture) | minimal complete [standard], zidovudine [2 mg/ml] | Lum PY~Shoemaker DD, 2004
+4853	het | growth (relative abundance in pooled culture) | oxybuprocaine [900 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4854	het | growth (relative abundance in pooled culture) | caffeine [700 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4855	het | growth (relative abundance in pooled culture) | camptothecin [100 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4856	het | growth (relative abundance in pooled culture) | carbendazim [100 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4857	het | growth (relative abundance in pooled culture) | chlorpromazine [37.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4858	het | growth (relative abundance in pooled culture) | cisplatin [600 uM], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4859	het | growth (relative abundance in pooled culture) | clomipramine [50 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4860	het | growth (relative abundance in pooled culture) | clotrimazole [37.5 ng/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4861	het | growth (relative abundance in pooled culture) | cycloheximide [10 ng/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4862	het | growth (relative abundance in pooled culture) | cymoxanil [1.25 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4863	het | growth (relative abundance in pooled culture) | daunorubicin [40 ng/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4864	het | growth (relative abundance in pooled culture) | desipramine [200 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4865	het | growth (relative abundance in pooled culture) | diltiazem [2 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4866	het | growth (relative abundance in pooled culture) | dimethyl sulfoxide [2.5%], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4867	het | growth (relative abundance in pooled culture) | doxorubicin [3 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4868	het | growth (relative abundance in pooled culture) | doxycycline [400 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4869	het | growth (relative abundance in pooled culture) | dyclonine [32 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4870	het | growth (relative abundance in pooled culture) | efavirenz [300 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4871	het | growth (relative abundance in pooled culture) | Erythromycin ethylsuccinate [2.5 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4872	het | growth (relative abundance in pooled culture) | ethanol [1.25%], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4873	het | growth (relative abundance in pooled culture) | fenpropimorph [0.00001%], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4874	het | growth (relative abundance in pooled culture) | flurbiprofen [75 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4875	het | growth (relative abundance in pooled culture) | gemfibrozil [30 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4876	het | growth (relative abundance in pooled culture) | gliotoxin [3 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4877	het | growth (relative abundance in pooled culture) | haloperidol [62.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4878	het | growth (relative abundance in pooled culture) | histamine [3 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4879	het | growth (relative abundance in pooled culture) | hydroxyurea [20 mM], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4880	het | growth (relative abundance in pooled culture) | ibuprofen [10 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4881	het | growth (relative abundance in pooled culture) | imipramine [312.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4882	het | growth (relative abundance in pooled culture) | indometacin [100 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4883	het | growth (relative abundance in pooled culture) | isoniazide [275 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4884	het | growth (relative abundance in pooled culture) | kanamycin [6 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4885	het | growth (relative abundance in pooled culture) | lovastatin [40 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4886	het | growth (relative abundance in pooled culture) | menadione [40 ng/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4887	het | growth (relative abundance in pooled culture) | methotrexate [12.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4888	het | growth (relative abundance in pooled culture) | methyl methanesulfonate [0.002%], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4889	het | growth (relative abundance in pooled culture) | metoclopramide [7 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4890	het | growth (relative abundance in pooled culture) | Molsidomine [2 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4891	het | growth (relative abundance in pooled culture) | nalidixic acid [325 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4892	het | growth (relative abundance in pooled culture) | naproxen [40 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4893	het | growth (relative abundance in pooled culture) | nevirapine [250 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4894	het | growth (relative abundance in pooled culture) | Nicardipine [1 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4895	het | growth (relative abundance in pooled culture) | nifedipine [200 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4896	het | growth (relative abundance in pooled culture) | nitrofurantoin [500 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4897	het | growth (relative abundance in pooled culture) | omeprazole [50 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4898	het | growth (relative abundance in pooled culture) | paromomycin [5 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4899	het | growth (relative abundance in pooled culture) | pentamidine [250 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4900	het | growth (relative abundance in pooled culture) | phenylbutazone [200 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4901	het | growth (relative abundance in pooled culture) | pramoxine [16 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4902	het | growth (relative abundance in pooled culture) | procaine [2.5 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4903	het | growth (relative abundance in pooled culture) | promethazine [100 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4904	het | growth (relative abundance in pooled culture) | sodium arsenite [20 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4905	het | growth (relative abundance in pooled culture) | sodium chloride [250 mM], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4906	het | growth (relative abundance in pooled culture) | sodium nitroprusside [667 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4907	het | growth (relative abundance in pooled culture) | staurosporine [2 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4908	het | growth (relative abundance in pooled culture) | sulfamethoxazole [200 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4909	het | growth (relative abundance in pooled culture) | sulfanilamide [625 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4910	het | growth (relative abundance in pooled culture) | sulfinpyrazone [20 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4911	het | growth (relative abundance in pooled culture) | sulfometuron methyl [1.25 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4912	het | growth (relative abundance in pooled culture) | tamoxifen [3.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4913	het | growth (relative abundance in pooled culture) | terbinafine [2.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4914	het | growth (relative abundance in pooled culture) | tetracycline [800 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4915	het | growth (relative abundance in pooled culture) | thalidomide [1 mg/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4916	het | growth (relative abundance in pooled culture) | trifluoperazine [17.5 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4917	het | growth (relative abundance in pooled culture) | troglitazone [300 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4918	het | growth (relative abundance in pooled culture) | tunicamycin [150 ng/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4919	het | growth (relative abundance in pooled culture) | valproic acid [300 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
+4920	het | growth (relative abundance in pooled culture) | warfarin [500 ug/ml], minimal complete [standard] | Lum PY~Shoemaker DD, 2004
