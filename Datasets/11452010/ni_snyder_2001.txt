@@ -1,6 +1,4 @@
-ORF			hom | bipolar budding pattern | standard [standard] | Ni L~Snyder M, 2001
-NEED	0.000	0.000	0.000
-ORFNAME	0.000	0.000	0.000
+ORF	hom | axial budding pattern | standard [standard] | Ni L~Snyder M, 2001	hom | random budding pattern | standard [standard] | Ni L~Snyder M, 2001	hom | unipolar budding pattern | standard [standard] | Ni L~Snyder M, 2001
 YAL002W	0.000	0.000	0.000
 YAL004W	0.000	0.000	0.000
 YAL005C	0.000	0.000	0.000
@@ -3333,7 +3331,6 @@ YMR319C	0.000	0.000	0.000
 YMR320W	0.000	0.000	0.000
 YMR322C	0.000	0.000	0.000
 YMR326C	0.000	0.000	0.000
-YMR41W	0.000	0.000	0.000
 YNL001W	0.000	0.000	0.000
 YNL003C	0.000	0.000	0.000
 YNL004W	0.000	0.000	0.000
