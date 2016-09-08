@@ -62,15 +62,16 @@ tested_strains = [tested_strains1(:,2); tested_strains2(:,2); tested_strains3(:,
 % Eliminate all white spaces & capitalize
 tested_strains = clean_orf(tested_strains);
 
+% If possible, fix the typo
+tested_strains(strcmp(tested_strains, 'TAL004W')) = {'YAL004W'};
+tested_strains(strcmp(tested_strains, 'YELOO1C')) = {'YEL001C'};
+tested_strains(strcmp(tested_strains, 'KL187C')) = {'YKL187C'};
+
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(tested_strains));
 disp(tested_strains(inds));  
 
-% If possible, fix the typo
-tested_strains(cellfun(@isnumeric, tested_strains)) = [];
-tested_strains(ismember(tested_strains, {'TAL004W'})) = {'YAL004W'};
-tested_strains(ismember(tested_strains, {'YELOO1C'})) = {'YEL001C'};
-tested_strains(ismember(tested_strains, {'KL187C'})) = {'YKL187C'};
+tested_strains(inds) = [];
 
 % Finally, take the unique set
 tested_strains = unique(tested_strains);
