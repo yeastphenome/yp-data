@@ -1,0 +1,13 @@
+erg3	3
+erg6	2
+ymr102c	2
+ymr099c	2
+ypl056c	2
+erg28	1
+osh1	1
+scs2	1
+cka2	1
+sml1	1
+ybr147w	1
+ygr283c	1
+ylr407w	1
