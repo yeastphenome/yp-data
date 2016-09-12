@@ -1,0 +1,1 @@
+465	hom | growth (colony size) | gamma-irradiation [80 Krads] | Bennett CB~Resnick MA, 2001

@@ -1,0 +1,960 @@
+Folder	File	Timepoint	Plate	Replicates	Header	Medium	Date	Hour	Header
+101_1	101_1.dat	1	101	3	Filter 8: 620: DiKU+No Trp	DiKU-Trp	04-30	5:00pm	DiKU+No Trp
+101_1	101_1.dat	1	101	3	Filter 8: 620:DiKU+trp	DiKU+Trp	04-30	5:00pm	DiKU+trp
+101_1	101_1.dat	1	101	3	Filter 8: 620: HLKU medium 30/04/03 5:00pm	HLKU	04-30	5:00pm	HLKU medium 30/04/03 5:00pm
+101_1	101_2.dat	2	101	3	Filter 8: 620 DiKU+no trp 9:30pm	DiKU-Trp	04-30	9:30pm	DiKU+no trp 9:30pm
+101_1	101_2.dat	2	101	3	Filter 8: 620 DiKU+trp	DiKU+Trp	04-30	9:30pm	DiKU+trp
+101_1	101_2.dat	2	101	3	Filter 8: 620 HLKU 9:30pm	HLKU	04-30	9:30pm	HLKU 9:30pm
+101_1	101_3.dat	3	101	3	Filter 8: 620 DiKU+no trp 1:00am	DiKU-Trp	05-01	1:00am	DiKU+no trp 1:00am
+101_1	101_3.dat	3	101	3	Filter 8: 620 DiKU+Trp	DiKU+Trp	05-01	1:00am	DiKU+Trp
+101_1	101_3.dat	3	101	3	Filter 8: 620 HLKU 1:00am	HLKU	05-01	1:00am	HLKU 1:00am
+101_1	101_4.dat	4	101	3	Filter 8: 620 DiKU+no Trp 9:00am	DiKU-Trp	05-01	9:00am	DiKU+no Trp 9:00am
+101_1	101_4.dat	4	101	3	Filter 8: 620 DIKU+Trp 9:00am	DiKU+Trp	05-01	9:00am	DIKU+Trp 9:00am
+101_1	101_4.dat	4	101	3	Filter 8: 620 HLKU 9:00am	HLKU	05-01	9:00am	HLKU 9:00am
+101_1	101_5.dat	5	101	3	Filter 8: 620 DiKU+no Trp 1:30pm	DiKU-Trp	05-01	1:30pm	DiKU+no Trp 1:30pm
+101_1	101_5.dat	5	101	3	Filter 8: 620 DiKU+Trp 1:30pm	DiKU+Trp	05-01	1:30pm	DiKU+Trp 1:30pm
+101_1	101_5.dat	5	101	3	Filter 8: 620 HLKU 1:30pm	HLKU	05-01	1:30pm	HLKU 1:30pm
+101_1	101_6.dat	6	101	3	Filter 8: 620 DiKU+no Trp 5:30pm	DiKU-Trp	05-01	5:30pm	DiKU+no Trp 5:30pm
+101_1	101_6.dat	6	101	3	Filter 8: 620 DiKU+Trp 5:30pm	DiKU+Trp	05-01	5:30pm	DiKU+Trp 5:30pm
+101_1	101_6.dat	6	101	3	Filter 8: 620 HLKU 5:30pm	HLKU	05-01	5:30pm	HLKU 5:30pm
+101_1	101_7.dat	7	101	3	Filter 8: 620 DiKU+No Trp 10:11pm	DiKU-Trp	05-01	10:11pm	DiKU+No Trp 10:11pm
+101_1	101_7.dat	7	101	3	Filter 8: 620 DiKU+Trp 10:11pm	DiKU+Trp	05-01	10:11pm	DiKU+Trp 10:11pm
+101_1	101_7.dat	7	101	3	Filter 8: 620 HLKU 10:11pm	HLKU	05-01	10:11pm	HLKU 10:11pm
+101_1	101_8.dat	8	101	3	Filter 8: 620 DiKU+no Trp 10:15am	DiKU-Trp	05-02	10:15am	DiKU+no Trp 10:15am
+101_1	101_8.dat	8	101	3	Filter 8: 620 DiKU+Trp 10:15am	DiKU+Trp	05-02	10:15am	DiKU+Trp 10:15am
+101_1	101_9.dat	9	101	3	Filter 8: 620 6:31pm DiKU+no Trp	DiKU-Trp	05-02	6:31pm	6:31pm DiKU+no Trp
+101_1	101_9.dat	9	101	3	Filter 8: 620 DiKU+trp 6:30pm	DiKU+Trp	05-02	6:30pm	DiKU+trp 6:30pm
+101_1	101_10.dat	10	101	3	Filter 8: 620 2:10pm after overnite room temperature				2:10pm after overnite room temperature
+101_1	101_10.dat	10	101	3	Filter 8: 620 2:10pm after overnite room Temp				2:10pm after overnite room Temp
+101_2	101_2_1.dat	1	101	4	Filter 8: 620 DiKU+His+no Trp 8:00pm	DiKU-Trp	01-01	8:00pm	DiKU+His+no Trp 8:00pm
+101_2	101_2_1.dat	1	101	4	Filter 8: 620 DiKU+His+Trp 8:00pm	DiKU+Trp	01-01	8:00pm	DiKU+His+Trp 8:00pm
+101_2	101_2_1.dat	1	101	4	Filter 8: 620 HLKU 8:00pm	HLKU	01-01	8:00pm	HLKU 8:00pm
+101_2	101_2_2.dat	2	101	4	Filter 8: 620 DiKU+His+no Trp 10:06am	DiKU-Trp	01-02	10:06am	DiKU+His+no Trp 10:06am
+101_2	101_2_2.dat	2	101	4	Filter 8: 620 DiKU+His+Trp 10:06am	DiKU+Trp	01-02	10:06am	DiKU+His+Trp 10:06am
+101_2	101_2_2.dat	2	101	4	Filter 8: 620 HLKU 10:06am	HLKU	01-02	10:06am	HLKU 10:06am
+101_2	101_2_3.dat	3	101	4	Filter 8: 620 DiKU+His+no Trp 10:47pm	DiKU-Trp	01-02	10:47pm	DiKU+His+no Trp 10:47pm
+101_2	101_2_3.dat	3	101	4	Filter 8: 620 DiKU+His+Trp 10:47pm	DiKU+Trp	01-02	10:47pm	DiKU+His+Trp 10:47pm
+101_2	101_2_3.dat	3	101	4	Filter 8: 620 HLKU 10:47pm	HLKU	01-02	10:47pm	HLKU 10:47pm
+101_2	101_2_4.dat	4	101	4	Filter 8: 620 DiKU+His+no Trp 10:49am	DiKU-Trp	01-03	10:49am	DiKU+His+no Trp 10:49am
+101_2	101_2_4.dat	4	101	4	Filter 8: 620 DiKU+His+Trp 10:49am	DiKU+Trp	01-03	10:49am	DiKU+His+Trp 10:49am
+101_2	101_2_4.dat	4	101	4	Filter 8: 620 HLKU 8:49am	HLKU	01-03	8:49am	HLKU 8:49am
+101_2	101_2_5.dat	5	101	4	Filter 8: 620 DiKU+His+no Trp 11:31pm	DiKU-Trp	01-03	11:31pm	DiKU+His+no Trp 11:31pm
+101_2	101_2_5.dat	5	101	4	Filter 8: 620 DiKU+His+Trp 11:30pm	DiKU+Trp	01-03	11:30pm	DiKU+His+Trp 11:30pm
+101_2	101_2_5.dat	5	101	4	Filter 8: 620 HLKU 11:30pm	HLKU	01-03	11:30pm	HLKU 11:30pm
+101_2	101_2_6.dat	6	101	4	Filter 8: 620 DiKU+His+no Trp 11:57am	DiKU-Trp	01-04	11:57am	DiKU+His+no Trp 11:57am
+101_2	101_2_6.dat	6	101	4	Filter 8: 620 DiKU+His+Trp 11:57pm	DiKU+Trp	01-04	11:57pm	DiKU+His+Trp 11:57pm
+102	102_1.dat	1	102	3	Filter 8: 620 DiKU+no trp 6:51pm	DiKU-Trp	01-01	6:51pm	DiKU+no trp 6:51pm
+102	102_1.dat	1	102	3	Filter 8: 620 DiKU+Trp 6:51pm	DiKU+Trp	01-01	6:51pm	DiKU+Trp 6:51pm
+102	102_1.dat	1	102	3	Filter 8: 620 HLKU 6:51pm	HLKU	01-01	6:51pm	HLKU 6:51pm
+102	102_2.dat	2	102	3	Filter 8: 620 DiKU+no trp 11:31pm	DiKU-Trp	01-01	11:31pm	DiKU+no trp 11:31pm
+102	102_2.dat	2	102	3	Filter 8: 620 DiKU+Trp 11:31pm	DiKU+Trp	01-01	11:31pm	DiKU+Trp 11:31pm
+102	102_2.dat	2	102	3	Filter 8: 620 HLKU 11:31pm	HLKU	01-01	11:31pm	HLKU 11:31pm
+102	102_3.dat	3	102	3	Filter 8: 620 DiKU+no Trp 9:16am	DiKU-Trp	01-02	9:16am	DiKU+no Trp 9:16am
+102	102_3.dat	3	102	3	Filter 8: 620 DiKU+Try 9:16am	DiKU+Trp	01-02	9:16am	DiKU+Try 9:16am
+102	102_3.dat	3	102	3	Filter 8: 620 HLKU 9:16am	HLKU	01-02	9:16am	HLKU 9:16am
+102	102_4.dat	4	102	3	Filter 8: 620 DiKU+no Trp 2:15pm	DiKU-Trp	01-02	2:15pm	DiKU+no Trp 2:15pm
+102	102_4.dat	4	102	3	Filter 8: 620 DiKU+Trp 2:15pm	DiKU+Trp	01-02	2:15pm	DiKU+Trp 2:15pm
+102	102_4.dat	4	102	3	Filter 8: 620 HLKU 2:14pm	HLKU	01-02	2:14pm	HLKU 2:14pm
+102	102_5.dat	5	102	3	Filter 8: 620 DiKU+no Trp 10:30pm	DiKU-Trp	01-02	10:30pm	DiKU+no Trp 10:30pm
+102	102_5.dat	5	102	3	Filter 8: 620 DiKU+Trp 10:30pm	DiKU+Trp	01-02	10:30pm	DiKU+Trp 10:30pm
+102	102_5.dat	5	102	3	Filter 8: 620 HLKU  10:30pm	HLKU	01-02	10:30pm	HLKU  10:30pm
+102	102_6.dat	6	102	3	Filter 8: 620 DiKU+no Trp 8:25am	DiKU-Trp	01-03	8:25am	DiKU+no Trp 8:25am
+102	102_6.dat	6	102	3	Filter 8: 620 DiKU+Trp 8:25am	DiKU+Trp	01-03	8:25am	DiKU+Trp 8:25am
+102	102_6.dat	6	102	3	Filter 8: 620 HLKU 8:25am	HLKU	01-03	8:25am	HLKU 8:25am
+102	102_7.dat	7	102	3	Filter 8: 620 DiKU+no Trp 3:14pm	DiKU-Trp	01-03	3:14pm	DiKU+no Trp 3:14pm
+102	102_7.dat	7	102	3	Filter 8: 620 DiKU+Trp 3:14pm	DiKU+Trp	01-03	3:14pm	DiKU+Trp 3:14pm
+102	102_7.dat	7	102	3	Filter 8: 620 HLKU 3:14pm	HLKU	01-03	3:14pm	HLKU 3:14pm
+102	102_8.dat	8	102	3	Filter 8: 620 DiKU+no Trp 11:38pm	DiKU-Trp	01-03	11:38pm	DiKU+no Trp 11:38pm
+102	102_8.dat	8	102	3	Filter 8: 620 DiKU+Trp 11:38pm	DiKU+Trp	01-03	11:38pm	DiKU+Trp 11:38pm
+102	102_8.dat	8	102	3	Filter 8: 620 HLKU 11:38pm	HLKU	01-03	11:38pm	HLKU 11:38pm
+102	102_9.dat	9	102	3	Filter 8: 620 DiKU+no Trp 2:32pm	DiKU-Trp	01-04	2:32pm	DiKU+no Trp 2:32pm
+102	102_9.dat	9	102	3	Filter 8: 620 DiKU+Trp 2:32pm	DiKU+Trp	01-04	2:32pm	DiKU+Trp 2:32pm
+102	102_9.dat	9	102	3	Filter 8: 620 HLKU 2:31pm	HLKU	01-04	2:31pm	HLKU 2:31pm
+102	102_10.dat	10	102	3	Filter 8: 620 DiKU+no trp 11:51pm	DiKU-Trp	01-04	11:51pm	DiKU+no trp 11:51pm
+102	102_10.dat	10	102	3	Filter 8: 620 DiKU+Trp 11:51pm	DiKU+Trp	01-04	11:51pm	DiKU+Trp 11:51pm
+102	102_11.dat	11	102	3	Filter 8: 620 DiKU+no Trp 12:46pm	DiKU-Trp	01-05	12:46pm	DiKU+no Trp 12:46pm
+102	102_11.dat	11	102	3	Filter 8: 620 DiKU+Trp 12:46pm	DiKU+Trp	01-05	12:46pm	DiKU+Trp 12:46pm
+102	102_12.dat	12	102	3	Filter 8: 620 DiKU+no Trp 11:21pm	DiKU-Trp	01-05	11:21pm	DiKU+no Trp 11:21pm
+102	102_12.dat	12	102	3	Filter 8: 620 DiKU+Trp 11:21pm	DiKU+Trp	01-05	11:21pm	DiKU+Trp 11:21pm
+102	102_13.dat	13	102	3	Filter 8: 620 DiKU+no Trp11:35am	DiKU-Trp	01-06	11:35am	DiKU+no Trp11:35am
+102	102_13.dat	13	102	3	Filter 8: 620 DiKU+Trp 11:35am	DiKU+Trp	01-06	11:35am	DiKU+Trp 11:35am
+102_1	102_1_1.dat	1	102	4	Filter 8: 620 DiKU+noTrp 11:40am	DiKU-Trp	01-01	11:40am	DiKU+noTrp 11:40am
+102_1	102_1_1.dat	1	102	4	Filter 8: 620 DiKU+Trp 11:40am	DiKU+Trp	01-01	11:40am	DiKU+Trp 11:40am
+102_1	102_1_1.dat	1	102	4	Filter 8: 620 HLKU 11:40am	HLKU	01-01	11:40am	HLKU 11:40am
+102_1	102_2_1.dat	2	102	4	Filter 8: 620 DiKU+His+no Trp 11:21pm	DiKU-Trp	01-01	11:21pm	DiKU+His+no Trp 11:21pm
+102_1	102_2_1.dat	2	102	4	Filter 8: 620 DiKU+His+Trp 11:21pm	DiKU+Trp	01-01	11:21pm	DiKU+His+Trp 11:21pm
+102_1	102_2_1.dat	2	102	4	Filter 8: 620 HLKU 11:21pm	HLKU	01-01	11:21pm	HLKU 11:21pm
+102_1	102_3_1.dat	3	102	4	Filter 8: 620 DiKU+His+no Trp 10:54am	DiKU-Trp	01-02	10:54am	DiKU+His+no Trp 10:54am
+102_1	102_3_1.dat	3	102	4	Filter 8: 620 DiKU+His+Trp 10:54am	DiKU+Trp	01-02	10:54am	DiKU+His+Trp 10:54am
+102_1	102_3_1.dat	3	102	4	Filter 8: 620 HLKU 10:54am	HLKU	01-02	10:54am	HLKU 10:54am
+102_1	102_4_1.dat	4	102	4	Filter 8: 620 DiKU+His+no Trp 10:50pm	DiKU-Trp	01-02	10:50pm	DiKU+His+no Trp 10:50pm
+102_1	102_4_1.dat	4	102	4	Filter 8: 620 DiKU++His+Trp 10:50pm	DiKU+Trp	01-02	10:50pm	DiKU++His+Trp 10:50pm
+102_1	102_4_1.dat	4	102	4	Filter 8: 620 HLKU 10:50pm 	HLKU	01-02	10:50pm	HLKU 10:50pm 
+102_1	102_5_1.dat	5	102	4	Filter 8: 620 DiKU+His+no Trp 11:45am	DiKU-Trp	01-03	11:45am	DiKU+His+no Trp 11:45am
+102_1	102_5_1.dat	5	102	4	Filter 8: 620 DiKU+His+Trp 11:45am	DiKU+Trp	01-03	11:45am	DiKU+His+Trp 11:45am
+102_1	102_5_1.dat	5	102	4	Filter 8: 620 HLKU 11:45am	HLKU	01-03	11:45am	HLKU 11:45am
+102_1	102_6_1.dat	6	102	4	Filter 8: 620 DiKU+His+no Trp 11:30pm	DiKU-Trp	01-03	11:30pm	DiKU+His+no Trp 11:30pm
+102_1	102_6_1.dat	6	102	4	Filter 8: 620 DiKU+His+Trp 11:30pm	DiKU+Trp	01-03	11:30pm	DiKU+His+Trp 11:30pm
+102_1	102_6_1.dat	6	102	4	Filter 8: 620 HLKU 11:29pm	HLKU	01-03	11:29pm	HLKU 11:29pm
+102_1	102_7_1.dat	7	102	4	Filter 8: 620 DiKU+His+no Trp 9:48am	DiKU-Trp	01-04	9:48am	DiKU+His+no Trp 9:48am
+102_1	102_7_1.dat	7	102	4	Filter 8: 620 DiKU+His+Trp 10:48am	DiKU+Trp	01-04	10:48am	DiKU+His+Trp 10:48am
+102_1	102_8_1.dat	8	102	4	Filter 8: 620 DiKU+His+no Trp 11:12pm	DiKU-Trp	01-04	11:12pm	DiKU+His+no Trp 11:12pm
+102_1	102_8_1.dat	8	102	4	Filter 8: 620 DiKU+His+Trp 11:12pm	DiKU+Trp	01-04	11:12pm	DiKU+His+Trp 11:12pm
+102_1	102_9_1.dat	9	102	4	Filter 8: 620 DiKU+His+No Trp 10:05am	DiKU-Trp	01-05	10:05am	DiKU+His+No Trp 10:05am
+102_1	102_9_1.dat	9	102	4	Filter 8: 620 DiKU+His+Trp 10:05am	DiKU+Trp	01-05	10:05am	DiKU+His+Trp 10:05am
+103	103_1.dat	1	103	2	Filter 8: 620 DiKU+His+no Trp 1:21pm	DiKU-Trp	06-02	1:21pm	DiKU+His+no Trp 1:21pm
+103	103_1.dat	1	103	2	Filter 8: 620 DiKU+His+Trp 1:21pm	DiKU+Trp	06-02	1:21pm	DiKU+His+Trp 1:21pm
+103	103_1.dat	1	103	2	Filter 8: 620 HLKU 1:21pm June2(sun)	HLKU	06-02	1:21pm	HLKU 1:21pm June2(sun)
+103	103_2.dat	2	103	2	Filter 8: 620 DiKU+His+no Trp 9:07am	DiKU-Trp	06-03	9:07am	DiKU+His+no Trp 9:07am
+103	103_2.dat	2	103	2	Filter 8: 620 DiKU+His+Trp 9:07am	DiKU+Trp	06-03	9:07am	DiKU+His+Trp 9:07am
+103	103_2.dat	2	103	2	Filter 8: 620 HLKU 9:07am (Mon)	HLKU	06-03	9:07am	HLKU 9:07am (Mon)
+103	103_3.dat	3	103	2	Filter 8: 620 DiKU+His+no Trp 11:37pm(mon)	DiKU-Trp	06-03	11:37pm	DiKU+His+no Trp 11:37pm(mon)
+103	103_3.dat	3	103	2	Filter 8: 620 DiKU+His+Trp 11:37pm	DiKU+Trp	06-03	11:37pm	DiKU+His+Trp 11:37pm
+103	103_3.dat	3	103	2	Filter 8: 620 HLKU 11:27pm (mon)	HLKU	06-03	11:27pm	HLKU 11:27pm (mon)
+103	103_4.dat	4	103	2	Filter 8: 620 DiKU+His+no Trp 11:56am (Tue)	DiKU-Trp	06-04	11:56am	DiKU+His+no Trp 11:56am (Tue)
+103	103_4.dat	4	103	2	Filter 8: 620 DiKU +His +Trp 11:56am (Tue)	DiKU+Trp	06-04	11:56am	DiKU +His +Trp 11:56am (Tue)
+103	103_4.dat	4	103	2	Filter 8: 620 HLKU 11:56am (Tue)	HLKU	06-04	11:56am	HLKU 11:56am (Tue)
+103	103_5.dat	5	103	2	Filter 8: 620 DiKU+His+no Trp 11:41pm(Tue)	DiKU-Trp	06-04	11:41pm	DiKU+His+no Trp 11:41pm(Tue)
+103	103_5.dat	5	103	2	Filter 8: 620 DiKU+His+Trp 11:41pm (Tue)	DiKU+Trp	06-04	11:41pm	DiKU+His+Trp 11:41pm (Tue)
+103	103_5.dat	5	103	2	Filter 8: 620 HLKU 11:41pm(Tue)	HLKU	06-04	11:41pm	HLKU 11:41pm(Tue)
+103	103_6.dat	6	103	2	Filter 8: 620 DiKU+His+bno Trp 12:00pm (Wed)	DiKU-Trp	06-05	12:00pm	DiKU+His+bno Trp 12:00pm (Wed)
+103	103_6.dat	6	103	2	Filter 8: 620 DiKU+His+Trp 12:00pm (Wed)	DiKU+Trp	06-05	12:00pm	DiKU+His+Trp 12:00pm (Wed)
+104	104_1.dat	1	104	2	Filter 8: 620 DiKU+His+no Trp 1:21pm	DiKU-Trp	06-02	1:21pm	DiKU+His+no Trp 1:21pm
+104	104_1.dat	1	104	2	Filter 8: 620 DiKU+His+Trp 1:21pm	DiKU+Trp	06-02	1:21pm	DiKU+His+Trp 1:21pm
+104	104_1.dat	1	104	2	Filter 8: 620 HLKU 1:20pm June2(sun)	HLKU	06-02	1:20pm	HLKU 1:20pm June2(sun)
+104	104_2.dat	2	104	2	Filter 8: 620 DiKU+His+no Trp 9:27am	DiKU-Trp	06-03	9:27am	DiKU+His+no Trp 9:27am
+104	104_2.dat	2	104	2	Filter 8: 620 DiKU+His+Trp 9:27am	DiKU+Trp	06-03	9:27am	DiKU+His+Trp 9:27am
+104	104_2.dat	2	104	2	Filter 8: 620 HLKU 9:27am (mon)	HLKU	06-03	9:27am	HLKU 9:27am (mon)
+104	104_3.dat	3	104	2	Filter 8: 620 DiKU+His+no Trp 11:30pm(mon)	DiKU-Trp	06-03	11:30pm	DiKU+His+no Trp 11:30pm(mon)
+104	104_3.dat	3	104	2	Filter 8: 620 DiKU+His+Trp 11:30pm (Mon)	DiKU+Trp	06-03	11:30pm	DiKU+His+Trp 11:30pm (Mon)
+104	104_3.dat	3	104	2	Filter 8: 620 HLKU 11:30pm (Mon)	HLKU	06-03	11:30pm	HLKU 11:30pm (Mon)
+104	104_4.dat	4	104	2	Filter 8: 620 DiKU +His+no Trp 12:18pm	DiKU-Trp	06-04	12:18pm	DiKU +His+no Trp 12:18pm
+104	104_4.dat	4	104	2	Filter 8: 620 DiKU+His+Trp 12:18pm (Tue)	DiKU+Trp	06-04	12:18pm	DiKU+His+Trp 12:18pm (Tue)
+104	104_4.dat	4	104	2	Filter 8: 620 HLKU 12:18pm (Tue)	HLKU	06-04	12:18pm	HLKU 12:18pm (Tue)
+104	104_5.dat	5	104	2	Filter 8: 620 DiKU+His+no Trp 11:41pm	DiKU-Trp	06-04	11:41pm	DiKU+His+no Trp 11:41pm
+104	104_5.dat	5	104	2	Filter 8: 620 DiKU+His+Trp 11:41pm(Tue)	DiKU+Trp	06-04	11:41pm	DiKU+His+Trp 11:41pm(Tue)
+104	104_5.dat	5	104	2	Filter 8: 620 HLKU 11:41pm(Tue)	HLKU	06-04	11:41pm	HLKU 11:41pm(Tue)
+104	104_6.dat	6	104	2	Filter 8: 620 DiKU+his+no Trp 12:00pm(wed)	DiKU-Trp	06-05	12:00pm	DiKU+his+no Trp 12:00pm(wed)
+104	104_6.dat	6	104	2	Filter 8: 620 DiKU+HIs+Trp 12:00pm(Wed)	DiKU+Trp	06-05	12:00pm	DiKU+HIs+Trp 12:00pm(Wed)
+105	105_1.dat	1	105	2	Filter 8: 620 DiKU+His+noTrp 12:21am (Tue)	DiKU-Trp	06-04	12:21am	DiKU+His+noTrp 12:21am (Tue)
+105	105_1.dat	1	105	2	Filter 8: 620 DiKU+His+Trp 12:21am (Tue)	DiKU+Trp	06-04	12:21am	DiKU+His+Trp 12:21am (Tue)
+105	105_1.dat	1	105	2	Filter 8: 620 HLKU 12:21am (Tue)	HLKU	06-04	12:21am	HLKU 12:21am (Tue)
+105	105_2.dat	2	105	2	Filter 8: 620 DiKU+His+noTrp 11:51am (Tue)	DiKU-Trp	06-04	11:51am	DiKU+His+noTrp 11:51am (Tue)
+105	105_2.dat	2	105	2	Filter 8: 620 DiKU+His+Trp 11:51am (Tue)	DiKU+Trp	06-04	11:51am	DiKU+His+Trp 11:51am (Tue)
+105	105_2.dat	2	105	2	Filter 8: 620 HLKU 11:50am (Tue)	HLKU	06-04	11:50am	HLKU 11:50am (Tue)
+105	105_3.dat	3	105	2	Filter 8: 620 DiKU+His+noTrp 11:41pm (Tue)	DiKU-Trp	06-04	11:41pm	DiKU+His+noTrp 11:41pm (Tue)
+105	105_3.dat	3	105	2	Filter 8: 620 DiKU+His+Trp 11:41pm (Tue)	DiKU+Trp	06-04	11:41pm	DiKU+His+Trp 11:41pm (Tue)
+105	105_3.dat	3	105	2	Filter 8: 620 HLKU 11:40pm (Tue)	HLKU	06-04	11:40pm	HLKU 11:40pm (Tue)
+105	105_4.dat	4	105	2	Filter 8: 620 DiKU+His+noTrp 12:36pm (Wed)	DiKU-Trp	06-05	12:36pm	DiKU+His+noTrp 12:36pm (Wed)
+105	105_4.dat	4	105	2	Filter 8: 620 DiKU+His+Trp 12:36pm	DiKU+Trp	06-05	12:36pm	DiKU+His+Trp 12:36pm
+105	105_4.dat	4	105	2	Filter 8: 620 HLKU 12:36pm (Wed)	HLKU	06-05	12:36pm	HLKU 12:36pm (Wed)
+105	105_5.dat	5	105	2	Filter 8: 620 DiKU+his+no Trp 1:29pm (Thu)	DiKU-Trp	06-06	1:29pm	DiKU+his+no Trp 1:29pm (Thu)
+105	105_5.dat	5	105	2	Filter 8: 620 DiKU+His+Trp 1:29pm (Thu)	DiKU+Trp	06-06	1:29pm	DiKU+His+Trp 1:29pm (Thu)
+105	105_5.dat	5	105	2	Filter 8: 620 HLKU 1:29pm (Thu)	HLKU	06-06	1:29pm	HLKU 1:29pm (Thu)
+105	105_6.dat	6	105	2	Filter 8: 620 DiKU+His+noTrp 2:40pm (Fri)	DiKU-Trp	06-07	2:40pm	DiKU+His+noTrp 2:40pm (Fri)
+105	105_6.dat	6	105	2	Filter 8: 620 DiKU+His+Trp 2:40pm (Fri)	DiKU+Trp	06-07	2:40pm	DiKU+His+Trp 2:40pm (Fri)
+105	105_6.dat	6	105	2	Filter 8: 620 HLKU 2:40pm (Fri)	HLKU	06-07	2:40pm	HLKU 2:40pm (Fri)
+106	106_1.dat	1	106	2	Filter 8: 620 DiKU+His+noTrp 12:21am (Tue)	DiKU-Trp	06-04	12:21am	DiKU+His+noTrp 12:21am (Tue)
+106	106_1.dat	1	106	2	Filter 8: 620 DiKU+His+Trp 12:21am (Tue)	DiKU+Trp	06-04	12:21am	DiKU+His+Trp 12:21am (Tue)
+106	106_1.dat	1	106	2	Filter 8: 620 HLKU 12:21am (Tue)	HLKU	06-04	12:21am	HLKU 12:21am (Tue)
+106	106_2.dat	2	106	2	Filter 8: 620 DiKU+His+no Trp  11:51am (Tue)	DiKU-Trp	06-04	11:51am	DiKU+His+no Trp  11:51am (Tue)
+106	106_2.dat	2	106	2	Filter 8: 620 DiKU+His+Trp 11:51am (Tue)	DiKU+Trp	06-04	11:51am	DiKU+His+Trp 11:51am (Tue)
+106	106_2.dat	2	106	2	Filter 8: 620 HLKU 11:51am (Tue)	HLKU	06-04	11:51am	HLKU 11:51am (Tue)
+106	106_3.dat	3	106	2	Filter 8: 620 DiKU+His+noTrp 11:42pm (Tue)	DiKU-Trp	06-04	11:42pm	DiKU+His+noTrp 11:42pm (Tue)
+106	106_3.dat	3	106	2	Filter 8: 620 DiKU+His+Trp 11:41pm (Tue)	DiKU+Trp	06-04	11:41pm	DiKU+His+Trp 11:41pm (Tue)
+106	106_3.dat	3	106	2	Filter 8: 620 HLKU 11:41pm (Tue)	HLKU	06-04	11:41pm	HLKU 11:41pm (Tue)
+106	106_4.dat	4	106	2	Filter 8: 620 DiKU+His+noTrp 12:36pm(Wed)	DiKU-Trp	06-05	12:36pm	DiKU+His+noTrp 12:36pm(Wed)
+106	106_4.dat	4	106	2	Filter 8: 620 DiKU+His+Trp 12:36pm (Wed)	DiKU+Trp	06-05	12:36pm	DiKU+His+Trp 12:36pm (Wed)
+106	106_4.dat	4	106	2	Filter 8: 620 HLKU 12:36pm (Wed)	HLKU	06-05	12:36pm	HLKU 12:36pm (Wed)
+106	106_5.dat	5	106	2	Filter 8: 620 DiKU+His+noTrp 1:29pm (Thu)	DiKU-Trp	06-06	1:29pm	DiKU+His+noTrp 1:29pm (Thu)
+106	106_5.dat	5	106	2	Filter 8: 620 DiKU+His+Trp 1:29pm (Thu)	DiKU+Trp	06-06	1:29pm	DiKU+His+Trp 1:29pm (Thu)
+106	106_5.dat	5	106	2	Filter 8: 620 HLKU 1:29pm (Thu)	HLKU	06-06	1:29pm	HLKU 1:29pm (Thu)
+106	106_6.dat	6	106	2	Filter 8: 620 DiKU+His+noTrp 2:40pm (Fri)	DiKU-Trp	06-07	2:40pm	DiKU+His+noTrp 2:40pm (Fri)
+106	106_6.dat	6	106	2	Filter 8: 620 DiKU+His+Trp 2:40pm (Fri)	DiKU+Trp	06-07	2:40pm	DiKU+His+Trp 2:40pm (Fri)
+106	106_6.dat	6	106	2	Filter 8: 620 HLKU 2:40pm(Fri)	HLKU	06-07	2:40pm	HLKU 2:40pm(Fri)
+107	107_1.dat	1	107	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	09-27	5:30pm	H-LKU+no Trp
+107	107_1.dat	1	107	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-27	5:30pm	H-LKU+Trp
+107	107_1.dat	1	107	2	Filter 8: 620  Sep/27 HLKU 5:30pm	HLKU	09-27	5:30pm	 Sep/27 HLKU 5:30pm
+107	107_2.dat	2	107	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	09-29	12:30pm	H-LKU+no Trp
+107	107_2.dat	2	107	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-29	12:30pm	H-LKU+Trp
+107	107_2.dat	2	107	2	Filter 8: 620 Sep/29 12:30pm HLKU	HLKU	09-29	12:30pm	Sep/29 12:30pm HLKU
+107	107_3.dat	3	107	2	Filter 8: 620  H-LKU + no Trp	DiKU-Trp	09-29	1:00am	 H-LKU + no Trp
+107	107_3.dat	3	107	2	Filter 8: 620	DiKU+Trp	09-29	1:00am	
+107	107_3.dat	3	107	2	Filter 8: 620 Sep/29 1:00am HLKU	HLKU	09-29	1:00am	Sep/29 1:00am HLKU
+107	107_4.dat	4	107	2	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	09-29	5:30pm	H-LKU+ no Trp
+107	107_4.dat	4	107	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-29	5:30pm	H-LKU+Trp
+107	107_4.dat	4	107	2	Filter 8: 620 Sep/29 5:30pm HLKU	HLKU	09-29	5:30pm	Sep/29 5:30pm HLKU
+107	107_5.dat	5	107	2	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	09-30	12:30pm	H-LKU+ no Trp
+107	107_5.dat	5	107	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-30	12:30pm	H-LKU+Trp
+107	107_5.dat	5	107	2	Filter 8: 620 Sep/30 12:30pm HLKU	HLKU	09-30	12:30pm	Sep/30 12:30pm HLKU
+107	107_6.dat	6	107	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-01	12:30pm	H-LKU+no Trp
+107	107_6.dat	6	107	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-01	12:30pm	H-LKU+Trp
+107	107_6.dat	6	107	2	Filter 8: 620 Oct/01 12:30pm HLKU	HLKU	10-01	12:30pm	Oct/01 12:30pm HLKU
+107	107_7.dat	7	107	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-02	12:30pm	H-LKU+no Trp
+107	107_7.dat	7	107	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-02	12:30pm	H-LKU+Trp
+107	107_7.dat	7	107	2	Filter 8: 620 Oct/2 12:30pm HLKU	HLKU	10-02	12:30pm	Oct/2 12:30pm HLKU
+108	108_1.dat	1	108	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	09-27	5:30pm	H-LKU+no Trp
+108	108_1.dat	1	108	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-27	5:30pm	H-LKU+Trp
+108	108_1.dat	1	108	2	Filter 8: 620 Sep/27 5:30pm HLKU	HLKU	09-27	5:30pm	Sep/27 5:30pm HLKU
+108	108_2.dat	2	108	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	09-28	12:30pm	H-LKU+no Trp
+108	108_2.dat	2	108	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-28	12:30pm	H-LKU+Trp
+108	108_2.dat	2	108	2	Filter 8: 620 Sep/28 12:30pm HLKU	HLKU	09-28	12:30pm	Sep/28 12:30pm HLKU
+108	108_3.dat	3	108	2	Filter 8: 620 H-LKU + no Trp	DiKU-Trp	09-29	1:00am	H-LKU + no Trp
+108	108_3.dat	3	108	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	09-29	1:00am	H-LKU+trp
+108	108_3.dat	3	108	2	Filter 8: 620 Sep/29 1:00am HLKU	HLKU	09-29	1:00am	Sep/29 1:00am HLKU
+108	108_4.dat	4	108	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	09-29	5:30pm	H-LKU+no Trp
+108	108_4.dat	4	108	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-29	5:30pm	H-LKU+Trp
+108	108_4.dat	4	108	2	Filter 8: 620 Sep/29 5:30pm HLKU	HLKU	09-29	5:30pm	Sep/29 5:30pm HLKU
+108	108_5.dat	5	108	2	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	09-30	12:30pm	H-LKU+ no Trp
+108	108_5.dat	5	108	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	09-30	12:30pm	H-LKU+Trp
+108	108_5.dat	5	108	2	Filter 8: 620 Sep/30 12:30pm HLKU	HLKU	09-30	12:30pm	Sep/30 12:30pm HLKU
+108	108_6.dat	6	108	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-01	12:30pm	H-LKU+no Trp
+108	108_6.dat	6	108	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-01	12:30pm	H-LKU+Trp
+108	108_6.dat	6	108	2	Filter 8: 620 Oct/01 12:30pm HLKU	HLKU	10-01	12:30pm	Oct/01 12:30pm HLKU
+108	108_7.dat	7	108	2	Filter 8: 620 H-LKU+no trp	DiKU-Trp	10-02	12:30pm	H-LKU+no trp
+108	108_7.dat	7	108	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-02	12:30pm	H-LKU+Trp
+108	108_7.dat	7	108	2	Filter 8: 620 Oct/02 12:30pm HLKU	HLKU	10-02	12:30pm	Oct/02 12:30pm HLKU
+109	109_1.dat	1	109	2	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	10-03	12:30am	H-LKU+ no Trp
+109	109_1.dat	1	109	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-03	12:30am	H-LKU+trp
+109	109_1.dat	1	109	2	Filter 8: 620 Oct/03 12:30am HLKU	HLKU	10-03	12:30am	Oct/03 12:30am HLKU
+109	109_2.dat	2	109	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-03	6:00pm	H-LKU+no Trp
+109	109_2.dat	2	109	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-03	6:00pm	H-LKU+Trp
+109	109_2.dat	2	109	2	Filter 8: 620 Oct/03 6:00lpm HLKU	HLKU	10-03	6:00pm	Oct/03 6:00lpm HLKU
+109	109_3.dat	3	109	2	Filter 8: 620 HLKU+no Trp	DiKU-Trp	10-04	2:00pm	HLKU+no Trp
+109	109_3.dat	3	109	2	Filter 8: 620	DiKU+Trp	10-04	2:00pm	
+109	109_3.dat	3	109	2	Filter 8: 620 Oct/04 2:00pm HLKU	HLKU	10-04	2:00pm	Oct/04 2:00pm HLKU
+109	109_4.dat	4	109	2	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	10-05	12:30pm	H-LKU+ no Trp
+109	109_4.dat	4	109	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-05	12:30pm	H-LKU+trp
+109	109_4.dat	4	109	2	Filter 8: 620 Oct/05 12:30pm HLKU	HLKU	10-05	12:30pm	Oct/05 12:30pm HLKU
+109	109_5.dat	5	109	2	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	10-06	12:30pm	H-LKU+ no Trp
+109	109_5.dat	5	109	2	Filter 8: 620	DiKU+Trp	10-06	12:30pm	
+109	109_5.dat	5	109	2	Filter 8: 620 Oct/06 12:30pm HLKU	HLKU	10-06	12:30pm	Oct/06 12:30pm HLKU
+110	110_1.dat	1	110	2	Filter 8: 620 H-LKU+no trp	DiKU-Trp	10-03	12:30am	H-LKU+no trp
+110	110_1.dat	1	110	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-03	12:30am	H-LKU+Trp
+110	110_1.dat	1	110	2	Filter 8: 620 Oct/03 12:30am HLKU	HLKU	10-03	12:30am	Oct/03 12:30am HLKU
+110	110_2.dat	2	110	2	Filter 8: 620 H-LKU+ no trp	DiKU-Trp	10-03	6:00pm	H-LKU+ no trp
+110	110_2.dat	2	110	2	Filter 8: 620 H-LKU+ Trp	DiKU+Trp	10-03	6:00pm	H-LKU+ Trp
+110	110_2.dat	2	110	2	Filter 8: 620 Oct/03 6:00pm HLKU	HLKU	10-03	6:00pm	Oct/03 6:00pm HLKU
+110	110_3.dat	3	110	2	Filter 8: 620 HLKU+no Trp	DiKU-Trp	10-04	2:00pm	HLKU+no Trp
+110	110_3.dat	3	110	2	Filter 8: 620 HLKU+Trp	DiKU+Trp	10-04	2:00pm	HLKU+Trp
+110	110_3.dat	3	110	2	Filter 8: 620 OCt./04 2:00pm HLKU	HLKU	10-04	2:00pm	OCt./04 2:00pm HLKU
+110	110_4.dat	4	110	2	Filter 8: 620 Oct/05 12:30pm H-LKU+no Trp	DiKU-Trp	10-05	12:30pm	Oct/05 12:30pm H-LKU+no Trp
+110	110_4.dat	4	110	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-05	12:30pm	H-LKU+trp
+110	110_4.dat	4	110	2	Filter 8: 620 Oct/05 12:30pm HLKU	HLKU	10-05	12:30pm	Oct/05 12:30pm HLKU
+110	110_5.dat	5	110	2	Filter 8: 620 H-LKU+no trp	DiKU-Trp	10-06	12:30pm	H-LKU+no trp
+110	110_5.dat	5	110	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-06	12:30pm	H-LKU+trp
+110	110_5.dat	5	110	2	Filter 8: 620 Oct/06 12:30pm HLKU	HLKU	10-06	12:30pm	Oct/06 12:30pm HLKU
+111	111_1.dat	1	111	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-06	6:40pm	H-LKU+no Trp
+111	111_1.dat	1	111	3	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-06	6:40pm	H-LKU+Trp
+111	111_1.dat	1	111	3	Filter 8: 620 Oct/06 6:40pm HLKU	HLKU	10-06	6:40pm	Oct/06 6:40pm HLKU
+111	111_2.dat	2	111	3	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	10-09	10:00am	H-LKU+ no Trp
+111	111_2.dat	2	111	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-09	10:00am	H-LKU+trp
+111	111_2.dat	2	111	3	Filter 8: 620 Oct/09 10:am HLKU	HLKU	10-09	10:00am	Oct/09 10:am HLKU
+111	111_3.dat	3	111	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-09	12:00pm	H-LKU+no Trp
+111	111_3.dat	3	111	3	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-09	12:00pm	H-LKU+Trp
+111	111_3.dat	3	111	3	Filter 8: 620 Oct/09 12:00pm HLKU	HLKU	10-09	12:00pm	Oct/09 12:00pm HLKU
+111	111_4.dat	4	111	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-10	7:00pm	H-LKU+no Trp
+111	111_4.dat	4	111	3	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-10	7:00pm	H-LKU+Trp
+111	111_4.dat	4	111	3	Filter 8: 620 Oct/10 7:00pm HLKU	HLKU	10-10	7:00pm	Oct/10 7:00pm HLKU
+111	111_5.dat	5	111	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-11	7:00pm	H-LKU+no Trp
+111	111_5.dat	5	111	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-11	7:00pm	H-LKU+trp
+111	111_5.dat	5	111	3	Filter 8: 620 Oct/11 7:00pm HLKU	HLKU	10-11	7:00pm	Oct/11 7:00pm HLKU
+111	111_6.dat	6	111	3	Filter 8: 620 H-LKU+no TRP	DiKU-Trp	10-12	9:30pm	H-LKU+no TRP
+111	111_6.dat	6	111	3	Filter 8: 620 H-LKU+TRP	DiKU+Trp	10-12	9:30pm	H-LKU+TRP
+111	111_6.dat	6	111	3	Filter 8: 620 Oct/12 9:30pm HLKU	HLKU	10-12	9:30pm	Oct/12 9:30pm HLKU
+111_1	111_1.dat	1	111	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-15	11:30pm	H-LKU+noTRP
+111_1	111_1.dat	1	111	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-15	11:30pm	H-LKU+trp
+111_1	111_1.dat	1	111	4	Filter 8: 620 Jan/15 11:30pm HLKU	HLKU	01-15	11:30pm	Jan/15 11:30pm HLKU
+111_1	111_2.dat	2	111	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-26	10:45am	H-LKU+noTRP
+111_1	111_2.dat	2	111	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-26	10:45am	H-LKU+trp
+111_1	111_2.dat	2	111	4	Filter 8: 620 Jan/26 10:45am HLKU	HLKU	01-26	10:45am	Jan/26 10:45am HLKU
+111_1	111_3.dat	3	111	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	1:00am	H-LKU+noTRP
+111_1	111_3.dat	3	111	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	1:00am	H-LKU+trp
+111_1	111_3.dat	3	111	4	Filter 8: 620 Jan/27 1:00am HLKU	HLKU	01-27	1:00am	Jan/27 1:00am HLKU
+111_1	111_4.dat	4	111	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	11:45pm	H-LKU+noTRP
+111_1	111_4.dat	4	111	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	11:45pm	H-LKU+trp
+111_1	111_4.dat	4	111	4	Filter 8: 620 Jan/27 11:45pm HLKU	HLKU	01-27	11:45pm	Jan/27 11:45pm HLKU
+111_1	111_5.dat	5	111	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-28	10:30pm	H-LKU+noTRP
+111_1	111_5.dat	5	111	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-28	10:30pm	H-LKU+trp
+111_1	111_5.dat	5	111	4	Filter 8: 620 Jan/28 10:30pm HLKU	HLKU	01-28	10:30pm	Jan/28 10:30pm HLKU
+112	112_1.dat	1	112	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-06	6:40pm	H-LKU+no Trp
+112	112_1.dat	1	112	3	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-06	6:40pm	H-LKU+Trp
+112	112_1.dat	1	112	3	Filter 8: 620 Oct/06 6:40pm HLKU	HLKU	10-06	6:40pm	Oct/06 6:40pm HLKU
+112	112_2.dat	2	112	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-09	10:00am	H-LKU+no Trp
+112	112_2.dat	2	112	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-09	10:00am	H-LKU+trp
+112	112_2.dat	2	112	3	Filter 8: 620 Oct/09 10:00am HLKU	HLKU	10-09	10:00am	Oct/09 10:00am HLKU
+112	112_3.dat	3	112	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-09	12:00pm	H-LKU+no Trp
+112	112_3.dat	3	112	3	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-09	12:00pm	H-LKU+Trp
+112	112_3.dat	3	112	3	Filter 8: 620 Oct/09 12:00pm HLKU	HLKU	10-09	12:00pm	Oct/09 12:00pm HLKU
+112	112_4.dat	4	112	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-10	7:00pm	H-LKU+no Trp
+112	112_4.dat	4	112	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-10	7:00pm	H-LKU+trp
+112	112_4.dat	4	112	3	Filter 8: 620 Oct/10 7:00pm HLKU	HLKU	10-10	7:00pm	Oct/10 7:00pm HLKU
+112	112_5.dat	5	112	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-11	7:00pm	H-LKU+no Trp
+112	112_5.dat	5	112	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-11	7:00pm	H-LKU+trp
+112	112_5.dat	5	112	3	Filter 8: 620 Oct/11 7:00pm HLKU	HLKU	10-11	7:00pm	Oct/11 7:00pm HLKU
+112	112_6.dat	6	112	3	Filter 8: 620 H-LKU+no TRP	DiKU-Trp	10-12	9:30pm	H-LKU+no TRP
+112	112_6.dat	6	112	3	Filter 8: 620 H-LKU+TRP	DiKU+Trp	10-12	9:30pm	H-LKU+TRP
+112	112_6.dat	6	112	3	Filter 8: 620 Oct/12 9:30pm HLKU	HLKU	10-12	9:30pm	Oct/12 9:30pm HLKU
+112_1	112_1.dat	1	112	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-25	11:30pm	H-LKU+noTRP
+112_1	112_1.dat	1	112	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-25	11:30pm	H-LKU+trp
+112_1	112_1.dat	1	112	4	Filter 8: 620 Jan/25 11:30pm HLKU	HLKU	01-25	11:30pm	Jan/25 11:30pm HLKU
+112_1	112_2.dat	2	112	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-26	10:40am	H-LKU+noTRP
+112_1	112_2.dat	2	112	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-26	10:40am	H-LKU+trp
+112_1	112_2.dat	2	112	4	Filter 8: 620 Jan/26 10:40am HLKU	HLKU	01-26	10:40am	Jan/26 10:40am HLKU
+112_1	112_3.dat	3	112	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	1:00am	H-LKU+noTRP
+112_1	112_3.dat	3	112	4	Filter 8: 620 H-LKU+TRP	DiKU+Trp	01-27	1:00am	H-LKU+TRP
+112_1	112_3.dat	3	112	4	Filter 8: 620 Jan/27 1:00am HLKU	HLKU	01-27	1:00am	Jan/27 1:00am HLKU
+112_1	112_4.dat	4	112	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	11:45pm	H-LKU+noTRP
+112_1	112_4.dat	4	112	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	11:45pm	H-LKU+trp
+112_1	112_4.dat	4	112	4	Filter 8: 620 Jan/27 11:45pm HLKU	HLKU	01-27	11:45pm	Jan/27 11:45pm HLKU
+112_1	112_5.dat	5	112	4	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-28	10:30pm	H-LKU+noTRP
+112_1	112_5.dat	5	112	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-28	10:30pm	H-LKU+trp
+112_1	112_5.dat	5	112	4	Filter 8: 620 Jan/28 10:30pm HLKU	HLKU	01-28	10:30pm	Jan/28 10:30pm HLKU
+113	113_1.dat	1	113	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-14	11:30pm	H-LKU+no Trp
+113	113_1.dat	1	113	2	Filter 8: 620	DiKU+Trp	10-14	11:30pm	
+113	113_1.dat	1	113	2	Filter 8: 620 Oct./14 11:30pm HLKU	HLKU	10-14	11:30pm	Oct./14 11:30pm HLKU
+113	113_2.dat	2	113	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-15	12:00pm	H-LKU+no Trp
+113	113_2.dat	2	113	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-15	12:00pm	H-LKU+trp
+113	113_2.dat	2	113	2	Filter 8: 620 Oct/15 12:00pm HLKU	HLKU	10-15	12:00pm	Oct/15 12:00pm HLKU
+113	113_3.dat	3	113	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-15	12:30am	H-LKU+no Trp
+113	113_3.dat	3	113	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-15	12:30am	H-LKU+Trp
+113	113_3.dat	3	113	2	Filter 8: 620 Oct/15 12:30am HLKU	HLKU	10-15	12:30am	Oct/15 12:30am HLKU
+113	113_4.dat	4	113	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-16	12:30pm	H-LKU+no Trp
+113	113_4.dat	4	113	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-16	12:30pm	H-LKU+Trp
+113	113_4.dat	4	113	2	Filter 8: 620 Oct/16 12:30pm HLKU	HLKU	10-16	12:30pm	Oct/16 12:30pm HLKU
+113	113_5.dat	5	113	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-17	12:00pm	H-LKU+no Trp
+113	113_5.dat	5	113	2	Filter 8: 620	DiKU+Trp	10-17	12:00pm	
+113	113_5.dat	5	113	2	Filter 8: 620 Oct/17 12:00pm HLKU	HLKU	10-17	12:00pm	Oct/17 12:00pm HLKU
+113	113_6.dat	6	113	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-18	1:00am	H-LKU+no Trp
+113	113_6.dat	6	113	2	Filter 8: 620 H-LKU+TRp	DiKU+Trp	10-18	1:00am	H-LKU+TRp
+113	113_6.dat	6	113	2	Filter 8: 620 Oct/18 1:00am HLKU	HLKU	10-18	1:00am	Oct/18 1:00am HLKU
+114	114_1.dat	1	114	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-14	11:30pm	H-LKU+no Trp
+114	114_1.dat	1	114	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-14	11:30pm	H-LKU+trp
+114	114_1.dat	1	114	2	Filter 8: 620 Oct/14 11:30pm HLKU	HLKU	10-14	11:30pm	Oct/14 11:30pm HLKU
+114	114_2.dat	2	114	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-15	12:30pm	H-LKU+no Trp
+114	114_2.dat	2	114	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-15	12:30pm	H-LKU+trp
+114	114_2.dat	2	114	2	Filter 8: 620 Oct/15 12:30pm HLKU	HLKU	10-15	12:30pm	Oct/15 12:30pm HLKU
+114	114_3.dat	3	114	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-15	12:30am	H-LKU+no Trp
+114	114_3.dat	3	114	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-15	12:30am	H-LKU+trp
+114	114_3.dat	3	114	2	Filter 8: 620 Oct/15 12:30am HLKU	HLKU	10-15	12:30am	Oct/15 12:30am HLKU
+114	114_4.dat	4	114	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-16	12:30pm	H-LKU+no Trp
+114	114_4.dat	4	114	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-16	12:30pm	H-LKU+trp
+114	114_4.dat	4	114	2	Filter 8: 620 Oct/16 12:30pm HLKU	HLKU	10-16	12:30pm	Oct/16 12:30pm HLKU
+114	114_5.dat	5	114	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-17	12:00pm	H-LKU+no Trp
+114	114_5.dat	5	114	2	Filter 8: 620	DiKU+Trp	10-17	12:00pm	
+114	114_5.dat	5	114	2	Filter 8: 620 Oct/17 12:00pm HLKU	HLKU	10-17	12:00pm	Oct/17 12:00pm HLKU
+114	114_6.dat	6	114	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-18	1:00am	H-LKU+no Trp
+114	114_6.dat	6	114	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-18	1:00am	H-LKU+trp
+114	114_6.dat	6	114	2	Filter 8: 620 Oct/18 1:00am HLKU	HLKU	10-18	1:00am	Oct/18 1:00am HLKU
+115	115_1.dat	1	115	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-23	5:00pm	H-LKU+no Trp
+115	115_1.dat	1	115	4	Filter 8: 620 H-LKU+TRp	DiKU+Trp	10-23	5:00pm	H-LKU+TRp
+115	115_1.dat	1	115	4	Filter 8: 620 OCT/23 5:00pm HLKU	HLKU	10-23	5:00pm	OCT/23 5:00pm HLKU
+115	115_2.dat	2	115	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-24	9:00pm	H-LKU+no Trp
+115	115_2.dat	2	115	4	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-24	9:00pm	H-LKU+Trp
+115	115_2.dat	2	115	4	Filter 8: 620 Oct/24 9:00pm HLKU	HLKU	10-24	9:00pm	Oct/24 9:00pm HLKU
+115	115_3.dat	3	115	4	Filter 8: 620 DiKU-Trp %Updated by AB to make unique (2013-06-10)	DiKU-Trp	10-25	9:00pm	
+115	115_3.dat	3	115	4	Filter 8: 620 DiKU+Trp % Updated by AB to make unique (2013-06-10)	DiKU+Trp	10-25	9:00pm	
+115	115_3.dat	3	115	4	Filter 8: 620 OCT/25 9:00pm HLKU	HLKU	10-25	9:00pm	OCT/25 9:00pm HLKU
+115_1	115_1.dat	1	115	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-23	5:00pm	H-LKU+no Trp
+115_1	115_1.dat	1	115	5	Filter 8: 620 H-LKU+TRp	DiKU+Trp	10-23	5:00pm	H-LKU+TRp
+115_1	115_1.dat	1	115	5	Filter 8: 620 OCT/23 5:00pm HLKU	HLKU	10-23	5:00pm	OCT/23 5:00pm HLKU
+115_1	115_2.dat	2	115	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-24	9:00pm	H-LKU+no Trp
+115_1	115_2.dat	2	115	5	Filter 8: 620 H-LKU+Trp	DiKU+Trp	10-24	9:00pm	H-LKU+Trp
+115_1	115_2.dat	2	115	5	Filter 8: 620 Oct/24 9:00pm HLKU	HLKU	10-24	9:00pm	Oct/24 9:00pm HLKU
+115_1	115_3.dat	3	115	5	Filter 8: 620 DiKU-Trp %Updated by AB to make unique (2013-06-10)	DiKU-Trp	10-25	9:00pm	
+115_1	115_3.dat	3	115	5	Filter 8: 620 DiKU+Trp % Updated by AB to make unique (2013-06-10)	DiKU+Trp	10-25	9:00pm	
+115_1	115_3.dat	3	115	5	Filter 8: 620 OCT/25 9:00pm HLKU	HLKU	10-25	9:00pm	OCT/25 9:00pm HLKU
+115_1	115_4.dat	4	115	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-26	5:00pm	H-LKU+no Trp
+115_1	115_4.dat	4	115	5	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-26	5:00pm	H-LKU+trp
+115_1	115_4.dat	4	115	5	Filter 8: 620 Oct/26 5:00pm HLKU	HLKU	10-26	5:00pm	Oct/26 5:00pm HLKU
+115_1	115_5.dat	5	115	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-27	6:00pm	H-LKU+no Trp
+115_1	115_5.dat	5	115	5	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-27	6:00pm	H-LKU+trp
+115_1	115_5.dat	5	115	5	Filter 8: 620 Oct/27 6:00pm HLKU	HLKU	10-27	6:00pm	Oct/27 6:00pm HLKU
+115_2	115_1.dat	1	115	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-25	11:30pm	H-LKU+noTRP
+115_2	115_1.dat	1	115	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-25	11:30pm	H-LKU+trp
+115_2	115_1.dat	1	115	6	Filter 8: 620 Jan/25 11:30pm HLKU	HLKU	01-25	11:30pm	Jan/25 11:30pm HLKU
+115_2	115_2.dat	2	115	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-26	10:45am	H-LKU+noTRP
+115_2	115_2.dat	2	115	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-26	10:45am	H-LKU+trp
+115_2	115_2.dat	2	115	6	Filter 8: 620 Jan/26 10:45am HLKU	HLKU	01-26	10:45am	Jan/26 10:45am HLKU
+115_2	115_3.dat	3	115	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	1:00am	H-LKU+noTRP
+115_2	115_3.dat	3	115	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	1:00am	H-LKU+trp
+115_2	115_3.dat	3	115	6	Filter 8: 620 Jan/27 1:00am HLKU	HLKU	01-27	1:00am	Jan/27 1:00am HLKU
+115_2	115_4.dat	4	115	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	11:45pm	H-LKU+noTRP
+115_2	115_4.dat	4	115	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	11:45pm	H-LKU+trp
+115_2	115_4.dat	4	115	6	Filter 8: 620 Jan/27 11:45pm HLKU	HLKU	01-27	11:45pm	Jan/27 11:45pm HLKU
+115_2	115_5.dat	5	115	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-28	10:30pm	H-LKU+noTRP
+115_2	115_5.dat	5	115	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-28	10:30pm	H-LKU+trp
+115_2	115_5.dat	5	115	6	Filter 8: 620 Jan/28 10:30pm HLKU	HLKU	01-28	10:30pm	Jan/28 10:30pm HLKU
+116	116_1.dat	1	116	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-13	5:00pm	H-LKU+no Trp
+116	116_1.dat	1	116	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-13	5:00pm	H-LKU+trp
+116	116_1.dat	1	116	4	Filter 8: 620 Oct/13 5:00pm HLKU	HLKU	10-13	5:00pm	Oct/13 5:00pm HLKU
+116	116_2.dat	2	116	4	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	10-24	9:00pm	H-LKU+ no Trp
+116	116_2.dat	2	116	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-24	9:00pm	H-LKU+trp
+116	116_2.dat	2	116	4	Filter 8: 620 Oct/24 9:00pm HLKU	HLKU	10-24	9:00pm	Oct/24 9:00pm HLKU
+116	116_3.dat	3	116	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-25	9:00pm	H-LKU+no Trp
+116	116_3.dat	3	116	4	Filter 8: 620	DiKU+Trp	10-25	9:00pm	
+116	116_3.dat	3	116	4	Filter 8: 620 Oct/25 9:00pm HLKU	HLKU	10-25	9:00pm	Oct/25 9:00pm HLKU
+116_1	116_1.dat	1	116	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-13	5:00pm	H-LKU+no Trp
+116_1	116_1.dat	1	116	5	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-13	5:00pm	H-LKU+trp
+116_1	116_1.dat	1	116	5	Filter 8: 620 Oct/13 5:00pm HLKU	HLKU	10-13	5:00pm	Oct/13 5:00pm HLKU
+116_1	116_2.dat	2	116	5	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	10-24	9:00pm	H-LKU+ no Trp
+116_1	116_2.dat	2	116	5	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-24	9:00pm	H-LKU+trp
+116_1	116_2.dat	2	116	5	Filter 8: 620 Oct/24 9:00pm HLKU	HLKU	10-24	9:00pm	Oct/24 9:00pm HLKU
+116_1	116_3.dat	3	116	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-25	9:00pm	H-LKU+no Trp
+116_1	116_3.dat	3	116	5	Filter 8: 620	DiKU+Trp	10-25	9:00pm	
+116_1	116_3.dat	3	116	5	Filter 8: 620 Oct/25 9:00pm HLKU	HLKU	10-25	9:00pm	Oct/25 9:00pm HLKU
+116_1	116_4.dat	4	116	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-26	5:00pm	H-LKU+no Trp
+116_1	116_4.dat	4	116	5	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-26	5:00pm	H-LKU+trp
+116_1	116_4.dat	4	116	5	Filter 8: 620 Oct/26 5:00pm HLKU	HLKU	10-26	5:00pm	Oct/26 5:00pm HLKU
+116_1	116_5.dat	5	116	5	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-27	6:00pm	H-LKU+no Trp
+116_1	116_5.dat	5	116	5	Filter 8: 620	DiKU+Trp	10-27	6:00pm	
+116_1	116_5.dat	5	116	5	Filter 8: 620 Oct/27 6:00pm HLKU	HLKU	10-27	6:00pm	Oct/27 6:00pm HLKU
+116_2	116_1.dat	1	116	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-25	11:30pm	H-LKU+noTRP
+116_2	116_1.dat	1	116	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-25	11:30pm	H-LKU+trp
+116_2	116_1.dat	1	116	6	Filter 8: 620 Jan/25 11:30pm HLKU	HLKU	01-25	11:30pm	Jan/25 11:30pm HLKU
+116_2	116_2.dat	2	116	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-26	10:40am	H-LKU+noTRP
+116_2	116_2.dat	2	116	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-26	10:40am	H-LKU+trp
+116_2	116_2.dat	2	116	6	Filter 8: 620 Jan/26 10:40am HLKU	HLKU	01-26	10:40am	Jan/26 10:40am HLKU
+116_2	116_3.dat	3	116	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	1:00am	H-LKU+noTRP
+116_2	116_3.dat	3	116	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	1:00am	H-LKU+trp
+116_2	116_3.dat	3	116	6	Filter 8: 620 Jan/27 1:00am HLKU	HLKU	01-27	1:00am	Jan/27 1:00am HLKU
+116_2	116_4.dat	4	116	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-27	11:45pm	H-LKU+noTRP
+116_2	116_4.dat	4	116	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-27	11:45pm	H-LKU+trp
+116_2	116_4.dat	4	116	6	Filter 8: 620 Jan/27 11:45pm HLKU	HLKU	01-27	11:45pm	Jan/27 11:45pm HLKU
+116_2	116_5.dat	5	116	6	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-28	10:40pm	H-LKU+noTRP
+116_2	116_5.dat	5	116	6	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-28	10:40pm	H-LKU+trp
+116_2	116_5.dat	5	116	6	Filter 8: 620 jan/28 10:40pm HLKU	HLKU	01-28	10:40pm	jan/28 10:40pm HLKU
+117	117_1.dat	1	117	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-27	11:30pm	H-LKU+no Trp
+117	117_1.dat	1	117	2	Filter 8: 620	DiKU+Trp	10-27	11:30pm	
+117	117_1.dat	1	117	2	Filter 8: 620 Oct/27 11:30pm HLKU	HLKU	10-27	11:30pm	Oct/27 11:30pm HLKU
+117	117_2.dat	2	117	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-28	12:30pm	H-LKU+no Trp
+117	117_2.dat	2	117	2	Filter 8: 620	DiKU+Trp	10-28	12:30pm	
+117	117_2.dat	2	117	2	Filter 8: 620 Oct/28 12:30pm HLKU	HLKU	10-28	12:30pm	Oct/28 12:30pm HLKU
+117	117_3.dat	3	117	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-28	12:30am	H-LKU+no Trp
+117	117_3.dat	3	117	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-28	12:30am	H-LKU+trp
+117	117_3.dat	3	117	2	Filter 8: 620 Oct/28 12:30am HLKU	HLKU	10-28	12:30am	Oct/28 12:30am HLKU
+117	117_4.dat	4	117	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-29	12:30am	H-LKU+no Trp
+117	117_4.dat	4	117	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-29	12:30am	H-LKU+trp
+117	117_4.dat	4	117	2	Filter 8: 620 Oct/29 12:30am HLKU	HLKU	10-29	12:30am	Oct/29 12:30am HLKU
+117	117_5.dat	5	117	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-30	12:30am	H-LKU+no Trp
+117	117_5.dat	5	117	2	Filter 8: 620	DiKU+Trp	10-30	12:30am	
+117	117_5.dat	5	117	2	Filter 8: 620 Oct/30 12:30am HLKU	HLKU	10-30	12:30am	Oct/30 12:30am HLKU
+118	118_1.dat	1	118	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-27	11:30pm	H-LKU+no Trp
+118	118_1.dat	1	118	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-27	11:30pm	H-LKU+trp
+118	118_1.dat	1	118	2	Filter 8: 620 Oct/27 11:30pm HLKU	HLKU	10-27	11:30pm	Oct/27 11:30pm HLKU
+118	118_2.dat	2	118	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-28	12:30pm	H-LKU+no Trp
+118	118_2.dat	2	118	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-28	12:30pm	H-LKU+trp
+118	118_2.dat	2	118	2	Filter 8: 620 Oct/28 12:30pm HLKU	HLKU	10-28	12:30pm	Oct/28 12:30pm HLKU
+118	118_3.dat	3	118	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-28	12:30am	H-LKU+no Trp
+118	118_3.dat	3	118	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-28	12:30am	H-LKU+trp
+118	118_3.dat	3	118	2	Filter 8: 620 Oct/28 12:30am HLKU	HLKU	10-28	12:30am	Oct/28 12:30am HLKU
+118	118_4.dat	4	118	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-29	12:30am	H-LKU+no Trp
+118	118_4.dat	4	118	2	Filter 8: 620	DiKU+Trp	10-29	12:30am	
+118	118_4.dat	4	118	2	Filter 8: 620 Oct/29 12:30am HLKU	HLKU	10-29	12:30am	Oct/29 12:30am HLKU
+118	118_5.dat	5	118	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	10-30	12:30am	H-LKU+no Trp
+118	118_5.dat	5	118	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	10-30	12:30am	H-LKU+trp
+118	118_5.dat	5	118	2	Filter 8: 620 Oct/30 12:30am HLKU	HLKU	10-30	12:30am	Oct/30 12:30am HLKU
+119	119_1.dat	1	119	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-01	11:00am	H-LKU+no Trp
+119	119_1.dat	1	119	2	Filter 8: 620 H-LKU+Trp	DiKU+Trp	11-01	11:00am	H-LKU+Trp
+119	119_1.dat	1	119	2	Filter 8: 620 Nov/01 11:00am HLKU	HLKU	11-01	11:00am	Nov/01 11:00am HLKU
+119	119_2.dat	2	119	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-01	12:00am	H-LKU+no Trp
+119	119_2.dat	2	119	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-01	12:00am	H-LKU+trp
+119	119_2.dat	2	119	2	Filter 8: 620 Oct/01 12:001m HLKU	HLKU	11-01	12:00am	Oct/01 12:001m HLKU
+119	119_3.dat	3	119	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-02	12:00pm	H-LKU+no Trp
+119	119_3.dat	3	119	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-02	12:00pm	H-LKU+trp
+119	119_3.dat	3	119	2	Filter 8: 620 Nov/02 12:00pm HLKU	HLKU	11-02	12:00pm	Nov/02 12:00pm HLKU
+119	119_4.dat	4	119	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-03	12:00pm	H-LKU+no Trp
+119	119_4.dat	4	119	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-03	12:00pm	H-LKU+trp
+119	119_4.dat	4	119	2	Filter 8: 620 Nov/03 12:00pm HLKU	HLKU	11-03	12:00pm	Nov/03 12:00pm HLKU
+119	119_5.dat	5	119	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-04	12:30pm	H-LKU+no Trp
+119	119_5.dat	5	119	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-04	12:30pm	H-LKU+trp
+119	119_5.dat	5	119	2	Filter 8: 620 Nov/4 12:30pm HLKU	HLKU	11-04	12:30pm	Nov/4 12:30pm HLKU
+120	120_1.dat	1	120	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-01	11:00am	H-LKU+no Trp
+120	120_1.dat	1	120	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-01	11:00am	H-LKU+trp
+120	120_1.dat	1	120	2	Filter 8: 620 Nov/1 11:00am HLKU	HLKU	11-01	11:00am	Nov/1 11:00am HLKU
+120	120_2.dat	2	120	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-01	12:00am	H-LKU+no Trp
+120	120_2.dat	2	120	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-01	12:00am	H-LKU+trp
+120	120_2.dat	2	120	2	Filter 8: 620 Nov/01 12:00am HLKU	HLKU	11-01	12:00am	Nov/01 12:00am HLKU
+120	120_3.dat	3	120	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-02	12:00pm	H-LKU+no Trp
+120	120_3.dat	3	120	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-02	12:00pm	H-LKU+trp
+120	120_3.dat	3	120	2	Filter 8: 620 Nov/02 12:00pm HLKU	HLKU	11-02	12:00pm	Nov/02 12:00pm HLKU
+120	120_4.dat	4	120	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-03	12:00pm	H-LKU+no Trp
+120	120_4.dat	4	120	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-03	12:00pm	H-LKU+trp
+120	120_4.dat	4	120	2	Filter 8: 620 Nov/03 12:00pm HLKU	HLKU	11-03	12:00pm	Nov/03 12:00pm HLKU
+120	120_5.dat	5	120	2	Filter 8: 620 H-LKU+no trp	DiKU-Trp	11-04	12:30pm	H-LKU+no trp
+120	120_5.dat	5	120	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-04	12:30pm	H-LKU+trp
+120	120_5.dat	5	120	2	Filter 8: 620 Nov/4 12:30pm HLKU	HLKU	11-04	12:30pm	Nov/4 12:30pm HLKU
+121	121_1.dat	1	121	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-05	12:30am	H-LKU+no Trp
+121	121_1.dat	1	121	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-05	12:30am	H-LKU+trp
+121	121_1.dat	1	121	3	Filter 8: 620 Nov/05 12:30am HLKU	HLKU	11-05	12:30am	Nov/05 12:30am HLKU
+121	121_2.dat	2	121	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-06	12:30am	H-LKU+no Trp
+121	121_2.dat	2	121	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-06	12:30am	H-LKU+trp
+121	121_2.dat	2	121	3	Filter 8: 620 Nov/06 12:30 HLKU	HLKU	11-06	12:30am	Nov/06 12:30 HLKU
+121	121_3.dat	3	121	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-07	12:30am	H-LKU+no Trp
+121	121_3.dat	3	121	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-07	12:30am	H-LKU+trp
+121	121_3.dat	3	121	3	Filter 8: 620 Nov/07 12:30am HLKU	HLKU	11-07	12:30am	Nov/07 12:30am HLKU
+121	121_4.dat	4	121	3	Filter 8: 620 H-lKU+no Trp	DiKU-Trp	11-07	12:30am	H-lKU+no Trp
+121	121_4.dat	4	121	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-07	12:30am	H-LKU+trp
+121	121_4.dat	4	121	3	Filter 8: 620 Nov/7 12:30am HLKU	HLKU	11-07	12:30am	Nov/7 12:30am HLKU
+121	121_5.dat	5	121	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-08	12:30am	H-LKU+no Trp
+121	121_5.dat	5	121	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-08	12:30am	H-LKU+trp
+121	121_5.dat	5	121	3	Filter 8: 620 Nov/08 12:30am HLKU	HLKU	11-08	12:30am	Nov/08 12:30am HLKU
+121_1	121_1.dat	1	121	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-10	1:00pm	H-LKU+no Trp
+121_1	121_1.dat	1	121	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-10	1:00pm	H-LKU+trp
+121_1	121_1.dat	1	121	4	Filter 8: 620 Nov/10 1:00pm HLKU	HLKU	11-10	1:00pm	Nov/10 1:00pm HLKU
+121_1	121_2.dat	2	121	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-11	0:30am	H-LKU+no Trp
+121_1	121_2.dat	2	121	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-11	0:30am	H-LKU+trp
+121_1	121_2.dat	2	121	4	Filter 8: 620 Nov/11 0:3oam HLKU	HLKU	11-11	0:30am	Nov/11 0:3oam HLKU
+121_1	121_3.dat	3	121	4	Filter 8: 620 Nov/11 1:00pm H-LKU+no Trp	DiKU-Trp	11-11	1:00pm	Nov/11 1:00pm H-LKU+no Trp
+121_1	121_3.dat	3	121	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-11	1:00pm	H-LKU+trp
+121_1	121_3.dat	3	121	4	Filter 8: 620 Nov?11 HLKU 1:00pm	HLKU	11-11	1:00pm	Nov?11 HLKU 1:00pm
+121_1	121_4.dat	4	121	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-12	2:00pm	H-LKU+no Trp
+121_1	121_4.dat	4	121	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-12	2:00pm	H-LKU+trp
+121_1	121_4.dat	4	121	4	Filter 8: 620 Nov/12 2:00pm HLKU	HLKU	11-12	2:00pm	Nov/12 2:00pm HLKU
+121_1	121_5.dat	5	121	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-12	1:00pm	H-LKU+no Trp
+121_1	121_5.dat	5	121	4	Filter 8: 620	DiKU+Trp	11-12	1:00pm	
+121_1	121_5.dat	5	121	4	Filter 8: 620 Nov/12 1:00pm HLKU	HLKU	11-12	1:00pm	Nov/12 1:00pm HLKU
+122	122_1.dat	1	122	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-05	12:30am	H-LKU+no Trp
+122	122_1.dat	1	122	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-05	12:30am	H-LKU+trp
+122	122_1.dat	1	122	3	Filter 8: 620 Nov/05 12:30am HLKU	HLKU	11-05	12:30am	Nov/05 12:30am HLKU
+122	122_2.dat	2	122	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-06	12:30pm	H-LKU+no Trp
+122	122_2.dat	2	122	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-06	12:30pm	H-LKU+trp
+122	122_2.dat	2	122	3	Filter 8: 620 Nov/06 12:30pm HLKU	HLKU	11-06	12:30pm	Nov/06 12:30pm HLKU
+122	122_3.dat	3	122	3	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-07	12:30am	H-LKU+no Trp
+122	122_3.dat	3	122	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-07	12:30am	H-LKU+trp
+122	122_3.dat	3	122	3	Filter 8: 620 Nov/07 12:30am HLKU	HLKU	11-07	12:30am	Nov/07 12:30am HLKU
+122	122_4.dat	4	122	3	Filter 8: 620 H-LKU+no trp	DiKU-Trp	11-07	12:30am	H-LKU+no trp
+122	122_4.dat	4	122	3	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-07	12:30am	H-LKU+trp
+122	122_4.dat	4	122	3	Filter 8: 620 Nov/07 12:30am HLKU	HLKU	11-07	12:30am	Nov/07 12:30am HLKU
+122	122_5.dat	5	122	3	Filter 8: 620 H-LKU+no trp	DiKU-Trp	11-08	12:30am	H-LKU+no trp
+122	122_5.dat	5	122	3	Filter 8: 620H-LKU+trp	DiKU+Trp	11-08	12:30am	H-LKU+trp
+122	122_5.dat	5	122	3	Filter 8: 620 Nov/08 12:30am HLKU	HLKU	11-08	12:30am	Nov/08 12:30am HLKU
+122_1	122_1.dat	1	122	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-10	1:00pm	H-LKU+no Trp
+122_1	122_1.dat	1	122	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-10	1:00pm	H-LKU+trp
+122_1	122_1.dat	1	122	4	Filter 8: 620 Nov/10 1:00pm HLKU	HLKU	11-10	1:00pm	Nov/10 1:00pm HLKU
+122_1	122_2.dat	2	122	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-11	0:30am	H-LKU+no Trp
+122_1	122_2.dat	2	122	4	Filter 8: 620 HLKU+trp	DiKU+Trp	11-11	0:30am	HLKU+trp
+122_1	122_2.dat	2	122	4	Filter 8: 620 Nov/11 0:30 HLKU	HLKU	11-11	0:30am	Nov/11 0:30 HLKU
+122_1	122_3.dat	3	122	4	Filter 8: 620 H-LKU+ no Trp	DiKU-Trp	11-11	1:00pm	H-LKU+ no Trp
+122_1	122_3.dat	3	122	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-11	1:00pm	H-LKU+trp
+122_1	122_3.dat	3	122	4	Filter 8: 620 Nov/11 1:00pm HLKU	HLKU	11-11	1:00pm	Nov/11 1:00pm HLKU
+122_1	122_4.dat	4	122	4	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-12	2:00pm	H-LKU+no TRp
+122_1	122_4.dat	4	122	4	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-12	2:00pm	H-LKU+trp
+122_1	122_4.dat	4	122	4	Filter 8: 620 Nov/12 2:00pm HLKU	HLKU	11-12	2:00pm	Nov/12 2:00pm HLKU
+122_1	122_5.dat	5	122	4	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-12	1:00pm	H-LKU+no Trp
+122_1	122_5.dat	5	122	4	Filter 8: 620	DiKU+Trp	11-12	1:00pm	
+122_1	122_5.dat	5	122	4	Filter 8: 620 Nov/12 1:00pm HLKU	HLKU	11-12	1:00pm	Nov/12 1:00pm HLKU
+123	123_1.dat	1	123	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-13	10:00pm	H-LKU+no TRp
+123	123_1.dat	1	123	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-13	10:00pm	H-LKU+trp
+123	123_1.dat	1	123	2	Filter 8: 620 Nov/13 10:00pm HLKU	HLKU	11-13	10:00pm	Nov/13 10:00pm HLKU
+123	123_2.dat	2	123	2	Filter 8: 620H-LKU+no Trp	DiKU-Trp	11-14	11:00am	H-LKU+no Trp
+123	123_2.dat	2	123	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-14	11:00am	H-LKU+trp
+123	123_2.dat	2	123	2	Filter 8: 620 Nov/14 11:00am HLKU	HLKU	11-14	11:00am	Nov/14 11:00am HLKU
+123	123_3.dat	3	123	2	Filter 8: 620 H-LKU+no trp	DiKU-Trp	11-15	0:00am	H-LKU+no trp
+123	123_3.dat	3	123	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-15	0:00am	H-LKU+trp
+123	123_3.dat	3	123	2	Filter 8: 620 Nov/15 0:00am HLKU	HLKU	11-15	0:00am	Nov/15 0:00am HLKU
+123	123_4.dat	4	123	2	Filter 8: 620 DiKU-Trp %Updated by AB to make unique (2013-06-10)	DiKU-Trp	11-16	1:00am	
+123	123_4.dat	4	123	2	Filter 8: 620 DiKU+Trp %Updated by AB to make unique (2013-06-10)	DiKU+Trp	11-16	1:00am	
+123	123_4.dat	4	123	2	Filter 8: 620 Nov/16 1:00am HLKU	HLKU	11-16	1:00am	Nov/16 1:00am HLKU
+123	123_5.dat	5	123	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-16	12:00pm	H-LKU+no Trp
+123	123_5.dat	5	123	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-16	12:00pm	H-LKU+trp
+123	123_5.dat	5	123	2	Filter 8: 620 nov/16 12:00pm HLKU	HLKU	11-16	12:00pm	nov/16 12:00pm HLKU
+124	124_1.dat	1	124	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-13	10:00pm	H-LKU+no Trp
+124	124_1.dat	1	124	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-13	10:00pm	H-LKU+trp
+124	124_1.dat	1	124	2	Filter 8: 620 Nov/13 10:00pm HLKU	HLKU	11-13	10:00pm	Nov/13 10:00pm HLKU
+124	124_2.dat	2	124	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-14	11:00am	H-LKU+no TRp
+124	124_2.dat	2	124	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-14	11:00am	H-LKU+trp
+124	124_2.dat	2	124	2	Filter 8: 620 Nov/14 11:00am HLKU	HLKU	11-14	11:00am	Nov/14 11:00am HLKU
+124	124_3.dat	3	124	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-15	12:00am	H-LKU+no Trp
+124	124_3.dat	3	124	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-15	12:00am	H-LKU+trp
+124	124_3.dat	3	124	2	Filter 8: 620 Nov/15 12:00am HLKU	HLKU	11-15	12:00am	Nov/15 12:00am HLKU
+124	124_4.dat	4	124	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-16	1:00pm	H-LKU+no Trp
+124	124_4.dat	4	124	2	Filter 8: 620H-LKU+trp	DiKU+Trp	11-16	1:00pm	H-LKU+trp
+124	124_4.dat	4	124	2	Filter 8: 620 Nov/16 1:00pm HLKU	HLKU	11-16	1:00pm	Nov/16 1:00pm HLKU
+124	124_5.dat	5	124	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-16	#VALUE!	H-LKU+no Trp
+124	124_5.dat	5	124	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-16	#VALUE!	H-LKU+trp
+124	124_5.dat	5	124	2	Filter 8: 620 Nov/16 HLKU 	HLKU	11-16	#VALUE!	Nov/16 HLKU 
+125	125_1.dat	1	125	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-18	0:00am	H-LKU+no Trp
+125	125_1.dat	1	125	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-18	0:00am	H-LKU+trp
+125	125_1.dat	1	125	2	Filter 8: 620 Nov/18 0:00am HLKU	HLKU	11-18	0:00am	Nov/18 0:00am HLKU
+125	125_2.dat	2	125	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-18	12:00pm	H-LKU+no TRp
+125	125_2.dat	2	125	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-18	12:00pm	H-LKU+trp
+125	125_2.dat	2	125	2	Filter 8: 620 Nov/18 12:00pm HLKU	HLKU	11-18	12:00pm	Nov/18 12:00pm HLKU
+125	125_3.dat	3	125	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-18	12:00am	H-LKU+no TRp
+125	125_3.dat	3	125	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-18	12:00am	H-LKU+trp
+125	125_3.dat	3	125	2	Filter 8: 620 Nov/18 12:00am HLKU	HLKU	11-18	12:00am	Nov/18 12:00am HLKU
+125	125_4.dat	4	125	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-19	0:00am	H-LKU+no TRp
+125	125_4.dat	4	125	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-19	0:00am	H-LKU+trp
+125	125_4.dat	4	125	2	Filter 8: 620 Nov/19 0:00am HLKU	HLKU	11-19	0:00am	Nov/19 0:00am HLKU
+125	125_5.dat	5	125	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-21	00:00am	H-LKU+no Trp
+125	125_5.dat	5	125	2	Filter 8: 620	DiKU+Trp	11-21	00:00am	
+125	125_5.dat	5	125	2	Filter 8: 620 Nov/21 00:00am HLKU	HLKU	11-21	00:00am	Nov/21 00:00am HLKU
+126	126_1.dat	1	126	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-18	0:00am	H-LKU+no Trp
+126	126_1.dat	1	126	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-18	0:00am	H-LKU+trp
+126	126_1.dat	1	126	2	Filter 8: 620 Nov/18 0:00am HLKU	HLKU	11-18	0:00am	Nov/18 0:00am HLKU
+126	126_2.dat	2	126	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-18	12:00pm	H-LKU+no TRp
+126	126_2.dat	2	126	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-18	12:00pm	H-LKU+trp
+126	126_2.dat	2	126	2	Filter 8: 620 Nov/18 12:00pm HLKU	HLKU	11-18	12:00pm	Nov/18 12:00pm HLKU
+126	126_3.dat	3	126	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-18	12:00am	H-LKU+no Trp
+126	126_3.dat	3	126	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-18	12:00am	H-LKU+trp
+126	126_3.dat	3	126	2	Filter 8: 620 Nov/18 12:00am HLKU	HLKU	11-18	12:00am	Nov/18 12:00am HLKU
+126	126_4.dat	4	126	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-19	0:00am	H-LKU+no TRp
+126	126_4.dat	4	126	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-19	0:00am	H-LKU+trp
+126	126_4.dat	4	126	2	Filter 8: 620 Nov/19 0:00am HLKU	HLKU	11-19	0:00am	Nov/19 0:00am HLKU
+126	126_5.dat	5	126	2	Filter 8: 620 H-LKU+no trp	DiKU-Trp	11-21	0:00am	H-LKU+no trp
+126	126_5.dat	5	126	2	Filter 8: 620	DiKU+Trp	11-21	0:00am	
+126	126_5.dat	5	126	2	Filter 8: 620 Nov/21 0:00am HLKU	HLKU	11-21	0:00am	Nov/21 0:00am HLKU
+127	127_1.dat	1	127	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-22	12:00pm	H-LKU+no Trp
+127	127_1.dat	1	127	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-22	12:00pm	H-LKU+trp
+127	127_1.dat	1	127	2	Filter 8: 620 Nov/22 12:00pm HLKU	HLKU	11-22	12:00pm	Nov/22 12:00pm HLKU
+127	127_2.dat	2	127	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-22	1:00am	H-LKU+no Trp
+127	127_2.dat	2	127	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-22	1:00am	H-LKU+trp
+127	127_2.dat	2	127	2	Filter 8: 620Nov/22 1:00am HLKU	HLKU	11-22	1:00am	Nov/22 1:00am HLKU
+127	127_3.dat	3	127	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-23	2:00pm	H-LKU+no Trp
+127	127_3.dat	3	127	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-23	2:00pm	H-LKU+trp
+127	127_3.dat	3	127	2	Filter 8: 620 Nov/23 HLKU `2:00pm	HLKU	11-23	2:00pm	Nov/23 HLKU `2:00pm
+127	127_4.dat	4	127	2	Filter 8: 620 H-LKU+noTrp	DiKU-Trp	11-23	1:00pm	H-LKU+noTrp
+127	127_4.dat	4	127	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-23	1:00pm	H-LKU+trp
+127	127_4.dat	4	127	2	Filter 8: 620 Nov/23 1:00pm HLKU	HLKU	11-23	1:00pm	Nov/23 1:00pm HLKU
+128	128_1.dat	1	128	2	Filter 8: 620 H-LKU-trp %Corrected by AB to make unique (2010-06-10)	DiKU-Trp	11-22	12:00pm	H-LKU+trp
+128	128_1.dat	1	128	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-22	12:00pm	H-LKU+trp
+128	128_1.dat	1	128	2	Filter 8: 620 NOv/22 12:00pm HLKU	HLKU	11-22	12:00pm	NOv/22 12:00pm HLKU
+128	128_2.dat	2	128	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-22	1:00am	H-LKU+no Trp
+128	128_2.dat	2	128	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-22	1:00am	H-LKU+trp
+128	128_2.dat	2	128	2	Filter 8: 620 Nov/22 1:00am HLKU	HLKU	11-22	1:00am	Nov/22 1:00am HLKU
+128	128_3.dat	3	128	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-23	12:00pm	H-LKU+no Trp
+128	128_3.dat	3	128	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-23	12:00pm	H-LKU+trp
+128	128_3.dat	3	128	2	Filter 8: 620 Nov/23 12:00pm HLKU	HLKU	11-23	12:00pm	Nov/23 12:00pm HLKU
+128	128_4.dat	4	128	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-23	1:00pm	H-LKU+no Trp
+128	128_4.dat	4	128	2	Filter 8: 620H-LKU+trp	DiKU+Trp	11-23	1:00pm	H-LKU+trp
+128	128_4.dat	4	128	2	Filter 8: 620 Nov/23 1:00pm HLKU	HLKU	11-23	1:00pm	Nov/23 1:00pm HLKU
+129	129_1.dat	1	129	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-24	2:00pm	H-LKU+no Trp
+129	129_1.dat	1	129	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-24	2:00pm	H-LKU+trp
+129	129_1.dat	1	129	2	Filter 8: 620 Nov/24 2:00pm HLKU	HLKU	11-24	2:00pm	Nov/24 2:00pm HLKU
+129	129_2.dat	2	129	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	11-25	1:00am	H-LKU+noTRP
+129	129_2.dat	2	129	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-25	1:00am	H-LKU+trp
+129	129_2.dat	2	129	2	Filter 8: 620 Nov/25 1:00am HLKU	HLKU	11-25	1:00am	Nov/25 1:00am HLKU
+129	129_3.dat	3	129	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-25	2:00pm	H-LKU+no Trp
+129	129_3.dat	3	129	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-25	2:00pm	H-LKU+trp
+129	129_3.dat	3	129	2	Filter 8: 620 Nov/25 2:00pm HLKU	HLKU	11-25	2:00pm	Nov/25 2:00pm HLKU
+129	129_4.dat	4	129	2	Filter 8: 620 H-LKU+no TRp	DiKU-Trp	11-26	10:40pm	H-LKU+no TRp
+129	129_4.dat	4	129	2	Filter 8: 620	DiKU+Trp	11-26	10:40pm	
+129	129_4.dat	4	129	2	Filter 8: 620 Nov/26 10:40pm HLKU	HLKU	11-26	10:40pm	Nov/26 10:40pm HLKU
+130	130_1.dat	1	130	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-24	2:00pm	H-LKU+no Trp
+130	130_1.dat	1	130	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-24	2:00pm	H-LKU+trp
+130	130_1.dat	1	130	2	Filter 8: 620 Nov/24 2:00pm HLKU	HLKU	11-24	2:00pm	Nov/24 2:00pm HLKU
+130	130_2.dat	2	130	2	Filter 8: 620 H-LKU+no Trp	DiKU-Trp	11-25	1:00am	H-LKU+no Trp
+130	130_2.dat	2	130	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-25	1:00am	H-LKU+trp
+130	130_2.dat	2	130	2	Filter 8: 620 Nov/25 1:00am HLKU	HLKU	11-25	1:00am	Nov/25 1:00am HLKU
+130	130_3.dat	3	130	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-25	2:00pm	H-LKU+noTRp
+130	130_3.dat	3	130	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-25	2:00pm	H-LKU+trp
+130	130_3.dat	3	130	2	Filter 8: 620 Nov/25 2:00pm HLKU	HLKU	11-25	2:00pm	Nov/25 2:00pm HLKU
+130	130_4.dat	4	130	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-26	10:40pm	H-LKU+noTRp
+130	130_4.dat	4	130	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-26	10:40pm	H-LKU+trp
+130	130_4.dat	4	130	2	Filter 8: 620 Nov/26 10:40pm HLKU	HLKU	11-26	10:40pm	Nov/26 10:40pm HLKU
+131	131_1.dat	1	131	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	11-27	2:00pm	H-LKU+noTRP
+131	131_1.dat	1	131	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-27	2:00pm	H-LKU+trp
+131	131_1.dat	1	131	2	Filter 8: 620 Nov/17 HLKU 2:00pm	HLKU	11-27	2:00pm	Nov/17 HLKU 2:00pm
+131	131_2.dat	2	131	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-28	3:00pm	H-LKU+noTRp
+131	131_2.dat	2	131	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-28	3:00pm	H-LKU+trp
+131	131_2.dat	2	131	2	Filter 8: 620 Nov/28 3:00pm HLKU	HLKU	11-28	3:00pm	Nov/28 3:00pm HLKU
+131	131_3.dat	3	131	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	11-28	3:00pm	H-LKU+noTRP
+131	131_3.dat	3	131	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-28	3:00pm	H-LKU+trp
+131	131_3.dat	3	131	2	Filter 8: 620 Nov/28 3:00pm HLKU	HLKU	11-28	3:00pm	Nov/28 3:00pm HLKU
+131	131_4.dat	4	131	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-29	3:00pm	H-LKU+noTRp
+131	131_4.dat	4	131	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-29	3:00pm	H-LKU+trp
+131	131_4.dat	4	131	2	Filter 8: 620 Nov/29 3:00pm HLKU	HLKU	11-29	3:00pm	Nov/29 3:00pm HLKU
+132	132_1.dat	1	132	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-27	3:00pm	H-LKU+noTRp
+132	132_1.dat	1	132	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-27	3:00pm	H-LKU+trp
+132	132_1.dat	1	132	2	Filter 8: 620 Nov/27 3:00pm HLKU	HLKU	11-27	3:00pm	Nov/27 3:00pm HLKU
+132	132_2.dat	2	132	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-28	3:00am	H-LKU+noTRp
+132	132_2.dat	2	132	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	11-28	3:00am	H-LKU+trp
+132	132_2.dat	2	132	2	Filter 8: 620 Nov/28 3:00am HLKU	HLKU	11-28	3:00am	Nov/28 3:00am HLKU
+132	132_3.dat	3	132	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	11-28	3:00pm	H-LKU+noTRp
+132	132_3.dat	3	132	2	Filter 8: 620	DiKU+Trp	11-28	3:00pm	
+132	132_3.dat	3	132	2	Filter 8: 620 Nov/28 3:00pm HLKU	HLKU	11-28	3:00pm	Nov/28 3:00pm HLKU
+132	132_4.dat	4	132	2	Filter 8: 620 HlKU+no Trp	DiKU-Trp	11-29	3:00pm	HlKU+no Trp
+132	132_4.dat	4	132	2	Filter 8: 620 H_LKU+trp	DiKU+Trp	11-29	3:00pm	H_LKU+trp
+132	132_4.dat	4	132	2	Filter 8: 620 Nov/29 3:00pm HLKU	HLKU	11-29	3:00pm	Nov/29 3:00pm HLKU
+133	133_1.dat	1	133	2	Filter 8: 620 H-LKU+noTrp	DiKU-Trp	12-01	1:00am	H-LKU+noTrp
+133	133_1.dat	1	133	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-01	1:00am	H-LKU+trp
+133	133_1.dat	1	133	2	Filter 8: 620 Dec/1 1:00am HLKU	HLKU	12-01	1:00am	Dec/1 1:00am HLKU
+133	133_2.dat	2	133	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-02	2:00pm	H-LKU+noTRP
+133	133_2.dat	2	133	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-02	2:00pm	H-LKU+trp
+133	133_2.dat	2	133	2	Filter 8: 620 Dec/02 2:00pm HLKU	HLKU	12-02	2:00pm	Dec/02 2:00pm HLKU
+133	133_3.dat	3	133	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-03	2:00am	H-LKU+noTRP
+133	133_3.dat	3	133	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-03	2:00am	H-LKU+trp
+133	133_3.dat	3	133	2	Filter 8: 620 Dec/03 2:00am HLKU	HLKU	12-03	2:00am	Dec/03 2:00am HLKU
+133	133_4.dat	4	133	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	12-04	4:00am	H-LKU+noTRp
+133	133_4.dat	4	133	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-04	4:00am	H-LKU+trp
+133	133_4.dat	4	133	2	Filter 8: 620 Dec/04 4:00am HLKU	HLKU	12-04	4:00am	Dec/04 4:00am HLKU
+134	134_1.dat	1	134	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	12-01	1:00am	H-LKU+noTRp
+134	134_1.dat	1	134	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-01	1:00am	H-LKU+trp
+134	134_1.dat	1	134	2	Filter 8: 620 Dec/1 1:00am HLKU	HLKU	12-01	1:00am	Dec/1 1:00am HLKU
+134	134_2.dat	2	134	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-02	2:00pm	H-LKU+noTRP
+134	134_2.dat	2	134	2	Filter 8: 620 H-LKU+TRP	DiKU+Trp	12-02	2:00pm	H-LKU+TRP
+134	134_2.dat	2	134	2	Filter 8: 620 Dec/02 2:00pm HLKU	HLKU	12-02	2:00pm	Dec/02 2:00pm HLKU
+134	134_3.dat	3	134	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-03	2:00am	H-LKU+noTRP
+134	134_3.dat	3	134	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-03	2:00am	H-LKU+trp
+134	134_3.dat	3	134	2	Filter 8: 620 Dec/03 2:00am HLKU	HLKU	12-03	2:00am	Dec/03 2:00am HLKU
+134	134_4.dat	4	134	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-04	4:00am	H-LKU+noTRP
+134	134_4.dat	4	134	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-04	4:00am	H-LKU+trp
+134	134_4.dat	4	134	2	Filter 8: 620 Nov/04 4:00am HLKU	HLKU	12-04	4:00am	Nov/04 4:00am HLKU
+135	135_1.dat	1	135	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-05	11:30pm	H-LKU+noTRP
+135	135_1.dat	1	135	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-05	11:30pm	H-LKU+trp
+135	135_1.dat	1	135	2	Filter 8: 620 Dec/05 11:30pm HLKU	HLKU	12-05	11:30pm	Dec/05 11:30pm HLKU
+135	135_2.dat	2	135	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-06	2:00pm	H-LKU+noTRP
+135	135_2.dat	2	135	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-06	2:00pm	H-LKU+trp
+135	135_2.dat	2	135	2	Filter 8: 620 Dec/06 2:00pm HLKU	HLKU	12-06	2:00pm	Dec/06 2:00pm HLKU
+135	135_3.dat	3	135	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-07	1:00am	H-LKU+noTRP
+135	135_3.dat	3	135	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-07	1:00am	H-LKU+trp
+135	135_3.dat	3	135	2	Filter 8: 620 Dec/07 1:00am KLHU	HLKU	12-07	1:00am	Dec/07 1:00am KLHU
+135	135_4.dat	4	135	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-08	1:00am	H-LKU+noTRP
+135	135_4.dat	4	135	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-08	1:00am	H-LKU+trp
+135	135_4.dat	4	135	2	Filter 8: 620 Dec/08 1:00am HLKU	HLKU	12-08	1:00am	Dec/08 1:00am HLKU
+135	135_5.dat	5	135	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-09	9:15pm	H-LKU+noTRP
+135	135_5.dat	5	135	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-09	9:15pm	H-LKU+trp
+135	135_5.dat	5	135	2	Filter 8: 620 Dec/09 9:15pm HLKU	HLKU	12-09	9:15pm	Dec/09 9:15pm HLKU
+136	136_1.dat	1	136	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-05	11:30pm	H-LKU+noTRP
+136	136_1.dat	1	136	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-05	11:30pm	H-LKU+trp
+136	136_1.dat	1	136	2	Filter 8: 620 Dec/05 11:30pm HLKU	HLKU	12-05	11:30pm	Dec/05 11:30pm HLKU
+136	136_2.dat	2	136	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-06	2:00pm	H-LKU+noTRP
+136	136_2.dat	2	136	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-06	2:00pm	H-LKU+trp
+136	136_2.dat	2	136	2	Filter 8: 620 Dec/06 2:00pm HLKU	HLKU	12-06	2:00pm	Dec/06 2:00pm HLKU
+136	136_3.dat	3	136	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-07	1:00am	H-LKU+noTRP
+136	136_3.dat	3	136	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-07	1:00am	H-LKU+trp
+136	136_3.dat	3	136	2	Filter 8: 620 Dec/07 1:00am HLKU	HLKU	12-07	1:00am	Dec/07 1:00am HLKU
+136	136_4.dat	4	136	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	12-08	1:00am	H-LKU+noTRp
+136	136_4.dat	4	136	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-08	1:00am	H-LKU+trp
+136	136_4.dat	4	136	2	Filter 8: 620 Dec/08 1:00am HLKU	HLKU	12-08	1:00am	Dec/08 1:00am HLKU
+136	136_5.dat	5	136	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-08	9:15pm	H-LKU+noTRP
+136	136_5.dat	5	136	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-08	9:15pm	H-LKU+trp
+136	136_5.dat	5	136	2	Filter 8: 620 Dec/08 9:15pm HLKU	HLKU	12-08	9:15pm	Dec/08 9:15pm HLKU
+137	137_1.dat	1	137	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-08	9:15pm	H-LKU+noTRP
+137	137_1.dat	1	137	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-08	9:15pm	H-LKU+trp
+137	137_1.dat	1	137	2	Filter 8: 620 Dec/08 9:15pm HLKU	HLKU	12-08	9:15pm	Dec/08 9:15pm HLKU
+137	137_2.dat	2	137	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-09	9:15am	H-LKU+noTRP
+137	137_2.dat	2	137	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-09	9:15am	H-LKU+trp
+137	137_2.dat	2	137	2	Filter 8: 620 Dec/09 9:15am HLKU	HLKU	12-09	9:15am	Dec/09 9:15am HLKU
+137	137_3.dat	3	137	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-09	11:00pm	H-LKU+noTRP
+137	137_3.dat	3	137	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-09	11:00pm	H-LKU+trp
+137	137_3.dat	3	137	2	Filter 8: 620 Dec/09 11:00pm HLKU	HLKU	12-09	11:00pm	Dec/09 11:00pm HLKU
+137	137_4.dat	4	137	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-10	11:00pm	H-LKU+noTRP
+137	137_4.dat	4	137	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-10	11:00pm	H-LKU+trp
+137	137_4.dat	4	137	2	Filter 8: 620 Dec/10 11:00pm HLKU	HLKU	12-10	11:00pm	Dec/10 11:00pm HLKU
+137	137_5.dat	5	137	2	Filter 8: 620 H-LKU+no TRP	DiKU-Trp	12-14	11:00pm	H-LKU+no TRP
+137	137_5.dat	5	137	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-14	11:00pm	H-LKU+trp
+137	137_5.dat	5	137	2	Filter 8: 620 Dec/14 11:00pm HLKU	HLKU	12-14	11:00pm	Dec/14 11:00pm HLKU
+138	138_1.dat	1	138	2	Filter 8: 620 H-lKU+noTRP	DiKU-Trp	12-08	9:15pm	H-lKU+noTRP
+138	138_1.dat	1	138	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-08	9:15pm	H-LKU+trp
+138	138_1.dat	1	138	2	Filter 8: 620 Dec/08 9:15 pm HLKU	HLKU	12-08	9:15pm	Dec/08 9:15 pm HLKU
+138	138_2.dat	2	138	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-09	9:15am	H-LKU+noTRP
+138	138_2.dat	2	138	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-09	9:15am	H-LKU+trp
+138	138_2.dat	2	138	2	Filter 8: 620 Dec/09 9:15am HLKU	HLKU	12-09	9:15am	Dec/09 9:15am HLKU
+138	138_3.dat	3	138	2	Filter 8: 620 H-LKU+no TRP	DiKU-Trp	12-09	11:00pm	H-LKU+no TRP
+138	138_3.dat	3	138	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-09	11:00pm	H-LKU+trp
+138	138_3.dat	3	138	2	Filter 8: 620 Dec/09 11:00pm HLKU	HLKU	12-09	11:00pm	Dec/09 11:00pm HLKU
+138	138_4.dat	4	138	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-10	11:00pm	H-LKU+noTRP
+138	138_4.dat	4	138	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-10	11:00pm	H-LKU+trp
+138	138_4.dat	4	138	2	Filter 8: 620 Dec/10 11:00pm HLKU	HLKU	12-10	11:00pm	Dec/10 11:00pm HLKU
+138	138_5.dat	5	138	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-12	11:00pm	H-LKU+noTRP
+138	138_5.dat	5	138	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-12	11:00pm	H-LKU+trp
+138	138_5.dat	5	138	2	Filter 8: 620 Dec/12 11:00pm HLKU	HLKU	12-12	11:00pm	Dec/12 11:00pm HLKU
+139	139_1.dat	1	139	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-12	11:30pm	H-LKU+noTRP
+139	139_1.dat	1	139	2	Filter 8: 620 H-LKU+TRP	DiKU+Trp	12-12	11:30pm	H-LKU+TRP
+139	139_1.dat	1	139	2	Filter 8: 620 Dec/12 11:30pm HLKU	HLKU	12-12	11:30pm	Dec/12 11:30pm HLKU
+139	139_2.dat	2	139	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-12	3:00pm	H-LKU+noTRP
+139	139_2.dat	2	139	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-12	3:00pm	H-LKU+trp
+139	139_2.dat	2	139	2	Filter 8: 620 DEc/12 3:00pm HLKU	HLKU	12-12	3:00pm	DEc/12 3:00pm HLKU
+139	139_3.dat	3	139	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-13	1:00am	H-LKU+noTRP
+139	139_3.dat	3	139	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-13	1:00am	H-LKU+trp
+139	139_3.dat	3	139	2	Filter 8: 620 DEC/13 1:00am HLKU	HLKU	12-13	1:00am	DEC/13 1:00am HLKU
+139	139_4.dat	4	139	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-13	11:30pm	H-LKU+noTRP
+139	139_4.dat	4	139	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-13	11:30pm	H-LKU+trp
+139	139_4.dat	4	139	2	Filter 8: 620 DEC/13 11:30pm HLKU	HLKU	12-13	11:30pm	DEC/13 11:30pm HLKU
+139	139_5.dat	5	139	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-14	12:30am	H-LKU+noTRP
+139	139_5.dat	5	139	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-14	12:30am	H-LKU+trp
+139	139_5.dat	5	139	2	Filter 8: 620 Dec/14 12:30am HLKU	HLKU	12-14	12:30am	Dec/14 12:30am HLKU
+140	140_1.dat	1	140	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-12	11:30pm	H-LKU+noTRP
+140	140_1.dat	1	140	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-12	11:30pm	H-LKU+trp
+140	140_1.dat	1	140	2	Filter 8: 620 Dec/12 11:30pm HLKU	HLKU	12-12	11:30pm	Dec/12 11:30pm HLKU
+140	140_2.dat	2	140	2	Filter 8: 620 H-lKU+noTRP	DiKU-Trp	12-12	3:00pm	H-lKU+noTRP
+140	140_2.dat	2	140	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-12	3:00pm	H-LKU+trp
+140	140_2.dat	2	140	2	Filter 8: 620 Dec/12 3:00pm HLKU	HLKU	12-12	3:00pm	Dec/12 3:00pm HLKU
+140	140_3.dat	3	140	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-12	1:00am	H-LKU+noTRP
+140	140_3.dat	3	140	2	Filter 8: 620 H-lKU+trp	DiKU+Trp	12-12	1:00am	H-lKU+trp
+140	140_3.dat	3	140	2	Filter 8: 620 Dec/12 1:00am HLKU	HLKU	12-12	1:00am	Dec/12 1:00am HLKU
+140	140_4.dat	4	140	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-13	11:30pm	H-LKU+noTRP
+140	140_4.dat	4	140	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-13	11:30pm	H-LKU+trp
+140	140_4.dat	4	140	2	Filter 8: 620 DEc/13 11:30pm HLKU	HLKU	12-13	11:30pm	DEc/13 11:30pm HLKU
+140	140_5.dat	5	140	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	12-14	12:30am	H-LKU+noTRP
+140	140_5.dat	5	140	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	12-14	12:30am	H-LKU+trp
+140	140_5.dat	5	140	2	Filter 8: 620 Dec/14 12:30am HLKU	HLKU	12-14	12:30am	Dec/14 12:30am HLKU
+141	141_1.dat	1	141	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-05	2:00pm	H-LKU+noTRP
+141	141_1.dat	1	141	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-05	2:00pm	H-LKU+trp
+141	141_1.dat	1	141	2	Filter 8: 620 Jan/05 2:00pm HLKu	HLKU	01-05	2:00pm	Jan/05 2:00pm HLKu
+141	141_2.dat	2	141	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-05	12:30am	H-LKU+noTRP
+141	141_2.dat	2	141	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-05	12:30am	H-LKU+trp
+141	141_2.dat	2	141	2	Filter 8: 620 Jan/05 12:30am HLKU	HLKU	01-05	12:30am	Jan/05 12:30am HLKU
+141	141_3.dat	3	141	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-05	2:00pm	H-LKU+noTRP
+141	141_3.dat	3	141	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-05	2:00pm	H-LKU+trp
+141	141_3.dat	3	141	2	Filter 8: 620 Jan/05 2:00pm HLKU	HLKU	01-05	2:00pm	Jan/05 2:00pm HLKU
+141	141_4.dat	4	141	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-06	2:00pm	H-LKU+noTRP
+141	141_4.dat	4	141	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-06	2:00pm	H-LKU+trp
+141	141_4.dat	4	141	2	Filter 8: 620 Jan/06 2:00pm HLKU	HLKU	01-06	2:00pm	Jan/06 2:00pm HLKU
+141	141_5.dat	5	141	2	Filter 8: 620 H-LKU+notrp	DiKU-Trp	01-07	2:00pm	H-LKU+notrp
+141	141_5.dat	5	141	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-07	2:00pm	H-LKU+trp
+141	141_5.dat	5	141	2	Filter 8: 620 Jan/07 2:00pm HLKU	HLKU	01-07	2:00pm	Jan/07 2:00pm HLKU
+142	142_1.dat	1	142	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-05	2:00pm	H-LKU+noTRP
+142	142_1.dat	1	142	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-05	2:00pm	H-LKU+trp
+142	142_1.dat	1	142	2	Filter 8: 620 Jan/05 2:00pm HLKU	HLKU	01-05	2:00pm	Jan/05 2:00pm HLKU
+142	142_2.dat	2	142	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-04	12:30am	H-LKU+noTRP
+142	142_2.dat	2	142	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-04	12:30am	H-LKU+trp
+142	142_2.dat	2	142	2	Filter 8: 620 Jan/04 12:30am HLKU	HLKU	01-04	12:30am	Jan/04 12:30am HLKU
+142	142_3.dat	3	142	2	Filter 8: 620 H-LKU+noTRp	DiKU-Trp	01-05	2:00pm	H-LKU+noTRp
+142	142_3.dat	3	142	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-05	2:00pm	H-LKU+trp
+142	142_3.dat	3	142	2	Filter 8: 620 Jan/05 2:00pm HLKU+	HLKU	01-05	2:00pm	Jan/05 2:00pm HLKU+
+142	142_4.dat	4	142	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-06	2:00pm	H-LKU+noTRP
+142	142_4.dat	4	142	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-06	2:00pm	H-LKU+trp
+142	142_4.dat	4	142	2	Filter 8: 620 Jan/06 2:00pm HLKU	HLKU	01-06	2:00pm	Jan/06 2:00pm HLKU
+142	142_5.dat	5	142	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-07	2:00pm	H-LKU+noTRP
+142	142_5.dat	5	142	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-07	2:00pm	H-LKU+trp
+142	142_5.dat	5	142	2	Filter 8: 620 Jan/07 2:00pm HLKU	HLKU	01-07	2:00pm	Jan/07 2:00pm HLKU
+143	143_1.dat	1	143	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-07	12:00pm	H-LKU+noTRP
+143	143_1.dat	1	143	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-07	12:00pm	H-LKU+trp
+143	143_1.dat	1	143	2	Filter 8: 620 Jan/07 12:00p mHLKU	HLKU	01-07	12:00pm	Jan/07 12:00p mHLKU
+143	143_2.dat	2	143	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-08	12:00pm	H-LKU+noTRP
+143	143_2.dat	2	143	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-08	12:00pm	H-LKU+trp
+143	143_2.dat	2	143	2	Filter 8: 620 Jan/08 12:00pm HLKU	HLKU	01-08	12:00pm	Jan/08 12:00pm HLKU
+143	143_3.dat	3	143	2	Filter 8: 620 H-LKU-trp %Corrected by AB to make unique (2010-06-10)	DiKU-Trp	01-09	12:00pm	H-LKU+trp
+143	143_3.dat	3	143	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-09	12:00pm	H-LKU+trp
+143	143_3.dat	3	143	2	Filter 8: 620 Jan/09 12:00pm HLKU	HLKU	01-09	12:00pm	Jan/09 12:00pm HLKU
+143	143_4.dat	4	143	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-10	2:00pm	H-LKU+noTRP
+143	143_4.dat	4	143	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-10	2:00pm	H-LKU+trp
+143	143_4.dat	4	143	2	Filter 8: 620 Jan/10 2:00pm HLKU	HLKU	01-10	2:00pm	Jan/10 2:00pm HLKU
+144	144_1.dat	1	144	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-07	12:00pm	H-LKU+noTRP
+144	144_1.dat	1	144	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-07	12:00pm	H-LKU+trp
+144	144_1.dat	1	144	2	Filter 8: 620 Jan/07 12:00pm HLKU	HLKU	01-07	12:00pm	Jan/07 12:00pm HLKU
+144	144_2.dat	2	144	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-08	12:00pm	H-LKU+noTRP
+144	144_2.dat	2	144	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-08	12:00pm	H-LKU+trp
+144	144_2.dat	2	144	2	Filter 8: 620 Jan/08 12:00pm HLKU	HLKU	01-08	12:00pm	Jan/08 12:00pm HLKU
+144	144_3.dat	3	144	2	Filter 8: 620 H-LKU+notrp	DiKU-Trp	01-09	12:00pm	H-LKU+notrp
+144	144_3.dat	3	144	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-09	12:00pm	H-LKU+trp
+144	144_3.dat	3	144	2	Filter 8: 620 Jan/09 12:00pm HLKU	HLKU	01-09	12:00pm	Jan/09 12:00pm HLKU
+144	144_4.dat	4	144	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-10	2:00pm	H-LKU+noTRP
+144	144_4.dat	4	144	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-10	2:00pm	H-LKU+trp
+144	144_4.dat	4	144	2	Filter 8: 620 Jan/10 2:00pm HLKU+noTrp	HLKU	01-10	2:00pm	Jan/10 2:00pm HLKU+noTrp
+145	145_1.dat	1	145	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-11	11:00am	H-LKU+noTRP
+145	145_1.dat	1	145	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-11	11:00am	H-LKU+trp
+145	145_1.dat	1	145	2	Filter 8: 620 Jan/11 11:00am HLKU	HLKU	01-11	11:00am	Jan/11 11:00am HLKU
+145	145_2.dat	2	145	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-11	11:00pm	H-LKU+noTRP
+145	145_2.dat	2	145	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-11	11:00pm	H-LKU+trp
+145	145_2.dat	2	145	2	Filter 8: 620 Jan/11 11:00pm HLKU	HLKU	01-11	11:00pm	Jan/11 11:00pm HLKU
+145	145_3.dat	3	145	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-12	11:00am	H-LKU+noTRP
+145	145_3.dat	3	145	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-12	11:00am	H-LKU+trp
+145	145_3.dat	3	145	2	Filter 8: 620 Jan/12 11:00am HLKU	HLKU	01-12	11:00am	Jan/12 11:00am HLKU
+145	145_4.dat	4	145	2	Filter 8: 620 H-LKU+NOTRP	DiKU-Trp	01-13	11:00am	H-LKU+NOTRP
+145	145_4.dat	4	145	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-13	11:00am	H-LKU+trp
+145	145_4.dat	4	145	2	Filter 8: 620 Jan/13 11:00am HLKU+NOTRP	HLKU	01-13	11:00am	Jan/13 11:00am HLKU+NOTRP
+145	145_5.dat	5	145	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-14	11:00am	H-LKU+noTRP
+145	145_5.dat	5	145	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-14	11:00am	H-LKU+trp
+145	145_5.dat	5	145	2	Filter 8: 620 jan/14 11:00am HLKU	HLKU	01-14	11:00am	jan/14 11:00am HLKU
+146	146_1.dat	1	146	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-11	11:00am	H-LKU+noTRP
+146	146_1.dat	1	146	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-11	11:00am	H-LKU+trp
+146	146_1.dat	1	146	2	Filter 8: 620 Jan/11 11:00am HLKU	HLKU	01-11	11:00am	Jan/11 11:00am HLKU
+146	146_2.dat	2	146	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-11	11:00pm	H-LKU+noTRP
+146	146_2.dat	2	146	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-11	11:00pm	H-LKU+trp
+146	146_2.dat	2	146	2	Filter 8: 620 Jan/11 11:00pm HLKU	HLKU	01-11	11:00pm	Jan/11 11:00pm HLKU
+146	146_3.dat	3	146	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-12	11:00am	H-LKU+noTRP
+146	146_3.dat	3	146	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-12	11:00am	H-LKU+trp
+146	146_3.dat	3	146	2	Filter 8: 620 Jan/12 11:00am HLKU	HLKU	01-12	11:00am	Jan/12 11:00am HLKU
+146	146_4.dat	4	146	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-13	11:00am	H-LKU+noTRP
+146	146_4.dat	4	146	2	Filter 8: 620 H-LKU+TRP	DiKU+Trp	01-13	11:00am	H-LKU+TRP
+146	146_4.dat	4	146	2	Filter 8: 620 Jan/13 11:00am HLKU	HLKU	01-13	11:00am	Jan/13 11:00am HLKU
+146	146_5.dat	5	146	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-14	11:00am	H-LKU+noTRP
+146	146_5.dat	5	146	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-14	11:00am	H-LKU+trp
+146	146_5.dat	5	146	2	Filter 8: 620 Jan/14 11:00am HLKU	HLKU	01-14	11:00am	Jan/14 11:00am HLKU
+147	147_1.dat	1	147	2	Filter 8: 620 H-LKU+notrp	DiKU-Trp	01-14	9:30pm	H-LKU+notrp
+147	147_1.dat	1	147	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-14	9:30pm	H-LKU+trp
+147	147_1.dat	1	147	2	Filter 8: 620 Jan/14 9:30pm HLKU	HLKU	01-14	9:30pm	Jan/14 9:30pm HLKU
+147	147_2.dat	2	147	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-15	10:00am	H-LKU+noTRP
+147	147_2.dat	2	147	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-15	10:00am	H-LKU+trp
+147	147_2.dat	2	147	2	Filter 8: 620 Jan/15 10:00am HLKU	HLKU	01-15	10:00am	Jan/15 10:00am HLKU
+147	147_3.dat	3	147	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-15	10:00pm	H-LKU+noTRP
+147	147_3.dat	3	147	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-15	10:00pm	H-LKU+trp
+147	147_3.dat	3	147	2	Filter 8: 620 Jan/15 10:00pm HLKU	HLKU	01-15	10:00pm	Jan/15 10:00pm HLKU
+147	147_4.dat	4	147	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-16	10:00pm	H-LKU+noTRP
+147	147_4.dat	4	147	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-16	10:00pm	H-LKU+trp
+147	147_4.dat	4	147	2	Filter 8: 620 Jan/16 10:00pm HLKU	HLKU	01-16	10:00pm	Jan/16 10:00pm HLKU
+147	147_5.dat	5	147	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-17	10:00pm	H-LKU+noTRP
+147	147_5.dat	5	147	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-17	10:00pm	H-LKU+trp
+147	147_5.dat	5	147	2	Filter 8: 620 Jan/17 10:00pm HLKU	HLKU	01-17	10:00pm	Jan/17 10:00pm HLKU
+148	148_1.dat	1	148	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-14	9:30pm	H-LKU+noTRP
+148	148_1.dat	1	148	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-14	9:30pm	H-LKU+trp
+148	148_1.dat	1	148	2	Filter 8: 620 Jan/14 9:30pm HLKU	HLKU	01-14	9:30pm	Jan/14 9:30pm HLKU
+148	148_2.dat	2	148	2	Filter 8: 620 H-LKU+notrp	DiKU-Trp	01-15	10:00am	H-LKU+notrp
+148	148_2.dat	2	148	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-15	10:00am	H-LKU+trp
+148	148_2.dat	2	148	2	Filter 8: 620 Jan/15 10:00am HLKU	HLKU	01-15	10:00am	Jan/15 10:00am HLKU
+148	148_3.dat	3	148	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-15	10:00pm	H-LKU+noTRP
+148	148_3.dat	3	148	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-15	10:00pm	H-LKU+trp
+148	148_3.dat	3	148	2	Filter 8: 620 Jan /15 10:00pm HLKU	HLKU	01-15	10:00pm	Jan /15 10:00pm HLKU
+148	148_4.dat	4	148	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-16	10:00pm	H-LKU+noTRP
+148	148_4.dat	4	148	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-16	10:00pm	H-LKU+trp
+148	148_4.dat	4	148	2	Filter 8: 620 Jan/16 10:00pm HLKU	HLKU	01-16	10:00pm	Jan/16 10:00pm HLKU
+148	148_5.dat	5	148	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-17	10:00pm	H-LKU+noTRP
+148	148_5.dat	5	148	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-17	10:00pm	H-LKU+trp
+148	148_5.dat	5	148	2	Filter 8: 620 Jan/17 10:00pm HLKU	HLKU	01-17	10:00pm	Jan/17 10:00pm HLKU
+149	149_1.dat	1	149	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-18	1:00pm	H-LKU+noTRP
+149	149_1.dat	1	149	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-18	1:00pm	H-LKU+trp
+149	149_1.dat	1	149	2	Filter 8: 620 Jan/18 1:00pm HLKU	HLKU	01-18	1:00pm	Jan/18 1:00pm HLKU
+149	149_2.dat	2	149	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-18	12:00pm	H-LKU+noTRP
+149	149_2.dat	2	149	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-18	12:00pm	H-LKU+trp
+149	149_2.dat	2	149	2	Filter 8: 620 Jan/18 12:00pm HLKU	HLKU	01-18	12:00pm	Jan/18 12:00pm HLKU
+149	149_3.dat	3	149	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-19	1:00pm	H-LKU+noTRP
+149	149_3.dat	3	149	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-19	1:00pm	H-LKU+trp
+149	149_3.dat	3	149	2	Filter 8: 620 Jan/19 1:00pm HLKU	HLKU	01-19	1:00pm	Jan/19 1:00pm HLKU
+149	149_4.dat	4	149	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-20	1:00pm	H-LKU+noTRP
+149	149_4.dat	4	149	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-20	1:00pm	H-LKU+trp
+149	149_4.dat	4	149	2	Filter 8: 620 Jan/20 1:00pm HLKU	HLKU	01-20	1:00pm	Jan/20 1:00pm HLKU
+149	149_5.dat	5	149	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-21	1:00pm	H-LKU+noTRP
+149	149_5.dat	5	149	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-21	1:00pm	H-LKU+trp
+149	149_5.dat	5	149	2	Filter 8: 620 Jan/21 1:00pm HLKU	HLKU	01-21	1:00pm	Jan/21 1:00pm HLKU
+150	150_1.dat	1	150	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-18	1:00pm	H-LKU+noTRP
+150	150_1.dat	1	150	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-18	1:00pm	H-LKU+trp
+150	150_1.dat	1	150	2	Filter 8: 620 Jan/18 1:00pm HLKU	HLKU	01-18	1:00pm	Jan/18 1:00pm HLKU
+150	150_2.dat	2	150	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-18	12:00pm	H-LKU+noTRP
+150	150_2.dat	2	150	2	Filter 8: 620 H-LKU+TRP	DiKU+Trp	01-18	12:00pm	H-LKU+TRP
+150	150_2.dat	2	150	2	Filter 8: 620 Jan/18 12:00pm HLKU	HLKU	01-18	12:00pm	Jan/18 12:00pm HLKU
+150	150_3.dat	3	150	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-19	1:00pm	H-LKU+noTRP
+150	150_3.dat	3	150	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-19	1:00pm	H-LKU+trp
+150	150_3.dat	3	150	2	Filter 8: 620 Jan/19 1:00pm HLKU	HLKU	01-19	1:00pm	Jan/19 1:00pm HLKU
+150	150_4.dat	4	150	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-20	1:00pm	H-LKU+noTRP
+150	150_4.dat	4	150	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-20	1:00pm	H-LKU+trp
+150	150_4.dat	4	150	2	Filter 8: 620 Jan/20 1:00pm HLKU	HLKU	01-20	1:00pm	Jan/20 1:00pm HLKU
+150	150_5.dat	5	150	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-21	1:00pm	H-LKU+noTRP
+150	150_5.dat	5	150	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-21	1:00pm	H-LKU+trp
+150	150_5.dat	5	150	2	Filter 8: 620 Jan/21 1:00pm HLKU	HLKU	01-21	1:00pm	Jan/21 1:00pm HLKU
+170	170_1.dat	1	170	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-22	11:30am	H-LKU+noTRP
+170	170_1.dat	1	170	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-22	11:30am	H-LKU+trp
+170	170_1.dat	1	170	2	Filter 8: 620 Jan/22 11:30am HLKU	HLKU	01-22	11:30am	Jan/22 11:30am HLKU
+170	170_2.dat	2	170	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-22	11:30pm	H-LKU+noTRP
+170	170_2.dat	2	170	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-22	11:30pm	H-LKU+trp
+170	170_2.dat	2	170	2	Filter 8: 620 Jan/22 11:30pm HLKU	HLKU	01-22	11:30pm	Jan/22 11:30pm HLKU
+170	170_3.dat	3	170	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-24	1:00pm	H-LKU+noTRP
+170	170_3.dat	3	170	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-24	1:00pm	H-LKU+trp
+170	170_3.dat	3	170	2	Filter 8: 620 Jan/24 1:00pm HLKU	HLKU	01-24	1:00pm	Jan/24 1:00pm HLKU
+170	170_4.dat	4	170	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-25	12:00pm	H-LKU+noTRP
+170	170_4.dat	4	170	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-25	12:00pm	H-LKU+trp
+170	170_4.dat	4	170	2	Filter 8: 620 Jan/25 12:00pHLKU	HLKU	01-25	12:00pm	Jan/25 12:00pHLKU
+171	171_1.dat	1	171	2	Filter 8: 620 H-LKU+NOTRP	DiKU-Trp	01-22	11:30am	H-LKU+NOTRP
+171	171_1.dat	1	171	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-22	11:30am	H-LKU+trp
+171	171_1.dat	1	171	2	Filter 8: 620 Jan/22 11:30am HLKU	HLKU	01-22	11:30am	Jan/22 11:30am HLKU
+171	171_2.dat	2	171	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-22	11:30pm	H-LKU+noTRP
+171	171_2.dat	2	171	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-22	11:30pm	H-LKU+trp
+171	171_2.dat	2	171	2	Filter 8: 620 Jan/22 11:30pm HLKU	HLKU	01-22	11:30pm	Jan/22 11:30pm HLKU
+171	171_3.dat	3	171	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-24	1:00pm	H-LKU+noTRP
+171	171_3.dat	3	171	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-24	1:00pm	H-LKU+trp
+171	171_3.dat	3	171	2	Filter 8: 620 Jan/24 1:00pm HLKU	HLKU	01-24	1:00pm	Jan/24 1:00pm HLKU
+171	171_4.dat	4	171	2	Filter 8: 620 H-LKU+noTRP	DiKU-Trp	01-25	12:00pm	H-LKU+noTRP
+171	171_4.dat	4	171	2	Filter 8: 620 H-LKU+trp	DiKU+Trp	01-25	12:00pm	H-LKU+trp
+171	171_4.dat	4	171	2	Filter 8: 620 Jan/25 12:00pm HLKU	HLKU	01-25	12:00pm	Jan/25 12:00pm HLKU

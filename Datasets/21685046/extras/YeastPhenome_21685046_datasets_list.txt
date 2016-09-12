@@ -1,0 +1,28 @@
+4797	hap a | abundance of calcium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4798	hap a | abundance of cadmium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4799	hap a | abundance of cobalt | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4800	hap a | abundance of copper | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4801	hap a | abundance of iron | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4802	hap a | abundance of potassium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4803	hap a | abundance of magnesium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4804	hap a | abundance of manganese | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4805	hap a | abundance of molybdenum | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4806	hap a | abundance of sodium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4807	hap a | abundance of nickel | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4808	hap a | abundance of phosphorus | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4809	hap a | abundance of sulphur | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4810	hap a | abundance of zinc | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4811	het | abundance of calcium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4812	het | abundance of cadmium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4813	het | abundance of cobalt | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4814	het | abundance of copper | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4815	het | abundance of iron | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4816	het | abundance of potassium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4817	het | abundance of magnesium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4818	het | abundance of manganese | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4819	het | abundance of molybdenum | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4820	het | abundance of sodium | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4821	het | abundance of nickel | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4822	het | abundance of phosphorus | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4823	het | abundance of sulphur | minimal + element supplement [standard] | Yu D~Vitek O, 2011
+4824	het | abundance of zinc | minimal + element supplement [standard] | Yu D~Vitek O, 2011
