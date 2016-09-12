@@ -21,9 +21,7 @@ datasets.standard_name = d{2};
 hit_strains = data(5:end,1);
 
 % Get the data itself
-hit_data = data(5:end,4);
-indx = find(strcmp('NS', hit_data));
-hit_data(indx) = {0};
+hit_data = data(5:end,5);
 indx = find(strcmp('ND', hit_data));
 hit_data(indx) = {NaN};
 hit_data = cell2mat(hit_data);
