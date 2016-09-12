@@ -1,0 +1,34 @@
+Wild type	3.4		
+RAD27	167.1	CAN1 †	DNA replication and repair
+PMS1	79.9	CAN1 †	MMR
+MSH2	64.9	CAN1 †	MMR
+MLH1	53.0	CAN1 †	MMR
+RAD52	46.4	CAN1 †	Recombinational repair
+YMR166c	45.1	Unknown	Unknown function
+RAD54	37.9	CAN1 †	Recombinational repair
+RAD57	37.2	CAN1 †	Recombinational repair
+RAD55	35.8	Unknown	Recombinational repair
+TSA1	35.5	Unknown	Thioredoxin peroxidase
+RAD51	34.2	CAN1 †	Recombinational repair
+MRE11 ‡	33.3	CAN1 †	Recombinational repair, checkpoints
+RAD50 ‡	33.0	CAN1 †	Recombinational repair, checkpoints
+HIS5	31.1	Unknown	Histidinol-phosphate aminotransferase
+MMS2	28.5	CAN1 †	Ubiquitin-conjugating enzyme
+MSH6	27.7	CAN1 †	MMR
+ADR1	24.5	Unknown	Transcriptional regulator
+SHU1	21.7	Unknown	Unknown function
+RAD5	21.5	CAN1 †	DNA helicase, postreplication repair
+CSM2	21.0	Unknown	Unknown function
+YLR376c	20.4	Unknown	Unknown function
+SOD1	20.4	trp1-289	Cu/Zn superoxide dismutase
+OGG1	17.6	CAN1 †	8-Oxoguanine DNA glycosylase
+RAD18	17.5	CAN1 †	Postreplication repair
+SHU2	17.4	Unknown	Unknown function
+LYS7	17.0	Unknown	Lysine synthesis, Cu chaperone for Sod1
+ELG1	13.6	Unknown	Unknown function
+PIF1	12.0	GCR	DNA helicase
+SKN7	10.9	unknown	Oxidative stress response
+YAP1	9.8	Unknown	Oxidative stress response
+YLR154c	8.9	Unknown	Unknown function
+YDL162c	8.4	Unknown	Unknown function
+UNG1	7.9	SUP4-o	Uracil DNA glycosylase
