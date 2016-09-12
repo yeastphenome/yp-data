@@ -1,0 +1,4 @@
+516	hom/het? | growth (relative abundance in pooled culture) | MUC7 peptide [10 uM] | Lis M~Bobek LA, 2013
+4925	hom/het? | growth (relative abundance in pooled culture) | histatin 12-mer [20 uM] | Lis M~Bobek LA, 2013
+4926	hom/het? | growth (relative abundance in pooled culture) | cathelicidin KR20 [10 uM] | Lis M~Bobek LA, 2013
+4927	hom/het? | growth (relative abundance in pooled culture) | lactoferricin aa 1-11 [12 uM] | Lis M~Bobek LA, 2013
