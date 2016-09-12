@@ -1,0 +1,18 @@
+475	het | growth (relative abundance in pooled culture) | YPD [standard] | Steinmetz LM~Davis RW, 2002
+4827	het | growth (relative abundance in pooled culture) | YPG [3%] | Steinmetz LM~Davis RW, 2002
+4828	het | growth (relative abundance in pooled culture) | YPE (YPE [2%]) | Steinmetz LM~Davis RW, 2002
+4829	het | growth (relative abundance in pooled culture) | YPL (YPL [standard]) | Steinmetz LM~Davis RW, 2002
+4830	het | growth (relative abundance in pooled culture) | YPDGE (ethanol [2%], glucose [0.1%], glycerol [3%]) | Steinmetz LM~Davis RW, 2002
+4831	het | growth (relative abundance in pooled culture) | YPD+ 0.1mM dinitrophenol (dinitrophenol [0.1 mM], YPD [standard]) | Steinmetz LM~Davis RW, 2002
+4832	het | growth (relative abundance in pooled culture) | YPD+ 0.25mM dinitrophenol (dinitrophenol [0.25 mM]) | Steinmetz LM~Davis RW, 2002
+4833	het | growth (relative abundance in pooled culture) | YPG+ 0.1mM dinitrophenol (dinitrophenol [0.1 mM], YPG [3%]) | Steinmetz LM~Davis RW, 2002
+4834	het | growth (relative abundance in pooled culture) | YPG+ 0.25mM dinitrophenol (dinitrophenol [0.25 mM], YPG [3%]) | Steinmetz LM~Davis RW, 2002
+4836	hom | growth (relative abundance in pooled culture) | YPD [standard] | Steinmetz LM~Davis RW, 2002
+4837	hom | growth (relative abundance in pooled culture) | YPG [3%] | Steinmetz LM~Davis RW, 2002
+4838	hom | growth (relative abundance in pooled culture) | YPE (YPE [2%]) | Steinmetz LM~Davis RW, 2002
+4839	hom | growth (relative abundance in pooled culture) | YPL (YPL [standard]) | Steinmetz LM~Davis RW, 2002
+4840	hom | growth (relative abundance in pooled culture) | YPDGE (ethanol [2%], glucose [0.1%], glycerol [3%]) | Steinmetz LM~Davis RW, 2002
+4841	hom | growth (relative abundance in pooled culture) | YPD+ 0.1mM dinitrophenol (dinitrophenol [0.1 mM], YPD [standard]) | Steinmetz LM~Davis RW, 2002
+4842	hom | growth (relative abundance in pooled culture) | YPD+ 0.25mM dinitrophenol (dinitrophenol [0.25 mM]) | Steinmetz LM~Davis RW, 2002
+4843	hom | growth (relative abundance in pooled culture) | YPG+ 0.1mM dinitrophenol (dinitrophenol [0.1 mM], YPG [3%]) | Steinmetz LM~Davis RW, 2002
+4844	hom | growth (relative abundance in pooled culture) | YPG+ 0.25mM dinitrophenol (dinitrophenol [0.25 mM], YPG [3%]) | Steinmetz LM~Davis RW, 2002

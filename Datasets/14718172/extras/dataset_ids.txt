@@ -1,0 +1,78 @@
+556	FUDR
+4845	5-FU
+4846	Actinomycin D
+4847	Amitriptyline
+4848	Amphotericin B
+4850	Asulam
+4854	Caffeine
+4855	Camptothecin
+4856	Carbendazim
+4857	Chlorpromazine
+4858	Cisplatin
+4859	Clomipramine
+4860	Clotrimazole
+4861	Cycloheximide
+4862	Cymoxanil
+4849	Ara-CMP
+4863	Daunorubicin
+4864	Desipramine
+4865	Diltiazem
+4866	DMSO
+4867	Doxorubicin
+4868	Doxycycline
+4869	Dyclonine
+4870	Efavirenz
+4871	Erythromycin Ethylsuccinate
+4872	Ethanol
+4873	Fenpropimorph
+490	5-FC
+4874	Flurbiprofen
+4875	Gemfibrozil
+4876	Gliotoxin
+4877	Haloperidol
+4878	Histamine
+4879	Hydroxyurea
+4880	Ibuprofen
+4881	Imipramine
+4882	Indomethacin
+4883	Isoniazid
+4884	Kanamycin
+4885	Lovastatin
+4886	Menadione
+4887	Methotrexate
+4888	MMS
+4889	Metoclopramide
+4851	Atenolol
+4852	AZT
+4890	Molsidomine
+4891	Nalidixic acid
+4892	Naproxen
+4893	Nevirapine
+4894	Nicardipine
+4895	Nifedipine
+4896	Nitrofurantoin
+4897	Omeprazole
+4853	Benoxinate
+4898	Paromomycin
+4899	Pentamidine
+4900	Phenylbutazone
+4901	Pramoxine
+4902	Procaine
+4903	Promethazine
+4904	Sodium m-Arsenite
+4905	Sodium Chloride
+4906	Sodium Nitroprusside
+4907	Staurosporine
+4908	Sulfamethoxazole
+4909	Sulfanilamide
+4910	Sulfinpyrazone
+4911	Sulfometuron Methyl
+4912	Tamoxifen
+4913	Terbinafine
+4914	Tetracycline
+4915	Thalidomide
+4916	Trifluoperazine
+4917	Troglitazone
+4918	Tunicamycin
+4919	Valproic Acid
+4920	Warfarin

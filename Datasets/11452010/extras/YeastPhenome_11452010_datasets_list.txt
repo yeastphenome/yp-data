@@ -1,0 +1,3 @@
+467	hom | unipolar budding pattern | standard [standard] | Ni L~Snyder M, 2001
+4921	hom | axial budding pattern | standard [standard] | Ni L~Snyder M, 2001
+4922	hom | random budding pattern | standard [standard] | Ni L~Snyder M, 2001
