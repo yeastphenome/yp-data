@@ -1,11 +1,11 @@
 %% Hendry~Brown, 2015
 function FILENAMES = code()
-addpath(genpath('../../Yeast-Matlab-Utils/'));
-FILENAMES = {};
-hendry_brown_2015.pmid = 25721128;
 
-phenotypes = {'Rnr3 abundance'};
-treatments = {'Untreated conditions'; 'YPD, 0.03% MMS'};
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
+FILENAMES = {};
+
+hendry_brown_2015.pmid = 25721128;
 
 % MANUAL. Download the list of dataset ids and standard names from
 % the paper's page on www.yeastphenome.org & save the file to ./extras
@@ -25,6 +25,19 @@ datasets.standard_name = d{2};
 hit_strains = data(11:end, 5);
 hit_strains2 = data2(11:end, 5);
 
+% Retrieve data from files
+hit_data = cell2mat(data(11:end, 8));
+hit_data2 = cell2mat(data2(11:end, 8));
+
+% Only keep the non-essentials
+inds_ess1 = find(strcmp('Essential', data(11:end,2)));
+hit_strains(inds_ess1) = [];
+hit_data(inds_ess1,:) = [];
+
+inds_ess2 = find(strcmp('Essential', data2(11:end,2)));
+hit_strains2(inds_ess2) = [];
+hit_data2(inds_ess2,:) = [];
+
 % Clean up ORFs
 hit_strains = clean_orf(hit_strains);
 hit_strains2 = clean_orf(hit_strains2);
@@ -34,10 +47,6 @@ inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds)); 
 inds = find(~is_orf(hit_strains2));
 disp(hit_strains2(inds));
-
-% Retrieve data from files
-hit_data = cell2mat(data(11:end, 8));
-hit_data2 = cell2mat(data2(11:end, 8));
 
 % Average any repeated value
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
@@ -78,5 +87,12 @@ save('./hendry_brown_2015.mat','hendry_brown_2015');
 fid = fopen('./hendry_brown_2015.txt','w');
 write_matrix_file(fid, hendry_brown_2015.orfs, hendry_brown_2015.ph, hendry_brown_2015.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(hendry_brown_2015)
+end
 
 end
