@@ -23,8 +23,7 @@ datasets.standard_name = d{2};
 hit_strains = data(3:end,1);
 
 % Get the data itself
-hit_data = ones(length(hit_strains), 1);
-hit_data = hit_data * -1;
+hit_data = -ones(length(hit_strains), 1);
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
