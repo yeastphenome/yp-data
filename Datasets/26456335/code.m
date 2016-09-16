@@ -1,8 +1,5 @@
 %% McCormick~Kennedy, 2015
 
-% Firstly, with this paper, I assumed that FMP42 was supposed to be FMP41.
-% Secondly, there were data values > 1e-13, so I just made them zero.
-
 function FILENAMES = code()
 
 addpath(genpath('../../Yeast-Matlab-Utils/'));
@@ -26,10 +23,7 @@ datasets.standard_name = d{2};
 hit_strains = data(4:end,1);
 
 % Get the data itself
-hit_data = data(4:end, 12);
-inds = find(~cellfun(@isnumeric, hit_data));
-hit_data(inds) = {0};
-hit_data = cell2mat(hit_data);
+hit_data = cell2mat(data(4:end, 12));
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_genename(hit_strains);
@@ -38,7 +32,7 @@ hit_strains = clean_genename(hit_strains);
 hit_strains = translate(hit_strains);
 
 % Find anything that doesn't look like an ORF
-hit_strains(ismember(hit_strains, {'FMP42'})) = {'YNL168C'};
+hit_strains(ismember(hit_strains, {'FMP42'})) = {'YMR221C'};
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds) = [];
