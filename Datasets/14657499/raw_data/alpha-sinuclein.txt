@@ -1,0 +1,87 @@
+Strain	Ortholog	Function
+1. ape2Δ	Yes	Aminopeptidase
+2. arl3Δ	Yes	ARF small monomeric GTPase activity
+3. aro1Δ	No	Arom pentafunctional enzyme
+4. cog6Δ	Yes	Involved in vesicular transport to the Golgi
+5. crh1Δ	Yes	Cell wall protein
+6. cvt17Δ	No	Lipase
+7. dpp1Δ	Yes	Diacylglycerol pyrophosphate phosphatase
+8. fun26Δ	Yes	Nucleoside transporter
+9. gip2Δ	Yes	Regulatory subunit for PP1 phosphatase
+10. glo4Δ	Yes	Hydroxyacylglutathione hydrolase
+11. gtt1Δ	No	Glutathione transferase
+12. hbs1Δ	Yes	∼To translation elongation factor EF-1alpha
+13. hsp30Δ	No	Heat shock protein for pH homeostasis
+14. ino4Δ	No	Transcript. factor (phospholipid syn. genes)
+15. mad1Δ	No	Involved in spindle-assembly checkpoint
+16. mal31Δ	Yes	Maltose transporter
+17. mei4Δ	No	Required for meiotic recombination
+18. met17Δ	Yes	O-acetylhomoserine (thiol)-lyase
+19. met32Δ	Yes	Transcription factor
+20. msb3Δ	Yes	RAB GTPase activator
+21. nbp2Δ	Yes	Poss. involved in cytoskeletal organization
+22. nit2Δ	Yes	Nitrilase
+23. nup53Δ	Yes	Component of nuclear pore complex
+24. opi3Δ	Yes	Phosphatidylethanolamine N-methyltransf.
+25. pca1Δ	Yes	P-type copper-transporting ATPase
+26. pex2Δ	Yes	Peroxisomal biogenesis protein
+27. pex8Δ	No	Peroxisomal biogenesis protein
+28. pho13Δ	Yes	4-Nitrophenylphosphatase
+29. pox1Δ	Yes	Acyl-CoA oxidase
+30. ptk2Δ	Yes	Serine/threonine protein kinase
+31. rpl41aΔ	No	Structural constituent of ribosome
+32. rny1Δ	Yes	Endoribonuclease
+33. sac2Δ	Yes	Involved in protein sorting in the late Golgi
+34. sap4Δ	No	Serine/threonine phosphatase
+35. sod2Δ	Yes	Manganese superoxide dismutase
+36. stf1Δ	No	ATPase inhibitor
+37. stp2Δ	Yes	Transcription factor
+38. suv3Δ	Yes	Mitochondrial RNA helicase (DEAD box)
+39. swr1Δ	Yes	Member of Snf2p DNA helicase family
+40. thi7Δ	No	Thiamin transporter
+41. tlg2Δ	Yes	Syntaxin homolog (t-SNARE)
+42. thr1Δ	No	Homoserine kinase
+43. tna1Δ	Yes	Nicotinamide mononucleotide permease
+44. tsl1Δ	No	Alpha, alpha-trehalose-phosphate synthase
+45. ubc8Δ	Yes	Ubiquitin-conjugating enzyme
+46. vps24Δ	Yes	Sorts proteins in the prevacuolar endosome
+47. vps28Δ	Yes	Required for traffic to vacuole
+48. vps60Δ	No	Vacuolar protein sorting
+49. war1Δ	No	Transcription factor
+50. yat1Δ	Yes	Outer carnitine acetyltransferase, mitochondrial
+51. ybr013cΔ	No	Unknown
+52. ybr284wΔ	Yes	AMP deaminase
+53. ybr300cΔ	No	Unknown
+54. ycl042wΔ	No	Unknown
+55. ycr026cΔ	Yes	Contains type I phosphodiesterase domain
+56. ycr050cΔ	No	Unknown
+57. ycr051wΔ	Yes	Contains ankyrin (Ank) repeats
+58. ycr085wΔ	No	Unknown
+59. ydl118wΔ	No	Possibly involved in meiotic nuclear division
+60. ydr154cΔ	No	Unknown
+61. ydr220cΔ	No	Unknown
+62. yfr035cΔ	No	Unknown
+63. ygl109wΔ	No	Unknown
+64. ygl165cΔ	No	Unknown
+65. ygl226wΔ	No	Unknown
+66. ygl231cΔ	Yes	Unknown
+67. ygl262wΔ	No	Unknown
+68. ygr130cΔ	Yes	Unknown
+69. ygr154cΔ	No	Unknown
+70. ygr201cΔ	Yes	Translation elongation factor
+71. ygr290wΔ	No	Unknown
+72. yhr199cΔ	No	Unknown
+73. yjl118wΔ	No	Unknown
+74. yjl122wΔ	No	Unknown
+75. yjl135wΔ	No	Unknown
+76. yjr154wΔ	No	Unknown
+77. ykl098wΔ	No	Unknown
+78. ykl100cΔ	Yes	Unknown
+79. ykr023wΔ	Yes	Unknown
+80. ykr035cΔ	No	Unknown
+81. ylr365wΔ	No	Unknown
+82. ylr376cΔ	No	Possibly involved in DNA repair
+83. ymr226cΔ	Yes	Oxidoreductase
+84. yml089cΔ	No	Unknown
+85. ymr289wΔ	No	Unknown
+86. ypl136wΔ	No	Unknown

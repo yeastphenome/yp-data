@@ -1,0 +1,53 @@
+Strain	Ortholog	Function
+1. apj1Δ	Yes	Hsp40 chaperone
+2. apm2Δ	Yes	Nonselective vesicle transport
+3. ayr1Δ	Yes	Ketoreductase; acylglycerone-phosphate reductase
+4. cit2Δ	Yes	Citrate synthase, peroxisomal
+5. cmk1Δ	Yes	Protein histidine kinase
+6. cos111Δ	No	Possibly involved in ubiquitin pathway
+7. cps1Δ	Yes	Gly-X carboxypeptidase
+8. dcg1Δ	No	Possibly involved in cell wall biosynthesis
+9. fil1Δ	No	Translation factor
+10. fpr2Δ	Yes	Peptidyl-prolyl cis-trans isomerase
+11. gda1Δ	Yes	Guanosine diphosphatase
+12. glo2Δ	Yes	Hydroxyacylglutathione hydrolase
+13. gre2Δ	Yes	Alpha-acetoxy ketone reductase
+14. gsh2Δ	Yes	Glutathione synthase
+15. hlj1Δ	Yes	Hsp40 chaperone in ER
+16. hlr1Δ	No	Unknown, similar to Lre1 (Pkc1p-MAPK pathway)
+17. hms1Δ	Yes	Transcription factor
+18. ipk1Δ	No	Phosphatidylinositol phosphate kinase
+19. kgd1Δ	Yes	Alpha-ketoglutarate dehydrogenase
+20. msb1Δ	Yes	Activates Pkc1p-MAPK pathway
+21. mrp11Δ	No	Protein of the mitochondrial large ribosomal subunit
+22. mup1Δ	Yes	Methionine permease
+23. pc16Δ	No	Cyclin-dependent protein kinase
+24. phm8Δ	No	Possibly involved in phosphate metabolism
+25. prm5Δ	No	Possibly involved in cell stress
+26. psp1Δ	No	Possibly involved in DNA replication
+27. rim4Δ	Yes	RNA binding
+28. sam2Δ	Yes	S-adenosylmethionine synthetase 2
+29. sas3Δ	Yes	Histone acetyltransferase
+30. sdt1Δ	No	5′-Nucleotidase
+31. sip18Δ	No	Binds phospholipids
+32. sng1Δ	No	Probable transport protein
+33. stp2Δ	Yes	Transcription factor
+34. tea1Δ	No	Transcriptional activator
+35. tvp15Δ	No	Possibly involved in vesicular transport
+36. ubp13Δ	Yes	Ubiquitin C-terminal hydrolase
+37. vps70Δ	Yes	Possibly involved in vacuolar trafficking
+38. yhb1Δ	Yes	Nitric oxide dioxygenase; oxygen transporter
+39. yrb30Δ	No	Unknown
+40. ybr100wΔ	No	Possibly involved in DNA damage repair
+41. ybr255wΔ	No	Unknown
+42. ydr215cΔ	No	Unknown
+43. ygr015cΔ	Yes	Alpha or beta hydrolase fold family
+44. yjr107wΔ	No	Has similarity to acylglycerol lipase
+45. ykr017cΔ	Yes	Has a TRIAD composite zinc finger domain
+46. ykr064wΔ	No	Transcription factor
+47. ylr128wΔ	Yes	Basic helix-loop-helix leucine zipper protein
+48. ymr160wΔ	No	Unknown
+49. ynl296wΔ	No	Possibly involved in vacuolar trafficking
+50. yor292cΔ	Yes	Peroxisomal protein
+51. yor300wΔ	No	Bipolar budding and bud site selection
+52. ypl067cΔ	No	Unknown
