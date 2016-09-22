@@ -1,0 +1,3 @@
+486	hom | sporulation efficiency | sporulation medium [unknown] | Marston AL~Amon A, 2004
+4950	hom | chromosome segregation (percentage of tetrads with 1 chromosome/cell) | sporulation medium [unknown] | Marston AL~Amon A, 2004
+4963	hom | dyad formation (percentage of cells forming dyads) | sporulation medium [unknown] | Marston AL~Amon A, 2004
