@@ -23,11 +23,10 @@ datasets.standard_name = d{2};
 hit_strains = data(2:end,2);
 
 % Get the data itself
-hit_data = ones(size(hit_strains));
-hit_data = hit_data*-1;
+hit_data = -ones(size(hit_strains));
    
 % Eliminate all white spaces & capitalize
-hit_strains = clean_genename(hit_strains);
+hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
