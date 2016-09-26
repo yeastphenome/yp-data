@@ -1,0 +1,2 @@
+70	hap a | growth (spot assay) | expression of mutant huntingtin fragment [GAL] | Willingham S~Muchowski PJ, 2003
+202	hap a | growth (spot assay) | expression of alpha-sinuclein [unknown] | Willingham S~Muchowski PJ, 2003

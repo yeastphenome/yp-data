@@ -1,0 +1,100 @@
+Functional category and ORF	Gene	Characteristic or description
+Metabolism		
+    Lipid, fatty acid, and isoprenoid metabolism		
+        YER019W	ISC1	Weakly similar to human and mouse neutral sphingomyelinase
+        YMR207c	HFA1	Strongly similar to acetyl coenzyme A carboxylase
+        YMR202w	ERG2	C8 sterol isomerase
+        YLR056w	ERG3	C5 sterol desaturase
+        YGL012w	ERG4	Sterol C24 reductase
+    Carbohydrate metabolism		
+        YGL156w	AMS1	α-Mannosidase
+        YLR377c	FBP1	Fructose-1,6-bisphosphatase
+        YBR126C	TPS1	α,α-Trehalose-phosphate synthase
+    Nucleotide metabolism		
+        YMR300c	ADE4	Amidophosphoribosyltransferase
+    Amino acid metabolism		
+        YGL154c	LYS5	L-Aminoadipate-semialdehyde dehydrogenase, small subunit
+        YEL046c	GLY1	L-Threonine aldolase, low-specific
+        YGL148w	ARO2	Chorismate synthase
+        YHR025w	THR1	Homoserine kinase
+        YCR053w	THR4	Threonine synthase (o-p-homoserine p-lyase)
+    Metabolism of energy reserves		
+        YBL058w	SHP1	Potential regulatory subunit for Glc7p
+    Energy generation activities		
+        YOL079w		Similar to NADH dehydrogenases
+Regulation of interaction with cellular environment		
+    Ion homeostasis		
+        YGR217W	CCH1	Calcium channel protein
+        YHR060w	VMA22	Vacuolar ATPase assembly protein
+        YGR020c	VMA7	H+-ATPase V1 domain 14-kDa subunit, vacuolar
+        YBR127C	VMA2	H+-ATPase V1 domain 60-kDa subunit, vacuolar
+        YKL080w	VMA5	H+-ATPase V1 domain 42-kDa subunit, vacuolar
+        YEL051w	VMA8	H+-ATPase V1 domain 32-kDa subunit, vacuolar
+        YEL027w	CUP5	H+-ATPase V0 domain 17-kDa subunit, vacuolar
+        YAL026c	DRS2	P-type amino-phospholipid-ATPase
+        YLR447c	VMA6	H+-ATPase V0 domain 36-kDa subunit, vacuolar
+        YDL185w	TFP1	H+-ATPase V1 domain 69-kDa catalytic subunit, vacuolar
+        YHR026w	PPA1	H+-ATPase 23-kDa subunit, vacuolar
+Cellular transport and transport mechanisms		
+    YDR320c	SWA2	Clathrin-binding protein required for normal clathrin function
+Control cellular organization		
+    Cell wall		
+        YCL007c	CWH36	Affects the mannoprotein layer of the cell wall
+        YLR390w-a	CCW14	Secretory stress response protein 1
+        YGR036c	CAX4	Required for full levels of dolichol-linked oligosaccharides in the endoplasmic reticulum
+        YJL095W	BCK1	Cell wall integrity pathway, nutrient sensing, and growth control
+        YDR323c	PEP7	Vacuolar segregation protein
+        YJR059W	PTK2	Involved in polyamine uptake
+Cell fate		
+    YNL084c	END3	Required for endocytosis and cytoskeletal organization
+    YGR167w	CLC1	Clathrin light chain
+    YDR388w	RVS167	Reduced viability upon starvation protein
+    YAL016w	TPD3	Ser/Thr protein phosphatase 2A, regulatory chain A
+    YDR099W	BMH2	Suppressor of clathrin deficiency
+Transcription		
+    YBR112c	CYC8	General repressor of transcription
+    YPL129w	ANC1	TFIIF subunit (transcription initiation factor), 30 kDa
+    YOR295w	UAF30	Subunit of RNA polymerase I transcription factor
+    YOR290c	SNF2	Component of SWI/SNF global transcription activator complex
+    YMR228w	MTF1	RNA polymerase-specific factor, mitochondrial
+    YKL062w	MSN4	Transcriptional activator
+    YGL071W	RCS1	Activates transcription in response to iron deprivation
+Protein synthesis		
+    YBR191w	RPL21A	Ribosomal protein L21.e
+    YNL073w	MSK1	Lysyl-tRNA synthetase, mitochondrial
+    YOL023w	IFM1	Translation initiation factor 2, mitochondrial
+Cellular communication/signal transduction pathway		
+    YMR016c	SOK2	Regulatory protein in the protein kinase A signal Transduction pathway
+    YLR113w	HOG1	Ser/Thr protein kinase of MAPK family
+    YLR006c	SSK1	Two-component signal transducer
+Protein fate		
+    YLR148w	PEP3	Vacuolar membrane protein
+    YPL045w	VPS16	Vacuolar sorting protein
+    YLR396c	VPS33	Vacuolar sorting protein
+    YCR069w	SCC3	Peptidyl-prolyl cis-trans isomerase precursor
+    YML078w	CPR3	Cyclophilin (peptidylprolyl isomerase)
+    YMR150C	IMP1	Protease, mitochondrial
+Cell rescue, defense, and virulence		
+    Detoxification		
+        YJR104c	SOD1	Copper-zinc superoxide dismutase
+Cell cycle and DNA processing		
+    YIL153w	RRD1	Similar to human and rabbit phosphotyrosyl phosphatase activators and YPL152w
+    YGR188c	BUB1	Ser/Thr protein kinase
+    YIL035c	CKA1	Casein kinase II, catalytic alpha chain
+    YPL239W	YAR1	Ankyrin repeat-containing protein
+    YJR144w	MGM101	Mitochondrial genome maintenance protein
+Unknown function		
+    YMR216c	SKY1	Similar to Schizosaccharomyces pombe dsk1, human SRPK1, and other protein kinases
+    YDL204W		Similar to hypothetical protein YDR233c
+    YLR326w		
+    YOR331c		Questionable ORF
+    YLR334c		Questionable ORF
+    YOR161C		Similarity to Caenorhabditis elegans cosmid F35C8
+    YKL169c		
+    YBR101c		Weakly similar to S. pombe hypothetical protein SPBC3B9.01
+    YLR346c		Weakly similar to YGR035c
+    YHR198c		
+    YKL102c		
+    YEL045c		Weakly similar to cytochrome c oxidase III of Trypanosoma brucei kinetoplast
+    YLR047c		Similar to hypothetical protein YGL160w
+    YPL144w		Hypothetical protein
