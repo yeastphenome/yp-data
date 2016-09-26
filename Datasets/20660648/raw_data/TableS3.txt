@@ -1,0 +1,109 @@
+YLR410W VIP1 actin cytoskeleton organization and biogenesis
+YLL043W FPS1 arsenite uptake
+YCR047C BUD23 bud site selection
+YGR221C TOS2 budding cell bud growth
+YJL184W YJL184W cell wall mannoprotein biosynthesis
+YLR110C CCW12 cell wall organization and biogenesis
+YIL085C KTR7 cell wall organization and biogenesis
+YNL227C JJJ1 endocytosis
+YGL054C ERV14 ER to Golgi vesicle-mediated transport
+YIR026C YVH1 glycogen metabolism
+YKR042W UTH1 mitochondrion organization and biogenesis
+YGL019W CKB1 mitotic cell cycle; ion homeostasis
+YOR039W CKB2 mitotic cell cycle; ion homeostasis
+YKR072C SIS2 mitotic cell cycle; salt stress response
+YDR432W NPL3 mRNA export from nucleus
+YDR378C LSM6 mRNA splicing
+YMR080C NAM7 nonsense-mediated mRNA decay
+YHR077C NMD2 nonsense-mediated mRNA decay
+YGR072W UPF3 nonsense-mediated mRNA decay
+YDR140W MTQ2 peptidyl-glutamine methylation
+YOR085W OST3 protein amino acid glycosylation
+YDL081C RPP1A protein biosynthesis
+YDR382W RPP2B protein biosynthesis
+YLR192C HCR1 protein biosynthesis; ribosomal RNA processing
+YGR085C RPL11B protein biosynthesis; structural constituent of ribosome
+YDR418W RPL12B protein biosynthesis; structural constituent of ribosome
+YDL082W RPL13A protein biosynthesis; structural constituent of ribosome
+YMR142C RPL13B protein biosynthesis; structural constituent of ribosome
+YKL006W RPL14A protein biosynthesis; structural constituent of ribosome
+YNL069C RPL16B protein biosynthesis; structural constituent of ribosome
+YBL027W RPL19B protein biosynthesis; structural constituent of ribosome
+YGL135W RPL1B protein biosynthesis; structural constituent of ribosome
+YMR242C RPL20A protein biosynthesis; structural constituent of ribosome
+YOR312C RPL20B protein biosynthesis; structural constituent of ribosome
+YBR191W RPL21A protein biosynthesis; structural constituent of ribosome
+YLR061W RPL22A protein biosynthesis; structural constituent of ribosome
+YER117W RPL23B protein biosynthesis; structural constituent of ribosome
+YGL031C RPL24A protein biosynthesis; structural constituent of ribosome
+YIL052C RPL34B protein biosynthesis; structural constituent of ribosome
+YDL191W RPL35A protein biosynthesis; structural constituent of ribosome
+YLR185W RPL37A protein biosynthesis; structural constituent of ribosome
+YJL189W RPL39 protein biosynthesis; structural constituent of ribosome
+YKR094C RPL40B protein biosynthesis; structural constituent of ribosome
+YPR043W RPL43A protein biosynthesis; structural constituent of ribosome
+YBR031W RPL4A protein biosynthesis; structural constituent of ribosome
+YML073C RPL6A protein biosynthesis; structural constituent of ribosome
+YLR448W RPL6B protein biosynthesis; structural constituent of ribosome
+YGL076C RPL7A protein biosynthesis; structural constituent of ribosome
+YHL033C RPL8A protein biosynthesis; structural constituent of ribosome
+YNL067W RPL9B protein biosynthesis; structural constituent of ribosome
+YLR048W RPS0B protein biosynthesis; structural constituent of ribosome
+YOR293W RPS10A protein biosynthesis; structural constituent of ribosome
+YDR025W RPS11A protein biosynthesis; structural constituent of ribosome
+YBR048W RPS11B protein biosynthesis; structural constituent of ribosome
+YMR143W RPS16A protein biosynthesis; structural constituent of ribosome
+YDL083C RPS16B protein biosynthesis; structural constituent of ribosome
+YML024W RPS17A protein biosynthesis; structural constituent of ribosome
+YDR450W RPS18A protein biosynthesis; structural constituent of ribosome
+YML026C RPS18B protein biosynthesis; structural constituent of ribosome
+YNL302C RPS19B protein biosynthesis; structural constituent of ribosome
+YLR441C RPS1A protein biosynthesis; structural constituent of ribosome
+YML063W RPS1B protein biosynthesis; structural constituent of ribosome
+YJL136C RPS21B protein biosynthesis; structural constituent of ribosome
+YGR118W RPS23A protein biosynthesis; structural constituent of ribosome
+YPR132W RPS23B protein biosynthesis; structural constituent of ribosome
+YER074W RPS24A protein biosynthesis; structural constituent of ribosome
+YHR021C RPS27B protein biosynthesis; structural constituent of ribosome
+YLR264W RPS28B protein biosynthesis; structural constituent of ribosome
+YDL061C RPS29B protein biosynthesis; structural constituent of ribosome
+YOR182C RPS30B protein biosynthesis; structural constituent of ribosome
+YJR145C RPS4A protein biosynthesis; structural constituent of ribosome
+YHR203C RPS4B protein biosynthesis; structural constituent of ribosome
+YPL090C RPS6A protein biosynthesis; structural constituent of ribosome
+YBR181C RPS6B protein biosynthesis; structural constituent of ribosome
+YOR096W RPS7A protein biosynthesis; structural constituent of ribosome
+YBL072C RPS8A protein biosynthesis; structural constituent of ribosome
+YBR189W RPS9B protein biosynthesis; structural constituent of ribosome
+YPL125W KAP120 protein import into nucleus
+YDR414C ERD1 protein retention in ER
+YML106W URA5 pyrimidine base biosynthesis
+YPL268W PLC1 regulation of phosphate metabolism
+YKR024C DBP7 ribosomal large subunit assembly and maintenance
+YPL193W RSA1 ribosomal large subunit assembly and maintenance
+YFR001W LOC1 ribosomal large subunit biogenesis
+YBR267W REI1 ribosomal large subunit biogenesis
+YLR068W FYV7 ribosomal RNA processing
+YOL041C NOP12 ribosomal RNA processing
+YGR159C NSR1 ribosomal RNA processing
+YGL246C RAI1 ribosomal RNA processing
+YOR001W RRP6 ribosomal RNA processing
+YHR081W LRP1 ribosomal RNA processing; snoRNA processing
+YKL143W LTV1 ribosomal small subunit biogenesis; stress response
+YPL239W YAR1 ribosomal small subunit biogenesis; stress response
+YLR418C CDC73 transcriptional regulation
+YMR136W GAT2 transcriptional regulation
+YOR123C LEO1 transcriptional regulation
+YLR131C ACE2 transcriptional regulation specific in G1 phase
+YIL128W MET18 transcriptional regulation; methionine metabolism
+YGR097W ASK10 transcriptional regulation; oxidative stress response
+YBL067C UBP13 unknown
+YDL063C YDL063C unknown
+YDR161W YDR161W unknown
+YGR131W YGR131W unknown
+YLR111W YLR111W unknown
+YLR184W YLR184W unknown
+YOR309C YOR309C unknown
+YDR349C YPS7 unknown
+YEL062W NPR2 urea and L-proline transport
+YDR017C KCS1 vacuole organization and biogenesis
