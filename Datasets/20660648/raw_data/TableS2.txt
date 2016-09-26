@@ -1,0 +1,191 @@
+YNL153C GIM3 actin & tubulin folding SS SS
+YEL003W GIM4 actin & tubulin folding SS SS
+YML094W GIM5 actin & tubulin folding SS SS
+YGR078C PAC10 actin & tubulin folding SS SS
+YJL179W PFD1 actin & tubulin folding SS SS
+YLR200W YKE2 actin & tubulin folding SS SS
+YPL161C BEM4 actin cytoskeleton organization and biogenesis S SS
+YLR370C ARC18 actin filament organization NO SS
+YLR371W ROM2 actin filament organization SS SS
+YNL271C BNI1 actin filament organization NO S
+YNL084C END3 actin filament organization; endocytosis NO SS
+YJR125C ENT3 actin filament organization; endocytosis NO S
+YBR200W BEM1 actin organization; establishment of cell polarity NO S
+YPR199C ARR1 arsenite detoxification SS SS
+YPR201W ARR3 arsenite detoxification SS SS
+YDR135C YCF1 arsenite detoxification NO SS
+YFL023W BUD27 bud site selection SS SS
+YCR063W BUD31 bud site selection NO SS
+YKR061W KTR2 cell wall mannoprotein biosynthesis NO S
+YCR017C CWH43 cell wall organization and biogenesis NO S
+YDR293C SSD1 cell wall organization and biogenesis NO SS
+YLR085C ARP6 chromatin remodeling; transcriptional regulation NO S
+YOL012C HTZ1 chromatin remodeling; transcriptional regulation NO SS
+YOR304W ISW2 chromatin remodeling; transcriptional regulation NO S
+YNL192W CHS1 cytokinesis NO S
+YOL076W MDM20 cytoskeleton organization and biogenesis NO S
+YNL138W SRV2 cytoskeleton organization and biogenesis NO SS
+YDL101C DUN1 DNA damage checkpoint NO S
+YBL051C PIN4 DNA damage checkpoint NO S
+YER177W BMH1 DNA damage checkpoint; cell polarization NO S
+YLL002W RTT109 DNA damage response; DNA transpotision NO S
+YDL013W HEX3 DNA repair NO S
+YPR164W MMS1 DNA repair NO S
+YLR320W MMS22 DNA repair NO SS
+YMR224C MRE11 DNA repair NO SS
+YCR066W RAD18 DNA repair NO S
+YNL250W RAD50 DNA repair NO S
+YER095W RAD51 DNA repair NO S
+YML032C RAD52 DNA repair NO SS
+YGL163C RAD54 DNA repair NO S
+YDR004W RAD57 DNA repair NO S
+YJL047C RTT101 DNA repair NO S
+YHR154W RTT107 DNA repair NO S
+YER116C SLX8 DNA repair NO S
+YDR369C XRS2 DNA repair NO SS
+YJR043C POL32 DNA repair; DNA replication NO S
+YKL113C RAD27 DNA repair; DNA replication NO SS
+YJL115W ASF1 DNA repair; histone assembly NO S
+YGL058W RAD6 DNA repair; histone ubiquitination & methylation NO S
+YDL020C RPN4 DNA repair; protein degradation NO S
+YPR135W CTF4 DNA repair; sister chromatid cohesion NO S
+YHR191C CTF8 DNA repair; sister chromatid cohesion NO S
+YCL016C DCC1 DNA repair; sister chromatid cohesion NO S
+YGL127C SOH1 DNA repair; transcriptional regulation NO S
+YOR080W DIA2 DNA replication NO S
+YNR006W VPS27 endosome transport NO S
+YHR007C ERG11 ergosterol biosynthesis SS SS
+YMR202W ERG2 ergosterol biosynthesis NO SS
+YNL280C ERG24 ergosterol biosynthesis S SS
+YLR056W ERG3 ergosterol biosynthesis NO S
+YML008C ERG6 ergosterol biosynthesis NO SS
+YHR067W RMD12 fatty acid biosynthesis NO S
+YLR372W SUR4 fatty acid biosynthesis NO SS
+YLR087C CSF1 fermentation NO SS
+YGL084C GUP1 glycerol transport NO S
+YLR148W PEP3 Golgi to endosome transport NO S
+YMR231W PEP5 Golgi to endosome transport NO S
+YLR396C VPS33 Golgi to endosome transport NO S
+YER014W HEM14 heme biosynthesis S SS
+YCL010C SGF29 histone acetylation NO S
+YNL021W HDA1 histone deacetylation NO S
+YNL097C PHO23 histone deacetylation NO S
+YPR179C PLO1 histone deacetylation NO S
+YDR295C PLO2 histone deacetylation NO S
+YNL330C RPD3 histone deacetylation NO SS
+YMR263W SAP30 histone deacetylation NO S
+YIL084C SDS3 histone deacetylation NO S
+YOL004W SIN3 histone deacetylation NO SS
+YLR015W BRE2 histone methylation NO S
+YDR469W SDC1 histone methylation NO S
+YAR003W SWD1 histone methylation NO S
+YBR175W SWD3 histone methylation NO S
+YDL074C BRE1 histone ubiquitination & methylation NO SS
+YPL055C LGE1 histone ubiquitination & methylation NO S
+YMR077C VPS20 late endosome to vacuole transport NO SS
+YMR165C PAH1 lipid biosynthesis NO SS
+YOR349W CIN1 microtubule biogenesis NO SS
+YPL241C CIN2 microtubule biogenesis S SS
+YOR265W RBL2 microtubule biogenesis NO SS
+YML124C TUB3 microtubule biogenesis NO SS
+YDR150W NUM1 microtubule organization and biogenesis NO S
+YHR129C ARP1 microtubule-mediated nuclear migration NO S
+YER016W BIM1 microtubule-mediated nuclear migration NO S
+YMR294W JNM1 microtubule-mediated nuclear migration NO S
+YDR488C PAC11 microtubule-mediated nuclear migration NO S
+YJR118C ILM1 mitochondrial genome maintenance NO SS
+YHR038W FIL1 mitochondrion protein biosynthesis NO SS
+YPR120C CLB5 mitotic cell cycle (G1/S and G2/M transition) NO S
+YER167W BCK2 mitotic cell cycle (G1/S transition) NO S
+YFR040W SAP155 mitotic cell cycle (G1/S transition) NO S
+YLR079W SIC1 mitotic cell cycle (G1/S transition) NO S
+YPR119W CLB2 mitotic cell cycle (G2/M transition) NO S
+YFR036W CDC26 mitotic cell cycle (metaphase/anaphase transition) SS SS
+YAL024C LTE1 mitotic cell cycle (mitotic exit) S SS
+YNL298W CLA4 mitotic cell cycle (mitotic exit); cell polarization NO SS
+YPL008W CHL1 mitotic sister chromatid cohesion NO S
+YOR073W SGO1 mitotic spindle checkpoint NO S
+YEL061C CIN8 mitotic spindle organization and biogenesis NO S
+YCR065W HCM1 mitotic spindle organization and biogenesis NO S
+YIL153W RRD1 mitotic spindle organization and biogenesis NO S
+YGL094C PAN2 mRNA 3'-end processing; DNA repair NO S
+YDR497C ITR1 myo-inositol transport NO S
+YOR371C GPB1 negative regulation of cAMP signalling NO S
+YAL056W GPB2 negative regulation of cAMP signalling NO S
+YBR140C IRA1 negative regulation of cAMP signalling NO S
+YOL081W IRA2 negative regulation of cAMP signalling S SS
+YOR360C PDE2 negative regulation of cAMP signalling NO S
+YHR013C ARD1 N-terminal protein amino acid acetylation NO SS
+YEL053C MAK10 N-terminal protein amino acid acetylation NO S
+YDL040C NAT1 N-terminal protein amino acid acetylation S SS
+YLR293C GSP1 nucleocytoplasmic transport S SS
+YLR113W HOG1 osmotic stress response; regulation of arsenic uptake NO SS
+YLR006C SSK1 osmotic stress response; regulation of arsenic uptake NO SS
+YNR031C SSK2 osmotic stress response; regulation of arsenic uptake NO SS
+YJL128C PBS2 osmotic stress response; regulation of arsenic uptake NO SS
+YMR038C LYS7 oxidative stress response S SS
+YNL099C OCA1 oxidative stress response NO S
+YHR206W SKN7 oxidative stress response NO S
+YJR104C SOD1 oxidative stress response SS SS
+YML028W TSA1 oxidative stress response NO S
+YML007W YAP1 oxidative stress response NO SS
+YCR028C FEN2 pantothenate transport NO SS
+YKL197C PEX1 peroxisome organization and biogenesis NO S
+YDR265W PEX10 peroxisome organization and biogenesis NO S
+YLR191W PEX13 peroxisome organization and biogenesis NO S
+YGL153W PEX14 peroxisome organization and biogenesis NO S
+YOL044W PEX15 peroxisome organization and biogenesis NO S
+YNL214W PEX17 peroxisome organization and biogenesis NO S
+YDL065C PEX19 peroxisome organization and biogenesis NO S
+YJL210W PEX2 peroxisome organization and biogenesis NO S
+YAL055W PEX22 peroxisome organization and biogenesis NO S
+YDR329C PEX3 peroxisome organization and biogenesis NO S
+YGR133W PEX4 peroxisome organization and biogenesis NO SS
+YDR244W PEX5 peroxisome organization and biogenesis NO S
+YNL329C PEX6 peroxisome organization and biogenesis NO SS
+YGR077C PEX8 peroxisome organization and biogenesis NO S
+YJR073C OPI3 phosphatidylcholine biosynthesis NO S
+YHL020C OPI1 phospholipid biosynthesis NO S
+YGR123C PPT1 protein amino acid dephosphorylation NO S
+YJL183W MNN11 protein amino acid glycosylation S SS
+YGL038C OCH1 protein amino acid N-linked glycosylation NO SS
+YML115C VAN1 protein amino acid N-linked glycosylation NO SS
+YOR124C UBP2 protein deubiquitination NO SS
+YPL106C SSE1 protein folding NO S
+YER110C KAP123 protein import into nucleus NO S
+YBR171W SEC66 protein targeting to membrane NO S
+YCL008C STP22 protein targeting to membrane NO S
+YPL084W BRO1 protein targeting to vacuole NO SS
+YPL002C SNF8 protein targeting to vacuole NO SS
+YJR102C VPS25 protein targeting to vacuole S SS
+YLR417W VPS36 protein targeting to vacuole S SS
+YDR136C VPS61 protein targeting to vacuole NO SS
+YNL297C MON2 protein targeting to vacuole; endocytosis NO SS
+YKL176C LST4 protein transport Golgi to plasma membrane NO SS
+YGR057C LST7 protein transport Golgi to plasma membrane NO SS
+YMR275C BUL1 protein ubiquitination S SS
+YPL139C UME1 regulation of meiosis NO S
+YNL229C URE2 regulation of nitrogen utilization NO S
+YNL201C PSY2 response to drug NO S
+YER083C GET2 retrograde vesicle-mediated transport NO S
+YFL001W DEG1 RNA processing S SS
+YML016C PPZ1 sodium ion homeostasis NO SS
+YDR001C NTH1 Stress response NO S
+YNL307C MCK1 Stress response; DNA repair NO SS
+YAL012W CYS3 sulfur amino acid metabolism S SS
+YOL138C YOL138C telomere maintenance NO SS
+YDR195W REF2 transcriptional regulation NO SS
+YBR095C RXT2 transcriptional regulation NO S
+YNL236W SIN4 transcriptional regulation NO S
+YDR463W STP1 transcriptional regulation NO S
+YBL024W NCL1 tRNA methylation NO S
+YDR525W API2 unknown NO S
+YLR338W OPI9 unknown S SS
+YBL104C YBL104C unknown NO SS
+YCR082W YCR082W unknown NO S
+YJL120W YJL120W unknown NO SS
+YKL097C YKL097C unknown NO S
+YLL049W YLL049W unknown NO S
+YPL066W YPL066W unknown NO S
+YLR373C VID22 vacuolar protein catabolism NO SS
+YNL054W VAC7 vacuole inheritance and morphology NO S
