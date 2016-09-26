@@ -1,0 +1,33 @@
+YDR212W CCT1 protein folding Y
+YDL143W CCT4 protein folding Y
+YJR064W CCT5 protein folding Y
+YJL111W CCT7 protein folding Y
+YJL009W YJL009Wb Dubious ORF overlaps with CCT8, protein folding Y
+YAL038W CDC19 Glycolysis Y
+YLR293C GSP1 nuclear organization and biogenesis Y
+YMR296C LCB1 sphingolipid biosynthesis Y
+YGL092W NUP145 nuclear transportation Y
+YDR228C PCF11 mRNA polyadenylylation Y
+YMR061W RNA14 mRNA polyadenylylation Y
+YLR208W SEC13 ER to Golgi vesicle-mediated transport Y
+YHR172W SPC97 microtubule nucleation Y
+YGL207W SPT16 chromatin remodeling & transcriptional regulation Y
+YLR212C TUB4 microtubule nucleation Y
+YNL220W ADE12 adenosine biosynthesis N
+YDR264C AKR1 endocytosis N
+YDR035W ARO3 aromatic amino acid family biosynthesis N
+YPR199C ARR1 arsenite efflux N
+YPR201W ARR3 arsenite efflux N
+YLR433C CNA1 cell ion homeostasis & cell wall biogenesis N
+YLL009C COX17 Intracellular copper ion transport N
+YBR112C CYC8 chromatin remodeling & transcriptional regulation N
+YMR091C NPL6 nuclear import & telomere maintenance N
+YER007W PAC2 microtubule biogenesis N
+YPL159C PET20 unknown N
+YDR300C PRO1 proline biosynthesis N
+YOR265W RBL2 microtubule biogenesis N
+YBR095C RXT2 transcriptional regulation N
+YDR334W SWR1 chromatin remodeling N
+YML124C TUB3 microtubule biogenesis N
+YCR084C TUP1 chromatin remodeling & transcriptional regulation N
+YBL086C YBL086C unknown N
