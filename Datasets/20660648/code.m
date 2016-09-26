@@ -29,8 +29,7 @@ for i = 1:length(data)
 end
 
 % Get the data itself
-hit_data = ones(size(hit_strains));
-hit_data = -2 * hit_data;
+hit_data = zeros(size(hit_strains))-2;
 
 % Sensitive strains
 [FILENAMES{end+1}, data] = read_data('textread','./raw_data/TableS2.txt', '%s','delimiter','\n');
@@ -41,8 +40,7 @@ for i = 1:length(data)
     hit_strains = [hit_strains; C{1}];
 end
 
-sens_data = ones(size(data));
-sens_data = -1 * sens_data;
+sens_data = -ones(size(data));
 
 % Combine hypersensitive and sensistive data
 hit_data = vertcat(hit_data, sens_data);
@@ -62,7 +60,7 @@ res_data = ones(size(data));
 hit_data = vertcat(hit_data, res_data);
 
 % Eliminate all white spaces & capitalize
-hit_strains = clean_genename(hit_strains);
+hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
