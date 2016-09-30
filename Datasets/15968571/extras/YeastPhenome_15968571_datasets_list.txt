@@ -1,0 +1,2 @@
+495	hom | response to dehydration (correlation between dehydration time and lag phase) | YPD [standard] | D'Elia R~Hammond TG, 2005
+5006	hom | growth (relative abundance in pooled culture) | dessication [6 months] | D'Elia R~Hammond TG, 2005
