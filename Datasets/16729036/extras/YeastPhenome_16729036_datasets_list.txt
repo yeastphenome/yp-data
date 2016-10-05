@@ -1,0 +1,22 @@
+496	hom | growth (spot assay) | ethanol [6%] | Dudley AM~Church GM, 2005
+4984	hom | growth (spot assay) | pH [3.0] | Dudley AM~Church GM, 2005
+4985	hom | growth (spot assay) | sodium chloride [1.2 M] | Dudley AM~Church GM, 2005
+4986	hom | growth (spot assay) | glucitol [1.2 M] | Dudley AM~Church GM, 2005
+4987	hom | growth (spot assay) | paraquat [1 mM] | Dudley AM~Church GM, 2005
+4988	hom | growth (spot assay) | benomyl [15 ug/ml] | Dudley AM~Church GM, 2005
+4989	hom | growth (spot assay) | ultraviolet light [100 J/m2] | Dudley AM~Church GM, 2005
+4990	hom | growth (spot assay) | hydroxyurea [11.4 mg/ml] | Dudley AM~Church GM, 2005
+4991	hom | growth (spot assay) | mycophenolic acid [20 ug/ml] | Dudley AM~Church GM, 2005
+4992	hom | growth (spot assay) | cycloheximide [0.18 ug/ml] | Dudley AM~Church GM, 2005
+4993	hom | growth (spot assay) | sirolimus [0.1 ug/ml] | Dudley AM~Church GM, 2005
+4994	hom | growth (spot assay) | calcium dichloride [0.7 M] | Dudley AM~Church GM, 2005
+4995	hom | growth (spot assay) | cadmium dichloride [55 uM] | Dudley AM~Church GM, 2005
+4996	hom | growth (spot assay) | hygromycin B [50 ug/ml] | Dudley AM~Church GM, 2005
+4997	hom | growth (spot assay) | caffeine [2 mg/ml] | Dudley AM~Church GM, 2005
+4998	hom | growth (spot assay) | antimycin A [1 ug/ml], galactose [2%] | Dudley AM~Church GM, 2005
+4999	hom | growth (spot assay) | antimycin A [1 ug/ml], raffinose [2%] | Dudley AM~Church GM, 2005
+5000	hom | growth (spot assay) | YPG [3%] | Dudley AM~Church GM, 2005
+5001	hom | growth (spot assay) | YPL [2% lactate] | Dudley AM~Church GM, 2005
+5002	hom | growth (spot assay) | YPD [low-phosphate] | Dudley AM~Church GM, 2005
+5003	hom | growth (spot assay) | low iron (4,7-diphenyl-1,10-phenanthroline [200 μM]) | Dudley AM~Church GM, 2005
+5170	hom | growth (spot assay) | 1,4-dithiothreitol [unknown] | Dudley AM~Church GM, 2005
