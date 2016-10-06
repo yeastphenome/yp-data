@@ -1,0 +1,13 @@
+4784	hom | abundance of calcium | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4785	hom | abundance of cobalt | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4786	hom | abundance of copper | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4787	hom | abundance of iron | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4788	hom | abundance of magnesium | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4789	hom | abundance of manganese | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4790	hom | abundance of nickel | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4791	hom | abundance of phosphorus | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4792	hom | abundance of potassium | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4793	hom | abundance of selenium | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4794	hom | abundance of sodium | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4795	hom | abundance of sulphur | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
+4796	hom | abundance of zinc | YPD + mineral supplement stock [standard] | Eide DJ~Harper JF, 2005
