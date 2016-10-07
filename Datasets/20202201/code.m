@@ -16,47 +16,28 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/1471-2164-11-153-S1.xlsx');
-
-% Clean through the data
-data = data(21:end, 7);
-data(find(cellfun(@isempty, data))) = [];
-indx = find(cell2mat(arrayfun(@is_orf, data, 'UniformOutput', false)));
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/1471-2164-11-153-S1.xlsx','Sheet1');
 
 % Isolate the hit strains
-hit_strains = data(indx);
+hit_strains = data(1:3:end);
+hit_data = [data(2:3:end) data(3:3:end)];
 
 % Clean hit_strains
 hit_strains = clean_orf(hit_strains);
 
-% Make a data matrix
-hit_data = zeros(length(hit_strains), 2);
-
-% Fill in the data matrix
-for i = 1:length(indx)
-    if ~cellfun(@isempty, strfind(data(indx(i)+2), '.'))
-        hit_data(i, 1) = -2;
-    elseif ~cellfun(@isempty, strfind(data(indx(i)+2), '+'))
-        hit_data(i, 1) = 1;
-    elseif ~cellfun(@isempty, strfind(data(indx(i)+2), 'sl'))
-        hit_data(i, 1) = -1; 
-    end
-    
-    if ~cellfun(@isempty, strfind(data(indx(i)+3), '.'))
-        hit_data(i, 2) = -2;
-    elseif ~cellfun(@isempty, strfind(data(indx(i)+3), '+'))
-        hit_data(i, 2) = 1;
-    elseif ~cellfun(@isempty, strfind(data(indx(i)+3), 'sl'))
-        hit_data(i, 2) = -1; 
-    end
-end
-
-% Clean up orf names and remove repeats
-hit_strains = clean_orf(hit_strains);
-
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
-hit_strains(inds) = [];
+disp(hit_strains(inds));  
+
+% Make a data matrix
+hit_data(strcmp(hit_data,'+')) = {0};
+hit_data(strcmp(hit_data,'sl')) = {-1};
+hit_data(strcmp(hit_data,'?')) = {-2};
+
+hit_data = cell2mat(hit_data);
+
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
