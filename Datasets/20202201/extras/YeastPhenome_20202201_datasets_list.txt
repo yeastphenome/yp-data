@@ -1,0 +1,2 @@
+153	hap a | growth (colony size) | CTBT [2 ug/ml] | Batova M~Schuller C, 2010
+437	hap a | growth (colony size) | CTBT [4 ug/ml] | Batova M~Schuller C, 2010
