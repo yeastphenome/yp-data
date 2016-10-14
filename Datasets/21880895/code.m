@@ -23,10 +23,11 @@ hit_orfs = data(4:end,2);
 % Remove empty spaces and clean the orfs
 hit_orfs(find(cellfun(@isnumeric, hit_orfs))) = [];
 hit_orfs = clean_orf(hit_orfs);
-hit_orfs = unique(hit_orfs);
 
 % Remove arbitrary values
 hit_orfs(strcmp('YPL072WA', hit_orfs)) = {'YPL072W-A'};
+hit_orfs = unique(hit_orfs);
+
 inds = find(~is_orf(hit_orfs));
 hit_orfs(inds) = [];
 
