@@ -36,17 +36,19 @@ tested_orfs = unique(tested_orfs);
 [FILENAMES{end+1}, sh] = read_data('xlsread','./raw_data/10295_2014_1519_MOESM2_ESM.xlsx');
 
 % Get the list of ORFs
-ind = find(cellfun(@ischar, sh(10:end,11)));
-hit_sh = sh(10:end, 1);
-sh_data = sh(10:end, 11);
-hit_sh = hit_sh(ind, 1);
-sh_data = sh_data(ind, 1);
+hit_sh = sh(10:end,1);
+data_sh = sh(10:end,11);
 
-ind = find(cellfun(@ischar, wsh(10:end,11)));
-hit_wsh = wsh(10:end, 1);
-wsh_data = wsh(10:end, 11);
-hit_wsh = hit_wsh(ind, 1);
-wsh_data = wsh_data(ind, 1);
+inds = find(cellfun(@isnumeric, hit_sh));
+hit_sh(inds) = [];
+data_sh(inds) = [];
+
+hit_wsh = wsh(10:end,1);
+data_wsh = wsh(10:end,11);
+
+inds = find(cellfun(@isnumeric, hit_wsh));
+hit_wsh(inds) = [];
+data_wsh(inds) = [];
 
 % Translate genenames to orfs
 hit_wsh = clean_genename(hit_wsh);
@@ -57,24 +59,23 @@ hit_sh = translate(hit_sh);
 % Find anything that doesn't look like an ORF and remove it
 inds = find(~is_orf(hit_wsh));
 hit_wsh(inds) = [];
-wsh_data(inds) = [];
+data_wsh(inds) = [];
+
 inds = find(~is_orf(hit_sh));
 hit_sh(inds) = [];
-sh_data(inds) = [];
+data_sh(inds) = [];
 
 %% Data
-% Make an array of zeros
-hit_data_wsh = zeros(length(hit_wsh), 1)-1;
-hit_data_wsh(find(~cellfun(@isempty, strfind(wsh_data, '--')))) = -2;
-hit_data_sh = zeros(length(hit_sh), 1)-1;
-hit_data_sh(find(~cellfun(@isempty, strfind(sh_data, '--')))) = -2;
+
+data_wsh = -cellfun(@length, data_wsh);
+data_sh = -cellfun(@length, data_sh);
 
 % Match the hit names with all the names
 final_data = zeros(length(tested_orfs), 2);
 [~,ind1,ind2] = intersect(tested_orfs, hit_wsh);
-final_data(ind1,1) = hit_data_wsh(ind2);
+final_data(ind1,1) = data_wsh(ind2);
 [~,ind1,ind2] = intersect(tested_orfs, hit_sh);
-final_data(ind1,2) = hit_data_sh(ind2);
+final_data(ind1,2) = data_sh(ind2);
 
 %% Prepare final dataset
 
@@ -92,9 +93,18 @@ pereira_domingues_2014.dataset_ids = hit_data_ids;
 
 save('./pereira_domingues_2014.mat','pereira_domingues_2014');
 
+%% Print out
+
 fid = fopen('./pereira_domingues_2014.txt','w');
 write_matrix_file(fid, pereira_domingues_2014.orfs, pereira_domingues_2014.ph, pereira_domingues_2014.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(pereira_domingues_2014)
+end
 
 end
 
