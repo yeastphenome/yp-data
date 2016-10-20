@@ -1,0 +1,23 @@
+Table 3. Summary of genes required for yeast filamentation 	 			
+				 
+Gene 	ORF 	Known function 	Reference for its role in PH 	 
+ABP1 	YCR088W 	Actin binding protein. May stabilize actin filaments at the bud site and may share a role in the cortical actin patch assembly. 	This study 	 
+BNI1 	YNL271C 	Protein involved in cytoskeletal control. Stimulates actin filament assembly and regulates microtubule-dependent nuclear migration through actin cytoskeleton	(Mosch and Fink, 1997) 	 
+CAP2 	YIL034C 	Actin capping protein. Promotes faster and more extensive actin assembly 	This study 	 
+PEA2 	YER149C 	Involved in orientated growth toward mating partner, required for stimulation of the low-affinity Ca2+ in flux system that is activated in response to mating pheromone and is required for cell-cell fusion 	(Sheu et al., 2000) 	 
+SPA2 	YLL021W 	Protein involved in cell polarity and cell fusion during mating. Involved in haploid invasive growth and pseudohyphal growth. Involved in mating projections 	(Mosch and Fink, 1997) 	 
+TPM1 	YNL079C 	Encodes a tropomyosin protein localized to actin cables. Plays a role in assembling or stabilizing actin cables	(Mosch and Fink, 1997)	 
+BUD2 	YKL092C 	GTPase activating protein for Rsr1p/Bud1p. Involved in bud site selection and may act as a target of the Cln2p-Cdc28p kinase to regulate cell polarity	(Rua et al., 2001) 	 
+HUF1 	YOR300W 	May be involved in bipolar budding and bud site selection 	This study 	 
+ECM25 	YJL201W 	Encodes a protein that is possibly involved in cell wall structure or biosynthesis 	This study 	 
+GAS1 	YMR307W 	Glycoprotein that regulates the cross-linking of Beta-1,6-glucans in the cell wall 	This study 	 
+PRS3 	YHL011C 	Component of the yeast 20S proteasome. Has a role in cell wall and cell cycle regulation	This study 	 
+RPL21A 	YBR1401 	Encodes ribosomal protein L21. Reverses the repression of ribosome synthesis in response to a secretory pathway deficiency 	This study 	 
+RPL34B 	YIL052C 	Encodes ribosomal protein L34. Reverses the repression of ribosome synthesis in response to a secretory pathway deficiency 	This study 	 
+SEC66 	YBR171W 	Component of ER protein translocation complex 	This study 	 
+ILM1 	YJR118C 	May be involved in mitochondrial DNA maintenance 	This study 	 
+UGO1 	YDR470C 	Required for mitochondrial outer membrane fusion and mitochondrial DNA maintenance. Has a role in cell cycle progression in stressed cells 	This study 
+
+Mosch HU, Fink GR. 1997. Dissection of filamentous growth by transposon mutagenesis in Saccharomyces cerevisiae. Genetics 145: 671-684.
+Rua D, Tobe BT, Kron SJ. 2001. Cell cycle control of yeast filamentous growth. Curr Opin Microbiol 4: 720-727.
+Sheu YJ, Barral Y, Snyder M. 2000. Polarized growth controls cell shape and bipolar bud site selection in Saccharomyces cerevisiae. Mol Cell Biol 20: 5235-5247. 
