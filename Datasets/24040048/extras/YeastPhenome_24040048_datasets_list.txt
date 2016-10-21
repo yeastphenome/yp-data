@@ -1,0 +1,16 @@
+5217	hap a | growth (relative abundance in pooled culture) | MMS + time [10 generations] (methyl methanesulfonate [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5218	hap a | growth (relative abundance in pooled culture) | MNU + time [10 generations] (N-methyl-N-nitrosourea [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5219	hap a | growth (relative abundance in pooled culture) | ENU + time [10 generations] (N-ethyl-N-nitrosourea [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5220	hap a | growth (relative abundance in pooled culture) | DMSO + time [10 generations] (dimethyl sulfoxide [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5221	hap a | growth (relative abundance in pooled culture) | BCNU + time [10 generation] (carmustine [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5222	hap a | growth (relative abundance in pooled culture) | MC + time [10 generations] (methyl carbamate [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5223	hap a | growth (relative abundance in pooled culture) | Menadione + time [10 generations (menadione [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5224	hap a | growth (relative abundance in pooled culture) | HQ + time [10 generation] (hydroquinone [unknown], time [10 generations]) | Svensson JP~Samson LD, 2013
+5225	hap a | growth (relative abundance in pooled culture) | MMS + time [20 generations] (methyl methanesulfonate [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5226	hap a | growth (relative abundance in pooled culture) | MNU + time [20 generations] (N-methyl-N-nitrosourea [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5227	hap a | growth (relative abundance in pooled culture) | ENU + time [20 generations] (N-ethyl-N-nitrosourea [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5228	hap a | growth (relative abundance in pooled culture) | DMSO + time [20 generations] (dimethyl sulfoxide [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5229	hap a | growth (relative abundance in pooled culture) | BCNU + time [20 generation] (carmustine [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5230	hap a | growth (relative abundance in pooled culture) | MC + time [20 generations] (methyl carbamate [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5231	hap a | growth (relative abundance in pooled culture) | Menadione + time [20 generations] (menadione [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
+5232	hap a | growth (relative abundance in pooled culture) | HQ + time [20 generation] (hydroquinone [unknown], time [20 generations]) | Svensson JP~Samson LD, 2013
