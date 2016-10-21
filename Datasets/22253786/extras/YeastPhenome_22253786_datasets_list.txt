@@ -1,0 +1,2 @@
+86	hom | growth (relative abundance in pooled culture) | elesclomol (elesclomol [IC15]) | Blackman RK~Nislow C, 2012
+87	het | growth (relative abundance in pooled culture) | elesclomol (elesclomol [IC15]) | Blackman RK~Nislow C, 2012
