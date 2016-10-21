@@ -1,0 +1,2 @@
+5176	hap a | growth (spot assay) | valinomycin [0.5-15 mg/l] | Jakubkova M~Tomaska L, 2016
+5182	hap a | growth (spot assay) | nigericin [0.15-0.5 mg/l] | Jakubkova M~Tomaska L, 2016
