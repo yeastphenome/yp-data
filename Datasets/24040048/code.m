@@ -1,5 +1,6 @@
 %% Svensson~Samson, 2013
 function FILENAMES = code()
+
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 svensson_samson_2013.pmid = 24040048;
@@ -25,12 +26,13 @@ strains = clean_orf(strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(strains));
-strains(inds) = [];
 
 %% Get data from hits
 % Make a data matrix
-hit_data = data(2:end, 3:end);
-hit_data = cell2mat(hit_data);
+hit_data = cell2mat(data(2:end, 3:end));
+
+% If the same strain is present more than once, average its values
+[strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
