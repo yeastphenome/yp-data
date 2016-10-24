@@ -1,0 +1,6 @@
+ORF	hap a | viral RNA recombination | standard [standard] | Serviene E~Nagy PD, 2005
+YMR180C	1.000
+YOL064C	1.000
+YGL168W	1.000
+YGL173C	1.000
+YER151C	1.000
