@@ -1,0 +1,2 @@
+4924	hom | growth (relative abundance in pooled culture) | MUC7 peptide [5 uM], time [24 h] | Lis M~Bobek LA, 2009
+5255	hom | growth (relative abundance in pooled culture) | MUC7 peptide [5 uM], time [48 h] | Lis M~Bobek LA, 2009
