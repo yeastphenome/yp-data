@@ -30,14 +30,12 @@ strains(inds) = [];
 
 %% Get data from hits
 % Make a data matrix
-the_data = data(1:4825, 7);
+[FILENAMES{end+1}, hits] = read_data('xlsread','./raw_data/Supp_Table2.xlsx');
+hit_strains = hits(6:end, 2);
 
-% Transform data
-hit_data = zeros(length(the_data),1);
-inds = find(strcmp('*', the_data));
-hit_data(inds,1) = -1;
-inds = find(strcmp('**', the_data));
-hit_data(inds,1) = -2;
+% Remove anything that's not an orf
+inds = find(~is_orf(hit_strains));
+hit_strains(inds) = [];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -52,9 +50,12 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 landstetter_kuchler_2010.orfs = strains;
-landstetter_kuchler_2010.data = hit_data;
 landstetter_kuchler_2010.ph = hit_data_names;
+landstetter_kuchler_2010.data = zeros(length(landstetter_kuchler_2010.orfs),length(landstetter_kuchler_2010.ph));
 landstetter_kuchler_2010.dataset_ids = hit_data_ids;
+
+[~,ind1,ind2] = intersect(hit_strains, landstetter_kuchler_2010.orfs);
+landstetter_kuchler_2010.data(ind2,:) = -1;
 
 %% Save
 
