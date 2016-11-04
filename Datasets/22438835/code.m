@@ -1,5 +1,6 @@
 %% Hoose~Polymenis, 2012
 function FILENAMES = code()
+
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 hoose_polymenis_2012.pmid = 22438835;
@@ -21,16 +22,20 @@ datasets.standard_name = d{2};
 strains = data(3:end,2);
 strains = clean_orf(strains);
 
+hit_data = data(3:end, 4);
+
 % Find anything that doesn't look like an ORF
 strains(ismember(strains, {'YELOO1C'})) = {'YEL001C'};
 inds = find(~is_orf(strains));
 strains(inds) = [];
+hit_data(inds) = [];
 
 %% Get data from hits
 % Make a data matrix
-hit_data = data(3:end, 4);
-hit_data(inds) = [];
 hit_data = cell2mat(hit_data);
+
+% If the same strain is present more than once, average its values
+[strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
