@@ -1,5 +1,6 @@
 %% Landstetter~Kuchler, 2010
 function FILENAMES = code()
+
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 landstetter_kuchler_2010.pmid = 20695822;
@@ -12,30 +13,35 @@ landstetter_kuchler_2010.pmid = 20695822;
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
-%% Hit Strains
+%% Tested strains
 
 % Load file
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Yeast_deletions_set.xlsx', 'Stammliste');
 
-% Get the data
-data = data(2:4828, 2:end);
-
 % Get the orfs and clean them up
-strains = data(:,1);
+strains = data(2:4828,2);
 strains = clean_orf(strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(strains));
 strains(inds) = [];
 
+strains = unique(strains);
+
 %% Get data from hits
 % Make a data matrix
 [FILENAMES{end+1}, hits] = read_data('xlsread','./raw_data/Supp_Table2.xlsx');
 hit_strains = hits(6:end, 2);
 
+hit_strains = clean_orf(hit_strains);
+
 % Remove anything that's not an orf
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
+
+% Make sure the that all the hits are part of the tested set
+[missing,~] = setdiff(hit_strains, strains);
+disp(missing);
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
