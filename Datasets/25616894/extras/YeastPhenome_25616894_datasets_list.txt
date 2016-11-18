@@ -1,0 +1,8 @@
+772	hom | growth (relative abundance in pooled culture) | Decatransin [unknown] | Junne T~Hoepfner D, 2015
+773	het | growth (relative abundance in pooled culture) | Decatransin [unknown] | Junne T~Hoepfner D, 2015
+5262	hom | growth (relative abundance in pooled culture) | Decatransin [unknown], heptadepsipeptide [unknown] | Junne T~Hoepfner D, 2015
+5263	het | growth (relative abundance in pooled culture) | Decatransin [unknown], heptadepsipeptide [unknown] | Junne T~Hoepfner D, 2015
+5264	hom | growth (relative abundance in pooled culture) | heptadepsipeptide (heptadepsipeptide [unknown]) | Junne T~Hoepfner D, 2015
+5265	het | growth (relative abundance in pooled culture) | heptadepsipeptide (heptadepsipeptide [unknown]) | Junne T~Hoepfner D, 2015
+5266	hom | growth (relative abundance in pooled culture) | Hun-7293 (cyclic heptadepsipeptide [unknown]) | Junne T~Hoepfner D, 2015
+5267	het | growth (relative abundance in pooled culture) | Hun-7293 (cyclic heptadepsipeptide [unknown]) | Junne T~Hoepfner D, 2015
