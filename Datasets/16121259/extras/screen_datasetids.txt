@@ -1,0 +1,36 @@
+result_np:04_02_24_05:cisplatin:500:uM::::hom_09_02:5	494
+result_np:04_03_17_06:cisplatin:500:uM::::hom_09_02:5	494
+result_np:03_04_04_03:cisplatin:500:uM::::hom_05_01:20	4964
+result_np:03_04_04_04:cisplatin:500:uM::::hom_05_01:20	4964
+result_np:04_03_09_01:carboplatin:15000:uM::::hom_09_02:5	4965
+result_np:04_03_30_02:carboplatin:15:mM::::hom_09_02:5	4965
+result_np:04_02_24_07:oxaliplatin:4000:uM::::hom_09_02:5	4966
+result_np:04_03_17_07:oxaliplatin:4000:uM::::hom_09_02:5	4966
+result_np:04_03_17_10:psoralen irradiated:0.5:uM::::hom_09_02:5	4968
+result_np:04_03_25_05:psoralen irradiated:0.5:uM::::hom_09_02:5	4968
+result_np:04_03_17_12:angelicin irradiated:62.5:uM::::hom_09_02:5	4969
+result_np:04_03_25_06:angelicin irradiated:62.5:uM::::hom_09_02:5	4969
+result_np:03_12_09_16:mechlorethamine:62.5:uM::::hom_09_02:5	4970
+result_np:03_12_19_01:mechlorethamine:62.5:uM::::hom_09_02:5	4970
+result_np:04_01_21_09:mechlorethamine:62.5:uM::::hom_09_02:5	4970
+result_np:02_12_18_13:mechlorethamine:62.5:uM::::hom_05_01:20	4971
+result_np:03_02_05_04:mechlorethamine:62.5:uM::::hom_05_01:20	4971
+result_np:03_02_05_05:mechlorethamine:62.5:uM::::hom_05_01:20	4971
+result_np:03_03_20_07:mechlorethamine:62.5:uM::::hom_05_01:20	4971
+result_np:03_03_20_08:mechlorethamine:62.5:uM::::hom_05_01:20	4971
+result_np:04_02_24_02:mitomycin c:1000:uM::::hom_09_02:5	4972
+result_np:04_03_30_03:mitomycin c:1:mM::::hom_09_02:5	4972
+result_np:04_03_17_16:streptozotocin:2000:uM::::hom_09_02:5	4973
+result_np:04_03_25_07:streptozotocin:2:mM::::hom_09_02:5	4973
+result_np:03_10_08_13:streptozotocin (sigma):2000:uM::::hom_09_02:20	4974
+result_np:04_07_16_09:streptozotocin:2:mM::::hom_09_02:20	4974
+result_np:04_02_24_03:mms:0.002:%::::hom_09_02:5	4975
+result_np:04_03_25_04:mms:0.002:%::::hom_09_02:5	4975
+result_np:04_03_25_01:camptothecin:30:ug/ml::::hom_09_02:5	4976
+result_np:04_03_30_01:camptothecin:30:ug/ml::::hom_09_02:5	4976
+result_np:04_05_12_10:camptothecin:30:ug/ml::::hom_09_02:20	4977
+result_np:04_07_16_08:camptothecin:30000:ug/ml::::hom_09_02:20	4977
+result_np:04_03_09_06:2-dmaec:240000:uM::::hom_09_02:5	4978
+result_np:04_03_17_15:2-dmaec:240000:uM::::hom_09_02:5	4978
+result_np:04_08_03_07:4nqo:0.0313:uM::::hom_09_02:5	4979
+result_np:04_08_05_01:4nqo:0.0313:uM::::hom_09_02:5	4979
