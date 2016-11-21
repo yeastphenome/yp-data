@@ -24,9 +24,9 @@ hit_strains = data(:,1);
 
 % Get the data itself
 hit_data = zeros(length(hit_strains), 2);
-indx = find(~cellfun(@isempty, strfind(data(:,3), '+')));
+indx = find(strcmp('+', data(:,3)));
 hit_data(indx, 1) = -1;
-indx = find(~cellfun(@isempty, strfind(data(:,2), '+')));
+indx = find(strcmp('+', data(:,2)));
 hit_data(indx, 2) = -1;
    
 % Eliminate all white spaces & capitalize
