@@ -1,0 +1,16 @@
+494	hom | growth (relative abundance in pooled culture) | cisplatin [500 uM], time [5 generations] | Lee W~Giaever G, 2005
+4964	hom | growth (relative abundance in pooled culture) | cisplatin [500 uM], time [overnight + 20 generations] | Lee W~Giaever G, 2005
+4965	hom | growth (relative abundance in pooled culture) | carboplatin [15 mM], time [5 generations] | Lee W~Giaever G, 2005
+4966	hom | growth (relative abundance in pooled culture) | oxaliplatin [4 mM], time [5 generations] | Lee W~Giaever G, 2005
+4968	hom | growth (relative abundance in pooled culture) | psoralen [0.5 uM], time [5 generations], radiation [unknown] | Lee W~Giaever G, 2005
+4969	hom | growth (relative abundance in pooled culture) | angelicin irradiated (angelicin [62.5 uM], time [5 generations], radiation [unknown]) | Lee W~Giaever G, 2005
+4970	hom | growth (relative abundance in pooled culture) | mechlorethamine [62.5 uM], time [overnight + 5 generations] | Lee W~Giaever G, 2005
+4971	hom | growth (relative abundance in pooled culture) | mechlorethamine [62.5 uM], time [overnight + 20 generations] | Lee W~Giaever G, 2005
+4972	hom | growth (relative abundance in pooled culture) | mitomycin C [1 mM], time [5 generations] | Lee W~Giaever G, 2005
+4973	hom | growth (relative abundance in pooled culture) | streptozocin [2 mM], time [5 generations] | Lee W~Giaever G, 2005
+4974	hom | growth (relative abundance in pooled culture) | streptozocin [2 mM], time [overnight + 20 generations] | Lee W~Giaever G, 2005
+4975	hom | growth (relative abundance in pooled culture) | methyl methanesulfonate [0.002%], time [5 generations] | Lee W~Giaever G, 2005
+4976	hom | growth (relative abundance in pooled culture) | camptothecin [30 ug/ml], time [5 generations] | Lee W~Giaever G, 2005
+4977	hom | growth (relative abundance in pooled culture) | camptothecin [30 ug/ml], time [overnight + 20 generations] | Lee W~Giaever G, 2005
+4978	hom | growth (relative abundance in pooled culture) | 2-dimethylaminoethyl chloride [240 mM], time [5 generations] | Lee W~Giaever G, 2005
+4979	hom | growth (relative abundance in pooled culture) | 4-nitroquinoline N-oxide [0.0313 uM], time [5 generations] | Lee W~Giaever G, 2005

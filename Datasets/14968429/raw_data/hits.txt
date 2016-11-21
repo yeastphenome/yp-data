@@ -1,0 +1,45 @@
+ORF	Gene name wild-type	Process	Function	6AU sensitivity	MPA sensitivity
+YGL043W	DST1	Transcription	Transcription elongation factor S-II	3	3
+YMR070W	MOT3	Transcription	Transcriptional repressor and activator	3	1
+YNR052C	POP2	Transcription	Transcription factor	3	3
+YGL244W	RTF1	Transcription	Transcription elongation factor	3	3
+YDR392W	SPT3	Transcription	SAGA histone acetyltransferase complex member	3	3
+YOL051W	GAL11	Transcription	RNA polymerase II holoenzyme component	2	2
+YOL072W	THP1	Transcription/recomb	Transcription elongation factor	3	1
+YIL038C	NOT3	Transcription	3′–5′ exoribonuclease	Resistant	Resistant
+YDR315C	IPK1	Fatty acid metabolism	Inositol/phosphatidylinositol kinase	3	Resistant
+YFL018C	LPD1	Fatty acid metabolism	Dihydrolipoamide dehydrogenase	1	3
+YOR221C	MCT1	Fatty acid metabolism	Malonyl-CoA:ACP transferase	3	1
+YMR272C	SCS7	Fatty acid metabolism	Very long chain fatty acid hydroxylase	1	3
+YKL176C	LST4	Amino acid transport	Golgi to plasma membrane transport	2	2
+YGR057C	LST7	Amino acid transport	Golgi to plasma membrane transport	3	3
+YBR069C	TAT1	Amino acid transport	Amino acid transporter activity	3	3
+YMR275C	BUL1	Protein ubiquitinylation	Involved in ubiquination	Resistant	0
+YER151C	UBP 3	Protein ubiquitinylation	Ubiquitin-specific protease	2	3
+YMR304W	UBP15	Protein ubiquitinylation	Putative deubiquitinating enzyme	3	3
+YML006C	GIS4	Stress	Unknown	3	0
+YKR072C	SIS2	Cell cycle, stress	Protein phosphatase inhibitor	3	3
+YGL223C	COD3	Protein traffic	Unknown	3	2
+YMR060C	TOM37	Protein traffic	Mitochondrial import receptor protein	3	0
+YDR463W	STP1	RNA processing	Pre-tRNA splicing/uptake of branched-chain amino acids	3	3
+YMR125W	STO1	RNA processing	Large subunit of the nuclear cap-binding protein complex	3	2
+YNL147W	LSM7	RNA processing	snRNP protein	2	1
+YCL009C	ILV6	Amino acid metabolism	Acetolactate synthase activity	2	0
+YGL224C	SDT1	Nucleotide metabolism	Nucleotidase	3	0
+YNL220W	ADE12	Nucleotide metabolism	Adenylosuccinate synthetase	2	1
+YDL101C	DUN1	DNA damage	DNA damage checkpoint protein kinase	1	2
+YGL167C	PMR1	Ion homeostasis	Member of the SERCA family of CaATPases	2	3
+YIL097W	FYV10	Killer toxin resistance	Unknown	3	3
+YPL234C	TFP3	Vacuole	Vacuolar ATPase V0 domain subunit c′	0	3
+YGL020C	MDM39	Mito biogenesis	Unknown	3	3
+YMR126C	DLT1	Unknown	Unknown	3	3
+YGL168W	HUR1	Unknown	Unknown	3	3
+YHR151C	ORF	Unknown	Unknown	3	3
+YGR064W	ORF (dubious)	Unknown	Unknown	2	3
+YKR073C	ORF (dubious)	Unknown	Unknown	3	2
+YML107C	ORF	Unknown	Unknown	3	2
+YDL172C	ORF (dubious)	Unknown	Unknown	2	3
+YDL173W	ORF	Unknown	Unknown	2	3
+YNL136W	ORF	Unknown	Unknown	3	3
+YML036W	ORF	Unknown	Unknown	3	3
+YGL042C	ORF (dubious)	Unknown	Unknown	3	1
