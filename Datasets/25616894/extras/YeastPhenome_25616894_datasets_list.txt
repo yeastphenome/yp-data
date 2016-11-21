@@ -1,7 +1,5 @@
 772	hom | growth (relative abundance in pooled culture) | decatransin [1.8 uM] | Junne T~Hoepfner D, 2015
 773	het | growth (relative abundance in pooled culture) | decatransin [1.8 uM] | Junne T~Hoepfner D, 2015
-5262	hom | growth (relative abundance in pooled culture) | decatransin [1.8 uM], heptadepsipeptide [6.8 uM] | Junne T~Hoepfner D, 2015
-5263	het | growth (relative abundance in pooled culture) | decatransin [1.8 uM], heptadepsipeptide [6.8 uM] | Junne T~Hoepfner D, 2015
 5264	hom | growth (relative abundance in pooled culture) | heptadepsipeptide [6.8 uM] | Junne T~Hoepfner D, 2015
 5265	het | growth (relative abundance in pooled culture) | heptadepsipeptide [6.8 uM] | Junne T~Hoepfner D, 2015
 5266	hom | growth (relative abundance in pooled culture) | HUN-7293 [200 uM] | Junne T~Hoepfner D, 2015

@@ -16,6 +16,7 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
+% Cpd2 in the second spreadsheet is actually a typo (should be Cpd1).
 spreadsheets = {'Decatransin Cpd 1 Exp 1','Decatransin Cpd 2 Exp 2','Cotransin Cpd 2','Cotansin Cpd 3 (HUN-7293)'};
 
 for d = 1 : length(spreadsheets)
@@ -65,7 +66,11 @@ end
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [772; 773; 5262; 5263; 5264; 5265; 5266; 5267];
+hit_data_ids = [772; 773; 772; 773; 5264; 5265; 5266; 5267];
+
+[hit_data_ids, all_data] = grpstats(all_data', hit_data_ids, {'gname','mean'});
+all_data = all_data';
+hit_data_ids = cellfun(@str2num, hit_data_ids);
 
 %% Prepare final dataset
 
