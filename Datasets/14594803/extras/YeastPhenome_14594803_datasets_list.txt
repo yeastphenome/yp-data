@@ -30,3 +30,11 @@
 5214	hom | growth (spot assay) | YPGE [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
 5215	hom | growth (spot assay) | YPGE [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
 5216	hom | growth (spot assay) | YPGE [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5268	hom | growth (spot assay) | YPD [standard], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5269	hom | growth (spot assay) | YPD [standard], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5270	hom | growth (spot assay) | YPD [standard], copper [50 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5271	hom | growth (spot assay) | YPD [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5272	hom | growth (spot assay) | YPD [standard], iron [100 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5273	hom | growth (spot assay) | YPD [standard], iron [2 mM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5274	hom | growth (spot assay) | YPD [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5275	hom | growth (spot assay) | YPD [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
