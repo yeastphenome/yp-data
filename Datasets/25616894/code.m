@@ -15,151 +15,52 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load the data
-% First two datasets
 
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Junnet_et_al_HIPHOPrawdata.xlsx', 'Decatransin Cpd 1 Exp 1');
+spreadsheets = {'Decatransin Cpd 1 Exp 1','Decatransin Cpd 2 Exp 2','Cotransin Cpd 2','Cotansin Cpd 3 (HUN-7293)'};
 
-% Get the list of ORFs and the correponding data 
-all_strains = data(2:end,5);
+for d = 1 : length(spreadsheets)
 
-% separate hom from het & retrieve data
-hom_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HOP'))));
-het_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HIP'))));
-hom_strains_1 = all_strains(hom_indx);
-het_strains_1 = all_strains(het_indx);
-hom_data_1 = data(2:end, 7);
-hom_data_1 = cell2mat(hom_data_1(hom_indx));
-het_data_1 = data(2:end, 7);
-het_data_1 = cell2mat(het_data_1(het_indx));
-   
-% Eliminate all white spaces & capitalize
-hom_strains_1 = clean_orf(hom_strains_1);
-het_strains_1 = clean_orf(het_strains_1);
+    [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Junnet_et_al_HIPHOPrawdata.xlsx', spreadsheets{d});
 
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hom_strains_1));
-hom_strains_1(inds) = [];
-hom_data_1(inds) = [];
+    % Get the list of ORFs and the correponding data 
 
-inds = find(~is_orf(het_strains_1));
-het_strains_1(inds) = [];
-het_data_1(inds) = [];
+    hom_indx = find(strcmp('HOP',data(:,1)));
+    het_indx = find(strcmp('HIP',data(:,1)));
+    hom_strains{d} = data(hom_indx,5);
+    het_strains{d} = data(het_indx,5);
 
-% Second set of data
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Junnet_et_al_HIPHOPrawdata.xlsx', 'Decatransin Cpd 2 Exp 2');
+    hom_data{d} = cell2mat(data(hom_indx, 7));
+    het_data{d} = cell2mat(data(het_indx, 7));
 
-% Get the list of ORFs and the correponding data 
-all_strains = data(2:end,5);
+    % Eliminate all white spaces & capitalize
+    hom_strains{d} = clean_orf(hom_strains{d});
+    het_strains{d} = clean_orf(het_strains{d});
 
-% separate hom from het & retrieve data
-hom_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HOP'))));
-het_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HIP'))));
-hom_strains_2 = all_strains(hom_indx);
-het_strains_2 = all_strains(het_indx);
-hom_data_2 = data(2:end, 7);
-hom_data_2 = cell2mat(hom_data_2(hom_indx));
-het_data_2 = data(2:end, 7);
-het_data_2 = cell2mat(het_data_2(het_indx));
-   
-% Eliminate all white spaces & capitalize
-hom_strains_2 = clean_orf(hom_strains_2);
-het_strains_2 = clean_orf(het_strains_2);
+    % Find anything that doesn't look like an ORF
+    inds = find(~is_orf(hom_strains{d}));
+    hom_strains{d}(inds) = [];
+    hom_data{d}(inds) = [];
 
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hom_strains_2));
-hom_strains_2(inds) = [];
-hom_data_2(inds) = [];
+    inds = find(~is_orf(het_strains{d}));
+    het_strains{d}(inds) = [];
+    het_data{d}(inds) = [];
 
-inds = find(~is_orf(het_strains_2));
-het_strains_2(inds) = [];
-het_data_2(inds) = [];
+end
 
-% Third set of data
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Junnet_et_al_HIPHOPrawdata.xlsx', 'Cotransin Cpd 2');
+%% Combine the data into one matrix
 
-% Get the list of ORFs and the correponding data 
-all_strains = data(2:end,5);
-
-% separate hom from het & retrieve data
-hom_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HOP'))));
-het_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HIP'))));
-hom_strains_3 = all_strains(hom_indx);
-het_strains_3 = all_strains(het_indx);
-hom_data_3 = data(2:end, 7);
-hom_data_3 = cell2mat(hom_data_3(hom_indx));
-het_data_3 = data(2:end, 7);
-het_data_3 = cell2mat(het_data_3(het_indx));
-   
-% Eliminate all white spaces & capitalize
-hom_strains_3 = clean_orf(hom_strains_3);
-het_strains_3 = clean_orf(het_strains_3);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hom_strains_3));
-hom_strains_3(inds) = [];
-hom_data_3(inds) = [];
-
-inds = find(~is_orf(het_strains_3));
-het_strains_3(inds) = [];
-het_data_3(inds) = [];
-
-% Fourth set of data
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Junnet_et_al_HIPHOPrawdata.xlsx', 'Cotansin Cpd 3 (HUN-7293)');
-
-% Get the list of ORFs and the correponding data 
-all_strains = data(2:end,5);
-
-% separate hom from het & retrieve data
-hom_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HOP'))));
-het_indx = find(~cellfun(@isempty, (strfind(data(2:end,1), 'HIP'))));
-hom_strains_4 = all_strains(hom_indx);
-het_strains_4 = all_strains(het_indx);
-hom_data_4 = data(2:end, 7);
-hom_data_4 = cell2mat(hom_data_4(hom_indx));
-het_data_4 = data(2:end, 7);
-het_data_4 = cell2mat(het_data_4(het_indx));
-   
-% Eliminate all white spaces & capitalize
-hom_strains_4 = clean_orf(hom_strains_4);
-het_strains_4 = clean_orf(het_strains_4);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hom_strains_4));
-hom_strains_4(inds) = [];
-hom_data_4(inds) = [];
-
-inds = find(~is_orf(het_strains_4));
-het_strains_4(inds) = [];
-het_data_4(inds) = [];
-
-% Combine the data into one matrix
-all_strains = [hom_strains_1; het_strains_1; hom_strains_2; het_strains_2; hom_strains_3; het_strains_3; hom_strains_4; het_strains_4];
-all_strains = unique(all_strains);
+all_strains = unique([vertcat(hom_strains{:}); vertcat(het_strains{:})]);
 all_data = nan(length(all_strains), 8);
 
-[~, ind1, ind2] = intersect(all_strains, hom_strains_1);
-all_data(ind1, 1) = hom_data_1(ind2);
+for i = 1 : 4
+    
+    [~, ind1, ind2] = intersect(all_strains, hom_strains{i});
+    all_data(ind1, i*2-1) = hom_data{i}(ind2);
 
-[~, ind1, ind2] = intersect(all_strains, het_strains_1);
-all_data(ind1, 2) = het_data_1(ind2);
+    [~, ind1, ind2] = intersect(all_strains, het_strains{i});
+    all_data(ind1, i*2) = het_data{i}(ind2);
 
-[~, ind1, ind2] = intersect(all_strains, hom_strains_2);
-all_data(ind1, 3) = hom_data_2(ind2);
-
-[~, ind1, ind2] = intersect(all_strains, het_strains_2);
-all_data(ind1, 4) = het_data_2(ind2);
-
-[~, ind1, ind2] = intersect(all_strains, hom_strains_3);
-all_data(ind1, 5) = hom_data_3(ind2);
-
-[~, ind1, ind2] = intersect(all_strains, het_strains_3);
-all_data(ind1, 6) = het_data_3(ind2);
-
-[~, ind1, ind2] = intersect(all_strains, hom_strains_4);
-all_data(ind1, 7) = hom_data_4(ind2);
-
-[~, ind1, ind2] = intersect(all_strains, het_strains_4);
-all_data(ind1, 8) = het_data_4(ind2);
+end
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
