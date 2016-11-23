@@ -1,0 +1,2 @@
+5183	hom | growth (relative abundance in pooled culture) | Osmotic Stress-Sorbitol (glucitol [0.6 M]) | Gonzalez R~Valero E, 2016
+5184	hom | growth (relative abundance in pooled culture) | High Osmostic Stress-Glucose (glucose [200 g/L]) | Gonzalez R~Valero E, 2016
