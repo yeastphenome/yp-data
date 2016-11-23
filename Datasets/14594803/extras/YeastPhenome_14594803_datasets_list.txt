@@ -1,0 +1,40 @@
+483	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5185	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], copper [50 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5186	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], iron [100 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5187	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], iron [2 mM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5188	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5189	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], copper [50 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5190	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], iron [100 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5191	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], iron [2 mM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5193	hom | growth (spot assay) | YPGal [standard], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5194	hom | growth (spot assay) | YPGal [standard], copper [50 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5195	hom | growth (spot assay) | YPGal [standard], iron [100 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5196	hom | growth (spot assay) | YPGal [standard], iron [2 mM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5197	hom | growth (spot assay) | YPGE [standard], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5198	hom | growth (spot assay) | YPGE [standard], copper [50 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5199	hom | growth (spot assay) | YPGE [standard], iron [100 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5200	hom | growth (spot assay) | YPGE [standard], iron [2 mM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5201	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5202	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5203	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5204	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [2.5 uM], YPD [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5205	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5206	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5207	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5208	hom | growth (spot assay) | 4,7-diphenyl-1,10-phenanthroline 4',4''-disulfonate [90 μM], iron sulfate pentahydrate [5 uM], YPD [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5209	hom | growth (spot assay) | YPGal [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5210	hom | growth (spot assay) | YPGal [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5211	hom | growth (spot assay) | YPGal [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5212	hom | growth (spot assay) | YPGal [standard], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5213	hom | growth (spot assay) | YPGE [standard], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5214	hom | growth (spot assay) | YPGE [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5215	hom | growth (spot assay) | YPGE [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5216	hom | growth (spot assay) | YPGE [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5268	hom | growth (spot assay) | YPD [standard], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5269	hom | growth (spot assay) | YPD [standard], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5270	hom | growth (spot assay) | YPD [standard], copper [50 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5271	hom | growth (spot assay) | YPD [standard], copper [50 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5272	hom | growth (spot assay) | YPD [standard], iron [100 uM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5273	hom | growth (spot assay) | YPD [standard], iron [2 mM], temperature [30°C] | Davis-Kaplan SR~Kaplan J, 2004
+5274	hom | growth (spot assay) | YPD [standard], iron [100 uM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
+5275	hom | growth (spot assay) | YPD [standard], iron [2 mM], temperature [37ºC] | Davis-Kaplan SR~Kaplan J, 2004
