@@ -29,19 +29,8 @@ hit_data = cell2mat(hit_data);
 hit_strains = clean_orf(hit_strains);
 
 % Fix strains with multiple replications
-indx = find(~cellfun(@isempty, strfind(hit_strains,'-3')));
-indx1 = find(~cellfun(@isempty, strfind(hit_strains,'-2')));
-indx2 = find(~cellfun(@isempty, strfind(hit_strains,'-4')));
-indx = [indx; indx1; indx2];
-hit_strains(indx) = cellfun(@(x) x(1:end-2), hit_strains(indx), 'un', 0);
-
-% If possible, fix the problem (typos, omissions etc.)
-hit_strains(ismember(hit_strains, {'YPL183W-A4'})) = {'YPL183W-A'};
-hit_strains(ismember(hit_strains, {'YPL183W-A3'})) = {'YPL183W-A'};
-hit_strains(ismember(hit_strains, {'YOR298C-A2'})) = {'YOR298C-A'};
-hit_strains(ismember(hit_strains, {'YPL183W-A2'})) = {'YPL183W-A'};
-hit_strains(ismember(hit_strains, {'YOR298C-A4'})) = {'YOR298C-A'};
-hit_strains(ismember(hit_strains, {'YOR298C-A3'})) = {'YOR298C-A'};
+inds = find(~cellfun(@isempty, regexp(hit_strains, '^Y[A-P][RL][0-9]{3}[CW](-[A-H])*[2-9]$')));
+hit_strains(inds) = cellfun(@(x) x(1:end-1), hit_strains(inds),'UniformOutput',0);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
@@ -64,19 +53,8 @@ hit_data2 = cell2mat(hit_data2);
 hit_strains2 = clean_orf(hit_strains2);
 
 % Fix strains with multiple replications
-indx = find(~cellfun(@isempty, strfind(hit_strains2,'-3')));
-indx1 = find(~cellfun(@isempty, strfind(hit_strains2,'-2')));
-indx2 = find(~cellfun(@isempty, strfind(hit_strains2,'-4')));
-indx = [indx; indx1; indx2];
-hit_strains2(indx) = cellfun(@(x) x(1:end-2), hit_strains2(indx), 'un', 0);
-
-% If possible, fix the problem (typos, omissions etc.)
-hit_strains2(ismember(hit_strains2, {'YPL183W-A4'})) = {'YPL183W-A'};
-hit_strains2(ismember(hit_strains, {'YPL183W-A3'})) = {'YPL183W-A'};
-hit_strains(ismember(hit_strains, {'YOR298C-A2'})) = {'YOR298C-A'};
-hit_strains(ismember(hit_strains, {'YPL183W-A2'})) = {'YPL183W-A'};
-hit_strains(ismember(hit_strains, {'YOR298C-A4'})) = {'YOR298C-A'};
-hit_strains(ismember(hit_strains, {'YOR298C-A3'})) = {'YOR298C-A'};
+inds = find(~cellfun(@isempty, regexp(hit_strains2, '^Y[A-P][RL][0-9]{3}[CW](-[A-H])*[2-9]$')));
+hit_strains2(inds) = cellfun(@(x) x(1:end-1), hit_strains2(inds),'UniformOutput',0);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains2));
@@ -86,8 +64,7 @@ inds = find(~is_orf(hit_strains2));
 
 %% Combine data from two datasets
 
-all_strains =[hit_strains; hit_strains2];
-all_strains = unique(all_strains);
+all_strains = unique([hit_strains; hit_strains2]);
 
 all_data = nan(length(all_strains), 2);
 
