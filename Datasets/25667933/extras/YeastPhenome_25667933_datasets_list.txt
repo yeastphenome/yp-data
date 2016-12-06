@@ -1,0 +1,14 @@
+5276	hom | growth (relative abundance in pooled culture) | 14 generations (time [14]) | Nislow C~Hammond TG, 2015
+5277	hom | growth (relative abundance in pooled culture) | 21 generations (time [21]) | Nislow C~Hammond TG, 2015
+5278	hom | growth (relative abundance in pooled culture) | flight & 14 generations (time [14], microgravity [unknown]) | Nislow C~Hammond TG, 2015
+5279	hom | growth (relative abundance in pooled culture) | flight & 21 generations (time [21], microgravity [unknown]) | Nislow C~Hammond TG, 2015
+5280	hom | growth (relative abundance in pooled culture) | NaCl & 14 Gen (sodium chloride [0.5 M], time [14]) | Nislow C~Hammond TG, 2015
+5281	hom | growth (relative abundance in pooled culture) | NaCl & 21 Gen (sodium chloride [0.5 M], time [21]) | Nislow C~Hammond TG, 2015
+5282	hom | growth (relative abundance in pooled culture) | Flight, NaCl, 14 Gen (sodium chloride [0.5 M], time [14], microgravity [unknown]) | Nislow C~Hammond TG, 2015
+5283	hom | growth (relative abundance in pooled culture) | Flight, NaCl, 21 Gen (sodium chloride [0.5 M], time [21], microgravity [unknown]) | Nislow C~Hammond TG, 2015
+5284	het | growth (relative abundance in pooled culture) | 21 generations (time [21]) | Nislow C~Hammond TG, 2015
+5285	het | growth (relative abundance in pooled culture) | flight & 21 generations (time [21], microgravity [unknown]) | Nislow C~Hammond TG, 2015
+5286	het | growth (relative abundance in pooled culture) | NaCl & 14 Gen (sodium chloride [0.5 M], time [14]) | Nislow C~Hammond TG, 2015
+5287	het | growth (relative abundance in pooled culture) | NaCl & 21 Gen (sodium chloride [0.5 M], time [21]) | Nislow C~Hammond TG, 2015
+5288	het | growth (relative abundance in pooled culture) | Flight, NaCl, 14 Gen (sodium chloride [0.5 M], time [14], microgravity [unknown]) | Nislow C~Hammond TG, 2015
+5289	het | growth (relative abundance in pooled culture) | Flight, NaCl, 21 Gen (sodium chloride [0.5 M], time [21], microgravity [unknown]) | Nislow C~Hammond TG, 2015
