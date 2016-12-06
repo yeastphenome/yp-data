@@ -1,0 +1,15 @@
+ORF	hap alpha | growth (spot assay) | hygromycin B [25 ug/ml] | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | YPD [standard] | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | sodium chloride [1 M] | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | Potassium Chloride [1 M] (potassium chloride [1 M]) | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | Potassium Chloride [0.5 M] (potassium chloride [0.5 M]) | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | calcium chloride [0.5 mM] (calcium dichloride [0.5 mM]) | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | calcium chloride [0.2 mM] (calcium dichloride [0.2 mM]) | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | manganese(II) chloride [10 mM] | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | Zinc(II) chloride [4 mM] (zinc dichloride [4 mM]) | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | 2.5 pH (pH [2.5]) | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | pH [8] | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | rapamycin derivative [0.02 uM] | Banuelos MG~Gharakhanian E, 2010	hap alpha | growth (spot assay) | Caffeine (20 mM) (caffeine [20 mM]) | Banuelos MG~Gharakhanian E, 2010
+YEL059W	-3.000	0.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YAL026C	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YDR027C	-3.000	0.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YER019C-A	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YKL212W	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YDL192W	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YBR279W	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YDL160C	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YGL095C	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YDR484W	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YLR240W	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YAL016W	-3.000	-1.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YGL206C	-3.000	0.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000
+YGR262C	-3.000	0.000	-2.000	-2.000	-2.000	-2.000	-2.000	-3.000	-3.000	-3.000	-3.000	-3.000	-3.000

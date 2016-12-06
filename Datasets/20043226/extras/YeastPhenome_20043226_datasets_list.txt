@@ -1,0 +1,13 @@
+154	hap alpha | growth (spot assay) | hygromycin B [25 ug/ml] | Banuelos MG~Gharakhanian E, 2010
+5294	hap alpha | growth (spot assay) | YPD [standard] | Banuelos MG~Gharakhanian E, 2010
+5295	hap alpha | growth (spot assay) | sodium chloride [1 M] | Banuelos MG~Gharakhanian E, 2010
+5296	hap alpha | growth (spot assay) | Potassium Chloride [1 M] (potassium chloride [1 M]) | Banuelos MG~Gharakhanian E, 2010
+5297	hap alpha | growth (spot assay) | Potassium Chloride [0.5 M] (potassium chloride [0.5 M]) | Banuelos MG~Gharakhanian E, 2010
+5298	hap alpha | growth (spot assay) | calcium chloride [0.5 mM] (calcium dichloride [0.5 mM]) | Banuelos MG~Gharakhanian E, 2010
+5299	hap alpha | growth (spot assay) | calcium chloride [0.2 mM] (calcium dichloride [0.2 mM]) | Banuelos MG~Gharakhanian E, 2010
+5300	hap alpha | growth (spot assay) | manganese(II) chloride [10 mM] | Banuelos MG~Gharakhanian E, 2010
+5301	hap alpha | growth (spot assay) | Zinc(II) chloride [4 mM] (zinc dichloride [4 mM]) | Banuelos MG~Gharakhanian E, 2010
+5302	hap alpha | growth (spot assay) | 2.5 pH (pH [2.5]) | Banuelos MG~Gharakhanian E, 2010
+5303	hap alpha | growth (spot assay) | pH [8] | Banuelos MG~Gharakhanian E, 2010
+5304	hap alpha | growth (spot assay) | rapamycin derivative [0.02 uM] | Banuelos MG~Gharakhanian E, 2010
+5305	hap alpha | growth (spot assay) | Caffeine (20 mM) (caffeine [20 mM]) | Banuelos MG~Gharakhanian E, 2010
