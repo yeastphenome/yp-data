@@ -49,10 +49,15 @@ hit_data(ind1, 2) = -1;
 [~, ind1, ind2] = intersect(hit_strains, hit_strains_3);
 hit_data(ind1, 3) = -1;
 
+hit_strains(strcmp('PR116W', hit_strains)) = {'YPR116W'};
+
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds, :) = [];
+
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
