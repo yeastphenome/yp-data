@@ -1,4 +1,5 @@
 ORF	hap a | growth (culture turbidity) | 4-chlorophenol [1 mM] | Yadav V~Yadav J, 2011	hap a | growth (culture turbidity) | 2,4-dichlorophenol [0.3 mM] | Yadav V~Yadav J, 2011	hap a | growth (culture turbidity) | pentachlorophenol [0.156 mM] | Yadav V~Yadav J, 2011
+YPR116W	NaN	NaN	-1.000
 YAL010C	NaN	-1.000	NaN
 YAL012W	-1.000	NaN	NaN
 YAL035W	NaN	NaN	-1.000
