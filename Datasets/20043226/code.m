@@ -20,10 +20,10 @@ datasets.standard_name = d{2};
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data(2:end,1);
+hit_strains = data(:,1);
 
 % Get the data itself
-hit_data = data(2:end,2:end);
+hit_data = data(:,2);
 hit_data = cell2mat(hit_data);
    
 % Eliminate all white spaces & capitalize
@@ -32,25 +32,15 @@ hit_strains = clean_genename(hit_strains);
 % If in gene name form, transform into ORF name
 hit_strains = translate(hit_strains);
 
+hit_strains(strcmp('YM1010W-A', hit_strains)) = {'YML010W-A'};
+
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
-hit_strains(inds) = [];
-hit_data(inds, :) = [];
-
-% Transform the data
-[a, b] = find(hit_data == 3);
-[c, d] = find(hit_data == 2);
-[e, f] = find(hit_data == 1);
-[g, h] = find(hit_data == 0);
-hit_data(a, b) = 0;
-hit_data(c, d) = -1;
-hit_data(e, f) = -2;
-hit_data(g, h) = -3;
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [154; 5294; 5295; 5296; 5297; 5298; 5299; 5300; 5301; 5302; 5303; 5304; 5305];
+hit_data_ids = [154];
 
 %% Prepare final dataset
 % Match the dataset ids with the dataset standard names
