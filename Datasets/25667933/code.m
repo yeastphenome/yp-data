@@ -14,232 +14,61 @@ nislow_hammond_2015.pmid = 25667933;
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
-%% Load the data - first file: ground
+%% Load the data
 
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS5_vsT1-hom1-dropsToBg.xlsx', 'ground');
+files = {'./raw_data/TableS5_vsT1-hom1-dropsToBg.xlsx'; ...
+    './raw_data/TableS6_vsT1-hom1-NaCl-dropsToBg.xlsx'; ...
+    './raw_data/TableS8_vsT1-het1-dropsToBg.xlsx'; ...
+    './raw_data/TableS9_vsT1-het1-NaCl-dropsToBg.xlsx'};
 
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_1 = data(2:end,2);
+sheets = {'ground'; 'flight'};
 
-% Get the data itself
-hit_data_1 = data(2:end,4:5);
+for f = 1 : length(files)
+    for s = 1 : length(sheets)
+        
+        i = (f-1)*length(sheets)+s;
+        [FILENAMES{end+1}, data] = read_data('xlsread',files{f}, sheets{s});
+
+        % Get the list of ORFs and the correponding data 
+        % (this part usually changes significantly based on the format of the raw data file)
+        hit_strains{i} = data(2:end,2);
+        
+        column_names = data(1,:);
+        inds_columns = find(strncmp('Log2ratio', column_names, length('Log2ratio')));
+        
+        % Get the data itself
+        hit_data{i} = data(2:end,inds_columns);
    
-% Eliminate all white spaces & capitalize
-hit_strains_1 = clean_orf(hit_strains_1);
+        % Eliminate all white spaces & capitalize
+        hit_strains{i} = clean_orf(hit_strains{i});
 
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_1));
-hit_strains_1(inds) = [];
-hit_data_1(inds, :) = [];
+        % Find anything that doesn't look like an ORF
+        inds = find(~is_orf(hit_strains{i}));
+        hit_strains{i}(inds) = [];
+        hit_data{i}(inds, :) = [];
 
-hit_data_1 = cell2mat(hit_data_1);
+        hit_data{i} = cell2mat(hit_data{i});
 
-% If the same strain is present more than once, average its values
-[hit_strains_1, hit_data_1] = grpstats(hit_data_1, hit_strains_1, {'gname','mean'});
+        % If the same strain is present more than once, average its values
+        [hit_strains{i}, hit_data{i}] = grpstats(hit_data{i}, hit_strains{i}, {'gname','mean'});
+        
+    end
+end
 
-%% Load the data - first file: flight
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS5_vsT1-hom1-dropsToBg.xlsx', 'flight');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_2 = data(2:end,2);
-
-% Get the data itself
-hit_data_2 = data(2:end,4:5);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_2 = clean_orf(hit_strains_2);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_2));
-hit_strains_2(inds) = [];
-hit_data_2(inds, :) = [];
-
-hit_data_2 = cell2mat(hit_data_2);
-
-% If the same strain is present more than once, average its values
-[hit_strains_2, hit_data_2] = grpstats(hit_data_2, hit_strains_2, {'gname','mean'});
-
-%% Load the data - second file: ground
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS6_vsT1-hom1-NaCl-dropsToBg.xlsx', 'ground');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_3 = data(2:end,2);
-
-% Get the data itself
-hit_data_3 = data(2:end,4:5);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_3 = clean_orf(hit_strains_3);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_3));
-hit_strains_3(inds) = [];
-hit_data_3(inds, :) = [];
-
-hit_data_3 = cell2mat(hit_data_3);
-
-% If the same strain is present more than once, average its values
-[hit_strains_3, hit_data_3] = grpstats(hit_data_3, hit_strains_3, {'gname','mean'});
-
-%% Load the data - second file: flight
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS6_vsT1-hom1-NaCl-dropsToBg.xlsx', 'flight');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_4 = data(2:end,2);
-
-% Get the data itself
-hit_data_4 = data(2:end,4:5);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_4 = clean_orf(hit_strains_4);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_4));
-hit_strains_4(inds) = [];
-hit_data_4(inds, :) = [];
-
-hit_data_4 = cell2mat(hit_data_4);
-
-% If the same strain is present more than once, average its values
-[hit_strains_4, hit_data_4] = grpstats(hit_data_4, hit_strains_4, {'gname','mean'});
-
-%% Load the data - third file: ground
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS8_vsT1-het1-dropsToBg.xlsx', 'ground');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_5 = data(2:end,2);
-
-% Get the data itself
-hit_data_5 = data(2:end,4);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_5 = clean_orf(hit_strains_5);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_5));
-hit_strains_5(inds) = [];
-hit_data_5(inds, :) = [];
-
-hit_data_5 = cell2mat(hit_data_5);
-
-% If the same strain is present more than once, average its values
-[hit_strains_5, hit_data_5] = grpstats(hit_data_5, hit_strains_5, {'gname','mean'});
-
-%% Load the data - third file: flight
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS8_vsT1-het1-dropsToBg.xlsx', 'flight');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_6 = data(2:end,2);
-
-% Get the data itself
-hit_data_6 = data(2:end,4);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_6 = clean_orf(hit_strains_6);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_6));
-hit_strains_6(inds) = [];
-hit_data_6(inds, :) = [];
-
-hit_data_6 = cell2mat(hit_data_6);
-
-% If the same strain is present more than once, average its values
-[hit_strains_6, hit_data_6] = grpstats(hit_data_6, hit_strains_6, {'gname','mean'});
-
-%% Load the data - fourth file: ground
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS9_vsT1-het1-NaCl-dropsToBg.xlsx', 'ground');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_7 = data(2:end,2);
-
-% Get the data itself
-hit_data_7 = data(2:end,4:5);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_7 = clean_orf(hit_strains_7);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_7));
-hit_strains_7(inds) = [];
-hit_data_7(inds, :) = [];
-
-hit_data_7 = cell2mat(hit_data_7);
-
-% If the same strain is present more than once, average its values
-[hit_strains_7, hit_data_7] = grpstats(hit_data_7, hit_strains_7, {'gname','mean'});
-
-%% Load the data - fourth file: flight
-
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS9_vsT1-het1-NaCl-dropsToBg.xlsx', 'flight');
-
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains_8 = data(2:end,2);
-
-% Get the data itself
-hit_data_8 = data(2:end,4:5);
-   
-% Eliminate all white spaces & capitalize
-hit_strains_8 = clean_orf(hit_strains_8);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains_8));
-hit_strains_8(inds) = [];
-hit_data_8(inds, :) = [];
-
-hit_data_8 = cell2mat(hit_data_8);
-
-% If the same strain is present more than once, average its values
-[hit_strains_8, hit_data_8] = grpstats(hit_data_8, hit_strains_8, {'gname','mean'});
 
 %% Combine the data
 
-hit_strains = [hit_strains_1; hit_strains_2; hit_strains_3; hit_strains_4; hit_strains_5; hit_strains_6; hit_strains_7; hit_strains_8];
-hit_strains = unique(hit_strains);
+hit_strains_all = unique(vertcat(hit_strains{:}));
 
-hit_data = nan(length(hit_strains), 14);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_1);
-hit_data(ind1, 1) = hit_data_1(ind2,1);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_1);
-hit_data(ind1, 2) = hit_data_1(ind2,2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_2);
-hit_data(ind1, 3) = hit_data_2(ind2,1);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_2);
-hit_data(ind1, 4) = hit_data_2(ind2,2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_3);
-hit_data(ind1, 5) = hit_data_3(ind2,1);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_3);
-hit_data(ind1, 6) = hit_data_3(ind2,2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_4);
-hit_data(ind1, 7) = hit_data_4(ind2,1);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_4);
-hit_data(ind1, 8) = hit_data_4(ind2,2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_5);
-hit_data(ind1, 9) = hit_data_5(ind2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_6);
-hit_data(ind1, 10) = hit_data_6(ind2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_7);
-hit_data(ind1, 11) = hit_data_7(ind2,1);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_7);
-hit_data(ind1, 12) = hit_data_7(ind2,2);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_8);
-hit_data(ind1, 13) = hit_data_8(ind2,1);
-[~, ind1, ind2] = intersect(hit_strains, hit_strains_8);
-hit_data(ind1, 14) = hit_data_8(ind2,2);
+n = sum(cellfun(@(x) size(x,2), hit_data));
+
+hit_data_all = nan(length(hit_strains_all), n);
+c = 1;
+for i = 1 : length(hit_data)
+    [~,ind1,ind2] = intersect(hit_strains{i}, hit_strains_all);
+    hit_data_all(ind2,c:c+size(hit_data{i},2)-1) = hit_data{i}(ind1,:);
+    c = c+size(hit_data{i},2);
+end
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -253,9 +82,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-nislow_hammond_2015.orfs = hit_strains;
+nislow_hammond_2015.orfs = hit_strains_all;
 nislow_hammond_2015.ph = hit_data_names;
-nislow_hammond_2015.data = hit_data;
+nislow_hammond_2015.data = -hit_data_all;   % Data represent log(gen1/gen2) such that, originally, higher values correspond to more extreme depletion
 nislow_hammond_2015.dataset_ids = hit_data_ids;
 
 %% Save
