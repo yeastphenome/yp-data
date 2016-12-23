@@ -1,0 +1,16 @@
+ORF	hom | growth (culture turbidity) | Trichothecin [4 uM] | McLaughlin JE~Tumer NE, 2009	hom | growth (culture turbidity) | Trichothecin [8 uM] | McLaughlin JE~Tumer NE, 2009	hom | growth (culture turbidity) | Trichothecin [12 uM] | McLaughlin JE~Tumer NE, 2009	hom | growth (culture turbidity) | Trichothecin [24 uM] | McLaughlin JE~Tumer NE, 2009
+YHR014W	0.740	0.800	0.840	0.640
+YLR193C	0.900	0.900	0.600	0.500
+YLR262C-A	1.020	0.940	0.980	0.460
+YKR010C	0.980	0.980	0.710	0.270
+YLR099C	0.900	0.880	0.780	0.180
+YNL011C	0.990	0.930	0.620	0.130
+YGR241C	0.960	0.980	0.900	0.090
+YDL054C	1.090	0.990	0.830	0.060
+YOL101C	0.960	0.910	0.710	0.040
+YMR187C	0.840	0.940	0.730	0.020
+YGL110C	0.920	0.850	0.710	0.020
+YPL219W	0.890	0.870	0.560	0.010
+YLR199C	0.940	0.910	0.630	0.010
+YGL139W	0.980	0.840	0.620	0.010
+YDL173W	0.920	0.940	0.590	0.010
