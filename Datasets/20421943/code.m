@@ -4,13 +4,13 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-matetic_smith_2010.pmid = 20421943;
+matecic_smith_2010.pmid = 20421943;
 
 % MANUAL. Download the list of dataset ids and standard names from
 % the paper's page on www.yeastphenome.org & save the file to ./extras
 
 % Load the list
-[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(matetic_smith_2010.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(matecic_smith_2010.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
@@ -22,9 +22,8 @@ datasets.standard_name = d{2};
 hit_strains_dn = data(5:end,1);
 
 % Get the data itself
-hit_data_dn = data(5:end,11:17); 
-hit_data_dn(:, 4) = [];
-hit_data_dn = cell2mat(hit_data_dn);
+hit_data_dn = data(5:end,[11:13 15:17]); 
+hit_data_dn = -cell2mat(hit_data_dn);   % taking the opposite to ensure that slow-growing strains have lower values than fast-growing strains.
 
 % Eliminate all white spaces & capitalize
 hit_strains_dn = clean_orf(hit_strains_dn);
@@ -42,9 +41,8 @@ hit_data_dn(inds, :) = [];
 hit_strains_up = data(5:end,1);
 
 % Get the data itself
-hit_data_up = data(5:end,11:17); 
-hit_data_up(:, 4) = [];
-hit_data_up = cell2mat(hit_data_up);
+hit_data_up = data(5:end,[11:13 15:17]); 
+hit_data_up = -cell2mat(hit_data_up); % taking the opposite to ensure that slow-growing strains have lower values than fast-growing strains.
 
 % Eliminate all white spaces & capitalize
 hit_strains_up = clean_orf(hit_strains_up);
@@ -59,12 +57,10 @@ hit_strains = [hit_strains_dn; hit_strains_up];
 hit_data = [hit_data_dn; hit_data_up];
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
-
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
 hit_data_ids = [4712; 5354; 5355; 5356; 5357; 5358];
-
 
 %% Prepare final dataset
 % Match the dataset ids with the dataset standard names
@@ -73,26 +69,26 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-matetic_smith_2010.orfs = hit_strains;
-matetic_smith_2010.ph = hit_data_names;
-matetic_smith_2010.data = hit_data;
-matetic_smith_2010.dataset_ids = hit_data_ids;
+matecic_smith_2010.orfs = hit_strains;
+matecic_smith_2010.ph = hit_data_names;
+matecic_smith_2010.data = hit_data;
+matecic_smith_2010.dataset_ids = hit_data_ids;
 
 %% Save
 
-save('./matetic_smith_2010.mat','matetic_smith_2010');
+save('./matecic_smith_2010.mat','matecic_smith_2010');
 
 %% Print out
 
-fid = fopen('./matetic_smith_2010.txt','w');
-write_matrix_file(fid, matetic_smith_2010.orfs, matetic_smith_2010.ph, matetic_smith_2010.data);
+fid = fopen('./matecic_smith_2010.txt','w');
+write_matrix_file(fid, matecic_smith_2010.orfs, matecic_smith_2010.ph, matecic_smith_2010.data);
 fclose(fid);
 
 %% Save to DB (admin)
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(matetic_smith_2010)
+    res = save_data_to_db(matecic_smith_2010)
 end
 
 end
