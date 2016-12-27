@@ -23,7 +23,7 @@ hit_strains = data(2:end,2);
 
 % Split the strings
 C = cellfun(@(s) strsplit(s, ' '), hit_strains, 'UniformOutput', 0);
-hit_strains = [C{1}'; C{2}'; C{3}'; C{4}'];
+hit_strains = [horzcat(C{:})]';
 
 % Get the data itself
 hit_data = zeros(size(hit_strains))-1;
