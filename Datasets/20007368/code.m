@@ -24,6 +24,11 @@ hit_strains = data(:,1);
 % Get the data itself
 hit_data = data(:,3:2:end-1);
 hit_data = cell2mat(hit_data);
+
+% Normalize by the WT
+hit_data = hit_data ./ repmat(hit_data(1,:),size(hit_data,1),1) - 1;
+hit_strains(1) = [];
+hit_data(1,:) = [];
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
