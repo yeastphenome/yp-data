@@ -1,0 +1,4 @@
+603	hom | growth (culture turbidity) | Trichothecin [4 uM] | McLaughlin JE~Tumer NE, 2009
+5359	hom | growth (culture turbidity) | Trichothecin [8 uM] | McLaughlin JE~Tumer NE, 2009
+5360	hom | growth (culture turbidity) | Trichothecin [12 uM] | McLaughlin JE~Tumer NE, 2009
+5361	hom | growth (culture turbidity) | Trichothecin [24 uM] | McLaughlin JE~Tumer NE, 2009
