@@ -1,0 +1,12 @@
+1319	hap a | growth (spot assay) | cadmium dichloride [75 uM], time [24 h] | Thorsen M~Tamas MJ, 2009
+1320	hap a | growth (spot assay) | sodium arsenite [0.5 mM], time [24 h] | Thorsen M~Tamas MJ, 2009
+5362	hap a | growth (spot assay) | sodium arsenite [1 mM], time [24 h] | Thorsen M~Tamas MJ, 2009
+5363	hap a | growth (spot assay) | sodium arsenite [1.5 mM], time [24 h] | Thorsen M~Tamas MJ, 2009
+5364	hap a | growth (spot assay) | sodium arsenite [0.5 mM], time [48 h] | Thorsen M~Tamas MJ, 2009
+5365	hap a | growth (spot assay) | sodium arsenite [1 mM], time [48 h] | Thorsen M~Tamas MJ, 2009
+5366	hap a | growth (spot assay) | sodium arsenite [1.5 mM], time [48 h] | Thorsen M~Tamas MJ, 2009
+5367	hap a | growth (spot assay) | cadmium dichloride [100 uM], time [24 h] | Thorsen M~Tamas MJ, 2009
+5368	hap a | growth (spot assay) | cadmium dichloride [150 uM], time [24 h] | Thorsen M~Tamas MJ, 2009
+5369	hap a | growth (spot assay) | cadmium dichloride [75 uM], time [48 h] | Thorsen M~Tamas MJ, 2009
+5370	hap a | growth (spot assay) | cadmium dichloride [100 uM], time [48 h] | Thorsen M~Tamas MJ, 2009
+5371	hap a | growth (spot assay) | cadmium dichloride [150 uM], time [48 h] | Thorsen M~Tamas MJ, 2009
