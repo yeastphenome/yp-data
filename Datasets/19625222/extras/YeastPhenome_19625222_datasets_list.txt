@@ -1,0 +1,1 @@
+161	hap a | growth (colony size) | formaldehyde (formaldehyde [1.5 mM]) | de Graaf B~McCullough AK, 2009
