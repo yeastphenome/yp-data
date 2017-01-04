@@ -23,7 +23,7 @@ hit_strains = data(:,2);
 
 % Get the data itself
 hit_data = data(:,3);
-hit_data = cell2mat(hit_data);
+hit_data = -cell2mat(hit_data); % taking the opposite because, originally, larger numbers indicate smaller colony sizes
 
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
