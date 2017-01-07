@@ -1,0 +1,4 @@
+605	hom | growth (culture turbidity) | chitosan [25 ug/ml], time [5 h] | Zakrzewska A~Klis FM, 2007
+5291	het | growth (culture turbidity) | chitosan [25 ug/ml], time [5 h] | Zakrzewska A~Klis FM, 2007
+5292	hom | growth (culture turbidity) | chitosan [25 ug/ml], time [9 h] | Zakrzewska A~Klis FM, 2007
+5293	het | growth (culture turbidity) | chitosan [25 ug/ml], time [9 h] | Zakrzewska A~Klis FM, 2007
