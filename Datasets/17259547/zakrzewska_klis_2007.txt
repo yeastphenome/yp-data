@@ -1,4 +1,4 @@
-ORF	hom | growth (culture turbidity) | chitosan [25 g/ml, time 5 hour exposure] | Zakrzewska A~Klis FM, 2007	het | growth (culture turbidity) | chitosan [25 g/ml, time 5 hour exposure] | Zakrzewska A~Klis FM, 2007	hom | growth (culture turbidity) | chitosan [25 g/ml, time 9 hour exposure] | Zakrzewska A~Klis FM, 2007	het | growth (culture turbidity) | chitosan [25 g/ml, time 9 hour exposure] | Zakrzewska A~Klis FM, 2007
+ORF	hom | growth (culture turbidity) | chitosan [25 ug/ml], time [5 h] | Zakrzewska A~Klis FM, 2007	het | growth (culture turbidity) | chitosan [25 ug/ml], time [5 h] | Zakrzewska A~Klis FM, 2007	hom | growth (culture turbidity) | chitosan [25 ug/ml], time [9 h] | Zakrzewska A~Klis FM, 2007	het | growth (culture turbidity) | chitosan [25 ug/ml], time [9 h] | Zakrzewska A~Klis FM, 2007
 YAL001C	NaN	0.169	NaN	0.011
 YAL002W	0.832	NaN	0.909	NaN
 YAL003W	NaN	0.256	NaN	0.084
