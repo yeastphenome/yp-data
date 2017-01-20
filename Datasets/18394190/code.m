@@ -22,24 +22,54 @@ datasets.standard_name = d{2};
 hit_strains = data(4:end,1);
 
 % Get the data itself
-hit_data = data(4:end,2:2:4);
-hit_data = cell2mat(hit_data);
+hit_data = cell2mat(data(4:end,[2 4]));
    
 % Eliminate all white spaces & capitalize
-hit_strains = clean_genename(hit_strains);
-
-% If in gene name form, transform into ORF name
-hit_strains = translate(hit_strains);
+hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds) = [];
 
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
 hit_data_ids = [1317; 1318];
+
+%% Load tested strains
+
+[FILENAMES{end+1}, dataAll] = read_data('xlsread', './raw_data/List of tested yeast mutant strains.xlsx', 'Foglio1');
+
+all_orfs = dataAll(2:end, 1);
+
+% Get rid of empty rows
+inds = find(cellfun(@isnumeric, all_orfs));
+all_orfs(inds) = [];
+
+% Clean up ORFs
+all_orfs = clean_orf(all_orfs);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(all_orfs));
+disp(all_orfs(inds));
+
+% Make sure all are unique
+all_orfs = unique(all_orfs);
+
+% Check to see all hit_orfs are in all_orfs
+missing_orfs = setdiff(hit_strains, all_orfs);     % 5 ORFs missing
+all_orfs = [all_orfs; missing_orfs];
+
+% Make a zero matrix for all data points
+all_data = zeros(length(all_orfs), 2);
+
+% Find indices for hit_orfs in all_orfs 
+[~, ind1, ind2] = intersect(all_orfs, hit_strains);
+all_data(ind1,:) = hit_data(ind2,:);
 
 %% Prepare final dataset
 % Match the dataset ids with the dataset standard names
@@ -48,9 +78,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-ruotolo_ottonello_2008.orfs = hit_strains;
+ruotolo_ottonello_2008.orfs = all_orfs;
 ruotolo_ottonello_2008.ph = hit_data_names;
-ruotolo_ottonello_2008.data = hit_data;
+ruotolo_ottonello_2008.data = all_data;
 ruotolo_ottonello_2008.dataset_ids = hit_data_ids;
 
 %% Save
