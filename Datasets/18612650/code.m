@@ -16,28 +16,10 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Table1.xlsx');
+[FILENAMES{end+1}, data] = read_data('readtable','./raw_data/Table1.txt','delimiter','\t','ReadVariableNames',0);
 
-hit_strains = {};
-hit_data = {};
-
-% Get the list of ORFs and the correponding data 
-for i = 1:length(data)
-    if isnan(data{i})
-        continue
-    end
-    C = strsplit(data{i}, ' ');
-    ind1 = regexp(C, '\d$');
-    index = (cellfun(@(x) x==1, ind1, 'UniformOutput', 0));
-    indx = find(cellfun(@any, index));
-    if isempty(indx)
-        continue
-    end
-    hit_strains = [hit_strains; C{1}];
-    hit_data = [hit_data; C{indx(1)}];
-end
-
-hit_data = cell2mat(hit_data);
+hit_strains = data.Var1;
+hit_data = -data.Var2;
 
 % Eliminate all white spaces & capitalize
 hit_strains = clean_genename(hit_strains);
