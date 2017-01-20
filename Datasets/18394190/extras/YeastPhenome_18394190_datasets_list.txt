@@ -1,0 +1,2 @@
+1317	hap alpha | growth (colony size) | cadmium dichloride [50 uM] | Ruotolo R~Ottonello S, 2008
+1318	hap alpha | growth (colony size) | nickel dichloride [2.5 mM] | Ruotolo R~Ottonello S, 2008
