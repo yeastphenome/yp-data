@@ -1,0 +1,6 @@
+508	hom | growth (relative abundance in pooled culture) | 3-nitroso-2-phenylimidazo[1,2-a]pyridine [9 uM] | Yu L~Bellaoui M, 2008
+511	hap a | growth (relative abundance in pooled culture) | 3-nitroso-2-phenylimidazo[1,2-a]pyridine [9 uM] | Yu L~Bellaoui M, 2008
+4982	hom | growth (relative abundance in pooled culture) | 3-nitroso-2-phenylimidazo[1,2-a]pyrimidine [9 uM] | Yu L~Bellaoui M, 2008
+4983	hap a | growth (relative abundance in pooled culture) | 3-nitroso-2-phenylimidazo[1,2-a]pyrimidine [9 uM] | Yu L~Bellaoui M, 2008
+5007	het | growth (relative abundance in pooled culture) | 3-nitroso-2-phenylimidazo[1,2-a]pyridine [9 uM] | Yu L~Bellaoui M, 2008
+5008	het | growth (relative abundance in pooled culture) | 3-nitroso-2-phenylimidazo[1,2-a]pyrimidine [9 uM] | Yu L~Bellaoui M, 2008
