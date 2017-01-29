@@ -23,9 +23,13 @@ datasets.standard_name = d{2};
 hit_strains = data(4:end,1);
 
 % Get the data itself
-hit_data = data(4:end,4);
+hit_data = data(4:end,3:4);
 hit_data(~cellfun(@isnumeric, hit_data)) = {NaN};
 hit_data = cell2mat(hit_data);
+
+% Normalizing the sucrose to YPD
+hit_data(:,2) = hit_data(:,2) ./ hit_data(:,1);
+hit_data(:,1) = [];
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
@@ -34,6 +38,9 @@ hit_strains = clean_orf(hit_strains);
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds) = [];
+
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
