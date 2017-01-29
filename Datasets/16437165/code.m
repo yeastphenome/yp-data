@@ -22,8 +22,7 @@ datasets.standard_name = d{2};
 hit_strains = data(:,1);
 
 % Get the data itself
-hit_data = data(:,2);
-hit_data = cell2mat(hit_data);
+hit_data = cell2mat(data(:,2));
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
