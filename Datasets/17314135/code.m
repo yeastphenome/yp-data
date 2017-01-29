@@ -35,8 +35,7 @@ hit_data(inds) = [];
 
 % Fix the data based on WT
 hit_data = cell2mat(hit_data);
-hit_data = hit_data / 420;
-hit_data = 1 ./ hit_data;
+hit_data = 420 ./ hit_data;
 
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
