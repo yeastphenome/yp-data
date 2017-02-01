@@ -23,7 +23,7 @@ hit_strains = data(3:end,1);
 
 % Get the data itself
 hit_data = data(3:end,13);
-hit_data = cell2mat(hit_data);
+hit_data = -cell2mat(hit_data); % seems that, originally, negative values = large cells, positive values = small cells. By convention, we revert that.
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
