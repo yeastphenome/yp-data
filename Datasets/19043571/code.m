@@ -56,57 +56,38 @@ data(indx,4) = dip_data(indx,2);
 % If the same strain is present more than once, average its values
 [dip_strains, data] = grpstats(data, dip_strains, {'gname','mean'});
 
-%% Load the data: haploid - 13
+%% Load the data: haploid
 
-[FILENAMES{end+1}, haploid13] = read_data('xlsread','./raw_data/13_15_data.xlsx', '13 haploid (Figure 3)');
-
-% Get the list of ORFs and the correponding data 
-hap13_strains = haploid13(2:end,1);
-
-% Get the data itself
-hap13_data = haploid13(2:end,4);
-hap13_data = cell2mat(hap13_data);
-   
-% Eliminate all white spaces & capitalize
-hap13_strains = clean_orf(hap13_strains);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hap13_strains));
-hap13_strains(inds) = [];
-hap13_data(inds) = [];
-
-%% Load the data: haploid - 15
-
-[FILENAMES{end+1}, haploid15] = read_data('xlsread','./raw_data/13_15_data.xlsx', '15 haploid (Figure 3)');
+[FILENAMES{end+1}, haploid] = read_data('xlsread','./raw_data/HAP compendium May 12 19 2006 including compounds 13 and 15-without badtags.xlsx', 'Sheet1');
 
 % Get the list of ORFs and the correponding data 
-hap15_strains = haploid15(2:end,1);
+hap_strains = haploid(2:end,1);
 
 % Get the data itself
-hap15_data = haploid15(2:end,4);
-hap15_data = cell2mat(hap15_data);
+hap_data = haploid(2:end,[3 2]);
+hap_data = -cell2mat(hap_data);
    
 % Eliminate all white spaces & capitalize
-hap15_strains = clean_orf(hap15_strains);
+hap_strains = clean_orf(hap_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(~is_orf(hap15_strains));
-hap15_strains(inds) = [];
-hap15_data(inds) = [];
+inds = find(~is_orf(hap_strains));
+hap_strains(inds) = [];
+hap_data(inds) = [];
+
+% If the same strain is present more than once, average its values
+[hap_strains, hap_data] = grpstats(hap_data, hap_strains, {'gname','mean'});
 
 %% Combine all the data
 
-hit_strains = unique([dip_strains; hap13_strains; hap15_strains]);
+hit_strains = unique([dip_strains; hap_strains]);
 hit_data = nan(length(hit_strains), 6);
 
 [~, ind1, ind2] = intersect(hit_strains, dip_strains);
 hit_data(ind1, 1:4) = data(ind2, :);
 
-[~, ind1, ind2] = intersect(hit_strains, hap13_strains);
-hit_data(ind1, 5) = hap13_data(ind2);
-
-[~, ind1, ind2] = intersect(hit_strains, hap15_strains);
-hit_data(ind1, 6) = hap15_data(ind2);
+[~, ind1, ind2] = intersect(hit_strains, hap_strains);
+hit_data(ind1, 5:6) = hap_data(ind2, :);
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
