@@ -31,7 +31,8 @@ hit_strains = clean_orf(hit_strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
-hit_strains(inds) ={'YLR006C'};
+hit_strains(inds) = [];
+hit_data(inds,:) = [];
 
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
