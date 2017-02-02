@@ -26,7 +26,6 @@ temp_data = data(4:end, 4);
 hit_data = nan(length(hit_strains),1);
 indx = find(~strcmp(temp_data, 'ND'));
 hit_data(indx) = cell2mat(temp_data(indx));
-hit_data = log(hit_data);
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
