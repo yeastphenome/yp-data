@@ -1,0 +1,2 @@
+5233	hap alpha | abundance of calcium | Upshock (2-(N-morpholino)ethanesulfonic acid [20 mM], ethylene glycol bis(2-aminoethyl)tetraacetic acid [20 mM], sodium chloride [4 M]) | Loukin S~Saimi Y, 2008
+5234	hap alpha | growth (culture turbidity) | Upshock (2-(N-morpholino)ethanesulfonic acid [20 mM], ethylene glycol bis(2-aminoethyl)tetraacetic acid [20 mM], sodium chloride [4 M]) | Loukin S~Saimi Y, 2008
