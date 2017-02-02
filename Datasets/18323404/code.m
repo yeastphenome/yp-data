@@ -39,7 +39,7 @@ hit_data(inds) = [];
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [5234; 5235];
+hit_data_ids = [5234; 5233];
 
 %% Prepare final dataset
 
