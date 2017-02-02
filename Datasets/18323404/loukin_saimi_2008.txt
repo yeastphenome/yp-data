@@ -1,4 +1,4 @@
-ORF	hap alpha | growth (culture turbidity) | Upshock (2-(N-morpholino)ethanesulfonic acid [20 mM], ethylene glycol bis(2-aminoethyl)tetraacetic acid [20 mM], sodium chloride [4 M]) | Loukin S~Saimi Y, 2008	
+ORF	hap alpha | growth (culture turbidity) | Upshock (2-(N-morpholino)ethanesulfonic acid [20 mM], ethylene glycol bis(2-aminoethyl)tetraacetic acid [20 mM], sodium chloride [4 M]) | Loukin S~Saimi Y, 2008	hap alpha | abundance of calcium | Upshock (2-(N-morpholino)ethanesulfonic acid [20 mM], ethylene glycol bis(2-aminoethyl)tetraacetic acid [20 mM], sodium chloride [4 M]) | Loukin S~Saimi Y, 2008
 YMR307W	4.000	15.776
 YEL059W	4.000	15.379
 YGL168W	4.000	14.451
