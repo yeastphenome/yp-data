@@ -1,0 +1,16 @@
+Growth, dilution spot intensity; MMS, 0.01%	33
+Growth, dilution spot intensity; MMS, 0.02%	34
+Growth, dilution spot intensity; MMS, 0.025%	35
+Growth, dilution spot intensity; MMS, 0.03%	36
+Growth, dilution spot intensity; t-BuOOH, 0.25 mM	37
+Growth, dilution spot intensity; t-BuOOH, 0.5 mM	38
+Growth, dilution spot intensity; t-BuOOH, 0.75 mM	39
+Growth, dilution spot intensity; t-BuOOH, 1 mM	40
+Growth, dilution spot intensity; 4NQO, 0.1 ug/ml	41
+Growth, dilution spot intensity; 4NQO, 0.2 ug/ml	42
+Growth, dilution spot intensity; 4NQO, 0.3 ug/ml	43
+Growth, dilution spot intensity; 4NQO, 0.4 ug/ml	44
+Growth, dilution spot intensity; UV, 25 J/m2	45
+Growth, dilution spot intensity; UV, 50 J/m2	46
+Growth, dilution spot intensity; UV, 75 J/m2	47
+Growth, dilution spot intensity; UV, 100 J/m2	48

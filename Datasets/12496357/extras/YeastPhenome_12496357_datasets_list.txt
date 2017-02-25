@@ -1,0 +1,16 @@
+33	hap a | growth (spot assay) | methyl methanesulfonate [0.01%] | Begley TJ~Samson LD, 2002
+34	hap a | growth (spot assay) | methyl methanesulfonate [0.02%] | Begley TJ~Samson LD, 2002
+35	hap a | growth (spot assay) | methyl methanesulfonate [0.025%] | Begley TJ~Samson LD, 2002
+36	hap a | growth (spot assay) | methyl methanesulfonate [0.03%] | Begley TJ~Samson LD, 2002
+37	hap a | growth (spot assay) | Di-tert-butyl peroxide [0.25 mM] | Begley TJ~Samson LD, 2002
+38	hap a | growth (spot assay) | Di-tert-butyl peroxide [0.50 mM] | Begley TJ~Samson LD, 2002
+39	hap a | growth (spot assay) | Di-tert-butyl peroxide [0.75 mM] | Begley TJ~Samson LD, 2002
+40	hap a | growth (spot assay) | Di-tert-butyl peroxide [1 mM] | Begley TJ~Samson LD, 2002
+41	hap a | growth (spot assay) | 4-nitroquinoline N-oxide [0.1 ug/ml] | Begley TJ~Samson LD, 2002
+42	hap a | growth (spot assay) | 4-nitroquinoline N-oxide [0.2 ug/ml] | Begley TJ~Samson LD, 2002
+43	hap a | growth (spot assay) | 4-nitroquinoline N-oxide [0.3 ug/ml] | Begley TJ~Samson LD, 2002
+44	hap a | growth (spot assay) | 4-nitroquinoline N-oxide [0.4 ug/ml] | Begley TJ~Samson LD, 2002
+45	hap a | growth (spot assay) | ultraviolet light [25 J/m2] | Begley TJ~Samson LD, 2002
+46	hap a | growth (spot assay) | ultraviolet light [50 J/m2] | Begley TJ~Samson LD, 2002
+47	hap a | growth (spot assay) | ultraviolet light [75 J/m2] | Begley TJ~Samson LD, 2002
+48	hap a | growth (spot assay) | ultraviolet light [100 J/m2] | Begley TJ~Samson LD, 2002
