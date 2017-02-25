@@ -1,0 +1,21 @@
+number of cells after 15 generations; ypg	472
+number of cells after 15 generations; 1.5M Sorbitol	710
+number of cells after 15 generations; minimal + his/leu/ura	711
+number of cells after 15 generations; 1M NaCl	712
+number of cells after 15 generations; pH 8	713
+number of cells after 5 generations; ypg	714
+number of cells after 5 generations; 1.5M Sorbitol	715
+number of cells after 5 generations; pH 8	716
+number of cells after 5 generations; 1M NaCl	717
+number of cells after 5 generations; minimal + his/leu/ura	718
+number of cells after 15 generations; Nystatin 10uM	719
+number of cells after 5 generations; Nystatin 10uM	720
+number of cells after 5 generations; minimal complete	721
+number of cells after 5 generations; lys minus	722
+number of cells after 5 generations; trp minus	723
+number of cells after 5 generations; thr minus	724
+size of cells in log phase	725
+shape (elongate) of cells in log phase	726
+shape (round) of cells in log phase	727
+aggregation of cells in log phase	728
+shape (football) of cells in log phase	729
