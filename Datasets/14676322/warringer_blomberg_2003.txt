@@ -1,4 +1,4 @@
-ORF	Growth, lag phase; NaCl, 0.85 M	Growth, exponential growth rate; NaCl, 0.85 M	Growth, saturation level; NaCl, 0.85 M
+ORF	hap a | growth (lag phase) | sodium chloride [0.85 M] | Warringer J~Blomberg A, 2003	hap a | growth (exponential growth rate) | sodium chloride [0.85 M] | Warringer J~Blomberg A, 2003	hap a | growth (stationary phase cell density) | sodium chloride [0.85 M] | Warringer J~Blomberg A, 2003
 YAL068C	0.083	-0.019	0.070
 YAL067C	-0.032	0.046	0.025
 YAL066W	-0.029	-0.011	-0.081
