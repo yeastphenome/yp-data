@@ -1,0 +1,4 @@
+111	hap a | growth (spot assay) | methyl methanesulfonate [0.01-0.03%] | Begley TJ~Samson LD, 2004
+543	hap a | growth (spot assay) | Di-tert-butyl peroxide [0.50-1.25 mM] | Begley TJ~Samson LD, 2004
+544	hap a | growth (spot assay) | 4-nitroquinoline N-oxide [0.2-0.5 ug/ml] | Begley TJ~Samson LD, 2004
+545	hap a | growth (spot assay) | UV (ultraviolet light [40-125 J/m2]) | Begley TJ~Samson LD, 2004
