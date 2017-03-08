@@ -1,4 +1,4 @@
-ORF	growth;hypoxia
+ORF	hap alpha | growth (undefined) | polysorbate 80 [5 mg/ml], ergosterol [20 ug/ml], oxygen level [0%] | Reiner S~Schneiter R, 2006
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
