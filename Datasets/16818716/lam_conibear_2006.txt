@@ -1,4 +1,4 @@
-ORF	polytopic membrane protein trafficking;
+ORF	hap a/hap alpha/hom | transport to/from membrane (Chs3) | standard [standard] | Lam KK~Conibear E, 2006
 YBL061C	0.290
 YBR023C	0.300
 YJL099W	0.300
