@@ -1,0 +1,21 @@
+472	hom | growth (relative abundance in pooled culture) | YPGal [standard] | Giaever G~Johnston M, 2002
+710	hom | growth (relative abundance in pooled culture) | glucitol [1.5 M] | Giaever G~Johnston M, 2002
+711	hom | growth (relative abundance in pooled culture) | histidine [2%], leucine [10%], uracil [2%], minimal complete [standard] | Giaever G~Johnston M, 2002
+712	hom | growth (relative abundance in pooled culture) | sodium chloride [1 M] | Giaever G~Johnston M, 2002
+713	hom | growth (relative abundance in pooled culture) | pH [8] | Giaever G~Johnston M, 2002
+714	hom | growth (relative abundance in pooled culture) | YPGal [standard] | Giaever G~Johnston M, 2002
+715	hom | growth (relative abundance in pooled culture) | glucitol [1.5 M] | Giaever G~Johnston M, 2002
+716	hom | growth (relative abundance in pooled culture) | pH [8] | Giaever G~Johnston M, 2002
+717	hom | growth (relative abundance in pooled culture) | sodium chloride [1 M] | Giaever G~Johnston M, 2002
+718	hom | growth (relative abundance in pooled culture) | histidine [2%], leucine [10%], uracil [2%], minimal complete [standard] | Giaever G~Johnston M, 2002
+719	hom | growth (relative abundance in pooled culture) | nystatin [10 uM] | Giaever G~Johnston M, 2002
+720	hom | growth (relative abundance in pooled culture) | nystatin [10 uM] | Giaever G~Johnston M, 2002
+721	hom | growth (relative abundance in pooled culture) | minimal complete [standard] | Giaever G~Johnston M, 2002
+722	hom | growth (relative abundance in pooled culture) | minimal complete -Lys [standard] | Giaever G~Johnston M, 2002
+723	hom | growth (relative abundance in pooled culture) | minimal complete -Trp [standard] | Giaever G~Johnston M, 2002
+724	hom | growth (relative abundance in pooled culture) | minimal complete -Thr [standard] | Giaever G~Johnston M, 2002
+725	hom | cell size | YPAD [standard] | Giaever G~Johnston M, 2002
+726	hom | elongated cell shape | YPAD [standard] | Giaever G~Johnston M, 2002
+727	hom | round cell shape | YPAD [standard] | Giaever G~Johnston M, 2002
+728	hom | clumped cell shape | YPAD [standard] | Giaever G~Johnston M, 2002
+729	hom | football cell shape | YPAD [standard] | Giaever G~Johnston M, 2002

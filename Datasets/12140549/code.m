@@ -6,6 +6,14 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 giaever_johnston_2002.pmid = 12140549;
 
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(giaever_johnston_2002.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
 %% First set of data: growth in various conditions
 
 % Load the phenotype mapping file
@@ -164,21 +172,42 @@ all_data3(ind2,1:length(phenotypes)) = all_data(ind1,:);
 [~,ind1,ind2] = intersect(all_hit_strains2, all_orfs3);
 all_data3(ind2,length(phenotypes)+1:length(phenotypes)+length(morphology_phenotypes)) = all_hit_data2(ind1,:);
 
+[FILENAMES{end+1}, phenotype_datasetid] = read_data('textread','./extras/phenotype_datasetids.txt','%s %d','delimiter','\t');
+[~,ind1,ind2] = intersect(all_phenotypes3, phenotype_datasetid{1});
+
+hit_data_ids = zeros(length(all_phenotypes3),1);
+hit_data_ids(ind1) = phenotype_datasetid{2}(ind2);
+
 
 %% Prepare final dataset
 
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
 % If the dataset is quantitative:
 giaever_johnston_2002.orfs = all_orfs3;
-giaever_johnston_2002.ph = all_phenotypes3;
+giaever_johnston_2002.ph = hit_data_names;
 giaever_johnston_2002.data = all_data3;
+giaever_johnston_2002.dataset_ids = hit_data_ids;
 
 %% Save
 
 save('./giaever_johnston_2002.mat','giaever_johnston_2002');
 
+%% Print out
+
 fid = fopen('./giaever_johnston_2002.txt','w');
 write_matrix_file(fid, giaever_johnston_2002.orfs, giaever_johnston_2002.ph, giaever_johnston_2002.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(giaever_johnston_2002)
+end
 
 end
 

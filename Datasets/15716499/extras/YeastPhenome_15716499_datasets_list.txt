@@ -1,0 +1,4 @@
+521	het | growth (relative abundance in pooled culture) | YPD [standard] | Deutschbauer AM~Giaever G, 2005
+522	het | growth (relative abundance in pooled culture) | minimal complete [standard] | Deutschbauer AM~Giaever G, 2005
+5257	hom | growth (relative abundance in pooled culture) | YPD [standard] | Deutschbauer AM~Giaever G, 2005
+5258	hom | growth (relative abundance in pooled culture) | minimal complete [standard] | Deutschbauer AM~Giaever G, 2005

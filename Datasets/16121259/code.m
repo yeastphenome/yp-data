@@ -24,7 +24,7 @@ hit_strains = data(2:end,1);
 hit_screens = data(1,8:3:end)';
 
 % Get the data itself
-hit_data = cell2mat(data(2:end,8:3:end));
+hit_data = -cell2mat(data(2:end,8:3:end));  % taking the opposite because, by convention, lower values should correspond to lower growth, and viceversa.
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);

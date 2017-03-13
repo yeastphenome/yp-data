@@ -1,0 +1,9 @@
+548	hap a | slight shmoo | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+593	hap a | cell size | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+595	hap a | round cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+596	hap a | pointed cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+597	hap a | elongated cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+598	hap a | pseudohyphal-like cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+599	hap a | clumped cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+600	hap a | budding cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006
+601	hap a | polarized bud growth cell shape | YPD [standard] | Narayanaswamy R~Marcotte EM, 2006

@@ -1,4 +1,4 @@
-ORF	growth (pooled CFU);Htt103Q
+ORF	hap a | growth (pooled CFU) | expression of mutant huntingtin fragment [GAL] | Giorgini F~Muchowski PJ, 2005
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
@@ -3191,8 +3191,8 @@ YLR283W	0.000
 YLR284C	0.000
 YLR285W	0.000
 YLR286C	0.000
-YLR287C-A	0.000
 YLR287C	0.000
+YLR287C-A	0.000
 YLR288C	0.000
 YLR289W	0.000
 YLR290C	0.000
