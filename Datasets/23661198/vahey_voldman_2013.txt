@@ -1,4 +1,4 @@
-ORF	conductivity;electrical frequency of 300 kHz	conductivity;electrical frequency of 10 MHz
+ORF	hom/het | electrical properties | standard [standard] | Vahey MD~Voldman J, 2013	hom/het | electrical properties | standard [standard] | Vahey MD~Voldman J, 2013
 YAL004W	0.100	0.184
 YAL005C	1.302	0.079
 YAL008W	0.707	0.505
