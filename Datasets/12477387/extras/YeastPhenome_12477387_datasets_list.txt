@@ -1,0 +1,2 @@
+477	hom | cell size | standard [standard] | Zhang J~Schneider BL, 2002
+5384	het | cell size | standard [standard] | Zhang J~Schneider BL, 2002

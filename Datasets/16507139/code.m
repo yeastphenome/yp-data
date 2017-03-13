@@ -6,9 +6,16 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 narayanaswamy_marcotte_2006.pmid = 16507139;
 
-treatments = {'standard'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
 
-% Load data
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(narayanaswamy_marcotte_2006.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+
+%% Load data
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/gb-2006-7-1-r6-s2.xlsx');
 
 orfs = data.raw(41:end,1);
@@ -17,9 +24,10 @@ phenotypes = data.raw(40,2:47)';
 
 orfs = clean_orf(orfs);
 
+orfs(strcmp('YLR287-A', orfs)) = {'YLR287C-A'};
+
 inds = find(~is_orf(orfs));
 disp(orfs(inds));
-orfs(strcmp('YLR287-A', orfs)) = {'YLR287C-A'};
 
 raw_data = cell2mat(raw_data);
 
@@ -49,9 +57,10 @@ raw_data2(:,[inds_other; inds_normal]) = [];
 
 % Map the phenotypes to a common standard
 [FILENAMES{end+1}, tmp] = read_data('xlsread', './raw_data/phenotype_mapping.xlsx','Sheet1');
-phmap.ph_old = tmp(2:end,1);
+phmap.ph_old = tmp(3:end,1);
 phmap.ph_new = tmp(1,2:end)';
-phmap.mat = cell2mat(tmp(2:end,2:end));
+hit_data_ids = cell2mat(tmp(2,2:end)');
+phmap.mat = cell2mat(tmp(3:end,2:end));
 
 raw_data3 = zeros(size(raw_data2,1), length(phmap.ph_new));
 for i = 1 : length(phenotypes2)
@@ -62,18 +71,38 @@ end
 
 % Note: some of the phenotypes cancel each other out (e.g., small and large cells) because they were both annotated to the same ORFs.
 
-[t,t2] = grpstats(raw_data3, orfs,{'mean','gname'});
+[hit_data,hit_orfs] = grpstats(raw_data3, orfs,{'mean','gname'});
 
-narayanaswamy_marcotte_2006.orfs = t2;
-narayanaswamy_marcotte_2006.data = t;
-narayanaswamy_marcotte_2006.ph = strcat(phmap.ph_new', '; ', treatments);
-narayanaswamy_marcotte_2006.ph = narayanaswamy_marcotte_2006.ph';
+
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is quantitative:
+narayanaswamy_marcotte_2006.orfs = hit_orfs;
+narayanaswamy_marcotte_2006.ph = hit_data_names;
+narayanaswamy_marcotte_2006.data = hit_data;
+narayanaswamy_marcotte_2006.dataset_ids = hit_data_ids;
+
+%% Save
 
 save('./narayanaswamy_marcotte_2006.mat','narayanaswamy_marcotte_2006');
+
+%% Print out
 
 fid = fopen('./narayanaswamy_marcotte_2006.txt','w');
 write_matrix_file(fid, narayanaswamy_marcotte_2006.orfs, narayanaswamy_marcotte_2006.ph, narayanaswamy_marcotte_2006.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(narayanaswamy_marcotte_2006)
+end
 
 end
 

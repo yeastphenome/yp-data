@@ -1,4 +1,4 @@
-ORF	growth;IpgB2 effector protein
+ORF	hap a | growth (colony size) | IpgB2 effector protein [unknown] | Alto NM~Dixon JE, 2006
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000

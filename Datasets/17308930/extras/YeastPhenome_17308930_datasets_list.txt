@@ -1,0 +1,5 @@
+5246	hap alpha | growth (streaks on agar) | ethylenediaminetetraacetic acid [1 mM] | Wang J~Zhou B, 2007
+5247	hap alpha | growth (streaks on agar) | copper(II) sulfate [4mM] | Wang J~Zhou B, 2007
+5248	hap alpha | growth (streaks on agar) | iron sulfate pentahydrate [5 mM] | Wang J~Zhou B, 2007
+5249	hap alpha | growth (streaks on agar) | manganese(II) chloride [2 mM] | Wang J~Zhou B, 2007
+5250	hap alpha | growth (streaks on agar) | zinc sulfate [2 mM] | Wang J~Zhou B, 2007

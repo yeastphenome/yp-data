@@ -18,24 +18,32 @@ datasets.standard_name = d{2};
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/pone.0029798.s003.xlsx', 'elescomol');
 
 % Get the list of ORFs
-strains = data(2:end, 1);
+strains = data(:, 1);
 
 % Clean up ORFs
 strains = cellfun(@(x) strtok(x, ':'), strains, 'UniformOutput', false); 
 strains = clean_orf(strains);
 
+%% Get data from hits
+
+hit_data = nan(length(strains),2);
+
+inds = find(~cellfun(@isnumeric, data(:,3)));
+data(inds,3) = {NaN};
+
+% Roughly separate HET from HOM using the list of essential genes (only way
+% possible, at this stage)
+[FILENAMES{end+1}, essential_genes] = read_data('textread', './extras/essential_genes_151215.txt', '%s');
+inds = find(~ismember(strains, essential_genes));
+hit_data(inds,1) = cell2mat(data(inds,3));
+inds = find(ismember(strains, essential_genes));
+hit_data(inds,2) = cell2mat(data(inds,3));
+
+
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(strains));
 strains(inds) = [];
-
-%% Get data from hits
-% Find the rows with het
-ind_het = find(~cellfun(@isnumeric, data(2:end, 15)));
-% Make a data matrix
-hit_data = zeros(length(strains), 2);
-hit_data(:, 1) = cell2mat(data(2:end, 3)); 
-hit_data(ind_het, 2) = hit_data(ind_het, 1);
-hit_data(ind_het, 1) = NaN;
+hit_data(inds,:) = [];
 
 % Average any repeated value
 [strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
