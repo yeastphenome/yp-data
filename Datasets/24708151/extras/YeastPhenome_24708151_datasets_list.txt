@@ -1,0 +1,4 @@
+453	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPE [2%] | Schlecht U~St Onge RP, 2014
+690	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPG [2%] | Schlecht U~St Onge RP, 2014
+691	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPL [2%] | Schlecht U~St Onge RP, 2014
+692	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPD [standard] | Schlecht U~St Onge RP, 2014
