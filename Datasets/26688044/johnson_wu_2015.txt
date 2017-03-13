@@ -1,4 +1,4 @@
-ORF	growth;NaAsO2, 0.2 mM	growth;NaAsO2, 0.4 mM
+ORF	hom | growth (culture turbidity) | sodium arsenite [0.2 mM] | Johnson AJ~Wu MJ, 2015	hom | growth (culture turbidity) | sodium arsenite [0.4 mM] | Johnson AJ~Wu MJ, 2015
 YAL002W	0.527	1.148
 YAL004W	0.924	1.742
 YAL005C	0.851	1.681
