@@ -14,45 +14,39 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load the data
+
 [FILENAMES{end+1}, data_sens.raw] = read_data('xlsread','./raw_data/1471-2164-15-528-s1.xlsx', 'Top sensitive strains');
 
 hits_orfs1 = data_sens.raw(2:end,1);
 hits_data1 = -cell2mat(data_sens.raw(2:end,3));
 
-hits_orfs1 = strtrim(upper(hits_orfs1));
+hits_orfs1 = clean_orf(hits_orfs1);
 
-inds = find(~strncmp('Y', hits_orfs1,1));
-hits_orfs1(inds) = [];
-hits_data1(inds,:) = [];
+hits_orfs1(ismember(hits_orfs1, {'YJL206-A'})) = {'YJL206C-A'};
 
-[t,t2] = grpstats(hits_data1,hits_orfs1,{'gname','mean'});
-hits_orfs1 = t;
-hits_data1 = t2;
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hits_orfs1));
+disp(hits_orfs1(inds));  
 
-% Load data (2)
+%% Load data (2)
+
 [FILENAMES{end+1}, data_res.raw] = read_data('xlsread','./raw_data/1471-2164-15-528-s1.xlsx', 'Top resistant strains');
 
 hits_orfs2 = data_res.raw(2:end,1);
 hits_data2 = -cell2mat(data_res.raw(2:end,3));
 
-hits_orfs2 = strtrim(upper(hits_orfs2));
+hits_orfs2 = clean_orf(hits_orfs2);
 
-inds = find(~strncmp('Y', hits_orfs2,1));
-hits_orfs2(inds) = [];
-hits_data2(inds,:) = [];
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hits_orfs2));
+disp(hits_orfs2(inds));  
 
-[t,t2] = grpstats(hits_data2,hits_orfs2,{'gname','mean'});
-hits_orfs2 = t;
-hits_data2 = t2;
+%% Combine part1 and part2
 
-% Eliminate overlap between sensitive and resistant strains?
-[~,ind1,ind2] = intersect(hits_orfs1, hits_orfs2);
-hits_orfs1(ind1) = []; hits_data1(ind1,:) = [];
-hits_orfs2(ind2) = []; hits_data2(ind2,:) = [];
-
-% Combine part1 and part2
 hits_orfs = [hits_orfs1; hits_orfs2];
 hits_data = [hits_data1; hits_data2];
+
+[hits_orfs, hits_data] = grpstats(hits_data, hits_orfs,{'gname','mean'});
 
 %% Tested strains
 
@@ -60,16 +54,24 @@ hits_data = [hits_data1; hits_data2];
 [FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/CompleteDeletionLibrary.xlsx');
 tested_orfs = tested.raw(2:end,1);
 
-% Remove all indices without a name
-inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
-tested_orfs(inds) = [];
+% Eliminate all white spaces & capitalize
+tested_orfs = clean_orf(tested_orfs);
+
+% If possible, fix the typo
+tested_orfs(ismember(tested_orfs, {'YAR002AW'})) = {'YAR002W-A'};
+tested_orfs(ismember(tested_orfs, {'YOLO57W'})) = {'YOL057W'};
+tested_orfs(ismember(tested_orfs, {'YKLO72W'})) = {'YKL072W'};
+tested_orfs(ismember(tested_orfs, {'YJL206-A'})) = {'YJL206C-A'};
+tested_orfs(ismember(tested_orfs, {'YLR287-A'})) = {'YLR287C-A'};
+tested_orfs(ismember(tested_orfs, {'YFL033AC'})) = {'YFL033C-A'};
+tested_orfs(ismember(tested_orfs, {'YOLO62C'})) = {'YOL062C'};
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_orfs));
+disp(tested_orfs(inds)); 
 
 % Take the unique set
-tested_orfs = unique(strtrim(upper(tested_orfs)));
-
-% Remove non-relevant indices
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+tested_orfs = unique(tested_orfs);
 
 % Make sure that all the hits are part of the tested set
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
@@ -109,7 +111,7 @@ fclose(fid);
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(deutschbauer_giaevere_2005)
+    res = save_data_to_db(gaupel_tenniswood_2004)
 end
 
 end
