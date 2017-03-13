@@ -48,6 +48,9 @@ concentration_two = concentration_two ./ water;
 % Add to make final data
 hit_data = [concentration_one concentration_two];
 
+% Remove the Inf
+hit_data(isinf(hit_data)) = NaN;
+
 % Average any repeated value
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
