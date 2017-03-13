@@ -1,4 +1,4 @@
-ORF	growth;CG-1521
+ORF	hap a | growth (spot assay) | CG-1521 [55-75 uM] | Gaupel AC~Tenniswood M, 2014
 YAL002W	1.000
 YAL004W	0.000
 YAL005C	0.000
