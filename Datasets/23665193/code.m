@@ -14,6 +14,7 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load data
+
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/data_from_S1_PDF.xlsx', 'Mutants');
 data.raw(1,:) = [];
 
@@ -23,13 +24,13 @@ data2.genenames = [data.raw(:,1); data.raw(:,4); data.raw(:,7); data.raw(:,10)];
 % Get the data
 data2.data = [data.raw(:,2:3); data.raw(:,5:6); data.raw(:,8:9); data.raw(:,11:12)];
 
+% Clean gene names
+data2.genenames = clean_genename(data2.genenames);
+
 % Remove all names that are not genes
 inds = find(cellfun(@isnumeric, data2.genenames));
 data2.genenames(inds) = [];
 data2.data(inds,:) = [];
-
-% Clean gene names
-data2.genenames = upper(clean_genename(data2.genenames));
 
 % Remove all names that are not genes
 inds = find(~is_genename(data2.genenames) & ~is_orf(data2.genenames));
@@ -50,10 +51,12 @@ data2.data = nanmean(data2.data,2);
 hit_data_ids = [94];
 
 %% Load controls
+
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/data_from_S1_PDF.xlsx', 'CTRL');
 data.raw(1,:) = [];
 ctrl_data = [data.raw(:,2:3); data.raw(:,5:6); data.raw(:,8:9); data.raw(:,11:12)];
 ctrl_data = reshape(ctrl_data,[],1);
+
 inds = find(~cellfun(@isnumeric, ctrl_data));
 ctrl_data(inds) = [];
 ctrl_data = cell2mat(ctrl_data);
