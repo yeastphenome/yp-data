@@ -1,0 +1,6 @@
+177	hap alpha | growth (spot assay) | (S)-lactic acid [3.1% w/v], pH [2.9] | Kawahata M~Iefuji H, 2006
+418	hap alpha | growth (spot assay) | hydrogen chloride [0.28% w/v], pH [2.4] | Kawahata M~Iefuji H, 2006
+419	hap alpha | growth (spot assay) | hydrogen chloride [0.24% w/v], pH [2.6] | Kawahata M~Iefuji H, 2006
+420	hap alpha | growth (spot assay) | acetic acid [0.5% w/v], pH [4.2] | Kawahata M~Iefuji H, 2006
+421	hap alpha | growth (spot assay) | acetic acid [0.4% w/v], pH [4.3] | Kawahata M~Iefuji H, 2006
+422	hap alpha | growth (spot assay) | (S)-lactic acid [5.1% w/v], pH [2.7] | Kawahata M~Iefuji H, 2006
