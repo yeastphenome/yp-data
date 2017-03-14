@@ -14,15 +14,22 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load tested
+
 [FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/YSC1054Y.copy.xlsx', 'mat_alpha_obs');
 tested_orfs = tested.raw(2:end,2);
 
-inds = cellfun(@isnumeric, tested_orfs);
+tested_orfs = clean_orf(tested_orfs);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_orfs));
+disp(tested_orfs(inds));
+
 tested_orfs(inds) = [];
 
-tested_orfs = unique(upper(clean_orf(tested_orfs)));
+tested_orfs = unique(tested_orfs);
 
 %% Load data
+
 [FILENAMES, hits_genenames_R] = read_data('textscan', './raw_data/hits_genenames_R.txt', '%s');
 
 % Clean the names
