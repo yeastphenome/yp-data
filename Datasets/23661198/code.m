@@ -15,10 +15,11 @@ datasets.standard_name = d{2};
 
 %% Load Hit Strains
 % Load file
-[FILENAMES{end+1}, data] = read_data('textscan','./raw_data/ESI_DATA_SET.txt', '%s %s %s %s %f %f %f %f');
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/c3lc50162k.xlsx', 'Sheet1');
 
 % Get the list of ORFs
-strains = data{1};
+strains = data(:,1);
+hit_data = data(:,3:4);
 
 % Clean up ORFs
 strains = clean_orf(strains);
@@ -27,20 +28,21 @@ strains = clean_orf(strains);
 inds = find(~is_orf(strains));
 disp(strains(inds)); 
 
+strains(inds,:) = [];
+hit_data(inds,:) = [];
+
 % Get data from hits
-hit_data = [data{3} data{4}];
-hit_data = cellfun(@str2num, hit_data, 'UniformOutput',0);
-indx = cellfun(@isempty, hit_data);
-hit_data(indx) = {NaN};
 hit_data = cell2mat(hit_data);
 
 % Average any repeated value
 [strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
 
+hit_data = nanmean(hit_data,2);
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [95; 776];
+hit_data_ids = [95];
 
 %% Prepare final dataset
 
