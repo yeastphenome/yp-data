@@ -1,4 +1,4 @@
-ORF	Growth, OD;Sulfanilamide, 0.1 mg/ml, 77 h	Growth, OD;Sulfanilamide, 0.1 mg/ml, 120 h
+ORF	hap alpha | growth (culture turbidity) | sulfanilamide [0.1 mg/ml], time [77 h] | Botet J~Santos MA, 2007	hap alpha | growth (culture turbidity) | sulfanilamide [0.1 mg/ml], time [120 h] | Botet J~Santos MA, 2007
 YAL064C-A	0.924	0.984
 YBL091C-A	0.887	1.024
 YBR269C	0.893	1.035
@@ -2204,7 +2204,7 @@ YER046W-A	1.077	1.117
 YER047C	1.117	1.140
 YER048C	0.838	0.992
 YER049W	0.979	1.076
-YER050C	1.000	1.224
+YER050C	0.970	1.165
 YER051W	0.971	1.016
 YER052C	1.068	0.974
 YER053C	1.000	1.021
@@ -4770,8 +4770,7 @@ YPR200C	1.030	1.169
 YPR201W	1.068	1.196
 YER028C	0.811	1.044
 YER044C	0.371	1.090
-YER050?	0.941	1.106
-YER055C?	0.994	1.094
+YER055C	0.994	1.094
 YER014W	0.396	0.887
 YMR038C	1.226	1.310
 YDR269C	0.996	1.153
