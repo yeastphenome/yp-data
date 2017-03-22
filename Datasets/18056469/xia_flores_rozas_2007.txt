@@ -1,4 +1,4 @@
-ORF	growth (colony size);doxorubicin [20 umol/L]
+ORF	hap a | growth (spot assay) | doxorubicin [20 umol/L] | Xia L~Flores-Rozas H, 2007
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
