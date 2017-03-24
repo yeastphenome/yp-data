@@ -26,43 +26,46 @@ end
 % Get indices of the data columns
 ind_data = 2:19;
 
+hit_strains = data.raw(:,1);
+hit_data = data.raw(:,ind_data);
+
 % Eliminate all white spaces & capitalize
-data.raw(:,1) = clean_orf(data.raw(:,1));
+hit_strains = clean_orf(hit_strains);
+
+hit_strains(ismember(hit_strains, {'YLR287-A'})) = {'YLR287C-A'};
+
+inds = find(~is_orf(hit_strains));
+disp(hit_strains(inds));
+hit_strains(inds) = [];
+hit_data(inds,:) = [];
 
 % If in gene name form, transform into ORF name
-data.raw(:,1) = translate(data.raw(:,1));
-
-% Find anything that doesn't look like an ORF
-temp = data.raw(:,1);
-temp(ismember(data.raw(:,1), {'YLR287-A'})) = {'YLR287C-A'};
-data.raw(:,1) = temp;
-inds = find(~is_orf(data.raw(:,1)));
-data.raw(inds, :) = [];
+[hit_strains, translated, ambiguous] = translate(hit_strains);
 
 % Make sure all the data are numbers
-t = data.raw(:,ind_data);
-inds = find(~cellfun(@isnumeric, t));
-t(inds) = {NaN};
+inds = find(~cellfun(@isnumeric, hit_data));
+hit_data(inds) = {NaN};
+
+hit_data = cell2mat(hit_data);
 
 ind_data_conc1 = [1 2 7 8 13 14];
 ind_data_conc2 = [3 4 9 10 15 16];
 ind_data_conc3 = [5 6 11 12 17 18];
 
-data2.orfs = upper(data.raw(:,1));
-data2.data(:,1) = nanmean(cell2mat(t(:,ind_data_conc1)),2);
-data2.data(:,2) = nanmean(cell2mat(t(:,ind_data_conc2)),2);
-data2.data(:,3) = nanmean(cell2mat(t(:,ind_data_conc3)),2);
+hit_data2(:,1) = nanmean(hit_data(:,ind_data_conc1),2);
+hit_data2(:,2) = nanmean(hit_data(:,ind_data_conc2),2);
+hit_data2(:,3) = nanmean(hit_data(:,ind_data_conc3),2);
 
 % Normalize to no drug
-data2.data(:,2) = data2.data(:,2) ./ data2.data(:,1);
-data2.data(:,3) = data2.data(:,3) ./ data2.data(:,1);
-data2.data(:,1) = [];
+hit_data2(:,2) = hit_data2(:,2) ./ hit_data2(:,1);
+hit_data2(:,3) = hit_data2(:,3) ./ hit_data2(:,1);
+hit_data2(:,1) = [];
 
 concentrations = unique(crr(:,1));
 concentrations(1) = [];
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data2.data, data2.orfs, {'gname','mean'});
+[hit_strains, hit_data] = grpstats(hit_data2, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -77,9 +80,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-chesi_gitler_2012.orfs = t;
+chesi_gitler_2012.orfs = hit_strains;
 chesi_gitler_2012.ph = hit_data_names;
-chesi_gitler_2012.data = t2;
+chesi_gitler_2012.data = hit_data;
 chesi_gitler_2012.dataset_ids = hit_data_ids;
 
 %% Save
