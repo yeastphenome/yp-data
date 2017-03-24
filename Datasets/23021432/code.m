@@ -29,8 +29,10 @@ inds = find(~is_orf(hits_orfs));
 hits_orfs(inds) = [];
 hits_scores(inds, :) = [];
 
-% If in gene name form, transform into ORF name
-hits_orfs = translate(hits_orfs);
+% Translate to correct for old aliases that look like ORFs
+[hits_orfs, translated, ambiguous] = translate(hits_orfs);
+disp(hits_orfs(find(translated)));
+disp(hits_orfs(find(ambiguous)));
 
 % Convert to numeric from cell
 hits_scores = cell2mat(hits_scores);
