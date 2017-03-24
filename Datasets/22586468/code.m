@@ -20,26 +20,29 @@ datasets.standard_name = d{2};
 % Get indices of the data columns
 ind_data = 5:8;
 
-% Eliminate anything that doesn't look like an ORF
-inds = find(~is_orf(data.raw(:,1)));
-data.raw(inds,:) = [];
+hit_strains = data.raw(:,1);
+hit_data = data.raw(:,ind_data);
 
 % Eliminate white spaces before/after ORF
-data.raw(:,1) = clean_orf(data.raw(:,1));
+hit_strains = clean_orf(hit_strains);
 
-% Retrieve the data from the data set
-data2.data = data.raw(:,ind_data);
+% Eliminate anything that doesn't look like an ORF
+inds = find(~is_orf(hit_strains));
+disp(hit_strains(inds));
+
+hit_strains(inds) = [];
+hit_data(inds,:) = [];
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, data2.data)==0);
-data2.data(inds) = {NaN};
-data2.data = cell2mat(data2.data);
+inds = find(~cellfun(@isnumeric, hit_data));
+hit_data(inds) = {NaN};
+hit_data = cell2mat(hit_data);
 
 % If in gene name form, transform into ORF name
-data.raw(:,1) = translate(data.raw(:,1));
+[hit_strains, translated, ambiguous] = translate(hit_strains);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data2.data, data.raw(:,1), {'gname','mean'});
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -54,9 +57,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-peyroche_plateau_2012.orfs = t;
+peyroche_plateau_2012.orfs = hit_strains;
 peyroche_plateau_2012.ph = hit_data_names;
-peyroche_plateau_2012.data = t2;
+peyroche_plateau_2012.data = hit_data;
 peyroche_plateau_2012.dataset_ids = hit_data_ids;
 
 %% Save
