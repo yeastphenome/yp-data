@@ -1,0 +1,4 @@
+57	hap a | growth (relative abundance in pooled culture) | sodium selenide [1 uM], time [16 h] | Peyroche G~Plateau P, 2012
+58	hap a | growth (relative abundance in pooled culture) | sodium selenide [2 uM], time [16 h] | Peyroche G~Plateau P, 2012
+525	hap a | growth (relative abundance in pooled culture) | sodium selenide [1 uM], time [27 h] | Peyroche G~Plateau P, 2012
+526	hap a | growth (relative abundance in pooled culture) | sodium selenide [2 uM], time [27 h] | Peyroche G~Plateau P, 2012
