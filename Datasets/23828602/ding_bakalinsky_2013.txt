@@ -1,4 +1,4 @@
-ORF	growth [pooled CFU];acetic acid [122.5 mM]
+ORF	hap alpha | growth (pooled CFU) | acetic acid [122.5 mM] | Ding J~Bakalinsky AT, 2013
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
