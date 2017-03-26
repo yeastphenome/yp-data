@@ -32,7 +32,7 @@ hit_data = -cell2mat(data(5:end, 6));
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(strains));
 strains(inds) = [];
-hit_data(inds) = [];
+hit_data(inds,:) = [];
 
 % Average any repeated value
 [strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
@@ -40,7 +40,7 @@ hit_data(inds) = [];
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [519; 755];
+hit_data_ids = [519];
 
 %% Prepare final dataset
 
