@@ -81,14 +81,16 @@ all_data2.platerowcol = cellfun(@str2num, tmp2);
 all_data2.orfs = cell(size(all_data2.platerowcol,1),1);
 all_data2.orfs(ia) = map.raw(ib,2);
 
+% Clean the orfs
+all_data2.orfs = clean_orf(all_data2.orfs);
+
+all_data2.orfs(strcmp('YLR287-A', all_data2.orfs)) = {'YLR287C-A'};
+
 % Eliminate indices without ORFs
 inds = find(~is_orf(all_data2.orfs));
 all_data2.orfs(inds) = [];
 all_data2.platerowcol(inds,:) = [];
 all_data2.norm_data(inds) = [];
-
-% Clean the orfs
-all_data2.orfs = clean_orf(all_data2.orfs);
 
 % Average data for identical ORFs that appear multiple times
 [t,t2] = grpstats(all_data2.norm_data, all_data2.orfs, {'gname','mean'});
