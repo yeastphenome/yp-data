@@ -1,4 +1,4 @@
-ORF	growth;butanol
+ORF	hap a | growth (culture turbidity) | butan-1-ol [1% v/v] | Gonzalez~Daran JM, 2013
 YAL016C-B	0.609
 YBR072C-A	0.602
 YDR246W-A	0.597
@@ -2897,7 +2897,7 @@ YLR416C	0.539
 YLR239C	0.498
 YLR258W	0.540
 YLR271W	0.540
-YLR287-A	0.573
+YLR287C-A	0.573
 YLR366W	0.548
 YLR401C	0.610
 YLR417W	0.222
