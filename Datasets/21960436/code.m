@@ -34,6 +34,8 @@ tested_orfs = translate(tested_orfs);
 inds = find(~is_orf(tested_orfs));
 tested_orfs(inds) = [];  
 
+tested_orfs = unique(tested_orfs);
+
 %% Load data
 % Hypersensitive
 [FILENAMES{end+1}, hits_genenames_HS] = read_data('textread','./raw_data/hits_genenames_hs.txt', '%s');
@@ -63,11 +65,10 @@ hits_scores_S = zeros(length(hits_orfs_S),1)-1;
 [FILENAMES{end+1}, hits_genenames_R] = read_data('textread','./raw_data/hits_genenames_r.txt', '%s');
 
 % Eliminate all white spaces & capitalize
-hits_genenames_R = upper(clean_genename(hits_genenames_R));
+hits_genenames_R = clean_genename(hits_genenames_R);
 
 % If in gene name form, transform into ORF name
-[hits_orfs_R, translated] = translate(hits_genenames_R);
-hits_orfs_R(~translated) = [];
+hits_orfs_R = translate(hits_genenames_R);
 
 % Get the data itself
 hits_scores_R = zeros(length(hits_orfs_R),1)+1;
@@ -91,8 +92,6 @@ hits_scores = [hits_scores_HS; hits_scores_S; hits_scores_R];
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 
 % Find anything that doesn't look like an ORF
-hits_orfs(strcmp('YHR039C-A', hits_orfs)) = {'YHR039C-B'};
-hits_orfs(strcmp('YBR089C-A', hits_orfs)) = {'YBR090C-A'};
 inds = find(~is_orf(hits_orfs));
 hits_orfs(inds) = [];
 hits_scores(inds) = [];
@@ -113,6 +112,7 @@ hit_data_names(ind2) = datasets.standard_name(ind1);
 dos_santos_sa_correia_2011.orfs = tested_orfs;
 dos_santos_sa_correia_2011.ph = hit_data_names;
 dos_santos_sa_correia_2011.data = zeros(length(tested_orfs), length(dos_santos_sa_correia_2011.ph));
+
 [t,ind1,ind2] = intersect(hits_orfs, tested_orfs);
 dos_santos_sa_correia_2011.data(ind2,1) = hits_scores(ind1);
 
