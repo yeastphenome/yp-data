@@ -25,14 +25,6 @@ strains = data.raw(:,2);
 % Eliminate all white spaces & capitalize
 strains = clean_orf(strains);
 
-% Remove all empty spaces
-inds = find(cellfun(@isnumeric, strains));
-strains(inds) = [];
-data.raw(inds, :) = [];
-
-% If in gene name form, transform into ORF name
-strains = translate(strains);
-
 % Eliminate anything that doesn't look like an ORF
 strains(ismember(strains, {'YAR002AW'})) = {'YAR002W'};
 strains(ismember(strains, {'YOLO57W'})) = {'YOL057W'};
@@ -41,9 +33,14 @@ strains(ismember(strains, {'YJL206-A'})) = {'YJL206C'};
 strains(ismember(strains, {'YLR287-A'})) = {'YLR287C-A'};
 strains(ismember(strains, {'YFL033AC'})) = {'YFL033C'};
 strains(ismember(strains, {'YOLO62C'})) = {'YOL062C'};
+
 inds = find(~is_orf(strains));
 strains(inds) = [];
 data.raw(inds,:) = [];
+
+% If in gene name form, transform into ORF name
+strains = translate(strains);
+
 
 % Separate deletions from DAMP strains. Personal communication from
 % Peter Svensson: deletions are on plates 1-57, DAMPs are on plates
@@ -52,7 +49,7 @@ data.raw(inds,:) = [];
 dels = 'ABCDEFGH';
 plate = data.raw(:,1);
 for i = 1 : length(dels)
-plate = strtok(plate, dels(i));
+    plate = strtok(plate, dels(i));
 end
 plate = cellfun(@str2num, plate);
 
@@ -64,12 +61,12 @@ data.raw(inds,:) = [];
 raw_data = data.raw(:,4);
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, raw_data)==0);
+inds = find(~cellfun(@isnumeric, raw_data));
 raw_data(inds) = {NaN};
 raw_data = cell2mat(raw_data);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(raw_data, strains, {'gname','mean'});
+[strains, raw_data] = grpstats(raw_data, strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -84,9 +81,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-svensson_samson_2011.orfs = t;
+svensson_samson_2011.orfs = strains;
 svensson_samson_2011.ph = hit_data_names;
-svensson_samson_2011.data = t2;
+svensson_samson_2011.data = raw_data;
 svensson_samson_2011.dataset_ids = hit_data_ids;
 
 %% Save
