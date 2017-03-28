@@ -108,13 +108,14 @@ hit_data_ids = [149];
 hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
-% If the dataset is quantitive
+% If the dataset is discrete/binary and the tested strains were provided separately:
 dos_santos_sa_correia_2011.orfs = tested_orfs;
 dos_santos_sa_correia_2011.ph = hit_data_names;
-dos_santos_sa_correia_2011.data = zeros(length(tested_orfs), length(dos_santos_sa_correia_2011.ph));
+dos_santos_sa_correia_2011.data = zeros(length(dos_santos_sa_correia_2011.orfs),length(dos_santos_sa_correia_2011.ph));
+dos_santos_sa_correia_2011.dataset_ids = hit_data_ids;
 
-[t,ind1,ind2] = intersect(hits_orfs, tested_orfs);
-dos_santos_sa_correia_2011.data(ind2,1) = hits_scores(ind1);
+[~,ind1,ind2] = intersect(hits_orfs, dos_santos_sa_correia_2011.orfs);
+dos_santos_sa_correia_2011.data(ind2,:) = hits_scores(ind1,:);
 
 %% Save
 
@@ -131,7 +132,7 @@ fclose(fid);
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(firstauthor_lastauthor_YYYY)
+    res = save_data_to_db(dos_santos_sa_correia_2011)
 end
 
 end
