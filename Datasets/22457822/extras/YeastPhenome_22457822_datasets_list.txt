@@ -1,0 +1,2 @@
+247	hap a | growth (colony size) | manganese(II) chloride [12 mM] | Chesi A~Gitler AD, 2012
+248	hap a | growth (colony size) | manganese(II) chloride [25 mM] | Chesi A~Gitler AD, 2012

@@ -1,0 +1,2 @@
+537	hap alpha | growth (culture turbidity) | pressure [35 MPa], temperature [24ºC] | Abe F~Minegishi H, 2008
+538	hap alpha | growth (culture turbidity) | pressure [0.1 MPa], temperature [6ºC] | Abe F~Minegishi H, 2008

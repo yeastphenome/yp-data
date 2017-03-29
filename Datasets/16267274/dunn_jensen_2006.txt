@@ -1,4 +1,4 @@
-ORF	Growth, log2 hybridization ratio; EtBr, 25 ug/ml
+ORF	hap a | growth (relative abundance in pooled culture) | ethidium bromide [25 ug/ml] | Dunn CD~Jensen RE, 2006
 YJR120W	0.238
 YHR025W	0.253
 YPR197C	0.258
