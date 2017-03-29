@@ -1,4 +1,4 @@
-ORF	growth [spot assay];lactic acid [5.1% w/v], pH [2.7]	growth [spot assay];lactic acid [3.1% w/v], pH [2.9]	growth [spot assay];HCl [0.28% w/v], pH [2.4]	growth [spot assay];HCl [0.24% w/v], pH [2.6]	growth [spot assay];acetic acid [0.5% w/v], pH [4.2]	growth [spot assay];acetic acid [0.4% w/v], pH [4.3]
+ORF	hap alpha | growth (spot assay) | (S)-lactic acid [5.1% w/v], pH [2.7] | Kawahata M~Iefuji H, 2006	hap alpha | growth (spot assay) | (S)-lactic acid [3.1% w/v], pH [2.9] | Kawahata M~Iefuji H, 2006	hap alpha | growth (spot assay) | hydrogen chloride [0.28% w/v], pH [2.4] | Kawahata M~Iefuji H, 2006	hap alpha | growth (spot assay) | hydrogen chloride [0.24% w/v], pH [2.6] | Kawahata M~Iefuji H, 2006	hap alpha | growth (spot assay) | acetic acid [0.5% w/v], pH [4.2] | Kawahata M~Iefuji H, 2006	hap alpha | growth (spot assay) | acetic acid [0.4% w/v], pH [4.3] | Kawahata M~Iefuji H, 2006
 YAL014C	1.000	0.000	0.000	0.000	1.000	0.000
 YAL016W	0.000	0.000	0.000	-1.000	0.000	-1.000
 YAL021C	0.000	0.000	0.000	-1.000	0.000	-1.000

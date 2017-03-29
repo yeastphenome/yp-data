@@ -1,4 +1,4 @@
-ORF	growth;glyoxal 80mM
+ORF	hom | growth (relative abundance in pooled culture) | glyoxal [20 mM] | Hoon S~Nislow C, 2011
 YGR240C	8.782
 YCR064C	8.551
 YCL016C	8.146

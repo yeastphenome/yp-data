@@ -1,4 +1,4 @@
-ORF	growth;gliotoxin
+ORF	hap a | growth (MIC) | gliotoxin [0.03-16 ug/ml] | Chamilos G~Kontoyiannis DP, 2008
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000

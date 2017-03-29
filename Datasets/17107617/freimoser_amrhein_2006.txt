@@ -1,4 +1,4 @@
-ORF	inorganic polyphosphate abundance;
+ORF	hap a | inorganic phosphate abundance | standard [standard] | Freimoser FM~Amrhein N, 2006
 YHR147C	1.808
 YHR161C	0.864
 YHR198C	1.230
