@@ -4,11 +4,15 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-
 serero_boiteux_2008.pmid = 18514590;
 
-phenotypes = {'growth (colony size)'};
-treatments = {'CdCl2 [100 uM]'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(serero_boiteux_2008.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
 
 % Load tested
 
@@ -54,17 +58,23 @@ txt_files_names = [txt_files_names {rtf_files.name}]';
 
 tested_orfs = [];
 for j = 1 : length(txt_files_names)
-% If filenames ends in "~1" or "a", load the list
-t = regexp(txt_files_names{j},'\.','split');
-if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
-[FILENAMES{end+1}, tst] = read_data('textread',['./raw_data/' txt_files_names{j}], '%s');
-tested_orfs = [tested_orfs; tst(is_orf(tst))];
+    % If filenames ends in "~1" or "a", load the list
+    t = regexp(txt_files_names{j},'\.','split');
+    if strcmp(t{1}(end),'1') | strcmp(t{1}(end),'a')
+        [FILENAMES{end+1}, tst] = read_data('textread',['./raw_data/' txt_files_names{j}], '%s');
+        tested_orfs = [tested_orfs; tst(is_orf(tst))];
+    end
 end
-end
+
+tested_orfs = clean_orf(tested_orfs);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_orfs));
+disp(tested_orfs(inds));  
 
 tested_orfs = unique(tested_orfs);
 
-% Load data
+%% Load data
 [FILENAMES{end+1}, DATA] = read_data('textread','./raw_data/hits_genenames.txt', '%s %s', 'delimiter', '\t');
 
 hits_genenames = DATA{1};
@@ -73,22 +83,48 @@ hits_scores_txt = DATA{2};
 hits_scores = cellfun(@length, hits_scores_txt)+1;
 hits_scores = -hits_scores;
 
+hits_genenames = clean_genename(hits_genenames);
 hits_orfs = translate(hits_genenames);
 
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
 tested_orfs = [tested_orfs; missing];   % 25 ORFs added
 
-serero_boiteux_2008.orfs = tested_orfs;
-serero_boiteux_2008.data = zeros(length(tested_orfs), length(phenotypes));
-[t,ind1,ind2] = intersect(hits_orfs, tested_orfs);
-serero_boiteux_2008.data(ind2,1) = hits_scores(ind1);
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [99];
 
-serero_boiteux_2008.ph = [strcat(phenotypes, '; ', treatments)];
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is discrete/binary and the tested strains were provided separately:
+serero_boiteux_2008.orfs = tested_orfs;
+serero_boiteux_2008.ph = hit_data_names;
+serero_boiteux_2008.data = zeros(length(serero_boiteux_2008.orfs),length(serero_boiteux_2008.ph));
+serero_boiteux_2008.dataset_ids = hit_data_ids;
+
+[~,ind1,ind2] = intersect(hits_orfs, serero_boiteux_2008.orfs);
+serero_boiteux_2008.data(ind2,:) = hits_scores(ind1,:);
+
+%% Save
 
 save('./serero_boiteux_2008.mat','serero_boiteux_2008');
+
+%% Print out
 
 fid = fopen('./serero_boiteux_2008.txt','w');
 write_matrix_file(fid, serero_boiteux_2008.orfs, serero_boiteux_2008.ph, serero_boiteux_2008.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(serero_boiteux_2008)
+end
 
 end
