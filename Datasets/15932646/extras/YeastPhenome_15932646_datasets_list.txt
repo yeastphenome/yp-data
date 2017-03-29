@@ -1,0 +1,2 @@
+186	hap alpha | growth (CFU) | N(6)-hydroxyadenine [1-100 ug/ml] | Stepchenkova EI~Pavlov YI, 2005
+423	hap alpha | mutation frequency | N(6)-hydroxyadenine [1-100 ug/ml] | Stepchenkova EI~Pavlov YI, 2005

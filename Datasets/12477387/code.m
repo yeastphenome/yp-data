@@ -6,6 +6,14 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 zhang_schneider_2002.pmid = 12477387;
 
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(zhang_schneider_2002.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
 phenotypes = {'cell size (mean)'; 'cell size (median)'; 'cell size (mode)'};
 treatments = {'GYPD'};
 
@@ -20,7 +28,7 @@ treatments = {'GYPD'};
 hit_strains = data(:,1);
 
 % Get the data itself
-hit_data = data(:,5:7); % if the dataset is discrete or binary
+hit_data = data(:,5);   % keep just the mean
     
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
@@ -41,15 +49,38 @@ hit_data(inds,:) = [];
 
 hit_data = cell2mat(hit_data);
 
+hit_data2 = nan(length(hit_strains),2);
+
+% Roughly separate HET from HOM using the list of essential genes (only way
+% possible, at this stage)
+[FILENAMES{end+1}, essential_genes] = read_data('textread', './extras/essential_genes_151215.txt', '%s');
+inds = find(~ismember(hit_strains, essential_genes));
+hit_data2(inds,1) = hit_data(inds,1);
+inds = find(ismember(hit_strains, essential_genes));
+hit_data2(inds,2) = hit_data(inds,1);
+
+hit_data = hit_data2;
+
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [477 5384]';
+
 %% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
 zhang_schneider_2002.orfs = hit_strains;
-zhang_schneider_2002.ph = strcat(phenotypes, '; ', treatments);
+zhang_schneider_2002.ph = hit_data_names;
 zhang_schneider_2002.data = hit_data;
+zhang_schneider_2002.dataset_ids = hit_data_ids;
 
 %% Save
 
@@ -60,6 +91,13 @@ save('./zhang_schneider_2002.mat','zhang_schneider_2002');
 fid = fopen('./zhang_schneider_2002.txt','w');
 write_matrix_file(fid, zhang_schneider_2002.orfs, zhang_schneider_2002.ph, zhang_schneider_2002.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(zhang_schneider_2002)
+end
 
 end
 

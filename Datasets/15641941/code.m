@@ -4,17 +4,28 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-
-outten_culotta_2005.source = {'http://www.biochemj.org/bj/388/bj3880093add.pdf'};
-outten_culotta_2005.downloaddate = {'2014-03-10'};
 outten_culotta_2005.pmid = 15641941;
+
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(outten_culotta_2005.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+%% Load the data
 
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/outten_culotta_2005.xlsx', 'Sheet1');
 
 hits_orfs = data.raw(:,1);
 
 % Eliminate white spaces before/after ORF
-hits_orfs = cellfun(@strtrim, hits_orfs,'UniformOutput',0);
+hits_orfs = clean_orf(hits_orfs);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hits_orfs));
+disp(hits_orfs(inds));  
 
 hits_scores = cell2mat(data.raw(:,2));
 
@@ -24,49 +35,74 @@ hits_scores = hits_scores - 5;
 % The 6 hits with no score (not sure why), set to 0
 hits_scores(isnan(hits_scores)) = 0;
 
-phenotypes = {'growth'};
-treatments = {'hyperoxia'};
+% If the same strain is present more than once, average its values
+[hits_orfs, hits_scores] = grpstats(hits_scores, hits_orfs, {'gname','mean'});
 
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [110];
 
-% Load tested genes
+%% Load tested genes
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/Yeast Knockout -BY4741.xlsx', 'mat_a_060701.txt');
 
 tested_orfs = data.raw(2:end,2);
 
-inds = find(cellfun(@isnumeric, tested_orfs));
-tested_orfs(inds) = [];
+% Eliminate all white spaces & capitalize
+tested_strains = clean_orf(tested_orfs);
 
-tested_orfs = cellfun(@strtrim, tested_orfs,'UniformOutput',0);
+tested_strains(find(strcmp('YLR287-A', tested_strains))) = {'YLR287C-A'};
 
-% Eliminate anything that doesn't look like an ORF
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_strains));
+disp(tested_strains(inds));  
 
-tested_orfs = unique(upper(tested_orfs));
+tested_strains(inds) = [];
+
+tested_strains = unique(tested_strains);
 
 % Check if all the hits are in the tested space
-[missing,inds] = setdiff(hits_orfs, tested_orfs);
+[missing,inds] = setdiff(hits_orfs, tested_strains);
 
 % From supplement: MED2 (YDL005C) not available in Mat-a background, was used Mat-alpha
 % instead. So it should be added it to the list of tested
-tested_orfs = [tested_orfs; {'YDL005C'}];
+tested_strains = [tested_strains; {'YDL005C'}];
 
 % YHR039C-A is not in the list of tested set, but it has the alias
 % YHR039C-B, which is in the tested set. So, these are likely to be the same gene, so YHR039C-A should be renamed.
 hits_orfs(strcmp('YHR039C-A', hits_orfs)) = {'YHR039C-B'};
 
-% Create dataset
-outten_culotta_2005.orfs = tested_orfs;
-outten_culotta_2005.data = zeros(length(tested_orfs), length(treatments));
-[t,ind1,ind2] = intersect(outten_culotta_2005.orfs, hits_orfs);
-outten_culotta_2005.data(ind1,:) = hits_scores(ind2,:);
+%% Prepare final dataset
 
-outten_culotta_2005.ph = [strcat(phenotypes, '; ', treatments)];
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is discrete/binary and the tested strains were provided separately:
+outten_culotta_2005.orfs = tested_strains;
+outten_culotta_2005.ph = hit_data_names;
+outten_culotta_2005.data = zeros(length(outten_culotta_2005.orfs),length(outten_culotta_2005.ph));
+outten_culotta_2005.dataset_ids = hit_data_ids;
+
+[~,ind1,ind2] = intersect(hits_orfs, outten_culotta_2005.orfs);
+outten_culotta_2005.data(ind2,:) = hits_scores(ind1,:);
+
+%% Save
 
 save('./outten_culotta_2005.mat','outten_culotta_2005');
+
+%% Print out
 
 fid = fopen('./outten_culotta_2005.txt','w');
 write_matrix_file(fid, outten_culotta_2005.orfs, outten_culotta_2005.ph, outten_culotta_2005.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(outten_culotta_2005)
+end
 
 end

@@ -1,4 +1,4 @@
-ORF	growth (colony size);pH [7.5] CaCl2 [60 mM]
+ORF	hap a | growth (colony size) | calcium dichloride [60 mM], pH [7.5] | Sambade M~Kane PM, 2005
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000

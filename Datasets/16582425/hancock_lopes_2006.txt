@@ -1,4 +1,4 @@
-ORF	Opi-;
+ORF	hap alpha | inositol excretion (inositol excretion) | standard [standard] | Hancock LC~Lopes JM, 2006
 YAL002W	1.000
 YAL004W	0.000
 YAL005C	0.000
@@ -418,7 +418,7 @@ YCL001W-A	0.000
 YCL002C	0.000
 YCL003W	0.000
 YCL005W	1.000
-YCL006C	0.000
+YCL006C	1.000
 YCL007C	0.000
 YCL008C	1.000
 YCL009C	0.000

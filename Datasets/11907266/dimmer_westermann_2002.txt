@@ -1,4 +1,4 @@
-ORF	growth;Gly
+ORF	hom | growth (undefined) | YPG [2%] | Dimmer KS~Westermann B, 2002
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
