@@ -1,4 +1,4 @@
-ORF	abundance of Rpn4;standard
+ORF	hap a | abundance of a specific protein/peptide (Rpn4) | SC -His [standard] | Ju D~Xie Y, 2008
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000

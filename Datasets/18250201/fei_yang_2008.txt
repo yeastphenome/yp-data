@@ -1,4 +1,4 @@
-ORF	number of lipid droplets;YPD
+ORF	hap a | lipid particle number | YPD [standard] | Fei W~Yang H, 2008
 YDR174W	-1.000
 YNL052W	-1.000
 YGR155W	-1.000

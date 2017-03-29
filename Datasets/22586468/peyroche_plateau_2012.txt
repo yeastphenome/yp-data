@@ -1,4 +1,4 @@
-ORF	Growth, log2 ratio; Sodium selenide, 1 uM 16 h	Growth, log2 ratio; Sodium selenide, 2 uM 16 h	Growth, log2 ratio; Sodium selenide, 1 uM 27 h	Growth, log2 ratio; Sodium selenide, 2 uM 27 h
+ORF	hap a | growth (relative abundance in pooled culture) | sodium selenide [1 uM], time [16 h] | Peyroche G~Plateau P, 2012	hap a | growth (relative abundance in pooled culture) | sodium selenide [2 uM], time [16 h] | Peyroche G~Plateau P, 2012	hap a | growth (relative abundance in pooled culture) | sodium selenide [1 uM], time [27 h] | Peyroche G~Plateau P, 2012	hap a | growth (relative abundance in pooled culture) | sodium selenide [2 uM], time [27 h] | Peyroche G~Plateau P, 2012
 YJL101C	0.158	0.196	0.399	0.465
 YDR004W	0.244	0.374	0.613	0.093
 YPL091W	0.107	0.179	0.462	0.444
@@ -3659,7 +3659,7 @@ YBR012C	1.086	1.074	1.042	1.020
 YCR014C	1.078	1.059	1.057	1.055
 YCL047C	1.048	1.079	1.023	1.068
 YOR247W	1.068	1.115	1.047	1.048
-YOL013W-A	1.109	1.072	1.044	1.042
+YOL013W-B	1.109	1.072	1.044	1.042
 YJR087W	1.091	1.066	1.040	1.051
 YPL239W	1.058	1.053	1.059	1.090
 YLR442C	1.060	1.068	1.038	1.057
