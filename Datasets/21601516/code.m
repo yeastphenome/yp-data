@@ -33,10 +33,10 @@ hits_orfs = translate(hits_orfs);
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hits_orfs));
 hits_orfs(inds) = [];
-hits_data(inds) = [];
+hits_data(inds,:) = [];
 
 % If the same strain is present more than once, average its values
-[hits_orfs,hit_data] = grpstats(hits_data,hits_orfs,{'gname','mean'});
+[hits_orfs,hits_data] = grpstats(hits_data, hits_orfs,{'gname','mean'});
 
 %% Load tested
 [FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/YKOmatalpha_GSH_list070508.xlsx');
@@ -56,8 +56,6 @@ tested_orfs(inds) = [];
 tested_orfs = translate(tested_orfs);
 
 % Find anything that doesn't look like an ORF
-tested_orfs(ismember(tested_orfs, {'YAL043C-a'})) = {'YAL042C-A'};
-tested_orfs(ismember(tested_orfs, {'YML009c'})) = {'YML009C'};
 inds = find(~is_orf(tested_orfs));
 tested_orfs(inds) = [];
 
@@ -82,10 +80,11 @@ hit_data_names(ind2) = datasets.standard_name(ind1);
 % If the dataset is quantitative:
 suzuki_yoshida_2011.orfs = tested_orfs;
 suzuki_yoshida_2011.ph = hit_data_names;
-suzuki_yoshida_2011.data = zeros(length(tested_orfs),1);
-[~,ind1,ind2] = intersect(hits_orfs, tested_orfs);
-suzuki_yoshida_2011.data(ind2,:) = hits_data(ind1,:);
+suzuki_yoshida_2011.data = zeros(length(suzuki_yoshida_2011.orfs),length(suzuki_yoshida_2011.ph));
 suzuki_yoshida_2011.dataset_ids = hit_data_ids;
+
+[~,ind1,ind2] = intersect(hits_orfs, suzuki_yoshida_2011.orfs);
+suzuki_yoshida_2011.data(ind2,:) = hits_data(ind1,:);
 
 %% Save
 
