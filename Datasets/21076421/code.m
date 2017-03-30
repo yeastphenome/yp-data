@@ -15,6 +15,7 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load data
+
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/Supplementary_data_1_SMF_standard_100209.xlsx');
 
 % Get the list of ORFs and the correponding data 
@@ -32,7 +33,7 @@ hits_data(inds) = [];
 hits_orfs = clean_orf(hits_orfs);
 
 % If in gene name form, transform into ORF name
-hits_orfs = translate(hits_orfs);
+[hits_orfs, translated, ambiguous] = translate(hits_orfs);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hits_orfs));
@@ -63,14 +64,17 @@ baryshnikova_myers_2010.data = t;
 baryshnikova_myers_2010.dataset_ids = hit_data_ids;
 
 %% Save
+
 save('./baryshnikova_myers_2010.mat','baryshnikova_myers_2010');
 
 %% Print out
+
 fid = fopen('./baryshnikova_myers_2010.txt','w');
 write_matrix_file(fid, baryshnikova_myers_2010.orfs, baryshnikova_myers_2010.ph, baryshnikova_myers_2010.data);
 fclose(fid);
 
 %% Save to DB (admin)
+
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
     res = save_data_to_db(baryshnikova_myers_2010)
