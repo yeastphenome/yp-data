@@ -49,12 +49,12 @@ hits_data(inds,:) = [];
 hits_genenames = clean_genename(hits_genenames);
 
 % If in gene name form, transform into ORF name
-hits_orfs = translate(hits_genenames);
+[hits_orfs, translated, ambiguous] = translate(hits_genenames);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hits_orfs));
 hits_orfs(inds) = [];
-hits_data(inds) = [];
+hits_data(inds,:) = [];
 
 % Translate data from symbols to numbers
 hits_data(strcmp('++', hits_data)) = {-2};
@@ -64,10 +64,9 @@ hits_data(strcmp('+', hits_data)) = {-1};
 hits_data = cell2mat(hits_data);
 hits_data(isnan(hits_data)) = 0;
 
-% Remove ORFs found in the hits and not in the tested
-[missing, ix] = setdiff(hits_orfs, tested_orfs);    % 10 ORFs deleted
-hits_orfs(ix) = [];
-hits_data(ix,:) = [];
+% Add back the ORFs found in the hits and not in the tested
+[missing, ix] = setdiff(hits_orfs, tested_orfs);    % 9 ORFs
+tested_orfs = [tested_orfs; missing];
 
 % Average out any repeated data
 [hits_data,hits_orfs] = grpstats(hits_data, hits_orfs, {'mean','gname'});
