@@ -37,7 +37,9 @@ tested_orfs(find(strcmp('YYKL138C', tested_orfs))) = {'YKL138C'};
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(tested_orfs));
-tested_orfs(inds) = [];
+tested_orfs(inds) = [];'
+
+tested_orfs = unique(tested_orfs);
 
 %% Load data
 
@@ -72,7 +74,7 @@ hits_data = -hits_data; % these data describes a decrease in the number if His+ 
 % Make sure the that all the hits are part of the tested set
 missing = setdiff(hits_orfs, tested_orfs);
 
-% Adding 4 ORFs to the list of tested
+% Adding 3 ORFs to the list of tested
 tested_orfs = [tested_orfs; missing];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
