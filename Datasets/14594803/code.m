@@ -105,6 +105,16 @@ davis_kaplan_kaplan_2004.ph = hit_data_names;
 davis_kaplan_kaplan_2004.data = hit_data;
 davis_kaplan_kaplan_2004.dataset_ids = hit_data_ids;
 
+%% Final filtering
+
+% Exclude the datasets with <1000 tested genes
+numTested = sum(~isnan(davis_kaplan_kaplan_2004.data),1);
+inds = find(numTested < 1000);
+davis_kaplan_kaplan_2004.ph(inds) = [];
+davis_kaplan_kaplan_2004.data(:,inds) = [];
+davis_kaplan_kaplan_2004.dataset_ids(inds) = [];
+
+
 %% Save
 
 save('./davis_kaplan_kaplan_2004.mat','davis_kaplan_kaplan_2004');
