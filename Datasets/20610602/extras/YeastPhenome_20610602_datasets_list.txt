@@ -1,0 +1,16 @@
+32	hap a | abundance of a lysin-related metabolite | minimal complete [standard] | Cooper SJ~Fields S, 2010
+730	hap a | abundance of arginine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+731	hap a | abundance of biotin | minimal complete [standard] | Cooper SJ~Fields S, 2010
+732	hap a | abundance of N-acetyl ornithine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+733	hap a | abundance of leucine + isoleucine + citrulline | minimal complete [standard] | Cooper SJ~Fields S, 2010
+734	hap a | abundance of glutamine + valine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+735	hap a | abundance of methionine + proline | minimal complete [standard] | Cooper SJ~Fields S, 2010
+736	hap a | abundance of threonine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+737	hap a | abundance of alanine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+738	hap a | abundance of serine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+739	hap a | abundance of asparagine + tyrosine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+740	hap a | abundance of glycine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+741	hap a | abundance of lysine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+742	hap a | abundance of ornithine | minimal complete [standard] | Cooper SJ~Fields S, 2010
+743	hap a | abundance of glutamate | minimal complete [standard] | Cooper SJ~Fields S, 2010
+744	hap a | abundance of aspartic acid | minimal complete [standard] | Cooper SJ~Fields S, 2010
