@@ -23,6 +23,7 @@ hit_orfs = data.raw(:,2);
 
 % And the corresponding data
 hit_data = data.raw(:,6);
+false_positives = data.raw(:,7);
 
 % Eliminate all white spaces & capitalize
 hit_orfs = clean_orf(hit_orfs);
@@ -31,7 +32,7 @@ hit_orfs = clean_orf(hit_orfs);
 inds = find(cellfun(@isnumeric, hit_orfs));
 hit_orfs(inds) = [];
 hit_data(inds, :) = [];
-data.raw(inds, :) = [];
+false_positives(inds, :) = [];
 
 % If in gene name form, transform into ORF name
 [hit_orfs, translated, ambiguous] = translate(hit_orfs);
@@ -39,17 +40,19 @@ data.raw(inds, :) = [];
 % A couple of manual fixes
 hit_orfs(ismember(hit_orfs, {'YLR287-A'})) = {'YLR287C-A'};
 
+inds = find(~is_orf(hit_orfs));
+hit_orfs(inds) = [];
+hit_data(inds,:) = [];
+false_positives(inds,:) = [];
+
 % Eliminate false positives
-inds = find(~cellfun(@isnumeric, data.raw(:,7)));
+inds = find(~cellfun(@isnumeric, false_positives));
 hit_data(inds) = {NaN};
 
 % Make sure all the data are numbers
 inds = find(~cellfun(@isnumeric, hit_data));
 hit_data(inds) = {NaN};
 hit_data = cell2mat(hit_data);
-
-% Eliminate zeros
-hit_data(hit_data == 0) = NaN;
 
 % Average data for identical ORFs that appear multiple times
 [hit_orfs,hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
