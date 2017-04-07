@@ -104,7 +104,7 @@ firstauthor_lastauthor_YYYY.data = zeros(length(firstauthor_lastauthor_YYYY.orfs
 firstauthor_lastauthor_YYYY.dataset_ids = hit_data_ids;
 
 [~,ind1,ind2] = intersect(hit_strains, firstauthor_lastauthor_YYYY.orfs);
-firstauthor_lastauthor.data(ind2,:) = hit_data(ind1,:);
+firstauthor_lastauthor_YYYY.data(ind2,:) = hit_data(ind1,:);
 
 %% Save
 
