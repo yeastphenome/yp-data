@@ -66,11 +66,6 @@ hits_genenames(inds) = [];
 [missing, ix] = setdiff(hits_genenames, tested_orfs);
 tested_orfs = [tested_orfs; missing];
 
-% MANUAL. Get the dataset ids corresponding to each dataset (in order)
-% Multiple datasets (e.g., replicates) may get the same id, which can then
-% be used to average them out
-hit_data_ids = [151];
-
 %% Prepare final dataset
 
 % Match the dataset ids with the dataset standard names
@@ -84,24 +79,23 @@ teixeira_sa_correia_2010.ph = hit_data_names;
 teixeira_sa_correia_2010.data = zeros(length(teixeira_sa_correia_2010.orfs),length(teixeira_sa_correia_2010.ph));
 teixeira_sa_correia_2010.dataset_ids = hit_data_ids;
 
-[~,ind1,ind2] = intersect(hits_orfs, teixeira_sa_correia_2010.orfs);
+[~,ind1,ind2] = intersect(hit_strains, teixeira_sa_correia_2010.orfs);
 teixeira_sa_correia_2010.data(ind2) = -1;
 
 %% Save
 
-save('./teixeira_sa_correia_2010.mat','teixeira_sa_correia_2010');
+teixeira_sa_correia_2010.orfs = tested_orfs;
+teixeira_sa_correia_2010.data = zeros(length(tested_orfs),1);
 
-%% Print out
+[~,ind1,ind2] = intersect(hits_orfs, tested_orfs);
+teixeira_sa_correia_2010.data(ind2) = -1;
+
+teixeira_sa_correia_2010.ph = strcat(phenotypes, '; ', treatments);
+
+save('./teixeira_sa_correia_2010.mat','teixeira_sa_correia_2010');
 
 fid = fopen('./teixeira_sa_correia_2010.txt','w');
 write_matrix_file(fid, teixeira_sa_correia_2010.orfs, teixeira_sa_correia_2010.ph, teixeira_sa_correia_2010.data);
 fclose(fid);
-
-%% Save to DB (admin)
-
-addpath(genpath('../../Private-Utils/'));
-if exist('save_data_to_db.m')
-    res = save_data_to_db(firstauthor_lastauthor_YYYY)
-end
 
 end
