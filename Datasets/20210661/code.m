@@ -87,7 +87,7 @@ fclose(fid);
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(firstauthor_lastauthor_YYYY)
+    res = save_data_to_db(teixeira_sa_correia_2010)
 end
 
 end
