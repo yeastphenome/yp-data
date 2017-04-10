@@ -1,0 +1,9 @@
+147	hap a | growth (spot assay) | boric acid [100 mM] | Uluisik I~Koc A, 2011
+438	hap a | growth (spot assay) | boric acid [20 mM] | Uluisik I~Koc A, 2011
+439	hap a | growth (spot assay) | boric acid [30 mM] | Uluisik I~Koc A, 2011
+440	hap a | growth (spot assay) | boric acid [40 mM] | Uluisik I~Koc A, 2011
+441	hap a | growth (spot assay) | boric acid [50 mM] | Uluisik I~Koc A, 2011
+442	hap a | growth (spot assay) | boric acid [60 mM] | Uluisik I~Koc A, 2011
+443	hap a | growth (spot assay) | boric acid [70 mM] | Uluisik I~Koc A, 2011
+444	hap a | growth (spot assay) | boric acid [125 mM] | Uluisik I~Koc A, 2011
+445	hap a | growth (spot assay) | boric acid [150 mM] | Uluisik I~Koc A, 2011
