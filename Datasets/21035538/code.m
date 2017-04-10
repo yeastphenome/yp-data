@@ -23,6 +23,8 @@ tested_orfs = clean_orf(tested_orfs);
 % If in gene name form, transform into ORF name
 tested_orfs = translate(tested_orfs);
 
+tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
+
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(tested_orfs));
 tested_orfs(inds) = [];
@@ -63,6 +65,7 @@ hits_orfs_1(inds) = [];
 hits_data_1(inds,:) = [];
 
 %% Load sensitive data 2
+
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mmc3.xlsx');
 
 % Get the list of ORFs and the correponding data 
@@ -70,7 +73,7 @@ hits_orfs_2 = data.raw(4:end,1);
 hits_data_2 = data.raw(4:end,2:8);
 
 % Translate sign into value
-hits_data_2(strcmp('+',hits_data_2)) = {-1};
+hits_data_2(strcmp('+',hits_data_2)) = {1};
 hits_data_2(strcmp('-',hits_data_2)) = {0};
 
 % Turn into numeric matrix
@@ -100,9 +103,8 @@ hits_orfs_2(inds) = [];
 hits_data_2(inds,:) = [];
 
 % Check for any hits missing from tested
-[missing, ix] = setdiff(hits_orfs_2, tested_orfs);    % 3 ORFs missing (eliminated)
-hits_orfs_2(ix) = [];
-hits_data_2(ix,:) = [];
+[missing, ix] = setdiff(hits_orfs_2, tested_orfs);    % 3 ORFs missing (added)
+tested_orfs = [tested_orfs; missing];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -129,9 +131,11 @@ uluisik_koc_2011.data(ind2,7:9) = hits_data_1(ind1,:);
 uluisik_koc_2011.data(ind2,1:6) = hits_data_2(ind1,:);
 
 %% Save
+
 save('./uluisik_koc_2011.mat','uluisik_koc_2011');
 
 %% Print out
+
 fid = fopen('./uluisik_koc_2011.txt','w');
 write_matrix_file(fid, uluisik_koc_2011.orfs, uluisik_koc_2011.ph, uluisik_koc_2011.data);
 fclose(fid);
