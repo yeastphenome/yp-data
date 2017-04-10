@@ -15,6 +15,7 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load data
+
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/TableS2-2.xlsx', 'Sheet1');
 
 % Get the list of ORFs and the correponding data
@@ -27,7 +28,7 @@ hits_orfs(inds) = [];
 hits_scores(inds) = [];
 
 % Eliminate all white spaces & capitalize
-hits_orfs = clean_genename(hits_orfs);
+hits_orfs = clean_orf(hits_orfs);
 
 % If in gene name form, transform into ORF name
 [hits_orfs, translated, ambiguous] = translate(hits_orfs);
@@ -43,29 +44,9 @@ hits_scores(strcmp('No', hits_scores)) = {-1};
 hits_scores(strcmp('Yes', hits_scores)) = {1};
 hits_scores = cell2mat(hits_scores);
 
-% I understand what his is doing, but I'm not sure if I should keep it this
-% way, or deal with repeated values as we normally would.
-hits_orfs_u = unique(hits_orfs);
-hits_scores_u = zeros(length(hits_orfs_u),1)+NaN;
-for i = 1 : length(hits_orfs_u)
-    inds = find(strcmp(hits_orfs_u{i}, hits_orfs));
-    if length(inds) == 1
-        hits_scores_u(i) = hits_scores(inds);
-    elseif length(inds) == 2
-        tmp = prod(hits_scores(inds));
-        if isnan(tmp) || tmp < 0    % If at least one of the values is NaN or the values are of opposite sign, set them to NaN
-            hits_scores_u(i) = NaN;
-        else
-            hits_scores_u(i) = hits_scores(inds(1));    % If the values are of the same sign, pick the first number (they are the same)
-        end
-    else
-        fprintf('%s\t', hits_orfs_u{i});
-        for j = 1 : length(inds)
-            fprintf('%d,', hits_scores(inds(j)));
-        end
-        fprintf('\n');
-    end
-end
+% If the same strain is present more than once, average its values
+[hits_orfs, hits_scores] = grpstats(hits_scores, hits_orfs, {'gname','mean'});
+hits_scores(hits_scores == 0) = NaN;
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -80,9 +61,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-kanki_klionsky_2009.orfs = hits_orfs_u;
+kanki_klionsky_2009.orfs = hits_orfs;
 kanki_klionsky_2009.ph = hit_data_names;
-kanki_klionsky_2009.data = hits_scores_u;
+kanki_klionsky_2009.data = hits_scores;
 kanki_klionsky_2009.dataset_ids = hit_data_ids;
 
 %% Save
