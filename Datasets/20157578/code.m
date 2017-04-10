@@ -21,12 +21,12 @@ datasets.standard_name = d{2};
 % Get the list of ORFs and the correponding data 
 tested_orfs = tested.raw(2:end,1);
 
+% Eliminate all white spaces & capitalize
+tested_orfs = clean_orf(tested_orfs);
+
 % Eliminate any empty indices
 inds = cellfun(@isnumeric, tested_orfs);
 tested_orfs(inds) = [];
-
-% Eliminate all white spaces & capitalize
-tested_orfs = clean_orf(tested_orfs);
 
 % If in gene name form, transform into ORF name
 [tested_orfs, translated, ambiguous] = translate(tested_orfs);
@@ -40,6 +40,7 @@ tested_orfs(inds) = [];
 tested_orfs = unique(tested_orfs);
 
 %% Load data
+
 [FILENAMES, hits_orfs] = read_data('textscan', './raw_data/hits_orfs.txt', '%s');
 
 % Eliminate all white spaces & capitalize
@@ -56,7 +57,7 @@ hits_orfs(inds) = [];
 hits_orfs = unique(hits_orfs);
 
 % Get the data itself
-hits_scores = zeros(length(hits_orfs),1)+1;
+hits_scores = ones(length(hits_orfs),1);
 
 % Make sure the that all the hits are part of the tested set
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
