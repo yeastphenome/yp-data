@@ -37,7 +37,7 @@ inds = find(~is_orf(hits_resistant_orfs));
 hits_resistant_orfs(inds) = [];
 
 % Make sure the list is unique
-hits_resistant_orfs = unique(upper(hits_resistant_orfs));
+hits_resistant_orfs = unique(hits_resistant_orfs);
 
 % Make the data
 hits_resistant_scores = ones(length(hits_resistant_orfs),1);
@@ -58,13 +58,13 @@ inds = find(~is_orf(hits_sensitive_orfs));
 hits_sensitive_orfs(inds) = [];
 
 % Make sure the list is unique
-hits_sensitive_orfs = unique(upper(hits_sensitive_orfs));
+hits_sensitive_orfs = unique(hits_sensitive_orfs);
 
 % Make the data
 hits_sensitive_scores = -ones(length(hits_sensitive_orfs),1);
 
-% Combine to make tested
-tested_orfs = [hits_resistant_orfs; hits_sensitive_orfs];
+hits_orfs = [hits_resistant_orfs; hits_sensitive_orfs];
+hits_scores = [hits_resistant_scores; hits_sensitive_scores];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -78,16 +78,11 @@ hit_data_ids = [163];
 hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
-% If the dataset is discrete/binary and the tested strains were provided separately:
-arita_costa_2009.orfs = tested_orfs;
+% If the dataset is quantitative:
+arita_costa_2009.orfs = hits_orfs;
 arita_costa_2009.ph = hit_data_names;
-arita_costa_2009.data = zeros(length(arita_costa_2009.orfs),length(arita_costa_2009.ph));
+arita_costa_2009.data = hits_scores;
 arita_costa_2009.dataset_ids = hit_data_ids;
-
-[~,ind1,ind2] = intersect(hits_resistant_orfs, arita_costa_2009.orfs);
-arita_costa_2009.data(ind2) = hits_resistant_scores(ind1);
-[~,ind1,ind2] = intersect(hits_sensitive_orfs, arita_costa_2009.orfs);
-arita_costa_2009.data(ind2) = hits_sensitive_scores(ind1);
 
 %% Save
 
