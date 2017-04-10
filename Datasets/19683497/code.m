@@ -20,6 +20,7 @@ datasets.standard_name = d{2};
 
 % Get the list of ORFs and the correponding data 
 hit_strains = data.raw(:,1);
+hit_data = data.raw(:,2);
 
 % Eliminate white spaces before/after ORF
 hit_strains = clean_orf(hit_strains);
@@ -30,13 +31,10 @@ hit_strains = clean_orf(hit_strains);
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
-data.raw(inds,:) = [];
-
-% Get the data
-hit_data = data.raw(:,2);
+hit_data(inds,:) = [];
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, hit_data)==0);
+inds = find(~cellfun(@isnumeric, hit_data));
 hit_data(inds) = {NaN};
 hit_data = cell2mat(hit_data);
 
