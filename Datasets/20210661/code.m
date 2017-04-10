@@ -34,36 +34,22 @@ tested_orfs(inds) = [];
 % Finally, take the unique set
 tested_orfs = unique(tested_orfs);
 
-[FILENAMES{end+1}, hits_genenames] = read_data('textread','./raw_data/hits_genenames.txt', '%s');
-inds = find(cellfun(@isempty, hits_genenames) | cellfun(@isnumeric, hits_genenames));
-hits_genenames(inds) = [];
-hits_genenames = strtrim(hits_genenames);
-
-hits_orfs = translate(hits_genenames);
-hits_orfs(~is_orf(hits_orfs)) = [];
-
-hits_orfs = unique(hits_orfs);
-
-tested_orfs = unique(strtrim(upper(tested_orfs)));
-
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-
 %% Load hit data
+
 [FILENAMES{end+1}, hits_genenames] = read_data('textread','./raw_data/hits_genenames.txt', '%s');
 
 % Eliminate all white spaces & capitalize
-hits_genenames = clean_orf(hits_genenames);
+hits_genenames = clean_genename(hits_genenames);
 
 % If in gene name form, transform into ORF name
-[hits_genenames, translated, ambiguous] = translate(hits_genenames);
+[hits_orfs, translated, ambiguous] = translate(hits_genenames);
 
 % Find anything that doesn't look like an ORF
-inds = find(~is_orf(hits_genenames));
-hits_genenames(inds) = [];
+inds = find(~is_orf(hits_orfs));
+hits_orfs(inds) = [];
 
 % Make sure the that all the hits are part of the tested set
-[missing, ix] = setdiff(hits_genenames, tested_orfs);
+[missing, ix] = setdiff(hits_orfs, tested_orfs);
 tested_orfs = [tested_orfs; missing];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
