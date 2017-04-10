@@ -6,99 +6,145 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 uluisik_koc_2011.pmid = 21035538;
 
-phenotypes = {'growth'};
-treatments = {'BA, 20 mM';'BA, 30 mM';'BA, 40 mM';'BA, 50 mM'; 'BA, 60 mM'; 'BA, 70 mM';'BA, 100 mM';'BA, 125 mM';'BA, 150 mM'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
 
-% Load tested
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(uluisik_koc_2011.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+%% Load tested
 [FILENAMES{end+1}, tested_orfs] = read_data('textread','./raw_data/tested_strains.txt', '%s');
 
-inds = find(cellfun(@isempty, tested_orfs) | cellfun(@isnumeric, tested_orfs));
+% Eliminate all white spaces & capitalize
+tested_orfs = clean_orf(tested_orfs);
+
+% If in gene name form, transform into ORF name
+tested_orfs = translate(tested_orfs);
+
+tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_orfs));
 tested_orfs(inds) = [];
 
-tested_orfs = unique(strtrim(upper(tested_orfs)));
+% Get unique list of ORFs
+tested_orfs = unique(tested_orfs);
 
-inds = find(~strncmp('Y', tested_orfs,1));
-tested_orfs(inds) = [];
-
-tested_orfs = unique(upper(strtrim(tested_orfs)));
-
-uluisik_koc_2011.orfs = tested_orfs;
-uluisik_koc_2011.data = zeros(length(tested_orfs),length(treatments));
-uluisik_koc_2011.ph = strcat(phenotypes, '; ', treatments);
-
-% Load data 1
+%% Load resistant data 1
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mmc2.xlsx');
-hits_orfs = data.raw(4:end,1);
-hits_data = data.raw(4:end,2:5);
-hits_treatments = {'BA, 100 mM','BA, 125 mM','BA, 150 mM'};
 
-hits_data(strcmp('+',hits_data)) = {1};
-hits_data(strcmp('-',hits_data)) = {0};
+% Get the list of ORFs and the correponding data 
+hits_orfs_1 = data.raw(4:end,1);
+hits_data_1 = data.raw(4:end,2:5);
 
-hits_data = cell2mat(hits_data);
+% Translate sign into value
+hits_data_1(strcmp('+',hits_data_1)) = {1};
+hits_data_1(strcmp('-',hits_data_1)) = {0};
 
-inds = find(cellfun(@isempty, hits_orfs) | cellfun(@isnumeric, hits_orfs));
-hits_orfs(inds) = [];
-hits_data(inds,:) = [];
+% Turn into numeric matrix
+hits_data_1 = cell2mat(hits_data_1);
 
-hits_data = hits_data - repmat(hits_data(1,:),size(hits_data,1),1);    % Subtract the 1st row (WT)
-hits_data = hits_data - repmat(hits_data(:,1),1,size(hits_data,2));     % Subtract the 1st col (0 mM);
-hits_data(1,:) = [];
-hits_data(:,1) = [];
-hits_orfs(1) = [];
+% Do numeric transformations of data
+hits_data_1 = hits_data_1 - repmat(hits_data_1(1,:),size(hits_data_1,1),1);    % Subtract the 1st row (WT)
+hits_data_1 = hits_data_1 - repmat(hits_data_1(:,1),1,size(hits_data_1,2));     % Subtract the 1st col (0 mM);
+hits_data_1(1,:) = [];
+hits_data_1(:,1) = [];
+hits_orfs_1(1) = [];
 
-hits_orfs = strtrim(upper(hits_orfs));
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_data(inds,:) = [];
+% Eliminate all white spaces & capitalize
+hits_orfs_1 = clean_orf(hits_orfs_1);
 
+% If in gene name form, transform into ORF name
+hits_orfs_1 = translate(hits_orfs_1);
 
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hits_orfs_1));
+hits_orfs_1(inds) = [];
+hits_data_1(inds,:) = [];
 
-[missing, ix] = setdiff(hits_orfs, tested_orfs);
+%% Load sensitive data 2
 
-[~,ind1,ind2] = intersect(hits_orfs, tested_orfs);
-[~,ind3,ind4] = intersect(hits_treatments, treatments);
-uluisik_koc_2011.data(ind2,ind4) = hits_data(ind1,ind3);
-
-% Load data 2
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/mmc3.xlsx');
-hits_orfs = data.raw(4:end,1);
-hits_data = data.raw(4:end,2:8);
-hits_treatments = {'BA, 20 mM';'BA, 30 mM';'BA, 40 mM';'BA, 50 mM';'BA, 60 mM';'BA, 70 mM'};
 
-hits_data(strcmp('+',hits_data)) = {1};
-hits_data(strcmp('-',hits_data)) = {0};
+% Get the list of ORFs and the correponding data 
+hits_orfs_2 = data.raw(4:end,1);
+hits_data_2 = data.raw(4:end,2:8);
 
-hits_data = cell2mat(hits_data);
+% Translate sign into value
+hits_data_2(strcmp('+',hits_data_2)) = {1};
+hits_data_2(strcmp('-',hits_data_2)) = {0};
 
-inds = find(cellfun(@isempty, hits_orfs) | cellfun(@isnumeric, hits_orfs));
-hits_orfs(inds) = [];
-hits_data(inds,:) = [];
+% Turn into numeric matrix
+hits_data_2 = cell2mat(hits_data_2);
 
-hits_data = hits_data - repmat(hits_data(1,:),size(hits_data,1),1);    % Subtract the 1st row (WT)
-hits_data = hits_data - repmat(hits_data(:,1),1,size(hits_data,2));     % Subtract the 1st col (0 mM);
-hits_data(1,:) = [];
-hits_data(:,1) = [];
-hits_orfs(1) = [];
+% Eliminate empty ORFs
+inds = find(cellfun(@isempty, hits_orfs_2) | cellfun(@isnumeric, hits_orfs_2));
+hits_orfs_2(inds) = [];
+hits_data_2(inds,:) = [];
 
-hits_orfs = strtrim(upper(hits_orfs));
-inds = find(~strncmp('Y', hits_orfs,1));
-hits_orfs(inds) = [];
-hits_data(inds,:) = [];
+% Do numeric transformations
+hits_data_2 = hits_data_2 - repmat(hits_data_2(1,:),size(hits_data_2,1),1);    % Subtract the 1st row (WT)
+hits_data_2 = hits_data_2 - repmat(hits_data_2(:,1),1,size(hits_data_2,2));     % Subtract the 1st col (0 mM);
+hits_data_2(1,:) = [];
+hits_data_2(:,1) = [];
+hits_orfs_2(1) = [];
 
-[missing, ix] = setdiff(hits_orfs, tested_orfs);    % 3 ORFs missing (eliminated)
-hits_orfs(ix) = [];
-hits_data(ix,:) = [];
+% Eliminate all white spaces & capitalize
+hits_orfs_2 = clean_orf(hits_orfs_2);
 
-[~,ind1,ind2] = intersect(hits_orfs, tested_orfs);
-[~,ind3,ind4] = intersect(hits_treatments, treatments);
-uluisik_koc_2011.data(ind2,ind4) = hits_data(ind1,ind3);
+% If in gene name form, transform into ORF name
+hits_orfs_2 = translate(hits_orfs_2);
 
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hits_orfs_2));
+hits_orfs_2(inds) = [];
+hits_data_2(inds,:) = [];
+
+% Check for any hits missing from tested
+[missing, ix] = setdiff(hits_orfs_2, tested_orfs);    % 3 ORFs missing (added)
+tested_orfs = [tested_orfs; missing];
+
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [438; 439; 440; 441; 442; 443; 147; 444; 445];
+
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is discrete/binary and the tested strains were provided separately:
+uluisik_koc_2011.orfs = tested_orfs;
+uluisik_koc_2011.ph = hit_data_names;
+uluisik_koc_2011.data = zeros(length(uluisik_koc_2011.orfs),length(uluisik_koc_2011.ph));
+uluisik_koc_2011.dataset_ids = hit_data_ids;
+
+[~,ind1,ind2] = intersect(hits_orfs_1, uluisik_koc_2011.orfs);
+uluisik_koc_2011.data(ind2,7:9) = hits_data_1(ind1,:);
+
+[~,ind1,ind2] = intersect(hits_orfs_2, uluisik_koc_2011.orfs);
+uluisik_koc_2011.data(ind2,1:6) = hits_data_2(ind1,:);
+
+%% Save
 
 save('./uluisik_koc_2011.mat','uluisik_koc_2011');
+
+%% Print out
 
 fid = fopen('./uluisik_koc_2011.txt','w');
 write_matrix_file(fid, uluisik_koc_2011.orfs, uluisik_koc_2011.ph, uluisik_koc_2011.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(uluisik_koc_2011)
+end
 
 end
