@@ -1,0 +1,6 @@
+20	hap a | growth (colony size) | Fe(NH4)2(SO4)2 (ferrous ammonium sulfate (anhydrous) [10 mM]) | Bleackley MR~MacGillivray RT, 2011
+21	hap a | growth (colony size) | copper(II) chloride [7 mM] | Bleackley MR~MacGillivray RT, 2011
+22	hap a | growth (colony size) | manganese(II) chloride [4 mM] | Bleackley MR~MacGillivray RT, 2011
+23	hap a | growth (colony size) | nickel dichloride [3 mM] | Bleackley MR~MacGillivray RT, 2011
+24	hap a | growth (exponential growth rate) | zinc dichloride [7 mM] | Bleackley MR~MacGillivray RT, 2011
+25	hap a | growth (exponential growth rate) | cobalt dichloride [2.5 mM] | Bleackley MR~MacGillivray RT, 2011
