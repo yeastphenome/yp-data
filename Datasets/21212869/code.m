@@ -30,7 +30,7 @@ hit_data = data.raw(:, 3:2:13); % if the dataset is discrete or binary
 hit_strains = clean_orf(hit_strains);
 
 % Eliminate anything that is numeric
-inds = find(cellfun(@isnumeric, hit_strains));
+inds = find(cellfun(@isnumeric, hit_strains) | cellfun(@isempty, hit_strains));
 hit_strains(inds) = [];
 hit_data(inds, :) = [];
 
@@ -43,12 +43,12 @@ hit_strains(inds) = [];
 hit_data(inds, :) = [];
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, hit_data)==0);
+inds = find(~cellfun(@isnumeric, hit_data));
 hit_data(inds) = {NaN};
 hit_data = cell2mat(hit_data);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(hit_data, hit_strains, {'gname','mean'});
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -63,9 +63,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-bleackley_macgillivray_2011.orfs = t;
+bleackley_macgillivray_2011.orfs = hit_strains;
 bleackley_macgillivray_2011.ph = hit_data_names;
-bleackley_macgillivray_2011.data = t2;
+bleackley_macgillivray_2011.data = hit_data;
 bleackley_macgillivray_2011.dataset_ids = hit_data_ids;
 
 %% Save
