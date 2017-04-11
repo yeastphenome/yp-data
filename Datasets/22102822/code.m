@@ -74,9 +74,9 @@ cond_threeB_data = nanmean(hit_data(:,indx),2);
 indx = find(~cellfun(@isempty, regexp(hit_cond, 'HS[0-9] Sample3 vs Sample1 Array')));
 cond_threeC_data = nanmean(hit_data(:,indx),2);
 
-% D. the conditions with TM
-indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1 Array')));
-cond_threeD_data = nanmean(hit_data(:,indx),2);
+% % D. the conditions with TM
+% indx = find(~cellfun(@isempty, regexp(hit_cond, 'TM[0-9] Sample3 vs Sample1 Array'))); % <<<< EMPTY
+% cond_threeD_data = nanmean(hit_data(:,indx),2);
 
 % Condition 4: Sample 4 vs Sample 3
 % should have 4 different sets of these
@@ -145,21 +145,20 @@ cond_fourD_data_seq = nanmean(hit_data(:,indx),2);
 
 
 final_data = [cond_one_data cond_two_data ...
-              cond_threeA_data cond_threeB_data cond_threeC_data cond_threeD_data ...
+              cond_threeA_data cond_threeB_data cond_threeC_data ...
               cond_fourA_data cond_fourB_data cond_fourC_data ...
               cond_one_data_seq cond_two_data_seq ...
               cond_threeA_data_seq cond_threeB_data_seq cond_threeC_data_seq cond_threeD_data_seq ...
               cond_fourA_data_seq cond_fourB_data_seq ...
               cond_fourC_data_seq cond_fourD_data_seq];
           
-hit_data_ids = [758; 759; 761; 760; 762; 763; 590; 588; 589; 5395; 5396; 5397; 5398; 5399; 5400; 5401; 5402; 5403; 5404];
+hit_data_ids = [758; 759; 761; 760; 762; 590; 588; 589; 5395; 5396; 5397; 5398; 5399; 5400; 5401; 5402; 5403; 5404];
 
 % Average any repeated value
 [strains, final_data] = grpstats(final_data, strains, {'gname','mean'});
 
 % To separate HOM from HET data, identify the essential genes and remove
 % them (for now)
-
 load essential_genes_151215.mat
 [~,ind1,ind2] = intersect(essential_genes, strains);
 strains(ind2) = [];
@@ -188,5 +187,12 @@ save('./berry_gasch_2011.mat','berry_gasch_2011');
 fid = fopen('./berry_gasch_2011.txt','w');
 write_matrix_file(fid, berry_gasch_2011.orfs, berry_gasch_2011.ph, berry_gasch_2011.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(berry_gasch_2011)
+end
 
 end
