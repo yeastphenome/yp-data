@@ -1,0 +1,2 @@
+123	hap a | clathrin-mediated endocytosis (Snc1) | standard [standard] | Burston HE~Conibear E, 2009
+536	hap alpha | clathrin-mediated endocytosis (Snc1) | standard [standard] | Burston HE~Conibear E, 2009
