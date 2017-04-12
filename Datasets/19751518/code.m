@@ -15,6 +15,7 @@ datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load data
+
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/gb-2009-10-9-r95-s1.xlsx');
 
 % Get the list of ORFs and the correponding data 
@@ -42,6 +43,7 @@ hits_data = -ones(size(hits_orfs));
 hit_data_ids = [158];
 
 %% Load tested
+
 [FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/pet-Screen.xlsx', 'mat_alpha_obs');
 
 % Load tested strains
@@ -62,7 +64,7 @@ inds = find(~is_orf(tested_orfs));
 tested_orfs(inds) = [];
 
 % Make unique
-tested_orfs = unique(upper(tested_orfs));
+tested_orfs = unique(tested_orfs);
 
 % Make sure the that all the hits are part of the tested set
 [missing, ix] = setdiff(hits_orfs, tested_orfs);
