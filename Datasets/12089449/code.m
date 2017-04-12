@@ -104,5 +104,12 @@ fid = fopen('./jorgensen_tyers_2002.txt','w');
 write_matrix_file(fid, jorgensen_tyers_2002.orfs, jorgensen_tyers_2002.ph, jorgensen_tyers_2002.data);
 fclose(fid);
 
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(jorgensen_tyers_2002)
+end
+
 end
 
