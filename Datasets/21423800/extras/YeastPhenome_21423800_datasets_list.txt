@@ -1,0 +1,6 @@
+59	hap alpha | vacuolar pH | pH [2.7] | Brett CL~Rao R, 2011
+60	hap alpha | vacuolar pH | pH [4.0] | Brett CL~Rao R, 2011
+61	hap alpha | vacuolar pH | pH [7.0] | Brett CL~Rao R, 2011
+529	hap alpha | growth (culture turbidity) | pH [2.7] | Brett CL~Rao R, 2011
+530	hap alpha | growth (culture turbidity) | pH [4.0] | Brett CL~Rao R, 2011
+531	hap alpha | growth (culture turbidity) | pH [7.0] | Brett CL~Rao R, 2011
