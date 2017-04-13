@@ -14,9 +14,6 @@ zhang_schneider_2002.pmid = 12477387;
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
-phenotypes = {'cell size (mean)'; 'cell size (median)'; 'cell size (mode)'};
-treatments = {'GYPD'};
-
 
 %% Hit strains
 
@@ -51,12 +48,14 @@ hit_data = cell2mat(hit_data);
 
 hit_data2 = nan(length(hit_strains),2);
 
-% Roughly separate HET from HOM using the list of essential genes (only way
-% possible, at this stage)
-[FILENAMES{end+1}, essential_genes] = read_data('textread', './extras/essential_genes_151215.txt', '%s');
-inds = find(~ismember(hit_strains, essential_genes));
+% To separate HOM from HET data, remove all genes that don't appear on
+% today's HOM collection from Open Biosystems
+[FILENAMES{end+1}, hom] = read_data('xlsread','./extras/Homozygous_diploid_obs_v7.0.xlsx', 'DATA');
+hom_orfs = unique(translate(clean_orf(hom(2:end,2))));
+
+inds = find(ismember(hit_strains, hom_orfs));
 hit_data2(inds,1) = hit_data(inds,1);
-inds = find(ismember(hit_strains, essential_genes));
+inds = find(~ismember(hit_strains, hom_orfs));
 hit_data2(inds,2) = hit_data(inds,1);
 
 hit_data = hit_data2;
