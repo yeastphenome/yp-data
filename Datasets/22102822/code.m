@@ -157,13 +157,13 @@ hit_data_ids = [758; 759; 761; 760; 762; 590; 588; 589; 5395; 5396; 5397; 5398; 
 % Average any repeated value
 [strains, final_data] = grpstats(final_data, strains, {'gname','mean'});
 
-% To separate HOM from HET data, identify the essential genes and remove
-% them (for now)
-load essential_genes_151215.mat
-[~,ind1,ind2] = intersect(essential_genes, strains);
-strains(ind2) = [];
-final_data(ind2,:) = [];
-
+% To separate HOM from HET data, remove all genes that don't appear on
+% today's HOM collection from Open Biosystems
+[FILENAMES{end+1}, hom] = read_data('xlsread','./extras/Homozygous_diploid_obs_v7.0.xlsx', 'DATA');
+hom_orfs = unique(translate(clean_orf(hom(2:end,2))));
+inds = find(~ismember(strains, hom_orfs));
+strains(inds) = [];
+final_data(inds,:) = [];
 
 %% Prepare final dataset
 

@@ -1,5 +1,6 @@
 %% Blackman~Nislow, 2012
 function FILENAMES = code()
+
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 FILENAMES = {};
 blackman_nislow_2012.pmid = 22253786;
@@ -33,10 +34,14 @@ data(inds,3) = {NaN};
 
 % Roughly separate HET from HOM using the list of essential genes (only way
 % possible, at this stage)
-[FILENAMES{end+1}, essential_genes] = read_data('textread', './extras/essential_genes_151215.txt', '%s');
-inds = find(~ismember(strains, essential_genes));
+% To separate HOM from HET data, remove all genes that don't appear on
+% today's HOM collection from Open Biosystems
+[FILENAMES{end+1}, hom] = read_data('xlsread','./extras/Homozygous_diploid_obs_v7.0.xlsx', 'DATA');
+hom_orfs = unique(translate(clean_orf(hom(2:end,2))));
+
+inds = find(ismember(strains, hom_orfs));
 hit_data(inds,1) = cell2mat(data(inds,3));
-inds = find(ismember(strains, essential_genes));
+inds = find(~ismember(strains, hom_orfs));
 hit_data(inds,2) = cell2mat(data(inds,3));
 
 
