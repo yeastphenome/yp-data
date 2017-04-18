@@ -1,0 +1,50 @@
+Table3 Genes in which deletion resulting in sensitivity to 1-pentanol (0.5% (v/v))							
+#	ORF	Gene name	Description				
+1	YBL058W	SHP1	Putative regulatory subunit for Glc7p				
+2	YBR036C	CSG2	Endoplasmic reticulum membrane protein 				
+3	YBR127C	VMA2/ VAT2	Vacuolar ATPase V1 domain subunit B (60 kDa)				
+4	YBR173C	UMP1	20S proteasome maturation factor				
+5	YBR200W	BEM1	Protein contains two SH3 domains				
+6	YCR020W-B	HTL1	High-temperature lethal				
+7	YDL172C		Questionable ORF				
+8	YDL173W		Hypothetical protein				
+9	YDL185W	VMA1/ TFP1	Vacuolar ATPase V1 domain subunit A (69 kDa)				
+10	YDR007W	TRP1	n-(5'-phosphoribosyl)-anthranilate isomerase				
+11	YDR008C		Questionable ORF				
+12	YDR129C	SAC6	Fibrim homolog (actin-filament bundling protein)				
+13	YDR138W	HPR1	Involved in mitosis, recombination; similar to TOP1 across 2 regions				
+14	YDR207C	UME6	Ume6p is a C6 zinc finger URS1-binding protein				
+15	YDR264C	AKR1	Ankyrin repeat-containing protein				
+16	YDR354W	TRP4	Anthranilate phosphoribosyl transferase				
+17	YEL027W	VMA3/ CUP5	Vacuolar ATPase V0 domain subunit c (17 kDa)				
+18	YEL051W	VMA8	Vacuolar ATPase V1 domain subunit D				
+19	YER083C	RMD7	Required for meiotic nuclear division 				
+20	YFL023W	BUD27	Protein involved in bud-site selection				
+21	YGR105W	VMA21	Vacuolar H+-ATPase assembly protein				
+22	YGR200C	ELP2	90 kD subunit of elongator and elongating RNA pol II holoenzyme				
+23	YHR013C	ARD1	Subunit of the major N alpha-acetyltransferase; complexes with Nat1p				
+24	YHR026W	VMA16/ PPA1	Vacuolar ATPase V0 domain subunit c''				
+25	YHR039C-B	VMA10	Vacuolar H+ ATPase subunit G of the catalytic (V1) sector				
+26	YHR178W	STB5	Zinc finger (6-Cys)				
+27	YHR183W	GND1	Phosphogluconate Dehydrogenase				
+28	YJL120W		Questionable ORF				
+29	YJL121C	RPE1	D-ribulose-5-Phosphate 3-epimerase				
+30	YJR090C	GRR1	Cyclin F box protein				
+31	YKL048C	ELM1	Protein kinase				
+32	YKL118W		Questionable ORF				
+33	YKL119C	VMA12/ VPH2	25.2 kDa protein involved in assembly of vacuolar H(-) ATPase				
+34	YKR007W	MEH1/ EGO1	Weak similarity to Streptococcus protein M5 precursor				
+35	YKR082W	NUP133	Nuclear pore protein				
+36	YLR315W	NKP2	Weak similarity to rat apolipoprotein A-IV				
+37	YLR386W	VAC14	Similarity to hypothetical S. pombe protein				
+38	YLR435W	TSR2	Hypothetical protein				
+39	YLR447C	VMA6	Vacuolar ATPase V0 domain subunit d (36 kDa)				
+40	YML008C	ERG6	S-adenoslymethionine: delta 24-methyltransferase				
+41	YML094W	GIM5	Bovine prefoldin subunit 5 homolog (putative)				
+42	YMR003W		Hypothetical protein				
+43	YOR035C	SHE4	Required for mother cell-specific HO expression				
+44	YOR332W	VMA4	Vacuolar ATPase V1 domain subunit E (27 kDa)				
+45	YPL129W	ANC1	Transcription initiation factor TFIIF small subunit				
+46	YPR036W	VMA13/ CLS11	Vacuolar ATPase V1 domain subunit H (54 kDa)				
+47	YPR074C	TKL1	Transketolase 1				
+48	YPR135W	CTF4	DNA polymerase alpha binding protein				
