@@ -48,6 +48,13 @@ eliminated1 = translate(eliminated1);
 hom_strains(ind2) = [];
 hom_data(ind2,:) = [];
 
+% Remove all ORFs that only have 0s because >90% of them are essential
+% genes
+nZ = sum(hom_data == 0,2);
+inds = find(nZ == size(hom_data,2));
+hom_strains(inds) = [];
+hom_data(inds,:) = [];
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
