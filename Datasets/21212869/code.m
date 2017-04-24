@@ -5,49 +5,84 @@ addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
 
-
-bleackley_macgillivray_2011.source = {'Mark Bleackley, Ross MacGillivray'};
-bleackley_macgillivray_2011.notes = {'File received from the authors because online SOM didn''t have ORFs, only genenames.'};
-bleackley_macgillivray_2011.downloaddate = {'2013-03-11'};
 bleackley_macgillivray_2011.pmid = 21212869;
 
-phenotypes = {'Growth, colony size'};
-treatments = {'Iron, Fe(NH4)2(SO4)2 (10 mM)';'Copper, CuCl2 (7 mM)';'Manganese, MnCl2 (4 mM)';'Nickel, NiCl2 (3 mM)';'Zinc, ZnCl2 (7 mM)'; 'Cobalt, CoCl2 (2.5 mM)'};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
+
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(bleackley_macgillivray_2011.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
+
+%% Load the data 
 
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/metallomicsbleackley raw data.xls', 'rawdata');
 
-% Get indices of the data columns
-ind_data = 3:2:13;
+% Get the list of ORFs and the correponding data 
+% (this part usually changes significantly based on the format of the raw data file)
+hit_strains = data.raw(:,1);
 
+% Get the data itself
+hit_data = data.raw(:, 3:2:13); % if the dataset is discrete or binary
+   
+% Eliminate all white spaces & capitalize
+hit_strains = clean_orf(hit_strains);
 
-% Eliminate anything that doesn't look like an ORF
-inds = find(cellfun(@isnumeric, data.raw(:,1)));
-data.raw(inds,:) = [];
+% Eliminate anything that is numeric
+inds = find(cellfun(@isnumeric, hit_strains) | cellfun(@isempty, hit_strains));
+hit_strains(inds) = [];
+hit_data(inds, :) = [];
 
-inds = setdiff(1:length(data.raw(:,1)),strmatch('Y', data.raw(:,1)));
-data.raw(inds,:) = [];
+% If in gene name form, transform into ORF name
+hit_strains = translate(hit_strains);
 
-% Eliminate white spaces before/after ORF
-data.raw(:,1) = cellfun(@strtrim, data.raw(:,1),'UniformOutput',0);
-
-data2.orfs = upper(data.raw(:,1));
-data2.data = data.raw(:,ind_data);
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hit_strains));
+hit_strains(inds) = [];
+hit_data(inds, :) = [];
 
 % Make sure all the data are numbers
-inds = find(cellfun(@isnumeric, data2.data)==0);
-data2.data(inds) = {NaN};
-data2.data = cell2mat(data2.data);
+inds = find(~cellfun(@isnumeric, hit_data));
+hit_data(inds) = {NaN};
+hit_data = cell2mat(hit_data);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data2.data, data2.orfs, {'gname','mean'});
-bleackley_macgillivray_2011.orfs = t;
-bleackley_macgillivray_2011.data = t2;
-bleackley_macgillivray_2011.ph = strcat(phenotypes, {'; '}, treatments);
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+
+% MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% Multiple datasets (e.g., replicates) may get the same id, which can then
+% be used to average them out
+hit_data_ids = [20; 21; 22; 23; 24; 25];
+
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is quantitative:
+bleackley_macgillivray_2011.orfs = hit_strains;
+bleackley_macgillivray_2011.ph = hit_data_names;
+bleackley_macgillivray_2011.data = hit_data;
+bleackley_macgillivray_2011.dataset_ids = hit_data_ids;
+
+%% Save
 
 save('./bleackley_macgillivray_2011.mat','bleackley_macgillivray_2011');
+
+%% Print out
 
 fid = fopen('./bleackley_macgillivray_2011.txt','w');
 write_matrix_file(fid, bleackley_macgillivray_2011.orfs, bleackley_macgillivray_2011.ph, bleackley_macgillivray_2011.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(bleackley_macgillivray_2011)
+end
 
 end
