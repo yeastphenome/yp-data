@@ -1,0 +1,2 @@
+68	hap ? | cell size | YPD [standard] | Jorgensen P~Tyers M, 2002
+709	het | cell size | YPD [standard] | Jorgensen P~Tyers M, 2002
