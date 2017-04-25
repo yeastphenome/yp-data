@@ -1,4 +1,4 @@
-ORF	cells with superlarge lipid droplets;SC	cells with superlarge lipid droplets;YPD
+ORF	hap a | lipid particle size | minimal complete [standard] | Fei W~Yang H, 2011	hap a | lipid particle size | YPD [standard] | Fei W~Yang H, 2011
 YLR404W	94.429	74.333
 YGR157W	87.000	1.667
 YJR073C	127.571	2.333

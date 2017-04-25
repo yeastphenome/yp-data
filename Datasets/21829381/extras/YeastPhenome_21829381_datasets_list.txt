@@ -1,0 +1,3 @@
+124	hap a | lipid particle size | minimal complete [standard] | Fei W~Yang H, 2011
+452	tet | lipid particle size | minimal complete [standard] | Fei W~Yang H, 2011
+700	hap a | lipid particle size | YPD [standard] | Fei W~Yang H, 2011
