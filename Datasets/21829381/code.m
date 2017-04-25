@@ -63,6 +63,8 @@ fei_yang_2011.dataset_ids = hit_data_ids;
 
 save('./fei_yang_2011.mat','fei_yang_2011');
 
+%% Print out
+
 fid = fopen('./fei_yang_2011.txt','w');
 write_matrix_file(fid, fei_yang_2011.orfs, fei_yang_2011.ph, fei_yang_2011.data);
 fclose(fid);
