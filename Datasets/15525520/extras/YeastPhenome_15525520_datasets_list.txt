@@ -1,0 +1,9 @@
+5237	hap a | growth (relative abundance in pooled culture) | benomyl [1 ug/ml] | Pan X~Boeke JD, 2004
+5238	hap a | growth (relative abundance in pooled culture) | benomyl [5 ug/ml] | Pan X~Boeke JD, 2004
+5239	hap a | growth (relative abundance in pooled culture) | benomyl [10 ug/ml] | Pan X~Boeke JD, 2004
+5240	hap a | growth (relative abundance in pooled culture) | benomyl [15 ug/ml] | Pan X~Boeke JD, 2004
+5241	hap a | growth (relative abundance in pooled culture) | benomyl [20 ug/ml] | Pan X~Boeke JD, 2004
+5242	hap a | growth (relative abundance in pooled culture) | benomyl [25 ug/ml] | Pan X~Boeke JD, 2004
+5243	hap a | growth (relative abundance in pooled culture) | benomyl [30 ug/ml] | Pan X~Boeke JD, 2004
+5244	hap a | growth (relative abundance in pooled culture) | benomyl [35 ug/ml] | Pan X~Boeke JD, 2004
+5245	hap a | growth (relative abundance in pooled culture) | benomyl [40 ug/ml] | Pan X~Boeke JD, 2004
