@@ -22,6 +22,9 @@ tested_orfs = clean_orf(tested_orfs);
 
 tested_orfs(strcmp('YLR287-A', tested_orfs)) = {'YLR287C-A'};
 
+inds = find(cellfun(@isnumeric, tested_orfs));
+tested_orfs(inds) = [];
+
 tested_orfs = translate(tested_orfs);
 
 % Find anything that doesn't look like an ORF

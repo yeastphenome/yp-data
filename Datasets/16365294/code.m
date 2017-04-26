@@ -1,74 +1,91 @@
 %% Ohya~Morishita, 2005
-% DATA = ohya_morishita_2005
-
 function FILENAMES = code()
-FILENAMES = {};
 
-ohya_morishita_2005.source = {'http://scmd.gi.k.u-tokyo.ac.jp/datamine/pnas/mutant_analysis_2011_10_20.tab'};
-ohya_morishita_2005.downloaddate = {'2013-03-12'};
+addpath(genpath('../../Yeast-Matlab-Utils/'));
+
+FILENAMES = {};
 ohya_morishita_2005.pmid = 16365294;
 
-phenotypes = {'Growth, flow cytometry'};
-treatments = {''};
+% MANUAL. Download the list of dataset ids and standard names from
+% the paper's page on www.yeastphenome.org & save the file to ./extras
 
-[FILENAMES{end+1}, param.raw] = dataread('xlsread','Datasets/Phenotypes/2005_Ohya~Morishita/parameter_names.xlsx', 'Sheet1');
+% Load the list
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(ohya_morishita_2005.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+datasets.id = d{1};
+datasets.standard_name = d{2};
 
-[FILENAMES{end+1}, data] = dataread('importdata','Datasets/Phenotypes/2005_Ohya~Morishita/mutant_analysis_2011_10_20.tab');
+%% Load data
+
+[FILENAMES{end+1}, data] = read_data('importdata','./raw_data/mutant_analysis_2011_10_20.tab');
 data.orfs = data.textdata(2:end,1);
 data.params = data.textdata(1,2:end)';
 
-[t,ind1,ind2] = intersect(data.params, param.raw(:,1));
-data.params_name(ind1,1) = param.raw(ind2,2);
+% Get the IDs of the parameters to be retained
+phenotype_name = cell(length(datasets.id),1);
+phenotype_id = cell(length(datasets.id),1);
+for i = 1 : length(datasets.id)
+    tmp = regexp(datasets.standard_name{i}, '\|', 'split');
+    t = strtrim(tmp{2});
+    tmp2 = regexp(t, '\(([A-Z0-9_\-]*?)\)$', 'match');
+    tmp2 = tmp2{1}(2:end-1);
+    phenotype_name{i} = t;
+    phenotype_id{i} = tmp2;
+end
 
+% First, get just the parameters that we want to include (exclude the CV
+% parameters and the ones that are not easily interpretable)
+[~,ind1,ind2] = intersect(phenotype_id, data.params);
+data.params = data.params(ind2);
+data.data = data.data(:,ind2);
 
-% Eliminate anything that doesn't look like an ORF
-inds = find(cellfun(@isnumeric, data.orfs));
-data.orfs(inds) = [];
-data.data(inds,:) = [];
+phenotype_id = phenotype_id(ind1);
+phenotype_name = phenotype_name(ind1);
+hit_data_ids = datasets.id(ind1);
 
-inds = setdiff(1:length(data.orfs),strmatch('Y', data.orfs));
-data.orfs(inds) = [];
-data.data(inds,:) = [];
+hit_orfs = data.orfs;
+hit_data = data.data;
 
-% Eliminate white spaces before/after ORF
-data.orfs = cellfun(@strtrim, data.orfs,'UniformOutput',0);
-data.orfs = upper(data.orfs);
+% Eliminate all white spaces & capitalize
+hit_orfs = clean_orf(hit_orfs);
 
-% Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(data.data, data.orfs, {'gname','mean'});
-ohya_morishita_2005.orfs = t;
-ohya_morishita_2005.data = t2;
-ohya_morishita_2005.ph = data.params_name;
+hit_orfs = translate(hit_orfs);
 
-save('Datasets/Phenotypes/2005_Ohya~Morishita/ohya_morishita_2005.mat','ohya_morishita_2005');
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hit_orfs));
+disp(hit_orfs(inds));  
 
+% If the same strain is present more than once, average its values
+[hit_orfs, hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
 
-% NEED TO SEND EMAIL TO YOSHI OHYA WITH QUESTIONS
-% % Save data into database
-% dt = ohya_morishita_2005;
-% 
-% datasets = get_datasets_for_paper(dt);
-% datasets_ids = zeros(length(datasets),1);
-% datasets_names = cell(length(datasets),3);
-% for i = 1 : length(datasets)
-%     datasets_ids(i,1) = datasets(i).id;
-%     datasets_names{i,1} = datasets(i).name;
-%     if isempty(datasets(i).reporter)
-%         datasets_names{i,2} = '';
-%     else
-%         datasets_names{i,2} = datasets(i).reporter;
-%     end
-%     datasets_names{i,3} = datasets(i).conditionset;
-% end
-% 
-% [~,database_ix] = sortrows(datasets_names,[1 2 3]);
-% [~,ph_ix] = sort(dt.ph);
-% 
-% % Before loading into database, manually check the order of ph_ix and database_ix to make sure they correspond.
-% datasets_names(database_ix,:)
-% dt.ph(ph_ix)
-% 
-% insert_data_into_db(dt, ph_ix, datasets_ids(database_ix));
+%% Prepare final dataset
+
+% Match the dataset ids with the dataset standard names
+[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+hit_data_names = cell(size(hit_data_ids));
+hit_data_names(ind2) = datasets.standard_name(ind1);
+
+% If the dataset is quantitative:
+ohya_morishita_2005.orfs = hit_orfs;
+ohya_morishita_2005.ph = hit_data_names;
+ohya_morishita_2005.data = hit_data;
+ohya_morishita_2005.dataset_ids = hit_data_ids;
+
+%% Save
+
+save('./ohya_morishita_2005.mat','ohya_morishita_2005');
+
+%% Print out
+
+fid = fopen('./ohya_morishita_2005.txt','w');
+write_matrix_file(fid, ohya_morishita_2005.orfs, ohya_morishita_2005.ph, ohya_morishita_2005.data);
+fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(ohya_morishita_2005)
+end
 
 end
 

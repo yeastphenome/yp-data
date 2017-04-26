@@ -1,0 +1,2 @@
+180	hap a | dot-like protein localization in the cytoplasm (Fus1-Mid2 chimera) | galactose [2%], raffinose [2%] | Proszynski TJ~Walch, 2005
+5657	hap a | protein localization to vacuole (Fus1-Mid2 chimera) | galactose [2%], raffinose [2%] | Proszynski TJ~Walch, 2005

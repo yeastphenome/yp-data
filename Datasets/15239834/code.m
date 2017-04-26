@@ -27,13 +27,23 @@ ind_data3 = strmatch('150 mM HU Growth Index', data.raw(1,:));
 
 hit_data = data.raw(2:end, [ind_data1 ind_data2 ind_data3]);
 
+% Unfortunate case: ~70 ORFs have an extra symbol ("b", "c", etc.) that
+% looks like it is part of the ORF, but it isn't. 
+inds = find(cellfun(@length, hit_orfs) == 8);   % ~70 ORFs have a "-" missing
+for i = 1 : length(inds)
+    hit_orfs{inds(i)} = hit_orfs{inds(i)}(1:7);
+end
+
 % Eliminate anything that doesn't look like an ORF
 hit_orfs = clean_orf(hit_orfs);
 
-inds = find(cellfun(@length, hit_orfs) == 8);   % ~70 ORFs have a "-" missing
-for i = 1 : length(inds)
-    hit_orfs{inds(i)} = [hit_orfs{inds(i)}(1:7) '-' hit_orfs{inds(i)}(8)];
-end
+hit_orfs(strcmp('YOR298C-AB', hit_orfs)) = {'YOR298C-A'};
+
+inds = find(cellfun(@isnumeric, hit_orfs));
+hit_orfs(inds) = [];
+hit_data(inds,:) = [];
+
+hit_orfs = translate(hit_orfs);
 
 inds = find(~is_orf(hit_orfs));
 disp(hit_orfs(inds));

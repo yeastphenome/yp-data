@@ -100,9 +100,9 @@ hoepfner_movva_2014.ph = hit_data_names;
 hoepfner_movva_2014.data = hit_data;
 hoepfner_movva_2014.dataset_ids = hit_data_ids;
 
-% Eliminate all ORFs that have no value for any of the datasets
+% Eliminate all ORFs that have very few values (are likely to be essential -- in HOM data it's hard to exclude them otherwise)
 numvalues = sum(~isnan(hoepfner_movva_2014.data),2);
-inds = find(numvalues==0);
+inds = find(numvalues<round(0.25 * length(hoepfner_movva_2014.ph)));
 hoepfner_movva_2014.orfs(inds) = [];
 hoepfner_movva_2014.data(inds,:) = [];
 
@@ -115,6 +115,13 @@ save('./hoepfner_movva_2014.mat','hoepfner_movva_2014');
 fid = fopen('./hoepfner_movva_2014.txt','w');
 write_matrix_file(fid, hoepfner_movva_2014.orfs, hoepfner_movva_2014.ph, hoepfner_movva_2014.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(hoepfner_movva_2014)
+end
 
 end
 
