@@ -1,0 +1,3 @@
+497	hom | growth (spot assay) | ethanol [10%] | Fujita K~Iwahashi H, 2006
+5004	hom | growth (spot assay) | propan-1-ol [4%] | Fujita K~Iwahashi H, 2006
+5005	hom | growth (spot assay) | pentan-1-ol [0.5%] | Fujita K~Iwahashi H, 2006

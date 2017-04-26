@@ -1,0 +1,252 @@
+5405	hap a | Length of the long axis of the nucleus in the daughter cell in budded cells with nuclei in both mother and daughter cells (D177_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5406	hap a | Length of the long axis of the nucleus in the mother cell in budded cells with nuclei in both mother and daughter cells (D176_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5407	hap a | Length of the short axis of the cell in unbudded cells with single nucleus (C104_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5408	hap a | Length of the short axis of the daugther cell in budded cells with single nucleus in mother cell or at bud neck (C108_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5409	hap a | Length of the short axis of the daugther cell in budded cells with nuclei in both mother and daughter cells (C108_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5410	hap a | Length of the short axis of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C104_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5411	hap a | Length of the short axis of the mother cell in budded cells with nuclei in both mother and daughter cells (C104_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5412	hap a | Maximal brightness of nucleus in unbudded cells with single nucleus (D16-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5413	hap a | Maximal brightness of nucleus in budded cells with single nucleus in mother cell or at bud neck (D16-3_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5414	hap a | Maximal brightness of nucleus in budded cells with nuclei in both mother and daughter cells (D16-3_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5415	hap a | Maximal brightness of nucleus in daughter in budded cells with nuclei in both mother and daughter cells (D16-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5416	hap a | Maximal brightness of nucleus in mother in budded cells with nuclei in both mother and daughter cells (D16-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5417	hap a | Maximal distance between nuclear gravity center and nuclear outline in unbudded cells with single nucleus (D173_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5418	hap a | Maximal distance between nuclear gravity center and nuclear outline in budded cells with single nucleus in mother cell or at bud neck (D175_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5419	hap a | Maximal distance between nuclear gravity center and nuclear outline in daughter in budded cells with nuclei in both mother and daughter cells (D174_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5420	hap a | Maximal distance between nuclear gravity center and nuclear outline in mother in budded cells with nuclei in both mother and daughter cells (D173_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5421	hap a | Maximal distance between patches in unbudded cells with single nucleus (A121_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5422	hap a | Maximal distance between patches in budded cells with single nucleus in mother cell or at bud neck (A121_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5423	hap a | Maximal distance between patches in budded cells with nuclei in both mother and daughter cells (A121_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5424	hap a | Maximal intensity of nuclear brightness divided by average in unbudded cells with single nucleus (D194_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5425	hap a | Maximal intensity of nuclear brightness divided by average in budded cells with single nucleus in mother cell or at bud neck (D196_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5426	hap a | Maximal intensity of nuclear brightness divided by average in budded cells with nuclei in both mother and daughter cells (D196_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5427	hap a | Maximal intensity of nuclear brightness divided by average in daughter in budded cells with nuclei in both mother and daughter cells (D195_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5428	hap a | Maximal intensity of nuclear brightness divided by average in mother in budded cells with nuclei in both mother and daughter cells (D194_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5429	hap a | Mobility of nucleus in daughter in budded cells with nuclei in both mother and daughter cells (D153_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5430	hap a | Mobility of nucleus in mother in budded cells with single nucleus in mother cell or at bud neck (D152_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5431	hap a | Mobility of nucleus in mother in budded cells with nuclei in both mother and daughter cells (D152_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5432	hap a | Nuclear minimum radius in unbudded cells with single nucleus (D179_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5433	hap a | Nuclear minimum radius in budded cells with single nucleus in mother cell or at bud neck (D181_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5434	hap a | Nuclear minimum radius in daughter in budded cells with nuclei in both mother and daughter cells (D180_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5435	hap a | Nuclear minimum radius in mother in budded cells with nuclei in both mother and daughter cells (D179_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5436	hap a | Number of unbudded cells with single nucleus and delocalized actin (A105_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5437	hap a | Number of unbudded cells with delocalized actin (A105) | standard [standard] | Ohya Y~Morishita S, 2005
+5438	hap a | Number of budded and unbudded cells with delocalized actin (A111) | standard [standard] | Ohya Y~Morishita S, 2005
+5439	hap a | Number of unbudded cells with single nucleus and actin localized at bud site (A106_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5440	hap a | Number of unbudded cells with actin localized at bud site (A106) | standard [standard] | Ohya Y~Morishita S, 2005
+5441	hap a | Number of budded and unbudded cells with actin localized at bud site, bud tip or in bud (A112) | standard [standard] | Ohya Y~Morishita S, 2005
+5442	hap a | Number of budded cells with single nucleus in mother cell or at bud neck and actin localized at bud tip (A107_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5443	hap a | Number of budded cells with nuclei in both mother and daughter cells and actin localized at bud tip (A107_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5444	hap a | Number of budded cells with actin localized at bud tip (A107) | standard [standard] | Ohya Y~Morishita S, 2005
+5445	hap a | Number of budded cells with single nucleus in mother cell or at bud neck and actin localized at bud tip or in bud (A112_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5446	hap a | Number of budded cells with nuclei in both mother and daughter cells and actin localized at bud tip or in bud (A112_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5447	hap a | Number of budded cells with single nucleus in mother cell or at bud neck and actin localized in the daughter cell (A108_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5448	hap a | Number of budded cells with nuclei in both mother and daughter cells and actin localized in the daughter cell (A108_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5449	hap a | Number of budded cells with actin localized in the daughter cell (A108) | standard [standard] | Ohya Y~Morishita S, 2005
+5450	hap a | Number of budded cells with single nucleus in mother cell or at bud neck and delocalized actin (A109_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5451	hap a | Number of budded cells with nuclei in both mother and daughter cells and delocalized actin (A109_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5452	hap a | Number of budded cells with delocalized actin (A109) | standard [standard] | Ohya Y~Morishita S, 2005
+5453	hap a | Number of budded cells with single nucleus in mother cell or at bud neck and actin localized at bud neck (A110_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5454	hap a | Number of budded cells with nuclei in both mother and daughter cells and actin localized at bud neck (A110_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5455	hap a | Number of budded cells with actin localized at bud neck (A110) | standard [standard] | Ohya Y~Morishita S, 2005
+5456	hap a | Number of unbudded cells with single nucleus and no actin (A113_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5457	hap a | Number of all cells with single nucleus in mother cell or at bud neck and no actin (A113_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5458	hap a | Number of all cells with nuclei in both mother and daughter cells and no actin (A113_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5459	hap a | Number of all cells with no actin (A113) | standard [standard] | Ohya Y~Morishita S, 2005
+5460	hap a | Number of budded cells with large bud and single nucleus in mother cell or at bud neck (C125_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5461	hap a | Number of budded cells with large bud and nuclei in both mother and daughter cells (C125_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5462	hap a | Number of budded cells with large bud (C122) | standard [standard] | Ohya Y~Morishita S, 2005
+5463	hap a | Number of budded cells with medium bud and single nucleus in mother cell or at bud neck (C124_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5464	hap a | Number of budded cells with medium bud and nuclei in both mother and daughter cells (C124_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5465	hap a | Number of budded cells with medium bud (C121) | standard [standard] | Ohya Y~Morishita S, 2005
+5466	hap a | Number of unbudded cells (C119) | standard [standard] | Ohya Y~Morishita S, 2005
+5467	hap a | Number of budded cells with single nucleus in mother cell (D200) | standard [standard] | Ohya Y~Morishita S, 2005
+5468	hap a | Number of budded cells with single nucleus at bud neck (D201) | standard [standard] | Ohya Y~Morishita S, 2005
+5469	hap a | Number of budded cells with nuclei in both mother and daughter cells (D202) | standard [standard] | Ohya Y~Morishita S, 2005
+5470	hap a | Number of bright actin patches in unbudded cells with single nucleus (A122_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5471	hap a | Number of bright actin patches in budded cells with single nucleus in mother cell or at bud neck (A122_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5472	hap a | Number of bright actin patches in budded cells with nuclei in both mother and daughter cells (A122_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5473	hap a | Position of the bud neck in budded cells with single nucleus in mother cell or at bud neck (C105_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5474	hap a | Position of the bud neck in budded cells with nuclei in both mother and daughter cells (C105_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5475	hap a | Proportion of actin region at neck in budded cells with single nucleus in mother cell or at bud neck (A9_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5476	hap a | Proportion of actin region at neck in budded cells with nuclei in both mother and daughter cells (A9_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5477	hap a | Ratio of actin patches to actin region in unbudded cells with single nucleus (A123_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5478	hap a | Ratio of actin patches to actin region in budded cells with single nucleus in mother cell or at bud neck (A123_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5479	hap a | Ratio of actin patches to actin region in budded cells with nuclei in both mother and daughter cells (A123_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5480	hap a | Ratio of axis ratio in daughter and axis ratio in mother in budded cells with single nucleus in mother cell or at bud neck (C116_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5481	hap a | Ratio of axis ratio in daughter and axis ratio in mother in budded cells with nuclei in both mother and daughter cells (C116_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5482	hap a | Ratio of distance between each nucleus and middle point of neck in budded cells with nuclei in both mother and daughter cells (D151_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5483	hap a | Ratio of distance from bud nucleus to bud tip and long axis length in bud in budded cells with nuclei in both mother and daughter cells (D123_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5484	hap a | Ratio of distance from neck to buds nucleus and long axis length in bud in budded cells with nuclei in both mother and daughter cells (D113_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5485	hap a | Ratio of distance from neck to mother cells nucleus and length from bud neck to the farthest point on mother cell in budded cells with nuclei in both mother and daughter cells (D112_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5486	hap a | Ratio of distance from neck to nucleus center and length from bud neck to the farthest point on mother cell in budded cells with single nucleus in mother cell or at bud neck (D114_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5487	hap a | Ratio of distance from nuclear center to cell tip and length of cells long axis in unbudded cells with single nucleus (D105_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5488	hap a | Ratio of distance from nuclear center to mother tip and long axis length of mother cell in budded cells with single nucleus in mother cell or at bud neck (D107_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5489	hap a | Ratio of distance from nuclear center to mother tip in budded cell and long axis length of mother cell in budded cells with nuclei in both mother and daughter cells (D106_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5490	hap a | Ratio of nuclei brightness in the daughter and the mother cells in budded cells with nuclei in both mother and daughter cells (D198_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5491	hap a | Ratio of nuclei sizes in the daughter and the mother cells in budded cells with nuclei in both mother and daughter cells (D197_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5492	hap a | Ratio of the circumferences of mother and daughter cells in budded cells with single nucleus in mother cell or at bud neck (C117_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5493	hap a | Ratio of the circumferences of mother and daughter cells in budded cells with nuclei in both mother and daughter cells (C117_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5494	hap a | Ratio of the sizes of daughter and mother cells in budded cells with single nucleus in mother cell or at bud neck (C118_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5495	hap a | Ratio of the sizes of daughter and mother cells in budded cells with nuclei in both mother and daughter cells (C118_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5496	hap a | Realtive distance of nuclear brightest point in bud to bud center in budded cells with nuclei in both mother and daughter cells (D150_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5497	hap a | Relative distance of nuclear brightest point in mother to mother center in budded cells with nuclei in both mother and daughter cells (D148_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5498	hap a | Relative distance of nuclear brightest point to cell center in unbudded cells with single nucleus (D148_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5499	hap a | Relative distance of nuclear brightest point to mother center in budded cells with single nucleus in mother cell or at bud neck (D148_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5500	hap a | Relative distance of nuclear gravity center in bud to bud center in budded cells with nuclei in both mother and daughter cells (D149_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5501	hap a | Relative distance of nuclear gravity center in mother to mother center in budded cells with nuclei in both mother and daughter cells (D147_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5502	hap a | Relative distance of nuclear gravity center to cell center in unbudded cells with single nucleus (D147_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5503	hap a | Relative distance of nuclear gravity center to mother center in budded cells with single nucleus in mother cell or at bud neck (D147_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5504	hap a | Roundness of the cell in unbudded cells with single nucleus (C115_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5505	hap a | Roundness of the daughter cell in budded cells with single nucleus in mother cell or at bud neck (C114_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5506	hap a | Roundness of the daughter cell in budded cells with nuclei in both mother and daughter cells (C114_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5507	hap a | Roundness of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C115_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5508	hap a | Roundness of the mother cell in budded cells with nuclei in both mother and daughter cells (C115_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5509	hap a | Roundness of the nucleus in unbudded cells with single nucleus (D182_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5510	hap a | Roundness of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D184_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5511	hap a | Roundness of the nucleus in the daughter cell in budded cells with nuclei in both mother and daughter cells (D183_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5512	hap a | Roundness of the nucleus in the mother cell in budded cells with nuclei in both mother and daughter cells (D182_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5513	hap a | Size of the actin region in unbudded cells with single nucleus (A7-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5514	hap a | Size of the actin region in the daughter cell in budded cells with single nucleus in mother cell or at bud neck (A7-2_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5515	hap a | Size of the actin region in the daughter cell in budded cells with nuclei in both mother and daughter cells (A7-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5516	hap a | Size of the actin region in the mother cell in budded cells with single nucleus in mother cell or at bud neck (A7-1_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5517	hap a | Size of the actin region in the mother cell in budded cells with nuclei in both mother and daughter cells (A7-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5518	hap a | Size of the actin region relative to cell size in unbudded cells with single nucleus (A101_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5519	hap a | Size of the actin region relative to cell size in budded cells with single nucleus in mother cell or at bud neck (A101_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5520	hap a | Size of the actin region relative to cell size in budded cells with nuclei in both mother and daughter cells (A101_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5521	hap a | Size of the cell in unbudded cells with single nucleus (C11-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5522	hap a | Size of the cell in budded cells with single nucleus in mother cell or at bud neck (C101_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5523	hap a | Size of the cell in budded cells with nuclei in both mother and daughter cells (C101_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5524	hap a | Size of the daughter cell in budded cells with single nucleus in mother cell or at bud neck (C11-2_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5525	hap a | Size of the daughter cell in budded cells with nuclei in both mother and daughter cells (C11-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5526	hap a | Size of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C11-1_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5527	hap a | Size of the mother cell in budded cells with nuclei in both mother and daughter cells (C11-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5528	hap a | Size of the nucleus in unbudded cells with single nucleus (D14-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5529	hap a | Size of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D14-3_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5530	hap a | Size of the nucleus in budded cells with nuclei in both mother and daughter cells (D14-3_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5531	hap a | Size of the nucleus in the daughter cell in budded cells with nuclei in both mother and daughter cells (D14-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5532	hap a | Size of the nucleus in the mother cell in budded cells with nuclei in both mother and daughter cells (D14-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5533	hap a | Total length of the actin patch link in budded cells with single nucleus in mother cell or at bud neck (A120_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5534	hap a | Total length of the actin patch link in budded cells with nuclei in both mother and daughter cells (A120_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5535	hap a | Width of the bud neck in budded cells with nuclei in both mother and daughter cells (C109_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5536	hap a | Width of the bud neck in budded cells with single nucleus in mother cell or at bud neck (C109_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5537	hap a | Total length of the actin patch link in unbudded cells with single nucleus (A120_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5538	hap a | Number of unbudded cells with single nucleus (D199) | standard [standard] | Ohya Y~Morishita S, 2005
+5539	hap a | Average brightness of nucleus in budded cells with nuclei in both mother and daughter cells (D193_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5540	hap a | Average brightness of nucleus in daughter in budded cells with nuclei in both mother and daughter cells (D192_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5541	hap a | Average brightness of nucleus in mother in budded cells with nuclei in both mother and daughter cells (D191_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5542	hap a | Brightness of the actin region in unbudded cells with single nucleus (A8-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5543	hap a | Brightness of the nucleus in unbudded cells with single nucleus (D15-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5544	hap a | Brightness of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D15-3_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5545	hap a | Brightness of the nucleus in budded cells with nuclei in both mother and daughter cells (D15-3_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5546	hap a | Brightness of the nucleus in the daughter cell in budded cells with nuclei in both mother and daughter cells (D15-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5547	hap a | Brightness of the nucleus in the mother cell in budded cells with nuclei in both mother and daughter cells (D15-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5548	hap a | Brigthness of the actin region in the daughter cell in budded cells with single nucleus in mother cell or at bud neck (A8-2_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5549	hap a | Brigthness of the actin region in the daughter cell in budded cells with nuclei in both mother and daughter cells (A8-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5550	hap a | Brigthness of the actin region in the mother cell in budded cells with single nucleus in mother cell or at bud neck (A8-1_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5551	hap a | Brigthness of the actin region in the mother cell in budded cells with nuclei in both mother and daughter cells (A8-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5552	hap a | Bud actin region ratio to total region in budded cells with single nucleus in mother cell or at bud neck (A102_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5553	hap a | Bud actin region ratio to total region in budded cells with nuclei in both mother and daughter cells (A102_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5554	hap a | Circumference of the cell in unbudded cells with single nucleus (C12-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5555	hap a | Circumference of the cell in budded cells with single nucleus in mother cell or at bud neck (C102_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5556	hap a | Circumference of the cell in budded cells with nuclei in both mother and daughter cells (C102_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5557	hap a | Circumference of the daughter cell in budded cells with single nucleus in mother cell or at bud neck (C12-2_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5558	hap a | Circumference of the daughter cell in budded cells with nuclei in both mother and daughter cells (C12-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5559	hap a | Circumference of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C12-1_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5560	hap a | Circumference of the mother cell in budded cells with nuclei in both mother and daughter cells (C12-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5561	hap a | Difference between the brightest and the darkest points on cell wall in unbudded cells with single nucleus (C126_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5562	hap a | Difference between the brightest and the darkest points on cell wall in budded cells with single nucleus in mother cell or at bud neck (C126_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5563	hap a | Difference between the brightest and the darkest points on cell wall in budded cells with nuclei in both mother and daughter cells (C126_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5564	hap a | Difference between the thickest and the thinnest points on cell wall in unbudded cells with single nucleus (C127_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5565	hap a | Difference between the thickest and the thinnest points on cell wall in budded cells with single nucleus in mother cell or at bud neck (C127_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5566	hap a | Difference between the thickest and the thinnest points on cell wall in budded cells with nuclei in both mother and daughter cells (C127_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5567	hap a | Direction of bud growth in budded cells with single nucleus in mother cell or at bud neck (C106_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5568	hap a | Direction of bud growth in budded cells with nuclei in both mother and daughter cells (C106_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5569	hap a | Distance between bud tip and mother long axis through middle point of neck in budded cells with single nucleus in mother cell or at bud neck (C113_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5570	hap a | Distance between bud tip and mother long axis through middle point of neck in budded cells with nuclei in both mother and daughter cells (C113_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5571	hap a | Distance between middle point of neck and mother hip in budded cells with single nucleus in mother cell or at bud neck (C128_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5572	hap a | Distance between middle point of neck and mother hip in budded cells with nuclei in both mother and daughter cells (C128_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5573	hap a | Distance between nuclear brightest point and mother hip in budded cells with single nucleus in mother cell or at bud neck (D142_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5574	hap a | Distance between nuclear gravity center and mother hip in budded cells with single nucleus in mother cell or at bud neck (D126_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5575	hap a | Distance between nuclear brightest point and mother hip in budded cells with nuclei in both mother and daughter cells (D141_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5576	hap a | Distance between nuclear gravity center in mother and mother hip in budded cells with nuclei in both mother and daughter cells (D125_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5577	hap a | Distance between the brightest point of the nucleus and the center of the cell in unbudded cells with single nucleus (D135_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5578	hap a | Distance between the brightest point of the nucleus and the center of the mother cell in budded cells with single nucleus in mother cell or at bud neck (D136_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5579	hap a | Distance between the brightest point of the nucleus and the middle point of bud neck in budded cells with single nucleus in mother cell or at bud neck (D132_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5580	hap a | Distance between the brightest point of the nucleus and the tip of the cell in unbudded cells with single nucleus (D127_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5581	hap a | Distance between the brightest point of the nucleus and the tip of the mother cell in budded cells with single nucleus in mother cell or at bud neck (D129_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5582	hap a | Distance between the brightest point of the nucleus in the daughter cell and the center of the daughter cell in budded cells with nuclei in both mother and daughter cells (D137_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5583	hap a | Distance between the brightest point of the nucleus in the daughter cell and the tip of the daughter cell in budded cells with nuclei in both mother and daughter cells (D139_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5584	hap a | Distance between the brightest point of the nucleus in the daugther cell and the middle point of bud neck in budded cells with nuclei in both mother and daughter cells (D131_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5585	hap a | Distance between the brightest point of the nucleus in the mother cell and the center of the mother cell in budded cells with nuclei in both mother and daughter cells (D135_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5586	hap a | Distance between the brightest point of the nucleus in the mother cell and the middle point of bud neck in budded cells with nuclei in both mother and daughter cells (D130_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5587	hap a | Distance between the brightest point of the nucleus in the mother cell and the tip of the mother cell in budded cells with nuclei in both mother and daughter cells (D128_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5588	hap a | Distance between the bud neck and the center of the mother cell in budded cells with nuclei in both mother and daughter cells (C112_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5589	hap a | Distance between the center of the actin patch in the daughter cell and the bud neck in budded cells with single nucleus in mother cell or at bud neck (A104_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5590	hap a | Distance between the center of the actin patch in the daughter cell and the bud neck in budded cells with nuclei in both mother and daughter cells (A104_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5591	hap a | Distance between the center of the actin patch in the mother cell and the bud neck in budded cells with single nucleus in mother cell or at bud neck (A103_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5592	hap a | Distance between the center of the actin patch in the mother cell and the bud neck in budded cells with nuclei in both mother and daughter cells (A103_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5593	hap a | Distance between the center of the mother cell and the bud neck in budded cells with single nucleus in mother cell or at bud neck (C112_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5594	hap a | Distance between the gravity center of the nucleus and the brightest point of the nucleus in unbudded cells with single nucleus (D188_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5595	hap a | Distance between the gravity center of the nucleus and the brightest point of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D190_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5596	hap a | Distance between the gravity center of the nucleus and the brightest point of the nucleus in the daughter cell in budded cells with nuclei in both mother and daughter cells (D189_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5597	hap a | Distance between the gravity center of the nucleus and the brightest point of the nucleus in the mother cell in budded cells with nuclei in both mother and daughter cells (D188_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5598	hap a | Distance between the gravity center of the nucleus and the center of the cell in unbudded cells with single nucleus (D117_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5599	hap a | Distance between the gravity center of the nucleus and the center of the mother cell in budded cells with single nucleus in mother cell or at bud neck (D118_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5600	hap a | Distance between the gravity center of the nucleus and the tip of the cell in unbudded cells with single nucleus (D102_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5601	hap a | Distance between the gravity center of the nucleus and the tip of the mother cell in budded cells with single nucleus in mother cell or at bud neck (D104_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5602	hap a | Distance between the gravity center of the nucleus in the daughter cell and the center of the daughter cell in budded cells with nuclei in both mother and daughter cells (D119_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5603	hap a | Distance between the gravity center of the nucleus in the daughter cell and the tip of daughter cell in budded cells with nuclei in both mother and daughter cells (D121_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5604	hap a | Distance between the gravity center of the nucleus in the mother cell and the center of the mother cell in budded cells with nuclei in both mother and daughter cells (D117_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5605	hap a | Distance between the gravity center of the nucleus in the mother cell and the tip of the mother cell in budded cells with nuclei in both mother and daughter cells (D103_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5606	hap a | Distance between the middle point of the bud neck and the gravity center of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D110_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5607	hap a | Distance between the middle point of the bud neck and the gravity center of the nucleus of the daughter cell in budded cells with nuclei in both mother and daughter cells (D109_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5608	hap a | Distance between the middle point of the bud neck and the gravity center of the nucleus of the mother cell in budded cells with nuclei in both mother and daughter cells (D108_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5609	hap a | Distance between the tip of the daughter cell and the long axis of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C110_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5610	hap a | Distance between the tip of the daughter cell and the long axis of the mother cell in budded cells with nuclei in both mother and daughter cells (C110_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5611	hap a | Distance between the tip of the daughter cell and the short axis of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C111_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5612	hap a | Distance between the tip of the daughter cell and the short axis of the mother cell in budded cells with nuclei in both mother and daughter cells (C111_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5613	hap a | Distance between two nuclear brightest points through middle point of neck in budded cells with nuclei in both mother and daughter cells (D134_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5614	hap a | Distance between two nuclear gravity centers through middle point of neck in budded cells with nuclei in both mother and daughter cells (D116_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5615	hap a | Ellipticity of the cell in unbudded cells with single nucleus (C13_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5616	hap a | Ellipticity of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C13_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5617	hap a | Ellipticity of the mother cell in budded cells with nuclei in both mother and daughter cells (C13_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5618	hap a | Ellipticity of the nucleus in unbudded cells with single nucleus (D17-1_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5619	hap a | Ellipticity of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D17-3_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5620	hap a | Ellipticity of the nucleus in the daughter cell in budded cells with nuclei in both mother and daughter cells (D17-2_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5621	hap a | Ellipticity of the nucleus in the mother cell in budded cells with nuclei in both mother and daughter cells (D17-1_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5622	hap a | Fraction of unbudded cells that have delocalized actin (A114) | standard [standard] | Ohya Y~Morishita S, 2005
+5623	hap a | Fraction of unbudded cells that have actin localized at bud site (A115) | standard [standard] | Ohya Y~Morishita S, 2005
+5624	hap a | Fraction of budded cells that have actin localized at bud tip (A116) | standard [standard] | Ohya Y~Morishita S, 2005
+5625	hap a | Fraction of budded cells that have actin localized in the daughter cell (A117) | standard [standard] | Ohya Y~Morishita S, 2005
+5626	hap a | Fraction of budded cells that have delocalized actin (A118) | standard [standard] | Ohya Y~Morishita S, 2005
+5627	hap a | Fraction of budded cells that have actin localized at bud neck (A119) | standard [standard] | Ohya Y~Morishita S, 2005
+5628	hap a | Fraction of budded cells that have a large bud (C125) | standard [standard] | Ohya Y~Morishita S, 2005
+5629	hap a | Fraction of budded cells that have a medium bud (C124) | standard [standard] | Ohya Y~Morishita S, 2005
+5630	hap a | Fraction of unbudded cells that have a single nucleus (D206) | standard [standard] | Ohya Y~Morishita S, 2005
+5631	hap a | Fraction of cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells that have single nucleus in mother or double nucleus in both mother and daughter (D210) | standard [standard] | Ohya Y~Morishita S, 2005
+5632	hap a | Fraction of budded cells that have a single nucleus in mother cell (D207) | standard [standard] | Ohya Y~Morishita S, 2005
+5633	hap a | Fraction in budded cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells that have a single nucleus in mother cell (D214) | standard [standard] | Ohya Y~Morishita S, 2005
+5634	hap a | Fraction in cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells with single nucleus in mother cell (D211) | standard [standard] | Ohya Y~Morishita S, 2005
+5635	hap a | Fraction of budded cells that have a single nucleus at bud neck (D208) | standard [standard] | Ohya Y~Morishita S, 2005
+5636	hap a | Fraction of budded cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells that have a single nucleus at bud neck (D215) | standard [standard] | Ohya Y~Morishita S, 2005
+5637	hap a | Fraction of cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells that have a single nucleus at bud neck (D212) | standard [standard] | Ohya Y~Morishita S, 2005
+5638	hap a | Fraction of budded cells tht have nuclei in both mother and daughter cells (D209) | standard [standard] | Ohya Y~Morishita S, 2005
+5639	hap a | Fraction of budded cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells tht have nuclei in both mother and daughter cells (D216) | standard [standard] | Ohya Y~Morishita S, 2005
+5640	hap a | Fraction of cells with a single nucleus (in mother or at bud neck) or nuclei in both mother and daughter cells tht have nuclei in both mother and daughter cells (D213) | standard [standard] | Ohya Y~Morishita S, 2005
+5641	hap a | Fraction of unbudded cells with multiple nuclei (D203) | standard [standard] | Ohya Y~Morishita S, 2005
+5642	hap a | Fraction of all cells with no nuclei (D204) | standard [standard] | Ohya Y~Morishita S, 2005
+5643	hap a | Fraction of budded cells with single nucleus in daughter cell (D205) | standard [standard] | Ohya Y~Morishita S, 2005
+5644	hap a | Fraction of small bud cells with single nucleus in mother cell or at bud neck (C123_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5645	hap a | Fraction of small bud cells with nuclei in both mother and daughter cells (C123_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5646	hap a | Fraction of small bud cells (C120) | standard [standard] | Ohya Y~Morishita S, 2005
+5647	hap a | Fraction of small bud cells with  (C123) | standard [standard] | Ohya Y~Morishita S, 2005
+5648	hap a | Length of the long axis of the cell in unbudded cells with single nucleus (C103_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5649	hap a | Length of the long axis of the daugther cell in budded cells with single nucleus in mother cell or at bud neck (C107_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5650	hap a | Length of the long axis of the daugther cell in budded cells with nuclei in both mother and daughter cells (C107_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5651	hap a | Length of the long axis of the mother cell in budded cells with single nucleus in mother cell or at bud neck (C103_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5652	hap a | Length of the long axis of the mother cell in budded cells with nuclei in both mother and daughter cells (C103_C) | standard [standard] | Ohya Y~Morishita S, 2005
+5653	hap a | Length of the long axis of the nucleus in unbudded cells with single nucleus (D176_A) | standard [standard] | Ohya Y~Morishita S, 2005
+5654	hap a | Length of the long axis of the nucleus in budded cells with single nucleus in mother cell or at bud neck (D178_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5655	hap a | Average brightness of nucleus in budded cells with single nucleus in mother cell or at bud neck (D193_A1B) | standard [standard] | Ohya Y~Morishita S, 2005
+5656	hap a | Average brightness of nucleus in unbudded cells with single nucleus (D191_A) | standard [standard] | Ohya Y~Morishita S, 2005

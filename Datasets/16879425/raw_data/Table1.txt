@@ -1,0 +1,140 @@
+Table1 Genes in which deletion resulting in sensitivity to ethanol (10% (v/v))							
+#	ORF	Gene name	Description				
+1	YBL006C		Hypothetical protein				
+2	YBL058W	SHP1	Putative regulatory subunit for Glc7p				
+3	YBR029C	CDS1	Phosphatidate cytidylyltransferase (CDP-diglyceride synthetase)				
+4	YBR036C	CSG2	Endoplasmic reticulum membrane protein 				
+5	YBR127C	VMA2/ VAT2	Vacuolar ATPase V1 domain subunit B (60 kDa)				
+6	YBR173C	UMP1	20S proteasome maturation factor				
+7	YBR179C	FZO1	Mitochondrial integral membrane protein				
+8	YBR200W	BEM1	Protein contains two SH3 domains				
+9	YBR279W	PAF1	RNA polymerase II-associated protein				
+10	YCL007C	CWH36	Involved in cell wall biogenesis				
+11	YCL008C	STP22	Component of the ESCRT-I complex				
+12	YCL029C	BIK1	Microtubule-binding protein				
+13	YCR020W-B	HTL1	High-temperature lethal				
+14	YCR028C	FEN2	Amino acid permease				
+15	YCR077C	PAT1	Necessary for accurate chromosome transmission during cell				
+16	YDL013W	HEX3	involved in hexose metabolism				
+17	YDL040C	NAT1	N-terminal acetyltransferase				
+18	YDL066W	IDP1	Mitochondrial form of NADP-specific isocitrate dehydrogenase				
+19	YDL160C	DHH1	(putative) DEAD box RNA helicase				
+20	YDL185W	VMA1/ TFP1	Vacuolar ATPase V1 domain subunit A (69 kDa)				
+21	YDL225W	SHS1	Septin homolog				
+22	YDR007W	TRP1	n-(5'-phosphoribosyl)-anthranilate isomerase				
+23	YDR008C		Questionable ORF				
+24	YDR017C	KCS1	Shows homology to basic leucine zipper family of transcription factors				
+25	YDR027C	LUV1	Involved in vacuole biogenesis				
+26	YDR069C	DOA4	Ubiquitin isopeptidase				
+27	YDR080W	VPS41	Component of vacuolar membrane protein complex				
+28	YDR129C	SAC6	Fibrim homolog (actin-filament bundling protein)				
+29	YDR138W	HPR1	Involved in mitosis, recombination; similar to TOP1 across 2 regions				
+30	YDR149C		Questionable ORF				
+31	YDR173C	ARG82	IP3 6-/IP4 3-kinase				
+32	YDR207C	UME6	Ume6p is a C6 zinc finger URS1-binding protein				
+33	YDR264C	AKR1	Ankyrin repeat-containing protein				
+34	YDR293C	SSD1	Putative protein phosphatase				
+35	YDR354W	TRP4	Anthranilate phosphoribosyl transferase				
+36	YDR359C	VID21	Vacuolar import degradation				
+37	YDR433W		Questionable ORF				
+38	YDR435C	PPM1	Carboxy methyl transferase for protein phosphatase 2A catalytic subunit				
+39	YEL003W	GIM4	Bovine prefoldin subunit 2 homolog (putative)				
+40	YEL027W	VMA3/ CUP5	Vacuolar ATPase V0 domain subunit c (17 kDa)				
+41	YEL044W		Hypothetical protein				
+42	YEL051W	VMA8	Vacuolar ATPase V1 domain subunit D				
+43	YER005W	YND1	Apyrase (NDPase/NTPase)				
+44	YER044C	ERG28	Involved in synthesis of ergosterol				
+45	YER083C	RMD7	Required for meiotic nuclear division 				
+46	YFL023W	BUD27	Protein involved in bud-site selection				
+47	YFL028C	CAF16	ABC ATPase				
+48	YFR019W	FAB1	1-phosphatidylinositol-3-phosphate 5-kinase				
+49	YGL058W	RAD6	Ubiquitin conjugating (E2) enzyme				
+50	YGL070C	RPB9	RNA polymerase II subunit				
+51	YGR078C	PAC10	Part of the heteromeric co-chaperone GimC/prefoldin complex				
+52	YGR105W	VMA21	Vacuolar H+-ATPase assembly protein				
+53	YGR135W	PRE9	Proteasome component Y13				
+54	YGR167W	CLC1	Clathrin light chain				
+55	YGR188C	BUB1	Serine/threonine protein kinase required for cell cycle arrest				
+56	YGR196C		Weak similarity to Tetrahymena acidic repetitive protein arp1				
+57	YGR200C	ELP2	90 kD subunit of elongator and elongating RNA pol II holoenzyme				
+58	YGR229C	SMI1	57 kDa nuclear protein				
+59	YGR270W	YTA7	26S proteasome ATPase				
+60	YHL009C	YAP3	Basic leucine zipper (bZIP) transcription factor				
+61	YHR008C	SOD2	Manganese-containing superoxide dismutase				
+62	YHR013C	ARD1	Subunit of the major N alpha-acetyltransferase; complexes with Nat1p				
+63	YHR026W	VMA16/ PPA1	Vacuolar ATPase V0 domain subunit c''				
+64	YHR030C	SLT2	Serine/threonine MAP kinase				
+65	YHR039C-B	VMA10	Vacuolar H+ ATPase subunit G of the catalytic (V1) sector				
+66	YHR041C	SRB2	RNA polymerase II holoenzyme/mediator subunit				
+67	YHR167W		Hypothetical protein				
+68	YIL036W	CST6	Chromosome STability				
+69	YIL090W		Similarity to hypothetical S. pombe protein				
+70	YJL095W	BCK1	MEKK serine/threonine kinase				
+71	YJL176C	SWI3	Transcription factor				
+72	YJL179W	PFD1	Bovine prefoldin subunit 1 homolog (putative)				
+73	YJR043C	POL32	third (55 kDa) subunit of DNA polymerase delta				
+74	YJR075W	HOC1	Putative mannosyltransferase				
+75	YJR090C	GRR1	Cyclin F box protein				
+76	YKL037W		Weak similarity to C.elegans ubc-2 protein				
+77	YKL048C	ELM1	Protein kinase				
+78	YKL057C	NUP120	Subunit of the Nup84p subcomplex of the nuclear pore complex 				
+79	YKL073W	LHS1	Novel member of the Hsp70 family of molecular chaperones				
+80	YKL110C	KTI12	Protein involved in resistance to K. lactis killer toxin				
+81	YKL113C	RAD27	42 kDa 5' to 3' exonuclease required for Okazaki fragment processing				
+82	YKL114C	APN1	Major apurinic/apyrimidinic endonuclease/3'-repair diesterase				
+83	YKL118W		Questionable ORF				
+84	YKL119C	VMA12/ VPH2	25.2 kDa protein involved in assembly of vacuolar H(-) ATPase				
+85	YKR007W	MEH1/ EGO1	Weak similarity to Streptococcus protein M5 precursor				
+86	YKR082W	NUP133	Nuclear pore protein				
+87	YLL043W	FPS1	Glycerol channel protein				
+88	YLR025W	SNF7	One of four subunits of ESCRT-III				
+89	YLR315W	NKP2	Weak similarity to rat apolipoprotein A-IV				
+90	YLR322W		Questionable ORF				
+91	YLR331C		Questionable ORF				
+92	YLR332W	MID2	Protein required for mating				
+93	YLR357W	RSC2	Member of RSC complex.				
+94	YLR368W		Hypothetical protein				
+95	YLR384C	IKI3	Required for killer toxin sensitivity				
+96	YLR386W	VAC14	Similarity to hypothetical S. pombe protein				
+97	YLR417W	VPS36	Involved in vacuolar protein targeting				
+98	YLR435W	TSR2	Hypothetical protein				
+99	YLR447C	VMA6	Vacuolar ATPase V0 domain subunit d (36 kDa)				
+100	YML062C	MFT1	Mitochondrial targeting protein				
+101	YML094W	GIM5	Bovine prefoldin subunit 5 homolog (putative)				
+102	YML095C-A		Hypothetical protein				
+103	YML112W	CTK3	CTD kinase-I gamma subunit				
+104	YML121W	GTR1	Putative small GTPase				
+105	YMR003W		Hypothetical protein				
+106	YMR060C	TOM37	Mitochondrial import receptor				
+107	YMR077C	VPS20	Myristoylated subunit of ESCRT-III				
+108	YMR116C	ASC1	G-beta like protein				
+109	YMR142C	RPL13B	Ribosomal protein L13B				
+110	YMR312W	ELP6	Elongator protein, part of the HAP subcomplex of Elongator				
+111	YNL079C	TPM1	Tropomyosin I				
+112	YNL080C		Hypothetical protein				
+113	YNL098C	RAS2	Small, GTP-binding protein				
+114	YNL133C		Hypothetical protein				
+115	YNL225C	CNM67	Spindle pole body protein involved in nuclear migration				
+116	YNL271C	BNI1	Contains formin homology domains				
+117	YOR002W	ALG6	Glucosyltransferase				
+118	YOR008C	SLG1	Involved in cell wall integrity and stress response				
+119	YOR035C	SHE4	Required for mother cell-specific HO expression				
+120	YOR115C	TRS33	TRAPP subunit of 33 kDa				
+121	YOR198C	BFR1	Involved in secretion				
+122	YOR258W		Hypothetical protein				
+123	YOR332W	VMA4	Vacuolar ATPase V1 domain subunit E (27 kDa)				
+124	YPL002C	SNF8	Component of the ESCRT-II complex				
+125	YPL065W	VPS28	Involved in vacuolar protein targeting				
+126	YPL084W	BRO1	Cytoplasmic class E vacuolar protein sorting (VPS) factor 				
+127	YPL090C	RPS6A	Ribosomal protein S6A (S10A) (rp9) (YS4)				
+128	YPL129W	ANC1	Transcription initiation factor TFIIF small subunit				
+129	YPL161C	BEM4	Involved in polarity establishment and bud emergence				
+130	YPL180W		Weak similarity to human l-caldesmon I				
+131	YPL271W	ATP15	Nuclear gene for ATP synthase epsilon subunit				
+132	YPR024W	YME1	Mitochondrial member of the CDC48/PAS1/SEC18 family of ATPases				
+133	YPR036W	VMA13/ CLS11	Vacuolar ATPase V1 domain subunit H (54 kDa)				
+134	YPR067W	ISA2	Iron sulfur assembly - IscA/NifA homolog				
+135	YPR101W	SNT309	Component of a protein complex associated with the splicing factor Prp19p				
+136	YPR131C	NAT3	N-terminal acetyltransferase				
+137	YPR135W	CTF4	DNA polymerase alpha binding protein				
+							

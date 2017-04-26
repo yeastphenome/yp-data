@@ -1,0 +1,2 @@
+5385	hap a | growth (relative abundance in pooled culture) | selenomethionine [12 uM] | Plateau P~Lazard M, 2017
+5386	hap a | growth (relative abundance in pooled culture) | selenomethionine [20 uM] | Plateau P~Lazard M, 2017
