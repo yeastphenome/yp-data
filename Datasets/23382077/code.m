@@ -16,7 +16,7 @@ datasets.standard_name = d{2};
 %% Load the data
 
 % Load plate maps
-[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v4 0.xls', 'DATA');
+[FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v4 0.xlsx', 'DATA');
 tested_orfs = tested.raw(2:end,2);
 
 % Eliminate all white spaces & capitalize
