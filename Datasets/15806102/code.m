@@ -36,6 +36,10 @@ hit_data_ids = [185];
 
 [FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/Mat_a_obs_v2(1).0.xlsx', 'DATA');
 
+% Remove ORFs labelled as "empty"
+inds = find(strcmp('empty', tested.raw(:,8)));
+tested.raw(inds,:) = [];
+
 tested_orfs = clean_orf(tested.raw(:,2));
 tested_orfs(strcmp(tested_orfs,'YLR287-A')) = {'YLR287C-A'};
 
@@ -45,11 +49,12 @@ disp(tested_orfs(inds));
 
 tested_orfs(inds) = [];
 
+tested_orfs = translate(tested_orfs);
+
 tested_orfs = unique(tested_orfs);
 
 % Check if all the hits are in the tested space
 [missing,inds] = setdiff(hits_orfs, tested_orfs);
-tested_orfs = [tested_orfs; missing];
 
 %% Prepare final dataset
 
