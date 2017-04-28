@@ -17,8 +17,8 @@ datasets.standard_name = d{2};
 %% Load tested
 
 [FILENAMES{end+1}, tested.raw] = read_data('xlsread','./raw_data/mat_alpha_061101.xlsx', 'mat_alpha_061101');
-tested_orfs = tested.raw(4:end,2);
 
+tested_orfs = tested.raw(4:end,2);
 tested_orfs = clean_orf(tested_orfs);
 
 tested_orfs(strcmp('YYKL138C', tested_orfs)) = {'YKL138C'};
@@ -28,12 +28,15 @@ inds = find(~is_orf(tested_orfs));
 disp(tested_orfs(inds)); 
 
 tested_orfs(inds) = [];
+
+tested_orfs = translate(tested_orfs);
 tested_orfs = unique(tested_orfs);
 
 %% Load data
 
 [FILENAMES{end+1}, hits_genenames] = read_data('textscan', './raw_data/hits_genenames.txt', '%s');
 
+hits_genenames = clean_genename(hits_genenames);
 [hits_orfs, translated] = translate(hits_genenames);
 
 hits_orfs = unique(hits_orfs);
