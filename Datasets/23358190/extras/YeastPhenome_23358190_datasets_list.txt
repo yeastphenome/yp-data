@@ -1,0 +1,3 @@
+206	hom | growth (relative abundance in pooled culture) | dieldrin (dieldrin [460 uM]) | Gaytan BD~Vulpe CD, 2013
+207	hom | growth (relative abundance in pooled culture) | dieldrin (dieldrin [230 uM]) | Gaytan BD~Vulpe CD, 2013
+208	hom | growth (relative abundance in pooled culture) | dieldrin (dieldrin [115 uM]) | Gaytan BD~Vulpe CD, 2013
