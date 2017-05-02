@@ -33,7 +33,7 @@ hit_data(inds,:) = [];
 hit_data = cell2mat(hit_data);
 
 % Average data for identical ORFs that appear multiple times
-[t,t2] = grpstats(hit_data, hit_orfs, {'gname','mean'});
+[hit_orfs, hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -61,5 +61,12 @@ save('./kim_cunningham_2012.mat','kim_cunningham_2012');
 fid = fopen('./kim_cunningham_2012.txt','w');
 write_matrix_file(fid, kim_cunningham_2012.orfs, kim_cunningham_2012.ph, kim_cunningham_2012.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(kim_cunningham_2012)
+end
 
 end
