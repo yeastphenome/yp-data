@@ -34,6 +34,8 @@ inds = find(~is_orf(strains));
 strains(inds) = [];
 hit_data(inds,:) = [];
 
+strains = translate(strains);
+
 % Average any repeated value
 [strains, hit_data] = grpstats(hit_data, strains, {'gname','mean'});
 
