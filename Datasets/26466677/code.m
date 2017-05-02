@@ -26,13 +26,12 @@ hit_strains = translate(hit_strains);
 
 hit_strains(ismember(hit_strains, {'RPL19-A'})) = {'YBR084C-A'};
 
-% Clean up orf names and remove repeats
-hit_strains = clean_orf(hit_strains);
-hit_strains = unique(hit_strains);
-
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
+
+hit_strains = clean_orf(hit_strains);
+hit_strains = unique(hit_strains);
 
 % Get the data itself
 hit_data = zeros(size(hit_strains))-1;
@@ -47,18 +46,18 @@ tested_strains = data(5:end, 1);
 tested_strains = clean_orf(tested_strains);
 
 % Find anything that doesn't look like an ORF
-nans = @(x) all(isnan(x(:)));
-tested_strains(cellfun(nans, tested_strains)) = [];
+tested_strains(cellfun(@isnumeric, tested_strains)) = [];
 tested_strains(ismember(tested_strains, {'YLR287-A'})) = {'YLR287C-A'};
 inds = find(~is_orf(tested_strains));
 tested_strains(inds) = [];
 
+tested_strains = translate(tested_strains);
+
+tested_strains = unique(tested_strains);
+
 % Make sure the that all the hits are part of the tested set
 [missing,~] = setdiff(hit_strains, tested_strains);
 disp(missing);
-
-% If it seems reasonable, add the missing hits to the list of tested strains
-tested_strains = [tested_strains; missing];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
