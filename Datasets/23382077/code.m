@@ -27,16 +27,21 @@ inds = find(cellfun(@isnumeric,tested_orfs));
 tested_orfs(inds)= [];  
 tested_orfs(ismember(tested_orfs, {'YLR287-A'})) = {'YLR287C-A'};
 
+tested_orfs = translate(tested_orfs);
+tested_orfs = unique(tested_orfs);
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
 hit_data_ids = [145];
 
-%% Load tested data
+%% Load data
 [FILENAMES{end+1}, hits_genenames] = read_data('textread','./raw_data/huang_paulovich_2013_hits.txt', '%s');
 
 hits_genenames = clean_genename(hits_genenames);
 hits_orfs = translate(hits_genenames);
+
+hits_orfs = unique(hits_orfs);
 
 hits_scores = -ones(length(hits_orfs),1);
 
