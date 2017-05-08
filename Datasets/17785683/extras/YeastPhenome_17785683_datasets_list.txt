@@ -1,0 +1,2 @@
+501	hom | growth (relative abundance in pooled culture) | iron sulfate pentahydrate [5 mM], time [15 generations] | Jo WJ~Vulpe CD, 2007
+1346	hom | growth (relative abundance in pooled culture) | copper(II) sulfate heptahydrate [10 mM], time [15 generations] | Jo WJ~Vulpe CD, 2007
