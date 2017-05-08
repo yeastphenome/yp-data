@@ -1,0 +1,22 @@
+ORF	Name	Biological process†
+YCL034W	LSB5	Actin filament organization
+YNL314W	DAL82	Allantoin catabolism and transcription initiation from polymerase II promoter
+YML099C	ARG81	Arginine metabolism
+YBR078W	ECM33	Cell wall organization and biogenesis
+YNL267W *	PIK1 *	Cytokinesis, post-Golgi transport, and signal transduction
+YLR286C	CTS1	Cytokinesis, completion of separation
+YDL192W	ARF1	ER-to-Golgi transport and intra-Golgi transport
+YBR290W	BSD2	Heavy metal ion transport and protein vacuolar targeting
+YLR025W	SNF7	Late endosome to vacuole transport
+YHR147C	MRPL6	Protein biosynthesis
+YOL040C *	RPS15 *	Protein biosynthesis
+YAL005C	SSA1	Protein folding and protein-nucleus import, translocation
+YIL047C	SYG1	Signal transduction
+YBR265W *	TSC10 *	Sphingolipid biosynthesis
+YMR296C *	LCB1 *	Sphingolipid biosynthesis
+YJR007W *	SUI2 *	Translation initiation
+YML092C *	PRE8 *	Ubiquitin-dependent protein catabolism
+YER140W	YER140W	Unknown
+YER188W	YER188W	Unknown
+YGR205W	YGR205W	Unknown
+YLR294C	YLR294C	Unknown
