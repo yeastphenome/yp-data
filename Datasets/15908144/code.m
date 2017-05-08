@@ -19,7 +19,7 @@ datasets.standard_name = d{2};
 [FILENAMES{end+1}, tested_orfs] = read_data('textscan', './raw_data/list_of_used_knockouts_PhD_Thesis_Luban.txt', '%s\n');
 tested_orfs = clean_orf(tested_orfs);
 
-tested_orfs(strcmp('YBL098\V', tested_orfs)) = {'YBL098W'};
+tested_orfs(strcmp('YBL098V', tested_orfs)) = {'YBL098W'};
 tested_orfs(strcmp('YDR07SW', tested_orfs)) = {'YDR075W'};
 tested_orfs(strcmp('YDR27SW', tested_orfs)) = {'YDR275W'};
 tested_orfs(strcmp('YDR51SW', tested_orfs)) = {'YDR515W'};

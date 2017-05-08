@@ -1,0 +1,14 @@
+1310	hom | growth (culture turbidity) | silver(1+) nitrate [20 uM] | Jin YH~Freedman JH, 2008
+1311	hom | growth (culture turbidity) | sodium arsenite [1.25 mM] | Jin YH~Freedman JH, 2008
+1312	hom | growth (culture turbidity) | cadmium dichloride [25 uM] | Jin YH~Freedman JH, 2008
+1313	hom | growth (culture turbidity) | chromium trioxide [900 uM] | Jin YH~Freedman JH, 2008
+1314	hom | growth (culture turbidity) | copper(II) sulfate [7 mM] | Jin YH~Freedman JH, 2008
+1315	hom | growth (culture turbidity) | mercury dichloride [49 uM] | Jin YH~Freedman JH, 2008
+1316	hom | growth (culture turbidity) | zinc sulfate [2 mM] | Jin YH~Freedman JH, 2008
+11771	hom | growth (culture turbidity) | silver(1+) nitrate [10 uM] | Jin YH~Freedman JH, 2008
+11772	hom | growth (culture turbidity) | sodium arsenite [400 uM] | Jin YH~Freedman JH, 2008
+11773	hom | growth (culture turbidity) | cadmium dichloride [5 uM] | Jin YH~Freedman JH, 2008
+11774	hom | growth (culture turbidity) | mercury dichloride [19 uM] | Jin YH~Freedman JH, 2008
+11775	hom | growth (culture turbidity) | chromium trioxide [400 uM] | Jin YH~Freedman JH, 2008
+11776	hom | growth (culture turbidity) | zinc sulfate [1 mM] | Jin YH~Freedman JH, 2008
+11777	hom | growth (culture turbidity) | copper(II) sulfate [5 mM] | Jin YH~Freedman JH, 2008
