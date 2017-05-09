@@ -1,0 +1,6 @@
+5375	hom/het? | growth (relative abundance in pooled culture) | Formaldehyde, 0.6mM, 5 generations (formaldehyde [0.6 mM], time [5 generations]) | North M~Vulpe CD, 2016
+5376	hom/het? | growth (relative abundance in pooled culture) | Formaldehyde, 0.3mM, 5 generations (formaldehyde [0.3mM], time [5 generations]) | North M~Vulpe CD, 2016
+5377	hom/het? | growth (relative abundance in pooled culture) | Formaldehyde, 0.15mM, 5 generations (formaldehyde [0.15mM], time [5 generations]) | North M~Vulpe CD, 2016
+5378	hom/het? | growth (relative abundance in pooled culture) | Formaldehyde, 0.6mM, 15 generations (formaldehyde [0.6 mM], time [15 generations]) | North M~Vulpe CD, 2016
+5379	hom/het? | growth (relative abundance in pooled culture) | Formaldehyde, 0.3mM, 15 generations (formaldehyde [0.3mM], time [15 generations]) | North M~Vulpe CD, 2016
+5380	hom/het? | growth (relative abundance in pooled culture) | Formaldehyde, 0.3mM, 15 generations (formaldehyde [0.3mM], formaldehyde [0.15mM]) | North M~Vulpe CD, 2016
