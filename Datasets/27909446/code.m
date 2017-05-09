@@ -1,4 +1,4 @@
-%% FirstAuthor~LastAuthor, YYYY
+%% North~Vulpe, 2016
 function FILENAMES = code()
 
 addpath(genpath('../../Yeast-Matlab-Utils/'));
