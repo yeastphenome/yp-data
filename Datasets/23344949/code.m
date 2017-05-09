@@ -37,10 +37,7 @@ hit_strains(inds) = [];
 hit_data(inds) = [];
 
 % Fix up the data
-hit_data = strrep(hit_data, '+++', '-3');
-hit_data = strrep(hit_data, '++', '-2');
-hit_data = strrep(hit_data, '+', '-1');
-hit_data = str2double(hit_data);
+hit_data = -cellfun(@length, hit_data);
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
