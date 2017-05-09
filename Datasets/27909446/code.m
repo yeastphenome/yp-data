@@ -36,6 +36,8 @@ inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds, :) = [];
 
+hit_data(isnan(hit_data)) = 0;
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
