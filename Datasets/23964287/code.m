@@ -35,6 +35,9 @@ inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds) = [];
 
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
