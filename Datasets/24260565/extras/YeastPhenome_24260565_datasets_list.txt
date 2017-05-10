@@ -1,0 +1,3 @@
+203	hom | growth (relative abundance in pooled culture) | toxaphene [640 uM] | Gaytan BD~Vulpe CD, 2013
+204	hom | growth (relative abundance in pooled culture) | toxaphene [320 uM] | Gaytan BD~Vulpe CD, 2013
+205	hom | growth (relative abundance in pooled culture) | toxaphene [160 uM] | Gaytan BD~Vulpe CD, 2013
