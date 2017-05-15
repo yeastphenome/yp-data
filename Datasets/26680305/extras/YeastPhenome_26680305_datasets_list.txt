@@ -1,6 +1,0 @@
-4952	hap a | tRNA processed form 1/2 (tRNA(Ile)(UAU)) | standard [standard] | Wu J~Hopper AK, 2015
-11779	hap a | tRNA processed form 1/2 + extra band below I (tRNA(Ile)(UAU)) | standard [standard] | Wu J~Hopper AK, 2015
-11780	hap a | tRNA processed form 2* (tRNA(Ile)(UAU)) | standard [standard] | Wu J~Hopper AK, 2015
-11781	hap a | tRNA processed form 4/5/6 (tRNA(Ile)(UAU)) | standard [standard] | Wu J~Hopper AK, 2015
-11782	hap a | tRNA processed form 7 (tRNA(Ile)(UAU)) | standard [standard] | Wu J~Hopper AK, 2015
-11783	hap a | tRNA processed form 9 (tRNA(Ile)(UAU)) | standard [standard] | Wu J~Hopper AK, 2015
