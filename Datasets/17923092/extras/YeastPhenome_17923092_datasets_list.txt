@@ -1,0 +1,2 @@
+11785	hom | growth (relative abundance in pooled culture) | Macbecin II [200-400 uM], temperature [30°C] | McClellan AJ~Frydman J, 2007
+11786	hom | growth (relative abundance in pooled culture) | Macbecin II [200-400 uM], temperature [37ºC] | McClellan AJ~Frydman J, 2007
