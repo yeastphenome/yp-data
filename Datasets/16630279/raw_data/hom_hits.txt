@@ -1,0 +1,24 @@
+YAL026C 	DRS2 	Integral membrane Ca(2+)-ATPase 
+YPL254W 	HFI1 	Subunit of SAGA 
+YBR179C 	FZO1 	Mitochondrial integral membrane protein 
+YDR138W 	HPR1 	Subunit of THO/TREX 
+YDR364C 	CDC40 	Splicing factor 
+YOR209C 	NPT1 	Nicotinate phosphoribosyl transferase 
+YLR242C 	ARV1 	Sterol metabolism/ transport 
+YLR322W 	VPS65 	Unknown 
+YDR149C 	 	Unknown 
+YDR173C 	ARG82 	Transcription factor 
+YPL069C 	BTS1 	Terpenoid biosynthesis 
+YPR135W 	CTF4 	Chromatin-associated protein 
+YGL025C 	PGD1 	Subunit of Mediator 
+YGL045W/ 
+YGL046W 	RIM8 	Unknown 
+YGL084C 	GUP1 	Glycerol transporter 
+YNL236W 	SIN4 	Subunit of Mediator 
+YNL225C 	CNM67 	Cytoskeleton 
+YNL215W 	IES2 	Associates with INO80 
+YKR024C 	DBP7 	ATP-dependent RNA helicase 
+YGR036C 	CAX4 	(Pyro)phosphatase 
+YDR477W 	SNF1 	Protein serine/threonine kinase 
+YNL284C 	MRPL10 	Protein synthesis 
+YOL148C 	SPT20 	Subunit of SAGA 
