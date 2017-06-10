@@ -1,0 +1,2 @@
+5253	hom | growth (relative abundance in pooled culture) | Nannocystin A [75 uM] | Krastel P~Hoepfner D, 2015
+5254	het | growth (relative abundance in pooled culture) | Nannocystin A [75 uM] | Krastel P~Hoepfner D, 2015
