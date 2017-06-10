@@ -1,0 +1,19 @@
+11788	hap a | abundance of alanine | minimal [standard] | Mulleder M~Ralser M, 2016
+11789	hap a | abundance of aspartic acid | minimal [standard] | Mulleder M~Ralser M, 2016
+11790	hap a | abundance of glutamate | minimal [standard] | Mulleder M~Ralser M, 2016
+11791	hap a | abundance of phenylalanine | minimal [standard] | Mulleder M~Ralser M, 2016
+11792	hap a | abundance of glycine | minimal [standard] | Mulleder M~Ralser M, 2016
+11793	hap a | abundance of histidine | minimal [standard] | Mulleder M~Ralser M, 2016
+11794	hap a | abundance of isoleucine | minimal [standard] | Mulleder M~Ralser M, 2016
+11795	hap a | abundance of lysine | minimal [standard] | Mulleder M~Ralser M, 2016
+11796	hap a | abundance of leucine | minimal [standard] | Mulleder M~Ralser M, 2016
+11797	hap a | abundance of methionine | minimal [standard] | Mulleder M~Ralser M, 2016
+11798	hap a | abundance of asparagine | minimal [standard] | Mulleder M~Ralser M, 2016
+11799	hap a | abundance of proline | minimal [standard] | Mulleder M~Ralser M, 2016
+11800	hap a | abundance of glutamine | minimal [standard] | Mulleder M~Ralser M, 2016
+11801	hap a | abundance of arginine | minimal [standard] | Mulleder M~Ralser M, 2016
+11802	hap a | abundance of serine | minimal [standard] | Mulleder M~Ralser M, 2016
+11803	hap a | abundance of threonine | minimal [standard] | Mulleder M~Ralser M, 2016
+11804	hap a | abundance of valine | minimal [standard] | Mulleder M~Ralser M, 2016
+11805	hap a | abundance of tryptophan | minimal [standard] | Mulleder M~Ralser M, 2016
+11806	hap a | abundance of tyrosine | minimal [standard] | Mulleder M~Ralser M, 2016

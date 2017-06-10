@@ -1,0 +1,2 @@
+11807	hap a | expression level of a gene (PHO84pr-YFP) | inorganic phosphate [50 uM] | Choi J~O'Shea EK, 2017
+11808	hap a | expression level of a gene (PHO84pr-YFP) | inorganic phosphate [1 mM] | Choi J~O'Shea EK, 2017

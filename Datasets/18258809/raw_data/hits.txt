@@ -1,0 +1,15 @@
+THO2	++
+THP2	+++
+MFT1	+++++
+HPR1	++++
+SAC3	++++
+THP1	++++
+RIP1/NUP42	+++++
+NUP84	+++
+NUP100	+++
+NUP133	++
+NUP2	+
+NUP59	+
+NUP120	+
+NUP60	+
+NUP188	+

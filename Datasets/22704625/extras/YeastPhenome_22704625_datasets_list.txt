@@ -1,0 +1,2 @@
+5251	hom | growth (relative abundance in pooled culture) | asperentin [110 uM] | Hoepfner D~Winzeler EA, 2012
+5252	het | growth (relative abundance in pooled culture) | asperentin [110 uM] | Hoepfner D~Winzeler EA, 2012
