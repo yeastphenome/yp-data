@@ -1,0 +1,3 @@
+11822	hap alpha | utilization of fatty acids (formation of clear zone on agar) | oleic acid [0.1%] | Smith JJ~Aitchison JD, 2006
+11823	hap alpha | utilization of fatty acids (formation of clear zone on agar) | tetradecanoic acid [0.125%] | Smith JJ~Aitchison JD, 2006
+11824	hap alpha | growth (colony size) | acetate [2%] | Smith JJ~Aitchison JD, 2006
