@@ -1,0 +1,3 @@
+5180	hap a | pheromone sensitivity (FUS1-lacZ basal activity) | alpha factor pheromone [0.3-100 μM] | Chasse SA~Dohlman HG, 2006
+11828	hap a | pheromone sensitivity (FUS1-lacZ EC50) | alpha factor pheromone [0.3-100 μM] | Chasse SA~Dohlman HG, 2006
+11829	hap a | pheromone sensitivity (FUS1-lacZ maximum responsiveness) | alpha factor pheromone [0.3-100 μM] | Chasse SA~Dohlman HG, 2006
