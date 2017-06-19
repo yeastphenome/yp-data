@@ -46,6 +46,10 @@ hit_strains = clean_orf(hit_strains);
 hit_strains(ismember(hit_strains, {'YOR331CF'})) = {'YOR331C'};
 hit_strains(ismember(hit_strains, {'YPR099CG'})) = {'YPR099C'};
 
+% "D" and "E" are subscript annotations here, not ORF name variants
+hit_strains(ismember(hit_strains, {'YEL045C-D'})) = {'YEL045C'};
+hit_strains(ismember(hit_strains, {'YKL118W-E'})) = {'YKL118W'};
+
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];  
@@ -53,16 +57,10 @@ hit_data(inds, :) = [];
 
 % Transform the data
 final_hit_data = zeros(length(hit_data),1);
-letters = {'A', 'B', 'C'};
+letters = {'C','B','A'};
 for i = 1:length(letters)
-    ind = find(~cellfun(@isempty, strfind(hit_data, letters{i})));
-    if i == 1
-        final_hit_data(ind) = -3;
-    elseif i == 2
-        final_hit_data(ind) = -2;
-    else i == 3
-        final_hit_data(ind) = -1;
-    end
+    ind = strcmp(letters{i}, hit_data);
+    final_hit_data(ind) = -i;
 end
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
