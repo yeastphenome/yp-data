@@ -36,6 +36,7 @@ hit_strains(ismember(hit_strains, {'YOLO57W'})) = {'YOL057W'};
 hit_strains(ismember(hit_strains, {'YBRF182C-A'})) = {'YBR182C-A'};
 hit_strains(ismember(hit_strains, {'YKLO72W'})) = {'YKL072W'};
 hit_strains(ismember(hit_strains, {'YOLO62C'})) = {'YOL062C'};
+hit_strains(ismember(hit_strains, {'YLR287-A'})) = {'YLR287C-A'};
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
@@ -43,8 +44,8 @@ hit_strains(inds) = [];
 hit_data(inds, :) = [];
 
 % Transform the data
-hit_data = cell2mat(hit_data(:,2)) ./ cell2mat(hit_data(:,1));
-hit_data = log(hit_data);
+hit_data = cell2mat(hit_data);
+hit_data = hit_data(:,2) ./ hit_data(:,1);
 
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
