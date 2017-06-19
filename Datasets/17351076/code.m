@@ -16,15 +16,26 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/mmc2.xlsx');
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Table2.xlsx');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data(3:end,1);
+hit_strains = data(2:end,2);
 
 % Get the data itself
-hit_data = data(3:end, 3:4); 
+hit_data = data(2:end, 3); 
 
+% Split the strains and get the ORF
+C = regexp(hit_strains, '/', 'split');
+hit_strains = {};
+for i = 1:length(C)
+    if length(C{i}) == 2
+        hit_strains(end+1,:) = C{i}(2);
+    else
+        hit_strains(end+1,:) = C{i}(1);
+    end
+end
+    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
 
@@ -32,10 +43,8 @@ hit_strains = clean_orf(hit_strains);
 [hit_strains, translated, ambiguous] = translate(hit_strains);
 
 % If possible, fix the problem (typos, omissions etc.)
-hit_strains(ismember(hit_strains, {'YOLO57W'})) = {'YOL057W'};
-hit_strains(ismember(hit_strains, {'YBRF182C-A'})) = {'YBR182C-A'};
-hit_strains(ismember(hit_strains, {'YKLO72W'})) = {'YKL072W'};
-hit_strains(ismember(hit_strains, {'YOLO62C'})) = {'YOL062C'};
+hit_strains(ismember(hit_strains, {'YOR331CF'})) = {'YOR331C'};
+hit_strains(ismember(hit_strains, {'YPR099CG'})) = {'YPR099C'};
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
@@ -43,11 +52,18 @@ hit_strains(inds) = [];
 hit_data(inds, :) = [];
 
 % Transform the data
-hit_data = cell2mat(hit_data(:,2)) ./ cell2mat(hit_data(:,1));
-hit_data = log(hit_data);
-
-% If the same strain is present more than once, average its values
-[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+final_hit_data = zeros(length(hit_data),1);
+letters = {'A', 'B', 'C'};
+for i = 1:length(letters)
+    ind = find(~cellfun(@isempty, strfind(hit_data, letters{i})));
+    if i == 1
+        final_hit_data(ind) = -3;
+    elseif i == 2
+        final_hit_data(ind) = -2;
+    else i == 3
+        final_hit_data(ind) = -1;
+    end
+end
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
@@ -64,7 +80,7 @@ hit_data_names(ind2) = datasets.standard_name(ind1);
 % If the dataset is quantitative:
 ohnuki_ohya_2007.orfs = hit_strains;
 ohnuki_ohya_2007.ph = hit_data_names;
-ohnuki_ohya_2007.data = hit_data;
+ohnuki_ohya_2007.data = final_hit_data;
 ohnuki_ohya_2007.dataset_ids = hit_data_ids;
 
 %% Save
