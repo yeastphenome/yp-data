@@ -1,0 +1,6 @@
+11830	hap a | abundance of a specific protein/peptide (Pot1-GFP) | oleic acid [0.2%] | Saleem RA~Aitchison JD, 2010
+11831	hap a | number of peroxisomes | oleic acid [0.2%] | Saleem RA~Aitchison JD, 2010
+11832	hap a | size of peroxisomes | oleic acid [0.2%] | Saleem RA~Aitchison JD, 2010
+11833	hap a | abundance of a specific protein/peptide (Pot1-GFP) | oleic acid [0.2%] | Saleem RA~Aitchison JD, 2010
+11834	hap a | peroxisome inheritance | oleic acid [0.2%] | Saleem RA~Aitchison JD, 2010
+11835	hap a | transport to/from peroxisomes (Pot1-GFP) | oleic acid [0.2%] | Saleem RA~Aitchison JD, 2010
