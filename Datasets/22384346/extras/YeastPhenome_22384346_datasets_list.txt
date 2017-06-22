@@ -1,0 +1,12 @@
+11836	hom | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [2 d] | Piggott N~Nislow C, 2011
+11837	het | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [2 d] | Piggott N~Nislow C, 2011
+11838	hom | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [4 d] | Piggott N~Nislow C, 2011
+11839	hom | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [6 d] | Piggott N~Nislow C, 2011
+11840	hom | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [8 d] | Piggott N~Nislow C, 2011
+11841	hom | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [10 d] | Piggott N~Nislow C, 2011
+11842	hom | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [14 d] | Piggott N~Nislow C, 2011
+11843	het | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [4 d] | Piggott N~Nislow C, 2011
+11844	het | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [6 d] | Piggott N~Nislow C, 2011
+11845	het | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [8 d] | Piggott N~Nislow C, 2011
+11846	het | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [10 d] | Piggott N~Nislow C, 2011
+11847	het | growth (relative abundance in pooled culture) | synthetic grape juice [standard], time [14 d] | Piggott N~Nislow C, 2011
