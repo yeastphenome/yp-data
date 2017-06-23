@@ -49,6 +49,35 @@ hit_data = cell2mat(hit_data);
 % be used to average them out
 hit_data_ids = [11827];
 
+%% Tested strains (only if the dataset is not quantitative and the tested strains are provided separately)
+
+% Load tested strains
+[FILENAMES{end+1}, tested_strains] = read_data('xlsread','./raw_data/strainlist.xlsx', 'data');
+
+tested_strains = tested_strains(2:end,5);
+
+% Eliminate all white spaces & capitalize
+tested_strains = clean_orf(tested_strains);
+
+inds = find(cellfun(@isnumeric, tested_strains));
+tested_strains(inds) = [];
+
+% If in gene name form, transform into ORF name
+tested_strains = translate(tested_strains);
+
+tested_strains(find(strcmp('YOR205CHOMDIP', tested_strains))) = {'YOR205C'};
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(tested_strains));
+disp(tested_strains(inds));  
+
+% Finally, take the unique set
+tested_strains = unique(tested_strains);
+
+% Make sure the that all the hits are part of the tested set
+[missing,~] = setdiff(hit_strains, tested_strains);
+disp(missing);
+
 %% Prepare final dataset
 
 % Match the dataset ids with the dataset standard names
@@ -56,11 +85,14 @@ hit_data_ids = [11827];
 hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
-% If the dataset is quantitative:
-endo_shima_2008.orfs = hit_strains;
+% If the dataset is discrete/binary and the tested strains were provided separately:
+endo_shima_2008.orfs = tested_strains;
 endo_shima_2008.ph = hit_data_names;
-endo_shima_2008.data = hit_data;
+endo_shima_2008.data = zeros(length(endo_shima_2008.orfs),length(endo_shima_2008.ph));
 endo_shima_2008.dataset_ids = hit_data_ids;
+
+[~,ind1,ind2] = intersect(hit_strains, endo_shima_2008.orfs);
+endo_shima_2008.data(ind2,:) = hit_data(ind1,:);
 
 %% Save
 
