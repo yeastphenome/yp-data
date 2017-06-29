@@ -1,0 +1,10 @@
+474	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC10 (110 J/m2)] | Hanway D~Romesberg FE, 2002
+4951	hom | growth (undefined) | methyl methanesulfonate [0.01%] | Hanway D~Romesberg FE, 2002
+4967	hom | growth (undefined) | methyl methanesulfonate [0.001%] | Hanway D~Romesberg FE, 2002
+11850	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC20] | Hanway D~Romesberg FE, 2002
+11851	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC30] | Hanway D~Romesberg FE, 2002
+11852	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC40] | Hanway D~Romesberg FE, 2002
+11853	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC50] | Hanway D~Romesberg FE, 2002
+11854	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC60] | Hanway D~Romesberg FE, 2002
+11855	hom | growth (relative abundance in pooled culture) | ultraviolet light [IC70] | Hanway D~Romesberg FE, 2002
+11856	hom | growth (exponential growth rate) | ultraviolet light [IC50] | Hanway D~Romesberg FE, 2002
