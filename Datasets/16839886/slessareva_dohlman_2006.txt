@@ -1,0 +1,8 @@
+ORF	hap a | gene expression | GPA1-Q323L mutant [24 hours] | Slessareva JE~Dohlman HG, 2006
+YOR080W	0.127
+YLR407W	0.075
+YLR262C	0.161
+YNL162W	0.100
+YDR028C	0.034
+YLR240W	0.092
+YBR097W	0.090
