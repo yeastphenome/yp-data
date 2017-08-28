@@ -1,0 +1,2 @@
+4928	hap a | mitotic recombination (frequency of Rad52 foci) | standard [standard] | Styles EB~Andrews BJ, 2016
+4929	hap a | mitotic recombination (frequency of Rad52 foci) | phleomycin [2.5 ng/uL] | Styles EB~Andrews BJ, 2016
