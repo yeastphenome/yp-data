@@ -64,7 +64,7 @@ save('./manikova_chovanec_2012.mat','manikova_chovanec_2012');
 
 %% Print out
 
-fid = fopen('./firstauthor_lastauthor_YYYY.txt','w');
+fid = fopen('./manikova_chovanec_2012.txt','w');
 write_matrix_file(fid, manikova_chovanec_2012.orfs, manikova_chovanec_2012.ph, manikova_chovanec_2012.data);
 fclose(fid);
 
