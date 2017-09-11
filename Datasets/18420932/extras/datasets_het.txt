@@ -1,0 +1,727 @@
+Name	Conditionset	Dataset
+04_02_11_07:1,3-diallylurea:5000:um::::20gen:het_06_03:new scanner	8406	12265
+04_01_21_05:1,3-diallylurea:10000:um::::20gen:het_06_03:new scanner	752	12215
+03_12_09_06:1,4-dimethylendothall:100:um::::20gen:het_06_03:new scanner	753	12216
+03_12_09_08:1,4-dimethylendothall:500:um::::20gen:het_06_03:new scanner	8408	12267
+03_12_09_07:1,4-dimethylendothall:1000:um::::20gen:het_06_03:new scanner	8407	12266
+04_01_22_01:1,7-octadiene:0.25:%::::20gen:het_06_03:new scanner	754	12217
+04_01_22_02:1,8-nonadiene:0.99:%::::20gen:het_06_03:new scanner	756	12218
+01_07_17_02:20 degrees C::::::20gen:het_04_01_2:old scanner	8409	12268
+01_06_06_04:23 degrees C::::::5gen:het_04_01_2:old scanner	758	12219
+01_06_14_01:23 degrees C::::::15gen:het_04_01_2:old scanner	759	12220
+01_06_26_07:23 degrees C::::::5gen:het_04_01_2:old scanner	758	12219
+01_06_29_02:23 degrees C::::::15gen:het_04_01_2:old scanner	759	12220
+01_05_31_03:37 degrees C::::::5gen:het_04_01_2:old scanner	763	12222
+01_06_13_04:37 degrees C::::::20gen:het_04_01_2:old scanner	762	12221
+01_06_13_06:37 degrees C::::::20gen:het_04_01_2:old scanner	762	12221
+01_06_19_03:37 degrees C::::::5gen:het_04_01_2:old scanner	763	12222
+01_07_25_04:37 degrees C::::::20gen:het_04_01_2:old scanner	762	12221
+01_07_25_03:37c, 45c::::::5gen:het_04_01_2:old scanner	X	0
+03_08_13_07:4-isopropyltropolone:15.63:um::::20gen:het_06_03:new scanner	8410	12269
+02_10_03_14:4,6-dichloroindole-2-carboxylic acid:1000:um::::20gen:het_04_01_2:old scanner	8411	12270
+01_10_30_01:5-fluorocytosine:15.6:um::::20gen:het_04_01_2:old scanner	8412	12271
+01_11_06_02:5-fluorocytosine:15.6:um::::20gen:het_04_01_2:old scanner	8412	12271
+02_10_02_08:5-fluorocytosine:15.6:um:fluconazole:65.3:um:20gen:het_04_01_2:old scanner	8413	12272
+02_10_02_09:5-fluorocytosine:15.6:um:ketoconazole:4:um:20gen:het_04_01_2:old scanner	8414	12273
+02_10_02_10:5-fluorocytosine:15.6:um:amphotericin:40:um:20gen:het_04_01_2:old scanner	8415	12274
+02_10_02_11:5-fluorocytosine:15.6:um:amphotericin:20:um:20gen:het_04_01_2:old scanner	8416	12275
+03_03_27_06:5-fluorocytosine:15.6:um::::20gen:het_04_01_2:old scanner	8412	12271
+03_03_27_12:5-fluorocytosine:15.6:um::::20gen:het_04_01_2:old scanner	8412	12271
+03_04_04_02:5-fluorocytosine:15.6:um::::20gen:het_04_01_2:old scanner	8412	12271
+01_09_14_01:5-fluorouracil:4.8:um::::20gen:het_04_01_2:old scanner	8276	12249
+01_05_11_05:5-fluorouracil:19.2:um::::20gen:het_04_01_2:old scanner	8277	12250
+02_06_25_07:5-fluorouracil:19.2:um::::20gen:het_04_01_2:old scanner	8277	12250
+02_06_25_09:5-fluorouracil:19.2:um:leucovorin:500:um:20gen:het_04_01_2:old scanner	8418	12277
+02_09_27_03:5-fluorouracil:19.2:um::::5gen:het_04_01_2:old scanner	767	12223
+02_10_10_03:5-fluorouracil:19.2:um::::20gen:het_04_01_2:old scanner	8277	12250
+03_10_20_11:5-fluorouracil:19.2:um::::20gen:het_06_03:new scanner	8277	12250
+03_11_21_07:5-fluorouracil:19.2:um::::20gen:het_06_03:new scanner	8277	12250
+03_10_20_10:5-fluorouracil:38.4:um::::20gen:het_06_03:new scanner	8771	12625
+03_11_21_06:5-fluorouracil:38.4:um::::20gen:het_06_03:new scanner	8771	12625
+01_09_13_03:5-fluorouracil:38.5:um::::15gen:het_04_01_2:old scanner	8420	12279
+02_06_25_08:5-fluorouracil:38.5:um::::20gen:het_04_01_2:old scanner	8278	12251
+02_06_25_10:5-fluorouracil:38.5:um:leucovorin:500:um:20gen:het_04_01_2:old scanner	8419	12278
+02_09_27_01:5-fluorouracil:38.5:um::::5gen:het_04_01_2:old scanner	8421	12280
+02_10_10_01:5-fluorouracil:38.5:um::::20gen:het_04_01_2:old scanner	8278	12251
+03_11_07_10:5-fluorouracil:76.8:um::::20gen:het_06_03:new scanner	8772	12626
+03_11_21_08:5-fluorouracil:76.8:um::::20gen:het_06_03:new scanner	8772	12626
+02_05_15_01:5-fluorouracil:76.9:um::::20gen:het_04_01_2:old scanner	8279	12252
+02_05_15_02:5-fluorouracil:76.9:um::::20gen:het_04_01_2:old scanner	8279	12252
+03_01_09_11:5-fluorouracil:125:um::::20gen:het_04_01_2:old scanner	8417	12276
+02_10_11_11:5-fluorouridine:23.8:um::::20gen:het_04_01_2:old scanner	8422	12281
+02_10_11_10:5-fluorouridine:47.5:um::::20gen:het_04_01_2:old scanner	8423	12282
+02_10_11_09:5-fluorouridine:95:um::::20gen:het_04_01_2:old scanner	8424	12283
+02_08_16_02:5,6-dihydroxyflavone:250:um::::20gen:het_04_01_2:old scanner	8425	12284
+03_12_09_14:5,6-dihydroxyflavone:250:um::::20gen:het_06_03:new scanner	8425	12284
+03_08_21_01:aclacinomycin A:15.63:um::::20gen:het_06_03:new scanner	8426	12285
+02_05_02_03:acriflavinium hydrochloride:250:um::::20gen:het_04_01_2:old scanner	570	12120
+03_01_09_01:acriflavinium hydrochloride:250:um::::20gen:het_04_01_2:old scanner	570	12120
+03_08_06_01:adenophostin A:500:um::::20gen:het_06_03:new scanner	571	12121
+03_09_10_07:AG 1387 (Biomol):250:um::::20gen:het_06_03:new scanner	8427	12286
+03_08_13_11:AG 1478 (Biomol):100:um::::20gen:het_06_03:new scanner	8428	12287
+03_09_10_06:AG 957 (Biomol):500:um::::20gen:het_06_03:new scanner	8429	12288
+02_05_09_03:aklavin hydrochloride:125:um::::20gen:het_04_01_2:old scanner	8430	12289
+03_01_09_06:aklavin hydrochloride:250:um::::20gen:het_04_01_2:old scanner	776	12224
+02_05_14_03:aklavin hydrochloride:500:um::::20gen:het_04_01_2:old scanner	8431	12290
+03_12_18_06:alizarin:66:um::::20gen:het_06_03:new scanner	574	12122
+03_09_30_01:alizarin:125:um::::20gen:het_06_03:new scanner	8432	12291
+04_01_21_03:allyl disulfide:0.01:%::::20gen:het_06_03:new scanner	575	12123
+03_12_02_02:allyl disulfide:0.016:%::::20gen:het_06_03:new scanner	576	12124
+03_11_06_05:allyl disulfide:0.06:%::::20gen:het_06_03:new scanner	577	12125
+04_01_21_02:allyl sulfide:0.12:%::::20gen:het_06_03:new scanner	8433	12292
+02_05_23_02:alverine citrate:500:um::::20gen:het_04_01_2:old scanner	579	12126
+02_06_11_04:alverine citrate:500:um::::20gen:het_04_01_2:old scanner	579	12126
+03_01_15_09:alverine citrate:500:um::::20gen:het_04_01_2:old scanner	579	12126
+03_01_24_04:alverine citrate:500:um::::20gen:het_04_01_2:old scanner	579	12126
+03_01_24_05:alverine citrate:500:um::::20gen:het_04_01_2:old scanner	579	12126
+03_02_19_09:alverine citrate:500:um::::20gen:het_09_02:old scanner	579	12126
+03_02_19_10:alverine citrate:500:um::::20gen:het_09_02:old scanner	579	12126
+03_03_26_09:alverine citrate:500:um::::20gen:het_09_02:old scanner	579	12126
+03_03_26_10:alverine citrate:500:um::::20gen:het_09_02:old scanner	579	12126
+03_06_26_01:alverine citrate, 30ul total up/dn:500:um::::20gen:het_06_03:old scanner	X	0
+03_06_26_04:alverine citrate, 60ul total up/dn:500:um::::20gen:het_06_03:old scanner	X	0
+02_08_27_02:aminacrine:250:um::::20gen:het_04_01_2:old scanner	8434	12293
+02_07_19_08:aminophenazone:250:um::::20gen:het_04_01_2:old scanner	8435	12294
+03_07_25_08:aminopterin:125:um::::20gen:het_06_03:new scanner	8436	12295
+02_05_23_03:amitriptyline hydrochloride:250:um::::20gen:het_04_01_2:old scanner	8437	12296
+02_10_03_10:amoxepine:500:um::::20gen:het_04_01_2:old scanner	8438	12297
+02_06_07_04:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_01_15_07:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_01_15_08:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_03_20_03:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_03_20_04:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_03_27_05:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_03_27_11:amphotericin B:0.31:um::::20gen:het_04_01_2:old scanner	580	12127
+03_03_28_05:amphotericin B:0.31:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8440	12299
+03_03_28_11:amphotericin B:0.31:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8440	12299
+03_03_27_04:amphotericin B:0.62:um::::20gen:het_04_01_2:old scanner	8439	12298
+03_03_27_10:amphotericin B:0.62:um::::20gen:het_04_01_2:old scanner	8439	12298
+03_03_28_06:amphotericin B:0.62:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8441	12300
+03_03_28_12:amphotericin B:0.62:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8441	12300
+01_07_31_07:amphotericin B:10:um::::20gen:het_04_01_2:old scanner	8442	12301
+02_12_13_07:amsacrine:500:um::::20gen:het_04_01_2:old scanner	581	12128
+02_09_19_08:anisomycin:31.25:um::::20gen:het_04_01_2:old scanner	8443	12302
+02_08_09_05:anisomycin:62.5:um::::20gen:het_04_01_2:old scanner	8444	12303
+03_07_25_01:ansamitocin:500:um::::20gen:het_06_03:new scanner	8445	12304
+03_07_25_10:aphidicolin glycinate:125:um::::20gen:het_06_03:new scanner	8446	12305
+03_01_15_13:atorvastatin:62.5:um::::20gen:het_04_01_2:old scanner	8280	12253
+03_01_28_12:atorvastatin:62.5:um::::20gen:het_04_01_2:old scanner	8280	12253
+03_01_28_13:atorvastatin:62.5:um::::20gen:het_04_01_2:old scanner	8280	12253
+02_10_03_12:atorvastatin:125:um::::20gen:het_04_01_2:old scanner	8281	12254
+03_01_15_12:atorvastatin:125:um::::20gen:het_04_01_2:old scanner	8281	12254
+05_08_09_04:aureobasidin A:0.02:ug/ml::::20gen:het_06_03:new scanner	8447	12306
+02_09_19_14:azobenzene:1000:um::::20gen:het_04_01_2:old scanner	8448	12307
+02_06_05_01:bathophenanthroline disulfonate:100:um::::20gen:het_04_01_2:old scanner	779	12225
+03_07_23_10:bay 11-7082:12.5:um::::20gen:het_06_03:new scanner	8449	12308
+03_08_13_04:BCNU:62.5:um::::20gen:het_06_03:new scanner	585	12129
+02_06_05_03:BCS:100:um::::20gen:het_04_01_2:old scanner	780	12226
+02_06_05_02:BCS:200:um::::20gen:het_04_01_2:old scanner	781	12227
+02_05_30_05:beclomethasone dipropionate:1000:um::::20gen:het_04_01_2:old scanner	8450	12309
+03_12_09_13:benfluorex hydrochloride:250:um::::20gen:het_06_03:new scanner	8451	12310
+01_05_16_04:benomyl:2.4:um::::5gen:het_04_01_2:old scanner	8452	12311
+01_05_16_02:benomyl:3.4:um::::15gen:het_04_01_2:old scanner	8453	12312
+01_04_24_02:benomyl:6.9:um::::15gen:het_04_01_2:old scanner	8454	12313
+01_04_24_04:benomyl:13.8:um::::15gen:het_04_01_2:old scanner	8455	12314
+01_05_15_07:benomyl:27.6:um::::20gen:het_04_01_2:old scanner	8456	12315
+05_05_13_01:benzaldehyde:0.003:%::::20gen:het_06_03:new scanner	8457	12316
+02_05_23_04:benztropine:1:um::::20gen:het_04_01_2:old scanner	8458	12317
+02_10_03_16:benzyl benzoate:1000:um::::20gen:het_04_01_2:old scanner	8459	12318
+02_08_27_03:berberine chloride:125:um::::20gen:het_04_01_2:old scanner	588	12130
+02_12_12_03:berberine chloride:125:um::::20gen:het_04_01_2:old scanner	588	12130
+03_01_24_11:berberine chloride:125:um::::20gen:het_04_01_2:old scanner	588	12130
+03_01_24_12:berberine chloride:125:um::::20gen:het_04_01_2:old scanner	588	12130
+03_01_28_11:berberine chloride:125:um::::20gen:het_04_01_2:old scanner	588	12130
+03_09_30_03:biochanin A:3.95:um::::20gen:het_06_03:new scanner	8460	12319
+02_05_30_06:bisacodyl:1000:um::::20gen:het_04_01_2:old scanner	8461	12320
+05_05_13_06:bisphenol:8.75:um::::20gen:het_06_03:new scanner	8462	12321
+02_06_07_02:bithionol:75:um::::20gen:het_04_01_2:old scanner	8463	12322
+02_06_11_01:bithionol:75:um::::20gen:het_04_01_2:old scanner	8463	12322
+02_06_28_04:bithionol:75:um::::20gen:het_04_01_2:old scanner	8463	12322
+03_08_13_06:borrelidin:15.63:um::::20gen:het_06_03:new scanner	8464	12323
+03_08_21_08:bostrycoidin:100:um::::20gen:het_06_03:new scanner	8465	12324
+03_08_21_04:bouvardin:1000:um::::20gen:het_06_03:new scanner	8466	12325
+02_12_13_08:brefeldin A:1000:um::::20gen:het_04_01_2:old scanner	8467	12326
+03_07_25_02:brefeldin A:1000:um::::20gen:het_06_03:new scanner	8467	12326
+02_10_10_09:bromhexine hydrochloride:500:um::::20gen:het_04_01_2:old scanner	8468	12327
+02_06_07_03:bromocriptine mesylate:1000:um::::20gen:het_04_01_2:old scanner	8469	12328
+03_09_10_03:bruceantin:0.98:um::::20gen:het_06_03:new scanner	8470	12329
+02_10_01_14:bufexamac:1000:um::::20gen:het_04_01_2:old scanner	8471	12330
+02_10_10_06:bufexamac:1000:um::::20gen:het_04_01_2:old scanner	8471	12330
+02_12_13_09:caffeine:2000:um::::20gen:het_04_01_2:old scanner	8472	12331
+03_08_21_02:calvatic acid:15.63:um::::20gen:het_06_03:new scanner	8473	12332
+04_01_22_05:calyculin A:2.5:um::::20gen:het_06_03:new scanner	596	12131
+02_12_13_10:camptothecin:500:um::::20gen:het_04_01_2:old scanner	8474	12333
+03_07_24_10:cantharidin:100:um::::20gen:het_06_03:new scanner	784	12228
+03_12_09_04:cantharidin:100:um::::20gen:het_06_03:new scanner	784	12228
+04_05_12_05:cantharidin:200:um::::20gen:het_06_03:new scanner	600	12132
+03_07_25_12:cantharidin:250:um::::20gen:het_06_03:new scanner	601	12133
+03_10_01_01:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+03_10_30_01:cantharidin:250:um::::20gen:het_06_03:new scanner	601	12133
+03_10_30_02:cantharidin:250:um::::20gen:het_06_03:new scanner	601	12133
+03_10_30_03:cantharidin:250:um::::20gen:het_06_03:new scanner	601	12133
+03_10_30_07:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+03_10_30_08:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+03_10_30_09:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+03_10_31_01:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+03_10_31_02:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+03_10_31_03:cantharidin:250:um::::20gen:het_06_03:old scanner	601	12133
+04_07_01_05:cantharidin analog:125:um::::20gen:het_06_03:new scanner	602	12134
+04_07_01_06:cantharidin analog:125:um::::20gen:het_06_03:new scanner	602	12134
+04_07_01_03:cantharidin analog:250:um::::20gen:het_06_03:new scanner	603	12135
+04_07_01_04:cantharidin analog:250:um::::20gen:het_06_03:new scanner	603	12135
+03_07_24_09:cantharidin disodium:100:um::::20gen:het_06_03:new scanner	604	12136
+03_08_06_03:caracemide:62.5:um::::20gen:het_06_03:new scanner	8475	12334
+03_09_10_08:carbendazine:62.5:um::::20gen:het_06_03:new scanner	8476	12335
+01_09_19_08:carmustine:31.25:um::::20gen:het_04_01_2:old scanner	8477	12336
+02_10_11_12:caspofungin:10:nm::::20gen:het_04_01_2:old scanner	8478	12337
+03_01_24_09:caspofungin:10:nm::::20gen:het_04_01_2:old scanner	8478	12337
+03_01_24_10:caspofungin:10:nm::::20gen:het_04_01_2:old scanner	8478	12337
+03_01_28_10:caspofungin:10:nm::::20gen:het_04_01_2:old scanner	8478	12337
+02_09_10_07:caspofungin:50:nm::::20gen:het_04_01_2:old scanner	8479	12338
+02_10_11_13:caspofungin:50:nm::::20gen:het_04_01_2:old scanner	8479	12338
+03_01_16_13:caspofungin:50:nm::::20gen:het_04_01_2:old scanner	8479	12338
+04_02_04_01:chemical diversity labs 14a:6.2:um::::20gen:het_06_03:new scanner	611	12137
+04_02_04_02:chemical diversity labs 14f:6.2:um::::20gen:het_06_03:new scanner	612	12138
+04_02_04_04:chemical diversity labs 1c10:0.75:um::::20gen:het_06_03:new scanner	613	12139
+04_02_04_03:chemical diversity labs 1c10:1.5:um::::20gen:het_06_03:new scanner	614	12140
+03_12_02_08:chemical diversity labs 218:125:um::::20gen:het_06_03:new scanner	8480	12339
+03_12_02_07:chemical diversity labs 218:250:um::::20gen:het_06_03:new scanner	615	12141
+03_12_02_16:chemical diversity labs 232:31:um::::20gen:het_06_03:new scanner	8481	12340
+03_12_02_15:chemical diversity labs 232:62:um::::20gen:het_06_03:new scanner	616	12142
+03_12_02_12:chemical diversity labs 246:31:um::::20gen:het_06_03:new scanner	8482	12341
+03_12_02_11:chemical diversity labs 246:62:um::::20gen:het_06_03:new scanner	617	12143
+03_12_02_14:chemical diversity labs 275:62:um::::20gen:het_06_03:new scanner	618	12144
+03_12_02_13:chemical diversity labs 275:125:um::::20gen:het_06_03:new scanner	8483	12342
+04_02_04_05:chemical diversity labs 3f2:12.5:um::::20gen:het_06_03:new scanner	619	12145
+03_12_02_10:chemical diversity labs 41:250:um::::20gen:het_06_03:new scanner	8484	12343
+03_12_02_09:chemical diversity labs 41:500:um::::20gen:het_06_03:new scanner	620	12146
+03_12_02_06:chemical diversity labs 6842:31:um::::20gen:het_06_03:new scanner	621	12147
+03_12_02_05:chemical diversity labs 6842:62:um::::20gen:het_06_03:new scanner	8485	12344
+01_10_16_03:chlorambucil:800:um::::20gen:het_04_01_2:old scanner	8486	12345
+03_01_09_10:chlorambucil:1000:um::::20gen:het_04_01_2:old scanner	8487	12346
+02_08_22_03:chloroacetoxyquinoline:3.9:um::::20gen:het_04_01_2:old scanner	8488	12347
+03_08_06_05:chloroxine:3.91:um::::20gen:het_06_03:new scanner	8489	12348
+02_07_11_01:chlorzoxazone:1000:um::::20gen:het_04_01_2:old scanner	8490	12349
+02_09_18_01:chrysin:500:um::::20gen:het_04_01_2:old scanner	8491	12350
+03_08_13_08:ciclopirox olamine:1.95:um::::20gen:het_06_03:new scanner	8493	12352
+02_08_22_02:ciclopirox olamine:3.9:um::::20gen:het_04_01_2:old scanner	8494	12353
+03_07_25_09:ciclopirox olamine:1000:um::::20gen:het_06_03:new scanner	8492	12351
+04_02_04_06:CID 144303:1.9:um::::20gen:het_06_03:new scanner	625	12148
+03_08_14_02:CID 403818:125:um::::20gen:het_06_03:new scanner	626	12149
+04_02_04_07:CID 604586:31.25:um::::20gen:het_06_03:new scanner	627	12150
+04_02_11_02:CID 621889:125:um::::20gen:het_06_03:new scanner	628	12151
+04_02_04_08:CID 622648:31.25:um::::20gen:het_06_03:new scanner	629	12152
+04_02_04_09:CID 630688:250:um::::20gen:het_06_03:new scanner	630	12153
+04_02_04_10:CID 632839:62.5:um::::20gen:het_06_03:new scanner	631	12154
+04_02_04_11:CID 652287:500:um::::20gen:het_06_03:new scanner	632	12155
+04_02_04_12:CID 678146:1.9:um::::20gen:het_06_03:new scanner	633	12156
+04_02_04_13:CID 683517:15.6:um::::20gen:het_06_03:new scanner	634	12157
+04_02_11_03:CID 688028:1.9:um::::20gen:het_06_03:new scanner	635	12158
+04_02_11_04:CID 693573:250:um::::20gen:het_06_03:new scanner	636	12159
+04_02_11_05:CID 693632:62.5:um::::20gen:het_06_03:new scanner	8495	12354
+04_02_11_06:CID 697443:0.95:um::::20gen:het_06_03:new scanner	637	12160
+03_09_10_04:cinerubin:12.5:um::::20gen:het_06_03:new scanner	8496	12355
+03_03_14_09:cisplatin:31.25:um::::20gen:het_04_01_2:old scanner	638	12161
+03_03_14_10:cisplatin:31.25:um::::20gen:het_04_01_2:old scanner	638	12161
+03_03_14_07:cisplatin:62.5:um::::20gen:het_04_01_2:old scanner	639	12162
+03_03_14_08:cisplatin:62.5:um::::20gen:het_04_01_2:old scanner	639	12162
+01_08_28_09:cisplatin:125:um::::20gen:het_04_01_2:old scanner	641	12163
+03_03_14_05:cisplatin:125:um::::20gen:het_04_01_2:old scanner	641	12163
+03_03_14_06:cisplatin:125:um::::20gen:het_04_01_2:old scanner	641	12163
+02_09_19_16:cisplatin:1000:um::::20gen:het_04_01_2:old scanner	8497	12356
+02_12_13_04:cisplatin:1000:um::::20gen:het_04_01_2:old scanner	8497	12356
+02_05_14_04:citrinin:1:um::::20gen:het_04_01_2:old scanner	8498	12357
+02_09_10_01:citropten:750:um::::20gen:het_04_01_2:old scanner	8499	12358
+02_10_10_08:clofoctol:1000:um::::20gen:het_04_01_2:old scanner	8500	12359
+02_08_09_04:clotrimazole:1:um::::20gen:het_04_01_2:old scanner	786	12229
+01_07_18_03:clotrimazole:2:um::::20gen:het_04_01_2:old scanner	787	12230
+01_09_13_01:clotrimazole:2:um::::20gen:het_04_01_2:old scanner	787	12230
+02_09_19_10:cloxyquin:7.8:um::::20gen:het_04_01_2:old scanner	8501	12360
+02_08_09_08:cloxyquin:15.6:um::::20gen:het_04_01_2:old scanner	8502	12361
+01_09_19_07:clozapine:125:um::::20gen:het_04_01_2:old scanner	8503	12362
+01_09_21_07:clozapine:125:um::::20gen:het_04_01_2:old scanner	8503	12362
+02_08_15_04:clozapine:500:um::::20gen:het_04_01_2:old scanner	8504	12363
+04_10_06_06:CoCl2:1250:um::::20gen:het_06_03:new scanner	645	12164
+02_10_02_16:colchicine:250:um::::20gen:het_04_01_2:old scanner	8505	12364
+03_08_21_09:coralyne:100:um::::20gen:het_06_03:new scanner	8506	12365
+03_10_30_06:curcumin:125:um::::20gen:het_06_03:new scanner	8507	12366
+05_05_13_04:curcumin:150:um::::20gen:het_06_03:new scanner	8508	12367
+04_07_21_01:curcumin:500:um::::20gen:het_06_03:new scanner	8509	12368
+04_10_06_03:CuSO4:10000:um::::20gen:het_06_03:new scanner	647	12165
+03_08_13_15:cyclamin:62.5:um::::20gen:het_06_03:new scanner	8510	12369
+03_09_03_09:cycloheximide:0.03:nm::::20gen:het_06_03:new scanner	8511	12370
+03_12_02_04:cycloheximide:100:um::::20gen:het_06_03:new scanner	8512	12371
+02_12_13_11:cytarabine:2000:um::::20gen:het_04_01_2:old scanner	8513	12372
+03_07_23_09:damnacanthal:100:um::::20gen:het_06_03:new scanner	8514	12373
+03_07_23_08:damnacanthal:200:um::::20gen:het_06_03:new scanner	8515	12374
+02_07_11_06:danthron:1000:um::::20gen:het_04_01_2:old scanner	8516	12375
+01_09_26_06:daunorubicin:125:um::::20gen:het_04_01_2:old scanner	8517	12376
+01_09_25_08:daunorubicin:250:um::::15gen:het_04_01_2:old scanner	8518	12377
+03_09_03_08:dianemycin:250:um::::20gen:het_06_03:new scanner	8519	12378
+02_07_11_07:dichlofenac sodium:1000:um::::20gen:het_04_01_2:old scanner	8520	12379
+02_12_13_12:dicumarol:1000:um::::20gen:het_04_01_2:old scanner	8521	12380
+02_05_23_01:dieldrin:1000:um::::20gen:het_04_01_2:old scanner	8522	12381
+02_07_11_08:diflunisal:1000:um::::20gen:het_04_01_2:old scanner	8523	12382
+02_10_03_08:dimercaptopropanol:500:um::::20gen:het_04_01_2:old scanner	8524	12383
+03_08_27_07:dimethylellipticinium:100:um::::20gen:het_06_03:new scanner	8525	12384
+03_08_14_01:distamycin A:250:um::::20gen:het_06_03:new scanner	8526	12385
+02_03_14_02:DMSO 1%:1:um::::20gen:het_04_01_2:old scanner	8527	12386
+02_05_09_02:DMSO 1%:1:um::::20gen:het_04_01_2:old scanner	8527	12386
+02_03_14_03:DMSO 2%:2:um::::20gen:het_04_01_2:old scanner	8528	12387
+02_03_14_04:DMSO 4%:4:um::::20gen:het_04_01_2:old scanner	650	12166
+03_12_18_04:DNA protein kinase inhibitor::::::20gen:het_06_03:new scanner	8529	12388
+02_10_02_06:domperidone:1000:um::::20gen:het_04_01_2:old scanner	8530	12389
+01_10_16_04:doxorubicin:62.5:um::::20gen:het_04_01_2:old scanner	8531	12390
+02_09_10_02:drofenine hydrochloride:750:um::::20gen:het_04_01_2:old scanner	8532	12391
+02_09_18_03:droperidol:1000:um::::20gen:het_04_01_2:old scanner	8533	12392
+03_01_16_11:dyclonine:250:um::::20gen:het_04_01_2:old scanner	8293	12262
+02_11_25_04:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_01_16_12:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_01_24_07:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_01_24_08:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_02_07_03:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_03_20_01:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_03_20_02:dyclonine:500:um::::20gen:het_04_01_2:old scanner	8294	12263
+03_04_09_01:dyclonine:500:um::::20gen:het_09_02:old scanner	8294	12263
+03_04_09_02:dyclonine:500:um::::20gen:het_09_02:old scanner	8294	12263
+02_09_19_13:econazole:0.12:um::::20gen:het_04_01_2:old scanner	8534	12393
+02_08_22_06:econazole nitrate:0.24:um::::20gen:het_04_01_2:old scanner	8535	12394
+02_12_18_03:embelin:125:um::::20gen:het_04_01_2:old scanner	8536	12395
+02_05_03_02:emodin:250:um::::20gen:het_04_01_2:old scanner	8537	12396
+03_08_27_04:emodin:500:um::::20gen:het_06_03:new scanner	8538	12397
+03_01_09_08:emodin:1000:um::::20gen:het_04_01_2:old scanner	8539	12398
+01_08_28_10:estradiol:1000:um::::20gen:het_04_01_2:old scanner	8540	12399
+02_05_15_04:estradiol:2500:um::::20gen:het_04_01_2:old scanner	8541	12400
+02_06_11_05:estradiol:2500:um::::20gen:het_04_01_2:old scanner	8541	12400
+02_10_02_01:estradiol acetate:500:um::::20gen:het_04_01_2:old scanner	8542	12401
+02_10_01_16:estradiol diacetate:1000:um::::20gen:het_04_01_2:old scanner	8543	12402
+02_10_02_02:estradiol propionate:500:um::::20gen:het_04_01_2:old scanner	8544	12403
+02_10_02_03:estrone acetate:1000:um::::20gen:het_04_01_2:old scanner	8545	12404
+02_09_18_02:ethaverine hydrochloride:500:um::::20gen:het_04_01_2:old scanner	8546	12405
+02_09_05_05:ethoxyquin:250:um::::20gen:het_04_01_2:old scanner	8547	12406
+02_09_19_12:exalamide:31.25:um::::20gen:het_04_01_2:old scanner	8548	12407
+02_08_22_04:exalamide:62.5:um::::20gen:het_04_01_2:old scanner	8549	12408
+04_10_06_02:FeCl4:2500:um::::20gen:het_06_03:new scanner	8551	12409
+02_08_27_05:fenbendazole:250:um::::20gen:het_04_01_2:old scanner	8552	12410
+02_03_14_06:fenbendazole:500:um::::20gen:het_04_01_2:old scanner	8553	12411
+02_12_18_09:fenbendazole:500:um::::20gen:het_04_01_2:old scanner	8553	12411
+02_09_05_02:fenbufen:500:um::::20gen:het_04_01_2:old scanner	8554	12412
+02_08_27_06:fendiline hydrochloride:125:um::::20gen:het_04_01_2:old scanner	8555	12413
+02_09_18_05:fenofibrate:500:um::::20gen:het_04_01_2:old scanner	8556	12414
+02_08_16_04:fenoprofen:250:um::::20gen:het_04_01_2:old scanner	8557	12415
+03_01_28_08:fenpropimorph:0.4:nm::::20gen:het_04_01_2:old scanner	8558	12416
+03_01_28_09:fenpropimorph:0.4:nm::::20gen:het_04_01_2:old scanner	8558	12416
+03_03_27_18:fenpropimorph:1.2:um::::20gen:het_04_01_2:old scanner	8290	12259
+01_08_28_05:fenpropimorph:1.65:nm::::15gen:het_04_01_2:old scanner	8559	12417
+01_09_21_03:fenpropimorph:1.65:nm::::20gen:het_04_01_2:old scanner	8560	12418
+03_03_27_17:fenpropimorph:2.3:um::::20gen:het_04_01_2:old scanner	8291	12260
+03_03_27_23:fenpropimorph:2.3:um::::20gen:het_04_01_2:old scanner	8291	12260
+03_04_09_03:fenpropimorph:2.3:um::::20gen:het_09_02:old scanner	8291	12260
+03_04_09_04:fenpropimorph:2.3:um::::20gen:het_09_02:old scanner	8291	12260
+03_03_27_16:fenpropimorph:4.7:um::::20gen:het_04_01_2:old scanner	8292	12261
+03_03_27_22:fenpropimorph:4.7:um::::20gen:het_04_01_2:old scanner	8292	12261
+02_10_11_05:fenpropimorph:8:nm::::20gen:het_04_01_2:old scanner	8561	12419
+03_09_30_05:ferulic acid:3.95:um::::20gen:het_06_03:new scanner	8562	12420
+03_08_27_06:filipin:100:um::::20gen:het_06_03:new scanner	8563	12421
+04_05_17_01:FK506:0.05:ug/ml:NaCl:600:mm:20gen:het_06_03:new scanner	652	12167
+04_05_17_03:FK506:0.1:ug/ml:NaCl:600:mm:20gen:het_06_03:new scanner	653	12168
+04_05_17_04:FK506:0.1:ug/ml:NaCl:600:mm:20gen:het_06_03:new scanner	653	12168
+03_12_18_09:FK506:50:um::::20gen:het_06_03:new scanner	654	12169
+03_12_18_08:FK506:100:um::::20gen:het_06_03:new scanner	656	12170
+03_12_18_10:FK506::::::20gen:het_06_03:new scanner	658	12171
+02_09_27_05:floxuridine:3.37:um::::5gen:het_04_01_2:old scanner	789	12231
+02_06_05_08:floxuridine:40000:um::::20gen:het_04_01_2:old scanner	8564	12422
+02_06_05_07:floxuridine:80000:um::::20gen:het_04_01_2:old scanner	8565	12423
+02_09_10_08:floxuridine:80000:um::::20gen:het_04_01_2:old scanner	8565	12423
+02_10_22_09:fluconazole:16.3:um::::20gen:het_04_01_2:old scanner	8286	12256
+03_03_27_03:fluconazole:31.25:um::::20gen:het_04_01_2:old scanner	8566	12424
+03_03_27_09:fluconazole:31.25:um::::20gen:het_04_01_2:old scanner	8566	12424
+03_03_27_13:fluconazole:31.25:um:amphotericin:0.31:um:20gen:het_04_01_2:old scanner	8567	12425
+03_03_27_14:fluconazole:31.25:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8568	12426
+03_03_27_19:fluconazole:31.25:um:amphotericin:0.31:um:20gen:het_04_01_2:old scanner	8567	12425
+03_03_27_20:fluconazole:31.25:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8568	12426
+03_04_04_01:fluconazole:31.25:um::::20gen:het_04_01_2:old scanner	8566	12424
+02_08_21_06:fluconazole:32.6:um::::20gen:het_04_01_2:old scanner	8287	12257
+02_10_22_10:fluconazole:32.6:um::::20gen:het_04_01_2:old scanner	8287	12257
+02_10_02_12:fluconazole:65.3:um:amphotericin:40:um:20gen:het_04_01_2:old scanner	8570	12428
+02_10_02_13:fluconazole:65.3:um:amphotericin:20:um:20gen:het_04_01_2:old scanner	8569	12427
+02_06_11_02:fluconazole:130.6:um::::20gen:het_04_01_2:old scanner	8289	12258
+02_06_28_02:fluconazole:130.6:um::::20gen:het_04_01_2:old scanner	8289	12258
+02_09_10_04:flufenamic acid:31.25:um::::20gen:het_04_01_2:old scanner	8571	12429
+02_08_27_04:flufenamic acid:62.5:um::::20gen:het_04_01_2:old scanner	8572	12430
+02_09_05_01:flunarizine hydrochloride:93.8:um::::20gen:het_04_01_2:old scanner	8573	12431
+02_12_18_05:formestane:1000:um::::20gen:het_04_01_2:old scanner	8574	12432
+03_08_06_08:fusarubin:250:um::::20gen:het_06_03:new scanner	8575	12433
+02_08_16_01:glafenine:1000:um::::20gen:het_04_01_2:old scanner	8576	12434
+02_12_18_10:gossypol:1000:um::::20gen:het_04_01_2:old scanner	8577	12435
+03_08_21_03:gossypol:1000:um::::20gen:het_06_03:new scanner	8577	12435
+03_05_15_01:haloperidol:125:um::::20gen:het_04_01_2:old scanner	8578	12436
+03_05_15_02:haloperidol:125:um::::20gen:het_04_01_2:old scanner	8578	12436
+03_04_09_05:haloperidol:250:um::::20gen:het_09_02:old scanner	8579	12437
+03_04_09_06:haloperidol:250:um::::20gen:het_09_02:old scanner	8579	12437
+03_05_15_03:haloperidol:250:um::::20gen:het_04_01_2:old scanner	8579	12437
+03_05_15_04:haloperidol:250:um::::20gen:het_04_01_2:old scanner	8579	12437
+02_05_09_05:helenine:250:um::::20gen:het_04_01_2:old scanner	8580	12438
+02_05_14_02:helenine:250:um::::20gen:het_04_01_2:old scanner	8580	12438
+03_01_09_07:helenine:250:um::::20gen:het_04_01_2:old scanner	8580	12438
+02_05_16_02:hexestrol:125:um::::20gen:het_04_01_2:old scanner	662	12172
+02_12_13_03:hexestrol:125:um::::20gen:het_04_01_2:old scanner	662	12172
+02_09_19_09:hexetidine:15.6:um::::20gen:het_04_01_2:old scanner	8581	12439
+02_08_09_06:hexetidine:31.25:um::::20gen:het_04_01_2:old scanner	8582	12440
+04_10_06_08:HgCl2:7.81:um::::20gen:het_06_03:new scanner	8583	12441
+02_10_11_08:hydroxyurea:25000:um::::20gen:het_04_01_2:old scanner	664	12173
+01_08_07_02:hydroxyurea:50000:um::::20gen:het_04_01_2:old scanner	792	12232
+02_10_11_07:hydroxyurea:50000:um::::20gen:het_04_01_2:old scanner	792	12232
+02_10_11_06:hydroxyurea:100000:um::::20gen:het_04_01_2:old scanner	794	12233
+01_05_22_06:hygromycin:0.4:um::::5gen:het_04_01_2:old scanner	8584	12442
+01_06_05_06:hygromycin:0.4:um::::20gen:het_04_01_2:old scanner	665	12174
+01_09_21_01:hygromycin:0.4:um::::20gen:het_04_01_2:old scanner	665	12174
+03_08_20_08:idarubicin:15.63:um::::20gen:het_06_03:new scanner	8585	12443
+03_07_23_07:indirubin:100:um::::20gen:het_06_03:new scanner	8586	12444
+02_05_30_01:ipriflavone:1000:um::::20gen:het_04_01_2:old scanner	8587	12445
+02_10_22_12:itraconazole:2.2:um::::20gen:het_04_01_2:old scanner	8588	12446
+02_08_21_03:itraconazole:4.4:um::::20gen:het_04_01_2:old scanner	8589	12447
+02_10_22_13:itraconazole:4.4:um::::20gen:het_04_01_2:old scanner	8589	12447
+03_03_27_02:itraconazole:4.4:um::::20gen:het_04_01_2:old scanner	8589	12447
+03_03_27_08:itraconazole:4.4:um::::20gen:het_04_01_2:old scanner	8589	12447
+03_03_27_21:itraconazole:4.4:um:fluconazole:31.25:um:20gen:het_04_01_2:old scanner	8590	12448
+02_06_06_03:itraconazole:8.8:um::::20gen:het_04_01_2:old scanner	8591	12449
+03_03_27_07:itraconazole:8.8:um::::20gen:het_04_01_2:old scanner	8591	12449
+03_03_28_01:itraconazole:8.8:um:fluconazole:31.25:um:20gen:het_04_01_2:old scanner	8592	12450
+03_03_28_02:itraconazole:8.8:um:amphotericin:0.31:um:20gen:het_04_01_2:old scanner	8593	12451
+03_03_28_03:itraconazole:8.8:um:amphotericin:0.62:um:20gen:het_04_01_2:old scanner	8594	12452
+03_03_28_04:itraconazole:8.8:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8595	12453
+03_03_28_07:itraconazole:8.8:um:fluconazole:31.25:um:20gen:het_04_01_2:old scanner	8592	12450
+03_03_28_08:itraconazole:8.8:um:amphotericin:0.31:um:20gen:het_04_01_2:old scanner	8593	12451
+03_03_28_09:itraconazole:8.8:um:amphotericin:0.62:um:20gen:het_04_01_2:old scanner	8594	12452
+03_03_28_10:itraconazole:8.8:um:5-fluorcytosine:15.6:um:20gen:het_04_01_2:old scanner	8595	12453
+02_06_06_02:itraconazole:17.7:um::::20gen:het_04_01_2:old scanner	8599	12454
+02_06_28_01:itraconazole:17.7:um::::20gen:het_04_01_2:old scanner	8599	12454
+02_08_21_01:itraconazole:17.7:um::::20gen:het_04_01_2:old scanner	8599	12454
+02_09_05_07:itraconazole:17.7:um::::20gen:het_04_01_2:old scanner	8599	12454
+02_06_06_01:itraconazole:35.4:um::::20gen:het_04_01_2:old scanner	8600	12455
+02_08_21_02:itraconazole:37.6:um::::20gen:het_04_01_2:old scanner	8601	12456
+03_08_21_07:juglone:200:um::::20gen:het_06_03:new scanner	8602	12457
+04_10_06_09:K2Cr2O7:6.25:um::::20gen:het_06_03:new scanner	8603	12458
+02_09_19_05:ketoconazole:0.5:um::::20gen:het_04_01_2:old scanner	8604	12459
+01_07_18_04:ketoconazole:1:um::::20gen:het_04_01_2:old scanner	8605	12460
+02_09_19_04:ketoconazole:1:um::::20gen:het_04_01_2:old scanner	8605	12460
+02_08_09_01:ketoconazole:2:um::::20gen:het_04_01_2:old scanner	8606	12461
+01_05_16_05:ketoconazole:11.8:um::::5gen:het_04_01_2:old scanner	8607	12462
+04_10_28_16:L-dopa:12.5:ug/ml::::20gen:het_06_03:new scanner	670	12175
+04_11_04_03:L-dopa:12.5:ug/ml::::20gen:het_06_03:new scanner	670	12175
+02_03_26_03:lapachol:500:um::::20gen:het_04_01_2:old scanner	8608	12463
+02_03_26_05:lapachol:1000:um::::20gen:het_04_01_2:old scanner	8609	12464
+02_04_16_05:latrunculin:1.8:um::::20gen:het_04_01_2:old scanner	8610	12465
+03_12_02_03:latrunculin:1.95:um::::20gen:het_06_03:new scanner	8611	12466
+02_04_16_04:latrunculin:2.8:um::::20gen:het_04_01_2:old scanner	8612	12467
+03_11_06_04:latrunculin:3.91:um::::20gen:het_06_03:new scanner	8613	12468
+02_03_19_02:latrunculin:4.2:um::::5gen:het_04_01_2:old scanner	8614	12469
+02_03_19_04:latrunculin:4.2:um::::20gen:het_04_01_2:old scanner	8615	12470
+02_03_19_01:latrunculin:6.25:um::::5gen:het_04_01_2:old scanner	8616	12471
+03_09_30_02:lawsone:500:um::::20gen:het_06_03:new scanner	8617	12472
+03_01_09_02:lefunamide:250:um::::20gen:het_04_01_2:old scanner	8618	12473
+02_06_25_11:leucovorin:500:um::::20gen:het_04_01_2:old scanner	8619	12474
+02_06_26_12:leucovorin:500:um::::20gen:het_04_01_2:old scanner	8619	12474
+02_06_28_05:leucovorin:500:um::::20gen:het_04_01_2:old scanner	8619	12474
+04_11_17_11:LiCl:150:mm::::20gen:het_06_03:new scanner	675	12176
+04_11_17_12:LiCl:150:mm::::20gen:het_06_03:new scanner	675	12176
+04_11_17_16:LiCl:150:mm:FK506:0.1:ug/ml:20gen:het_06_03:new scanner	8620	12475
+03_08_27_01:lipoxamycin:0.975:um::::20gen:het_06_03:new scanner	8621	12476
+03_01_15_11:lovastatin:62.5:um::::20gen:het_04_01_2:old scanner	8622	12477
+02_06_07_01:lovastatin:77.2:um::::20gen:het_04_01_2:old scanner	799	12234
+02_06_11_03:lovastatin:77.2:um::::20gen:het_04_01_2:old scanner	799	12234
+02_06_06_08:lovastatin:154.5:um::::20gen:het_04_01_2:old scanner	800	12235
+03_01_15_10:lovastatin:154.5:um::::20gen:het_04_01_2:old scanner	800	12235
+02_09_18_04:mebendazole:500:um::::20gen:het_04_01_2:old scanner	8623	12478
+02_12_18_04:mebendazole:1000:um::::20gen:het_04_01_2:old scanner	677	12177
+01_09_25_06:mechlorethamine:50:um::::20gen:het_04_01_2:old scanner	8624	12479
+03_01_07_08:mechlorethamine:62.5:um::::20gen:het_04_01_2:old scanner	804	12236
+03_01_16_09:mechlorethamine:62.5:um::::20gen:het_04_01_2:old scanner	804	12236
+03_01_16_10:mechlorethamine:62.5:um::::20gen:het_04_01_2:old scanner	804	12236
+02_07_11_05:mechlorethamine:250:um::::20gen:het_04_01_2:old scanner	8625	12480
+02_05_09_04:mechlorethamine:500:um::::20gen:het_04_01_2:old scanner	8626	12481
+02_05_14_01:mechlorethamine:500:um::::20gen:het_04_01_2:old scanner	8626	12481
+03_12_09_01:meclizine hydrochloride:250:um::::20gen:het_06_03:new scanner	8627	12482
+02_09_05_03:meclocycline sulfosalicylate:375:um::::20gen:het_04_01_2:old scanner	8628	12483
+02_08_15_01:mecysteine hydrochloride:62.5:um::::20gen:het_04_01_2:old scanner	8629	12484
+02_09_05_06:mefenamic acid:500:um::::20gen:het_04_01_2:old scanner	8630	12485
+03_08_21_05:melphalan:200:um::::20gen:het_06_03:new scanner	8631	12486
+03_08_21_06:melphalan:200:um::::20gen:het_06_03:new scanner	8631	12486
+03_08_06_11:menadione epoxide:62.5:um::::20gen:het_06_03:new scanner	8632	12487
+02_08_15_02:merbromin:62.5:um::::20gen:het_04_01_2:old scanner	8633	12488
+02_09_18_06:metampicillin:1000:um::::20gen:het_04_01_2:old scanner	8634	12489
+02_05_14_05:metergoline:250:um::::20gen:het_04_01_2:old scanner	8635	12490
+01_09_13_02:methotrexate:125:um::::20gen:het_04_01_2:old scanner	8274	12248
+02_06_25_01:methotrexate:125:um::::20gen:het_04_01_2:old scanner	8274	12248
+02_06_25_04:methotrexate:125:um:leucovorin:500:um:20gen:het_04_01_2:old scanner	8636	12491
+03_01_15_03:methotrexate:125:um::::20gen:het_04_01_2:old scanner	8274	12248
+03_01_15_04:methotrexate:125:um::::20gen:het_04_01_2:old scanner	8274	12248
+03_10_20_06:methotrexate:125:um:5-fluorouracil:38.4:um:20gen:het_06_03:new scanner	8637	12492
+03_10_20_07:methotrexate:125:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8638	12493
+03_10_20_09:methotrexate:125:um::::20gen:het_06_03:new scanner	8274	12248
+03_10_22_06:methotrexate:125:um:5-fluorouracil:76.8:um:20gen:het_06_03:new scanner	8639	12494
+03_11_07_04:methotrexate:125:um:5-fluorouracil:76.8:um:20gen:het_06_03:new scanner	8639	12494
+03_11_07_05:methotrexate:125:um:5-fluorouracil:38.4:um:20gen:het_06_03:new scanner	8637	12492
+03_11_07_06:methotrexate:125:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8638	12493
+03_11_07_09:methotrexate:125:um::::20gen:het_06_03:new scanner	8274	12248
+01_08_14_06:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+02_05_03_03:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+02_06_25_02:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+02_06_25_05:methotrexate:250:um:leucovorin:500:um:20gen:het_04_01_2:old scanner	8640	12495
+02_12_12_04:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_01_15_05:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_01_15_06:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_01_24_02:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_01_24_03:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_01_30_01:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_01_30_02:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_02_07_02:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_02_19_11:methotrexate:250:um::::20gen:het_04_01_2:old scanner	683	12178
+03_10_20_05:methotrexate:250:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8641	12496
+03_10_20_08:methotrexate:250:um::::20gen:het_06_03:new scanner	683	12178
+03_10_22_04:methotrexate:250:um:5-fluorouracil:76.8:um:20gen:het_06_03:new scanner	8642	12497
+03_10_22_05:methotrexate:250:um:5-fluorouracil:38.4:um:20gen:het_06_03:new scanner	8643	12498
+03_11_07_01:methotrexate:250:um:5-fluorouracil:76.8:um:20gen:het_06_03:new scanner	8642	12497
+03_11_07_02:methotrexate:250:um:5-fluorouracil:38.4:um:20gen:het_06_03:new scanner	8643	12498
+03_11_07_03:methotrexate:250:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8641	12496
+03_11_07_08:methotrexate:250:um::::20gen:het_06_03:new scanner	683	12178
+02_01_23_01:methotrexate:500:um::::15gen:het_04_01_2:old scanner	684	12179
+02_06_25_03:methotrexate:500:um::::20gen:het_04_01_2:old scanner	684	12179
+02_06_25_06:methotrexate:500:um:leucovorin:500:um:20gen:het_04_01_2:old scanner	8645	12499
+03_10_22_01:methotrexate:500:um:5-fluorouracil:76.8:um:20gen:het_06_03:new scanner	8646	12500
+03_10_22_02:methotrexate:500:um:5-fluorouracil:38.4:um:20gen:het_06_03:new scanner	8647	12501
+03_10_22_03:methotrexate:500:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8648	12502
+03_10_30_05:methotrexate:500:um::::20gen:het_06_03:new scanner	684	12179
+03_11_06_13:methotrexate:500:um:5-fluorouracil:76.8:um:20gen:het_06_03:new scanner	8646	12500
+03_11_06_14:methotrexate:500:um:5-fluorouracil:38.4:um:20gen:het_06_03:new scanner	8647	12501
+03_11_06_15:methotrexate:500:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8648	12502
+03_11_07_07:methotrexate:500:um::::20gen:het_06_03:new scanner	684	12179
+03_11_21_09:methotrexate:500:um:5-fluorouracil:19.2:um:20gen:het_06_03:new scanner	8648	12502
+03_06_26_02:methotrexate, 30ul total up/dn:250:um::::20gen:het_06_03:old scanner	X	0
+03_06_26_05:methotrexate, 60ul total up/dn:250:um::::20gen:het_06_03:old scanner	X	0
+02_12_13_05:methoxsalen:500:um::::20gen:het_04_01_2:old scanner	685	12180
+02_05_30_04:methoxyvone:1000:um::::20gen:het_04_01_2:old scanner	8649	12503
+01_06_05_09:miconazole:0.2:um::::5gen:het_04_01_2:old scanner	8650	12504
+01_06_06_01:miconazole:0.2:um::::5gen:het_04_01_2:old scanner	8650	12504
+02_06_06_06:miconazole:0.2:um::::20gen:het_04_01_2:old scanner	8285	12255
+02_06_28_03:miconazole:0.2:um::::20gen:het_04_01_2:old scanner	8285	12255
+01_09_14_04:miconazole:25:nm::::20gen:het_04_01_2:old scanner	807	12237
+01_09_18_03:miconazole:25:nm::::20gen:het_04_01_2:old scanner	807	12237
+02_09_19_07:miconazole:25:nm::::20gen:het_04_01_2:old scanner	807	12237
+01_06_28_07:miconazole:50:nm::::5gen:het_04_01_2:old scanner	8651	12505
+01_06_28_08:miconazole:50:nm::::15gen:het_04_01_2:old scanner	8652	12506
+01_07_18_05:miconazole:50:nm::::20gen:het_04_01_2:old scanner	686	12181
+01_07_24_06:miconazole:50:nm::::15gen:het_04_01_2:old scanner	8652	12506
+01_09_18_02:miconazole:50:nm::::20gen:het_04_01_2:old scanner	686	12181
+02_08_09_03:miconazole:50:nm::::20gen:het_04_01_2:old scanner	686	12181
+02_09_19_02:miconazole:50:nm::::20gen:het_04_01_2:old scanner	686	12181
+03_02_19_07:miconazole:50:nm::::20gen:het_09_02:old scanner	686	12181
+03_02_19_08:miconazole:50:nm::::20gen:het_09_02:old scanner	686	12181
+01_09_14_02:miconazole:100:um::::20gen:het_04_01_2:old scanner	808	12238
+01_09_18_01:miconazole:100:um::::20gen:het_04_01_2:old scanner	808	12238
+02_06_06_07:miconazole:100:um::::20gen:het_04_01_2:old scanner	808	12238
+02_09_19_01:miconazole:100:um::::20gen:het_04_01_2:old scanner	808	12238
+03_06_05_01:minimal media::::::-5gen:het_09_02:old scanner	812	12240
+03_06_05_02:minimal media::::::0gen:het_09_02:old scanner	8363	12264
+03_06_05_03:minimal media::::::0gen:het_09_02:old scanner	8363	12264
+03_06_05_04:minimal media::::::5gen:het_09_02:old scanner	810	12239
+03_06_05_05:minimal media::::::10gen:het_09_02:old scanner	813	12241
+03_06_05_06:minimal media::::::-5gen:het_09_02:old scanner	812	12240
+03_06_05_07:minimal media::::::0gen:het_09_02:old scanner	8363	12264
+03_06_05_09:minimal media::::::5gen:het_09_02:old scanner	810	12239
+03_06_05_10:minimal media::::::10gen:het_09_02:old scanner	813	12241
+03_06_06_11:minimal media::::::5gen:het_09_02:old scanner	810	12239
+03_06_06_12:minimal media::::::0gen:het_09_02:old scanner	8363	12264
+05_05_13_02:mitomycin c:50:um::::20gen:het_06_03:new scanner	8653	12507
+02_12_13_02:mitomycin c:1000:um::::20gen:het_04_01_2:old scanner	815	12242
+01_09_25_07:mitotane:100:um::::20gen:het_04_01_2:old scanner	8654	12508
+03_09_10_09:mitoxanthrone:62.5:um::::20gen:het_06_03:new scanner	8655	12509
+01_09_25_05:mitoxanthrone hydrochloride:50:um::::20gen:het_04_01_2:old scanner	8656	12510
+02_10_03_02:mitoxanthrone hydrochloride:250:um::::20gen:het_04_01_2:old scanner	8657	12511
+04_03_10_10:monastrol:100:um::::20gen:het_06_03:new scanner	8658	12512
+05_05_13_13:motuporamine:7.5:um::::20gen:het_06_03:new scanner	8659	12513
+05_06_29_11:motuporamine:15:um::::20gen:het_06_03:new scanner	8660	12514
+05_08_09_01:motuporamine:15:um::::20gen:het_06_03:new scanner	8660	12514
+05_08_12_15:motuporamine:15:um::::20gen:het_06_03:new scanner	8660	12514
+04_11_04_02:MPP+:250:ug/ml::::20gen:het_06_03:new scanner	692	12182
+04_10_28_15:MPP+:500:ug/ml::::20gen:het_06_03:new scanner	8661	12515
+02_12_12_02:mycophenolic acid:125:um::::20gen:het_04_01_2:old scanner	693	12183
+02_03_26_01:mycophenolic acid:500:um::::20gen:het_04_01_2:old scanner	8662	12516
+05_08_09_03:myriocin:0.15:ug/ml::::20gen:het_06_03:new scanner	8663	12517
+04_04_30_01:NaCl:500:mm::::20gen:het_06_03:new scanner	8664	12518
+04_05_12_11:NaCl:600:mm::::20gen:het_06_03:new scanner	695	12184
+04_11_17_09:NaCl:700:mm::::20gen:het_06_03:new scanner	696	12185
+04_11_17_10:NaCl:700:mm::::20gen:het_06_03:new scanner	696	12185
+04_11_17_14:NaCl:700:mm:FK506:0.1:ug/ml:20gen:het_06_03:new scanner	8665	12519
+04_08_25_03:NaF:10000:um::::20gen:het_06_03:new scanner	697	12186
+04_08_25_04:NaF:10000:um::::20gen:het_06_03:new scanner	697	12186
+04_08_25_01:NaF:20000:um::::20gen:het_06_03:new scanner	698	12187
+04_08_25_02:NaF:20000:um::::20gen:het_06_03:new scanner	698	12187
+04_11_16_03:NaF:20000:um::::20gen:het_06_03:new scanner	698	12187
+02_08_16_03:nalidixic acid:1000:um::::20gen:het_04_01_2:old scanner	8666	12520
+02_08_15_06:naringenin:1000:um::::20gen:het_04_01_2:old scanner	8667	12521
+03_08_21_10:neomycin sulfate:100:um::::20gen:het_06_03:new scanner	8668	12522
+03_10_20_01:nerol:1000:um::::20gen:het_06_03:new scanner	8669	12523
+02_10_02_15:nicardipine hydrochloride:500:um::::20gen:het_04_01_2:old scanner	8670	12524
+02_09_18_07:niflumic acid:1000:um::::20gen:het_04_01_2:old scanner	8671	12525
+03_01_09_12:nimustine:1000:um::::20gen:het_04_01_2:old scanner	8672	12526
+02_10_03_03:nitrendipine:500:um::::20gen:het_04_01_2:old scanner	8673	12527
+02_05_09_06:nitromide:1000:um::::20gen:het_04_01_2:old scanner	8674	12528
+03_01_09_04:nitromide:1000:um::::20gen:het_04_01_2:old scanner	8674	12528
+01_08_31_01:nocodazole:2:ug/ml::::20gen:het_04_01_2:old scanner	8675	12529
+01_05_08_02:nocodazole:6.6:um::::15gen:het_04_01_2:old scanner	8676	12530
+01_05_15_02:nocodazole:6.6:um::::5gen:het_04_01_2:old scanner	8677	12531
+01_09_26_07:nocodazole:6.6:um::::20gen:het_04_01_2:old scanner	8678	12532
+01_04_24_03:nocodazole:6.9:um::::15gen:het_04_01_2:old scanner	8679	12533
+03_12_09_05:norcantharidin:100:um::::20gen:het_06_03:new scanner	702	12188
+03_11_06_06:norcantharidin:2500:um::::20gen:het_06_03:new scanner	703	12189
+03_12_09_09:norcantharidin:2500:um::::20gen:het_06_03:new scanner	703	12189
+03_12_10_02:norcantharidin:2500:um::::20gen:het_06_03:new scanner	703	12189
+02_12_13_13:novobiocin:1000:um::::20gen:het_04_01_2:old scanner	8680	12534
+03_07_25_03:novobiocin:1000:um::::20gen:het_06_03:new scanner	8680	12534
+03_08_13_12:nsc95397:125:um::::20gen:het_06_03:new scanner	8681	12535
+01_07_31_08:nystatin:5:um::::20gen:het_04_01_2:old scanner	822	12243
+02_10_03_09:osajin:1000:um::::20gen:het_04_01_2:old scanner	8682	12536
+02_10_03_11:oxethazine:250:um::::20gen:het_04_01_2:old scanner	8683	12537
+03_08_27_03:PABA:500:um::::20gen:het_06_03:new scanner	8684	12538
+02_09_18_08:PABA:1000:um::::20gen:het_04_01_2:old scanner	8685	12539
+03_11_06_01:paclitaxel:250:um::::20gen:het_06_03:new scanner	8686	12540
+03_12_09_10:paclitaxel:250:um::::20gen:het_06_03:new scanner	8686	12540
+04_01_21_08:papuamide B:0.125:ug/ml::::20gen:het_06_03:new scanner	8687	12541
+04_01_21_07:papuamide B:0.25:ug/ml::::20gen:het_06_03:new scanner	8688	12542
+04_01_21_06:papuamide B:0.37:ug/ml::::20gen:het_06_03:new scanner	826	12244
+04_03_02_14:papuamide B:0.37:ug/ml::::20gen:het_06_03:new scanner	826	12244
+04_03_02_13:papuamide B:0.7:ug/ml::::20gen:het_06_03:new scanner	827	12245
+03_09_30_07:paraquat:2000:um::::20gen:het_06_03:new scanner	8689	12543
+03_12_09_15:paraquat:2000:um::::20gen:het_06_03:new scanner	8689	12543
+03_12_10_01:paraquat:2000:um::::20gen:het_06_03:new scanner	8689	12543
+04_10_28_17:paraquat:5000:um::::20gen:het_06_03:new scanner	710	12190
+04_11_04_04:paraquat:5000:um::::20gen:het_06_03:new scanner	710	12190
+04_08_26_01:parkinson-inducing peptide:250:um::::20gen:het_06_03:new scanner	711	12191
+04_08_26_02:parkinson-inducing peptide:250:um::::20gen:het_06_03:new scanner	711	12191
+02_10_03_04:paromomycin sulfate:500:um::::20gen:het_04_01_2:old scanner	8690	12544
+02_10_03_15:paroxetine hydrochloride:250:um::::20gen:het_04_01_2:old scanner	8691	12545
+02_05_02_01:parthenolide:125:um::::20gen:het_04_01_2:old scanner	8692	12546
+02_12_12_01:parthenolide:1000:um::::20gen:het_04_01_2:old scanner	712	12192
+02_12_13_01:parthenolide:1000:um::::20gen:het_04_01_2:old scanner	712	12192
+02_10_03_13:perillic acid:250:um::::20gen:het_04_01_2:old scanner	8693	12547
+03_08_13_01:phenanthroline monohydrochloride:62.5:um::::20gen:het_06_03:new scanner	8694	12548
+03_12_09_11:phenolphthalein:250:um::::20gen:het_06_03:new scanner	8695	12549
+02_12_18_07:phenothrin:1000:um::::20gen:het_04_01_2:old scanner	8696	12550
+02_10_02_07:phenoxybenzamine hydrochloride:500:um::::20gen:het_04_01_2:old scanner	8697	12551
+03_08_13_05:phloretin:500:um::::20gen:het_06_03:new scanner	8698	12552
+03_07_23_11:phosphatase inhibitor:100:um::::20gen:het_06_03:new scanner	8699	12553
+02_10_03_01:pimethixene maleate:125:um::::20gen:het_04_01_2:old scanner	8700	12554
+02_10_03_07:pimpinellin:500:um::::20gen:het_04_01_2:old scanner	8701	12555
+02_10_02_04:piperidolate hydrochloride:1000:um::::20gen:het_04_01_2:old scanner	8702	12556
+02_09_10_03:piperine:250:um::::20gen:het_04_01_2:old scanner	8703	12557
+02_09_19_15:piromidic acid:1000:um::::20gen:het_04_01_2:old scanner	8704	12558
+03_07_25_07:podophyllotoxin:200:um::::20gen:het_06_03:new scanner	8705	12559
+05_05_13_03:potassium disulfite:2500:um::::20gen:het_06_03:new scanner	8706	12560
+05_05_19_01:PP1:3:um::::20gen:het_06_03:new scanner	8707	12561
+03_07_23_12:PP1:100:um::::20gen:het_06_03:new scanner	8708	12562
+05_05_19_02:PP2:3:um::::20gen:het_06_03:new scanner	8709	12563
+03_07_23_05:PP2:100:um::::20gen:het_06_03:new scanner	8710	12564
+02_07_12_01:prazosin hydrochloride:1000:um::::20gen:het_04_01_2:old scanner	8711	12565
+02_10_01_15:proadifen hydrochloride:500:um::::20gen:het_04_01_2:old scanner	8712	12566
+02_08_27_01:probucol:1000:um::::20gen:het_04_01_2:old scanner	8713	12567
+01_08_14_07:progesterone:250:um::::20gen:het_04_01_2:old scanner	8714	12568
+01_08_15_01:progesterone:250:um::::20gen:het_04_01_2:old scanner	8714	12568
+01_08_28_06:progesterone:1000:um::::15gen:het_04_01_2:old scanner	8715	12569
+02_07_12_04:promazine hydrochloride:125:um::::20gen:het_04_01_2:old scanner	8716	12570
+02_07_12_03:promethazine hydrochloride:250:um::::20gen:het_04_01_2:old scanner	8717	12571
+02_07_12_02:propiomazine maleate:500:um::::20gen:het_04_01_2:old scanner	8718	12572
+04_01_21_04:propyl disulfide:0.49:%::::20gen:het_06_03:new scanner	716	12193
+02_09_10_05:protoveratrine B:10000:um::::20gen:het_04_01_2:old scanner	8719	12573
+03_08_13_09:psoralen:62.5:um::::20gen:het_06_03:new scanner	718	12194
+02_07_19_03:pyrimethamine:1000:um::::20gen:het_04_01_2:old scanner	8720	12574
+02_08_22_01:pyrithione zinc:1.95:um::::20gen:het_04_01_2:old scanner	8721	12575
+03_09_30_04:quercetin:3.95:um::::20gen:het_06_03:new scanner	8722	12576
+02_05_09_08:quinacrine hydrochloride:1000:um::::20gen:het_04_01_2:old scanner	8723	12577
+02_07_12_06:quinacrine hydrochloride:1000:um::::20gen:het_04_01_2:old scanner	8723	12577
+03_01_07_07:quinacrine hydrochloride:1000:um::::20gen:het_04_01_2:old scanner	8723	12577
+03_11_06_02:rapamycin:4.88:nm::::20gen:het_06_03:new scanner	723	12195
+03_12_02_01:rapamycin:5:nm::::20gen:het_06_03:new scanner	724	12196
+04_01_22_03:rapamycin:6:nm::::20gen:het_06_03:new scanner	725	12197
+04_01_22_04:rapamycin:9:nm::::20gen:het_06_03:new scanner	8724	12578
+03_08_27_05:reserpine:100:um::::20gen:het_06_03:new scanner	8725	12579
+02_07_19_01:reserpine:125:um::::20gen:het_04_01_2:old scanner	8726	12580
+03_09_30_06:resveratrol:2000:um::::20gen:het_06_03:new scanner	8727	12581
+02_12_18_01:rhizoxin:200:um::::20gen:het_04_01_2:old scanner	727	12198
+03_07_25_04:rhizoxin:200:um::::20gen:het_06_03:new scanner	727	12198
+01_10_30_03:RIL1 (Biomol):50:ug/ml::::20gen:het_04_01_2:old scanner	8728	12582
+03_08_27_08:RO 106-9920 (Calbio):125:um::::20gen:het_06_03:new scanner	728	12199
+03_12_09_12:rotenone:250:um::::20gen:het_06_03:new scanner	729	12200
+04_08_26_03:rotenone:250:um::::20gen:het_06_03:new scanner	729	12200
+02_10_03_05:rutilantin:500:um::::20gen:het_04_01_2:old scanner	8729	12583
+02_05_02_04:sanguinarine sulfate:250:um::::20gen:het_04_01_2:old scanner	730	12201
+02_05_30_03:sanguinarine sulfate:250:um::::20gen:het_04_01_2:old scanner	730	12201
+03_01_09_03:sanguinarine sulfate:250:um::::20gen:het_04_01_2:old scanner	730	12201
+02_12_18_08:semustine:62.5:um::::20gen:het_04_01_2:old scanner	8730	12584
+02_03_26_04:semustine:125:um::::20gen:het_04_01_2:old scanner	8731	12585
+04_03_10_08:sirtinol:50:um::::20gen:het_06_03:new scanner	8732	12586
+04_10_06_07:sodium arsenite:625:um::::20gen:het_06_03:new scanner	731	12202
+02_07_11_02:sodium meclofenamate:1000:um::::20gen:het_04_01_2:old scanner	8733	12587
+02_05_03_01:solasodine:250:um::::20gen:het_04_01_2:old scanner	8734	12588
+02_07_19_02:spironolactone:500:um::::20gen:het_04_01_2:old scanner	8735	12589
+03_03_14_02:splitomicin:250:um::::20gen:het_04_01_2:old scanner	733	12203
+03_08_13_10:splitomicin:250:um::::20gen:het_06_03:new scanner	733	12203
+03_03_14_01:splitomicin:500:um::::20gen:het_04_01_2:old scanner	8736	12590
+03_09_10_10:staurosporine:6.25:um::::20gen:het_06_03:new scanner	734	12204
+03_08_06_10:streptovitacin:62.5:um::::20gen:het_06_03:new scanner	8737	12591
+02_08_22_05:sulconazole nitrate:0.24:um::::20gen:het_04_01_2:old scanner	8738	12592
+02_08_15_03:sulfanilamide:62.5:um::::20gen:het_04_01_2:old scanner	8739	12593
+02_09_10_06:suxibuzone:1000:um::::20gen:het_04_01_2:old scanner	8740	12594
+03_08_13_13:telomerase inhibitor ix (Biomol):500:um::::20gen:het_06_03:new scanner	8741	12595
+02_12_12_06:teniposide:500:um::::20gen:het_04_01_2:old scanner	737	12205
+03_04_09_07:terbinafine:7.2:um::::20gen:het_09_02:old scanner	8742	12596
+03_04_09_08:terbinafine:7.2:um::::20gen:het_09_02:old scanner	8742	12596
+03_08_06_02:terreic acid:1000:um::::20gen:het_06_03:new scanner	738	12206
+02_12_13_06:tetrandrine:1000:um::::20gen:het_04_01_2:old scanner	8743	12597
+02_05_09_07:thiabendazole:250:um::::20gen:het_04_01_2:old scanner	739	12207
+03_08_06_09:thiabendazole:250:um::::20gen:het_06_03:new scanner	739	12207
+02_07_12_05:thiabendazole:500:um::::20gen:het_04_01_2:old scanner	8744	12598
+03_01_09_09:thiabendazole:500:um::::20gen:het_04_01_2:old scanner	8744	12598
+05_05_13_05:thimerosal:125:nm::::20gen:het_06_03:new scanner	8745	12599
+03_07_25_06:thio-tepa:1000:um::::20gen:het_06_03:new scanner	742	12208
+03_08_06_04:thiolutin:7.81:um::::20gen:het_06_03:new scanner	8746	12600
+02_12_18_02:thiotepa:1000:um::::20gen:het_04_01_2:old scanner	742	12208
+02_08_09_07:thiram:15.6:um::::20gen:het_04_01_2:old scanner	8747	12601
+03_08_19_01:thujaplicin alpha:15.63:um::::20gen:het_06_03:new scanner	8748	12602
+02_09_05_04:thyronine:250:um::::20gen:het_04_01_2:old scanner	8749	12603
+02_10_02_05:tolfenamic acid:1000:um::::20gen:het_04_01_2:old scanner	8750	12604
+02_09_19_06:tolnaftate:125:um::::20gen:het_04_01_2:old scanner	8751	12605
+02_07_19_06:tolnaftate:250:um::::20gen:het_04_01_2:old scanner	8752	12606
+02_08_09_02:tolnaftate:250:um::::20gen:het_04_01_2:old scanner	8752	12606
+02_12_18_06:tomatine:62.5:um::::20gen:het_04_01_2:old scanner	8753	12607
+03_01_07_06:tomatine:62.5:um::::20gen:het_04_01_2:old scanner	8753	12607
+02_07_19_05:triamterene:500:um::::20gen:het_04_01_2:old scanner	8754	12608
+02_03_14_05:trichlormethine:500:um::::20gen:het_04_01_2:old scanner	8755	12609
+02_12_12_05:trichlormethine:500:um::::20gen:het_04_01_2:old scanner	8755	12609
+02_03_26_02:trichlormethine:1000:um::::20gen:het_04_01_2:old scanner	8756	12610
+03_08_06_12:trichostatin A:3.91:um::::20gen:het_06_03:new scanner	8757	12611
+03_08_06_06:trifluoperazine dihydrochloride:31.25:um::::20gen:het_06_03:new scanner	8758	12612
+02_07_19_07:trimeprazine tartrate:250:um::::20gen:het_04_01_2:old scanner	8759	12613
+03_09_10_05:triphenyltin:3.13:um::::20gen:het_06_03:new scanner	8760	12614
+03_08_13_02:tryptanthrin:250:um::::20gen:het_06_03:new scanner	743	12209
+01_05_11_03:tunicamycin:0.15:um::::5gen:het_04_01_2:old scanner	8761	12615
+01_05_15_05:tunicamycin:0.15:um::::15gen:het_04_01_2:old scanner	8762	12616
+01_06_08_05:tunicamycin:0.15:um::::5gen:het_04_01_2:old scanner	8761	12615
+01_05_11_02:tunicamycin:0.6:um::::5gen:het_04_01_2:old scanner	8763	12617
+01_05_15_06:tunicamycin:0.6:um::::15gen:het_04_01_2:old scanner	8764	12618
+03_07_24_11:tyrphostin:200:um::::20gen:het_06_03:new scanner	744	12210
+02_08_15_05:ursodiol:1000:um::::20gen:het_04_01_2:old scanner	8765	12619
+02_05_30_02:usnic acid:500:um::::20gen:het_04_01_2:old scanner	8766	12620
+03_08_27_02:verrucarin A:7.5:nm::::20gen:het_06_03:new scanner	8767	12621
+03_08_06_07:vitamin K3:15.63:um::::20gen:het_06_03:new scanner	8768	12622
+03_12_18_03:wiskostatin:19:um::::20gen:het_06_03:new scanner	746	12211
+03_12_18_02:wiskostatin:29:um::::20gen:het_06_03:new scanner	747	12212
+03_07_23_06:wortmannin:50:um::::20gen:het_06_03:new scanner	748	12213
+04_03_10_09:xanthohumol:6.2:um::::20gen:het_06_03:new scanner	749	12214
+01_06_14_04:YP glycerol::::::5gen:het_04_01_2:old scanner	844	12247
+01_06_14_06:YP glycerol::::::15gen:het_04_01_2:old scanner	843	12246
+01_06_26_09:YP glycerol::::::5gen:het_04_01_2:old scanner	844	12247
+01_06_28_03:YP glycerol::::::15gen:het_04_01_2:old scanner	843	12246
+03_08_13_14:zaluzanin C:1000:um::::20gen:het_06_03:new scanner	8769	12623
+04_10_06_05:ZnCl2:468.8:um::::20gen:het_06_03:new scanner	8770	12624

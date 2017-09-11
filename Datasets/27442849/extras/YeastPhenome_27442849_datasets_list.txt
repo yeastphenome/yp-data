@@ -1,0 +1,2 @@
+11817	hom | growth (spot assay) | temperature [12ºC] | Salvado Z~Guillamon JM, 2016
+11868	hom | growth (spot assay) | temperature [18ºC] | Salvado Z~Guillamon JM, 2016

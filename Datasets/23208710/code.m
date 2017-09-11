@@ -35,10 +35,21 @@ hit_data = -cell2mat(data(2:end, 2:5));
 % Average any repeated value
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
+% Split essentials and non-essentials
+hit_strains_all = hit_strains;
+hit_data_all = nan(length(hit_strains), size(hit_data,2)*2);
+
+load essential_genes_151215.mat
+inds_essential = find(ismember(hit_strains_all, essential_genes));
+hit_data_all(inds_essential,5:8) = hit_data(inds_essential,:);
+
+inds_nonessential = find(~ismember(hit_strains_all, essential_genes));
+hit_data_all(inds_nonessential,1:4) = hit_data(inds_nonessential,:);
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [516 4925 4926 4927]';
+hit_data_ids = [516 4925 4926 4927 11870 11871 11872 11873]';
 
 %% Prepare final dataset
 
@@ -48,9 +59,9 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-lis_bobek_2013.orfs = hit_strains;
+lis_bobek_2013.orfs = hit_strains_all;
 lis_bobek_2013.ph = hit_data_names;
-lis_bobek_2013.data = hit_data;
+lis_bobek_2013.data = hit_data_all;
 lis_bobek_2013.dataset_ids = hit_data_ids;
 
 %% Save
