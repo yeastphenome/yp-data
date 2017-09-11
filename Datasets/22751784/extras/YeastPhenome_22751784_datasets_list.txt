@@ -1,0 +1,6 @@
+5343	het | growth (relative abundance in pooled culture) | cyclosporin A [10 uM], time [20 generations] | Singh-Babak SD~Cowen LE, 2012
+5346	hom | growth (relative abundance in pooled culture) | cyclosporin A [10 uM], time [5 generations] | Singh-Babak SD~Cowen LE, 2012
+5347	het | growth (relative abundance in pooled culture) | micafungin [0.045 ug/ml], time [20 generations] | Singh-Babak SD~Cowen LE, 2012
+5348	hom | growth (relative abundance in pooled culture) | micafungin [0.045 ug/ml], time [5 generations] | Singh-Babak SD~Cowen LE, 2012
+5349	het | growth (relative abundance in pooled culture) | cyclosporin A [10 uM], micafungin [0.045 ug/ml], time [20 generations] | Singh-Babak SD~Cowen LE, 2012
+5350	hom | growth (relative abundance in pooled culture) | cyclosporin A [10 uM], micafungin [0.045 ug/ml], time [5 generations] | Singh-Babak SD~Cowen LE, 2012

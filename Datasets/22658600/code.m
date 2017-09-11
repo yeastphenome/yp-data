@@ -4,34 +4,33 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-lis_romesberg_2008.pmid = 18400565;
+witkin_cohen_fix_2012.pmid = 22658600;
 
 % MANUAL. Download the list of dataset ids and standard names from
 % the paper's page on www.yeastphenome.org & save the file to ./extras
 
 % Load the list
-[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(lis_romesberg_2008.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(witkin_cohen_fix_2012.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('readtable','./raw_data/hits.txt', 'delimiter','\t','ReadVariableNames',0);
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/TableS1.xlsx', 'Table 1');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data.Var2;
-hit_data = [data.Var4 data.Var5];
+hit_strains = data(:,2);
 
-% Normalize to WT
-inds = find(strcmp('WT', hit_strains));
-hit_data = hit_data ./ repmat(hit_data(inds,:), length(hit_strains),1);
+% Get the data itself
+hit_data = ones(size(hit_strains));
 
+inds = find(cellfun(@isnumeric, hit_strains));
 hit_strains(inds) = [];
 hit_data(inds,:) = [];
-  
+   
 % Eliminate all white spaces & capitalize
-hit_strains = clean_orf(hit_strains);
+hit_strains = clean_genename(hit_strains);
 
 % If in gene name form, transform into ORF name
 hit_strains = translate(hit_strains);
@@ -40,13 +39,16 @@ hit_strains = translate(hit_strains);
 inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds));  
 
+hit_strains(inds) = [];
+hit_data(inds,:) = [];
+
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [1188 11857]';
+hit_data_ids = [11848];
 
 %% Prepare final dataset
 
@@ -56,26 +58,26 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-lis_romesberg_2008.orfs = hit_strains;
-lis_romesberg_2008.ph = hit_data_names;
-lis_romesberg_2008.data = hit_data;
-lis_romesberg_2008.dataset_ids = hit_data_ids;
+witkin_cohen_fix_2012.orfs = hit_strains;
+witkin_cohen_fix_2012.ph = hit_data_names;
+witkin_cohen_fix_2012.data = hit_data;
+witkin_cohen_fix_2012.dataset_ids = hit_data_ids;
 
 %% Save
 
-save('./lis_romesberg_2008.mat','lis_romesberg_2008');
+save('./witkin_cohen_fix_2012.mat','witkin_cohen_fix_2012');
 
 %% Print out
 
-fid = fopen('./lis_romesberg_2008.txt','w');
-write_matrix_file(fid, lis_romesberg_2008.orfs, lis_romesberg_2008.ph, lis_romesberg_2008.data);
+fid = fopen('./witkin_cohen_fix_2012.txt','w');
+write_matrix_file(fid, witkin_cohen_fix_2012.orfs, witkin_cohen_fix_2012.ph, witkin_cohen_fix_2012.data);
 fclose(fid);
 
 %% Save to DB (admin)
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(lis_romesberg_2008)
+    res = save_data_to_db(witkin_cohen_fix_2012)
 end
 
 end

@@ -1,0 +1,2 @@
+4923	hap a | replicative lifespan (relative abundance in pool counterselected for derepression of HML locus) | YPD [standard], time [6 d] | Ghavidel A~Harkness TAA, 2015
+11858	hap a | replicative lifespan (relative abundance in pool counterselected for derepression of HML locus) | YPD [standard], time [16 d] | Ghavidel A~Harkness TAA, 2015
