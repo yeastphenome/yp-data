@@ -1,0 +1,2 @@
+1188	hap a | mutation frequency (CanR) | ultraviolet light [50 J/m2] | Lis ET~Romesberg FE, 2008
+11857	hap a | mutation frequency (CanR) | standard [standard] | Lis ET~Romesberg FE, 2008

@@ -4,32 +4,27 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-lis_romesberg_2008.pmid = 18400565;
+ghavidel_harkness_2015.pmid = 26247883;
 
 % MANUAL. Download the list of dataset ids and standard names from
 % the paper's page on www.yeastphenome.org & save the file to ./extras
 
 % Load the list
-[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(lis_romesberg_2008.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(ghavidel_harkness_2015.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('readtable','./raw_data/hits.txt', 'delimiter','\t','ReadVariableNames',0);
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/hits.xlsx', 'Sheet1');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data.Var2;
-hit_data = [data.Var4 data.Var5];
+hit_strains = data(:,1);
 
-% Normalize to WT
-inds = find(strcmp('WT', hit_strains));
-hit_data = hit_data ./ repmat(hit_data(inds,:), length(hit_strains),1);
-
-hit_strains(inds) = [];
-hit_data(inds,:) = [];
-  
+% Get the data itself
+hit_data = cell2mat(data(:,2:3));
+   
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
 
@@ -46,7 +41,7 @@ disp(hit_strains(inds));
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [1188 11857]';
+hit_data_ids = [4923 11858]';
 
 %% Prepare final dataset
 
@@ -56,26 +51,26 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-lis_romesberg_2008.orfs = hit_strains;
-lis_romesberg_2008.ph = hit_data_names;
-lis_romesberg_2008.data = hit_data;
-lis_romesberg_2008.dataset_ids = hit_data_ids;
+ghavidel_harkness_2015.orfs = hit_strains;
+ghavidel_harkness_2015.ph = hit_data_names;
+ghavidel_harkness_2015.data = hit_data;
+ghavidel_harkness_2015.dataset_ids = hit_data_ids;
 
 %% Save
 
-save('./lis_romesberg_2008.mat','lis_romesberg_2008');
+save('./ghavidel_harkness_2015.mat','ghavidel_harkness_2015');
 
 %% Print out
 
-fid = fopen('./lis_romesberg_2008.txt','w');
-write_matrix_file(fid, lis_romesberg_2008.orfs, lis_romesberg_2008.ph, lis_romesberg_2008.data);
+fid = fopen('./ghavidel_harkness_2015.txt','w');
+write_matrix_file(fid, ghavidel_harkness_2015.orfs, ghavidel_harkness_2015.ph, ghavidel_harkness_2015.data);
 fclose(fid);
 
 %% Save to DB (admin)
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(lis_romesberg_2008)
+    res = save_data_to_db(ghavidel_harkness_2015)
 end
 
 end

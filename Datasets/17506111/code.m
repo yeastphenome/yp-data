@@ -4,34 +4,27 @@ function FILENAMES = code()
 addpath(genpath('../../Yeast-Matlab-Utils/'));
 
 FILENAMES = {};
-lis_romesberg_2008.pmid = 18400565;
+yazawa_uemura_2007.pmid = 17506111;
 
 % MANUAL. Download the list of dataset ids and standard names from
 % the paper's page on www.yeastphenome.org & save the file to ./extras
 
 % Load the list
-[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(lis_romesberg_2008.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
+[FILENAMES{end+1}, d] = read_data('textread', ['./extras/YeastPhenome_' num2str(yazawa_uemura_2007.pmid) '_datasets_list.txt'],'%d %s','delimiter','\t');
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('readtable','./raw_data/hits.txt', 'delimiter','\t','ReadVariableNames',0);
+[FILENAMES{end+1}, data] = read_data('textscan','./raw_data/hits.txt', '%s');
 
-% Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data.Var2;
-hit_data = [data.Var4 data.Var5];
+hit_strains = data;
 
-% Normalize to WT
-inds = find(strcmp('WT', hit_strains));
-hit_data = hit_data ./ repmat(hit_data(inds,:), length(hit_strains),1);
-
-hit_strains(inds) = [];
-hit_data(inds,:) = [];
-  
+% Get the data itself
+hit_data = -ones(size(hit_strains));
+   
 % Eliminate all white spaces & capitalize
-hit_strains = clean_orf(hit_strains);
+hit_strains = clean_genename(hit_strains);
 
 % If in gene name form, transform into ORF name
 hit_strains = translate(hit_strains);
@@ -46,7 +39,7 @@ disp(hit_strains(inds));
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [1188 11857]';
+hit_data_ids = [5261];
 
 %% Prepare final dataset
 
@@ -56,26 +49,26 @@ hit_data_names = cell(size(hit_data_ids));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
-lis_romesberg_2008.orfs = hit_strains;
-lis_romesberg_2008.ph = hit_data_names;
-lis_romesberg_2008.data = hit_data;
-lis_romesberg_2008.dataset_ids = hit_data_ids;
+yazawa_uemura_2007.orfs = hit_strains;
+yazawa_uemura_2007.ph = hit_data_names;
+yazawa_uemura_2007.data = hit_data;
+yazawa_uemura_2007.dataset_ids = hit_data_ids;
 
 %% Save
 
-save('./lis_romesberg_2008.mat','lis_romesberg_2008');
+save('./yazawa_uemura_2007.mat','yazawa_uemura_2007');
 
 %% Print out
 
-fid = fopen('./lis_romesberg_2008.txt','w');
-write_matrix_file(fid, lis_romesberg_2008.orfs, lis_romesberg_2008.ph, lis_romesberg_2008.data);
+fid = fopen('./yazawa_uemura_2007.txt','w');
+write_matrix_file(fid, yazawa_uemura_2007.orfs, yazawa_uemura_2007.ph, yazawa_uemura_2007.data);
 fclose(fid);
 
 %% Save to DB (admin)
 
 addpath(genpath('../../Private-Utils/'));
 if exist('save_data_to_db.m')
-    res = save_data_to_db(lis_romesberg_2008)
+    res = save_data_to_db(yazawa_uemura_2007)
 end
 
 end
