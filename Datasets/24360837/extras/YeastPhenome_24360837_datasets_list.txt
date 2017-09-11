@@ -1,248 +1,492 @@
-456	hom | growth (relative abundance in pooled culture) | amitriptyline [50 uM]
-1052	hom | growth (relative abundance in pooled culture) | Leucanicidin [21.081 uM]
-1053	hom | growth (relative abundance in pooled culture) | strobilurin B [200 uM]
-1054	hom | growth (relative abundance in pooled culture) | bafilomycin A1 [43.69 uM]
-1055	hom | growth (relative abundance in pooled culture) | deferasirox [200 uM]
-1056	hom | growth (relative abundance in pooled culture) | Epothilon B Derivative [5 uM]
-1057	hom | growth (relative abundance in pooled culture) | trichostatin A [200 uM]
-1058	hom | growth (relative abundance in pooled culture) | Graphinone [200 uM]
-1059	hom | growth (relative abundance in pooled culture) | Myriocin Derivative [8.119 uM]
-1060	hom | growth (relative abundance in pooled culture) | terbinafine [12.381 uM]
-1061	hom | growth (relative abundance in pooled culture) | cyproconazole [0.284 uM]
-1062	hom | growth (relative abundance in pooled culture) | Enniatin derivative [27 uM]
-1063	hom | growth (relative abundance in pooled culture) | naftifine [70.999 uM]
-1064	hom | growth (relative abundance in pooled culture) | ascomycin [100 uM]
-1065	hom | growth (relative abundance in pooled culture) | Ergokonin A [0.913 uM]
-1066	hom | growth (relative abundance in pooled culture) | concanamycin A [0.111 uM]
-1067	hom | growth (relative abundance in pooled culture) | Rapamycin Derivative [0.01 uM]
-1068	hom | growth (relative abundance in pooled culture) | dequalinium chloride [0.1 uM]
-1069	hom | growth (relative abundance in pooled culture) | voriconazole [0.528 uM]
-1070	hom | growth (relative abundance in pooled culture) | (-)-anisomycin [10 uM]
-1071	hom | growth (relative abundance in pooled culture) | ravidomycin [12.745 uM]
-1072	hom | growth (relative abundance in pooled culture) | Enniatin B1 [90 uM]
-1073	hom | growth (relative abundance in pooled culture) | SDZ 90-215 [3 uM]
-1074	hom | growth (relative abundance in pooled culture) | sinefungin [0.02 uM]
-1075	hom | growth (relative abundance in pooled culture) | boromycin [4 uM]
-1076	hom | growth (relative abundance in pooled culture) | Echinocandin B Derivative [0.01 uM]
-1077	hom | growth (relative abundance in pooled culture) | triclosan [6 uM]
-1078	hom | growth (relative abundance in pooled culture) | benzethonium chloride [14 uM]
-1079	hom | growth (relative abundance in pooled culture) | diazaborine [23.379 uM]
-1080	hom | growth (relative abundance in pooled culture) | fluvastatin sodium [57.186 uM]
-1081	hom | growth (relative abundance in pooled culture) | tubulozole [0.5 uM]
-1082	hom | growth (relative abundance in pooled culture) | radicicol [88.72 uM]
-1083	hom | growth (relative abundance in pooled culture) | geldanamycin [200 uM]
-1084	hom | growth (relative abundance in pooled culture) | quinacrine [200 uM]
-1085	hom | growth (relative abundance in pooled culture) | chlorpromazine [25.284 uM]
-1086	hom | growth (relative abundance in pooled culture) | methotrexate [200 uM]
-1087	hom | growth (relative abundance in pooled culture) | benomyl [57.746 uM]
-1088	hom | growth (relative abundance in pooled culture) | curcumin [58.546 uM]
-1089	hom | growth (relative abundance in pooled culture) | cobalt dichloride [92.63 uM]
-1090	hom | growth (relative abundance in pooled culture) | caffeine [500 uM]
-1091	hom | growth (relative abundance in pooled culture) | sirolimus [1 nM]
-1092	hom | growth (relative abundance in pooled culture) | staurosporine [1.088 uM]
-1093	hom | growth (relative abundance in pooled culture) | zaragozic acid A [13.625 uM]
-1094	hom | growth (relative abundance in pooled culture) | hydroxyurea [16.6 mM]
-1095	hom | growth (relative abundance in pooled culture) | actinomycin D [75.238 uM]
-1096	hom | growth (relative abundance in pooled culture) | Amiodarone hydrochloride [13.430 uM]
-1097	hom | growth (relative abundance in pooled culture) | trifluoperazine hydrochloride [7.3 uM]
-1098	hom | growth (relative abundance in pooled culture) | clotrimazole [0.471 uM]
-1099	hom | growth (relative abundance in pooled culture) | camptothecin [200 uM]
-1100	hom | growth (relative abundance in pooled culture) | fenpropimorph [0.273 uM]
-1101	hom | growth (relative abundance in pooled culture) | gliotoxin [8.723 uM]
-1102	hom | growth (relative abundance in pooled culture) | 5-fluorouracil [6.898 uM]
-1103	hom | growth (relative abundance in pooled culture) | fluconazole [30 uM]
-1104	hom | growth (relative abundance in pooled culture) | pibenzimol [30 uM]
-1105	hom | growth (relative abundance in pooled culture) | Pramoxine hydrochloride [47.79 uM]
-1106	hom | growth (relative abundance in pooled culture) | dyclonine hydrochloride [29.17 uM]
-1107	hom | growth (relative abundance in pooled culture) | gefitinib [122.14 uM]
-1108	hom | growth (relative abundance in pooled culture) | aclacinomycin A [4.857 uM]
-1109	hom | growth (relative abundance in pooled culture) | bortezomib [200 uM]
-1110	hom | growth (relative abundance in pooled culture) | ALAMETHICIN [3.086 uM]
-1111	hom | growth (relative abundance in pooled culture) | 6-azauridine [200 uM]
-1112	hom | growth (relative abundance in pooled culture) | mycophenolic acid [70 uM]
-1113	hom | growth (relative abundance in pooled culture) | 6-azauracil [200 uM]
-1114	hom | growth (relative abundance in pooled culture) | nigericin [12 uM]
-1115	hom | growth (relative abundance in pooled culture) | Concanamycin A Derivative [0.474 uM]
-1116	hom | growth (relative abundance in pooled culture) | Reveromycin [200 uM]
-1117	hom | growth (relative abundance in pooled culture) | Scalaradial [2.5 uM]
-1118	hom | growth (relative abundance in pooled culture) | concanamycin A [0.02 uM]
-1119	hom | growth (relative abundance in pooled culture) | Echinocandin C Derivative [7 nM]
-1120	hom | growth (relative abundance in pooled culture) | YW3548 [0.15 uM]
-1121	hom | growth (relative abundance in pooled culture) | cycloheximide [0.03 uM]
-1122	hom | growth (relative abundance in pooled culture) | concanamycin A [0.084 uM]
-1123	hom | growth (relative abundance in pooled culture) | pyridoxatin [32 uM]
-1124	hom | growth (relative abundance in pooled culture) | zinc dichloride [200 uM]
-1125	hom | growth (relative abundance in pooled culture) | nicotinamide [10 mM]
-1126	hom | growth (relative abundance in pooled culture) | ethidium bromide [82.145 uM]
-1127	hom | growth (relative abundance in pooled culture) | verrucarin A [0.75 uM]
-1128	hom | growth (relative abundance in pooled culture) | cerulenin [2.1 uM]
-1129	hom | growth (relative abundance in pooled culture) | latrunculin A [0.9 uM]
-1130	hom | growth (relative abundance in pooled culture) | 2-deoxy-D-glucose [300 uM]
-1131	hom | growth (relative abundance in pooled culture) | Tan 999 [0.1 uM]
-1132	hom | growth (relative abundance in pooled culture) | nocodazole [8 uM]
-1133	hom | growth (relative abundance in pooled culture) | disulfiram [1.4 uM]
-1134	hom | growth (relative abundance in pooled culture) | mechlorethamine [95 uM]
-1135	hom | growth (relative abundance in pooled culture) | 1,10-Phenanthroline hydrate [50 uM]
-1136	hom | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [0.2 uM]
-1137	hom | growth (relative abundance in pooled culture) | sodium dodecyl sulfate [150 uM]
-1138	hom | growth (relative abundance in pooled culture) | enniatin A1 [7.5 uM]
-1139	hom | growth (relative abundance in pooled culture) | desferrioxamine B [200 uM]
-1140	hom | growth (relative abundance in pooled culture) | deferiprone [200 uM]
-1141	hom | growth (relative abundance in pooled culture) | methyl methanesulfonate [0.01 uM]
-1142	hom | growth (relative abundance in pooled culture) | ebselen [0.5 uM]
-1143	hom | growth (relative abundance in pooled culture) | Niclosamide [10 uM]
-1144	hom | growth (relative abundance in pooled culture) | flucytosine [8 uM]
-1145	hom | growth (relative abundance in pooled culture) | soraphen A [0.5 uM]
-1146	hom | growth (relative abundance in pooled culture) | calmidazolium [4.5 uM]
-1147	hom | growth (relative abundance in pooled culture) | sphingosine [1.5 uM]
-1148	hom | growth (relative abundance in pooled culture) | sphinganine [20 uM]
-1149	hom | growth (relative abundance in pooled culture) | trapoxin A [150 uM]
-1150	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [1 uM]
-1151	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [2 uM]
-1152	hom | growth (relative abundance in pooled culture) | chondramide [90 uM]
-1153	hom | growth (relative abundance in pooled culture) | myxothiazol [200 uM]
-1154	hom | growth (relative abundance in pooled culture) | ionomycin [200 uM]
-1155	hom | growth (relative abundance in pooled culture) | hygrolidin [7.5 uM]
-1156	hom | growth (relative abundance in pooled culture) | glucitol [550 mM]
-1157	hom | growth (relative abundance in pooled culture) | sodium chloride [320 mM]
-1158	hom | growth (relative abundance in pooled culture) | potassium chloride [400 mM]
-1159	hom | growth (relative abundance in pooled culture) | calcium dichloride [45 mM]
-1160	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [200 uM]
-1161	hom | growth (relative abundance in pooled culture) | sodium acetate [125 mM]
-1162	hom | growth (relative abundance in pooled culture) | copper(II) chloride [5 mM]
-1163	hom | growth (relative abundance in pooled culture) | iron dichloride [25 mM]
-1164	hom | growth (relative abundance in pooled culture) | hydrogen chloride [60 mM]
-1165	hom | growth (relative abundance in pooled culture) | sodium hydroxide [8 mM]
-1166	hom | growth (relative abundance in pooled culture) | glucose [0.25 uM]
-1167	hom | growth (relative abundance in pooled culture) | Enniatin derivative [8 uM]
-1168	hom | growth (relative abundance in pooled culture) | borrelidin [45 uM]
-1169	hom | growth (relative abundance in pooled culture) | Lysolipin X [2 uM]
-1170	hom | growth (relative abundance in pooled culture) | tunicamycin B [0.15 uM]
-1171	hom | growth (relative abundance in pooled culture) | Squalestatin Derivative [8 uM]
-1172	hom | growth (relative abundance in pooled culture) | X-206 [1 uM]
-1173	hom | growth (relative abundance in pooled culture) | trichothecene [3 uM]
-1174	hom | growth (relative abundance in pooled culture) | nigericin [8 uM]
-1175	hom | growth (relative abundance in pooled culture) | bleomycin A2 [0.05 uM]
-1176	hom | growth (relative abundance in pooled culture) | elaiophylin [30 uM]
-1177	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.01 uM]
-1178	hom | growth (relative abundance in pooled culture) | mercury dichloride [35 uM]
-1179	hom | growth (relative abundance in pooled culture) | methylmercury(.) [0.1 uM]
-1180	hom | growth (relative abundance in pooled culture) | tavaborole [0.5 uM]
-1181	hom | growth (relative abundance in pooled culture) | manganese(II) chloride [5 uM]
-1182	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [50 uM]
-1183	hom | growth (relative abundance in pooled culture) | aureobasidin A [3.181 uM]
-1184	hom | growth (relative abundance in pooled culture) | doxorubicin [28.066 uM]
-1185	hom | growth (relative abundance in pooled culture) | cryptolepine [0.026 uM]
-1186	hom | growth (relative abundance in pooled culture) | Ascosteroside [0.02 uM]
-1191	hom | growth (relative abundance in pooled culture) | deferasirox [250 uM]
-1192	hom | growth (relative abundance in pooled culture) | deferasirox [300 uM]
-1193	hom | growth (relative abundance in pooled culture) | deferasirox [350 uM]
-1194	hom | growth (relative abundance in pooled culture) | deferasirox [400 uM]
-1195	hom | growth (relative abundance in pooled culture) | Epothilon B Derivative [15 uM]
-1196	hom | growth (relative abundance in pooled culture) | Epothilon B Derivative [30 uM]
-1197	hom | growth (relative abundance in pooled culture) | Ergokonin A [0.7 uM]
-1198	hom | growth (relative abundance in pooled culture) | Rapamycin Derivative [0.015 uM]
-1199	hom | growth (relative abundance in pooled culture) | Rapamycin Derivative [0.02 uM]
-1200	hom | growth (relative abundance in pooled culture) | Rapamycin Derivative [0.03 uM]
-1201	hom | growth (relative abundance in pooled culture) | dequalinium chloride [0.2 uM]
-1202	hom | growth (relative abundance in pooled culture) | dequalinium chloride [0.3 uM]
-1203	hom | growth (relative abundance in pooled culture) | ravidomycin [10 uM]
-1204	hom | growth (relative abundance in pooled culture) | SDZ 90-215 [4 uM]
-1205	hom | growth (relative abundance in pooled culture) | SDZ 90-215 [6 uM]
-1206	hom | growth (relative abundance in pooled culture) | sinefungin [0.1 uM]
-1207	hom | growth (relative abundance in pooled culture) | sinefungin [0.5 uM]
-1208	hom | growth (relative abundance in pooled culture) | sinefungin [1 uM]
-1209	hom | growth (relative abundance in pooled culture) | sinefungin [1.5 uM]
-1210	hom | growth (relative abundance in pooled culture) | triclosan [10 uM]
-1211	hom | growth (relative abundance in pooled culture) | triclosan [15 uM]
-1212	hom | growth (relative abundance in pooled culture) | radicicol [75 uM]
-1213	hom | growth (relative abundance in pooled culture) | geldanamycin [150 uM]
-1214	hom | growth (relative abundance in pooled culture) | quinacrine [180 uM]
-1215	hom | growth (relative abundance in pooled culture) | chlorpromazine [12.5 uM]
-1216	hom | growth (relative abundance in pooled culture) | chlorpromazine [25.3 uM]
-1217	hom | growth (relative abundance in pooled culture) | curcumin [55 uM]
-1218	hom | growth (relative abundance in pooled culture) | curcumin [70 uM]
-1219	hom | growth (relative abundance in pooled culture) | curcumin [75 uM]
-1220	hom | growth (relative abundance in pooled culture) | curcumin [85 uM]
-1221	hom | growth (relative abundance in pooled culture) | cobalt dichloride [200 uM]
-1222	hom | growth (relative abundance in pooled culture) | caffeine [1 mM]
-1223	hom | growth (relative abundance in pooled culture) | caffeine [1.5 mM]
-1224	hom | growth (relative abundance in pooled culture) | caffeine [2 mM]
-1225	hom | growth (relative abundance in pooled culture) | sirolimus [0.2 nM]
-1226	hom | growth (relative abundance in pooled culture) | sirolimus [0.5 nM]
-1227	hom | growth (relative abundance in pooled culture) | sirolimus [0.8 nM]
-1228	hom | growth (relative abundance in pooled culture) | hydroxyurea [166.648 uM]
-1229	hom | growth (relative abundance in pooled culture) | hydroxyurea [200 uM]
-1230	hom | growth (relative abundance in pooled culture) | hydroxyurea [8.3 mM]
-1231	hom | growth (relative abundance in pooled culture) | fluconazole [60 uM]
-1232	hom | growth (relative abundance in pooled culture) | pibenzimol [32 uM]
-1233	hom | growth (relative abundance in pooled culture) | bortezomib [300 uM]
-1234	hom | growth (relative abundance in pooled culture) | ALAMETHICIN [11.89 uM]
-1235	hom | growth (relative abundance in pooled culture) | mycophenolic acid [100 uM]
-1236	hom | growth (relative abundance in pooled culture) | mycophenolic acid [120 uM]
-1237	hom | growth (relative abundance in pooled culture) | Scalaradial [5 uM]
-1238	hom | growth (relative abundance in pooled culture) | Scalaradial [10 uM]
-1239	hom | growth (relative abundance in pooled culture) | Echinocandin C Derivative [10 nM]
-1240	hom | growth (relative abundance in pooled culture) | YW3548 [0.175 uM]
-1241	hom | growth (relative abundance in pooled culture) | cycloheximide [0.05 uM]
-1242	hom | growth (relative abundance in pooled culture) | zinc dichloride [20 mM]
-1243	hom | growth (relative abundance in pooled culture) | zinc dichloride [40 mM]
-1244	hom | growth (relative abundance in pooled culture) | ethidium bromide [70 uM]
-1245	hom | growth (relative abundance in pooled culture) | verrucarin A [1 uM]
-1246	hom | growth (relative abundance in pooled culture) | verrucarin A [2 μM]
-1247	hom | growth (relative abundance in pooled culture) | cerulenin [1.6 μM]
-1248	hom | growth (relative abundance in pooled culture) | latrunculin A [0.7 uM]
-1249	hom | growth (relative abundance in pooled culture) | 2-deoxy-D-glucose [500 uM]
-1250	hom | growth (relative abundance in pooled culture) | Tan 999 [1 uM]
-1251	hom | growth (relative abundance in pooled culture) | nocodazole [10 μM]
-1252	hom | growth (relative abundance in pooled culture) | nocodazole [12 uM]
-1253	hom | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [0.5 uM]
-1254	hom | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [1 uM]
-1255	hom | growth (relative abundance in pooled culture) | sodium dodecyl sulfate [200 uM]
-1256	hom | growth (relative abundance in pooled culture) | enniatin A1 [15 uM]
-1257	hom | growth (relative abundance in pooled culture) | desferrioxamine B [300 uM]
-1258	hom | growth (relative abundance in pooled culture) | deferiprone [300 uM]
-1259	hom | growth (relative abundance in pooled culture) | calmidazolium [7 uM]
-1260	hom | growth (relative abundance in pooled culture) | sphinganine [30 uM]
-1261	hom | growth (relative abundance in pooled culture) | trapoxin A [185 uM]
-1262	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [1.5 uM]
-1263	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [2 uM]
-1264	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [2.5 uM]
-1265	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [3 uM]
-1266	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [4.5 uM]
-1267	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [3 uM]
-1268	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [4 uM]
-1269	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [5 uM]
-1270	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [7.5 uM]
-1271	hom | growth (relative abundance in pooled culture) | chondramide [110 uM]
-1272	hom | growth (relative abundance in pooled culture) | glucitol [650 mM]
-1273	hom | growth (relative abundance in pooled culture) | sodium chloride [360 mM]
-1274	hom | growth (relative abundance in pooled culture) | potassium chloride [440 mM]
-1275	hom | growth (relative abundance in pooled culture) | calcium dichloride [52 mM]
-1276	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [100 uM]
-1277	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [120 uM]
-1278	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [180 uM]
-1279	hom | growth (relative abundance in pooled culture) | sodium acetate [150 mM]
-1280	hom | growth (relative abundance in pooled culture) | hydrogen chloride [70 mM]
-1281	hom | growth (relative abundance in pooled culture) | sodium hydroxide [10 mM]
-1282	hom | growth (relative abundance in pooled culture) | glucose [0.5 uM]
-1283	hom | growth (relative abundance in pooled culture) | glucose [0.75 uM]
-1284	hom | growth (relative abundance in pooled culture) | Enniatin derivative [70 uM]
-1285	hom | growth (relative abundance in pooled culture) | Lysolipin X [3 uM]
-1286	hom | growth (relative abundance in pooled culture) | Lysolipin X [5 uM]
-1287	hom | growth (relative abundance in pooled culture) | tunicamycin B [0.2 uM]
-1288	hom | growth (relative abundance in pooled culture) | tunicamycin B [0.3 uM]
-1289	hom | growth (relative abundance in pooled culture) | X-206 [2 uM]
-1290	hom | growth (relative abundance in pooled culture) | nigericin [15 uM]
-1291	hom | growth (relative abundance in pooled culture) | bleomycin A2 [0.075 uM]
-1292	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.012 uM]
-1293	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.05 uM]
-1294	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.1 uM]
-1295	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.3 uM]
-1296	hom | growth (relative abundance in pooled culture) | mercury dichloride [50 uM]
-1297	hom | growth (relative abundance in pooled culture) | methylmercury(.) [0.25 uM]
-1298	hom | growth (relative abundance in pooled culture) | methylmercury(.) [0.5 uM]
-1299	hom | growth (relative abundance in pooled culture) | manganese(II) chloride [10 uM]
-1300	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [75 uM]
-1301	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [120 uM]
-1302	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [200 uM]
+456	hom | growth (relative abundance in pooled culture) | amitriptyline [50 uM] | Hoepfner D~Movva NR, 2014
+1052	hom | growth (relative abundance in pooled culture) | Leucanicidin [21.081 uM] | Hoepfner D~Movva NR, 2014
+1053	hom | growth (relative abundance in pooled culture) | strobilurin B [200 uM] | Hoepfner D~Movva NR, 2014
+1054	hom | growth (relative abundance in pooled culture) | bafilomycin A1 [43.69 uM] | Hoepfner D~Movva NR, 2014
+1055	hom | growth (relative abundance in pooled culture) | deferasirox [200 uM] | Hoepfner D~Movva NR, 2014
+1056	hom | growth (relative abundance in pooled culture) | epothilon B derivative [5 uM] | Hoepfner D~Movva NR, 2014
+1057	hom | growth (relative abundance in pooled culture) | trichostatin A [200 uM] | Hoepfner D~Movva NR, 2014
+1058	hom | growth (relative abundance in pooled culture) | Graphinone [200 uM] | Hoepfner D~Movva NR, 2014
+1059	hom | growth (relative abundance in pooled culture) | myriocin derivative [8.119 uM] | Hoepfner D~Movva NR, 2014
+1060	hom | growth (relative abundance in pooled culture) | terbinafine [12.381 uM] | Hoepfner D~Movva NR, 2014
+1061	hom | growth (relative abundance in pooled culture) | cyproconazole [0.284 uM] | Hoepfner D~Movva NR, 2014
+1062	hom | growth (relative abundance in pooled culture) | enniatin derivative [27 uM] | Hoepfner D~Movva NR, 2014
+1063	hom | growth (relative abundance in pooled culture) | naftifine [70.999 uM] | Hoepfner D~Movva NR, 2014
+1064	hom | growth (relative abundance in pooled culture) | ascomycin [100 uM] | Hoepfner D~Movva NR, 2014
+1065	hom | growth (relative abundance in pooled culture) | ergokonin A [0.913 uM] | Hoepfner D~Movva NR, 2014
+1066	hom | growth (relative abundance in pooled culture) | concanamycin A [0.111 uM] | Hoepfner D~Movva NR, 2014
+1067	hom | growth (relative abundance in pooled culture) | rapamycin derivative [0.01 uM] | Hoepfner D~Movva NR, 2014
+1068	hom | growth (relative abundance in pooled culture) | dequalinium chloride [0.1 uM] | Hoepfner D~Movva NR, 2014
+1069	hom | growth (relative abundance in pooled culture) | voriconazole [0.528 uM] | Hoepfner D~Movva NR, 2014
+1070	hom | growth (relative abundance in pooled culture) | (-)-anisomycin [10 uM] | Hoepfner D~Movva NR, 2014
+1071	hom | growth (relative abundance in pooled culture) | ravidomycin [12.745 uM] | Hoepfner D~Movva NR, 2014
+1072	hom | growth (relative abundance in pooled culture) | Enniatin B1 [90 uM] | Hoepfner D~Movva NR, 2014
+1073	hom | growth (relative abundance in pooled culture) | SDZ 90-215 [3 uM] | Hoepfner D~Movva NR, 2014
+1074	hom | growth (relative abundance in pooled culture) | sinefungin [0.02 uM] | Hoepfner D~Movva NR, 2014
+1075	hom | growth (relative abundance in pooled culture) | boromycin [4 uM] | Hoepfner D~Movva NR, 2014
+1076	hom | growth (relative abundance in pooled culture) | echinocandin B derivative [0.01 uM] | Hoepfner D~Movva NR, 2014
+1077	hom | growth (relative abundance in pooled culture) | triclosan [6 uM] | Hoepfner D~Movva NR, 2014
+1078	hom | growth (relative abundance in pooled culture) | benzethonium chloride [14 uM] | Hoepfner D~Movva NR, 2014
+1079	hom | growth (relative abundance in pooled culture) | diazaborine [23.379 uM] | Hoepfner D~Movva NR, 2014
+1080	hom | growth (relative abundance in pooled culture) | fluvastatin sodium [57.186 uM] | Hoepfner D~Movva NR, 2014
+1081	hom | growth (relative abundance in pooled culture) | tubulozole [0.5 uM] | Hoepfner D~Movva NR, 2014
+1082	hom | growth (relative abundance in pooled culture) | radicicol [88.72 uM] | Hoepfner D~Movva NR, 2014
+1083	hom | growth (relative abundance in pooled culture) | geldanamycin [200 uM] | Hoepfner D~Movva NR, 2014
+1084	hom | growth (relative abundance in pooled culture) | quinacrine [200 uM] | Hoepfner D~Movva NR, 2014
+1085	hom | growth (relative abundance in pooled culture) | chlorpromazine [25.284 uM] | Hoepfner D~Movva NR, 2014
+1086	hom | growth (relative abundance in pooled culture) | methotrexate [200 uM] | Hoepfner D~Movva NR, 2014
+1087	hom | growth (relative abundance in pooled culture) | benomyl [57.746 uM] | Hoepfner D~Movva NR, 2014
+1088	hom | growth (relative abundance in pooled culture) | curcumin [58.546 uM] | Hoepfner D~Movva NR, 2014
+1089	hom | growth (relative abundance in pooled culture) | cobalt dichloride [92.63 uM] | Hoepfner D~Movva NR, 2014
+1090	hom | growth (relative abundance in pooled culture) | caffeine [500 uM] | Hoepfner D~Movva NR, 2014
+1091	hom | growth (relative abundance in pooled culture) | sirolimus [1 nM] | Hoepfner D~Movva NR, 2014
+1092	hom | growth (relative abundance in pooled culture) | staurosporine [1.088 uM] | Hoepfner D~Movva NR, 2014
+1093	hom | growth (relative abundance in pooled culture) | zaragozic acid A [13.625 uM] | Hoepfner D~Movva NR, 2014
+1094	hom | growth (relative abundance in pooled culture) | hydroxyurea [16.6 mM] | Hoepfner D~Movva NR, 2014
+1095	hom | growth (relative abundance in pooled culture) | actinomycin D [75.238 uM] | Hoepfner D~Movva NR, 2014
+1096	hom | growth (relative abundance in pooled culture) | Amiodarone hydrochloride [13.430 uM] | Hoepfner D~Movva NR, 2014
+1097	hom | growth (relative abundance in pooled culture) | trifluoperazine hydrochloride [7.3 uM] | Hoepfner D~Movva NR, 2014
+1098	hom | growth (relative abundance in pooled culture) | clotrimazole [0.471 uM] | Hoepfner D~Movva NR, 2014
+1099	hom | growth (relative abundance in pooled culture) | camptothecin [200 uM] | Hoepfner D~Movva NR, 2014
+1100	hom | growth (relative abundance in pooled culture) | fenpropimorph [0.273 uM] | Hoepfner D~Movva NR, 2014
+1101	hom | growth (relative abundance in pooled culture) | gliotoxin [8.723 uM] | Hoepfner D~Movva NR, 2014
+1102	hom | growth (relative abundance in pooled culture) | 5-fluorouracil [6.898 uM] | Hoepfner D~Movva NR, 2014
+1103	hom | growth (relative abundance in pooled culture) | fluconazole [30 uM] | Hoepfner D~Movva NR, 2014
+1104	hom | growth (relative abundance in pooled culture) | pibenzimol [30 uM] | Hoepfner D~Movva NR, 2014
+1105	hom | growth (relative abundance in pooled culture) | Pramoxine hydrochloride [47.79 uM] | Hoepfner D~Movva NR, 2014
+1106	hom | growth (relative abundance in pooled culture) | dyclonine hydrochloride [29.17 uM] | Hoepfner D~Movva NR, 2014
+1107	hom | growth (relative abundance in pooled culture) | gefitinib [122.14 uM] | Hoepfner D~Movva NR, 2014
+1108	hom | growth (relative abundance in pooled culture) | aclacinomycin A [4.857 uM] | Hoepfner D~Movva NR, 2014
+1109	hom | growth (relative abundance in pooled culture) | bortezomib [200 uM] | Hoepfner D~Movva NR, 2014
+1110	hom | growth (relative abundance in pooled culture) | ALAMETHICIN [3.086 uM] | Hoepfner D~Movva NR, 2014
+1111	hom | growth (relative abundance in pooled culture) | 6-azauridine [200 uM] | Hoepfner D~Movva NR, 2014
+1112	hom | growth (relative abundance in pooled culture) | mycophenolic acid [70 uM] | Hoepfner D~Movva NR, 2014
+1113	hom | growth (relative abundance in pooled culture) | 6-azauracil [200 uM] | Hoepfner D~Movva NR, 2014
+1114	hom | growth (relative abundance in pooled culture) | nigericin [12 uM] | Hoepfner D~Movva NR, 2014
+1115	hom | growth (relative abundance in pooled culture) | concanamycin A derivative [0.474 uM] | Hoepfner D~Movva NR, 2014
+1116	hom | growth (relative abundance in pooled culture) | reveromycin [200 uM] | Hoepfner D~Movva NR, 2014
+1117	hom | growth (relative abundance in pooled culture) | Scalaradial [2.5 uM] | Hoepfner D~Movva NR, 2014
+1118	hom | growth (relative abundance in pooled culture) | concanamycin A [0.02 uM] | Hoepfner D~Movva NR, 2014
+1119	hom | growth (relative abundance in pooled culture) | echinocandin C derivative [7 nM] | Hoepfner D~Movva NR, 2014
+1120	hom | growth (relative abundance in pooled culture) | YW3548 [0.15 uM] | Hoepfner D~Movva NR, 2014
+1121	hom | growth (relative abundance in pooled culture) | cycloheximide [0.03 uM] | Hoepfner D~Movva NR, 2014
+1122	hom | growth (relative abundance in pooled culture) | concanamycin A [0.084 uM] | Hoepfner D~Movva NR, 2014
+1123	hom | growth (relative abundance in pooled culture) | pyridoxatin [32 uM] | Hoepfner D~Movva NR, 2014
+1124	hom | growth (relative abundance in pooled culture) | zinc dichloride [200 uM] | Hoepfner D~Movva NR, 2014
+1125	hom | growth (relative abundance in pooled culture) | nicotinamide [10 mM] | Hoepfner D~Movva NR, 2014
+1126	hom | growth (relative abundance in pooled culture) | ethidium bromide [82.145 uM] | Hoepfner D~Movva NR, 2014
+1127	hom | growth (relative abundance in pooled culture) | verrucarin A [0.75 uM] | Hoepfner D~Movva NR, 2014
+1128	hom | growth (relative abundance in pooled culture) | cerulenin [2.1 uM] | Hoepfner D~Movva NR, 2014
+1129	hom | growth (relative abundance in pooled culture) | latrunculin A [0.9 uM] | Hoepfner D~Movva NR, 2014
+1130	hom | growth (relative abundance in pooled culture) | 2-deoxy-D-glucose [300 uM] | Hoepfner D~Movva NR, 2014
+1131	hom | growth (relative abundance in pooled culture) | Tan 999 [0.1 uM] | Hoepfner D~Movva NR, 2014
+1132	hom | growth (relative abundance in pooled culture) | nocodazole [8 uM] | Hoepfner D~Movva NR, 2014
+1133	hom | growth (relative abundance in pooled culture) | disulfiram [1.4 uM] | Hoepfner D~Movva NR, 2014
+1134	hom | growth (relative abundance in pooled culture) | mechlorethamine [95 uM] | Hoepfner D~Movva NR, 2014
+1135	hom | growth (relative abundance in pooled culture) | 1,10-Phenanthroline hydrate [50 uM] | Hoepfner D~Movva NR, 2014
+1136	hom | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [0.2 uM] | Hoepfner D~Movva NR, 2014
+1137	hom | growth (relative abundance in pooled culture) | sodium dodecyl sulfate [150 uM] | Hoepfner D~Movva NR, 2014
+1138	hom | growth (relative abundance in pooled culture) | enniatin A1 [7.5 uM] | Hoepfner D~Movva NR, 2014
+1139	hom | growth (relative abundance in pooled culture) | desferrioxamine B [200 uM] | Hoepfner D~Movva NR, 2014
+1140	hom | growth (relative abundance in pooled culture) | deferiprone [200 uM] | Hoepfner D~Movva NR, 2014
+1141	hom | growth (relative abundance in pooled culture) | methyl methanesulfonate [0.01 uM] | Hoepfner D~Movva NR, 2014
+1142	hom | growth (relative abundance in pooled culture) | ebselen [0.5 uM] | Hoepfner D~Movva NR, 2014
+1143	hom | growth (relative abundance in pooled culture) | Niclosamide [10 uM] | Hoepfner D~Movva NR, 2014
+1144	hom | growth (relative abundance in pooled culture) | flucytosine [8 uM] | Hoepfner D~Movva NR, 2014
+1145	hom | growth (relative abundance in pooled culture) | soraphen A [0.5 uM] | Hoepfner D~Movva NR, 2014
+1146	hom | growth (relative abundance in pooled culture) | calmidazolium [4.5 uM] | Hoepfner D~Movva NR, 2014
+1147	hom | growth (relative abundance in pooled culture) | sphingosine [1.5 uM] | Hoepfner D~Movva NR, 2014
+1148	hom | growth (relative abundance in pooled culture) | sphinganine [20 uM] | Hoepfner D~Movva NR, 2014
+1149	hom | growth (relative abundance in pooled culture) | trapoxin A [150 uM] | Hoepfner D~Movva NR, 2014
+1150	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [1 uM] | Hoepfner D~Movva NR, 2014
+1151	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [2 uM] | Hoepfner D~Movva NR, 2014
+1152	hom | growth (relative abundance in pooled culture) | chondramide [90 uM] | Hoepfner D~Movva NR, 2014
+1153	hom | growth (relative abundance in pooled culture) | myxothiazol [200 uM] | Hoepfner D~Movva NR, 2014
+1154	hom | growth (relative abundance in pooled culture) | ionomycin [200 uM] | Hoepfner D~Movva NR, 2014
+1155	hom | growth (relative abundance in pooled culture) | hygrolidin [7.5 uM] | Hoepfner D~Movva NR, 2014
+1156	hom | growth (relative abundance in pooled culture) | glucitol [550 mM] | Hoepfner D~Movva NR, 2014
+1157	hom | growth (relative abundance in pooled culture) | sodium chloride [320 mM] | Hoepfner D~Movva NR, 2014
+1158	hom | growth (relative abundance in pooled culture) | potassium chloride [400 mM] | Hoepfner D~Movva NR, 2014
+1159	hom | growth (relative abundance in pooled culture) | calcium dichloride [45 mM] | Hoepfner D~Movva NR, 2014
+1160	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [200 uM] | Hoepfner D~Movva NR, 2014
+1161	hom | growth (relative abundance in pooled culture) | sodium acetate [125 mM] | Hoepfner D~Movva NR, 2014
+1163	hom | growth (relative abundance in pooled culture) | iron dichloride [25 mM] | Hoepfner D~Movva NR, 2014
+1164	hom | growth (relative abundance in pooled culture) | hydrogen chloride [60 mM] | Hoepfner D~Movva NR, 2014
+1165	hom | growth (relative abundance in pooled culture) | sodium hydroxide [8 mM] | Hoepfner D~Movva NR, 2014
+1166	hom | growth (relative abundance in pooled culture) | glucose [0.25 uM] | Hoepfner D~Movva NR, 2014
+1167	hom | growth (relative abundance in pooled culture) | enniatin derivative [8 uM] | Hoepfner D~Movva NR, 2014
+1168	hom | growth (relative abundance in pooled culture) | borrelidin [45 uM] | Hoepfner D~Movva NR, 2014
+1169	hom | growth (relative abundance in pooled culture) | Lysolipin X [2 uM] | Hoepfner D~Movva NR, 2014
+1170	hom | growth (relative abundance in pooled culture) | tunicamycin B [0.15 uM] | Hoepfner D~Movva NR, 2014
+1171	hom | growth (relative abundance in pooled culture) | squalestatin derivative [8 uM] | Hoepfner D~Movva NR, 2014
+1172	hom | growth (relative abundance in pooled culture) | X-206 [1 uM] | Hoepfner D~Movva NR, 2014
+1173	hom | growth (relative abundance in pooled culture) | trichothecene [3 uM] | Hoepfner D~Movva NR, 2014
+1174	hom | growth (relative abundance in pooled culture) | nigericin [8 uM] | Hoepfner D~Movva NR, 2014
+1175	hom | growth (relative abundance in pooled culture) | bleomycin A2 [0.05 uM] | Hoepfner D~Movva NR, 2014
+1176	hom | growth (relative abundance in pooled culture) | elaiophylin [30 uM] | Hoepfner D~Movva NR, 2014
+1177	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.01 uM] | Hoepfner D~Movva NR, 2014
+1178	hom | growth (relative abundance in pooled culture) | mercury dichloride [35 uM] | Hoepfner D~Movva NR, 2014
+1179	hom | growth (relative abundance in pooled culture) | methylmercury(.) [0.1 uM] | Hoepfner D~Movva NR, 2014
+1180	hom | growth (relative abundance in pooled culture) | tavaborole [0.5 uM] | Hoepfner D~Movva NR, 2014
+1181	hom | growth (relative abundance in pooled culture) | manganese(II) chloride [5 uM] | Hoepfner D~Movva NR, 2014
+1182	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [50 uM] | Hoepfner D~Movva NR, 2014
+1184	hom | growth (relative abundance in pooled culture) | doxorubicin [28.066 uM] | Hoepfner D~Movva NR, 2014
+1185	hom | growth (relative abundance in pooled culture) | cryptolepine [0.026 uM] | Hoepfner D~Movva NR, 2014
+1186	hom | growth (relative abundance in pooled culture) | Ascosteroside [0.02 uM] | Hoepfner D~Movva NR, 2014
+1191	hom | growth (relative abundance in pooled culture) | deferasirox [250 uM] | Hoepfner D~Movva NR, 2014
+1192	hom | growth (relative abundance in pooled culture) | deferasirox [300 uM] | Hoepfner D~Movva NR, 2014
+1193	hom | growth (relative abundance in pooled culture) | deferasirox [350 uM] | Hoepfner D~Movva NR, 2014
+1194	hom | growth (relative abundance in pooled culture) | deferasirox [400 uM] | Hoepfner D~Movva NR, 2014
+1195	hom | growth (relative abundance in pooled culture) | epothilon B derivative [15 uM] | Hoepfner D~Movva NR, 2014
+1196	hom | growth (relative abundance in pooled culture) | epothilon B derivative [30 uM] | Hoepfner D~Movva NR, 2014
+1197	hom | growth (relative abundance in pooled culture) | ergokonin A [0.7 uM] | Hoepfner D~Movva NR, 2014
+1198	hom | growth (relative abundance in pooled culture) | rapamycin derivative [0.015 uM] | Hoepfner D~Movva NR, 2014
+1199	hom | growth (relative abundance in pooled culture) | rapamycin derivative [0.02 uM] | Hoepfner D~Movva NR, 2014
+1200	hom | growth (relative abundance in pooled culture) | rapamycin derivative [0.03 uM] | Hoepfner D~Movva NR, 2014
+1201	hom | growth (relative abundance in pooled culture) | dequalinium chloride [0.2 uM] | Hoepfner D~Movva NR, 2014
+1202	hom | growth (relative abundance in pooled culture) | dequalinium chloride [0.3 uM] | Hoepfner D~Movva NR, 2014
+1203	hom | growth (relative abundance in pooled culture) | ravidomycin [10 uM] | Hoepfner D~Movva NR, 2014
+1204	hom | growth (relative abundance in pooled culture) | SDZ 90-215 [4 uM] | Hoepfner D~Movva NR, 2014
+1205	hom | growth (relative abundance in pooled culture) | SDZ 90-215 [6 uM] | Hoepfner D~Movva NR, 2014
+1206	hom | growth (relative abundance in pooled culture) | sinefungin [0.1 uM] | Hoepfner D~Movva NR, 2014
+1207	hom | growth (relative abundance in pooled culture) | sinefungin [0.5 uM] | Hoepfner D~Movva NR, 2014
+1208	hom | growth (relative abundance in pooled culture) | sinefungin [1 uM] | Hoepfner D~Movva NR, 2014
+1209	hom | growth (relative abundance in pooled culture) | sinefungin [1.5 uM] | Hoepfner D~Movva NR, 2014
+1210	hom | growth (relative abundance in pooled culture) | triclosan [10 uM] | Hoepfner D~Movva NR, 2014
+1211	hom | growth (relative abundance in pooled culture) | triclosan [15 uM] | Hoepfner D~Movva NR, 2014
+1212	hom | growth (relative abundance in pooled culture) | radicicol [75 uM] | Hoepfner D~Movva NR, 2014
+1213	hom | growth (relative abundance in pooled culture) | geldanamycin [150 uM] | Hoepfner D~Movva NR, 2014
+1214	hom | growth (relative abundance in pooled culture) | quinacrine [180 uM] | Hoepfner D~Movva NR, 2014
+1215	hom | growth (relative abundance in pooled culture) | chlorpromazine [12.5 uM] | Hoepfner D~Movva NR, 2014
+1216	hom | growth (relative abundance in pooled culture) | chlorpromazine [25.3 uM] | Hoepfner D~Movva NR, 2014
+1217	hom | growth (relative abundance in pooled culture) | curcumin [55 uM] | Hoepfner D~Movva NR, 2014
+1218	hom | growth (relative abundance in pooled culture) | curcumin [70 uM] | Hoepfner D~Movva NR, 2014
+1219	hom | growth (relative abundance in pooled culture) | curcumin [75 uM] | Hoepfner D~Movva NR, 2014
+1220	hom | growth (relative abundance in pooled culture) | curcumin [85 uM] | Hoepfner D~Movva NR, 2014
+1221	hom | growth (relative abundance in pooled culture) | cobalt dichloride [200 uM] | Hoepfner D~Movva NR, 2014
+1222	hom | growth (relative abundance in pooled culture) | caffeine [1 mM] | Hoepfner D~Movva NR, 2014
+1223	hom | growth (relative abundance in pooled culture) | caffeine [1.5 mM] | Hoepfner D~Movva NR, 2014
+1224	hom | growth (relative abundance in pooled culture) | caffeine [2 mM] | Hoepfner D~Movva NR, 2014
+1225	hom | growth (relative abundance in pooled culture) | sirolimus [0.2 nM] | Hoepfner D~Movva NR, 2014
+1226	hom | growth (relative abundance in pooled culture) | sirolimus [0.5 nM] | Hoepfner D~Movva NR, 2014
+1227	hom | growth (relative abundance in pooled culture) | sirolimus [0.8 nM] | Hoepfner D~Movva NR, 2014
+1228	hom | growth (relative abundance in pooled culture) | hydroxyurea [166.648 uM] | Hoepfner D~Movva NR, 2014
+1229	hom | growth (relative abundance in pooled culture) | hydroxyurea [200 uM] | Hoepfner D~Movva NR, 2014
+1230	hom | growth (relative abundance in pooled culture) | hydroxyurea [8.3 mM] | Hoepfner D~Movva NR, 2014
+1231	hom | growth (relative abundance in pooled culture) | fluconazole [60 uM] | Hoepfner D~Movva NR, 2014
+1232	hom | growth (relative abundance in pooled culture) | pibenzimol [32 uM] | Hoepfner D~Movva NR, 2014
+1233	hom | growth (relative abundance in pooled culture) | bortezomib [300 uM] | Hoepfner D~Movva NR, 2014
+1234	hom | growth (relative abundance in pooled culture) | ALAMETHICIN [11.89 uM] | Hoepfner D~Movva NR, 2014
+1235	hom | growth (relative abundance in pooled culture) | mycophenolic acid [100 uM] | Hoepfner D~Movva NR, 2014
+1236	hom | growth (relative abundance in pooled culture) | mycophenolic acid [120 uM] | Hoepfner D~Movva NR, 2014
+1237	hom | growth (relative abundance in pooled culture) | Scalaradial [5 uM] | Hoepfner D~Movva NR, 2014
+1238	hom | growth (relative abundance in pooled culture) | Scalaradial [10 uM] | Hoepfner D~Movva NR, 2014
+1239	hom | growth (relative abundance in pooled culture) | echinocandin C derivative [10 nM] | Hoepfner D~Movva NR, 2014
+1240	hom | growth (relative abundance in pooled culture) | YW3548 [0.175 uM] | Hoepfner D~Movva NR, 2014
+1241	hom | growth (relative abundance in pooled culture) | cycloheximide [0.05 uM] | Hoepfner D~Movva NR, 2014
+1242	hom | growth (relative abundance in pooled culture) | zinc dichloride [20 mM] | Hoepfner D~Movva NR, 2014
+1243	hom | growth (relative abundance in pooled culture) | zinc dichloride [40 mM] | Hoepfner D~Movva NR, 2014
+1244	hom | growth (relative abundance in pooled culture) | ethidium bromide [70 uM] | Hoepfner D~Movva NR, 2014
+1245	hom | growth (relative abundance in pooled culture) | verrucarin A [1 uM] | Hoepfner D~Movva NR, 2014
+1246	hom | growth (relative abundance in pooled culture) | verrucarin A [2 uM] | Hoepfner D~Movva NR, 2014
+1247	hom | growth (relative abundance in pooled culture) | cerulenin [1.6 uM] | Hoepfner D~Movva NR, 2014
+1248	hom | growth (relative abundance in pooled culture) | latrunculin A [0.7 uM] | Hoepfner D~Movva NR, 2014
+1249	hom | growth (relative abundance in pooled culture) | 2-deoxy-D-glucose [500 uM] | Hoepfner D~Movva NR, 2014
+1250	hom | growth (relative abundance in pooled culture) | Tan 999 [1 uM] | Hoepfner D~Movva NR, 2014
+1251	hom | growth (relative abundance in pooled culture) | nocodazole [10 uM] | Hoepfner D~Movva NR, 2014
+1252	hom | growth (relative abundance in pooled culture) | nocodazole [12 uM] | Hoepfner D~Movva NR, 2014
+1253	hom | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [0.5 uM] | Hoepfner D~Movva NR, 2014
+1254	hom | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [1 uM] | Hoepfner D~Movva NR, 2014
+1255	hom | growth (relative abundance in pooled culture) | sodium dodecyl sulfate [200 uM] | Hoepfner D~Movva NR, 2014
+1256	hom | growth (relative abundance in pooled culture) | enniatin A1 [15 uM] | Hoepfner D~Movva NR, 2014
+1257	hom | growth (relative abundance in pooled culture) | desferrioxamine B [300 uM] | Hoepfner D~Movva NR, 2014
+1258	hom | growth (relative abundance in pooled culture) | deferiprone [300 uM] | Hoepfner D~Movva NR, 2014
+1259	hom | growth (relative abundance in pooled culture) | calmidazolium [7 uM] | Hoepfner D~Movva NR, 2014
+1260	hom | growth (relative abundance in pooled culture) | sphinganine [30 uM] | Hoepfner D~Movva NR, 2014
+1261	hom | growth (relative abundance in pooled culture) | trapoxin A [185 uM] | Hoepfner D~Movva NR, 2014
+1262	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [1.5 uM] | Hoepfner D~Movva NR, 2014
+1263	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [2 uM] | Hoepfner D~Movva NR, 2014
+1264	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [2.5 uM] | Hoepfner D~Movva NR, 2014
+1265	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [3 uM] | Hoepfner D~Movva NR, 2014
+1266	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [4.5 uM] | Hoepfner D~Movva NR, 2014
+1267	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [3 uM] | Hoepfner D~Movva NR, 2014
+1268	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [4 uM] | Hoepfner D~Movva NR, 2014
+1269	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [5 uM] | Hoepfner D~Movva NR, 2014
+1270	hom | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [7.5 uM] | Hoepfner D~Movva NR, 2014
+1271	hom | growth (relative abundance in pooled culture) | chondramide [110 uM] | Hoepfner D~Movva NR, 2014
+1272	hom | growth (relative abundance in pooled culture) | glucitol [650 mM] | Hoepfner D~Movva NR, 2014
+1273	hom | growth (relative abundance in pooled culture) | sodium chloride [360 mM] | Hoepfner D~Movva NR, 2014
+1274	hom | growth (relative abundance in pooled culture) | potassium chloride [440 mM] | Hoepfner D~Movva NR, 2014
+1275	hom | growth (relative abundance in pooled culture) | calcium dichloride [52 mM] | Hoepfner D~Movva NR, 2014
+1276	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [100 uM] | Hoepfner D~Movva NR, 2014
+1277	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [120 uM] | Hoepfner D~Movva NR, 2014
+1278	hom | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [180 uM] | Hoepfner D~Movva NR, 2014
+1279	hom | growth (relative abundance in pooled culture) | sodium acetate [150 mM] | Hoepfner D~Movva NR, 2014
+1280	hom | growth (relative abundance in pooled culture) | hydrogen chloride [70 mM] | Hoepfner D~Movva NR, 2014
+1281	hom | growth (relative abundance in pooled culture) | sodium hydroxide [10 mM] | Hoepfner D~Movva NR, 2014
+1282	hom | growth (relative abundance in pooled culture) | glucose [0.5 uM] | Hoepfner D~Movva NR, 2014
+1283	hom | growth (relative abundance in pooled culture) | glucose [0.75 uM] | Hoepfner D~Movva NR, 2014
+1284	hom | growth (relative abundance in pooled culture) | enniatin derivative [70 uM] | Hoepfner D~Movva NR, 2014
+1285	hom | growth (relative abundance in pooled culture) | Lysolipin X [3 uM] | Hoepfner D~Movva NR, 2014
+1286	hom | growth (relative abundance in pooled culture) | Lysolipin X [5 uM] | Hoepfner D~Movva NR, 2014
+1287	hom | growth (relative abundance in pooled culture) | tunicamycin B [0.2 uM] | Hoepfner D~Movva NR, 2014
+1288	hom | growth (relative abundance in pooled culture) | tunicamycin B [0.3 uM] | Hoepfner D~Movva NR, 2014
+1289	hom | growth (relative abundance in pooled culture) | X-206 [2 uM] | Hoepfner D~Movva NR, 2014
+1290	hom | growth (relative abundance in pooled culture) | nigericin [15 uM] | Hoepfner D~Movva NR, 2014
+1291	hom | growth (relative abundance in pooled culture) | bleomycin A2 [0.075 uM] | Hoepfner D~Movva NR, 2014
+1292	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.012 uM] | Hoepfner D~Movva NR, 2014
+1293	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.05 uM] | Hoepfner D~Movva NR, 2014
+1294	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.1 uM] | Hoepfner D~Movva NR, 2014
+1295	hom | growth (relative abundance in pooled culture) | phleomycin D1 [0.3 uM] | Hoepfner D~Movva NR, 2014
+1296	hom | growth (relative abundance in pooled culture) | mercury dichloride [50 uM] | Hoepfner D~Movva NR, 2014
+1297	hom | growth (relative abundance in pooled culture) | methylmercury(.) [0.25 uM] | Hoepfner D~Movva NR, 2014
+1298	hom | growth (relative abundance in pooled culture) | methylmercury(.) [0.5 uM] | Hoepfner D~Movva NR, 2014
+1299	hom | growth (relative abundance in pooled culture) | manganese(II) chloride [10 uM] | Hoepfner D~Movva NR, 2014
+1300	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [75 uM] | Hoepfner D~Movva NR, 2014
+1301	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [120 uM] | Hoepfner D~Movva NR, 2014
+1302	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [200 uM] | Hoepfner D~Movva NR, 2014
+11874	het | growth (relative abundance in pooled culture) | amitriptyline [50 uM] | Hoepfner D~Movva NR, 2014
+11875	het | growth (relative abundance in pooled culture) | Leucanicidin [21.081 uM] | Hoepfner D~Movva NR, 2014
+11876	het | growth (relative abundance in pooled culture) | strobilurin B [200 uM] | Hoepfner D~Movva NR, 2014
+11877	het | growth (relative abundance in pooled culture) | bafilomycin A1 [43.69 uM] | Hoepfner D~Movva NR, 2014
+11878	het | growth (relative abundance in pooled culture) | deferasirox [200 uM] | Hoepfner D~Movva NR, 2014
+11879	het | growth (relative abundance in pooled culture) | epothilon B derivative [5 uM] | Hoepfner D~Movva NR, 2014
+11880	het | growth (relative abundance in pooled culture) | trichostatin A [200 uM] | Hoepfner D~Movva NR, 2014
+11881	het | growth (relative abundance in pooled culture) | Graphinone [200 uM] | Hoepfner D~Movva NR, 2014
+11882	het | growth (relative abundance in pooled culture) | myriocin derivative [8.119 uM] | Hoepfner D~Movva NR, 2014
+11883	het | growth (relative abundance in pooled culture) | terbinafine [12.381 uM] | Hoepfner D~Movva NR, 2014
+11884	het | growth (relative abundance in pooled culture) | cyproconazole [0.284 uM] | Hoepfner D~Movva NR, 2014
+11885	het | growth (relative abundance in pooled culture) | enniatin derivative [27 uM] | Hoepfner D~Movva NR, 2014
+11886	het | growth (relative abundance in pooled culture) | naftifine [70.999 uM] | Hoepfner D~Movva NR, 2014
+11887	het | growth (relative abundance in pooled culture) | ascomycin [100 uM] | Hoepfner D~Movva NR, 2014
+11888	het | growth (relative abundance in pooled culture) | ergokonin A [0.913 uM] | Hoepfner D~Movva NR, 2014
+11889	het | growth (relative abundance in pooled culture) | concanamycin A [0.111 uM] | Hoepfner D~Movva NR, 2014
+11890	het | growth (relative abundance in pooled culture) | rapamycin derivative [0.01 uM] | Hoepfner D~Movva NR, 2014
+11891	het | growth (relative abundance in pooled culture) | dequalinium chloride [0.1 uM] | Hoepfner D~Movva NR, 2014
+11892	het | growth (relative abundance in pooled culture) | voriconazole [0.528 uM] | Hoepfner D~Movva NR, 2014
+11893	het | growth (relative abundance in pooled culture) | (-)-anisomycin [10 uM] | Hoepfner D~Movva NR, 2014
+11894	het | growth (relative abundance in pooled culture) | ravidomycin [12.745 uM] | Hoepfner D~Movva NR, 2014
+11895	het | growth (relative abundance in pooled culture) | Enniatin B1 [90 uM] | Hoepfner D~Movva NR, 2014
+11896	het | growth (relative abundance in pooled culture) | SDZ 90-215 [3 uM] | Hoepfner D~Movva NR, 2014
+11897	het | growth (relative abundance in pooled culture) | sinefungin [0.02 uM] | Hoepfner D~Movva NR, 2014
+11898	het | growth (relative abundance in pooled culture) | boromycin [4 uM] | Hoepfner D~Movva NR, 2014
+11899	het | growth (relative abundance in pooled culture) | echinocandin B derivative [0.01 uM] | Hoepfner D~Movva NR, 2014
+11900	het | growth (relative abundance in pooled culture) | triclosan [6 uM] | Hoepfner D~Movva NR, 2014
+11901	het | growth (relative abundance in pooled culture) | benzethonium chloride [14 uM] | Hoepfner D~Movva NR, 2014
+11902	het | growth (relative abundance in pooled culture) | diazaborine [23.379 uM] | Hoepfner D~Movva NR, 2014
+11903	het | growth (relative abundance in pooled culture) | fluvastatin sodium [57.186 uM] | Hoepfner D~Movva NR, 2014
+11904	het | growth (relative abundance in pooled culture) | tubulozole [0.5 uM] | Hoepfner D~Movva NR, 2014
+11905	het | growth (relative abundance in pooled culture) | radicicol [88.72 uM] | Hoepfner D~Movva NR, 2014
+11906	het | growth (relative abundance in pooled culture) | geldanamycin [200 uM] | Hoepfner D~Movva NR, 2014
+11907	het | growth (relative abundance in pooled culture) | quinacrine [200 uM] | Hoepfner D~Movva NR, 2014
+11908	het | growth (relative abundance in pooled culture) | chlorpromazine [25.284 uM] | Hoepfner D~Movva NR, 2014
+11909	het | growth (relative abundance in pooled culture) | methotrexate [200 uM] | Hoepfner D~Movva NR, 2014
+11910	het | growth (relative abundance in pooled culture) | benomyl [57.746 uM] | Hoepfner D~Movva NR, 2014
+11911	het | growth (relative abundance in pooled culture) | curcumin [58.546 uM] | Hoepfner D~Movva NR, 2014
+11912	het | growth (relative abundance in pooled culture) | cobalt dichloride [92.63 uM] | Hoepfner D~Movva NR, 2014
+11913	het | growth (relative abundance in pooled culture) | caffeine [500 uM] | Hoepfner D~Movva NR, 2014
+11914	het | growth (relative abundance in pooled culture) | sirolimus [1 nM] | Hoepfner D~Movva NR, 2014
+11915	het | growth (relative abundance in pooled culture) | staurosporine [1.088 uM] | Hoepfner D~Movva NR, 2014
+11916	het | growth (relative abundance in pooled culture) | zaragozic acid A [13.625 uM] | Hoepfner D~Movva NR, 2014
+11917	het | growth (relative abundance in pooled culture) | hydroxyurea [16.6 mM] | Hoepfner D~Movva NR, 2014
+11918	het | growth (relative abundance in pooled culture) | actinomycin D [75.238 uM] | Hoepfner D~Movva NR, 2014
+11919	het | growth (relative abundance in pooled culture) | Amiodarone hydrochloride [13.430 uM] | Hoepfner D~Movva NR, 2014
+11920	het | growth (relative abundance in pooled culture) | trifluoperazine hydrochloride [7.3 uM] | Hoepfner D~Movva NR, 2014
+11921	het | growth (relative abundance in pooled culture) | clotrimazole [0.471 uM] | Hoepfner D~Movva NR, 2014
+11922	het | growth (relative abundance in pooled culture) | camptothecin [200 uM] | Hoepfner D~Movva NR, 2014
+11923	het | growth (relative abundance in pooled culture) | fenpropimorph [0.273 uM] | Hoepfner D~Movva NR, 2014
+11924	het | growth (relative abundance in pooled culture) | gliotoxin [8.723 uM] | Hoepfner D~Movva NR, 2014
+11925	het | growth (relative abundance in pooled culture) | 5-fluorouracil [6.898 uM] | Hoepfner D~Movva NR, 2014
+11926	het | growth (relative abundance in pooled culture) | fluconazole [30 uM] | Hoepfner D~Movva NR, 2014
+11927	het | growth (relative abundance in pooled culture) | pibenzimol [30 uM] | Hoepfner D~Movva NR, 2014
+11928	het | growth (relative abundance in pooled culture) | Pramoxine hydrochloride [47.79 uM] | Hoepfner D~Movva NR, 2014
+11929	het | growth (relative abundance in pooled culture) | dyclonine hydrochloride [29.17 uM] | Hoepfner D~Movva NR, 2014
+11930	het | growth (relative abundance in pooled culture) | gefitinib [122.14 uM] | Hoepfner D~Movva NR, 2014
+11931	het | growth (relative abundance in pooled culture) | aclacinomycin A [4.857 uM] | Hoepfner D~Movva NR, 2014
+11932	het | growth (relative abundance in pooled culture) | bortezomib [200 uM] | Hoepfner D~Movva NR, 2014
+11933	het | growth (relative abundance in pooled culture) | ALAMETHICIN [3.086 uM] | Hoepfner D~Movva NR, 2014
+11934	het | growth (relative abundance in pooled culture) | 6-azauridine [200 uM] | Hoepfner D~Movva NR, 2014
+11935	het | growth (relative abundance in pooled culture) | mycophenolic acid [70 uM] | Hoepfner D~Movva NR, 2014
+11936	het | growth (relative abundance in pooled culture) | 6-azauracil [200 uM] | Hoepfner D~Movva NR, 2014
+11937	het | growth (relative abundance in pooled culture) | nigericin [12 uM] | Hoepfner D~Movva NR, 2014
+11938	het | growth (relative abundance in pooled culture) | concanamycin A derivative [0.474 uM] | Hoepfner D~Movva NR, 2014
+11939	het | growth (relative abundance in pooled culture) | reveromycin [200 uM] | Hoepfner D~Movva NR, 2014
+11940	het | growth (relative abundance in pooled culture) | Scalaradial [2.5 uM] | Hoepfner D~Movva NR, 2014
+11941	het | growth (relative abundance in pooled culture) | concanamycin A [0.02 uM] | Hoepfner D~Movva NR, 2014
+11942	het | growth (relative abundance in pooled culture) | echinocandin C derivative [7 nM] | Hoepfner D~Movva NR, 2014
+11943	het | growth (relative abundance in pooled culture) | YW3548 [0.15 uM] | Hoepfner D~Movva NR, 2014
+11944	het | growth (relative abundance in pooled culture) | cycloheximide [0.03 uM] | Hoepfner D~Movva NR, 2014
+11945	het | growth (relative abundance in pooled culture) | concanamycin A [0.084 uM] | Hoepfner D~Movva NR, 2014
+11946	het | growth (relative abundance in pooled culture) | pyridoxatin [32 uM] | Hoepfner D~Movva NR, 2014
+11947	het | growth (relative abundance in pooled culture) | zinc dichloride [200 uM] | Hoepfner D~Movva NR, 2014
+11948	het | growth (relative abundance in pooled culture) | nicotinamide [10 mM] | Hoepfner D~Movva NR, 2014
+11949	het | growth (relative abundance in pooled culture) | ethidium bromide [82.145 uM] | Hoepfner D~Movva NR, 2014
+11950	het | growth (relative abundance in pooled culture) | verrucarin A [0.75 uM] | Hoepfner D~Movva NR, 2014
+11951	het | growth (relative abundance in pooled culture) | cerulenin [2.1 uM] | Hoepfner D~Movva NR, 2014
+11952	het | growth (relative abundance in pooled culture) | latrunculin A [0.9 uM] | Hoepfner D~Movva NR, 2014
+11953	het | growth (relative abundance in pooled culture) | 2-deoxy-D-glucose [300 uM] | Hoepfner D~Movva NR, 2014
+11954	het | growth (relative abundance in pooled culture) | Tan 999 [0.1 uM] | Hoepfner D~Movva NR, 2014
+11955	het | growth (relative abundance in pooled culture) | nocodazole [8 uM] | Hoepfner D~Movva NR, 2014
+11956	het | growth (relative abundance in pooled culture) | disulfiram [1.4 uM] | Hoepfner D~Movva NR, 2014
+11957	het | growth (relative abundance in pooled culture) | mechlorethamine [95 uM] | Hoepfner D~Movva NR, 2014
+11958	het | growth (relative abundance in pooled culture) | 1,10-Phenanthroline hydrate [50 uM] | Hoepfner D~Movva NR, 2014
+11959	het | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [0.2 uM] | Hoepfner D~Movva NR, 2014
+11960	het | growth (relative abundance in pooled culture) | sodium dodecyl sulfate [150 uM] | Hoepfner D~Movva NR, 2014
+11961	het | growth (relative abundance in pooled culture) | enniatin A1 [7.5 uM] | Hoepfner D~Movva NR, 2014
+11962	het | growth (relative abundance in pooled culture) | desferrioxamine B [200 uM] | Hoepfner D~Movva NR, 2014
+11963	het | growth (relative abundance in pooled culture) | deferiprone [200 uM] | Hoepfner D~Movva NR, 2014
+11964	het | growth (relative abundance in pooled culture) | methyl methanesulfonate [0.01 uM] | Hoepfner D~Movva NR, 2014
+11965	het | growth (relative abundance in pooled culture) | ebselen [0.5 uM] | Hoepfner D~Movva NR, 2014
+11966	het | growth (relative abundance in pooled culture) | Niclosamide [10 uM] | Hoepfner D~Movva NR, 2014
+11967	het | growth (relative abundance in pooled culture) | flucytosine [8 uM] | Hoepfner D~Movva NR, 2014
+11968	het | growth (relative abundance in pooled culture) | soraphen A [0.5 uM] | Hoepfner D~Movva NR, 2014
+11969	het | growth (relative abundance in pooled culture) | calmidazolium [4.5 uM] | Hoepfner D~Movva NR, 2014
+11970	het | growth (relative abundance in pooled culture) | sphingosine [1.5 uM] | Hoepfner D~Movva NR, 2014
+11971	het | growth (relative abundance in pooled culture) | sphinganine [20 uM] | Hoepfner D~Movva NR, 2014
+11972	het | growth (relative abundance in pooled culture) | trapoxin A [150 uM] | Hoepfner D~Movva NR, 2014
+11973	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [1 uM] | Hoepfner D~Movva NR, 2014
+11974	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [2 uM] | Hoepfner D~Movva NR, 2014
+11975	het | growth (relative abundance in pooled culture) | chondramide [90 uM] | Hoepfner D~Movva NR, 2014
+11976	het | growth (relative abundance in pooled culture) | myxothiazol [200 uM] | Hoepfner D~Movva NR, 2014
+11977	het | growth (relative abundance in pooled culture) | ionomycin [200 uM] | Hoepfner D~Movva NR, 2014
+11978	het | growth (relative abundance in pooled culture) | hygrolidin [7.5 uM] | Hoepfner D~Movva NR, 2014
+11979	het | growth (relative abundance in pooled culture) | glucitol [550 mM] | Hoepfner D~Movva NR, 2014
+11980	het | growth (relative abundance in pooled culture) | sodium chloride [320 mM] | Hoepfner D~Movva NR, 2014
+11981	het | growth (relative abundance in pooled culture) | potassium chloride [400 mM] | Hoepfner D~Movva NR, 2014
+11982	het | growth (relative abundance in pooled culture) | calcium dichloride [45 mM] | Hoepfner D~Movva NR, 2014
+11983	het | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [200 uM] | Hoepfner D~Movva NR, 2014
+11984	het | growth (relative abundance in pooled culture) | sodium acetate [125 mM] | Hoepfner D~Movva NR, 2014
+11985	het | growth (relative abundance in pooled culture) | iron dichloride [25 mM] | Hoepfner D~Movva NR, 2014
+11986	het | growth (relative abundance in pooled culture) | hydrogen chloride [60 mM] | Hoepfner D~Movva NR, 2014
+11987	het | growth (relative abundance in pooled culture) | sodium hydroxide [8 mM] | Hoepfner D~Movva NR, 2014
+11988	het | growth (relative abundance in pooled culture) | glucose [0.25 uM] | Hoepfner D~Movva NR, 2014
+11989	het | growth (relative abundance in pooled culture) | enniatin derivative [8 uM] | Hoepfner D~Movva NR, 2014
+11990	het | growth (relative abundance in pooled culture) | borrelidin [45 uM] | Hoepfner D~Movva NR, 2014
+11991	het | growth (relative abundance in pooled culture) | Lysolipin X [2 uM] | Hoepfner D~Movva NR, 2014
+11992	het | growth (relative abundance in pooled culture) | tunicamycin B [0.15 uM] | Hoepfner D~Movva NR, 2014
+11993	het | growth (relative abundance in pooled culture) | squalestatin derivative [8 uM] | Hoepfner D~Movva NR, 2014
+11994	het | growth (relative abundance in pooled culture) | X-206 [1 uM] | Hoepfner D~Movva NR, 2014
+11995	het | growth (relative abundance in pooled culture) | trichothecene [3 uM] | Hoepfner D~Movva NR, 2014
+11996	het | growth (relative abundance in pooled culture) | nigericin [8 uM] | Hoepfner D~Movva NR, 2014
+11997	het | growth (relative abundance in pooled culture) | bleomycin A2 [0.05 uM] | Hoepfner D~Movva NR, 2014
+11998	het | growth (relative abundance in pooled culture) | elaiophylin [30 uM] | Hoepfner D~Movva NR, 2014
+11999	het | growth (relative abundance in pooled culture) | phleomycin D1 [0.01 uM] | Hoepfner D~Movva NR, 2014
+12000	het | growth (relative abundance in pooled culture) | mercury dichloride [35 uM] | Hoepfner D~Movva NR, 2014
+12001	het | growth (relative abundance in pooled culture) | methylmercury(.) [0.1 uM] | Hoepfner D~Movva NR, 2014
+12002	het | growth (relative abundance in pooled culture) | tavaborole [0.5 uM] | Hoepfner D~Movva NR, 2014
+12003	het | growth (relative abundance in pooled culture) | manganese(II) chloride [5 uM] | Hoepfner D~Movva NR, 2014
+12004	het | growth (relative abundance in pooled culture) | copper(II) sulfate [50 uM] | Hoepfner D~Movva NR, 2014
+12005	het | growth (relative abundance in pooled culture) | doxorubicin [28.066 uM] | Hoepfner D~Movva NR, 2014
+12006	het | growth (relative abundance in pooled culture) | cryptolepine [0.026 uM] | Hoepfner D~Movva NR, 2014
+12007	het | growth (relative abundance in pooled culture) | Ascosteroside [0.02 uM] | Hoepfner D~Movva NR, 2014
+12008	het | growth (relative abundance in pooled culture) | deferasirox [250 uM] | Hoepfner D~Movva NR, 2014
+12009	het | growth (relative abundance in pooled culture) | deferasirox [300 uM] | Hoepfner D~Movva NR, 2014
+12010	het | growth (relative abundance in pooled culture) | deferasirox [350 uM] | Hoepfner D~Movva NR, 2014
+12011	het | growth (relative abundance in pooled culture) | deferasirox [400 uM] | Hoepfner D~Movva NR, 2014
+12012	het | growth (relative abundance in pooled culture) | epothilon B derivative [15 uM] | Hoepfner D~Movva NR, 2014
+12013	het | growth (relative abundance in pooled culture) | epothilon B derivative [30 uM] | Hoepfner D~Movva NR, 2014
+12014	het | growth (relative abundance in pooled culture) | ergokonin A [0.7 uM] | Hoepfner D~Movva NR, 2014
+12015	het | growth (relative abundance in pooled culture) | rapamycin derivative [0.015 uM] | Hoepfner D~Movva NR, 2014
+12016	het | growth (relative abundance in pooled culture) | rapamycin derivative [0.02 uM] | Hoepfner D~Movva NR, 2014
+12017	het | growth (relative abundance in pooled culture) | rapamycin derivative [0.03 uM] | Hoepfner D~Movva NR, 2014
+12018	het | growth (relative abundance in pooled culture) | dequalinium chloride [0.2 uM] | Hoepfner D~Movva NR, 2014
+12019	het | growth (relative abundance in pooled culture) | dequalinium chloride [0.3 uM] | Hoepfner D~Movva NR, 2014
+12020	het | growth (relative abundance in pooled culture) | ravidomycin [10 uM] | Hoepfner D~Movva NR, 2014
+12021	het | growth (relative abundance in pooled culture) | SDZ 90-215 [4 uM] | Hoepfner D~Movva NR, 2014
+12022	het | growth (relative abundance in pooled culture) | SDZ 90-215 [6 uM] | Hoepfner D~Movva NR, 2014
+12023	het | growth (relative abundance in pooled culture) | sinefungin [0.1 uM] | Hoepfner D~Movva NR, 2014
+12024	het | growth (relative abundance in pooled culture) | sinefungin [0.5 uM] | Hoepfner D~Movva NR, 2014
+12025	het | growth (relative abundance in pooled culture) | sinefungin [1 uM] | Hoepfner D~Movva NR, 2014
+12026	het | growth (relative abundance in pooled culture) | sinefungin [1.5 uM] | Hoepfner D~Movva NR, 2014
+12027	het | growth (relative abundance in pooled culture) | triclosan [10 uM] | Hoepfner D~Movva NR, 2014
+12028	het | growth (relative abundance in pooled culture) | triclosan [15 uM] | Hoepfner D~Movva NR, 2014
+12029	het | growth (relative abundance in pooled culture) | radicicol [75 uM] | Hoepfner D~Movva NR, 2014
+12030	het | growth (relative abundance in pooled culture) | geldanamycin [150 uM] | Hoepfner D~Movva NR, 2014
+12031	het | growth (relative abundance in pooled culture) | quinacrine [180 uM] | Hoepfner D~Movva NR, 2014
+12032	het | growth (relative abundance in pooled culture) | chlorpromazine [12.5 uM] | Hoepfner D~Movva NR, 2014
+12033	het | growth (relative abundance in pooled culture) | chlorpromazine [25.3 uM] | Hoepfner D~Movva NR, 2014
+12034	het | growth (relative abundance in pooled culture) | curcumin [55 uM] | Hoepfner D~Movva NR, 2014
+12035	het | growth (relative abundance in pooled culture) | curcumin [70 uM] | Hoepfner D~Movva NR, 2014
+12036	het | growth (relative abundance in pooled culture) | curcumin [75 uM] | Hoepfner D~Movva NR, 2014
+12037	het | growth (relative abundance in pooled culture) | curcumin [85 uM] | Hoepfner D~Movva NR, 2014
+12038	het | growth (relative abundance in pooled culture) | cobalt dichloride [200 uM] | Hoepfner D~Movva NR, 2014
+12039	het | growth (relative abundance in pooled culture) | caffeine [1 mM] | Hoepfner D~Movva NR, 2014
+12040	het | growth (relative abundance in pooled culture) | caffeine [1.5 mM] | Hoepfner D~Movva NR, 2014
+12041	het | growth (relative abundance in pooled culture) | caffeine [2 mM] | Hoepfner D~Movva NR, 2014
+12042	het | growth (relative abundance in pooled culture) | sirolimus [0.2 nM] | Hoepfner D~Movva NR, 2014
+12043	het | growth (relative abundance in pooled culture) | sirolimus [0.5 nM] | Hoepfner D~Movva NR, 2014
+12044	het | growth (relative abundance in pooled culture) | sirolimus [0.8 nM] | Hoepfner D~Movva NR, 2014
+12045	het | growth (relative abundance in pooled culture) | hydroxyurea [166.648 uM] | Hoepfner D~Movva NR, 2014
+12046	het | growth (relative abundance in pooled culture) | hydroxyurea [200 uM] | Hoepfner D~Movva NR, 2014
+12047	het | growth (relative abundance in pooled culture) | hydroxyurea [8.3 mM] | Hoepfner D~Movva NR, 2014
+12048	het | growth (relative abundance in pooled culture) | fluconazole [60 uM] | Hoepfner D~Movva NR, 2014
+12049	het | growth (relative abundance in pooled culture) | pibenzimol [32 uM] | Hoepfner D~Movva NR, 2014
+12050	het | growth (relative abundance in pooled culture) | bortezomib [300 uM] | Hoepfner D~Movva NR, 2014
+12051	het | growth (relative abundance in pooled culture) | ALAMETHICIN [11.89 uM] | Hoepfner D~Movva NR, 2014
+12052	het | growth (relative abundance in pooled culture) | mycophenolic acid [100 uM] | Hoepfner D~Movva NR, 2014
+12053	het | growth (relative abundance in pooled culture) | mycophenolic acid [120 uM] | Hoepfner D~Movva NR, 2014
+12054	het | growth (relative abundance in pooled culture) | Scalaradial [5 uM] | Hoepfner D~Movva NR, 2014
+12055	het | growth (relative abundance in pooled culture) | Scalaradial [10 uM] | Hoepfner D~Movva NR, 2014
+12056	het | growth (relative abundance in pooled culture) | echinocandin C derivative [10 nM] | Hoepfner D~Movva NR, 2014
+12057	het | growth (relative abundance in pooled culture) | YW3548 [0.175 uM] | Hoepfner D~Movva NR, 2014
+12058	het | growth (relative abundance in pooled culture) | cycloheximide [0.05 uM] | Hoepfner D~Movva NR, 2014
+12059	het | growth (relative abundance in pooled culture) | zinc dichloride [20 mM] | Hoepfner D~Movva NR, 2014
+12060	het | growth (relative abundance in pooled culture) | zinc dichloride [40 mM] | Hoepfner D~Movva NR, 2014
+12061	het | growth (relative abundance in pooled culture) | ethidium bromide [70 uM] | Hoepfner D~Movva NR, 2014
+12062	het | growth (relative abundance in pooled culture) | verrucarin A [1 uM] | Hoepfner D~Movva NR, 2014
+12063	het | growth (relative abundance in pooled culture) | verrucarin A [2 uM] | Hoepfner D~Movva NR, 2014
+12064	het | growth (relative abundance in pooled culture) | cerulenin [1.6 uM] | Hoepfner D~Movva NR, 2014
+12065	het | growth (relative abundance in pooled culture) | latrunculin A [0.7 uM] | Hoepfner D~Movva NR, 2014
+12066	het | growth (relative abundance in pooled culture) | 2-deoxy-D-glucose [500 uM] | Hoepfner D~Movva NR, 2014
+12067	het | growth (relative abundance in pooled culture) | Tan 999 [1 uM] | Hoepfner D~Movva NR, 2014
+12068	het | growth (relative abundance in pooled culture) | nocodazole [10 uM] | Hoepfner D~Movva NR, 2014
+12069	het | growth (relative abundance in pooled culture) | nocodazole [12 uM] | Hoepfner D~Movva NR, 2014
+12070	het | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [0.5 uM] | Hoepfner D~Movva NR, 2014
+12071	het | growth (relative abundance in pooled culture) | 5-(tetradecyloxy)-2-furoic acid [1 uM] | Hoepfner D~Movva NR, 2014
+12072	het | growth (relative abundance in pooled culture) | sodium dodecyl sulfate [200 uM] | Hoepfner D~Movva NR, 2014
+12073	het | growth (relative abundance in pooled culture) | enniatin A1 [15 uM] | Hoepfner D~Movva NR, 2014
+12074	het | growth (relative abundance in pooled culture) | desferrioxamine B [300 uM] | Hoepfner D~Movva NR, 2014
+12075	het | growth (relative abundance in pooled culture) | deferiprone [300 uM] | Hoepfner D~Movva NR, 2014
+12076	het | growth (relative abundance in pooled culture) | calmidazolium [7 uM] | Hoepfner D~Movva NR, 2014
+12077	het | growth (relative abundance in pooled culture) | sphinganine [30 uM] | Hoepfner D~Movva NR, 2014
+12078	het | growth (relative abundance in pooled culture) | trapoxin A [185 uM] | Hoepfner D~Movva NR, 2014
+12079	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [1.5 uM] | Hoepfner D~Movva NR, 2014
+12080	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [2 uM] | Hoepfner D~Movva NR, 2014
+12081	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [2.5 uM] | Hoepfner D~Movva NR, 2014
+12082	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [3 uM] | Hoepfner D~Movva NR, 2014
+12083	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3637) [4.5 uM] | Hoepfner D~Movva NR, 2014
+12084	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [3 uM] | Hoepfner D~Movva NR, 2014
+12085	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [4 uM] | Hoepfner D~Movva NR, 2014
+12086	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [5 uM] | Hoepfner D~Movva NR, 2014
+12087	het | growth (relative abundance in pooled culture) | Valinomycin Derivative (CMB:3638) [7.5 uM] | Hoepfner D~Movva NR, 2014
+12088	het | growth (relative abundance in pooled culture) | chondramide [110 uM] | Hoepfner D~Movva NR, 2014
+12089	het | growth (relative abundance in pooled culture) | glucitol [650 mM] | Hoepfner D~Movva NR, 2014
+12090	het | growth (relative abundance in pooled culture) | sodium chloride [360 mM] | Hoepfner D~Movva NR, 2014
+12091	het | growth (relative abundance in pooled culture) | potassium chloride [440 mM] | Hoepfner D~Movva NR, 2014
+12092	het | growth (relative abundance in pooled culture) | calcium dichloride [52 mM] | Hoepfner D~Movva NR, 2014
+12093	het | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [100 uM] | Hoepfner D~Movva NR, 2014
+12094	het | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [120 uM] | Hoepfner D~Movva NR, 2014
+12095	het | growth (relative abundance in pooled culture) | ethylenediaminetetraacetic acid [180 uM] | Hoepfner D~Movva NR, 2014
+12096	het | growth (relative abundance in pooled culture) | sodium acetate [150 mM] | Hoepfner D~Movva NR, 2014
+12097	het | growth (relative abundance in pooled culture) | hydrogen chloride [70 mM] | Hoepfner D~Movva NR, 2014
+12098	het | growth (relative abundance in pooled culture) | sodium hydroxide [10 mM] | Hoepfner D~Movva NR, 2014
+12099	het | growth (relative abundance in pooled culture) | glucose [0.5 uM] | Hoepfner D~Movva NR, 2014
+12100	het | growth (relative abundance in pooled culture) | glucose [0.75 uM] | Hoepfner D~Movva NR, 2014
+12101	het | growth (relative abundance in pooled culture) | enniatin derivative [70 uM] | Hoepfner D~Movva NR, 2014
+12102	het | growth (relative abundance in pooled culture) | Lysolipin X [3 uM] | Hoepfner D~Movva NR, 2014
+12103	het | growth (relative abundance in pooled culture) | Lysolipin X [5 uM] | Hoepfner D~Movva NR, 2014
+12104	het | growth (relative abundance in pooled culture) | tunicamycin B [0.2 uM] | Hoepfner D~Movva NR, 2014
+12105	het | growth (relative abundance in pooled culture) | tunicamycin B [0.3 uM] | Hoepfner D~Movva NR, 2014
+12106	het | growth (relative abundance in pooled culture) | X-206 [2 uM] | Hoepfner D~Movva NR, 2014
+12107	het | growth (relative abundance in pooled culture) | nigericin [15 uM] | Hoepfner D~Movva NR, 2014
+12108	het | growth (relative abundance in pooled culture) | bleomycin A2 [0.075 uM] | Hoepfner D~Movva NR, 2014
+12109	het | growth (relative abundance in pooled culture) | phleomycin D1 [0.012 uM] | Hoepfner D~Movva NR, 2014
+12110	het | growth (relative abundance in pooled culture) | phleomycin D1 [0.05 uM] | Hoepfner D~Movva NR, 2014
+12111	het | growth (relative abundance in pooled culture) | phleomycin D1 [0.1 uM] | Hoepfner D~Movva NR, 2014
+12112	het | growth (relative abundance in pooled culture) | phleomycin D1 [0.3 uM] | Hoepfner D~Movva NR, 2014
+12113	het | growth (relative abundance in pooled culture) | mercury dichloride [50 uM] | Hoepfner D~Movva NR, 2014
+12114	het | growth (relative abundance in pooled culture) | methylmercury(.) [0.25 uM] | Hoepfner D~Movva NR, 2014
+12115	het | growth (relative abundance in pooled culture) | methylmercury(.) [0.5 uM] | Hoepfner D~Movva NR, 2014
+12116	het | growth (relative abundance in pooled culture) | manganese(II) chloride [10 uM] | Hoepfner D~Movva NR, 2014
+12117	het | growth (relative abundance in pooled culture) | copper(II) sulfate [75 uM] | Hoepfner D~Movva NR, 2014
+12118	het | growth (relative abundance in pooled culture) | copper(II) sulfate [120 uM] | Hoepfner D~Movva NR, 2014
+12119	het | growth (relative abundance in pooled culture) | copper(II) sulfate [200 uM] | Hoepfner D~Movva NR, 2014
