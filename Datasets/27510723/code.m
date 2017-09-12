@@ -22,12 +22,7 @@ datasets.standard_name = d{2};
 hom_strains = data(4:end,1);
 
 % Get the data itself
-hom_data = cell2mat(data(4:end,2));
-   
-% Transform the data
-hom_data = hom_data .^ 10;
-hom_data = 1 ./ hom_data;
-hom_data = log(hom_data);
+hom_data = -cell2mat(data(4:end,2));
 
 % Eliminate all white spaces & capitalize
 hom_strains = clean_orf(hom_strains);
@@ -48,18 +43,14 @@ hom_data(inds) = [];
 [FILENAMES{end+1}, data] = read_data('xlsread',...
     './raw_data/het/Background Corrected Ratios And Robust Z-Scores (FD Scores)(all data).xlsx', 'Sheet1');
 
-% Get the list of ORFs and the correponding data 
+% Get the list of ORFs and the corresponding data 
 het_strains = data(2:end,1);
 
 % Get the data itself
 het_data = data(2:end,17);
 het_data(strcmp(het_data, {'NA'})) = {NaN};
-het_data = cell2mat(het_data);
-   
-% Transform the data
-het_data = het_data .^ 10;
-het_data = 1 ./ het_data;
-het_data = log(het_data);
+het_data = -cell2mat(het_data);
+  
 
 % Eliminate all white spaces & capitalize
 het_strains = clean_orf(het_strains);
@@ -81,12 +72,14 @@ het_data(inds) = [];
 hit_data_ids = [4826; 5181];
 
 %% Combine the het and hom data
+
 hit_strains = unique([het_strains; hom_strains]);
 hit_data = nan(length(hit_strains),2);
-[~, a, b] = intersect(hit_strains, het_strains);
-hit_data(a, 2) = het_data(b);
 [~, a, b] = intersect(hit_strains, hom_strains);
 hit_data(a, 1) = hom_data(b);
+[~, a, b] = intersect(hit_strains, het_strains);
+hit_data(a, 2) = het_data(b);
+
 
 %% Prepare final dataset
 
