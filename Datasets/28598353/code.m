@@ -22,7 +22,7 @@ datasets.standard_name = d{2};
 hit_strains = data(4:end,1);
 
 % Get the data itself
-hit_data = cell2mat(data(4:end, 3:4)); 
+hit_data = cell2mat(data(4:end, 5)); 
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
@@ -47,8 +47,6 @@ inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];
 hit_data(inds,:) = [];
 
-% Make the hit_data
-hit_data = log(hit_data(:,2) ./ hit_data(:,1));
 
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
