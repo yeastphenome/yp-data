@@ -64,6 +64,15 @@ yofe_thoms_2017.ph = hit_data_names;
 yofe_thoms_2017.data = hit_data;
 yofe_thoms_2017.dataset_ids = hit_data_ids;
 
+% Data contains both deletions of nonessential genes and damp alleles of
+% essential genes. Must remove the essential genes (no other way available)
+
+load essential_genes_151215.mat
+[~,ind1,ind2] = intersect(essential_genes, yofe_thoms_2017.orfs);
+yofe_thoms_2017.orfs(ind2) = [];
+yofe_thoms_2017.data(ind2,:) = [];
+
+
 %% Save
 
 save('./yofe_thoms_2017.mat','yofe_thoms_2017');
