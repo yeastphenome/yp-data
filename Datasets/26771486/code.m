@@ -68,6 +68,12 @@ ast_schuldiner_2016.ph = hit_data_names;
 ast_schuldiner_2016.data = hit_data;
 ast_schuldiner_2016.dataset_ids = hit_data_ids;
 
+% Not clear why (from the manuscript) but the list contains essential genes. Must be removed.
+load essential_genes_151215.mat
+[~,ind1,ind2] = intersect(essential_genes, ast_schuldiner_2016.orfs);
+ast_schuldiner_2016.orfs(ind2) = [];
+ast_schuldiner_2016.data(ind2,:) = [];
+
 %% Save
 
 save('./ast_schuldiner_2016.mat','ast_schuldiner_2016');
