@@ -1,0 +1,2 @@
+5341	het | growth (relative abundance in pooled culture) | time [20 generations], Chitosan oligosaccharide [91.1 ug/ml] | Jaime MD~Nislow C, 2012
+5342	hom | growth (relative abundance in pooled culture) | time [5 generations], Chitosan oligosaccharide [91.1 ug/ml] | Jaime MD~Nislow C, 2012
