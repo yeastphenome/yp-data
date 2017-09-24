@@ -19,7 +19,6 @@ datasets.standard_name = d{2};
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/12864_2012_4394_MOESM2_ESM.xlsx', 'Table_S1');
 
 % Get the list of ORFs and the correponding data 
-% (this part usually changes significantly based on the format of the raw data file)
 hit_strains = data(4:end,1);
 
 % Split the names by semicolon
@@ -28,7 +27,7 @@ hit_strains = cellfun(@(x) x{1}, hit_strains, 'UniformOutput', false);
 
 % Get the data itself
 hit_data = data(4:end,2);
-hit_data = cell2mat(hit_data)*-1;
+hit_data = -cell2mat(hit_data);
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
@@ -42,10 +41,21 @@ inds = find(~is_orf(hit_strains));
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
+% Split hom and het data using the list of essential genes (no other way to
+% do it for this dataset).
+load essential_genes_151215.mat
+hit_data2 = nan(length(hit_strains),2);
+
+inds = find(~ismember(hit_strains, essential_genes));
+hit_data2(inds,1) = hit_data(inds);
+
+inds = find(ismember(hit_strains, essential_genes));
+hit_data2(inds,2) = hit_data(inds);
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [5341];
+hit_data_ids = [5341 5342]';
 
 %% Prepare final dataset
 
@@ -57,7 +67,7 @@ hit_data_names(ind2) = datasets.standard_name(ind1);
 % If the dataset is quantitative:
 jaime_nislow_2012.orfs = hit_strains;
 jaime_nislow_2012.ph = hit_data_names;
-jaime_nislow_2012.data = hit_data;
+jaime_nislow_2012.data = hit_data2;
 jaime_nislow_2012.dataset_ids = hit_data_ids;
 
 %% Save
