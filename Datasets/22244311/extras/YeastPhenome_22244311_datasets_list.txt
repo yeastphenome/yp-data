@@ -1,5 +1,7 @@
-11859	het | growth (relative abundance in pooled culture) | glucose limitation (glucose [1 / (10 h)]) | Pir P~Oliver SG, 2012
-11860	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [1  / (10 h)]) | Pir P~Oliver SG, 2012
-11861	het | growth (relative abundance in pooled culture) | phosphorus limitation (phosphorus(.) [1 / (10 h)]) | Pir P~Oliver SG, 2012
-15991	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [2   / (10 h)]) | Pir P~Oliver SG, 2012
-15992	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [3   / (10 h)]) | Pir P~Oliver SG, 2012
+11859	het | growth (relative abundance in pooled culture) | glucose limitation, chemostat (glucose [unknown], culture dilution rate [0.1/h]) | Pir P~Oliver SG, 2012
+11860	het | growth (relative abundance in pooled culture) | nitrogen limitation, chemostat (ammonium [unknown], culture dilution rate [0.1/h]) | Pir P~Oliver SG, 2012
+11861	het | growth (relative abundance in pooled culture) | phosphorus limitation, chemostat (phosphorus(.) [unknown], culture dilution rate [0.1/h]) | Pir P~Oliver SG, 2012
+15991	het | growth (relative abundance in pooled culture) | nitrogen limitation, chemostat (ammonium [unknown], culture dilution rate [0.2/h]) | Pir P~Oliver SG, 2012
+15992	het | growth (relative abundance in pooled culture) | nitrogen limitation, chemostat (ammonium [unknown], culture dilution rate [0.3/h]) | Pir P~Oliver SG, 2012
+15995	het | growth (relative abundance in pooled culture) | synthetic complete, chemostat (culture dilution rate [0.3/h], minimal complete [standard]) | Pir P~Oliver SG, 2012
+15996	het | growth (relative abundance in pooled culture) | synthetic complete, turbidostat (minimal complete [standard]) | Pir P~Oliver SG, 2012

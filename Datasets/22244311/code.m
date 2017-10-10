@@ -22,9 +22,8 @@ datasets.standard_name = d{2};
 hit_strains = data(2:end,1);
 
 % Find the columns of interest
-columnData = data(1, :);
+columnData = data(1,:);
 ind = find(~cellfun(@isempty, strfind(columnData, '.FCC')));
-ind = ind(1:5); 
 
 % Get the data itself
 hit_data = data(2:end,ind);
@@ -48,7 +47,7 @@ inds = find(~is_orf(hit_strains));
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [11859; 11860; 11861; 15991; 15992];
+hit_data_ids = [11859; 11860; 11861; 15991; 15992; 15995; 15996];
 
 %% Prepare final dataset
 
