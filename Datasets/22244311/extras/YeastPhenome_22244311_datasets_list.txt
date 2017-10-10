@@ -1,0 +1,5 @@
+11859	het | growth (relative abundance in pooled culture) | glucose limitation (glucose [1 / (10 h)]) | Pir P~Oliver SG, 2012
+11860	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [1  / (10 h)]) | Pir P~Oliver SG, 2012
+11861	het | growth (relative abundance in pooled culture) | phosphorus limitation (phosphorus(.) [1 / (10 h)]) | Pir P~Oliver SG, 2012
+15991	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [2   / (10 h)]) | Pir P~Oliver SG, 2012
+15992	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [3   / (10 h)]) | Pir P~Oliver SG, 2012
