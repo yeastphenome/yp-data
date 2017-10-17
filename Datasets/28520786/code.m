@@ -83,6 +83,15 @@ choi_oshea_2017.ph = hit_data_names;
 choi_oshea_2017.data = hit_data;
 choi_oshea_2017.dataset_ids = hit_data_ids;
 
+% M&M indicates that the list includes 4974 knockout alleles of
+% nonessential genes and 878 hypomorphic alleles of essential genes. Must
+% eliminate the essential genes (no other way available)
+
+load essential_genes_151215.mat
+[~,ind1,ind2] = intersect(essential_genes, choi_oshea_2017.orfs);
+choi_oshea_2017.orfs(ind2) = [];
+choi_oshea_2017.data(ind2,:) = [];
+
 %% Save
 
 save('./choi_oshea_2017.mat','choi_oshea_2017');
