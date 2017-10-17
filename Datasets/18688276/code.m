@@ -81,7 +81,7 @@ hit_data_names(ind2) = datasets.standard_name(ind1);
 % If the dataset is quantitative:
 ericson_nislow_2008.orfs = hit_strains;
 ericson_nislow_2008.ph = hit_data_names;
-ericson_nislow_2008.data = hit_data;
+ericson_nislow_2008.data = -hit_data;    % taking the opposite because the original data is log2(ctrl/treatment)
 ericson_nislow_2008.dataset_ids = hit_data_ids;
 
 %% Save

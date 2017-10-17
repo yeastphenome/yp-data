@@ -127,4 +127,18 @@ save('./lee_giaever_2014.mat','lee_giaever_2014');
 fid = fopen('./lee_giaever_2014.txt','w');
 write_matrix_file(fid, lee_giaever_2014.orfs, lee_giaever_2014.ph, lee_giaever_2014.data);
 fclose(fid);
+
+% t = textread('./private/het_datasetids.txt','%d');
+% fid = fopen('./private/het_data_to_import.txt','w');
+% for i = 1 : length(t)
+%     inds = find(lee_giaever_2014.dataset_ids == t(i));
+%     for j = 1 : length(lee_giaever_2014.orfs)
+%         if ~isnan(lee_giaever_2014.data(j, inds))
+%             fprintf(fid, '%d\t%s\t%.3f\n', t(i), lee_giaever_2014.orfs{j}, lee_giaever_2014.data(j,inds));
+%         end
+%     end
+%     i
+% end
+% fclose(fid);
+            
 end
