@@ -16,7 +16,10 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/10642Tables_3-9.xlsx', 'SI Table 4');
+[FILENAMES{end+1}, data1] = read_data('xlsread','./raw_data/10642Tables_3-9.xlsx', 'SI Table 3');  % hits identified in more than 1 screen
+[FILENAMES{end+1}, data2] = read_data('xlsread','./raw_data/10642Tables_3-9.xlsx', 'SI Table 4');  % hits identified in 1 screen only
+
+data = [data1(:,1:6); data2(:,1:6)];
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
@@ -31,11 +34,17 @@ hit_data = hit_data - 1;
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
 
+inds = find(cellfun(@isnumeric, hit_strains));
+hit_strains(inds) = [];
+hit_data(inds,:) = [];
+
 % If in gene name form, transform into ORF name
 [hit_strains, translated, ambiguous] = translate(hit_strains);
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hit_strains));
+hit_strains(inds) = [];
+hit_data(inds,:) = [];
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
