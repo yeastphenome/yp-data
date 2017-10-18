@@ -1,0 +1,3 @@
+4931	hap a | chromosome instability (ade2-101 + SUP11) | standard [standard] | Yuen KW~Spencer FA, 2007
+4932	hom | chromosome instability (diploid bimater) | standard [standard] | Yuen KW~Spencer FA, 2007
+4933	hap alpha | chromosome instability (Mat-alpha) | standard [standard] | Yuen KW~Spencer FA, 2007
