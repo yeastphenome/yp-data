@@ -47,7 +47,7 @@ inds = find(~is_orf(hit_orfs));
 disp(hit_orfs(inds));
 
 hit_orfs = unique(hit_orfs);
-hit_data = ones(size(hit_orfs));
+hit_data = -ones(size(hit_orfs));
 
 missing = setdiff(hit_orfs, tested_orfs);
 
@@ -81,5 +81,12 @@ save('./luban_schmidt_2005.mat','luban_schmidt_2005');
 fid = fopen('./luban_schmidt_2005.txt','w');
 write_matrix_file(fid, luban_schmidt_2005.orfs, luban_schmidt_2005.ph, luban_schmidt_2005.data);
 fclose(fid);
+
+%% Save to DB (admin)
+
+addpath(genpath('../../Private-Utils/'));
+if exist('save_data_to_db.m')
+    res = save_data_to_db(luban_schmidt_2005)
+end
 
 end
