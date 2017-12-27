@@ -1,4 +1,4 @@
-ORF	het | growth (relative abundance in pooled culture) | time [20 generations], Chitosan oligosaccharide [91.1 ug/ml] | Jaime MD~Nislow C, 2012	hom | growth (relative abundance in pooled culture) | time [5 generations], Chitosan oligosaccharide [91.1 ug/ml] | Jaime MD~Nislow C, 2012
+ORF	hom | growth (relative abundance in pooled culture) | time [5 generations], Chitosan oligosaccharide [91.1 ug/ml] | Jaime MD~Nislow C, 2012	het | growth (relative abundance in pooled culture) | time [20 generations], Chitosan oligosaccharide [91.1 ug/ml] | Jaime MD~Nislow C, 2012
 YAL001C	NaN	1.814
 YAL003W	NaN	0.640
 YAL004W	0.139	NaN
