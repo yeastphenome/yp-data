@@ -1,0 +1,68 @@
+Gene/allele Systemic
+name Phenotypes1
+Northern data
+location
+(Figure #, gel#)
+Confirmation
+abf1-102 YKL112W Type 1/2 S2, AB 74 Boone vs. Hieter
+abf1-103 YKL112W Type 1/2 S2-1, AB 83 Boone vs. Hieter
+act1-101 YFL039C Type 4/5/6 2F; S2, AB 73;S2-1, AB 92 Complementation
+arp4-G161D YJL081C Type 1/2 S2-1, AB 118 Boone vs. Hieter
+bos1-1 YLR078C Type 4/5/6 S2, AB 73 Boone vs. Hieter
+brl1-2221 YHR036W Type 4/5/6 S2-1, AB 118 Boone vs. Hieter; Multiple alleles
+brl1-3231 YHR036W Type 4/5/6 S2-1, AB 118 Boone vs. Hieter; Multiple alleles
+brl1-C371R YHR036W Type 4/5/6 S2-1, AB 118 Boone vs. Hieter; Multiple alleles
+brl1-C371S YHR036W Type 4/5/6 S2-1, AB 118 Boone vs. Hieter; Multiple alleles
+cca1-1 YER168C Type 3 2D; S3 Boone vs. Hieter
+cdc28-4 YBR160W Type 1/2 S2-1, AB 92 Complementation
+cdc34-1 YDR054C Type 4/5/6 S2, AB 72 Boone vs. Hieter
+cdc60-ts YPL160W Type 4/5/6 S2, AB 81 Boone vs. Hieter
+cks1-38 YBR135W Type 1/2 S2-1, AB 83 Repetition
+crm1-1 YGR218W Type 4/5/6 S2-1, AB 83 Boone vs. Hieter
+dbf4-ts YDR052C Type 4/5/6 S2, AB 73 Boone vs. Hieter
+dcp2-7? YNL118C Type 4/5/6 S2, AB 80; S2-1, AB 118; S2-1, AB 97 Complementation
+dna2-2 YHR164C Type 1/2 S2, AB 74; S2-1, AB 97 Complementation
+hrp1-4 YOL123W Type 1/2 S2, AB 81; S2-1, AB 118; S2-1, AB 92 Complementation
+hyp2-1 YEL034W Type 4/5/6 S2, AB 80 Boone vs. Hieter; Multiple alleles
+hyp2-ts YEL034W Type 4/5/6 S2, AB 80 Boone vs. Hieter; Multiple alleles
+lcb2-19 YDR062W Type 4/5/6 S2, AB 79 Boone vs. Hieter
+ils1-1 YBL076C Type 4/5/6 S2-1, KC Repetition
+mex67-ts5 YPL169C Type 4/5/6 2E; S2, AB 81 Boone vs. Hieter; Complementation
+myo2-14 YOR326W Type 4/5/6 S2, AB 73; S2-1, AB 92 Complementation 
+6
+ndc1-4 YML031W Type 4/5/6 S2, AB 73; S2-1, AB 92 Complementation
+nog2-1 YNR053C Type 4/5/6 S2-1, AB 83; S2-1, AB 97 Complementation
+nop4-3 YPL043W Type 4/5/6 S2, AB 80 Boone vs. Hieter
+nup159-1 YIL115C Type 4/5/6 S2, AB 79; S2-1, AB92 Complementation
+nup192-15 YJL039C Type 4/5/6 S2, AB 74 Boone vs. Hieter
+pfy1-13 YOR122C Type 4/5/6 S2, AB 73 Boone vs. Hieter; Multiple alleles
+pfy1-4 YOR122C Type 4/5/6 S2, AB 73 Boone vs. Hieter; Multiple alleles
+prp43-ts2 YGL120C Type 1/2 S2, AB 79 Boone vs. Hieter
+prt1-1 YOR361C Type 4/5/6 S2, AB72 Boone vs. Hieter
+rap1-1 YNL216W Type 4/5/6 S2, AB 79 Boone vs. Hieter
+rap1-2 YNL216W Type 4/5/6 S2, AB 79 Boone vs. Hieter
+rmp1-ts YLR145W Type 4/5/6 S2, AB 81 Boone vs. Hieter
+rna1-1 YMR235C Type 4/5/6 S2, AB 73 Boone vs. Hieter
+rpc34-1 YNR003C Type 1/2 S2-1, AB 118; S2-1, AB 97 Complementation
+rpg1-1 YBR079C Type 4/5/6 S2-1, AB 120 Boone vs. Hieter
+rpn1-821 YHR027C Type 4/5/6 S2, AB 73 Repitition
+rpo31-698 YOR116C Type 1/2 S2, AB 81; S2-1, AB 92 Complementation
+rsp5-1 YER125W Type 4/5/6 S2, AB 73 Boone vs. Hieter
+sec13-1 YLR208W Type 4/5/6 S2, AB 72 Boone vs. Hieter
+sec18-1 YBR080C Type 4/5/6 S2, AB 72 Boone vs. Hieter
+sec20-1 YDR498C Type 4/5/6 S2, AB 72 Boone vs. Hieter
+sec22-1 YLR268W Type 4/5/6 S2, AB 74 Complementation
+sec5-24 YDR166C Type 4/5/6 S2-1, AB 92 Complementation
+sen2-1 YLR105C Type 4/5/6 S2, AB 80 Boone vs. Hieter
+snu114-40 YKL173W Type 1/2 S2, AB 80 Boone vs. Hieter; Multiple alleles
+snu114-60 YKL173W Type 1/2 S2, AB 80 Boone vs. Hieter; Multiple alleles
+srm1-ts YGL097W Type 4/5/6 S2, AB 81 Boone vs. Hieter 
+sth1-2 YIL126W Type 1/2 S2, AB 74 Complementation
+sup35-td YDR172W Type 4/5/6 S2, AB 72; S2-1, AB 92 Complementation
+sup45-ts YBR143C Type 4/5/6 S2-1, AB 120 Boone vs. Hieter
+ura6-4 YKL024C Type 1/2 S2-1, AB 118 Boone vs. Hieter; Multiple alleles
+ura6-5 YKL024C Type 1/2 data not shown Boone vs. Hieter; Multiple alleles
+7
+ura6-6 YKL024C Type 1/2 data not shown Boone vs. Hieter; Multiple alleles
+yef3-F650S YLR249W Type 4/5/6 S2, AB 79; S2-1, AB 118; S2-1, AB 92 Complementation
+yrb1-51 YDR002W Type 4/5/6 S2, AB 79 Boone vs. Hieter
