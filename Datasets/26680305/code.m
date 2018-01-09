@@ -1,4 +1,4 @@
-%% Wu~Hopper, 2015
+%% FirstAuthor~LastAuthor, YYYY
 function FILENAMES = code()
 
 addpath(genpath('../../Yeast-Matlab-Utils/'));
@@ -16,162 +16,71 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-%% First dataset
-[FILENAMES{end+1}, data] = read_data('textread','./raw_data/TableS1.txt', '%s', 'delimiter', '\n');
+[FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/Table_S1.xlsx', 'Table 1');
 
-% Split table based on spaces
-C = cellfun(@strsplit, data, 'UniformOutput', 0);
-data = C(cellfun(@length, C)>3);
+% Get the list of ORFs and the correponding data 
+% (this part usually changes significantly based on the format of the raw data file)
+hit_strains = data(3:end,2);
 
-% Get all the first columns
-hit_strains1 = cellfun(@(v)v(1),data);
+% Get the data itself
+hit_data = data(3:end,4);
 
+ph = unique(hit_data);
+hit_data2 = zeros(length(hit_strains), length(ph));
+for i = 1 : length(ph)
+    inds = find(strcmp(ph{i}, hit_data));
+    hit_data2(inds,i) = 1;
+end
+   
 % Eliminate all white spaces & capitalize
-hit_strains1 = clean_genename(hit_strains1);
+hit_strains = clean_orf(hit_strains);
 
 % If in gene name form, transform into ORF name
-[hit_strains1, translated, ambiguous] = translate(hit_strains1);
-
-% If possible, fix the problem (typos, omissions etc.)
-hit_strains1(ismember(hit_strains1, {'HXT12'})) = {'YIL170W'};
+hit_strains = translate(hit_strains);
 
 % Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains1));
-hit_strains1(inds) = [];
-data(inds) = [];
+inds = find(~is_orf(hit_strains));
+disp(hit_strains(inds));  
 
-% Get indices where phenotype is by finding type:
-ind = cellfun(@(s) find(~cellfun(@isempty, strfind(s, 'Type'))), data, 'Uni', 1);
-phenotype = cellfun(@(c,idx)c(idx+1),data,num2cell(ind));
-extra = find(contains(cellfun(@(c,idx)c(idx+2),data,num2cell(ind)), 'and'));
-
-% Make the hit_data
-hit_data1 = zeros(length(data), 6);
-hit_data1(extra, 2) = 1; % for 1/2 + extra band
-ind = find(~cellfun(@isempty, strfind(phenotype, '1/2'))); 
-hit_data1(ind, 1) = 1; % for 1/2
-ind = find(~cellfun(@isempty, strfind(phenotype, '2*'))); 
-hit_data1(ind, 3) = 1; % for 2*
-ind = find(~cellfun(@isempty, strfind(phenotype, '4/5/6'))); 
-hit_data1(ind, 4) = 1; % for 4/5/6
-ind = find(~cellfun(@isempty, strfind(phenotype, '7'))); 
-hit_data1(ind, 5) = 1; % for 7
-ind = find(~cellfun(@isempty, strfind(phenotype, '8'))); 
-hit_data1(ind, 5) = 1; % for 8
-
-%% Second dataset
-[FILENAMES{end+1}, data] = read_data('textread','./raw_data/TableS2.txt', '%s', 'delimiter', '\n');
-
-% Split table based on spaces
-C = cellfun(@strsplit, data, 'UniformOutput', 0);
-data = C(cellfun(@length, C)>3);
-
-% Get all the first columns
-hit_strains2 = cellfun(@(v)v(2),data);
-
-% Eliminate all white spaces & capitalize
-hit_strains2 = clean_orf(hit_strains2);
-
-% If in gene name form, transform into ORF name
-[hit_strains2, translated, ambiguous] = translate(hit_strains2);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains2));
-hit_strains2(inds) = [];
-data(inds) = [];
-
-% Get indices where phenotype is by finding type:
-ind = cellfun(@(s) find(~cellfun(@isempty, strfind(s, 'Type'))), data, 'Uni', 1);
-phenotype = cellfun(@(c,idx)c(idx+1),data,num2cell(ind));
-
-% Make the hit_data
-hit_data2 = zeros(length(data), 6);
-ind = find(~cellfun(@isempty, strfind(phenotype, '1/2'))); 
-hit_data2(ind, 1) = 1; % for 1/2
-ind = find(~cellfun(@isempty, strfind(phenotype, '2*'))); 
-hit_data2(ind, 3) = 1; % for 2*
-ind = find(~cellfun(@isempty, strfind(phenotype, '4/5/6'))); 
-hit_data2(ind, 4) = 1; % for 4/5/6
-ind = find(~cellfun(@isempty, strfind(phenotype, '7'))); 
-hit_data2(ind, 5) = 1; % for 7
-ind = find(~cellfun(@isempty, strfind(phenotype, '8'))); 
-hit_data2(ind, 5) = 1; % for 8
-
-%% Second dataset
-[FILENAMES{end+1}, data] = read_data('textread','./raw_data/TableS3.txt', '%s', 'delimiter', '\n');
-
-% Split table based on spaces
-C = cellfun(@strsplit, data, 'UniformOutput', 0);
-data = C(cellfun(@length, C)>3);
-
-% Get all the first columns
-hit_strains3 = cellfun(@(v)v(2),data);
-
-% Eliminate all white spaces & capitalize
-hit_strains3 = clean_orf(hit_strains3);
-
-% If in gene name form, transform into ORF name
-[hit_strains3, translated, ambiguous] = translate(hit_strains3);
-
-% Find anything that doesn't look like an ORF
-inds = find(~is_orf(hit_strains3));
-hit_strains3(inds) = [];
-data(inds) = [];
-
-% Get indices where phenotype is by finding type:
-ind = cellfun(@(s) find(~cellfun(@isempty, strfind(s, 'Type'))), data, 'Uni', 1);
-phenotype = cellfun(@(c,idx)c(idx+1),data,num2cell(ind));
-
-% Make the hit_data
-hit_data3 = zeros(length(data), 6);
-ind = find(~cellfun(@isempty, strfind(phenotype, '1/2'))); 
-hit_data3(ind, 1) = 1; % for 1/2
-ind = find(~cellfun(@isempty, strfind(phenotype, '2*'))); 
-hit_data3(ind, 3) = 1; % for 2*
-ind = find(~cellfun(@isempty, strfind(phenotype, '4/5/6'))); 
-hit_data3(ind, 4) = 1; % for 4/5/6
-ind = find(~cellfun(@isempty, strfind(phenotype, '7'))); 
-hit_data3(ind, 5) = 1; % for 7
-ind = find(~cellfun(@isempty, strfind(phenotype, '8'))); 
-hit_data3(ind, 5) = 1; % for 8
-
-%% Combine hit datasets
-hit_data = [hit_data1; hit_data2; hit_data3];
-hit_strains = [hit_strains1; hit_strains2; hit_strains3];
-[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data2] = grpstats(hit_data2, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [4952; 11779; 11780; 11781; 11782; 11783];
+hit_data_ids = [4952 11779 11780 11781 11782 11783]';
 
-%% Tested strains 
+%% Tested strains (only if the dataset is not quantitative and the tested strains are provided separately)
 
 % Load tested strains
-[FILENAMES{end+1}, tested_strains1] = read_data('xlsread','./raw_data/Boone ts collection Vs. Hieter ts collection.xlsx', 'Boone only');
-[FILENAMES{end+1}, tested_strains2] = read_data('xlsread','./raw_data/Boone ts collection Vs. Hieter ts collection.xlsx', 'Hieter only');
+[FILENAMES{end+1}, tested_strains] = read_data('xlsread','./raw_data/YSC1053.YKO.mat_a.v1.0.xlsx', 'mat_a_obs');
 
-% Make one file
-tested_strains = [tested_strains1; tested_strains2];
+tested_strains = tested_strains(:,2);
 
 % Eliminate all white spaces & capitalize
 tested_strains = clean_orf(tested_strains);
 
+inds = find(cellfun(@isnumeric, tested_strains));
+tested_strains(inds) = [];
+
 % If in gene name form, transform into ORF name
-[tested_strains, ~, ~] = translate(tested_strains);
+tested_strains = translate(tested_strains);
+
+% If possible, fix the typo
+tested_strains(ismember(tested_strains, {'YLR287-A'})) = {'YLR287C-A'};
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(tested_strains));
+disp(tested_strains(inds));  
+
 tested_strains(inds) = [];
 
 % Finally, take the unique set
 tested_strains = unique(tested_strains);
 
 % Make sure the that all the hits are part of the tested set
-[missing,~] = setdiff(hit_strains, tested_strains); % l09 missing
-
-% If it seems reasonable, add the missing hits to the list of tested strains
-tested_strains = [tested_strains; missing];
+[missing,~] = setdiff(hit_strains, tested_strains);
+disp(missing);
 
 %% Prepare final dataset
 
@@ -187,7 +96,7 @@ wu_hopper_2015.data = zeros(length(wu_hopper_2015.orfs),length(wu_hopper_2015.ph
 wu_hopper_2015.dataset_ids = hit_data_ids;
 
 [~,ind1,ind2] = intersect(hit_strains, wu_hopper_2015.orfs);
-wu_hopper_2015.data(ind2,:) = hit_data(ind1,:);
+wu_hopper_2015.data(ind2,:) = hit_data2(ind1,:);
 
 %% Save
 
@@ -207,3 +116,4 @@ if exist('save_data_to_db.m')
 end
 
 end
+
