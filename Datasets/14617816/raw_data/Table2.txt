@@ -1,0 +1,83 @@
+ORF name	Gene	Pathway	Biological function
+YAL016w	TPD3	Protein biosynthesis	Protein phosphatase type 2A
+YBL079w	NUP170	mRNA-nucleus export	Structural molecule
+YBR036c	CSG2	Calcium ion homeostasis	Molecular function unknown
+YBR096w		Biological process unknown	Molecular function unknown
+YBR127c	VMA2	Vacuolar acidification	Hydrogen-transporting two-sector ATPase
+YBR132c	AGP2	Response to osmotic stress	Hydrogen:amino acid symporter
+YBR133c	HSL7	G2/M transition of mitotic cell cycle	Protein-arginine N-methyltransferase
+YBR173c	UMP1	Protein catabolism	Chaperone
+YBR267w		Biological process unknown	Molecular function unknown
+YBR282w	MRPL27	Protein biosynthesis	Structural constituent of ribosome
+YCR081w	SRB8	Negative regulator of Pol-II transcription	RNA polymerase II transcription mediator
+YDL005c	MED2	Transcription from Pol-II promoter	RNA polymerase II transcription mediator
+YDR007w	TRP1	Tryptophan biosynthesis	Phosphoribosylanthranilate isomerase
+YDR017c	KCS1	Stress response	Protein kinase
+YDR027c	LUV1	Not yet annotated	Molecular function unknown
+YDR069c	DOA4	Deubiquitination	Ubiquitin-specific protease
+YDR173c	ARG82	Arginine metabolism	Inositol/phosphatidylinositol kinase
+YDR364c	CDC40	Not yet annotated	Molecular function unknown
+YDR484w	SAC2	Actin filament-based process	Molecular function unknown
+YER017c	AFG3	Protein complex assembly	Adenosinetriphosphatase
+YER044c	ERG28	Ergosterol biosynthesis	Molecular function unknown
+YER083c	RMD7	Cell wall organization and biogenesis	Molecular function unknown
+YER090w	TRP2	Tryptophan biosynthesis	Anthranilate synthase
+YER169w	RPH1	DNA repair	Not yet annotated
+YFL017w-a	SMX2	mRNA splicing	Pre-mRNA splicing factor
+YGL026c	TRP5	Tryptophan biosynthesis	Tryptophan synthase
+YGL070c	RPB9	Transcription from Pol-II promoter	DNA-directed RNA polymerase II
+YGL148w	ARO2	Not yet annotated	Chorismate synthase
+YGL173c	KEM1	35S primary transcript processing	5′-3′ Exoribonuclease
+YGR063c	SPT4	DNA-dependent transcription regulation	Pol-II transcription elongation factor
+YGR064w		Biological process unknown	Molecular function unknown
+YGR076c	MRPL25	Protein biosynthesis	Structural constituent of ribosome
+YGR104c	SRB5	Transcription from Pol-II promoter	RNA polymerase II transcription mediator
+YGR112w	SHY1	Respiratory gaseous exchange	Molecular function unknown
+YGR135w	PRE9	Ubiquitin-dependent protein catabolism	Proteasome endopeptidase
+YGR159c	NSR1	rRNA processing	RNA binding
+YGR162w	TIF4631	Translational initiation	Translation initiation factor
+YGR222w	PET54	Protein biosynthesis	Molecular function unknown
+YGR229c	SMI1	Cell wall organization and biogenesis	Not yet annotated
+YGR240c	PFK1	Glycolysis	6-Phosphofructokinase
+YGR272c		Biological process unknown	Molecular function unknown
+YHR060w	VMA22	Protein complex assembly	Molecular function unknown
+YIL018w	RPL2B	Protein biosynthesis	Structural constituent of ribosome
+YJL063c	MRPL8	Protein biosynthesis	Structural constituent of ribosome
+YJL075c		Biological process unknown	Molecular function unknown
+YJL140w	RPB4	Transcription from Pol-II promoter	DNA-directed RNA polymerase II
+YJL176c	SWI3	Chromatin modeling	RNA polymerase II transcription factor
+YJL189w	RPL39	Protein biosynthesis	Structural constituent of ribosome
+YKL169c		Biological process unknown	Molecular function unknown
+YKL212w	SAC1	Dephosphorylation	Inositol/phosphatidylinositol phosphatase
+YLR044c	PDC1	Ethanol fermentation	Pyruvate decarboxylase
+YLR056w	ERG3	Ergosterol biosynthesis	C-5 sterol desaturase
+YLR148w	PEP3	Non-selective vesicle docking	Protein binding
+YLR399c	BDF1	Sporulation (sensu Saccharomyces)	Transcription factor
+YLR402w		Biological process unknown	Molecular function unknown
+YML008c	ERG6	Ergosterol biosynthesis	Delta(24)-sterol C-methyltransferase
+YML061c	PIF1	DNA recombination	DNA helicase
+YML076c	WAR1	Biological process unknown	Molecular function unknown
+YMR060c	TOM37	Mitochondrial translocation	Protein transporter
+YMR183c	SSO2	Non-selective vesicle fusion	t-SNARE
+YMR202w	ERG2	Ergosterol biosynthesis	C-8 sterol isomerase
+YMR205c	PFK2	Glycolysis	6-Phosphofructokinase
+YMR231w	PEP5	Non-selective vesicle docking	Molecular function unknown
+YNL084c	END3	Cytokinesis	Cytoskeletal adaptor
+YNL225c	CNM67	Microtubule nucleation	Structural constituent of cytoskeleton
+YNR032w	PPG1	Not yet annotated	Protein serine/threonine phosphatase
+YNR037c	RSM19	Protein biosynthesis	Structural constituent of ribosome
+YOL023w	IFM1	Translational initiation	Translation initiation factor
+YOL051w	GAL11	Transcription from Pol-II promoter	RNA polymerase II transcription mediator
+YOL086c	ADH1	Fermentation	Alcohol dehydrogenase
+YOL143c	RIB4	Vitamin B2 biosynthesis	Riboflavin synthase
+YOR235w		Biological process unknown	Molecular function unknown
+YOR291w		Biological process unknown	Molecular function unknown
+YPL042c	SSN3	Protein amino acid phosphorylation	RNA polymerase II transcription factor
+YPL045w	VPS16	Protein-vacuolar targeting	Molecular function unknown
+YPL058c	PDR12	Transport	Xenobiotic-transporting ATPase
+YPL059w	GRX5	Response to osmotic stress	Thiol-disulfide exchange intermediate
+YPL097w	MSY1	Not yet annotated	Tyrosine-tRNA ligase
+YPL193w	RSA1	Ribosomal large subunit assembly	Molecular function unknown
+YPL268w	PLC1	Pseudohyphal growth	1-PI-4,5-bisphosphate phosphodiesterase
+YPR067w	ISA2	Iron transport	Molecular function unknown
+YPR100w		Biological process unknown	Molecular function unknown
