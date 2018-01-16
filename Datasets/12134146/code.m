@@ -67,7 +67,8 @@ hit_data_hom(t==0,:) = [];
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids_hom = [4836 4840 4837 4838 4839 4841 4842 4844 4843]';
+hit_data_ids_hom = [4836 4841 4842 4840 4838 4837 4843 4844 4839]';
+
 
 %% Load the data (HET)
 
