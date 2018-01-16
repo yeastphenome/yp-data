@@ -64,10 +64,18 @@ t = sum(~isnan(hit_data_hom),2);
 hit_strains_hom(t==0) = [];
 hit_data_hom(t==0,:) = [];
 
+% Normalize all datasets to YPD
+% SAFE analysis indicates that taking the difference makes more sense than
+% the ratio
+ind = find(strcmp('YPD', datasets_hom));
+hit_data_hom = hit_data_hom - hit_data_hom(:,ind);
+hit_data_hom(:,ind) = [];
+datasets_hom(ind) = [];
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids_hom = [4836 4841 4842 4840 4838 4837 4843 4844 4839]';
+hit_data_ids_hom = [4841 4842 4840 4838 4837 4843 4844 4839]';
 
 
 %% Load the data (HET)
@@ -120,10 +128,18 @@ t = sum(~isnan(hit_data_het),2);
 hit_strains_het(t==0) = [];
 hit_data_het(t==0,:) = [];
 
+% Normalize all datasets to YPD
+% SAFE analysis (on homs) indicates that taking the difference makes more sense than
+% the ratio
+ind = find(strcmp('YPD', datasets_het));
+hit_data_het = hit_data_het - hit_data_het(:,ind);
+hit_data_het(:,ind) = [];
+datasets_het(ind) = [];
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids_het = [475 4831 4832 4830 4828 4827 4833 4834 4829]';
+hit_data_ids_het = [4831 4832 4830 4828 4827 4833 4834 4829]';
 
 %% Prepare final dataset
 
@@ -138,9 +154,9 @@ hit_strains = unique([hit_strains_hom; hit_strains_het]);
 hit_data = nan(length(hit_strains), length(hit_data_ids));
 
 [~,ind1,ind2] = intersect(hit_strains_hom, hit_strains);
-hit_data(ind2,1:9) = hit_data_hom(ind1,:);
+hit_data(ind2,1:size(hit_data_hom,2)) = hit_data_hom(ind1,:);
 [~,ind1,ind2] = intersect(hit_strains_het, hit_strains);
-hit_data(ind2,10:18) = hit_data_het(ind1,:);
+hit_data(ind2,size(hit_data_hom,2)+1:size(hit_data_hom,2)+size(hit_data_het,2)) = hit_data_het(ind1,:);
 
 % If the dataset is quantitative:
 steinmetz_davis_2002.orfs = hit_strains;
