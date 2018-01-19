@@ -1,0 +1,3 @@
+16030	hap a | transport to/from cell surface (CPY) | standard [standard] | Schluter C~Conibear E, 2008
+16031	hap alpha | transport to/from cell surface (CPY) | standard [standard] | Schluter C~Conibear E, 2008
+16032	hom | transport to/from cell surface (CPY) | standard [standard] | Schluter C~Conibear E, 2008
