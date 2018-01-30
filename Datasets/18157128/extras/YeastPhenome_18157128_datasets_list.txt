@@ -1,0 +1,4 @@
+11813	het | growth (relative abundance in pooled culture) | glucose limitation (glucose [2.5 g/L]) | Delneri D~Oliver SG, 2008
+11814	het | growth (relative abundance in pooled culture) | grape juice [100%] | Delneri D~Oliver SG, 2008
+11815	het | growth (relative abundance in pooled culture) | nitrogen limitation (ammonium [97.6 mg/L]) | Delneri D~Oliver SG, 2008
+11816	het | growth (relative abundance in pooled culture) | phosphorus limitation (phosphorus(.) [12.3 mg/L]) | Delneri D~Oliver SG, 2008
