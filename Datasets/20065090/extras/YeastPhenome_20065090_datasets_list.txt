@@ -1,0 +1,90 @@
+16036	hap a | unbud cell mean area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16037	hap a | unbud cell mean perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16038	hap a | unbud cell mean length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16039	hap a | unbud cell mean breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16040	hap a | unbud cell mean shapefactor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16041	hap a | unbud cell mean ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16042	hap a | unbud cell mean equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16043	hap a | unbud cell mean oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16044	hap a | medium bud mean mother area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16045	hap a | medium bud mean mother perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16046	hap a | medium bud mean mother length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16047	hap a | medium bud mean mother breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16048	hap a | medium bud mean mother shape factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16049	hap a | medium bud mean mother ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16050	hap a | medium bud mean mother equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16051	hap a | medium bud mean mother equiv. oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16052	hap a | medium bud mean daughter area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16053	hap a | medium bud mean daughter perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16054	hap a | medium bud mean daughter length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16055	hap a | medium bud mean daughter breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16056	hap a | medium bud mean daughter shape factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16057	hap a | medium bud mean daughter ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16058	hap a | medium bud mean daughter equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16059	hap a | medium bud mean daughter equiv. oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16060	hap a | medium bud mean budneck width | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16061	hap a | large bud mean mother area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16062	hap a | large bud mean mother perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16063	hap a | large bud mean mother length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16064	hap a | large bud mean mother breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16065	hap a | large bud mean mother shape factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16066	hap a | large bud mean mother ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16067	hap a | large bud mean mother equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16068	hap a | large bud mean mother equiv. oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16069	hap a | large bud mean daughter area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16070	hap a | large bud mean daughter perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16071	hap a | large bud mean daughter length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16072	hap a | large bud mean daughter breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16073	hap a | large bud mean daughter shape factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16074	hap a | large bud mean daughter ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16075	hap a | large bud mean daughter equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16076	hap a | large bud mean daughter equiv. oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16077	hap a | large bud mean budneck width | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16078	hap a | large bud anaphase spindle mean fiber length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16079	hap a | large bud anaphase spindle mean spindle dist to budneck | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16080	hap a | large bud anaphase spindle mean spindle orientation | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16081	hap a | large bud metaphase spindle mean fiber length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16082	hap a | large bud metaphase spindle mean spindle dist to budneck | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16083	hap a | large bud metaphase spindle mean spindle orientation | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16084	hap a | medium bud anaphase spindle mean fiber length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16085	hap a | medium bud anaphase spindle mean spindle dist to budneck | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16086	hap a | medium bud anaphase spindle mean spindle orientation | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16087	hap a | medium bud metaphase spindle mean fiber length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16088	hap a | medium bud metaphase spindle mean spindle dist to budneck | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16089	hap a | medium bud metaphase spindle mean spindle orientation | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16090	hap a | small bud anaphase spindle mean fiber length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16091	hap a | small bud anaphase spindle mean spindle dist to budneck | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16092	hap a | small bud anaphase spindle mean spindle orientation | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16093	hap a | small bud metaphase spindle mean fiber length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16094	hap a | small bud metaphase spindle mean spindle dist to budneck | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16095	hap a | small bud metaphase spindle mean spindle orientation | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16096	hap a | percentage of unbud  | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16097	hap a | percentage of small bud | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16098	hap a | percentage of medium bud | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16099	hap a | percentage of large bud | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16100	hap a | percentage of unbud with 1 spb | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16101	hap a | percentage of unbud with 2 spb | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16102	hap a | percentage of unbud with more than 2 spb | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16103	hap a | percentage of large bud with anaphase spindle | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16104	hap a | percentage of large bud with metaphase spindle | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16105	hap a | percentage of medium bud with anaphase spindle | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16106	hap a | percentage of medium bud with metaphase spindle | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16107	hap a | percentage of small bud with anaphase spindle | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16108	hap a | percentage of small bud with metaphase spindle | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16109	hap a | small bud mean mother area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16110	hap a | small bud mean mother perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16111	hap a | small bud mean mother length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16112	hap a | small bud mean mother breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16113	hap a | small bud mean mother shape factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16114	hap a | small bud mean mother ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16115	hap a | small bud mean mother equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16116	hap a | small bud mean mother equiv. oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16117	hap a | small bud mean daughter area | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16118	hap a | small bud mean daughter perimeter | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16119	hap a | small bud mean daughter length | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16120	hap a | small bud mean daughter breadth | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16121	hap a | small bud mean daughter shape factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16122	hap a | small bud mean daughter ell. form factor | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16123	hap a | small bud mean daughter equiv. prolate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16124	hap a | small bud mean daughter equiv. oblate vol. | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
+16125	hap a | small bud mean budneck width | standard [standard] | Vizeacoumar FJ~Andrews BJ, 2010 | quantitative | quantitative | quantitative
