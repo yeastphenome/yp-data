@@ -1,0 +1,262 @@
+Gene	Orf	Spo1	Spo2	HomDip	oligo	microarray	Under 15%	Biological Process	Molecular Function	Cellular Component
+SWI4	YER111C	2.146	1.706	0.896	SK1	 	 	cell cycle	transcription factor	not yet annotated
+ISC10	YER180C	2.461	3.338	1.008	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+NDI1	YML120C	1.904	4.154	0.994	W303	 	 	complex I (NADH to ubiquinone)	not yet annotated	NADH dehydrogenase (ubiquinone)
+SMA2	YML066C	2.787	5.121	1.011	Both	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YML010W-A	YML010W-A	1.831	1.623	0.878	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YPT7	YML001W	1.911	2.432	0.990	 	 	 	vacuole inheritance*	RAB small monomeric GTPase	not yet annotated
+SPO20	YMR017W	3.149	3.902	1.030	Both	induced	 	non-selective vesicle fusion*	v-SNARE	prospore membrane
+YMR030W	YMR030W	2.516	2.882	1.024	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+SRT1	YMR101C	2.628	2.698	1.001	Both	 	 	protein amino acid glycosylation	not yet annotated	not yet annotated
+sto1	YMR125W	2.766	2.950	0.748	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+YMR135C	YMR135C	2.723	5.510	0.983	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+ccr4	YAL021C	2.667	4.477	0.924	 	 	 	not yet annotated	not yet annotated	not yet annotated
+spo7	YAL009W	1.921	2.265	0.921	 	 	 	meiosis	molecular_function unknown	not yet annotated
+FUN16	YAR003W	1.835	8.782	0.985	 	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+SPO73	YER046W	2.251	3.304	1.026	Both	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+PET117	YER058W	1.735	3.976	0.858	Both	 	 	cytochrome c oxidase biogenesis	molecular_function unknown	mitochondrial inner membrane
+ICL1	YER065C	1.555	1.959	1.020	W303	 	 	not yet annotated	isocitrate lyase	not yet annotated
+YER092W	YER092W	1.680	2.027	0.991	SK1	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+shc1	YER096W	1.674	2.600	1.025	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+YMR148W	YMR148W	1.579	2.363	1.024	Both	induced	no	biological_process unknown	molecular_function unknown	not yet annotated
+YIM2	YMR151W	1.552	2.764	0.910	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+RIM13	YMR154C	1.713	1.619	0.974	 	 	 	not yet annotated	not yet annotated	not yet annotated
+APG16	YMR159C	1.683	2.543	1.030	 	 	 	autophagy	molecular_function unknown	membrane fraction
+YMR196W	YMR196W	2.036	4.421	1.017	Both	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+UBP8	YMR223W	1.851	2.030	0.970	 		 	deubiquitylation	ubiquitin-specific protease	cellular_component unknown
+CBP2	YHL038C	1.885	2.461	0.888	 	 	 	not yet annotated	not yet annotated	not yet annotated
+RIM101	YHL027W	1.795	1.762	0.977	 	 	 	meiosis	transcription factor	not yet annotated
+RIM4	YHL024W	3.139	7.310	1.020	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+YHL023C	YHL023C	2.050	4.285	1.012	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+PRS3	YHL011C	2.253	2.653	0.737	 	 	 	histidine biosynthesis*	ribose-phosphate pyrophosphokinase	cytoplasm
+NEM1	YHR004C	1.691	2.147	0.899	 	 	 	nuclear organization and biogenesis	not yet annotated	not yet annotated
+GPA1	YHR005C	3.480	7.125	0.968	 	 	 	signal transduction of mating signal (sensu Saccharomyces)	heterotrimeric G-protein GTPase, alpha subunit	plasma membrane*
+ard1	YHR013C	2.261	2.542	0.799	 	 	 	protein amino acid acetylation	peptide alpha-N-acetyltransferase	not yet annotated
+UBC8	YEL012W	2.500	5.778	0.997	Both	 	yes	polyubiquitylation*	ubiquitin conjugating enzyme	cellular_component unknown
+SSO1	YPL232W	2.057	3.204	1.015	Both	 	 	non-selective vesicle fusion*	t-SNARE	integral plasma membrane protein
+CBP3	YPL215W	1.741	3.300	0.936	 	 	 	protein complex assembly	molecular_function unknown	mitochondrial membrane
+YPL205C	YPL205C	1.844	1.951	0.858	 	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+CAF40	YNL288W	1.673	2.623	0.998	 	 	 	not yet annotated	not yet annotated	not yet annotated
+CAT8	YMR280C	1.811	3.726	1.031	 	 	 	gluconeogenesis	transcription factor	not yet annotated
+MRPL33	YMR286W	1.680	4.292	0.944	Both	 	 	protein biosynthesis	structural protein of ribosome	mitochondrial large ribosomal subunit
+MSU1	YMR287C	1.512	1.514	0.771	 	 	 	not yet annotated	not yet annotated	not yet annotated
+FKS3	YMR306W	1.595	2.810	1.025	Both	 	 	not yet annotated	1,3-beta-glucan synthase	not yet annotated
+YMR313C	YMR313C	2.239	3.894	1.023	Both	induced	yes	lipid metabolism	molecular_function unknown	lipid particle
+IME2	YJL106W	1.579	1.787	1.030	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+SNX4	YJL036W	1.545	2.574	1.022	W303	 	 	not yet annotated	molecular_function unknown	not yet annotated
+RPL34B	YIL052C	1.738	2.581	0.948	W303	repressed	 	protein biosynthesis	structural protein of ribosome	cytosolic large ribosomal (60S) subunit
+VAC8	YEL013W	2.431	3.405	0.920	 	 	 	protein-vacuolar targeting*	molecular_function unknown	vacuole
+RIP1	YEL024W	1.571	1.896	0.850	Both	 	 	not yet annotated	ubiquinol-cytochrome-c reductase	not yet annotated
+rad23	YEL037C	1.551	1.812	1.003	Both	 	 	nucleotide-excision repair	damaged DNA binding	repairosome*
+prb1	YEL060C	1.961	2.206	1.009	 	 	 	not yet annotated	cerevisin	not yet annotated
+NPR2	YEL062W	2.106	3.623	1.004	 	 	 	not yet annotated	transcription factor	not yet annotated
+SPO75	YLL005C	1.532	2.590	1.022	 	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+COX17	YLL009C	1.662	2.536	0.862	Both	 	 	cytochrome c oxidase biogenesis*	intracellular copper delivery	cytosol*
+YLL033W	YLL033W	1.901	1.870	0.711	 	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+UBI4	YLL039C	1.933	3.030	1.014	 	 	 	stress response*	protein degradation tagging	cytoplasm
+VPS13	YLL040C	1.761	2.737	1.022	 	 	 	not yet annotated	not yet annotated	not yet annotated
+SDH2	YLL041C	1.745	3.370	1.020	W303	 	 	tricarboxylic acid cycle*	succinate dehydrogenase	mitochondrial matrix*
+apg10	YLL042C	1.516	2.890	1.023	 	 	 	autophagy*	ubiquitin-like conjugating enzyme	soluble fraction
+snf7	YLR025W	1.540	4.180	0.977	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+AAT2	YLR027C	1.753	2.346	0.981	W303	 	 	aspartate catabolism*	aspartate aminotransferase	cytoplasm*
+YOR291W	YOR291W	1.556	2.780	1.018	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+MUM3	YOR298W	2.229	6.976	1.027	Both	induced	yes	biological_process unknown	not yet annotated	not yet annotated
+vma4	YOR332W	1.743	1.532	0.918	 	 	 	vacuolar acidification	hydrogen-transporting two-sector ATPase	hydrogen-transporting ATPase V1 domain
+YOR333C	YOR333C	1.541	2.359	1.019	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+sin3	YOL004W	1.935	4.312	0.853	 	 	 	transcription	not yet annotated	not yet annotated
+IFM1	YOL023W	1.698	1.642	0.732	 	 	 	protein synthesis initiation	translation initiation factor	mitochondrion
+YOL071W	YOL071W	1.794	4.128	1.013	Both	repressed	yes	biological_process unknown	molecular_function unknown	not yet annotated
+pep12	YOR036W	1.698	1.695	0.907	Both	repressed	 	Golgi to vacuole transport	t-SNARE	Golgi apparatus*
+CYT1	YOR065W	1.530	3.097	0.910	Both	 	 	oxidative phosphorylation	cytochrome c1	not yet annotated
+YOR083W	YOR083W	1.520	1.533	1.010	 	induced	 	biological_process unknown	molecular_function unknown	not yet annotated
+NAM8	YHR086W	1.619	2.504	1.021	 	 	 	not yet annotated	not yet annotated	not yet annotated
+YHR116W	YHR116W	1.904	3.230	0.923	SK1	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+NDT80	YHR124W	3.095	5.560	1.016	Both	induced	 	meiosis	transcription factor	not yet annotated
+YCR045C	YCR045C	1.554	4.376	0.987	Both	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+thr4	YCR053W	1.640	2.563	1.024	SK1	 	 	not yet annotated	threonine synthase	not yet annotated
+cvt17	YCR068W	1.635	3.848	0.983	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+SRB8	YCR081W	2.087	3.746	0.893	 	 	 	repression of transcription from Pol II promoter	RNA polymerase II transcription mediator	transcription factor complex
+CBC2	YPL178W	2.095	4.594	0.832	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+COX10	YPL172C	1.505	3.966	0.920	 	 	 	heme a biosynthesis	protoheme IX farnesyltransferase	mitochondrial inner membrane
+APG5	YPL149W	1.705	4.344	1.009	 	 	 	autophagy*	molecular_function unknown	cellular_component unknown
+SPO19	YPL130W	1.978	2.931	1.016	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+MRP51	YPL118W	1.651	2.102	0.782	Both	 	 	protein biosynthesis*	structural protein of ribosome	mitochondrial small ribosomal subunit
+MSD1	YPL104W	1.514	2.337	0.944	 	repressed	 	protein biosynthesis	aspartate--tRNA ligase	mitochondrion
+YPL098C	YPL098C	1.713	1.571	0.953	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+SPO72	YNL242W	1.550	3.208	1.026	 	 	 	autophagy	molecular_function unknown	cellular_component unknown
+WHI3	YNL197C	1.525	2.310	0.959	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+SLZ1	YNL196C	2.071	3.756	1.013	Both	induced	 	meiosis	molecular_function unknown	not yet annotated
+YJL007C	YJL007C	2.669	2.245	0.962	 	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+YJR008W	YJR008W	1.905	2.510	1.014	Both	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YJR044C	YJR044C	1.940	1.527	1.018	W303	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+PFK26	YIL107C	1.622	2.048	0.995	Both	 	 	not yet annotated	6-phosphofructo-2-kinase	not yet annotated
+YIL110W	YIL110W	1.806	2.595	0.914	SK1	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+PRM5	YIL117C	2.175	3.312	1.014	 	induced	 	mating (sensu Saccharomyces)	molecular_function unknown	integral membrane protein
+kgd1	YIL125W	1.562	2.278	0.956	Both	 	 	tricarboxylic acid cycle*	oxoglutarate dehydrogenase (lipoamide)	mitochondrial matrix
+YIL157C	YIL157C	1.627	3.156	0.908	Both	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+LEO1	YOR123C	1.563	3.299	0.965	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+IDH2	YOR136W	2.393	4.760	1.022	W303	repressed	 	tricarboxylic acid cycle*	isocitrate dehydrogenase (NAD+)	mitochondrial matrix
+LSC1	YOR142W	2.342	5.044	1.013	W303	 	 	tricarboxylic acid cycle*	succinate--CoA ligase (ADP-forming)	mitochondrial matrix
+YOR177C	YOR177C	2.908	6.655	1.028	Both	induced	 	biological_process unknown	molecular_function unknown	not yet annotated
+YOR179C	YOR179C	2.737	2.772	0.970	 	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+RIS1	YOR191W	1.810	2.023	0.994	 	 	 	not yet annotated	not yet annotated	not yet annotated
+LIP5	YOR196C	1.663	2.247	0.871	W303	 	 	fatty acid metabolism	not yet annotated	not yet annotated
+SSP2	YOR242C	2.676	6.136	1.020	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+YOR255W	YOR255W	2.523	5.582	1.029	Both	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+CAF20	YOR276W	1.511	2.831	1.013	Both	 	 	not yet annotated	not yet annotated	not yet annotated
+IME1	YJR094C	2.185	3.759	1.021	W303	 	 	meiosis	transcription factor	nucleus
+VPS25	YJR102C	1.777	3.621	0.960	 	 	 	biological_process unknown	molecular_function unknown	cellular_component unknown
+YJR120W	YJR120W	1.558	2.872	0.987	Both	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+COX12	YLR038C	1.980	4.432	0.902	SK1	 	 	not yet annotated	cytochrome-c oxidase	not yet annotated
+YLR052W	YLR052W	1.729	1.818	0.820	W303	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YLR054C	YLR054C	1.670	3.374	1.019	Both	repressed	yes	biological_process unknown	molecular_function unknown	not yet annotated
+BRO1	YPL084W	1.852	4.424	0.996	 	 	 	signal transduction	molecular_function unknown	cellular_component unknown
+VPS28	YPL065W	1.655	3.608	0.946	 	 	 	not yet annotated	not yet annotated	not yet annotated
+YPL060W	YPL060W	2.191	2.137	1.006	 	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+YPL055C	YPL055C	2.614	6.741	0.912	W303	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YPL047W	YPL047W	1.724	2.560	0.976	SK1	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+ssn3	YPL042C	2.119	3.779	0.908	 	 	 	protein amino acid phosphorylation*	non-specific RNA polymerase II transcription factor*	transcription factor complex
+YPL033C	YPL033C	1.947	2.591	1.013	Both	induced	no	biological_process unknown	molecular_function unknown	not yet annotated
+YPL027W	YPL027W	1.550	2.774	1.025	Both	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YPL013C	YPL013C	1.522	2.715	0.955	W303	 	yes	biological_process unknown	molecular_function unknown	cellular_component unknown
+SNF8	YPL002C	1.835	3.317	0.917	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+CHS7	YHR142W	3.506	3.842	0.990	 	 	 	not yet annotated	not yet annotated	not yet annotated
+APG7	YHR171W	2.236	8.107	1.004	 	 	 	autophagy*	ubiquitin-like conjugating enzyme	cellular_component unknown
+SSP1	YHR184W	2.847	6.819	1.008	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+ADY1	YHR185C	2.623	2.782	0.998	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+RPN10	YHR200W	1.629	2.048	0.865	Both	 	 	ubiquitin-dependent protein degradation	multicatalytic endopeptidase	19S proteasome regulatory particle
+MLS1	YNL117W	1.790	3.127	1.004	W303	induced	 	glyoxylate cycle	malate synthase	peroxisomal matrix
+VAC7	YNL054W	2.837	2.201	0.770	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+AUT7	YBL078C	1.946	4.326	1.015	Both	induced	 	autophagy*	microtubule binding	microtubule associated protein
+NUP170	YBL079W	1.697	2.180	0.854	 	 	 	mRNA-nucleus export*	structural protein	nuclear pore
+PET112	YBL080C	1.683	2.984	0.919	 	 	 	not yet annotated	not yet annotated	not yet annotated
+COQ1	YBR003W	1.586	2.104	0.946	 	 	 	ubiquinone metabolism	trans-hexaprenyltranstransferase	not yet annotated
+chs3	YBR023C	2.284	4.991	1.003	SK1	 	 	cytokinesis*	chitin synthase	cytokinetic ring (sensu Saccharomyces)
+FAT1	YBR041W	1.516	2.038	1.011	 	 	 	very long chain fatty acid metabolism*	long-chain-fatty-acid-CoA-ligase*	plasma membrane*
+GIP1	YBR045C	3.445	3.804	1.010	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+MUM2	YBR057C	2.400	6.318	0.993	W303	induced	 	meiosis	molecular_function unknown	not yet annotated
+CCZ1	YBR131W	2.151	3.933	0.993	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+TOS1	YBR162C	2.322	3.949	0.962	W303	 	 	not yet annotated	not yet annotated	not yet annotated
+YBR174C	YBR174C	1.605	4.315	0.954	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YBR175W	YBR175W	1.779	4.969	0.943	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+APG12	YBR217W	2.018	4.322	1.010	 	 	 	autophagy*	molecular_function unknown	membrane fraction
+GPX2	YBR244W	2.616	4.166	0.965	 	 	 	not yet annotated	glutathione peroxidase	not yet annotated
+YCL005W	YCL005W	2.027	7.353	1.007	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+stp22	YCL008C	1.630	2.737	0.939	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+YCL010C	YCL010C	2.954	4.030	0.956	SK1	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YCL039W	YCL039W	1.564	2.153	1.018	SK1	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+KAR4	YCL055W	2.774	5.626	1.015	SK1	 	 	meiosis*	transcription factor	nucleus
+SPG2	YCR010C	1.692	2.897	1.014	 	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+RIM11	YMR139W	2.999	4.903	1.012	 	 	 	meiosis	protein kinase	not yet annotated
+YDL041W	YDL041W	1.607	1.932	0.874	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+BRE1	YDL074C	2.268	3.208	0.943	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+VAM6	YDL077C	2.326	5.335	0.956	 	 	 	not yet annotated	vacuolar carboxypeptidase Y	not yet annotated
+YDL114W	YDL114W	1.654	2.778	1.017	Both	induced	 	biological_process unknown	molecular_function unknown	not yet annotated
+YDL118W	YDL118W	1.784	2.664	0.785	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+apg9	YDL149W	1.968	3.804	1.009	SK1	 	 	autophagy*	molecular_function unknown	membrane fraction
+UFD2	YDL190C	2.090	2.731	1.007	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+MAF1	YDR005C	2.776	4.160	1.020	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+CIS1	YDR022C	1.893	2.914	1.013	W303	 	 	not yet annotated	not yet annotated	not yet annotated
+vps41	YDR080W	1.672	2.133	0.957	 	 	 	not yet annotated	not yet annotated	not yet annotated
+SPO71	YDR104C	2.149	4.065	1.010	SK1	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+GSG1	YDR108W	1.529	2.506	1.017	 	 	 	meiosis	molecular_function unknown	not yet annotated
+KGD2	YDR148C	1.995	2.003	0.994	 	induced	 	tricarboxylic acid cycle*	dihydrolipoamide S-succinyltransferase	mitochondrial matrix
+STB3	YDR169C	1.612	3.308	1.007	 	 	 	biological_process unknown	not yet annotated	not yet annotated
+CBS2	YDR197W	1.694	1.863	0.881	 	 	 	protein biosynthesis	molecular_function unknown	mitochondrial inner membrane
+UME6	YDR207C	2.699	2.015	0.913	 	 	 	meiosis	transcription factor	not yet annotated
+YDR230W	YDR230W	1.823	3.158	0.840	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YDR255C	YDR255C	3.461	5.662	0.982	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+SWM1	YDR260C	1.667	2.046	0.992	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+ZIP1	YDR285W	1.621	2.900	1.001	Both	induced	 	meiosis*	not yet annotated	synaptonemal complex
+SWA2	YDR320C	1.638	1.804	0.783	 	repressed	 	not yet annotated	molecular_function unknown	not yet annotated
+mss51	YLR203C	1.734	2.719	0.860	 	 	 	protein biosynthesis*	molecular_function unknown	cellular_component unknown
+YDR374C	YDR374C	2.312	2.085	1.011	Both	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+ATP17	YDR377W	1.701	1.544	0.801	W303	 	 	ATP synthesis coupled proton transport	hydrogen-transporting two-sector ATPase	proton-transporting ATP synthase complex, coupling factor F(0)
+sac7	YDR389W	2.105	1.872	0.943	 	 	 	small GTPase mediated signal transduction	signal transducer*	intracellular
+spt3	YDR392W	1.898	3.066	0.874	 	 	 	not yet annotated	not yet annotated	SAGA complex
+SHE9	YDR393W	1.526	1.952	0.837	W303	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+DIT2	YDR402C	1.519	2.322	1.014	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+DIT1	YDR403W	2.188	4.992	0.991	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+YDR417C	YDR417C	1.937	2.544	0.813	 	repressed	yes	biological_process unknown	molecular_function unknown	not yet annotated
+ssn2	YDR443C	1.566	3.372	0.868	SK1	 	 	repression of transcription from Pol II promoter	non-specific RNA polymerase II transcription factor	transcription factor complex
+YDR494W	YDR494W	1.618	1.996	0.985	Both	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+vps3	YDR495C	2.170	1.871	0.930	 	 	 	not yet annotated	not yet annotated	not yet annotated
+YDR512C	YDR512C	1.722	2.628	0.823	Both	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+EUG1	YDR518W	1.573	2.606	0.866	 	 	 	not yet annotated	protein disulfide isomerase	not yet annotated
+HOP2	YGL033W	2.055	3.554	0.999	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+YGL045W	YGL045W	1.594	1.649	0.946	 	repressed	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YGL066W	YGL066W	1.951	3.288	0.896	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+MON1	YGL124C	2.297	3.352	1.000	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+SPO74	YGL170C	2.240	3.692	1.028	Both	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+SAE2	YGL175C	1.554	3.776	0.993	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+APG1	YGL180W	2.086	2.919	1.010	Both	induced	 	autophagy	protein serine/threonine kinase	cytosol
+POX1	YGL205W	1.552	1.506	1.006	SK1	induced	 	fatty acid beta-oxidation	acyl-CoA oxidase	peroxisomal matrix
+VAM7	YGL212W	2.084	3.477	0.951	SK1	induced	 	non-selective vesicle fusion*	v-SNARE	not yet annotated
+CLG1	YGL215W	1.825	1.972	0.985	Both	 	 	cell cycle	not yet annotated	not yet annotated
+VID30	YGL227W	3.024	8.522	0.981	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+hap2	YGL237C	1.833	2.971	0.948	 	 	 	not yet annotated	not yet annotated	not yet annotated
+RTF1	YGL244W	1.956	1.847	0.899	W303	 	 	transcription	not yet annotated	not yet annotated
+ZIP2	YGL249W	1.661	2.980	0.997	 	induced	 	synaptonemal complex formation	not yet annotated	synaptonemal complex
+YGL250W	YGL250W	2.230	3.646	0.947	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+SPR3	YGR059W	2.064	1.773	0.998	Both	induced	 	cell wall organization and biogenesis*	structural protein of cytoskeleton	septin ring (sensu Saccharomyces)*
+SHY1	YGR112W	1.868	3.073	0.875	 	 	 	respiration	molecular_function unknown	mitochondrial inner membrane
+YGR122W	YGR122W	1.639	1.684	0.942	 	 	no	biological_process unknown	molecular_function unknown	not yet annotated
+qcr9	YGR183C	1.526	2.052	0.870	 	 	 	not yet annotated	ubiquinol-cytochrome-c reductase	not yet annotated
+YKL002W	YKL002W	1.926	1.732	0.950	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+VPS24	YKL041W	1.667	2.481	0.980	 	 	 	not yet annotated	not yet annotated	not yet annotated
+MUD2	YKL074C	2.428	2.548	0.941	 	 	 	lariat formation, 5'-splice site cleavage*	pre-mRNA splicing factor*	commitment complex
+MDH1	YKL085W	1.779	3.332	1.001	 	induced	 	tricarboxylic acid cycle*	malic enzyme	mitochondrial matrix
+CYT2	YKL087C	1.518	2.086	0.939	W303	 	 	not yet annotated	not yet annotated	not yet annotated
+HAP4	YKL109W	1.993	2.420	0.936	W303	 	 	transcription	not yet annotated	not yet annotated
+SDH1	YKL148C	1.796	1.974	1.006	Both	 	 	tricarboxylic acid cycle*	succinate dehydrogenase	mitochondrial matrix*
+CBT1	YKL208W	1.558	1.723	0.924	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+DOA1	YKL213C	2.079	2.598	0.984	 	repressed	 	ubiquitin-dependent protein degradation	molecular_function unknown	cellular_component unknown
+spo14	YKR031C	2.123	3.376	1.003	SK1	induced	 	not yet annotated	phospholipase D	not yet annotated
+YKR035C	YKR035C	1.666	3.084	1.007	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+YLR239C	YLR239C	1.782	4.831	0.886	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+SEC22	YLR268W	1.871	4.561	0.933	 	 	 	non-selective vesicle fusion*	v-SNARE	not yet annotated
+YLR269C	YLR269C	2.761	3.953	0.998	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+CDA2	YLR308W	1.966	4.266	0.999	Both	induced	 	not yet annotated	chitin deacetylase	not yet annotated
+chs5	YLR330W	1.600	2.245	0.978	 	 	 	spore wall assembly (sensu Saccharomyces)*	molecular_function unknown	cytoplasm
+acs1	YAL054C	1.923	4.846	1.018	Both	induced	 	not yet annotated	acetate--CoA ligase	not yet annotated
+YLR341W	YLR341W	2.588	4.017	1.006	SK1	induced	yes	biological_process unknown	molecular_function unknown	not yet annotated
+FBP1	YLR377C	1.548	2.465	1.007	Both	repressed	 	gluconeogenesis	fructose-bisphosphatase	cytosol
+YLR404W	YLR404W	1.646	2.609	1.004	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+VPS36	YLR417W	1.757	3.995	0.933	 	 	 	not yet annotated	not yet annotated	not yet annotated
+SEM1	YDR363W-A	1.894	3.662	0.894	 	 	 	not yet annotated	molecular_function unknown	not yet annotated
+AMA1	YGR225W	2.962	4.533	0.997	Both	induced	 	not yet annotated	not yet annotated	not yet annotated
+LSC2	YGR244C	3.320	3.996	1.013	 	 	 	tricarboxylic acid cycle*	succinate--CoA ligase (ADP-forming)	mitochondrial matrix
+SPO69	YPR007C	1.817	3.820	0.999	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+SMK1	YPR054W	2.699	6.068	1.000	Both	induced	 	not yet annotated	MAP kinase	not yet annotated
+UBA3	YPR066W	2.001	2.594	0.993	 	 	 	ubiquitin cycle	ubiquitin activating enzyme	cellular_component unknown
+CLB5	YPR120C	2.262	3.579	0.936	Both	induced	 	G1/S transition of mitotic cell cycle*	cyclin	cellular_component unknown
+ctr1	YPR124W	1.916	3.496	0.853	Both	repressed	 	transport	not yet annotated	not yet annotated
+VPS4	YPR173C	1.810	2.280	0.977	W303	 	 	not yet annotated	not yet annotated	not yet annotated
+APG13	YPR185W	2.588	5.564	0.989	 	 	 	autophagy*	molecular_function unknown	cellular_component unknown
+RIM15	YFL033C	2.371	2.260	1.005	W303	 	 	meiosis	protein kinase	not yet annotated
+YFR021W	YFR021W	1.995	4.312	1.012	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+spo1	YNL012W	3.283	5.660	1.006	SK1	 	 	meiosis	phospholipase	nucleus
+ssn8	YNL025C	1.509	4.354	0.905	 	 	 	repression of transcription from Pol II promoter	non-specific RNA polymerase II transcription factor*	transcription factor complex
+CIT1	YNR001C	1.959	2.414	0.987	 	induced	 	tricarboxylic acid cycle*	citrate (SI)-synthase	mitochondrial matrix
+VPS27	YNR006W	2.024	3.780	0.961	SK1	 	 	not yet annotated	not yet annotated	not yet annotated
+AUT1	YNR007C	2.181	3.853	1.003	 	induced	 	autophagy*	molecular_function unknown	cellular_component unknown
+YNR042W	YNR042W	1.648	2.425	0.885	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+pet494	YNR045W	2.105	2.464	0.860	Both	 	 	protein biosynthesis	molecular_function unknown	mitochondrial inner membrane
+MSO1	YNR049C	2.486	4.010	1.014	SK1	 	 	not yet annotated	molecular_function unknown	not yet annotated
+GCN5	YGR252W	2.014	1.859	0.872	 	 	 	not yet annotated	histone acetyltransferase	SAGA complex
+YHR079C-B	YHR079C-B	1.611	2.681	0.992	 	induced	 	 	 	 
+mrs1	YIR021W	1.544	2.268	0.873	 	 	 	mRNA splicing	molecular_function unknown	cellular_component unknown
+YIR025W	YIR025W	2.212	10.781	0.986	 	 	yes	meiotic recombination	molecular_function unknown	cellular_component unknown
+FTI1	YKR035W-A	1.557	3.194	1.001	 	 	 	not yet annotated	not yet annotated	not yet annotated
+pck1	YKR097W	2.383	5.238	1.008	W303	repressed	 	gluconeogenesis	phosphoenolpyruvate carboxykinase (ATP)	cytosol
+APG17	YLR423C	1.606	2.487	0.846	W303	 	 	autophagy	molecular_function unknown	not yet annotated
+hmg2	YLR450W	2.045	2.285	0.990	SK1	 	 	ergosterol biosynthesis	hydroxymethylglutaryl-CoA reductase (NADPH)	mitochondrial matrix*
+POP2	YNR052C	2.229	2.114	0.859	 	 	 	not yet annotated	not yet annotated	not yet annotated
+RIM9	YMR063W	1.771	2.377	0.972	 	 	 	not yet annotated	not yet annotated	not yet annotated
+VPS20	YMR077C	2.024	3.516	0.946	 	 	 	biological_process unknown	molecular_function unknown	cellular_component unknown
+SPO21	YOL091W	2.469	5.539	1.000	Both	induced	 	not yet annotated	molecular_function unknown	not yet annotated
+PKH2	YOL100W	2.714	3.429	0.950	 	induced	 	biological_process unknown	not yet annotated	not yet annotated
+MDH2	YOL126C	2.059	3.740	1.018	Both	repressed	 	gluconeogenesis*	malic enzyme	cytosol*
+YPL137C	YPL137C	1.572	1.703	1.007	 	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YHR132W-A	YHR132W-A	1.941	4.601	0.986	 	 	yes	biological_process unknown	molecular_function unknown	not yet annotated
+ATP11	YNL315C	1.839	1.732	0.879	 	 	 	protein complex assembly	chaperone	mitochondrial matrix

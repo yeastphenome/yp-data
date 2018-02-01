@@ -1,0 +1,103 @@
+Gene	Orf	Spo1	Spo2	oligo	microarray	Biological Process	Molecular Function	Cellular Component
+YER139C	YER139C	0.738531	0.745296	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+bem2	YER155C	0.494159	0.691747	Both	 	establishment of cell polarity (sensu Saccharomyces)*	signal transducer*	intracellular
+BCK2	YER167W	0.631887	0.681181	 	 	cell cycle control	molecular_function unknown	cellular_component unknown
+van1	YML115C	0.493218	0.693087	SK1	repressed	not yet annotated	mannosyltransferase	not yet annotated
+gal80	YML051W	0.752027	0.796879	 	 	transcription regulation*	transcription co-repressor	nucleus
+YML013C-A	YML013C-A	0.775666	0.693671	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+SOK2	YMR016C	0.654882	0.675665	 	 	pseudohyphal growth	transcription factor	cellular_component unknown
+SUB1	YMR039C	0.782649	0.726758	 	repressed	transcription	not yet annotated	not yet annotated
+YMR111C	YMR111C	0.630073	0.753034	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+cln3	YAL040C	0.298405	0.252811	W303	repressed	G1/S transition of mitotic cell cycle*	G1/S-specific cyclin	nucleus
+PMT2	YAL023C	0.728066	0.572904	 	 	O-linked glycosylation	dolichyl-phosphate-mannose--protein mannosyltransferase	endoplasmic reticulum
+YAL011W	YAL011W	0.613616	0.500538	W303	 	biological_process unknown	molecular_function unknown	not yet annotated
+ade1	YAR015W	0.611728	0.395303	both	repressed	not yet annotated	phosphoribosylaminoimidazole-succinocarboxamide synthase	not yet annotated
+SWH1	YAR042W	0.764887	0.697689	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+spt21	YMR179W	0.49865	0.638516	SK1	 	transcription	not yet annotated	not yet annotated
+CLN1	YMR199W	0.704637	0.658542	 	repressed	G1/S transition of mitotic cell cycle*	G1/S-specific cyclin	cellular_component unknown
+OPI1	YHL020C	0.607273	0.481801	Both	 	phospholipid metabolism	not yet annotated	not yet annotated
+YLF2	YHL014C	0.789219	0.686264	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YPL247C	YPL247C	0.660493	0.659005	W303	repressed	biological_process unknown	molecular_function unknown	not yet annotated
+MID1	YNL291C	0.644314	0.733499	 	 	transport	not yet annotated	not yet annotated
+YMR233W	YMR233W	0.78718	0.734129	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+RPL20A	YMR242C	0.679034	0.689294	SK1	repressed	protein biosynthesis	structural protein of ribosome	cytosolic large ribosomal (60S) subunit
+GFD1	YMR255W	0.791103	0.762931	 	 	mRNA-nucleus export	molecular_function unknown	cytoplasm*
+CUE1	YMR264W	0.75773	0.632348	SK1	 	not yet annotated	not yet annotated	not yet annotated
+GAS1	YMR307W	0.381695	0.529075	 	 	biological_process unknown	not yet annotated	not yet annotated
+YMR312W	YMR312W	0.676209	0.669997	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YJL169W	YJL169W	0.651761	0.751133	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+SET2	YJL168C	0.675377	0.799072	 	 	not yet annotated	not yet annotated	not yet annotated
+YJL142C	YJL142C	0.749035	0.764761	 	repressed	biological_process unknown	molecular_function unknown	not yet annotated
+YJL103C	YJL103C	0.723498	0.674724	W303	 	biological_process unknown	molecular_function unknown	not yet annotated
+SAP185	YJL098W	0.716652	0.745913	 	 	G1/S transition of mitotic cell cycle	protein serine/threonine phosphatase	cytoplasm
+arg3	YJL088W	0.774877	0.605778	both	induced	arginine biosynthesis*	ornithine carbamoyltransferase	cytosol
+PRM2	YIL037C	0.673099	0.785184	 	induced	mating (sensu Saccharomyces)	molecular_function unknown	integral membrane protein
+NOT3	YIL038C	0.616084	0.697018	SK1	 	transcription	not yet annotated	not yet annotated
+YIL060W	YIL060W	0.790379	0.726568	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+GDA1	YEL042W	0.655944	0.673598	 	 	not yet annotated	guanosine-diphosphatase	not yet annotated
+REM50	YLL002W	0.682628	0.743566	SK1	 	not yet annotated	molecular_function unknown	not yet annotated
+YLL053C	YLL053C	0.607862	0.766585	 	repressed	biological_process unknown	molecular_function unknown	not yet annotated
+SSK1	YLR006C	0.791349	0.742394	 	 	osmosensory signaling pathway via two-component system	enzyme activator*	cellular_component unknown
+UBR2	YLR024C	0.694474	0.796411	 	 	polyubiquitylation*	ubiquitin--protein ligase	cellular_component unknown
+RPS10A	YOR293W	0.766264	0.540882	both	repressed	protein biosynthesis	structural protein of ribosome	cytosolic small ribosomal (40S) subunit
+YOR322C	YOR322C	0.674498	0.661786	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+GDS1	YOR355W	0.689934	0.672589	both	both	not yet annotated	molecular_function unknown	not yet annotated
+YOR359W	YOR359W	0.7194	0.757199	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+HTZ1	YOL012C	0.557845	0.59635	both	 	transcription regulation from Pol II promoter*	chromatin binding	chromatin*
+SHE4	YOR035C	0.684137	0.742361	 	 	not yet annotated	molecular_function unknown	not yet annotated
+TOM6	YOR045W	0.770189	0.741023	both	 	mitochondrial translocation	protein transporter	mitochondrial outer membrane translocase complex
+YOR051C	YOR051C	0.565124	0.616739	 	repressed	biological_process unknown	molecular_function unknown	nucleus
+YOR091W	YOR091W	0.603771	0.676242	 	repressed	biological_process unknown	molecular_function unknown	cytoplasm
+KSP1	YHR082C	0.749353	0.707815	 	 	biological_process unknown	protein kinase	not yet annotated
+FIG2	YCR089W	0.71873	0.757704	 	repressed	mating (sensu Saccharomyces)	not yet annotated	not yet annotated
+YPL180W	YPL180W	0.529423	0.38211	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YPL101W	YPL101W	0.754857	0.71693	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+ALF1	YNL148C	0.423739	0.471536	 	 	post-chaperonine tubulin folding pathway*	cochaperone	microtubule
+CPR7	YJR032W	0.743348	0.582237	 	 	biological_process unknown	peptidylprolyl isomerase	cytoplasm
+APS2	YJR058C	0.762393	0.770119	 	 	not yet annotated	not yet annotated	not yet annotated
+UBP2	YOR124C	0.790675	0.795573	 	 	deubiquitylation	ubiquitin-specific protease	cytoplasm
+YOR138C	YOR138C	0.765417	0.786521	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+RUD3	YOR216C	0.619624	0.758924	 	 	not yet annotated	molecular_function unknown	not yet annotated
+YOR238W	YOR238W	0.714874	0.680558	SK1	 	biological_process unknown	molecular_function unknown	not yet annotated
+HOC1	YJR075W	0.686531	0.767901	SK1	 	cell wall mannoprotein biosynthesis*	alpha-1,6-mannosyltransferase	mannosyltransferase complex
+sod1	YJR104C	0.675208	0.791484	W303	 	not yet annotated	superoxide dismutase	not yet annotated
+YLR065C	YLR065C	0.716355	0.648756	SK1	 	biological_process unknown	molecular_function unknown	not yet annotated
+LEE1	YPL054W	0.610159	0.64926	Both	 	biological_process unknown	molecular_function unknown	not yet annotated
+KTR6	YPL053C	0.744951	0.790398	W303	 	cell wall organization and biogenesis*	mannosylphosphate transferase	membrane fraction
+DIG1	YPL049C	0.721294	0.762144	SK1	 	invasive growth	not yet annotated	not yet annotated
+HTM1	YHR204W	0.514258	0.520815	 	 	not yet annotated	not yet annotated	not yet annotated
+YHR207C	YHR207C	0.78286	0.766094	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YAF9	YNL107W	0.738041	0.602073	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+PHO23	YNL097C	0.51154	0.749447	 	 	not yet annotated	not yet annotated	not yet annotated
+YBL006C	YBL006C	0.665889	0.578875	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+APL3	YBL037W	0.710253	0.751775	 	 	not yet annotated	not yet annotated	not yet annotated
+HHF1	YBR009C	0.593592	0.623975	W303	 	not yet annotated	not yet annotated	nucleosome
+BAP2	YBR068C	0.7004	0.789912	 	 	transport	not yet annotated	not yet annotated
+YBR077C	YBR077C	0.721992	0.758386	SK1	 	biological_process unknown	molecular_function unknown	not yet annotated
+ECM33	YBR078W	0.440439	0.621354	SK1	repressed	not yet annotated	molecular_function unknown	not yet annotated
+SIF2	YBR103W	0.570212	0.791198	Both	 	not yet annotated	molecular_function unknown	not yet annotated
+YBR134W	YBR134W	0.590671	0.762658	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+YBR168W	YBR168W	0.675783	0.545094	SK1	induced	biological_process unknown	molecular_function unknown	not yet annotated
+NGR1	YBR212W	0.65332	0.71543	 	 	biological_process unknown	not yet annotated	not yet annotated
+aor1	YBR231C	0.60623	0.663273	Both	induced	not yet annotated	molecular_function unknown	not yet annotated
+YCL016C	YCL016C	0.680049	0.615834	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+ste50	YCL032W	0.701976	0.76607	 	 	not yet annotated	not yet annotated	not yet annotated
+YCR017C	YCR017C	0.644935	0.720619	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+GPR1	YDL035C	0.722907	0.787432	 	 	pseudohyphal growth*	G-protein coupled receptor	plasma membrane
+IDP1	YDL066W	0.769442	0.70347	Both	 	glutamate biosynthesis*	isocitrate dehydrogenase (NADP+)	mitochondrion
+pph21	YDL134C	0.674537	0.73045	SK1	 	protein biosynthesis*	protein phosphatase type 2A	protein phosphatase type 2A
+YGL140C	YGL140C	0.784115	0.708561	 	 	biological_process unknown	not yet annotated	not yet annotated
+rad54	YGL163C	0.734712	0.679534	 	induced	DNA repair	not yet annotated	not yet annotated
+HOS2	YGL194C	0.707778	0.756653	 	 	establishment and/or maintenance of chromatin architecture*	histone deacetylase	histone deacetylase complex
+rme1	YGR044C	0.798103	0.739887	W303	 	meiosis	transcription factor	not yet annotated
+RSC1	YGR056W	0.743299	0.730619	 	 	chromatin modeling	molecular_function unknown	nucleosome remodeling complex
+UFD4	YKL010C	0.751726	0.771757	 	 	polyubiquitylation*	ubiquitin--protein ligase	cellular_component unknown
+PAN3	YKL025C	0.791322	0.797697	 	 	not yet annotated	poly(A)-specific ribonuclease	not yet annotated
+ELM1	YKL048C	0.670628	0.687315	 	 	protein amino acid phosphorylation*	protein kinase	cytokinetic ring (sensu Saccharomyces)
+HSL1	YKL101W	0.769433	0.718091	W303	 	protein amino acid phosphorylation*	protein kinase	septin ring
+YKR029C	YKR029C	0.586758	0.563549	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+EST2	YLR318W	0.61655	0.509909	 	 	not yet annotated	not yet annotated	not yet annotated
+VID22	YLR373C	0.660965	0.491802	SK1	 	not yet annotated	molecular_function unknown	not yet annotated
+YML076C	YML076C	0.767443	0.754841	 	 	biological_process unknown	molecular_function unknown	not yet annotated
+CLB2	YPR119W	0.655106	0.693702	 	 	G2/M transition of mitotic cell cycle*	G2/M-specific cyclin	cellular_component unknown
+sir1	YKR101W	0.635099	0.744446	 	induced	chromatin silencing at HML and HMR (sensu Saccharomyces)*	not yet annotated	chromatin silencing complex
