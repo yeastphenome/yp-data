@@ -1,0 +1,2 @@
+478	hom | sporulation efficiency | sporulation medium [unknown] | Deutschbauer AM~Davis RW, 2002
+16004	hom | growth (culture turbidity) | post-germination (YPD [standard], sporulation medium [unknown]) | Deutschbauer AM~Davis RW, 2002
