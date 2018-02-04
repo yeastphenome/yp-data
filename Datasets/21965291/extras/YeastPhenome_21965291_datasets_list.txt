@@ -1,0 +1,8 @@
+16128	hap a | growth (exponential growth rate) | temperature [30°C] | Zakrzewska A~Smits GJ, 2011
+16129	hap a | growth (exponential growth rate) | temperature [38ºC] | Zakrzewska A~Smits GJ, 2011
+16130	hap a | growth (CFU) | hydrogen peroxide [10 mM], time [10 min], temperature [30°C] | Zakrzewska A~Smits GJ, 2011
+16131	hap a | growth (CFU) | acetic acid [327 mM], time [10 min], temperature [30°C] | Zakrzewska A~Smits GJ, 2011
+16132	hap a | growth (CFU) | time [10 min], temperature [30°C], temperature [48ºC] | Zakrzewska A~Smits GJ, 2011
+16133	hap a | growth (CFU) | hydrogen peroxide [10 mM], time [10 min], temperature [38ºC] | Zakrzewska A~Smits GJ, 2011
+16134	hap a | growth (CFU) | acetic acid [327 mM], time [10 min], temperature [38ºC] | Zakrzewska A~Smits GJ, 2011
+16135	hap a | growth (CFU) | time [10 min], temperature [38ºC], temperature [48ºC] | Zakrzewska A~Smits GJ, 2011
