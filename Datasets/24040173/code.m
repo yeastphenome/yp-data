@@ -14,7 +14,7 @@ novo_gonzalez_2013.pmid = 24040173;
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
-%% Load the data
+%% Load the data (HOM)
 
 %% Phase 1
 [FILENAMES{end+1}, data1] = read_data('xlsread','./raw_data/Only original foldchanges/Direct comparison/Phase I/HOP_t0vsYPD10 (dir) PhI.xlsx', 'HOPt0vsYPD10_t0');
@@ -135,20 +135,125 @@ hit_data4 = cell2mat(hit_data4);
 hit_strains_phaseII = hit_strains3(ind1);
 hit_data_phaseII = hit_data3(ind1) - hit_data4(ind2);
 
+%% Load the data (HET)
+
+%% Phase 1
+[FILENAMES{end+1}, data1] = read_data('xlsread','./raw_data/Only original foldchanges/Direct comparison/Phase I/HIP_t0vsYPD20 (dir) PhI.xlsx', 'HIPt0vsYPD20_t0');
+[FILENAMES{end+1}, data2] = read_data('xlsread','./raw_data/Only original foldchanges/Direct comparison/Phase I/HIP_t0vsMS20 (dir) PhI.xlsx', 'HIPt0vsMS20_tr0');
+
+% Get the list of ORFs and the correponding data 
+% (this part usually changes significantly based on the format of the raw data file)
+hit_strains1 = data1(2:end,1);
+hit_data1 = data1(2:end,2);
+
+hit_strains2 = data2(2:end,1);
+hit_data2 = data2(2:end,2);
+
+% Get ORFs
+hit_strains1 = cellfun(@(x) regexp(x, '([\w\-])*(?=::)', 'match'), hit_strains1);
+hit_strains2 = cellfun(@(x) regexp(x, '([\w\-])*(?=::)', 'match'), hit_strains2);
+
+% Eliminate all white spaces & capitalize
+hit_strains1 = clean_orf(hit_strains1);
+hit_strains2 = clean_orf(hit_strains2);
+
+% If in gene name form, transform into ORF name
+hit_strains1 = translate(hit_strains1);
+hit_strains2 = translate(hit_strains2);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hit_strains1));
+disp(hit_strains1(inds));  
+
+hit_strains1(inds) = [];
+hit_data1(inds) = [];
+
+
+inds = find(~is_orf(hit_strains2));
+disp(hit_strains2(inds));  
+
+hit_strains2(inds) = [];
+hit_data2(inds) = [];
+
+hit_data1 = cell2mat(hit_data1);
+hit_data2 = cell2mat(hit_data2);
+
+% If the same strain is present more than once, average its values
+[hit_strains1, hit_data1] = grpstats(hit_data1, hit_strains1, {'gname','mean'});
+[hit_strains2, hit_data2] = grpstats(hit_data2, hit_strains2, {'gname','mean'});
+
+[~,ind1,ind2] = intersect(hit_strains1, hit_strains2);
+hit_strains_phaseI_het = hit_strains1(ind1);
+hit_data_phaseI_het = hit_data1(ind1) - hit_data2(ind2);
+
+%% Phase 2
+
+[FILENAMES{end+1}, data3] = read_data('xlsread','./raw_data/Only original foldchanges/Direct comparison/Phase II/HIP_t0vsYPD20 (dir) PhII.xlsx', 'HIPt0vsYPD20_t0');
+[FILENAMES{end+1}, data4] = read_data('xlsread','./raw_data/Only original foldchanges/Direct comparison/Phase II/HIPt0vsHIP10 (dir) PhII.xlsx', 'HIPt0vsHIP10_out0');
+
+% Get the list of ORFs and the correponding data 
+% (this part usually changes significantly based on the format of the raw data file)
+hit_strains3 = data3(2:end,1);
+hit_data3 = data3(2:end,2);
+
+hit_strains4 = data4(2:end,1);
+hit_data4 = data4(2:end,3);
+  
+% Get ORFs
+hit_strains3 = cellfun(@(x) regexp(x, '([\w\-])*(?=::)', 'match'), hit_strains3);
+hit_strains4 = cellfun(@(x) regexp(x, '([\w\-])*(?=::)', 'match'), hit_strains4);
+
+% Eliminate all white spaces & capitalize
+hit_strains3 = clean_orf(hit_strains3);
+hit_strains4 = clean_orf(hit_strains4);
+
+% If in gene name form, transform into ORF name
+hit_strains3 = translate(hit_strains3);
+hit_strains4 = translate(hit_strains4);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(hit_strains3));
+disp(hit_strains3(inds));  
+
+hit_strains3(inds) = [];
+hit_data3(inds) = [];
+
+
+inds = find(~is_orf(hit_strains4));
+disp(hit_strains4(inds));  
+
+hit_strains4(inds) = [];
+hit_data4(inds) = [];
+
+hit_data3 = cell2mat(hit_data3);
+hit_data4 = cell2mat(hit_data4);
+
+% If the same strain is present more than once, average its values
+[hit_strains3, hit_data3] = grpstats(hit_data3, hit_strains3, {'gname','mean'});
+[hit_strains4, hit_data4] = grpstats(hit_data4, hit_strains4, {'gname','mean'});
+
+[~,ind1,ind2] = intersect(hit_strains3, hit_strains4);
+hit_strains_phaseII_het = hit_strains3(ind1);
+hit_data_phaseII_het = hit_data3(ind1) - hit_data4(ind2);
+
 %%
 
-hit_strains = unique([hit_strains_phaseI; hit_strains_phaseII]);
-hit_data = nan(length(hit_strains), 2);
+hit_strains = unique([hit_strains_phaseI; hit_strains_phaseII; hit_strains_phaseI_het; hit_strains_phaseII_het]);
+hit_data = nan(length(hit_strains), 4);
 
 [~,ind1,ind2] = intersect(hit_strains_phaseI, hit_strains);
 hit_data(ind2,1) = hit_data_phaseI(ind1);
 [~,ind1,ind2] = intersect(hit_strains_phaseII, hit_strains);
 hit_data(ind2,2) = hit_data_phaseII(ind1);
+[~,ind1,ind2] = intersect(hit_strains_phaseI_het, hit_strains);
+hit_data(ind2,3) = hit_data_phaseI_het(ind1);
+[~,ind1,ind2] = intersect(hit_strains_phaseII_het, hit_strains);
+hit_data(ind2,4) = hit_data_phaseII_het(ind1);
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [197 198]';
+hit_data_ids = [197; 198; 15993; 15994];
 
 %% Prepare final dataset
 

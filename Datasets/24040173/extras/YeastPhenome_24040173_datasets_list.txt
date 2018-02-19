@@ -1,2 +1,4 @@
 197	hom | growth (relative abundance in pooled culture) | synthetic must, Phase I [10 generations] | Novo M~Gonzalez R, 2013
 198	hom | growth (relative abundance in pooled culture) | synthetic must, Phase II [10 generations] | Novo M~Gonzalez R, 2013
+15993	het | growth (relative abundance in pooled culture) | synthetic must, Phase I [10 generations] | Novo M~Gonzalez R, 2013
+15994	het | growth (relative abundance in pooled culture) | synthetic must, Phase II [10 generations] | Novo M~Gonzalez R, 2013
