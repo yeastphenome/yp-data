@@ -1,0 +1,2 @@
+16126	hap a | growth (colony size) | expression of the phospholipase A2 Atx [GAL] | Mattiazzi M~Petrovic U, 2010
+16127	hap a | growth (colony volume) | expression of the phospholipase A2 Atx [GAL] | Mattiazzi M~Petrovic U, 2010
