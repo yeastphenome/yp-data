@@ -1,0 +1,3 @@
+15997	hap a | aberrant peroxisomes (Cherry-PTS1 GFP-Ant1) | standard [standard] | Cohen Y~Schuldiner M, 2014
+15998	hap a | number of peroxisomes (Cherry-PTS1 GFP-Ant1) | standard [standard] | Cohen Y~Schuldiner M, 2014
+15999	hap a | transport to/from peroxisomes (Pts1) | standard [standard] | Cohen Y~Schuldiner M, 2014
