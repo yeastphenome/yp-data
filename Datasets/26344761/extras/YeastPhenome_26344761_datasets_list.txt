@@ -1,0 +1,1 @@
+16139	hap a | transport to vacuoles (GFP-Yif1) | minimal complete -Ura [standard], temperature [26ºC] | Dobzinski N~Gerst JE, 2015
