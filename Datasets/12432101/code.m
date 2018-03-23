@@ -79,6 +79,11 @@ disp(tested_strains(inds));
 % Finally, take the unique set
 tested_strains = unique(tested_strains);
 
+% Separate essentials and non-essentials
+load essential_genes_151215.mat
+inds_essential = find(ismember(tested_strains, essential_genes));
+tested_strains(inds_essential) = [];
+
 % Make sure the that all the hits are part of the tested set
 [missing,~] = setdiff(hit_strains, tested_strains);
 disp(missing);
