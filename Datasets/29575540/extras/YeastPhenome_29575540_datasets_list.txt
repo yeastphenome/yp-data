@@ -1,0 +1,2 @@
+16173	hap alpha | chronological lifespan | nonrestricted diet medium (glutamine [25 mM], minimal complete [standard]) | Campos SE~DeLuna A, 2018
+16174	hap alpha | chronological lifespan | dietary-restricted medium (gamma-aminobutyric acid [25 mM], minimal complete [standard]) | Campos SE~DeLuna A, 2018
