@@ -1,0 +1,14 @@
+16167	hom | growth (relative abundance in pooled culture) | minimal complete [standard] | Salignon J~Yvert G, 2018
+16168	hom | growth (relative abundance in pooled culture) | sodium chloride [0.2 M], minimal complete [standard] | Salignon J~Yvert G, 2018
+16169	hom | growth (relative abundance in pooled culture) | salt stress oscillation (sodium chloride [0.2 M], minimal complete [standard], time [6 h]) | Salignon J~Yvert G, 2018
+16170	hom | growth (relative abundance in pooled culture) | minimal complete -Met [standard] | Salignon J~Yvert G, 2018
+16171	hom | growth (relative abundance in pooled culture) | methionine [1 mM], minimal complete -Met [standard] | Salignon J~Yvert G, 2018
+16172	hom | growth (relative abundance in pooled culture) | methionine oscillation (methionine [1 mM], minimal complete -Met [standard], time [6 h]) | Salignon J~Yvert G, 2018
+16175	hom | growth (relative abundance in pooled culture) | salt stress oscillation (sodium chloride [0.2 M], minimal complete [standard], time [12 h]) | Salignon J~Yvert G, 2018
+16176	hom | growth (relative abundance in pooled culture) | salt stress oscillation (sodium chloride [0.2 M], minimal complete [standard], time [18 h]) | Salignon J~Yvert G, 2018
+16177	hom | growth (relative abundance in pooled culture) | salt stress oscillation (sodium chloride [0.2 M], minimal complete [standard], time [24 h]) | Salignon J~Yvert G, 2018
+16178	hom | growth (relative abundance in pooled culture) | salt stress oscillation (sodium chloride [0.2 M], minimal complete [standard], time [42 h]) | Salignon J~Yvert G, 2018
+16179	hom | growth (relative abundance in pooled culture) | methionine oscillation (methionine [1 mM], minimal complete -Met [standard], time [12 h]) | Salignon J~Yvert G, 2018
+16180	hom | growth (relative abundance in pooled culture) | methionine oscillation (methionine [1 mM], minimal complete -Met [standard], time [18 h]) | Salignon J~Yvert G, 2018
+16181	hom | growth (relative abundance in pooled culture) | methionine oscillation (methionine [1 mM], minimal complete -Met [standard], time [24 h]) | Salignon J~Yvert G, 2018
+16182	hom | growth (relative abundance in pooled culture) | methionine oscillation (methionine [1 mM], minimal complete -Met [standard], time [42 h]) | Salignon J~Yvert G, 2018
