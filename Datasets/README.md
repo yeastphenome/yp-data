@@ -46,5 +46,5 @@ The list of conversions includes:
 Help
 ----
 
-Please direct questions & comments to Anastasia Baryshnikova (<abarysh@princeton.edu>) or check in regularly at <http://www.yeastphenome.org>.
+Please direct questions & comments to Anastasia Baryshnikova (<abaryshnikova@calicolabs.com>) or check in regularly at <http://www.yeastphenome.org>.
 
