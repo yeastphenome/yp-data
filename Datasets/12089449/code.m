@@ -47,10 +47,10 @@ het_data(~cellfun(@isnumeric, het_data)) = {NaN};
 het_data = cell2mat(het_data);
 
 ind_wt = find(strcmp('WT', hap_strains));
-hap_data = hap_data ./ repmat(hap_data(ind_wt,:),length(hap_data),1);
+hap_data = hap_data ./ repmat(hap_data(ind_wt,:),length(hap_data),1) - 1;
 
 ind_wt = find(strcmp('NA', het_strains));  % Seems to be the WT based on the description of the data in the paper
-het_data = het_data ./ repmat(het_data(ind_wt,:),length(het_data),1);
+het_data = het_data ./ repmat(het_data(ind_wt,:),length(het_data),1) - 1;
 
 % Find anything that doesn't look like an ORF
 inds = find(~is_orf(hap_strains));
