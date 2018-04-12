@@ -38,6 +38,12 @@ disp(hit_strains(inds));
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
+% Original values = log2(YPD/5FOA). Long-lived mutants are relatively more
+% abundant in 5-FOA than in YPD (they keep the URA3::HML locus repressed
+% longer than other mutants),hence their log2 values will be negative. Need
+% to reverse to follow the convention.
+hit_data = -hit_data; 
+
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
