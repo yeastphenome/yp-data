@@ -1,10 +1,19 @@
 YeastPhenome.org Dataset README File
 ====================================
 
-Disclaimer
-----------
+Warning
+-------
 
-THESE DATA MAY CONTAIN ERRORS. YeastPhenome.org is currently running in beta version. The data are available for download, but we cannot guarantee that no errors or code bugs have been introduced by the processing pipeline. This warning will be removed after all cross-checks and validations have been completed. In the meantime, please, be careful when using the data.
+THESE DATA MAY CONTAIN ERRORS. YeastPhenome.org is running in beta version. The data are available for download, but we cannot guarantee the absence of errors or code bugs introduced during processing. This warning will be removed after all cross-checks and validations have been completed. In the meantime, please, be careful when using the data.
+
+
+Citations
+---------
+
+If you use yeast phenome data in a talk or a manuscript, please acknowledge the data source by citing the original publication and the yeast phenome database.
+The database should be cited as follows:
+
+> Database of Systematic Phenotypic Screens in Yeast, www.yeastphenome.org, accessed on XXXX-XX-XX.
 
 
 The Basics
