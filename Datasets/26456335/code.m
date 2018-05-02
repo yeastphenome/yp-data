@@ -100,20 +100,20 @@ data_b_u_rls_ratio_std = data_b_u_rls_ratio .* sqrt((data_b_u_rls_std./data_b_u_
 % The authors subsequently retested these strains but the raw version of that data is
 % (unfortunately) not recoverable. Only the published results.
 % Since all but one of the published (most reliable) strains has n > 5,
-% we've decided to set the n < 5 strains to 0 (instead of NaN) to indicate that they are
+% we've decided to set the n < 5 strains to 1 (instead of NaN) to indicate that they are
 % likely neither short-lived nor long-lived (instead of "not tested")
 
 inds = find(data_b_u_rls_nr <= 5 & data_b_u_rls_ref_nr <= 5);
-data_b_u_rls_ratio(inds) = 0;
-data_b_u_rls_ratio_std(inds) = 0;
+data_b_u_rls_ratio(inds) = 1;
+data_b_u_rls_ratio_std(inds) = NaN;
 
-data_b_u_rls_mean(inds) = 0;
-data_b_u_rls_std(inds) = 0;
-data_b_u_rls_nr(inds) = 0;
+data_b_u_rls_mean(inds) = 1;
+data_b_u_rls_std(inds) = NaN;
+% data_b_u_rls_nr(inds) = 0;
 
-data_b_u_rls_ref_mean(inds) = 0;
-data_b_u_rls_ref_std(inds) = 0;
-data_b_u_rls_ref_nr(inds) = 0;
+data_b_u_rls_ref_mean(inds) = 1;
+data_b_u_rls_ref_std(inds) = NaN;
+% data_b_u_rls_ref_nr(inds) = 0;
 
 %% The published data is effectively a subset of the raw data
 % 
