@@ -1,3 +1,6 @@
-49	hap a | growth (exponential growth rate) | sodium chloride [0.85 M] | Warringer J~Blomberg A, 2003
-50	hap a | growth (lag phase) | sodium chloride [0.85 M] | Warringer J~Blomberg A, 2003
-51	hap a | growth (stationary phase cell density) | sodium chloride [0.85 M] | Warringer J~Blomberg A, 2003
+49	hap a | growth (exponential growth rate) | sodium chloride [0.85 M] | minimal complete | Warringer J~Blomberg A, 2003
+50	hap a | growth (lag phase) | sodium chloride [0.85 M] | minimal complete | Warringer J~Blomberg A, 2003
+51	hap a | growth (stationary phase cell density) | sodium chloride [0.85 M] | minimal complete | Warringer J~Blomberg A, 2003
+16183	hap a | growth (exponential growth rate) | standard | minimal complete | Warringer J~Blomberg A, 2003
+16184	hap a | growth (lag phase) | standard | minimal complete | Warringer J~Blomberg A, 2003
+16185	hap a | growth (stationary phase cell density) | standard | minimal complete | Warringer J~Blomberg A, 2003
