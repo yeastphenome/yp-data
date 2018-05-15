@@ -59,7 +59,6 @@ hit_data = cell2mat(hit_data);
 % Normalize by UNTREATED sample
 hit_data(:,2) = hit_data(:,2) - hit_data(:,1);
 hit_data(:,3) = hit_data(:,3) - hit_data(:,1);
-hit_data(:,1) = [];
 
 % Average data for identical ORFs that appear multiple times
 [hit_orfs,hit_data] = grpstats(hit_data, hit_orfs, {'gname','mean'});
@@ -67,7 +66,7 @@ hit_data(:,1) = [];
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [52; 53];
+hit_data_ids = [16186; 52; 53];
 
 %% Prepare final dataset
 

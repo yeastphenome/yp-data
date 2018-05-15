@@ -1,2 +1,3 @@
-52	hap a | growth (AUC) | hydroxyurea [50 mM] | Hartman JL 4th~Tippery NP, 2004
-53	hap a | growth (AUC) | hydroxyurea [150 mM] | Hartman JL 4th~Tippery NP, 2004
+52	hap a | growth (AUC) | hydroxyurea [50 mM] | minimal complete | Hartman JL 4th~Tippery NP, 2004
+53	hap a | growth (AUC) | hydroxyurea [150 mM] | minimal complete | Hartman JL 4th~Tippery NP, 2004
+16186	hap a | growth (AUC) | standard | minimal complete | Hartman JL 4th~Tippery NP, 2004
