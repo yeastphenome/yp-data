@@ -18,84 +18,103 @@ datasets.standard_name = d{2};
 
 % Load the phenotype mapping file
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/phenotype_mapping.xlsx','Sheet1');
-pm.datasetid0 = data(2:end,1);
-pm.who = data(2:end,7);
-pm.what = data(2:end,8);
-pm.when = data(2:end,6);
-pm.how = data(2:end,9);
-pm.condition = data(2:end,3);
-
-pm.datasetid0 = cellfun(@num2str, pm.datasetid0,'UniformOutput',0);
-
-for i = 1 : length(pm.condition)
-    inds = regexp(pm.condition{i}, ' ');
-    pm.condition{i} = pm.condition{i}(1:inds(end-2)-1);
-end
-
-pm = build_phenotype_name(pm);
-
-[phenotypes, ia, ic] = unique(pm.ph);
+pm.experiment = cell2mat(data(2:end,1));
+pm.datasetid = cell2mat(data(2:end,2));
 
 hit_data_files = dir('./raw_data/');
 hit_data_files_names = {hit_data_files(:).name}';
 inds = find(cellfun(@isempty, regexp(hit_data_files_names,'^[0-9]{1,2}\_')));
 hit_data_files_names(inds) = [];
 
-phenotypes_hit_strains = cell(size(phenotypes));
-phenotypes_hit_data = cell(size(phenotypes));
+hit_dataset_ids = unique(pm.datasetid);
 
-for i = 1 : length(phenotypes)
-    
-        % Find dataset_ids
-        inds = find(ic == i);
-        
-        % Find the files
-        e = strjoin(pm.datasetid0(inds),'|');
-        indfiles = find(~cellfun(@isempty, regexp(hit_data_files_names, ['^(' e ')\_'])));
+phenotypes_hit_strains = cell(length(hit_dataset_ids),1);
+phenotypes_hit_data = cell(length(hit_dataset_ids),1);
 
-        all_hit_strains = [];
-        all_hit_data = [];
-        
-        for j = 1 : length(indfiles)
-            % Load hit strains
-            [FILENAMES{end+1}, data] = read_data('textscan',['./raw_data/' hit_data_files_names{indfiles(j)}], '%s %f %*[^\n]');
-
-            % Get the list of ORFs and the correponding data 
-            hit_strains = data{1};
-
-            % Get the data itself
-            hit_data = exp(-data{2});   % this step is necessary to combine sensitivity and resistance data together (otherwise, they both have positive & negative values)
-            if ~isempty(regexp(hit_data_files_names{indfiles(j)},'sen'))
-                hit_data = -hit_data;
-            end
-    
-            % Eliminate all white spaces & capitalize
-            hit_strains = clean_orf(hit_strains);
-
-            % Find anything that doesn't look like an ORF
-            inds = find(~is_orf(hit_strains));
-            disp(hit_strains(inds)); 
+for i = 1 : length(hit_data_files_names)
             
-            all_hit_strains = [all_hit_strains; hit_strains];
-            all_hit_data = [all_hit_data; hit_data];
+        % Get the dataset id
+        t = regexp(hit_data_files_names{i}, '(\d)+(?=\_)','match');
+        t = str2num(t{1});
+        
+        dt = pm.datasetid(pm.experiment==t);
+
+        % Load hit strains
+        [FILENAMES{end+1}, data] = read_data('textscan',['./raw_data/' hit_data_files_names{i}], '%s %f %*[^\n]');
+
+        % Get the list of ORFs and the correponding data 
+        hit_strains = data{1};
+
+        % Get the data itself
+        hit_data = data{2};
+        if ~isempty(regexp(hit_data_files_names{i},'sen'))
+            hit_data = -hit_data;
         end
 
+        % Eliminate all white spaces & capitalize
+        hit_strains = clean_orf(hit_strains);
+        
+        % If in gene name form, transform into ORF name
+        hit_strains = translate(hit_strains);
+
+        % Find anything that doesn't look like an ORF
+        inds = find(~is_orf(hit_strains));
+        disp(hit_strains(inds)); 
+        
+        phenotypes_hit_strains{hit_dataset_ids==dt} = [phenotypes_hit_strains{hit_dataset_ids==dt}; hit_strains];
+        phenotypes_hit_data{hit_dataset_ids==dt} = [phenotypes_hit_data{hit_dataset_ids==dt}; hit_data];
+
+end
+
+for i = 1 : length(hit_dataset_ids)
+
     % If the same strain is present more than once, average its values
-    [all_hit_strains, all_hit_data] = grpstats(all_hit_data, all_hit_strains, {'gname','mean'});
+    [all_hit_strains, all_hit_data] = grpstats(phenotypes_hit_data{i}, phenotypes_hit_strains{i}, {'gname','mean'});
     
     phenotypes_hit_strains{i} = all_hit_strains;
     phenotypes_hit_data{i} = all_hit_data;
+    
 end
 
 % Combine all data together into a single matrix
 all_orfs = unique(vertcat(phenotypes_hit_strains{:}));
-all_data = nan(length(all_orfs),length(phenotypes));
-for i = 1 : length(phenotypes)
+all_data = nan(length(all_orfs),length(hit_dataset_ids));
+for i = 1 : length(hit_dataset_ids)
     [~,ind1,ind2] = intersect(all_orfs, phenotypes_hit_strains{i});
     all_data(ind1,i) = phenotypes_hit_data{i}(ind2);
 end
 
-%% Second set of data: morphology
+%% Second set of data: YPD
+
+[FILENAMES{end+1}, data_ypd] = read_data('readtable','./raw_data/ypd.txt','delimiter','\t');
+all_orfs_ypd = data_ypd.ORF;
+all_data_ypd = -data_ypd.AverageRatio;
+
+all_orfs_ypd = clean_orf(all_orfs_ypd);
+
+% If in gene name form, transform into ORF name
+all_orfs_ypd = translate(all_orfs_ypd);
+
+% Find anything that doesn't look like an ORF
+inds = find(~is_orf(all_orfs_ypd));
+disp(all_orfs_ypd(inds)); 
+
+% If the same strain is present more than once, average its values
+[all_orfs_ypd, all_data_ypd] = grpstats(all_data_ypd, all_orfs_ypd, {'gname','mean'});
+
+hit_dataset_ids_ypd = [16187];
+
+all_orfs2 = unique([all_orfs; all_orfs_ypd]);
+all_datasets2 = [hit_dataset_ids; hit_dataset_ids_ypd];
+all_data2 = zeros(length(all_orfs2), length(all_datasets2));
+
+[~,ind1,ind2] = intersect(all_orfs, all_orfs2);
+all_data2(ind2,1:length(hit_dataset_ids)) = all_data(ind1,:);
+[~,ind1,ind2] = intersect(all_orfs_ypd, all_orfs2);
+all_data2(ind2,length(hit_dataset_ids)+1:end) = all_data_ypd(ind1,:);
+
+
+%% Third set of data: morphology
 
 [FILENAMES{end+1}, data] = read_data('textscan','./raw_data/Cell_Morph_Screen_Table.txt','%s %s %s %s','delimiter','\t');
 
@@ -115,21 +134,18 @@ inds = find(strcmp('YMR41W', hit_strains));    % ambiguos typo, can't be fixed
 hit_strains(inds) = [];
 hit_data(inds) = [];
 
+hit_strains = translate(hit_strains);
+
+
 % Transform data
 [FILENAMES{end+1}, data] = read_data('xlsread','./raw_data/phenotype_mapping2.xlsx','Sheet1');
-pm2.who = data(2:end,2);
-pm2.what = data(2:end,3);
-pm2.where = data(2:end,4);
-pm2.when = data(2:end,5);
-pm2.how = data(2:end,6);
+
+pm2.datasetid = cell2mat(data(2:end,8));
 pm2.coeff = cell2mat(data(2:end,7));
 pm2.orig = data(2:end,1);
 
-pm2 = build_phenotype_name(pm2);
-
-morphology_phenotypes = unique(pm2.ph);
-
-hit_data2 = zeros(length(hit_strains), length(morphology_phenotypes));
+hit_dataset_ids2 = unique(pm2.datasetid);
+hit_data2 = zeros(length(hit_strains), length(hit_dataset_ids2));
 
 for i = 1 : length(hit_strains)
     
@@ -146,11 +162,11 @@ for i = 1 : length(hit_strains)
             ind1 = find(strcmp(tmp2{1}, pm2.orig));
             
             if ~isempty(ind1)   % if isempty, the phenotype is some of the minor ones and we don't record it.
-                ind2 = find(strcmp(pm2.ph{ind1}, morphology_phenotypes));
-                hit_data2(i,ind2) = str2num(tmp2{2});
-                if strcmp(pm2.what{ind1}, 'size')
-                    hit_data2(i,ind2) = pm2.coeff(ind1) .* hit_data2(i,ind2);
-                end
+                dataset_id = pm2.datasetid(ind1);
+                coeff = pm2.coeff(ind1);
+                dataset_indx = find(hit_dataset_ids2 == dataset_id);
+            
+                hit_data2(i,dataset_indx) = coeff * str2num(tmp2{2});
             end
         end        
     end
@@ -162,35 +178,29 @@ end
 
 %% Merge the growth data and the morphology data
 
-all_phenotypes3 = [phenotypes; morphology_phenotypes];
-all_orfs3 = unique([all_orfs; all_hit_strains2]);
-all_data3 = nan(length(all_orfs3), length(all_phenotypes3));
+all_dataset_ids3 = [all_datasets2; hit_dataset_ids2];
+all_orfs3 = unique([all_orfs2; all_hit_strains2]);
+all_data3 = nan(length(all_orfs3), length(all_dataset_ids3));
 
-[~,ind1,ind2] = intersect(all_orfs, all_orfs3);
-all_data3(ind2,1:length(phenotypes)) = all_data(ind1,:);
+[~,ind1,ind2] = intersect(all_orfs2, all_orfs3);
+all_data3(ind2,1:length(all_datasets2)) = all_data2(ind1,:);
 
 [~,ind1,ind2] = intersect(all_hit_strains2, all_orfs3);
-all_data3(ind2,length(phenotypes)+1:length(phenotypes)+length(morphology_phenotypes)) = all_hit_data2(ind1,:);
-
-[FILENAMES{end+1}, phenotype_datasetid] = read_data('textread','./extras/phenotype_datasetids.txt','%s %d','delimiter','\t');
-[~,ind1,ind2] = intersect(all_phenotypes3, phenotype_datasetid{1});
-
-hit_data_ids = zeros(length(all_phenotypes3),1);
-hit_data_ids(ind1) = phenotype_datasetid{2}(ind2);
+all_data3(ind2,length(all_datasets2)+1:end) = all_hit_data2(ind1,:);
 
 
 %% Prepare final dataset
 
 % Match the dataset ids with the dataset standard names
-[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
-hit_data_names = cell(size(hit_data_ids));
+[~,ind1,ind2] = intersect(datasets.id, all_dataset_ids3);
+hit_data_names = cell(size(all_dataset_ids3));
 hit_data_names(ind2) = datasets.standard_name(ind1);
 
 % If the dataset is quantitative:
 giaever_johnston_2002.orfs = all_orfs3;
 giaever_johnston_2002.ph = hit_data_names;
 giaever_johnston_2002.data = all_data3;
-giaever_johnston_2002.dataset_ids = hit_data_ids;
+giaever_johnston_2002.dataset_ids = all_dataset_ids3;
 
 %% Save
 

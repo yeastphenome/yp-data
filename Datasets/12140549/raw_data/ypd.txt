@@ -1,0 +1,619 @@
+ORF	Gene	Average Ratio	Gene Description
+YNL138W	SRV2	30.6	70-kDa adenylyl cyclase-associated protein, cytoskeleton organization and biogenesis*, cytoskeletal protein binding protein*, actin cortical patch (sensu Saccharomyces)
+YER070W	RNR1	22.3	ribonucleotide reductase, DNA replication, ribonucleoside-diphosphate reductase, cytosol
+YNL054W	VAC7	21.0	Integral vacuolar membrane protein,molecular_function unknown,
+YFL023W	FYV11	20.9	biological_process unknown, molecular_function unknown, cellular_component unknown
+YBR200W	BEM1	20.3	contains two SH3 domains
+YLR242C	ARV1	20.1	similar to Nup120p and C.elegans R05H5.5 protein and Nup120p, biological_process unknown, molecular_function unknown,
+YNL064C	YDJ1	19.6	yeast dnaJ homolog (nuclear envelope protein); heat shock protein
+YER014C-A	BUD25	19.0	bud site selection, biological_process unknown, molecular_function unknown, cellular_component unknown
+YLR240W	VPS34	18.9	phosphatidylinositol 3-kinase, protein phosphorylation*, protein kinase*, membrane fraction
+YJL176C	SWI3	18.8	transcription factor, chromatin modeling, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex
+YDR074W	TPS2	18.0	Trehalose-6-phosphate phosphatase, stress response*, trehalose phosphatase, alpha,alpha-trehalose-phosphate synthase (UDP-forming)
+YEL027W	CUP5	17.9	vacuolar ATPase V0 domain subunit c (17 kDa), endocytosis*, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YGR262C	BUD32	17.6	biological_process unknown, molecular_function unknown, cellular_component unknown
+YHR010W	RPL27A	17.1	Ribosomal protein L27A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YBL093C	ROX3	17.0	RNA polymerase II holoenzyme mediator subunit, transcription from Pol II promoter, RNA polymerase II transcription mediator, mediator complex
+YNL139C	RLR1	16.8	Involved in transcription, transcription,nucleus
+YMR205C	PFK2	16.7	phosphofructokinase beta subunit, glycolysis, 6-phosphofructokinase, 6-phosphofructokinase
+YER068W	MOT2	16.6	putative zinc finger protein, mating (sensu Saccharomyces),
+YLR235C		16.4	biological_process unknown, molecular_function unknown,
+YGR272C		16.4	biological_process unknown, molecular_function unknown,
+YKL057C	NUP120	16.2	100-kDa protein (predicted molecular weight is 120 kDa) with two leucine zipper motifs, coiled-coil region, and some homology to Nup133p, mRNA-nucleus export*, structural protein, nuclear pore
+YPR101W	SNT309	16.2	Component of a protein complex associated with the splicing factor Prp19p., mRNA splicing,
+YBR289W	SNF5	16.1	subunit of the chromatin remodeling Snf Swi complex, chromatin modeling, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex
+YJL188C	BUD19	15.9	biological_process unknown, molecular_function unknown,
+YLR244C	MAP1	15.5	methionine aminopeptidase,methionyl aminopeptidase,
+YPL268W	PLC1	14.8	phosphoinositide-specific phospholipase C, pseudohyphal growth*, 1-phosphatidylinositol-4,5-biphosphate phosphodiesterase, cellular_component unknown
+YMR142C	RPL13B	14.8	Ribosomal protein L13B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGL038C	OCH1	14.7	membrane-bound alpha-1,6-mannosyltransferase, N-linked glycoprotein maturation, alpha-1,6-mannosyltransferase,
+YDR245W	MNN10	14.7	galactosyltransferase, actin filament organization*, alpha-1,6-mannosyltransferase, mannosyltransferase complex
+YLR435W		14.6	biological_process unknown, molecular_function unknown,
+YFR001W	LOC1	14.5	Double-stranded RNA-binding protein
+YEL051W	VMA8	14.4	vacuolar ATPase V1 domain subunit D, vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YML010C-B		14.1	biological_process unknown, molecular_function unknown,
+YJL183W	MNN11	13.9	mannosyltransferase complex component, biological_process unknown,
+YGR167W	CLC1	13.7	Clathrin light chain
+YDL115C		13.6	biological_process unknown, molecular_function unknown,
+YEL044W		13.4	biological_process unknown, molecular_function unknown,
+YJL075C		13.4	biological_process unknown, molecular_function unknown,
+YLR320W		13.3	biological_process unknown, molecular_function unknown,
+YDR359C	VID21	13.3	vacuolar import degradation,molecular_function unknown,
+YDR017C	KCS1	13.1	Shows homology to basic leucine zipper family of transcription factors
+YPR067W	ISA2	13.0	Iron Sulfur Assembly -- IscA NifA homolog, iron transport, molecular_function unknown, mitochondrial intermembrane space
+YDR378C	LSM6	12.8	Sm-like protein,molecular_function unknown,
+YLR439W	MRPL4	12.7	Mitochondrial 60S ribosomal protein L4, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YMR089C	YTA12	12.6	mitochondrial membrane ATPase of the CDC48 PAS1 SEC18 (AAA) family, protein complex assembly*, adenosinetriphosphatase*, mitochondrial inner membrane
+YJL140W	RPB4	12.6	fourth-largest subunit of RNA polymerase II, transcription from Pol II promoter, DNA-directed RNA polymerase II, DNA-directed RNA polymerase II, core
+YDR300C	PRO1	12.6	gamma-glutamyl kinase,glutamate 5-kinase,
+YNL297C	MON2	12.5	molecular_function unknown
+YLR403W	SFP1	12.4	split zinc finger protein, biological_process unknown,
+YLR233C	EST1	12.4	involved in telomere length regulation
+YDL185W	TFP1	12.2	vacuolar ATPase V1 domain subunit A (69 kDa), vacuolar acidification*, hydrogen-transporting two-sector ATPase*, hydrogen-transporting ATPase V1 domain
+YER074W	RPS24A	12.2	40S ribosomal protein S24A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YCR047C	BUD23	12.2	Protein carboxyl methylase, biological_process unknown, molecular_function unknown,
+YPL129W	ANC1	12.1	transcription initiation factor TFIIF small subunit, transcription initiation from Pol II promoter*, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex*
+YIR026C	YVH1	12.0	nitrogen starvation-induced protein phosphatase, meiosis*, protein tyrosine phosphatase,
+YJL189W	RPL39	12.0	Ribosomal protein L39 (L46) (YL40), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YDR129C	SAC6	12.0	fibrim homolog (actin-filament bundling protein), endocytosis*, actin cross-linking, actin cortical patch (sensu Saccharomyces)*
+YPL050C	MNN9	12.0	Protein required for complex glycosylation, protein glycosylation,
+YGL240W	DOC1	11.8	component of the anaphase-promoting complex, ubiquitin-dependent protein degradation*, enzyme activator, anaphase-promoting complex
+YDR418W	RPL12B	11.6	Ribosomal protein L12B (L15B) (YL23), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YBR189W	RPS9B	11.6	Ribosomal protein S9B (S13) (rp21) (YS11), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YKR082W	NUP133	11.6	nuclear pore protein, mRNA-nucleus export*, structural protein, nuclear pore
+YDR264C	AKR1	11.5	Ankyrin repeat-containing protein, endocytosis*, molecular_function unknown, cellular_component unknown
+YAL047C	SPC72	11.4	component of spindle pole bodies, microtubule nucleation*, structural protein of cytoskeleton, outer plaque of spindle pole body
+YDR174W	HMO1	11.4	35 kDa protein belonging to the high mobility group (HMG) fanily of proteins
+YOR096W	RPS7A	11.2	Ribosomal protein S7A (rp30), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YLR382C	NAM2	11.2	mitochondrial leucyl tRNA synthetase,leucine--tRNA ligase,
+YKR024C	DBP7	11.2	putative RNA helicase, 35S primary transcript processing*, ATP dependent RNA helicase, nucleolus
+YDR477W	SNF1	11.1	protein serine threonine kinase, protein phosphorylation*, SNF1A/AMP-activated protein kinase, cytoplasm
+YNR052C	POP2	10.9	Putative transcription factor
+YGR036C	CAX4	10.9	CAX4p contains 3 short stretches of amino acids that are characteristic for a wide variety of phosphatases, including lipid phosphatases and a protein phosphatase.,molecular_function unknown,
+YLR447C	VMA6	10.9	vacuolar ATPase V0 domain subunit d (36 kDa), vacuolar acidification*, hydrogen-transporting two-sector ATPase, vacuolar membrane*
+YLR074C	BUD20	10.8	BUD site selection, biological_process unknown, molecular_function unknown, cellular_component unknown
+YER044C	ERG28	10.8	ergosterol biosynthesis, molecular_function unknown, cellular_component unknown
+YJL184W		10.7	biological_process unknown, molecular_function unknown,
+YBR127C	VMA2	10.6	vacuolar ATPase V1 domain subunit B (60 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YNL246W		10.6	biological_process unknown, molecular_function unknown,
+YDR127W	ARO1	10.5	pentafunctional arom polypeptide (contains: 3-dehydroquinate synthase, 3-dehydroquinate dehydratase (3-dehydroquinase), shikimate 5-dehydrogenase, shikimate kinase, and epsp synthase),3-dehydroquinate dehydratase,
+YNL133C	FYV6	10.5	biological_process unknown, molecular_function unknown, cellular_component unknown
+YLR370C	ARC18	10.4	Arp2 3 Complex Subunit, actin filament organization, structural protein of cytoskeleton, Arp2/3 protein complex
+YBL033C	RIB1	10.3	GTP cyclohydrolase II,GTP cyclohydrolase II,
+YGR006W	PRP18	10.1	RNA splicing factor associated with U5 snRNP, mRNA splicing,
+YOL086C	ADH1	10.1	Alcohol dehydrogenase,acylglycerone-phosphate reductase,
+YCL007C	CWH36	10.1	involved in cell wall biogenesis,molecular_function unknown,
+YDL191W	RPL35A	10.0	Ribosomal protein L35A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YKL054C	VID31	10.0	vacuole import and degradation,molecular_function unknown,
+YPR072W	NOT5	9.9	member of the NOT complex, a global negative regulator of transcription, transcription,
+YGR020C	VMA7	9.9	vacuolar ATPase V1 domain subunit F (14 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YJR118C	ILM1	9.9	molecular_function unknown
+YMR307W	GAS1	9.8	cell surface glycoprotein 115-120 kDa, biological_process unknown,
+YJR090C	GRR1	9.7	cyclin F box protein, ubiquitin-dependent protein degradation*, ubiquitin--protein ligase*, nuclear ubiquitin ligase complex
+YDR226W	ADK1	9.7	adenylate kinase,adenylate kinase,
+YOR080W	DIA2	9.7	Digs Into Agar, invasive growth, molecular_function unknown, cellular_component unknown
+YDR532C	KRE28	9.6	biological_process unknown, molecular_function unknown,
+YLR139C	SLS1	9.6	73 kDa mitochondrial integral membrane protein
+YHR038W	FIL1	9.6	Putative mitochondrial ribosome recycling factor, protein biosynthesis, translation termination factor, mitochondrion
+YPL271W	ATP15	9.5	nuclear gene for ATP synthase epsilon subunit, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, central stalk
+YAL016W	TPD3	9.5	protein phosphatase 2A regulatory subunit A, protein biosynthesis*, protein phosphatase type 2A, protein phosphatase type 2A
+YGL070C	RPB9	9.4	RNA polymerase II subunit, transcription from Pol II promoter, DNA-directed RNA polymerase II, DNA-directed RNA polymerase II, core
+YER154W	OXA1	9.4	involved in cytochrome c oxidase and ATP synthase assembly, mitochondrial translocation, protein transporter, mitochondrial inner membrane
+YLR067C	PET309	9.4	involved in COX1 mRNA stability, protein biosynthesis*, molecular_function unknown, mitochondrial inner membrane
+YCR020W-B	HTL1	9.3	high-temperature lethal, biological_process unknown, molecular_function unknown,
+YDR161W	TCI1	9.1	interacts with PP2C, biological_process unknown,
+YBL058W	SHP1	9.1	putative regulatory subunit for Glc7p, a phosphatase required for glucose repression, sporulation (sensu Saccharomyces)*, molecular_function unknown, cellular_component unknown
+YDR069C	DOA4	9.1	ubiquitin isopeptidase, deubiquitylation*, ubiquitin-specific protease, 26S proteasome
+YHR168W		9.1	GTP-binding protein, biological_process unknown, molecular_function unknown,
+YMR138W	CIN4	9.0	GTP-binding protein, microtubule-based process, GTP binding, microtubule
+YCR084C	TUP1	9.0	glucose repression regulatory protein, exhibits similarity to beta subunits of G proteins, transcription,
+YHR039C-B		9.0	
+YIL128W	MET18	9.0	regulator of TFIIH, transcription from Pol II promoter*, RNA polymerase II transcription factor, nucleoplasm
+YGR162W	TIF4631	8.9	mRNA cap-binding protein (eIF-4F), 150K subunit , highly homologous to Tif4632p, homologs of mammalian p220, protein synthesis initiation, translation initiation factor, ribosome
+YGL168W		8.9	biological_process unknown, molecular_function unknown,
+YDL151C	FYV3	8.9	biological_process unknown, molecular_function unknown, cellular_component unknown
+YCR063W	BUD31	8.8	G10-like protein, biological_process unknown, molecular_function unknown, cellular_component unknown
+YJL136C	RPS21B	8.8	Ribosomal protein S21B (S26B) (YS25), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YLR337C	VRP1	8.8	Proline-rich protein verprolin, actin filament organization*, actin binding, actin cortical patch (sensu Saccharomyces)
+YGR285C	ZUO1	8.7	Zuotin, putative Z-DNA binding protein, protein folding, chaperone, cytosol*
+YEL029C	BUD16	8.7	biological_process unknown, molecular_function unknown,
+YMR060C	TOM37	8.6	mitochondrial import receptor, heterodimerizes with Tom70p, preferentially recognizes the mature regions of precursor proteins associated with ATP-dependent cytosolic chaperones, mitochondrial translocation, protein transporter, mitochondrial outer membrane translocase complex
+YHL025W	SNF6	8.6	subunit of the chromatin remodeling Snf Swi complex, chromatin modeling, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex
+YML032C	RAD52	8.6	Required for X-ray damage repair and various types of intra-and interchromosomal mitotic recombination, including HO switching and plasmid exchange. Dispensable for premeiotic DNA synthesis, double strand breaks, synaptonemal complexes, and heteroduplex formation, but generally required for completion of meiotic recombination. RAD52 controls the level of a 72 kd endo-exonuclease in log phase and sporulation. Interacts with Rad51p by two hybrid analysis. mRNA is induced in meiosis during recombination.
+YPL254W	HFI1	8.6	transcription factor, member of Ada Gcn5 protein complex, transcription,SAGA complex
+YGL135W	RPL1B	8.6	Ribosomal protein L1B, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGR180C	RNR4	8.5	Ribonucleotide Reductase, DNA replication, ribonucleoside-diphosphate reductase, nucleus
+YKL134C	1	8.5	mitochondrial intermediate peptidase, possesses octapeptidyl amino-peptidase activity, iron homeostasis*, metallopeptidase, mitochondrion
+YPR131C	NAT3	8.5	N-terminal acetyltransferase
+YOR026W	BUB3	8.5	cell cycle checkpoint protein, mitotic spindle checkpoint, molecular_function unknown, cellular_component unknown
+YDL013W	HEX3	8.4	involved in hexose metabolism,molecular_function unknown,
+YDR432W	NPL3	8.4	nuclear shuttling protein with an RNA recognition motif
+YGR104C	SRB5	8.4	subunit of RNA polymerase II holoenzyme mediator complex, transcription from Pol II promoter, RNA polymerase II transcription mediator, mediator complex
+YNL250W	RAD50	8.4	Contains a purine-binding domain, two heptad repeats and a hydrophobic tail., DNA repair,
+YLR322W		8.4	biological_process unknown, molecular_function unknown,
+YKL009W	MRT4	8.3	involved in mRNA decay,molecular_function unknown,
+YLR338W	KRE21	8.3	biological_process unknown, molecular_function unknown,
+YFR019W	FAB1	8.3	type II PI(4)P5-kinase (PIP4,5 kinase) similar to human PIP5K-II, vacuole organization and biogenesis, 1-phosphatidylinositol-3-phosphate 5-kinase, vacuolar membrane
+YPL188W	POS5	8.3	involved in oxidative stress, biological_process unknown, molecular_function unknown,
+YOR001W	RRP6	8.2	involved in 5.8S rRNA processing, 35S primary transcript processing, 3'-5' exoribonuclease, nuclear exosome (RNase complex)
+YNL059C	ARP5	8.2	Actin-related protein, biological_process unknown, molecular_function unknown, cell
+YDL106C	PHO2	8.2	Homeobox-domain containing transcription fractor which is a positive regulator of PHO5 and other genes.,transcription factor,
+YGL167C	PMR1	8.2	Ca++-Pump, ATPase, transport,
+YJR063W	RPA12	8.1	A12.2 subunit of RNA polymerase I, transcription from Pol I promoter, DNA-directed RNA polymerase I, DNA-directed RNA polymerase I
+YBR267W		8.1	Probable Zn-finger protein (C2H2 type), biological_process unknown, molecular_function unknown,
+YNL003C	PET8	8.0	mitochondrial carrier protein family, biological_process unknown, molecular_function unknown, cellular_component unknown
+YCR046C	IMG1	8.0	mitochondrial ribosomal protein, protein biosynthesis, structural protein of ribosome, mitochondrial ribosome
+YMR228W	MTF1	8.0	Mitochondrial RNA polymerase specificity factor, transcription from mitochondrial promoter, transcription factor, mitochondrial matrix
+YOR035C	SHE4	7.8	Required for mother cell-specific HO expression,molecular_function unknown,
+YBR112C	CYC8	7.8	Transcription regulatory protein, transcription,
+YLR079W	SIC1	7.8	Cdc28p-Clb5 protein kinase inhibitor
+YPL106C	SSE1	7.8	HSP70 family member, highly homologous to Ssa1p and Sse2p, protein folding, cochaperone, cytoplasm
+YKL118W		7.7	biological_process unknown, molecular_function unknown,
+YDL198C	YHM1	7.7	(putative) mitochondrial carrier protein, transport,
+YLR423C	APG17	7.7	involved in autophagy, autophagy, molecular_function unknown,
+YLR315W		7.7	biological_process unknown, molecular_function unknown,
+YDR298C	ATP5	7.7	ATP synthase subunit 5; oligomycin sensitivity-conferring protein, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, stator stalk
+YHL011C	PRS3	7.6	ribose-phosphate pyrophosphokinase 3, histidine biosynthesis*, ribose-phosphate pyrophosphokinase, cytoplasm
+YEL036C	ANP1	7.6	subunit of mannosyltransferase complex, protein glycosylation,
+YHR021C	RPS27B	7.5	40S Ribosomal protein S27B (rp61) (YS20), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YLL027W	ISA1	7.5	Iron Sulfur Assembly -- IscA NifA homolog, iron transport, molecular_function unknown, mitochondrial matrix
+YJL062W	LAS21	7.5	putative membrane protein, a member of the major facilitator super family, biological_process unknown,
+YML094W	GIM5	7.5	bovine prefoldin subunit 5 homolog (putative), protein folding,
+YER087W		7.5	biological_process unknown,cellular_component unknown
+YCR044C	PER1	7.5	Protein Processing in the ER,molecular_function unknown,
+YPR100W		7.5	biological_process unknown, molecular_function unknown,
+YGR160W	FYV13	7.4	biological_process unknown, molecular_function unknown, cellular_component unknown
+YJR055W	HIT1	7.3	involved in growth at high temperature, biological_process unknown,
+YKL204W	EAP1	7.3	probable purine nucleotide-binding protein, translational regulation, initiation, adenosinetriphosphatase, eukaryotic translation initiation factor 4F complex
+YGL076C	RPL7A	7.3	Ribosomal protein L7A (L6A) (rp11) (YL8), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YPL193W	RSA1	7.3	RiboSome Assembly, ribosomal large subunit assembly and maintenance, molecular_function unknown, nucleoplasm
+YOR211C	MGM1	7.3	encodes protein with GTP-binding domain related to dynamin, mitochondrion organization and biogenesis*, GTPase, mitochondrial outer membrane
+YML115C	VAN1	7.3	mannosyltransferase,mannosyltransferase,
+YLR149C		7.2	biological_process unknown, molecular_function unknown,
+YLR386W		7.2	biological_process unknown, molecular_function unknown,
+YDR115W		7.2	biological_process unknown, molecular_function unknown,
+YIL040W		7.2	biological_process unknown, molecular_function unknown,
+YBR279W	PAF1	7.2	RNA polymerase II-associated protein, transcription,
+YPL234C	TFP3	7.1	vacuolar ATPase V0 domain subunit c' (17 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YNL079C	TPM1	7.1	tropomyosin I, establishment of cell polarity (sensu Saccharomyces)*, actin lateral binding, cytokinetic ring (sensu Saccharomyces)*
+YOR241W	MET7	7.1	Folylpolyglutamate synthetase,folylpolyglutamate synthase,
+YPL148C	PPT2	7.0	Phosphopantetheine:protein transferase (PPTase), lipid transport,
+YGL058W	RAD6	7.0	Ubiquitin conjugating (E2) enzyme. The C-terminal 23 residues are critical for sporulation and histone polyubiquitinating activity, but not UV repair or induced mutagenesis., ubiquitin-dependent protein degradation*, ubiquitin conjugating enzyme, nucleus
+YPR135W	CTF4	7.0	DNA polymerase alpha binding protein, DNA repair*, DNA binding, nucleus
+YDR332W		7.0	biological_process unknown, molecular_function unknown,
+YDR388W	RVS167	7.0	(putative) cytoskeletal protein, endocytosis*, cytoskeletal protein binding protein, actin cortical patch (sensu Saccharomyces)
+YER077C		7.0	biological_process unknown, molecular_function unknown,
+YMR224C	MRE11	7.0	localizes to discrete sites in rad50s mutants. Mre11p, Rad50p, Mer2p and Xrs2p function in a complex by immunoprecipitation and two-hybrid analyses; mutations in these genes have similar phenotypes. mRNA is induced in meiosis, DNA repair*, endonuclease, nucleus
+YNL280C	ERG24	7.0	sterol C-14 reductase, ergosterol biosynthesis, C-14 sterol reductase, endoplasmic reticulum
+YDL090C	RAM1	7.0	beta subunit of farnesyltransferase
+YML063W	RPS1B	6.9	Ribosomal protein S1B (rp10B), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YLR369W	SSQ1	6.9	mitochondrial hsp70-type molecular chaperone, DNA dependent DNA replication*, chaperone, mitochondrial matrix
+YOL095C	HMI1	6.8	mitochondrial DNA helicase (putative), biological_process unknown,
+YKL006W	RPL14A	6.8	Ribosomal protein L14A, protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YDR369C	XRS2	6.8	DNA repair protein
+YOR331C		6.8	biological_process unknown, molecular_function unknown,
+YLR318W	EST2	6.8	103 kD basic protein, catalytic subunit of telomerase
+YBR126C	TPS1	6.8	56 kD synthase subunit of trehalose-6-phosphate synthase phosphatase complex, stress response*, alpha,alpha-trehalose-phosphate synthase (UDP-forming), alpha,alpha-trehalose-phosphate synthase (UDP-forming)
+YER155C	BEM2	6.7	Rho-type GTPase activating protein (GAP), establishment of cell polarity (sensu Saccharomyces)*, signal transducer*, intracellular
+YLR148W	PEP3	6.7	vacuolar membrane protein
+YDR138W	HPR1	6.7	involved in mitosis, recombination; similar to TOP1 across 2 regions, DNA recombination, molecular_function unknown, nucleus
+YMR078C	CTF18	6.7	(putative) involved in chromosome transmission during mitosis,molecular_function unknown,
+YFL016C	MDJ1	6.7	DnaJ homolog involved in mitochondrial biogenesis and protein folding, protein folding*, heat shock protein, mitochondrial inner membrane
+YHR120W	MSH1	6.7	mutS homolog involved in mitochondrial DNA repair, DNA repair,
+YMR158W		6.7	biological_process unknown, molecular_function unknown,
+YDR024W	FYV1	6.6	biological_process unknown, molecular_function unknown, cellular_component unknown
+YMR091C	NPL6	6.6	involved in nuclear protein targeting,molecular_function unknown,
+YGR159C	NSR1	6.6	nuclear localization sequence binding protein, rRNA processing*, RNA binding, nucleolus
+YDR195W	REF2	6.6	RNA-binding protein, involved in mRNA processing,molecular_function unknown,
+YHR011W	DIA4	6.5	Seryl-tRNA synthetase, pseudohyphal growth*, serine--tRNA ligase, cellular_component unknown
+YHR064C	PDR13	6.5	Hsp70 Protein
+YBR168W		6.5	biological_process unknown, molecular_function unknown,
+YDR241W	BUD26	6.5	BUD site selection, biological_process unknown, molecular_function unknown,
+YKL003C	MRP17	6.5	Mitochondrial ribosomal protein MRP17, protein biosynthesis, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YKL139W	CTK1	6.5	alpha subunit of the kinase which phosphorylates the RNA polymerase largest subunit CTD (carboxyl-terminal domain), protein phosphorylation*, protein kinase,
+YIL009C-A	EST3	6.4	181aa protein - 20.5 kD,molecular_function unknown,
+YBR179C	FZO1	6.4	homolog of Drosophila melanogaster fuzzy onions gene; integral protein of the mitochondrial outer membrane which can be isolated as part of a high molecular weight complex, mitochondrion organization and biogenesis, GTPase, mitochondrial outer membrane
+YGR105W	VMA21	6.4	vacuolar H+-ATPase assembly protein, vacuolar acidification,
+YHR194W		6.4	biological_process unknown, molecular_function unknown,
+YDR140W	FYV9	6.3	biological_process unknown, molecular_function unknown, cellular_component unknown
+YDR323C	PEP7	6.3	cytosolic and peripheral membrane protein with three zinc fingers; cysteine rich regions of amino acids are essential for function, non-selective vesicle fusion*, vesicle fusion, cytoplasm*
+YJL166W	QCR8	6.3	Ubiquinol cytochrome-c reductase subunit 8 (11 kDa protein),ubiquinol-cytochrome-c reductase,
+YOL009C	MDM12	6.3	Mdm12p is a mitochondrial outer membrane protein. An Mdm12p homolog exists in S. Pombe which confers a dominant negative phenotype when expressed in S. cerevisiae, mitochondrion inheritance*, molecular_function unknown, mitochondrial outer membrane
+YDR293C	SSD1	6.3	cell cycle, RNA binding, cytoplasm
+YAL023C	PMT2	6.3	dolichyl phosphate-D-mannose:protein O-D-mannosyltransferase, O-linked glycosylation, dolichyl-phosphate-mannose--protein mannosyltransferase, endoplasmic reticulum
+YOL033W	MSE1	6.3	Mitochondrial glutamyl-tRNA synthetase,glutamate--tRNA ligase,
+YDR028C	REG1	6.3	regulator of phosphatase Glc7p, involved in glucose repression, glycogen metabolism*, protein phosphatase type 1, cytoplasm*
+YER122C	GLO3	6.3	Zinc-finger-containing protein with similarity to Gcs1p and Sps18p, ER to Golgi transport*, ARF GTPase activator, secretory vesicle*
+YKL143W	LTV1	6.3	low temperature viability protein, stress response, molecular_function unknown, cellular_component unknown
+YDL232W	OST4	6.3	3.6-kDa protein, probably membrane-located,dolichyl-diphosphooligosaccharide-protein glycosyltransferase,
+YJL102W	MEF2	6.2	mitochondrial elongation factor G-like protein, protein synthesis elongation, translation elongation factor, mitochondrion
+YJL029C	VPS53	6.2	Vps53p is a hydrophilic protein that is peripherally associated with the late Golgi and forms a stable complex with Vps52p and Vps54p.,molecular_function unknown,
+YER050C	RSM18	6.2	protein of the small subunit of the mitochondrial ribosome
+YOL076W	MDM20	6.1	involved in mitochondrial inheritance and actin assembly, cytoskeleton organization and biogenesis*, actin binding, intracellular
+YER116C	SLX8	6.1	biological_process unknown, molecular_function unknown,
+YLR234W	TOP3	6.1	DNA Topoisomerase III, meiotic recombination*, DNA topoisomerase I,
+YJL180C	ATP12	6.1	(putative) involved F1F0-ATPase complex assembly, protein complex assembly, chaperone, mitochondrial matrix
+YDL116W	NUP84	6.1	Protein with homology to mammalian Nup107p, mRNA-nucleus export*, structural protein, nuclear pore
+YMR188C		6.1	biological_process unknown, molecular_function unknown,
+YKL080W	VMA5	6.1	vacuolar ATPase V1 domain subunit C (42 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YGR062C	COX18	6.0	required for mitochondrial cytochrome oxidase activity, cytochrome c oxidase biogenesis, molecular_function unknown, mitochondrial membrane
+YNL080C		6.0	biological_process unknown, molecular_function unknown,
+YMR179W	SPT21	6.0	non-specific DNA binding protein, transcription,
+YDR382W	RPP2B	6.0	Ribosomal protein P2B (YP2beta) (L45), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YDR173C	ARG82	6.0	dual-specificity inositol 1,4,5-trisphosphate 6-kinase inositol 1,4,5,6-tetrakisphosphate 3-kinase (IP3 6- IP4 3-kinase)
+YDR114C		6.0	biological_process unknown, molecular_function unknown,
+YOL023W	IFM1	6.0	mitochondrial initiation factor 2, protein synthesis initiation, translation initiation factor, mitochondrion
+YJR032W	CPR7	6.0	peptidyl-prolyl cis trans isomerase, biological_process unknown, peptidylprolyl isomerase, cytoplasm
+YHR034C		6.0	biological_process unknown, molecular_function unknown,
+YDL044C	MTF2	5.9	involved in mRNA splicing, mRNA processing, RNA binding, mitochondrion
+YLR425W	TUS1	5.9	1307 AA, hydrophilic protein., biological_process unknown, molecular_function unknown,
+YLR371W	ROM2	5.9	GDP-GTP Exchange Protein (GEP) for Rho1p, establishment of cell polarity (sensu Saccharomyces)*, signal transducer*, bud tip
+YNL147W	LSM7	5.9	Sm-like protein
+YGR171C	MSM1	5.9	mitochondrial methionyl-tRNA synthetase,methionine--tRNA ligase,
+YLR226W	BUR2	5.9	involved in transcriptional regulation, mitotic chromosome segregation, molecular_function unknown, cellular_component unknown
+YMR064W	AEP1	5.9	basic, hydrophilic protein of 59 kDa, protein biosynthesis, molecular_function unknown, cellular_component unknown
+YLL002W	REM50	5.9	diepoxybutane and mitomycin C resistance,molecular_function unknown,
+YPR132W	RPS23B	5.9	Ribosomal protein S23B (S28B) (rp37) (YS14), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YPR036W	VMA13	5.9	vacuolar ATPase V1 domain subunit H (54 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YML112W	CTK3	5.8	CTD kinase-I gamma subunit, protein phosphorylation*, molecular_function unknown,
+YNL296W	KRE25	5.8	biological_process unknown, molecular_function unknown,
+YJL127C	SPT10	5.8	negative transcriptional regulator, chromatin modeling*, molecular_function unknown, nucleus
+YLR358C		5.8	biological_process unknown, molecular_function unknown,
+YLR357W	RSC2	5.8	Member of RSC complex., chromatin modeling, molecular_function unknown, nucleosome remodeling complex
+YDR320C	SWA2	5.8	Auxilin-like protein,molecular_function unknown,
+YFL025C	BST1	5.8	negative regulator of COPII vesicle formation
+YKL055C	OAR1	5.7	3-oxoacyl-[acyl-carrier-protein] reductase, respiration,
+YDR296W	MHR1	5.7	Involved in mitochondrial homologous DNA recombination,molecular_function unknown,
+YFR036W	CDC26	5.7	cell division control protein, ubiquitin-dependent protein degradation*, ubiquitin--protein ligase*, anaphase-promoting complex
+YBR266C		5.7	probable membrane protein, biological_process unknown, molecular_function unknown,
+YDR322W	MRPL35	5.7	Mitochondrial ribosomal protein MRPL35 (YmL35), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YNL225C	CNM67	5.7	Spindle pole body protein involved in nuclear migration, microtubule nucleation, structural protein of cytoskeleton, spindle pole body
+YGL246C	RAI1	5.7	biological_process unknown, molecular_function unknown,
+YGR215W	RSM27	5.6	protein of the small subunit of the mitochondrial ribosome
+YGL143C	MRF1	5.6	Mitochondrial polypeptide chain release factor, protein biosynthesis*, translation release factor, mitochondrion
+YHR026W	PPA1	5.6	vacuolar ATPase V0 domain subunit c'', vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YOR290C	SNF2	5.6	transcriptional regulator, chromatin modeling, non-specific RNA polymerase II transcription factor, nucleosome remodeling complex
+YLR192C	HCR1	5.6	High Copy suppressor of RPG1, biological_process unknown, molecular_function unknown,
+YDR522C	SPS2	5.6	involved in meiosis, meiosis, molecular_function unknown,
+YGR101W		5.6	biological_process unknown, molecular_function unknown,
+YNL284C	MRPL10	5.6	Mitochondrial ribosomal protein MRPL10 (YmL10), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YPL125W	KAP120	5.6	karyopherin
+YJL115W	ASF1	5.6	involved in silencing, transcription,
+YKL119C	VPH2	5.5	25.2 kDa protein involved in assembly of vacuolar H(+) ATPase, vacuolar acidification*, molecular_function unknown, endoplasmic reticulum membrane
+YHR147C	MRPL6	5.5	Mitochondrial ribosomal protein MRPL6 (YmL6), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YLR396C	VPS33	5.5	involved in vacuolar protein targeting
+YLR049C		5.5	biological_process unknown, molecular_function unknown,
+YLR056W	ERG3	5.5	C-5 sterol desaturase, ergosterol biosynthesis, C-5 sterol desaturase, endoplasmic reticulum
+YBR194W		5.5	biological_process unknown, molecular_function unknown, cytoplasm
+YDL056W	MBP1	5.5	transcription factor, cell cycle control*, transcription factor, nucleus
+YER083C		5.5	biological_process unknown, molecular_function unknown,
+YML036W		5.5	biological_process unknown, molecular_function unknown,
+YEL046C	GLY1	5.5	Threonine Aldolase,threonine aldolase,
+YKL170W	MRPL38	5.4	mitochondrial ribosomal protein L14, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YNL055C	POR1	5.4	Outer mitochondrial membrane porin (voltage-dependent anion channel, or VDAC), transport,
+YJL006C	CTK2	5.4	cyclin-like protein, protein phosphorylation*, cyclin,
+YBR173C	UMP1	5.4	20S proteasome maturation factor
+YNL185C	MRPL19	5.4	mitochondrial ribosomal protein of the large subunit, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YMR097C		5.4	biological_process unknown, molecular_function unknown,
+YMR193W	MRPL24	5.4	Mitochondrial ribosomal protein MRPL24 (YmL24), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YMR282C	AEP2	5.4	basic, hydrophilic 67.5 kDa protein, protein biosynthesis, molecular_function unknown, mitochondrion
+YMR066W	SOV1	5.4	(putative) involved in respiration,molecular_function unknown,
+YGL129C	RSM23	5.4	protein of the small subunit of the mitochondrial ribosome
+YOR153W	PDR5	5.4	multidrug resistance transporter,transporter,
+YDR433W	KRE22	5.4	biological_process unknown, molecular_function unknown,
+YLR046C		5.4	biological_process unknown, molecular_function unknown,
+YBR111C	YSA1	5.3	Homolog to serendipity protein (D. melanogaster), biological_process unknown, molecular_function unknown,
+YDL081C	RPP1A	5.3	Acidic ribosomal protein P1A (YP1alpha) (A1), protein biosynthesis*, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YMR269W		5.3	biological_process unknown, molecular_function unknown,
+YDR175C	RSM24	5.3	protein of the small subunit of the mitochondrial ribosome
+YDR519W	FKB2	5.3	FKBP (FK506 binding protein) 13; peptidylprolyl cis-trans isomerase activity, biological_process unknown, peptidylprolyl isomerase, endoplasmic reticulum membrane
+YLR270W		5.3	biological_process unknown, molecular_function unknown,
+YOR309C		5.3	biological_process unknown, molecular_function unknown,
+YOR295W		5.3	biological_process unknown, molecular_function unknown,
+YDR525W		5.3	biological_process unknown, molecular_function unknown,
+YDR529C	QCR7	5.3	ubiquinol-cytochrome c oxidoreductase subunit 7 (14 kDa),ubiquinol-cytochrome-c reductase,
+YOR332W	VMA4	5.2	vacuolar ATPase V1 domain subunit E (27 kDa), vacuolar acidification, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V1 domain
+YPL040C	ISM1	5.2	nuclear encoded mitochondrial isoleucyl-tRNA synthetase,isoleucine--tRNA ligase,
+YCL058C	FYV5	5.2	biological_process unknown, molecular_function unknown, cellular_component unknown
+YCR024C		5.2	Asn-tRNA synthetase, protein biosynthesis, asparagine--tRNA ligase*, mitochondrion
+YAL035W	FUN12	5.2	97 kDa protein, biological_process unknown, molecular_function unknown,
+YPR163C	TIF3	5.2	Translation initiation factor eIF-4B, protein synthesis initiation, translation initiation factor, ribosome
+YGL218W		5.2	biological_process unknown, molecular_function unknown,
+YLR053C		5.2	biological_process unknown, molecular_function unknown,
+YGL223C		5.2	biological_process unknown, molecular_function unknown,
+YDR194C	MSS116	5.2	Mitochondrial DEAD box RNA helicase, RNA splicing, RNA helicase, mitochondrial matrix
+YHL031C	GOS1	5.1	Golgi SNARE protein, non-selective vesicle fusion*, v-SNARE, inter-Golgi transport vesicle
+YCR028C-A	RIM1	5.1	Single-stranded zinc finger DNA-binding protein
+YER056C-A	RPL34A	5.1	Ribosomal protein L34A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YML024W	RPS17A	5.1	Ribosomal protein S17A (rp51A), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YJL120W		5.0	biological_process unknown, molecular_function unknown,
+YNL248C	RPA49	5.0	49-kDa alpha subunit of RNA polymerase A, transcription from Pol I promoter, DNA-directed RNA polymerase I, DNA-directed RNA polymerase I
+YCR003W	MRPL32	5.0	Mitochondrial ribosomal protein MRPL32 (YmL32), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YNL028W		5.0	biological_process unknown, molecular_function unknown,
+YPL069C	BTS1	5.0	geranylgeranyl diphosphate synthase
+YBR251W	MRPS5	5.0	Probable mitochondrial ribosomal protein S5, protein biosynthesis, structural protein of ribosome, mitochondrial ribosome
+YHR183W	GND1	5.0	Phosphogluconate Dehydrogenase (Decarboxylating),phosphogluconate dehydrogenase (decarboxylating),
+YMR116C	ASC1	4.9	G-beta like protein
+YMR143W	RPS16A	4.9	Ribosomal protein S16A (rp61R), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDL068W		4.9	biological_process unknown, molecular_function unknown,
+YKL113C	RAD27	4.9	42 kDa 5' to 3' exonuclease required for Okazaki fragment processing, DNA repair,
+YNL073W	MSK1	4.9	mitochondrial lysine-tRNA synthetase,lysine--tRNA ligase,
+YDL202W	MRPL11	4.9	Mitochondrial ribosomal protein MRPL11 (YmL11), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YLR068W	FYV7	4.9	biological_process unknown, molecular_function unknown, cellular_component unknown
+YDR405W	MRP20	4.9	263-amino acid mitochondrial ribosomal large subunit protein; similar to L23 family of ribosomal proteins, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YGR016W		4.9	biological_process unknown, molecular_function unknown,
+YOR209C	NPT1	4.8	nicotinate phosphoribosyl transferase (putative),nicotinate phosphoribosyltransferase,
+YER095W	RAD51	4.8	RecA homolog; Rad51p colocalizes to ~ 65 spots with Dmc1p prior to synapsis (independently of ZIP1 and DMC1), and interacts with Rad52p and Rad55p; human Rad51p homolog interacts with Brca2 protein which has been implicated in causing breast cancer,recombinase,
+YOR383C	FIT3	4.8	biological_process unknown, molecular_function unknown,
+YDL160C	DHH1	4.8	(putative) DEAD box RNA helicase, transcription, RNA helicase,
+YEL033W		4.8	biological_process unknown, molecular_function unknown,
+YGR240C	PFK1	4.8	phosphofructokinase alpha subunit, glycolysis, 6-phosphofructokinase, 6-phosphofructokinase
+YPR099C		4.8	biological_process unknown, molecular_function unknown,
+YLR373C	VID22	4.8	vacuole import and degradation,molecular_function unknown,
+YCR071C	IMG2	4.8	similar to Drosophila gonadal protein Z600; involved in mitochondrial DNA maitenance,molecular_function unknown,
+YHR191C	CTF8	4.8	(putative) kinetochore protein
+YNL037C	IDH1	4.7	alpha-4-beta-4 subunit of mitochondrial isocitrate dehydrogenase 1, tricarboxylic acid cycle*, isocitrate dehydrogenase (NAD+), mitochondrial matrix
+YIL049W	DFG10	4.7	involved in filamentous growth,molecular_function unknown,
+YLR042C		4.7	biological_process unknown, molecular_function unknown,
+YNL302C	RPS19B	4.7	Ribosomal protein S19B (rp55B) (S16aB) (YS16B), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDR116C		4.7	biological_process unknown, molecular_function unknown,
+YLR399C	BDF1	4.7	Bdf1p contains two bromodomains, localizes to the nucleus and to chomosomes in spread meiotic nuclei but is excluded from the nucleolus, sporulation (sensu Saccharomyces), transcription factor, nucleus
+YHR041C	SRB2	4.7	RNA polymerase II holoenzyme mediator subunit, transcription from Pol II promoter, RNA polymerase II transcription mediator, mediator complex
+YML110C	COQ5	4.7	Putative mitochondrial C-methyltransferase, ubiquinone metabolism,mitochondrion
+YOR073W		4.7	biological_process unknown, molecular_function unknown,
+YPL173W	MRPL40	4.7	Mitochondrial ribosomal protein MRPL40 (YmL40), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YJR144W	MGM101	4.7	(putative) nucleic acid interactor, mitochondrial genome maintenance,
+YLR295C	ATP14	4.7	ATP synthase subunit h, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, F0 sector
+YNL184C		4.7	biological_process unknown, molecular_function unknown,
+YOR196C	LIP5	4.7	lipoic acid synthase, fatty acid metabolism,
+YDR079W	PET100	4.7	cytochrome c oxidase-specific assembly factor, cytochrome c oxidase biogenesis, molecular_function unknown, cellular_component unknown
+YHR008C	SOD2	4.6	Manganese-containing superoxide dismutase,superoxide dismutase,
+YBR283C	SSH1	4.6	Probable SEC61 protein homolog, co-translational membrane targeting, protein transporter, translocon
+YNL199C	GCR2	4.6	Transcription factor, glycolysis,
+YBR268W	MRPL37	4.6	Probable mitochondrial protein L37, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YDR509W		4.6	biological_process unknown, molecular_function unknown,
+YJR034W	PET191	4.6	involved in cytochrome c oxidase assembly, cytochrome c oxidase biogenesis, molecular_function unknown, mitochondrial inner membrane
+YDR363W-A	SEM1	4.6	unknown function, similar to S. pombe Dss1,molecular_function unknown,
+YHR081W		4.5	biological_process unknown, molecular_function unknown,
+YOL143C	RIB4	4.5	6,7-dimethyl-8-ribityllumazine synthase (DMRL synthase)
+YNL220W	ADE12	4.5	adenylosuccinate synthetase,adenylosuccinate synthase,
+YLR047C		4.5	biological_process unknown, molecular_function unknown,
+YIL122W		4.5	biological_process unknown, molecular_function unknown,
+YMR072W	ABF2	4.5	HMG-1 homolog, mitochondrial, mitochondrial genome maintenance,
+YIL034C	CAP2	4.5	beta subunit of capping protein, cell wall organization and biogenesis*, F-actin capping, actin cortical patch (sensu Saccharomyces)*
+YLR342W	FKS1	4.5	1,3-beta-D-glucan synthase, cell wall organization and biogenesis*, 1,3-beta-glucan synthase, actin cap (sensu Saccharomyces)*
+YCL016C		4.5	biological_process unknown, molecular_function unknown,
+YLR312W-A	MRPL15	4.5	Mitochondrial ribosomal protein MRPL15 (YmL15), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YGR257C		4.5	biological_process unknown, molecular_function unknown,
+YMR190C	SGS1	4.5	has DNA helicase signature motifs
+YNL107W	YAF9	4.5	Yeast homolog of the human leukemogenic protein AF9; member of a large protein complex, biological_process unknown, molecular_function unknown,
+YDR065W		4.4	biological_process unknown, molecular_function unknown,
+YPL031C	PHO85	4.4	cyclin-dependent protein kinase, protein phosphorylation*, cyclin-dependent protein kinase*,
+YNL120C		4.4	biological_process unknown, molecular_function unknown,
+YDR337W	MRPS28	4.4	Mitochondrial ribosomal protein MRPS28 (E. coli S15), protein biosynthesis*, structural protein of ribosome*, mitochondrial small ribosomal-subunit
+YPR191W	QCR2	4.4	40 kDa ubiquinol cytochrome-c reductase core protein 2,ubiquinol-cytochrome-c reductase,
+YER117W	RPL23B	4.4	Ribosomal protein L23B (L17aB) (YL32), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YOR078W	BUD21	4.4	BUD site selection, biological_process unknown, molecular_function unknown,
+YJL175W		4.4	biological_process unknown, molecular_function unknown,
+YEL003W	GIM4	4.4	bovine prefoldin subunit 2 homolog (putative), protein folding,
+YMR125W	STO1	4.4	transcriptional activator of glycolytic genes
+YGL105W	ARC1	4.4	G4 nucleic acid binding protein, involved in tRNA aminoacylation
+YGR165W		4.4	biological_process unknown, molecular_function unknown,
+YLR182W	SWI6	4.4	transcription factor, cell cycle, transcription factor,
+YNR036C		4.4	biological_process unknown, molecular_function unknown,
+YKR085C	MRPL20	4.4	22.3 kDa mitochondrial ribosomal large subunit protein YmL20; homologous to L17 of E. coli, protein biosynthesis*, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YML061C	PIF1	4.4	5' to 3' DNA helicase, DNA recombination*, DNA helicase, mitochondrion
+YNL177C		4.3	biological_process unknown, molecular_function unknown,
+YPR043W	RPL43A	4.3	Ribosomal protein L43A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YJL209W	CBP1	4.3	involved in control of mRNA stablility,molecular_function unknown,
+YDR268W	MSW1	4.3	mitochondrial tryptophanyl-tRNA synthetase,tryptophan--tRNA ligase,
+YNL309W	STB1	4.3	Interacts with the putative transcription factor Sin3p, biological_process unknown,
+YOL096C	COQ3	4.3	3,4-dihydroxy-5-hexaprenylbenzoate methyltransferase, ubiquinone metabolism, hexaprenyldihydroxybenzoate methyltransferase,
+YDL047W	SIT4	4.3	type 2A related protein phosphatase, G1/S transition of mitotic cell cycle, protein serine/threonine phosphatase, cytoplasm
+YER017C	AFG3	4.3	ATP-dependent metalloprotease, protein complex assembly*, adenosinetriphosphatase*, mitochondrial inner membrane
+YDL075W	RPL31A	4.3	Ribosomal protein L31A (L34A) (YL28), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YLR260W	LCB5	4.2	sphingoid long chain base (LCB) kinase, sphingolipid metabolism,
+YGL084C	GUP1	4.2	putative glycerol transporter
+YGL219C		4.2	biological_process unknown, molecular_function unknown, cellular_component unknown
+YCR009C	RVS161	4.2	Reduced viability on starvation protein RVS161, endocytosis*, cytoskeletal protein binding protein, actin cortical patch (sensu Saccharomyces)
+YNL029C	KTR5	4.2	Putative mannosyltransferase, cell wall organization and biogenesis*, mannosyltransferase, Golgi apparatus
+YDR025W	RPS11A	4.2	Ribosomal protein S11A (S18A) (rp41A) (YS12), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOL051W	GAL11	4.2	Component of the RNA polymerase II holoenzyme complex, positive and negative transcriptional regulator of genes involved in mating-type specialization, transcription from Pol II promoter, RNA polymerase II transcription mediator, mediator complex
+YML073C	RPL6A	4.2	Ribosomal protein L6A (L17A) (rp18) (YL16), protein biosynthesis*, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YHR067W		4.2	biological_process unknown, molecular_function unknown,
+YDR457W	TOM1	4.2	hect-domain-containing protein, containing kinase motifs; similar to Rsp5, polyubiquitylation*, ubiquitin--protein ligase, cellular_component unknown
+YDR027C	LUV1	4.2	involved in vacuole biogenesis,molecular_function unknown,
+YPL059W	GRX5	4.2	Protein with glutaredoxin activity, osmotic response*, glutaredoxin, cellular_component unknown
+YDR375C	BCS1	4.2	Mitochondrial ATPase (AAA family), respiration, adenosinetriphosphatase, mitochondrial inner membrane
+YNL081C		4.2	biological_process unknown, molecular_function unknown,
+YNL167C	SKO1	4.2	CREB like repressor, bZIP protein that binds to CRE motifs, interacts with Mig1p, transcription,
+YPL090C	RPS6A	4.2	Ribosomal protein S6A (S10A) (rp9) (YS4), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YLR200W	YKE2	4.1	Polypeptide 6 of a Yeast Non-native Actin Binding Complex, homolog of a component of the bovine NABC complex
+YDR507C	GIN4	4.1	putative serine threonine kinase, protein phosphorylation*, protein kinase, bud neck
+YLR185W	RPL37A	4.1	60S ribosomal protein L37A (L43) (YL35), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YCL029C	BIK1	4.1	Microtubule-binding protein, mitotic anaphase B*, microtubule binding, spindle pole body*
+YFL036W	RPO41	4.1	mitohcondrial RNA polymerase, mitochondrial genome maintenance*, DNA-directed RNA polymerase, mitochondrial matrix
+YDR136C		4.1	biological_process unknown, molecular_function unknown,
+YBR163W	DEM1	4.1	Weak similarity to Pta1p (pre-tRNA processing protein), biological_process unknown, molecular_function unknown, cellular_component unknown
+YPL078C	ATP4	4.1	F(1)F(0)-ATPase complex delta subunit, mitochondrial, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, stator stalk
+YBR191W	RPL21A	4.1	Ribosomal protein L21A, protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YPR139C		4.0	biological_process unknown, molecular_function unknown,
+YBR278W	DPB3	4.0	C and C' subunits of DNA polymerase II, nucleotide-excision repair*, epsilon DNA polymerase, replication fork
+YBL099W	ATP1	4.0	mitochondrial F1F0-ATPase alpha subunit, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, catalytic core
+YOR339C	UBC11	4.0	homolog of ubiquitin carrier protein E2-C, polyubiquitylation*, ubiquitin conjugating enzyme, cellular_component unknown
+YHR059W	FYV4	4.0	biological_process unknown, molecular_function unknown, cellular_component unknown
+YER153C	PET122	4.0	translational activator of cytochrome c oxidase subunit III, protein biosynthesis, molecular_function unknown, mitochondrial inner membrane
+YGL163C	RAD54	4.0	DNA-dependent ATPase, DNA repair,
+YDR204W	COQ4	4.0	involved in ubiquinone biosynthesis, ubiquinone metabolism,
+YBL045C	COR1	4.0	44 kDa core protein of yeast coenzyme QH2 cytochrome c reductase,ubiquinol-cytochrome-c reductase,
+YBR084C-A	RPL19A	4.0	Ribosomal protein L19A (L23A) (rpl5L) (YL14), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGR112W	SHY1	4.0	mitochondrial protein with homology to the mammalian SURF-1 gene, respiration, molecular_function unknown, mitochondrial inner membrane
+YNL315C	ATP11	3.9	F1FO ATPase assembly protein, protein complex assembly, chaperone, mitochondrial matrix
+YEL061C	CIN8	3.9	kinesin-related protein involved in establishment and maintenance of mitotic spindle, mitotic chromosome segregation*, microtubule motor, kinesin*
+YKL169C		3.9	biological_process unknown, molecular_function unknown,
+YGR166W	KRE11	3.9	involved in cell wall biogenesis
+YOR034C	AKR2	3.9	involved in constitutive endocytosis of Ste3p,molecular_function unknown,
+YIR009W	MSL1	3.9	encodes YU2B, a component of yeast U2 snRNP, mRNA splicing,
+YGL115W	SNF4	3.9	associates with Snf1p
+YIL093C	RSM25	3.9	protein of the small subunit of the mitochondrial ribosome
+YDR159W	SAC3	3.9	Leucine permease transcriptional regulator, mitosis*, molecular_function unknown, nucleus
+YLR091W		3.9	biological_process unknown, molecular_function unknown,
+YPR134W	MSS18	3.9	Involved in splicing of mitochondrial COX1 transcript,molecular_function unknown,
+YNR010W	CSE2	3.9	Component of RNA polymerase II mediator subcomplex, transcription from Pol II promoter*, RNA polymerase II transcription mediator, mediator complex
+YDL107W	MSS2	3.9	cox1 pre-mRNA splicing factor,molecular_function unknown,
+YPL005W		3.8	biological_process unknown, molecular_function unknown,
+YDL040C	NAT1	3.8	N-terminal acetyltransferase, protein acetylation, peptide alpha-N-acetyltransferase,
+YAL010C	MDM10	3.8	Mitochondrial outer membrane protein involved in mitochondrial morphology and inheritance, mitochondrion inheritance*, molecular_function unknown, mitochondrial outer membrane
+YPR087W		3.8	biological_process unknown, molecular_function unknown,
+YLR044C	PDC1	3.8	pyruvate decarboxylase,alpha-1,3-mannosyl-glycoprotein beta-1,2-N-acetylglucosaminyltransferase,
+YDR120C	TRM1	3.8	N2,N2-dimethylguanosine-specific tRNA methyltransferase,tRNA (guanine-N2-)-methyltransferase,
+YPL024W	NCE4	3.8	involved in cell separation
+YGL127C	SOH1	3.8	SOH1 encodes a novel 14-kD protein with limited sequence similarity to RNA polymerases. The Soh1 protein interacts with a DNA repair protein, Rad5p, in a two-hybrid system assay., biological_process unknown, molecular_function unknown,
+YJR018W		3.8	biological_process unknown, molecular_function unknown,
+YKR020W		3.8	biological_process unknown, molecular_function unknown,
+YPR125W		3.8	biological_process unknown,
+YKL114C	APN1	3.8	major apurinic apyrimidinic endonuclease 3'-repair diesterase,DNA-(apurinic or apyrimidinic site) lyase,
+YJL096W	MRPL49	3.8	mitochondrial ribosomal protein of the large subunit, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YBR106W	PHO88	3.8	regulator of Pho81, involved in regulating phosphate transport, phosphate transport,
+YPL213W	LEA1	3.8	similar to human U2A' snRNP protein, mRNA splicing,
+YOR293W	RPS10A	3.8	Ribosomal protein S10A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YOR187W	TUF1	3.8	Translation elongation factor Tu, mitochondrial
+YPL017C		3.8	biological_process unknown, molecular_function unknown,
+YGR188C	BUB1	3.8	Serine threonine protein kinase required for cell cycle arrest in response to loss of microtubule function, mitotic spindle checkpoint, protein kinase, nucleus
+YLR193C		3.8	biological_process unknown, molecular_function unknown,
+YNL121C	TOM70	3.7	70 kDa mitochondrial specialized import receptor of the outer membrane, mitochondrial translocation, protein transporter, mitochondrial outer membrane translocase complex
+YJL046W		3.7	biological_process unknown, molecular_function unknown,
+YGR078C	PAC10	3.7	Polypeptide 3 of a Yeast Non-native Actin Binding Complex, homolog of a component of the bovine NABC complex, tubulin folding, molecular_function unknown, cellular_component unknown
+YDR137W	RGP1	3.7	involved in mitotic growth, biological_process unknown, molecular_function unknown,
+YML013C-A		3.7	biological_process unknown, molecular_function unknown,
+YNL030W	HHF2	3.7	Histone H4 (HHF1 and HHF2 code for identical proteins)
+YMR266W	RSN1	3.7	biological_process unknown, molecular_function unknown,
+YHR100C		3.7	biological_process unknown, molecular_function unknown,
+YKL016C	ATP7	3.7	ATP synthase d subunit, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, stator stalk
+YPR047W	MSF1	3.7	alpha subunit of yeast mitochondrial phenylalanyl-tRNA synthetase, protein biosynthesis, phenylalanine--tRNA ligase, mitochondrion
+YLR061W	RPL22A	3.7	Ribosomal protein L22A (L1c) (rp4) (YL31), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YIR005W	IST3	3.7	biological_process unknown, molecular_function unknown, cellular_component unknown
+YGR155W	CYS4	3.7	Cystathionine beta-synthase,cystathione beta-synthase,
+YOR008C	KIM1	3.7	diepoxybutane and mitomycin C resistance,molecular_function unknown,
+YDL061C	RPS29B	3.7	Ribosomal protein S29B (S36B) (YS29), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YFL018C	LPD1	3.7	dihydrolipoamide dehydrogenase precursor (mature protein is the E3 component of alpha-ketoacid dehydrogenase complexes), serine biosynthesis*, dihydrolipoamide dehydrogenase, mitochondrial matrix*
+YDR450W	RPS18A	3.7	Ribosomal protein S18A, protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YMR098C		3.7	biological_process unknown, molecular_function unknown,
+YGL095C	VPS45	3.7	cytosolic and peripheral membrane protein, Golgi to vacuole transport*, vacuolar assembly, Golgi-vacuole transport vesicle
+YDR347W	MRP1	3.6	37 kDa mitochondrial ribosomal protein, protein biosynthesis, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YLR069C	MEF1	3.6	mitochondrial elongation factor G-like protein, protein synthesis elongation, translation elongation factor, mitochondrion
+YDR231C	COX20	3.6	protein required for maturation and assembly of cytochrome oxidase subunit II, respiration,
+YER141W	COX15	3.6	cytochrome oxidase assembly factor, cytochrome c oxidase biogenesis, molecular_function unknown, mitochondrial inner membrane
+YLR304C	ACO1	3.6	Aconitase, mitochondrial, tricarboxylic acid cycle*, aconitate hydratase, cytosol*
+YDL192W	ARF1	3.6	ADP-ribosylation factor, ER to Golgi transport*, ARF small monomeric GTPase, cytosol*
+YLL033W		3.6	biological_process unknown, molecular_function unknown,
+YMR256C	COX7	3.6	subunit VII of cytochrome c oxidase,cytochrome-c oxidase,
+YOR198C	BFR1	3.6	involved in secretion, cytokinesis*, molecular_function unknown, cellular_component unknown
+YGR056W	RSC1	3.6	Member of RSC complex, chromatin modeling, molecular_function unknown, nucleosome remodeling complex
+YOR199W		3.6	biological_process unknown, molecular_function unknown,
+YPR159W	KRE6	3.6	potential beta-glucan synthase
+YML122C		3.6	biological_process unknown, molecular_function unknown,
+YKL138C	MRPL31	3.6	15.5 kDa mitochondrial ribosomal protein YmL31, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YPR044C		3.6	biological_process unknown, molecular_function unknown,
+YNL156C		3.6	biological_process unknown, molecular_function unknown,
+YDL033C		3.6	
+YNL148C	ALF1	3.6	cofactor B, post-chaperonine tubulin folding pathway*, cochaperone, microtubule
+YGR063C	SPT4	3.6	Zn-finger protein, transcriptional regulator, transcription,
+YIL017C	VID28	3.6	vacuole import and degradation,molecular_function unknown,
+YGR219W		3.6	biological_process unknown, molecular_function unknown,
+YDR463W	STP1	3.6	Nuclear-localized protein containing zinc finger motifs, tRNA splicing,
+YBR181C	RPS6B	3.6	40S ribosomal gene product S6B (S10B) (rp9) (YS4), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YNL119W		3.5	biological_process unknown, molecular_function unknown,
+YJL204C		3.5	biological_process unknown, molecular_function unknown,
+YCR081W	SRB8	3.5	RNA polymerase II mediator subunit, repression of transcription from Pol II promoter, RNA polymerase II transcription mediator, transcription factor complex
+YER054C	GIP2	3.5	(putative) regulator of Glc7, a PP1 family protein phosphatase
+YPR164W	KIM3	3.5	killed in mutagen, sensitive to diepoxybutane and or mitomycin C,molecular_function unknown,
+YNL320W		3.5	biological_process unknown, molecular_function unknown,
+YLL044W		3.5	biological_process unknown, molecular_function unknown,
+YDL032W		3.5	biological_process unknown, molecular_function unknown,
+YOR205C		3.5	biological_process unknown, molecular_function unknown,
+YBR166C	TYR1	3.5	Prephenate dehydrogenase (NADP+),prephenate dehydrogenase (NADP+),
+YDR004W	RAD57	3.5	RecA homolog (similar to DMC1, RAD51, and RAD55), interacts with Rad 55p by two-hybrid analysis
+YLR062C	BUD28	3.5	biological_process unknown, molecular_function unknown, cellular_component unknown
+YIL097W	FYV10	3.5	biological_process unknown, molecular_function unknown, cellular_component unknown
+YLL018C-A	COX19	3.5	Cox19p (under characterization),molecular_function unknown,
+YFL001W	DEG1	3.5	Depressed growth-rate protein, RNA processing, pseudouridylate synthase, nucleus*
+YHR167W	THP2	3.4	biological_process unknown, molecular_function unknown, nucleus
+YLR262C	YPT6	3.4	highly homologous to the human GTPase, Rab6
+YOR270C	VPH1	3.4	vacuolar ATPase V0 domain subunit a (100 kDa), vacuolar acidification*, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATPase V0 domain
+YPL239W	YAR1	3.4	YAR1 encodes a 200-amino-acid protein with two ANK repeat motifs and an acidic C terminus rich in PEST-like sequences, biological_process unknown, molecular_function unknown,
+YDR334W	SWR1	3.4	DEAH-box protein, putative RNA helicase
+YBL027W	RPL19B	3.4	Ribosomal protein L19B (YL14) (L23B) (rpl5L), protein biosynthesis, structural protein of ribosome, cytosolic large ribosomal (60S)-subunit
+YGL088W		3.4	biological_process unknown, molecular_function unknown,
+YML095C-A		3.4	biological_process unknown, molecular_function unknown,
+YMR267W	PPA2	3.4	mitochondrial inorganic pyrophosphatase, respiration, inorganic diphosphatase, mitochondrion
+YPL161C	BEM4	3.4	Involved in polarity establishment and bud emergence, establishment of cell polarity (sensu Saccharomyces)*, molecular_function unknown, cellular_component unknown
+YJR104C	SOD1	3.4	Cu, Zn superoxide dismutase,superoxide dismutase,
+YDR197W	CBS2	3.4	cytochrome b translational activator, protein biosynthesis, molecular_function unknown, mitochondrial inner membrane
+YER028C		3.4	biological_process unknown, molecular_function unknown,
+YIL065C	FIS1	3.4	mitochondrial fission, mitochondrial fission, molecular_function unknown, mitochondrial outer membrane
+YDR276C	PMP3	3.4	hypothetical transmembrane protein, cation transport, molecular_function unknown, plasma membrane
+YLR372W	SUR4	3.4	involved in fatty acid biosynthesis, fatty acid biosynthesis*, molecular_function unknown, endoplasmic reticulum membrane
+YCL061C		3.4	biological_process unknown, molecular_function unknown,
+YPL045W	VPS16	3.4	Vacuolar sorting protein, protein-vacuolar targeting*, molecular_function unknown, vacuolar membrane*
+YGL118C		3.4	biological_process unknown, molecular_function unknown,
+YNL005C	MRP7	3.4	Mitochondrial ribosomal protein MRP7 (YmL2) (E. coli L27), protein biosynthesis, structural protein of ribosome*, mitochondrial large ribosomal-subunit
+YCR077C	PAT1	3.4	Necessary for accurate chromosome transmission during cell
+YIL134W	FLX1	3.4	mitochondrial inner membrane carrier protein for FAD, mitochondrial transport, flavin adenine dinucleotide transporter, mitochondrion
+YJR145C	RPS4A	3.4	Ribosomal protein S4A (YS6) (rp5) (S7A), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YGR150C		3.3	biological_process unknown, molecular_function unknown,
+YBR048W	RPS11B	3.3	Ribosomal protein S11B (S18B) (rp41B) (YS12), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YEL045C		3.3	biological_process unknown, molecular_function unknown,
+YJL003W		3.3	biological_process unknown, molecular_function unknown,
+YLR052W	IES3	3.3	biological_process unknown, molecular_function unknown,
+YDR377W	ATP17	3.3	ATP synthase subunit f, ATP synthesis coupled proton transport, hydrogen-transporting two-sector ATPase, hydrogen-transporting ATP synthase, F0 sector
+YOL004W	SIN3	3.3	DNA binding protein involved in transcriptional regulation, transcription,
+YJL168C	SET2	3.3	transcription factor containing a SET domain
+YNL008C		3.3	biological_process unknown, molecular_function unknown,
+YMR014W	BUD22	3.3	BUD site selection, biological_process unknown, molecular_function unknown,
+YGL071W	RCS1	3.3	Putative transcription factor that binds the consensus site PyPuCACCCPu, iron transport,
+YLR201C		3.2	biological_process unknown, molecular_function unknown,
+YNR047W		3.2	biological_process unknown, molecular_function unknown,
+YPR123C		3.2	biological_process unknown, molecular_function unknown,
+YMR202W	ERG2	3.2	C-8 sterol isomerase, ergosterol biosynthesis, C-8 sterol isomerase, endoplasmic reticulum
+YOR158W	PET123	3.2	Mitochondrial ribosomal protein of small subunit, protein biosynthesis, structural protein of ribosome, mitochondrial small ribosomal-subunit
+YPL178W	CBC2	3.2	Small subunit of the nuclear cap binding complex
+YOR164C		3.2	biological_process unknown, molecular_function unknown,
+YGR081C		3.2	biological_process unknown, molecular_function unknown,
+YJL179W	PFD1	3.2	bovine prefoldin subunit 1 homolog (putative), protein folding,
+YDR049W		3.2	biological_process unknown, molecular_function unknown,
+YBL039C	URA7	3.2	CTP synthase, highly homologus to URA8 CTP synthase,CTP synthase,
+YML008C	ERG6	3.2	S-adenoslymethionine: delta 24-methyltransferase, ergosterol biosynthesis, delta(24)-sterol C-methyltransferase, endoplasmic reticulum*
+YDR417C		3.2	biological_process unknown, molecular_function unknown,
+YGL107C		3.2	biological_process unknown, molecular_function unknown,
+YDR350C	TCM10	3.2	biological_process unknown, molecular_function unknown,
+YER040W	GLN3	3.2	Transcriptional activator of nitrogen-regulated genes,transcription factor,
+YLR268W	SEC22	3.2	Synaptobrevin (v-SNARE) homolog, non-selective vesicle fusion*, v-SNARE, inter-Golgi transport vesicle*
+YNL252C	MRPL17	3.2	mitochondrial ribosomal protein of the large subunit, protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YJL169W		3.2	biological_process unknown, molecular_function unknown,
+YOR104W		3.1	biological_process unknown, molecular_function unknown,
+YJL056C	ZAP1	3.1	Metalloregulatory protein involved in zinc-responsive transcriptional regulation, transcription regulation from Pol II promoter*, specific RNA polymerase II transcription factor,
+YDL175C		3.1	biological_process unknown, molecular_function unknown,
+YNL227C		3.1	biological_process unknown, molecular_function unknown,
+YAL021C	CCR4	3.1	95 kDa containng leucine rich tandem repeats
+YKR092C	SRP40	3.1	nucleolar protein that is immunologically and structurally related to rat Nopp140, a nonribosomal protein of the nucleolus and coiled bodies., nucleocytoplasmic transport, chaperone, nucleolus
+YBR282W	MRPL27	3.1	Mitochondrial ribosomal protein MRPL27 (YmL27), protein biosynthesis, structural protein of ribosome, mitochondrial large ribosomal-subunit
+YJL141C	YAK1	3.1	Serine-threonine protein kinase
+YNL229C	URE2	3.1	transcriptional regulator, putative glutathione transferase, nitrogen utilization regulation, transcription co-repressor, soluble fraction
+YNL025C	SSN8	3.1	C-type cyclin associated with the Ssn3p cyclin-dependent kinase, repression of transcription from Pol II promoter, non-specific RNA polymerase II transcription factor*, transcription factor complex
+YLR448W	RPL6B	3.1	60S ribosomal subunit protein L6B (L17B) (rp18) (YL16), protein biosynthesis*, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YMR293C		3.1	amidase
+YLR087C		3.1	biological_process unknown, molecular_function unknown,
+YIL103W		3.1	biological_process unknown, molecular_function unknown,
+YDR207C	UME6	3.1	Ume6p is a C6 zinc finger URS1-binding protein., meiosis, transcription factor,
+YCR028C	FEN2	3.1	Amino acid permease, biological_process unknown, molecular_function unknown,
+YLL006W	MMM1	3.0	mitochondrial outer membrane protein, mitochondrion inheritance*, molecular_function unknown, mitochondrial outer membrane
+YOL121C	RPS19A	3.0	40S ribosomal protein S19A (S16aA) (rp55A) (YS16A), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YNL069C	RPL16B	3.0	Ribosomal protein L16B (L21B) (rp23) (YL15), protein biosynthesis, structural protein of ribosome*, cytosolic large ribosomal (60S)-subunit
+YAR002W	NUP60	3.0	nuclear pore protein
+YDR518W	EUG1	3.0	Protein disulfide isomerase homolog,protein disulfide isomerase,
+YHR203C	RPS4B	3.0	Ribosomal protein S4B (YS6) (rp5) (S7B), protein biosynthesis, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YGR118W	RPS23A	3.0	Ribosomal protein S23A (S28A) (rp37) (YS14), protein biosynthesis*, structural protein of ribosome, cytosolic small ribosomal (40S)-subunit
+YDR076W	RAD55	3.0	RecA homolog (related to DMC1, RAD51, RAD57), interacts with Rad51p and Rad57p by two-hybrid analysis
+YCR065W	HCM1	3.0	Transcription factor (fork head domain)
+YLR039C	RIC1	3.0	involved in transcription of ribosomal protein genes and ribosomal RNA, transcription regulation from Pol II promoter*, molecular_function unknown, nucleus
