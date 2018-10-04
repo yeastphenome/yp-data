@@ -1,0 +1,12 @@
+Description	Gene name	ORF name
+Subunit d of the five-subunit V0 integral membrane domain of V-ATPase	VMA6	YLR447C
+Peripheral membrane protein that is required for V-ATPase function	VMA22	YHR060W
+V-ATPase V0 domain subunit c′, involved in proton transport activity; hydrophobic integral membrane protein	TFP3	YPL234C
+Subunit C of the eight-subunit V1 peripheral membrane domain of V-ATPase	VMA5	YKL080W
+Subunit B of the eight-subunit V1 peripheral membrane domain of the V-ATPase	VMA2	YBR127C
+Dubious ORF; ORF overlaps the verified gene VMA4/YOR332W: subunit E of the eight-subunit V1 peripheral membrane domain of the V-ATPase	YOR331C	YOR331C
+Subunit A of the eight-subunit V1 peripheral membrane domain of the V-ATPase	TFP1	YDL185W
+Dubious ORF; overlaps verified ORF YCL005W-A\VMA9: V-ATPase subunit e of the V-ATPase V0 subcomplex	YCL007C	YCL007C
+DNA damage-inducible V-SNARE binding protein contains a ubiquitin-associated domain, may act as a negative regulator of constitutive exocytosis, and may play a role in S-phase checkpoint control	DDI1	YER143W
+Component of the GTPase-activating Bfa1p–Bub2p complex involved in multiple cell cycle checkpoint pathways that control exit from mitosis	BFA1	YJR053W
+Protein that stimulates the activity of serine palmitoyltransferase (Lcb1p and Lcb2p) severalfold; involved in sphingolipid biosynthesis	TSC3	YBR058C-A
