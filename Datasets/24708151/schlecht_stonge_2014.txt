@@ -1,4 +1,4 @@
-ORF	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPE [2%] | Schlecht U~St Onge RP, 2014	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPG [2%] | Schlecht U~St Onge RP, 2014	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPL [2%] | Schlecht U~St Onge RP, 2014	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPD [standard] | Schlecht U~St Onge RP, 2014
+ORF	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPD [standard] | Schlecht U~St Onge RP, 2014	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPE [2%] | Schlecht U~St Onge RP, 2014	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPG [2%] | Schlecht U~St Onge RP, 2014	hom | growth (relative abundance in pooled culture) | copper(II) sulfate [500 mM], YPL [2%] | Schlecht U~St Onge RP, 2014
 YAL002W	-0.209	-0.185	-0.320	-0.268
 YAL004W	-0.198	0.221	-0.049	0.021
 YAL005C	0.019	0.091	0.086	-0.002
