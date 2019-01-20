@@ -39,7 +39,7 @@ hit_data = cell2mat(hit_data);
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [453; 690; 691; 692];
+hit_data_ids = [692; 453; 690; 691];
 
 %% Prepare final dataset
 
