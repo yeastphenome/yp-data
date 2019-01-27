@@ -1,0 +1,4 @@
+16147	hom | genome instability (HPHe1-URA3-HPHe2) | hydroxyurea [50 uM] | YPD + Ade [0.4g/L] | Segura-Wang M~Korbel JO, 2017
+16148	hom | genome instability (HPHe1-URA3-HPHe2) | methyl methanesulfonate [0.1%] | YPD + Ade [0.4g/L] | Segura-Wang M~Korbel JO, 2017
+16149	hom | genome instability (HPHe1-URA3-HPHe2) | doxorubicin [25 uM] | YPD + Ade [0.4g/L] | Segura-Wang M~Korbel JO, 2017
+16150	hom | genome instability (HPHe1-URA3-HPHe2) | camptothecin [10 uM] | YPD + Ade [0.4g/L] | Segura-Wang M~Korbel JO, 2017
