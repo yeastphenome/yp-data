@@ -1,0 +1,2 @@
+16151	hom | growth (relative abundance in pooled culture) | phleomycin D1 [5-15 ug/ml] | YPD | Krol K~Skoneczna A, 2015
+16152	het | growth (relative abundance in pooled culture) | phleomycin D1 [5-15 ug/ml] | YPD | Krol K~Skoneczna A, 2015
