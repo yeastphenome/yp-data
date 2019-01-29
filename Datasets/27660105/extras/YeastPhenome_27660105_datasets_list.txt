@@ -1,0 +1,2 @@
+16140	hom | growth (relative abundance in pooled culture) | vulpinic acid [14-56 uM] | YPD | Kwon Y~Kwak YS, 2016
+16143	het | growth (relative abundance in pooled culture) | vulpinic acid [14-56 uM] | YPD | Kwon Y~Kwak YS, 2016
