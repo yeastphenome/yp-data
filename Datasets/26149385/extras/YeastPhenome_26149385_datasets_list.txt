@@ -1,0 +1,2 @@
+11865	hap a | transport to mitochondria (Om14-GFP) | standard | SD + Met | Sauerwald J~Rapaport D, 2015
+11866	hap a | protein insertion into the MOM (Ura3-HA-Om14-SL17) | standard | SD + Met | Sauerwald J~Rapaport D, 2015
