@@ -1,0 +1,6 @@
+16195	hap a | growth (relative abundance in pooled culture) | standard | SD + phosphate limitation | Payen C~Dunham MJ, 2016
+16196	hap a | growth (relative abundance in pooled culture) | standard | SD + glucose limitation | Payen C~Dunham MJ, 2016
+16197	het | growth (relative abundance in pooled culture) | standard | SD + sulfate limitation | Payen C~Dunham MJ, 2016
+16198	het | growth (relative abundance in pooled culture) | standard | SD + glucose limitation | Payen C~Dunham MJ, 2016
+16199	het | growth (relative abundance in pooled culture) | standard | SD + phosphate limitation | Payen C~Dunham MJ, 2016
+16210	hap a | growth (relative abundance in pooled culture) | standard | SD + sulfate limitation | Payen C~Dunham MJ, 2016
