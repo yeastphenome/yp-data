@@ -36,34 +36,61 @@ compounds.PCID = cellfun(@str2num, compounds.PCID);
 
 % Match screenIDs with dataset ids
 [FILENAMES{end+1}, screen2dataset] = read_data('readtable', './extras/screenid_datasetid.txt','delimiter','\t','ReadVariableNames', false);
+screen2dataset.Properties.VariableNames = {'screen','hom_dataset_id'};
 
 [FILENAMES{end+1}, hom_dataset2conditionset] = read_data('readtable', './private/hom_datasetid_conditionsetid.txt','delimiter','\t','ReadVariableNames', false);
+hom_dataset2conditionset.Properties.VariableNames = {'hom_dataset_id','conditionset_id'};
+
 [FILENAMES{end+1}, het_dataset2conditionset] = read_data('readtable', './private/het_datasetid_conditionsetid.txt','delimiter','\t','ReadVariableNames', false);
+het_dataset2conditionset.Properties.VariableNames = {'het_dataset_id','conditionset_id'};
 
-[~,ix] = sort(screen2dataset.Var2);
-screen2dataset = screen2dataset(ix,:);
+% Keep only one dataset id whenever the same conditionset occurs
 
-[~,ix] = sort(hom_dataset2conditionset.Var1);
-hom_dataset2conditionset = hom_dataset2conditionset(ix,:);
+% Hom
+[C, ia, ic] = unique(hom_dataset2conditionset.conditionset_id);
 
-screen2dataset.conditionset = hom_dataset2conditionset.Var2;
-[~,ix] = sortrows(screen2dataset,[3 2]);
-screen2dataset = screen2dataset(ix,:);
+counts = zeros(length(C),1);
+for i = 1 : length(C)
+    counts(i) = length(find(hom_dataset2conditionset.conditionset_id == C(i)));
+end
+dups = C(counts>1);
+sortrows(hom_dataset2conditionset(ismember(hom_dataset2conditionset.conditionset_id, dups),:), 'conditionset_id')
 
-[~,ix] = sort(het_dataset2conditionset.Var2);
-het_dataset2conditionset = het_dataset2conditionset(ix,:);
+datasets_to_remove = [];
+for i = 1 :length(dups)
+    datasets_to_remove = [datasets_to_remove; 
+        min(hom_dataset2conditionset{hom_dataset2conditionset.conditionset_id == dups(i),'hom_dataset_id'})];
+end
 
-screen2dataset.het_datasetid = het_dataset2conditionset.Var1;
+hom_dataset2conditionset(ismember(hom_dataset2conditionset.hom_dataset_id, datasets_to_remove),:) = [];
 
-% [~, ind1, ind2] = intersect(compounds.ScreenID, screen2dataset.Var1);
-% compounds.datasetid = nan(size(compounds.ScreenID));
-% compounds.datasetid(ind1) = screen2dataset.Var2(ind2);
+% Het
+[C, ia, ic] = unique(het_dataset2conditionset.conditionset_id);
+
+counts = zeros(length(C),1);
+for i = 1 : length(C)
+    counts(i) = length(find(het_dataset2conditionset.conditionset_id == C(i)));
+end
+dups = C(counts>1);
+sortrows(het_dataset2conditionset(ismember(het_dataset2conditionset.conditionset_id, dups),:), 'conditionset_id')
+
+datasets_to_remove = [];
+for i = 1 :length(dups)
+    datasets_to_remove = [datasets_to_remove; 
+        min(het_dataset2conditionset{het_dataset2conditionset.conditionset_id == dups(i),'het_dataset_id'})];
+end
+
+het_dataset2conditionset(ismember(het_dataset2conditionset.het_dataset_id, datasets_to_remove),:) = [];
+
+screen2dataset = innerjoin(screen2dataset, hom_dataset2conditionset, 'Keys', {'hom_dataset_id'});
+screen2dataset = innerjoin(screen2dataset, het_dataset2conditionset, 'Keys', {'conditionset_id'});
+
 
 %% HOM 
 % Match data with dataset ids
-[~,ind1,ind2] = intersect(screen2dataset.Var1, data.labels_col);
+[~,ind1,ind2] = intersect(screen2dataset.screen, data.labels_col);
 data.datasetid = nan(size(data.labels_col));
-data.datasetid(ind2) = screen2dataset.Var2(ind1);
+data.datasetid(ind2) = screen2dataset.hom_dataset_id(ind1);
 
 % Clean up the ORFs
 data.labels_row = clean_orf(data.labels_row);
@@ -80,9 +107,9 @@ data.datasetid = cellfun(@str2num, data.datasetid);
 
 %% HET 
 % Match data with dataset ids
-[~,ind1,ind2] = intersect(screen2dataset.Var1, data_het.labels_col);
+[~,ind1,ind2] = intersect(screen2dataset.screen, data_het.labels_col);
 data_het.datasetid = nan(size(data_het.labels_col));
-data_het.datasetid(ind2) = screen2dataset.het_datasetid(ind1);
+data_het.datasetid(ind2) = screen2dataset.het_dataset_id(ind1);
 
 % Clean up the ORFs
 data_het.labels_row = clean_orf(data_het.labels_row);
@@ -122,14 +149,15 @@ lee_giaever_2014.dataset_ids = datasetids_all;
 
 
 %% Save
+
 save('./lee_giaever_2014.mat','lee_giaever_2014');
 
 fid = fopen('./lee_giaever_2014.txt','w');
 write_matrix_file(fid, lee_giaever_2014.orfs, lee_giaever_2014.ph, lee_giaever_2014.data);
 fclose(fid);
 
-% t = textread('./private/het_datasetids.txt','%d');
-% fid = fopen('./private/het_data_to_import.txt','w');
+% fid = fopen('./private/hom_data_to_import.txt','w');
+% t = data.datasetid;
 % for i = 1 : length(t)
 %     inds = find(lee_giaever_2014.dataset_ids == t(i));
 %     for j = 1 : length(lee_giaever_2014.orfs)
@@ -137,7 +165,9 @@ fclose(fid);
 %             fprintf(fid, '%d\t%s\t%.3f\n', t(i), lee_giaever_2014.orfs{j}, lee_giaever_2014.data(j,inds));
 %         end
 %     end
-%     i
+%     if mod(i, 100) == 0
+%         fprintf('%d of %d\n', i, length(t));
+%     end
 % end
 % fclose(fid);
             
