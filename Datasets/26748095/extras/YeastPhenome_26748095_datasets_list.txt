@@ -1,0 +1,2 @@
+16214	hom | growth (relative abundance in pooled culture) | nicotinamide [20 mM], time [20 gen] | YPD | Simoneau A~Wurtele H, 2016
+16215	hom | growth (relative abundance in pooled culture) | nicotinamide [20 mM], time [5 gen] | YPD | Simoneau A~Wurtele H, 2016
