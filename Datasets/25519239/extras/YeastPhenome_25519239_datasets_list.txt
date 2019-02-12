@@ -1,0 +1,2 @@
+16251	hom | growth (pooled culture) | Sodium pyrithione [8.35 uM] | YPD | Aiyar RS~Steinmetz LM, 2014
+16252	het | growth (pooled culture) | Sodium pyrithione [8.35 uM] | YPD | Aiyar RS~Steinmetz LM, 2014
