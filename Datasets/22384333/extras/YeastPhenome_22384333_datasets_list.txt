@@ -1,2 +1,3 @@
-519	hom | growth (relative abundance in pooled culture) | glyoxal [20 mM] | Hoon S~Nislow C, 2011
-755	hom | growth (relative abundance in pooled culture) | methylglyoxal [8 mM] | Hoon S~Nislow C, 2011
+519	hom | growth (pooled culture) | glyoxal [20 mM] | YPD | Hoon S~Nislow C, 2011
+755	hom | growth (pooled culture) | methylglyoxal [8 mM] | YPD | Hoon S~Nislow C, 2011
+16253	hom | growth (pooled culture) | glyoxal [80 mM] | YPD | Hoon S~Nislow C, 2011
