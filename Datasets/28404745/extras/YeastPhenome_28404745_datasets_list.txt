@@ -1,0 +1,2 @@
+16262	hap a | transport to/from cell surface (GFP-Snc1-Suc2 + Suc2 invertase activity) | standard | YPD | Dalton LE~Conibear E, 2017
+16263	hap alpha | transport to/from cell surface (GFP-Snc1-Suc2 + Suc2 invertase activity) | standard | YPD | Dalton LE~Conibear E, 2017
