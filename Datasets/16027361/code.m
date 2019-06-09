@@ -16,14 +16,17 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('textscan','./raw_data/hits.txt', '%s');
+[FILENAMES{end+1}, data] = read_data('readtable','./raw_data/hits.txt');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data(:,1);
+hit_strains = data.gene;
 
 % Get the data itself
-hit_data = ones(size(hit_strains));
+hit_data = zeros(size(hit_strains));
+hit_data(strmatch('suppressor', data.class)) = 2;
+hit_data(strmatch('accelerator', data.class)) = -2;
+hit_data(strmatch('weak accelerator', data.class)) = -1;
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_genename(hit_strains);
