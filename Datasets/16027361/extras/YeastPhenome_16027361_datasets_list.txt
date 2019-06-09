@@ -1,1 +1,1 @@
-84	hap a | viral RNA recombination | standard [standard] | Serviene E~Nagy PD, 2005
+84	hap a | viral RNA recombination | standard | SC - His - Leu - Ura, Gal [2%] | Serviene E~Nagy PD, 2005
