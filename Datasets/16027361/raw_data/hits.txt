@@ -1,5 +1,16 @@
-ctl1
-met22
-hur1
-xrn1
-ubp3
+gene	class
+CTL1	suppressor
+MET22	suppressor
+HUR1	suppressor
+XRN1	suppressor
+UBP3	suppressor
+PEP7	accelerator
+CHO2	accelerator
+DCI1	accelerator
+VPS43	weak accelerator
+PTH1	weak accelerator
+VPS29	weak accelerator
+VPS35	weak accelerator
+NGG1	weak accelerator
+SPE3	modifier
+SPT3	modifier
