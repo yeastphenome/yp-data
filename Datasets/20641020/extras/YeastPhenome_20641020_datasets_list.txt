@@ -1,0 +1,2 @@
+16281	hap a | abundance of caesium (gamma-counter) | caesium chloride [50 uM], Cs-134 [4 kBq/ml] | YPD | Heuck S~Kanter U, 2010
+16284	hap a | abundance of strontium (gamma-counter) | strontium dichloride [50 uM], Sr-85 [4 kBq/ml] | YPD | Heuck S~Kanter U, 2010
