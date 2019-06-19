@@ -1,0 +1,2 @@
+16260	hap a | growth (spot assay) | soraphen A [0.2 ug/ml] | YPD | Bozaquel-Morais BL~Montero-Lomeli M, 2017
+16261	hap a | growth (spot assay) | soraphen A [0.4 ug/ml] | YPD | Bozaquel-Morais BL~Montero-Lomeli M, 2017
