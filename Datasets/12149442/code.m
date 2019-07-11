@@ -41,7 +41,7 @@ disp(hit_strains(inds));
 hit_strains(inds) = [];
 hit_data(inds,:) = [];
 
-hit_data = cell2mat(hit_data);
+hit_data = cell2mat(hit_data)-1;   % Coverting to scale where 0 = wt, and negative values = sensitivity
 
 %% Load data (MMS)
 
@@ -67,7 +67,7 @@ disp(hit_strains2(inds));
 hit_strains2(inds) = [];
 hit_data2(inds,:) = [];
 
-hit_data2 = cell2mat(hit_data2);
+hit_data2 = cell2mat(hit_data2)-1;   % Coverting to scale where 0 = wt, and negative values = sensitivity
 
 %%
 
