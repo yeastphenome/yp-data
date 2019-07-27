@@ -1,0 +1,33 @@
+16216	hom | growth (pooled culture) | compound 1 [12 uM] | None | Hoepfner D~Parker CN, 2012
+16217	hom | growth (pooled culture) | compound 2 [0.5 uM] | None | Hoepfner D~Parker CN, 2012
+16218	hom | growth (pooled culture) | compound 3 [0.25 uM] | None | Hoepfner D~Parker CN, 2012
+16219	hom | growth (pooled culture) | compound 4 [200 uM] | None | Hoepfner D~Parker CN, 2012
+16220	hom | growth (pooled culture) | voriconazole [0.05 uM] | None | Hoepfner D~Parker CN, 2012
+16221	het | growth (pooled culture) | compound 1 [12 uM] | None | Hoepfner D~Parker CN, 2012
+16222	het | growth (pooled culture) | compound 2 [0.5 uM] | None | Hoepfner D~Parker CN, 2012
+16223	het | growth (pooled culture) | compound 3 [0.25 uM] | None | Hoepfner D~Parker CN, 2012
+16224	het | growth (pooled culture) | compound 4 [200 uM] | None | Hoepfner D~Parker CN, 2012
+16225	het | growth (pooled culture) | voriconazole [0.05 uM] | None | Hoepfner D~Parker CN, 2012
+16288	het | growth (pooled culture) | compound 1 [22.02 uM] | None | Hoepfner D~Parker CN, 2012
+16289	het | growth (pooled culture) | compound 2 [0.1 uM] | None | Hoepfner D~Parker CN, 2012
+16290	het | growth (pooled culture) | compound 2 [0.25 uM] | None | Hoepfner D~Parker CN, 2012
+16291	het | growth (pooled culture) | compound 2 [0.75 uM] | None | Hoepfner D~Parker CN, 2012
+16292	het | growth (pooled culture) | compound 2 [1 uM] | None | Hoepfner D~Parker CN, 2012
+16293	het | growth (pooled culture) | compound 2 [2 uM] | None | Hoepfner D~Parker CN, 2012
+16294	het | growth (pooled culture) | compound 3 [0.1 uM] | None | Hoepfner D~Parker CN, 2012
+16295	het | growth (pooled culture) | compound 3 [0.5 uM] | None | Hoepfner D~Parker CN, 2012
+16296	het | growth (pooled culture) | voriconazole [0.1 uM] | None | Hoepfner D~Parker CN, 2012
+16297	het | growth (pooled culture) | voriconazole [0.25 uM] | None | Hoepfner D~Parker CN, 2012
+16298	het | growth (pooled culture) | voriconazole [0.5 uM] | None | Hoepfner D~Parker CN, 2012
+16299	het | growth (pooled culture) | voriconazole [0.53 uM] | None | Hoepfner D~Parker CN, 2012
+16300	hom | growth (pooled culture) | compound 2 [0.1 uM] | None | Hoepfner D~Parker CN, 2012
+16301	hom | growth (pooled culture) | compound 2 [0.25 uM] | None | Hoepfner D~Parker CN, 2012
+16302	hom | growth (pooled culture) | compound 2 [0.75 uM] | None | Hoepfner D~Parker CN, 2012
+16303	hom | growth (pooled culture) | compound 2 [1 uM] | None | Hoepfner D~Parker CN, 2012
+16304	hom | growth (pooled culture) | compound 2 [2 uM] | None | Hoepfner D~Parker CN, 2012
+16305	hom | growth (pooled culture) | compound 3 [0.1 uM] | None | Hoepfner D~Parker CN, 2012
+16306	hom | growth (pooled culture) | compound 3 [0.5 uM] | None | Hoepfner D~Parker CN, 2012
+16307	hom | growth (pooled culture) | voriconazole [0.1 uM] | None | Hoepfner D~Parker CN, 2012
+16308	hom | growth (pooled culture) | voriconazole [0.25 uM] | None | Hoepfner D~Parker CN, 2012
+16309	hom | growth (pooled culture) | voriconazole [0.5 uM] | None | Hoepfner D~Parker CN, 2012
+16310	hom | growth (pooled culture) | voriconazole [0.53 uM] | None | Hoepfner D~Parker CN, 2012
