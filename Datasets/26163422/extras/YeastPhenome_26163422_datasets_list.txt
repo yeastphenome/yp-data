@@ -1,0 +1,2 @@
+16255	hap a | DNA repair (Dna2-GFP) | phleomycin [5 ug/ml] | None | Yimit A~Brown GW, 2015
+16320	hap a | DNA repair (Dna2-GFP) | standard | None | Yimit A~Brown GW, 2015
