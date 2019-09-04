@@ -1,0 +1,4 @@
+16247	hap a | expression level of a gene (prTPK1-GFP) | standard | None | Pautasso C~Rossi S, 2016
+16248	hap a | expression level of a gene (prTPK2-GFP) | standard | None | Pautasso C~Rossi S, 2016
+16249	hap a | expression level of a gene (prTPK3-GFP) | standard | None | Pautasso C~Rossi S, 2016
+16250	hap a | expression level of a gene (prBCY1-GFP) | standard | None | Pautasso C~Rossi S, 2016
