@@ -1,0 +1,5 @@
+	HU	Water
+PAT1	-1	-1
+EDC3	-1	-1
+ASC1	-1	0
+LSM6	-1	0
