@@ -1,0 +1,2 @@
+16137	hap a | P-body formation (Lsm1-GFP) | osmotic stress | SD + His + Leu + Met + Ura, ammonium sulphate | Tkach JM~Brown GW, 2012
+16138	hap a | P-body formation (Lsm1-GFP) | hydroxyurea [200 mM] | SD + His + Leu + Met + Ura, ammonium sulphate | Tkach JM~Brown GW, 2012
