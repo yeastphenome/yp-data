@@ -23,7 +23,7 @@ datasets.standard_name = d{2};
 hit_strains = data.labels_row(:,1);
 
 % Get the data itself
-hit_data = data.data; 
+hit_data = data.data(:,1); % excluding the YPD dataset because it was a secondary (not genome-wide) screen
 
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
@@ -45,7 +45,7 @@ hit_data(indWt,:) = [];
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [124; 700];
+hit_data_ids = [124];
 
 %% Prepare final dataset
 
