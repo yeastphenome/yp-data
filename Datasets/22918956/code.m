@@ -16,14 +16,14 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-[FILENAMES{end+1}, data] = read_data('textread','./raw_data/hit_strains.txt', '%s');
+[FILENAMES{end+1}, data] = read_data('readtable','./raw_data/hit_strains.txt');
 
 % Get the list of ORFs and the correponding data 
 % (this part usually changes significantly based on the format of the raw data file)
-hit_strains = data(:,1);
+hit_strains = data.Var1;
 
 % Get the data itself
-hit_data = -ones(size(hit_strains)); % if the dataset is binary
+hit_data = [data.GAL1p_Gem1_GFP data.TEF2p_Gem1_GFP];
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_genename(hit_strains);
@@ -39,7 +39,7 @@ disp(hit_strains(inds));
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [15984];
+hit_data_ids = [15984; 16321];
 
 %% Tested strains (only if the dataset is not quantitative and the tested strains are provided separately)
 
