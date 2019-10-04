@@ -1,1 +1,2 @@
-15984	hap a | protein insertion into the MOM (GFP-Gem1) | standard [standard] | Krumpe K~Schuldiner M, 2012
+15984	hap a | protein insertion into the MOM (GAL1p-Gem1-GFP) | standard | None | Krumpe K~Schuldiner M, 2012
+16321	hap a | protein insertion into the MOM (TEF2p-Gem1-GFP) | standard | None | Krumpe K~Schuldiner M, 2012

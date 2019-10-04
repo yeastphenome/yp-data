@@ -1,1 +1,2 @@
-SPF1
+	GAL1p-Gem1-GFP	TEF2p-Gem1-GFP
+SPF1	-1	-1
