@@ -1,0 +1,2 @@
+16282	hom | growth (pooled culture) | zinc dichloride [1 uM], time [5 gen] | LZM | North M~Eide D, 2012
+16283	hom | growth (pooled culture) | zinc dichloride [1 uM], time [15 gen] | LZM | North M~Eide D, 2012
