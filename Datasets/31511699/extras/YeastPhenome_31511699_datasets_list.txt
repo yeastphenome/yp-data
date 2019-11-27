@@ -1,0 +1,27 @@
+16322	hom | rDNA copy number | standard | None | Puddu F~Jackson SP, 2019
+16323	hom | genome instability (CUP1 copy number) | standard | None | Puddu F~Jackson SP, 2019
+16324	hom | mtDNA copy number | standard | None | Puddu F~Jackson SP, 2019
+16325	hom | 2micron copy number | standard | None | Puddu F~Jackson SP, 2019
+16326	hom | transposable element copy number (Ty1) | standard | None | Puddu F~Jackson SP, 2019
+16327	hom | transposable element copy number (Ty2) | standard | None | Puddu F~Jackson SP, 2019
+16328	hom | transposable element copy number (Ty3) | standard | None | Puddu F~Jackson SP, 2019
+16329	hom | transposable element copy number (Ty4) | standard | None | Puddu F~Jackson SP, 2019
+16330	hom | transposable element copy number (Ty5) | standard | None | Puddu F~Jackson SP, 2019
+16331	hom | telomere length | standard | None | Puddu F~Jackson SP, 2019
+16332	hom | chromosome ploidy (chromosome 1) | standard | None | Puddu F~Jackson SP, 2019
+16333	hom | chromosome ploidy (chromosome 2) | standard | None | Puddu F~Jackson SP, 2019
+16334	hom | chromosome ploidy (chromosome 3) | standard | None | Puddu F~Jackson SP, 2019
+16335	hom | chromosome ploidy (chromosome 4) | standard | None | Puddu F~Jackson SP, 2019
+16336	hom | chromosome ploidy (chromosome 5) | standard | None | Puddu F~Jackson SP, 2019
+16337	hom | chromosome ploidy (chromosome 6) | standard | None | Puddu F~Jackson SP, 2019
+16338	hom | chromosome ploidy (chromosome 7) | standard | None | Puddu F~Jackson SP, 2019
+16339	hom | chromosome ploidy (chromosome 8) | standard | None | Puddu F~Jackson SP, 2019
+16340	hom | chromosome ploidy (chromosome 9) | standard | None | Puddu F~Jackson SP, 2019
+16341	hom | chromosome ploidy (chromosome 10) | standard | None | Puddu F~Jackson SP, 2019
+16342	hom | chromosome ploidy (chromosome 11) | standard | None | Puddu F~Jackson SP, 2019
+16343	hom | chromosome ploidy (chromosome 12) | standard | None | Puddu F~Jackson SP, 2019
+16344	hom | chromosome ploidy (chromosome 13) | standard | None | Puddu F~Jackson SP, 2019
+16345	hom | chromosome ploidy (chromosome 14) | standard | None | Puddu F~Jackson SP, 2019
+16346	hom | chromosome ploidy (chromosome 15) | standard | None | Puddu F~Jackson SP, 2019
+16347	hom | chromosome ploidy (chromosome 16) | standard | None | Puddu F~Jackson SP, 2019
+16348	hom | genome instability (number of subchromosomal deletions/amplifications) | standard | None | Puddu F~Jackson SP, 2019
