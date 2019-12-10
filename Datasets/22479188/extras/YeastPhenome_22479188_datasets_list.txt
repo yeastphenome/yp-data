@@ -1,0 +1,7 @@
+16311	hap a | snoRNA splicing (U3 snoRNA) | standard | YPD | Albulescu LO~Pleiss JA, 2012
+16312	hap a | mRNA splicing (RPL31B) | standard | YPD | Albulescu LO~Pleiss JA, 2012
+16313	hap a | mRNA splicing (UBC13) | standard | YPD | Albulescu LO~Pleiss JA, 2012
+16314	hap a | mRNA splicing (TUB3) | standard | YPD | Albulescu LO~Pleiss JA, 2012
+16315	hap a | mRNA splicing (TEF5) | standard | YPD | Albulescu LO~Pleiss JA, 2012
+16316	hap a | mRNA splicing (YRA1) | standard | YPD | Albulescu LO~Pleiss JA, 2012
+16317	hap a | mRNA splicing (REC107/MER2) | standard | YPD | Albulescu LO~Pleiss JA, 2012
