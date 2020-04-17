@@ -28,8 +28,10 @@ type1 = data1(2:end,1);
 type2 = data2(2:end,1);
 
 % Get the data itself
-hit_data1 = -cell2mat(data1(2:end,3));
-hit_data2 = -cell2mat(data2(2:end,3));
+% Keeping the data as is because, from the paper, it seems that negative
+% values correspond to sensitivity (as per our convention)
+hit_data1 = cell2mat(data1(2:end,3));
+hit_data2 = cell2mat(data2(2:end,3));
 
 % Eliminate all white spaces & capitalize
 hit_strains1 = clean_orf(hit_strains1);
