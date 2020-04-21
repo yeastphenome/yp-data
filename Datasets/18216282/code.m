@@ -47,6 +47,11 @@ hit_data(inds,:) = [];
 
 hit_data = cell2mat(hit_data);
 
+% Flip the sign (the data measures the fraction of *missorted* CPY, so
+% given the phenotype of "transport to vacuoles" the most extreme mutants
+% are the most defective)
+hit_data = -hit_data;
+
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
