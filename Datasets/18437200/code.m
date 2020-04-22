@@ -24,9 +24,12 @@ datasets.standard_name = d{2};
 hit_genenames1 = data1(5:end,2);
 hit_genenames2 = data2(5:end,2);
 
-% Get the data itself
-hit_data1 = cell2mat(data1(5:end,3:9));
-hit_data2 = cell2mat(data2(5:end,3:9));
+% Get the data itself. Take the inverse and subtracting 1 because the original data
+% represents GIF = (mut_unt/wt_unt)/(mut_treat/wt_treat) and higher values
+% correspond to greater growth inhibition. Our convention is the opposite and expects no change to correspond to 0.
+
+hit_data1 = 1./cell2mat(data1(5:end,3:9)) - 1;
+hit_data2 = 1./cell2mat(data2(5:end,3:9)) - 1;
 
 % Eliminate all white spaces & capitalize
 hit_genenames1 = clean_genename(hit_genenames1);
