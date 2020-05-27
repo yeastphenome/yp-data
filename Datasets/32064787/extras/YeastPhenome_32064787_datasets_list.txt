@@ -1,0 +1,17 @@
+16403	hap a | actin aggregate (Sac6) | standard | SD[low-fluor] + Met + Leu + Ura + NAT + G418 | Mattiazzi Usaj M~Andrews BJ, 2020
+16415	hap a | actin bright patches (Sac6) | standard | SD[low-fluor] + Met + Leu + Ura + NAT + G418 | Mattiazzi Usaj M~Andrews BJ, 2020
+16416	hap a | actin decreased patch number (Sac6) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16417	hap a | actin depolarized patches (Sac6) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16418	hap a | coat aggregate (Sla1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16419	hap a | coat decreased patch number (Sla1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16420	hap a | coat depolarized patches (Sla1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16421	hap a | coat increased patch number (Sla1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16422	hap a | late endosome fragmented (Snf7) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16423	hap a | late endosome membrane (Snf7) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16424	hap a | late endosome condensed (Snf7) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16425	hap a | vacuole class E (Vph1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16426	hap a | vacuole enlarged (Vph1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16427	hap a | vacuole vATPase defect (Vph1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16428	hap a | vacuole fragmented (Vph1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16429	hap a | vacuole class G (Vph1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
+16430	hap a | vacuole multilobed (Vph1) | standard | None | Mattiazzi Usaj M~Andrews BJ, 2020
