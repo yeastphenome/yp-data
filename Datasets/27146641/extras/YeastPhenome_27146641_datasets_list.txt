@@ -1,0 +1,2 @@
+16446	hom | growth (culture turbidity) | chromium trioxide [0.1 mM] | SC, pH 4.3 | Johnson AJ~Wu MJ, 2016
+16447	hom | growth (culture turbidity) | chromium trioxide [0.05 mM] | SC, pH 4.3 | Johnson AJ~Wu MJ, 2016
