@@ -1,0 +1,2 @@
+16448	hom | growth (colony size) | nickel sulfate [0.3 mM] | YPD | Luo C~Jiang L, 2016
+16449	hom | growth (colony size) | nickel sulfate [0.6 mM] | YPD | Luo C~Jiang L, 2016
