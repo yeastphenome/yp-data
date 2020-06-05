@@ -39,28 +39,28 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[48]:
+# In[5]:
 
 
 original_data1 = pd.read_excel('raw_data/Supplementary Table 2.xlsx', sheet_name='Sheet1', skiprows=2, names=['orf','gene','c1','c2'])
 original_data2 = pd.read_excel('raw_data/Supplementary Table 3.xlsx', sheet_name='Sheet1', skiprows=2, names=['orf','gene','c1'])
 
 
-# In[49]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data1.shape))
 print('Original data dimensions: %d x %d' % (original_data2.shape))
 
 
-# In[50]:
+# In[7]:
 
 
 original_data1['orf'] = original_data1['orf'].astype(str)
 original_data2['orf'] = original_data2['orf'].astype(str)
 
 
-# In[51]:
+# In[8]:
 
 
 # Eliminate all white spaces & capitalize
@@ -68,7 +68,7 @@ original_data1['orf'] = clean_orf(original_data1['orf'])
 original_data2['orf'] = clean_orf(original_data2['orf'])
 
 
-# In[52]:
+# In[9]:
 
 
 # Translate to ORFs 
@@ -76,7 +76,7 @@ original_data1['orf'] = translate_sc(original_data1['orf'], to='orf')
 original_data2['orf'] = translate_sc(original_data2['orf'], to='orf')
 
 
-# In[53]:
+# In[10]:
 
 
 # Make sure everything translated ok
@@ -84,128 +84,126 @@ t1 = looks_like_orf(original_data1['orf'])
 t2 = looks_like_orf(original_data2['orf'])
 
 
-# In[54]:
+# In[11]:
 
 
 print(original_data1.loc[~t1,])
 
 
-# In[55]:
+# In[12]:
 
 
 print(original_data2.loc[~t2,])
 
 
-# In[56]:
+# In[13]:
 
 
 original_data1.set_index('orf', inplace=True)
 original_data2.set_index('orf', inplace=True)
 
 
-# In[57]:
+# In[14]:
 
 
 original_data1['data'] = -1
 original_data2['data'] = 1
 
 
-# In[58]:
+# In[15]:
 
 
 original_data = original_data1.join(original_data2, how='outer', lsuffix='_1', rsuffix='_2')
 
 
-# In[59]:
+# In[16]:
 
 
 original_data = original_data[['data_1','data_2']].copy()
 
 
-# In[61]:
+# In[17]:
 
 
 original_data[original_data.isnull()] = 0
 
 
-# In[62]:
+# In[19]:
 
 
-original_data.head()
-
-
-# In[65]:
-
-
-# If the same strain is present more than once, average its values
-data = original_data.groupby('orf').mean()
-
-
-# In[66]:
-
-
-print('Final data dimensions: %d x %d' % (data.shape))
+print('Final data dimensions: %d x %d' % (original_data.shape))
 
 
 # # Load the tested strains
 
-# In[79]:
+# In[20]:
 
 
 tested = pd.read_excel('raw_data/DELETION LIBRARY.xlsx', sheet_name='DELETION LIBRARY', skiprows=1)
 
 
-# In[81]:
+# In[21]:
 
 
 tested = tested['ORF name'].unique()
 
 
-# In[89]:
+# In[22]:
 
 
 tested = translate_sc(tested, to='orf')
 
 
-# # Put together data and tested
-
 # # Prepare the final dataset
 
-# In[67]:
+# In[23]:
 
 
 dataset_ids = [16448,16449]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[90]:
+# In[24]:
 
 
 data = pd.DataFrame(index=tested, columns=datasets['name'].values, data=0)
 
 
-# In[91]:
+# In[25]:
 
 
 data.loc[original_data.index, datasets['name'].values[0]] = original_data['data_1']
 
 
-# In[92]:
+# In[26]:
 
 
 data.loc[original_data.index, datasets['name'].values[1]] = original_data['data_2']
 
 
-# In[97]:
+# In[27]:
 
 
 # Create row index
 data.index.name='orf'
 
 
+# In[28]:
+
+
+# If the same strain is present more than once, average its values
+data = data.groupby('orf').mean()
+
+
+# In[29]:
+
+
+print('Final data dimensions: %d x %d' % (data.shape))
+
+
 # # Print out
 
-# In[98]:
+# In[30]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
@@ -213,13 +211,13 @@ data.to_csv(paper_name + '.txt', sep='\t')
 
 # # Save to DB
 
-# In[99]:
+# In[31]:
 
 
 from IO.save_data_to_db2 import *
 
 
-# In[104]:
+# In[32]:
 
 
 # Create column index
@@ -229,59 +227,8 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
 data.columns = idx
 
 
-# In[106]:
+# In[33]:
 
 
 save_data_to_db(data, paper_pmid)
-
-
-# In[107]:
-
-
-data.head()
-
-
-# In[109]:
-
-
-datasets = data.columns.values
-orfs = data.index.values
-
-
-# In[111]:
-
-
-pmid = paper_pmid
-
-
-# In[113]:
-
-
-sql_del = 'DELETE FROM datasets_data WHERE dataset_id in '           '(SELECT datasets_dataset.id FROM datasets_dataset '           'INNER JOIN papers_paper ON datasets_dataset.paper_id = papers_paper.id '           'WHERE pmid = ' + str(pmid) + ');\n'
-
-sql_in = 'BEGIN;\n'
-sql_template = 'INSERT INTO datasets_data (dataset_id, orf, value) VALUES (%d, \'%s\', %f);\n'
-
-for dataset in datasets:
-    for orf in orfs:
-        if not np.isnan(data.loc[orf, dataset]):
-            sql_in += (sql_template % (dataset, orf, data.loc[orf, dataset]))
-
-
-# In[ ]:
-
-
-
-
-
-# In[116]:
-
-
-data.loc[orf, dataset]
-
-
-# In[ ]:
-
-
-
 
