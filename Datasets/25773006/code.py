@@ -102,60 +102,56 @@ original_data.set_index('orfs', inplace=True)
 
 
 tested = pd.read_excel('raw_data/DELETION LIBRARY.xlsx', sheet_name='DELETION LIBRARY', skiprows=1)
-
-
-# In[15]:
-
-
-tested = tested['ORF name'].unique()
-
-
-# In[16]:
-
-
+tested = np.array(tested['ORF name'].unique())
+tested = clean_orf(tested)
 tested = translate_sc(tested, to='orf')
+tested[tested == 'YELOO1C'] = 'YEL001C'
+# Make sure everything translated ok
+t = looks_like_orf(tested)
+print(tested[~np.array(t)])
+tested = np.setdiff1d(tested, np.array(['YMR41W']))
 
 
 # # Prepare the final dataset
 
-# In[17]:
+# In[15]:
 
 
 dataset_ids = [16461]
 
 
-# In[18]:
+# In[16]:
 
 
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[19]:
+# In[17]:
 
 
 data = pd.DataFrame(index=tested, columns=datasets['name'].values, data=0)
 
 
-# In[20]:
+# In[18]:
 
 
 data.loc[original_data.index, datasets['name'].values[0]] = original_data['data']
 
 
-# In[24]:
+# In[19]:
 
 
 data = data.groupby(data.index).mean()
 
 
-# In[25]:
+# In[20]:
 
 
 # Create row index
 data.index.name='orf'
 
 
-# In[26]:
+# In[21]:
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
@@ -163,7 +159,7 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Print out
 
-# In[28]:
+# In[22]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
@@ -171,13 +167,13 @@ data.to_csv(paper_name + '.txt', sep='\t')
 
 # # Save to DB
 
-# In[29]:
+# In[23]:
 
 
 from IO.save_data_to_db2 import *
 
 
-# In[30]:
+# In[24]:
 
 
 # Create column index
@@ -187,16 +183,10 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
 data.columns = idx
 
 
-# In[31]:
+# In[25]:
 
 
 save_data_to_db(data, paper_pmid)
-
-
-# In[32]:
-
-
-data.head()
 
 
 # In[ ]:
