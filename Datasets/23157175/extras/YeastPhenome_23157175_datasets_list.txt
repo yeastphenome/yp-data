@@ -1,0 +1,2 @@
+16459	hom | growth (colony size) | dimethyl sulfoxide [4%] | YPD | Zhang L~Jiang L, 2013
+16460	hom | growth (colony size) | dimethyl sulfoxide [8%] | YPD | Zhang L~Jiang L, 2013
