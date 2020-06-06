@@ -16,22 +16,28 @@ from Conversions.translate import *
 from Strings.is_a import *
 
 
+# In[2]:
+
+
+get_ipython().system('pwd')
+
+
 # # Initial setup
 
-# In[2]:
+# In[3]:
 
 
 paper_pmid = 25773006
 paper_name = 'du_jiang_2015' 
 
 
-# In[3]:
+# In[4]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[4]:
+# In[5]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -39,66 +45,80 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[5]:
+# In[26]:
 
 
 original_data = pd.read_csv('raw_data/hits.txt', header=None, names=['genes'])
 
 
-# In[6]:
+# In[27]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[7]:
+# In[28]:
 
 
 original_data['genes'] = original_data['genes'].astype(str)
 
 
-# In[8]:
+# In[29]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['genes'] = clean_genename(original_data['genes'])
 
 
-# In[9]:
+# In[30]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['genes'], to='orf')
 
 
-# In[10]:
+# In[31]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data['orfs'])
 
 
-# In[11]:
+# In[32]:
 
 
 print(original_data.loc[~t,])
 
 
-# In[12]:
+# In[33]:
 
 
 original_data['data'] = -1
 
 
-# In[13]:
+# In[34]:
 
 
 original_data.set_index('orfs', inplace=True)
 
 
+# In[35]:
+
+
+dataset_ids = [16461]
+datasets = datasets.reindex(index=dataset_ids)
+
+
+# In[36]:
+
+
+original_data = original_data['data'].to_frame()
+original_data.columns = dataset_ids
+
+
 # # Load & process tested strains
 
-# In[14]:
+# In[15]:
 
 
 tested = pd.read_excel('raw_data/DELETION LIBRARY.xlsx', sheet_name='DELETION LIBRARY', skiprows=1)
@@ -112,30 +132,24 @@ print(tested[~np.array(t)])
 tested = np.setdiff1d(tested, np.array(['YMR41W']))
 
 
-# # Prepare the final dataset
-
-# In[15]:
-
-
-dataset_ids = [16461]
-
-
 # In[16]:
 
 
-datasets = datasets.reindex(index=dataset_ids)
+tested = pd.DataFrame(index=tested)
 
 
-# In[17]:
+# # Prepare the final dataset
+
+# In[38]:
 
 
-data = pd.DataFrame(index=tested, columns=datasets['name'].values, data=0)
+data = tested.join(original_data, how='outer')
 
 
-# In[18]:
+# In[39]:
 
 
-data.loc[original_data.index, datasets['name'].values[0]] = original_data['data']
+data.columns = datasets.loc[data.columns,'name']
 
 
 # In[19]:
