@@ -1,0 +1,3 @@
+16477	hom | growth (culture turbidity) | aluminium sulfate (anhydrous) [1.6 mM] | SC | Tun NM~Wu MJ, 2014
+16478	hom | growth (culture turbidity) | aluminium sulfate (anhydrous) [3.2 mM] | SC | Tun NM~Wu MJ, 2014
+16509	hom | growth (culture turbidity) | standard | SC | Tun NM~Wu MJ, 2014
