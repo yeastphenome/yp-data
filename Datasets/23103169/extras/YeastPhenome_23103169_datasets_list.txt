@@ -1,0 +1,6 @@
+16487	hom | growth (pooled culture, barseq) | standard | YPD | Qian W~Zhang J, 2012
+16488	hom | growth (pooled culture, barseq) | standard | YPE [2%] | Qian W~Zhang J, 2012
+16489	hom | growth (pooled culture, barseq) | standard | YPG [5%] | Qian W~Zhang J, 2012
+16490	hom | growth (pooled culture, barseq) | standard | SC | Qian W~Zhang J, 2012
+16491	hom | growth (pooled culture, barseq) | standard | ETH | Qian W~Zhang J, 2012
+16492	hom | growth (pooled culture, barseq) | standard | OAK | Qian W~Zhang J, 2012
