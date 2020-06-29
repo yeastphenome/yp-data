@@ -1,0 +1,6 @@
+16502	hap a | growth (colony size) | thiamethoxam [10 mM] | YPD | Mattiazzi Usaj M~Petrovic U, 2014
+16503	hap a | growth (colony size) | acetamiprid [15 mM] | YPD | Mattiazzi Usaj M~Petrovic U, 2014
+16504	hap a | growth (colony size) | N-methylpyrrolidin-2-one [0.9% v/v], dimethyl sulfoxide [0.8% v/v] | YPD | Mattiazzi Usaj M~Petrovic U, 2014
+16505	hap a | growth (colony size) | Mospilan | YPD | Mattiazzi Usaj M~Petrovic U, 2014
+16506	hap a | growth (colony size) | Actara | YPD | Mattiazzi Usaj M~Petrovic U, 2014
+16507	hap a | growth (colony size) | Confidor | YPD | Mattiazzi Usaj M~Petrovic U, 2014
