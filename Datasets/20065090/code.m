@@ -35,6 +35,10 @@ hit_strains = translate(hit_strains);
 inds = find(~is_orf(hit_strains));
 disp(hit_strains(inds));  
 
+% Set all zeros to NaNs (distribution analysis suggests that zeros are
+% technical artefacts, not real biological phenotypes)
+hit_data(hit_data==0) = nan; 
+
 % If the same strain is present more than once, average its values
 [hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
