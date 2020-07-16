@@ -39,57 +39,57 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[8]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/jbc.M109.005843-1.xls', sheet_name='Initial QN Screen', skiprows=3)
 
 
-# In[9]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[10]:
+# In[7]:
 
 
 original_data.head()
 
 
-# In[12]:
+# In[8]:
 
 
 original_data['ORF'] = original_data['ORF'].astype(str)
 
 
-# In[13]:
+# In[9]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['ORF'] = clean_orf(original_data['ORF'])
 
 
-# In[14]:
+# In[10]:
 
 
 # Translate to ORFs 
 original_data['ORF'] = translate_sc(original_data['ORF'], to='orf')
 
 
-# In[16]:
+# In[11]:
 
 
 to_drop = original_data.loc[original_data['ORF']=='EMPTY',]
 
 
-# In[18]:
+# In[12]:
 
 
 original_data.drop(index=to_drop.index, inplace=True)
 
 
-# In[19]:
+# In[13]:
 
 
 # Make sure everything translated ok
@@ -97,83 +97,112 @@ t = looks_like_orf(original_data['ORF'])
 print(original_data.loc[~t,])
 
 
-# In[20]:
+# In[14]:
 
 
 original_data.drop(index=original_data.loc[~t,:].index, inplace=True)
 
 
-# In[24]:
+# In[15]:
 
 
 # Eliminate the slow growin strains for which no accurate growth ratio could be calculated
 to_drop = original_data.loc[original_data['Adjusted GR']=='SLOW',]
 
 
-# In[26]:
+# In[16]:
 
 
 original_data.drop(index=to_drop.index, inplace=True)
 
 
-# In[27]:
+# In[17]:
 
 
 original_data.shape
 
 
-# In[36]:
+# In[25]:
 
 
-data = original_data[['ORF','Adjusted GR']].copy()
+# Reverse the growth ratio so that lower values correspond to decreased growth and viceversa (originally, GR is reported as untreated vs treated)
+original_data['GR2'] = 1 / original_data['Growth Ratio (GR)']
 
 
-# In[37]:
+# In[26]:
 
 
-data.set_index('ORF', inplace=True)
+# Normalize by plate median (as done oridinally)
+def normalize_by_plate_median(plate_data):
+    plate_median = plate_data['GR2'].median()
+    plate_data['GR2_adjusted'] = plate_data['GR2'] / plate_median
+    return plate_data
 
 
-# In[38]:
+# In[27]:
 
 
-data['Adjusted GR'] = data['Adjusted GR'].astype(float)
+original_data2 = original_data.groupby('Plate').apply(normalize_by_plate_median)
 
 
-# # Prepare the final dataset
-
-# In[39]:
+# In[28]:
 
 
-dataset_ids = [16533]
+original_data2.head()
 
 
 # In[40]:
 
 
-datasets = datasets.reindex(index=dataset_ids)
+data = original_data2[['ORF','GR2_adjusted']].copy()
 
 
 # In[41]:
 
 
-data.columns = datasets['name'].values
+data['GR2_adjusted'] = data['GR2_adjusted'].astype(float)
 
 
 # In[42]:
 
 
+data.set_index('ORF', inplace=True)
+
+
+# # Prepare the final dataset
+
+# In[43]:
+
+
+dataset_ids = [16533]
+
+
+# In[44]:
+
+
+datasets = datasets.reindex(index=dataset_ids)
+
+
+# In[45]:
+
+
+data.columns = datasets['name'].values
+
+
+# In[47]:
+
+
 data = data.groupby(data.index).mean()
 
 
-# In[43]:
+# In[48]:
 
 
 # Create row index
 data.index.name='orf'
 
 
-# In[45]:
+# In[49]:
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
@@ -181,7 +210,7 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Print out
 
-# In[46]:
+# In[50]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
@@ -189,13 +218,13 @@ data.to_csv(paper_name + '.txt', sep='\t')
 
 # # Save to DB
 
-# In[47]:
+# In[51]:
 
 
 from IO.save_data_to_db2 import *
 
 
-# In[48]:
+# In[52]:
 
 
 # Create column index
@@ -205,7 +234,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
 data.columns = idx
 
 
-# In[49]:
+# In[53]:
 
 
 save_data_to_db(data, paper_pmid)
