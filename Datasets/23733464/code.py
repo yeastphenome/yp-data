@@ -125,55 +125,84 @@ original_data.shape
 # In[18]:
 
 
-data = original_data[['ORF','Adjusted GR']].copy()
+# Reverse the growth ratio so that lower values correspond to decreased growth and viceversa (originally, GR is reported as untreated vs treated)
+original_data['GR2'] = 1 / original_data['Growth Ratio (GR)']
 
 
 # In[19]:
 
 
-data.set_index('ORF', inplace=True)
+# Normalize by plate median (as done oridinally)
+def normalize_by_plate_median(plate_data):
+    plate_median = plate_data['GR2'].median()
+    plate_data['GR2_adjusted'] = plate_data['GR2'] / plate_median
+    return plate_data
 
 
 # In[20]:
 
 
-data['Adjusted GR'] = data['Adjusted GR'].astype(float)
+original_data2 = original_data.groupby('Plate').apply(normalize_by_plate_median)
 
-
-# # Prepare the final dataset
 
 # In[21]:
 
 
-dataset_ids = [16532]
+original_data2.head()
 
 
 # In[22]:
 
 
-datasets = datasets.reindex(index=dataset_ids)
+data = original_data2[['ORF','GR2_adjusted']].copy()
 
 
 # In[23]:
 
 
-data.columns = datasets['name'].values
+data['GR2_adjusted'] = data['GR2_adjusted'].astype(float)
 
 
 # In[24]:
 
 
+data.set_index('ORF', inplace=True)
+
+
+# # Prepare the final dataset
+
+# In[25]:
+
+
+dataset_ids = [16532]
+
+
+# In[26]:
+
+
+datasets = datasets.reindex(index=dataset_ids)
+
+
+# In[27]:
+
+
+data.columns = datasets['name'].values
+
+
+# In[28]:
+
+
 data = data.groupby(data.index).mean()
 
 
-# In[25]:
+# In[29]:
 
 
 # Create row index
 data.index.name='orf'
 
 
-# In[26]:
+# In[30]:
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
@@ -181,7 +210,7 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Print out
 
-# In[27]:
+# In[31]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
@@ -189,13 +218,13 @@ data.to_csv(paper_name + '.txt', sep='\t')
 
 # # Save to DB
 
-# In[28]:
+# In[32]:
 
 
 from IO.save_data_to_db2 import *
 
 
-# In[29]:
+# In[33]:
 
 
 # Create column index
@@ -205,7 +234,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
 data.columns = idx
 
 
-# In[30]:
+# In[34]:
 
 
 save_data_to_db(data, paper_pmid)
