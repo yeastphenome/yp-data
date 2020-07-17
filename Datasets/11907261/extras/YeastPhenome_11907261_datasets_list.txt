@@ -1,0 +1,4 @@
+16539	hap a/hap alpha/hom | vacuole fragmented (FM 4-64 dye) | standard | YPD + G418 [20 ug/ml] | Seeley ES~Eitzen G, 2002
+16540	hap a/hap alpha/hom | vacuole enlarged (FM 4-64 dye) | standard | YPD + G418 [20 ug/ml] | Seeley ES~Eitzen G, 2002
+16541	hap a/hap alpha/hom | vacuole class E (FM 4-64 dye) | standard | YPD + G418 [20 ug/ml] | Seeley ES~Eitzen G, 2002
+16542	hap a/hap alpha/hom | multiple small vacuoles (FM 4-64 dye) | standard | YPD + G418 [20 ug/ml] | Seeley ES~Eitzen G, 2002
