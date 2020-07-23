@@ -1,0 +1,2 @@
+16452	hap a | growth (pooled culture, microarray) | cordycepin [20 ug/ml], time [12 gen] | SC | Holbein S~Dichtl B, 2009
+16453	hap a | growth (pooled culture, microarray) | cordycepin [20 ug/ml], time [18 gen] | SC | Holbein S~Dichtl B, 2009
