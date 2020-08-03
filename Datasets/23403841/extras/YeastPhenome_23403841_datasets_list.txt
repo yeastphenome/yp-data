@@ -1,0 +1,6 @@
+16526	hom | growth (pooled culture, microarray) | time [5 gen], benzo[a]pyrene [330 uM] | YPD + DMSO [1%] | O'Connor STF~Vulpe CD, 2012
+16527	hom | growth (pooled culture, microarray) | time [15 gen], benzo[a]pyrene [330 uM] | YPD + DMSO [1%] | O'Connor STF~Vulpe CD, 2012
+16528	hom | growth (pooled culture, microarray) | time [15 gen], benzo[a]pyrene [165 uM] | YPD + DMSO [1%] | O'Connor STF~Vulpe CD, 2012
+16529	hom | growth (pooled culture, microarray) | time [5 gen], benzo[a]pyrene [165 uM] | YPD + DMSO [1%] | O'Connor STF~Vulpe CD, 2012
+16530	hom | growth (pooled culture, microarray) | time [15 gen], benzo[a]pyrene [82.5 uM] | YPD + DMSO [1%] | O'Connor STF~Vulpe CD, 2012
+16531	hom | growth (pooled culture, microarray) | time [5 gen], benzo[a]pyrene [82.5 uM] | YPD + DMSO [1%] | O'Connor STF~Vulpe CD, 2012
