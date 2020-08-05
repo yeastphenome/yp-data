@@ -1,0 +1,4 @@
+orf	hom | growth (pooled CFU) | (+)-artemisinin [3-5 uM] | YPG(E) | Li W~Zhou B, 2005
+YML120C	1
+YMR140W	1
+YMR145C	1
