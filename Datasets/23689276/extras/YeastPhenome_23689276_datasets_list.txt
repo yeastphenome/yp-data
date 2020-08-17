@@ -1,0 +1,2 @@
+16557	hap a | growth (colony size) | N-Butyl-N′-decylguanidinium chloride [30 uM] | YPD + MeOH [1%] | Bowie D~Fyles TM, 2013
+16558	hap a | growth (colony size) | N-hexyl-N′-(3-hydroxypropyl)-N′′-octylguanidinium chloride [100 uM] | YPD + MeOH [1%] | Bowie D~Fyles TM, 2013
