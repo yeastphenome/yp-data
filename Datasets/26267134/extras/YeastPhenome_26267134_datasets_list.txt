@@ -1,0 +1,1 @@
+16462	hap a | growth (colony size) | flucytosine [0.04 ug/ml] | MM4 + his + leu + lys + met + trp + ura | Costa C~Teixeira MC, 2015
