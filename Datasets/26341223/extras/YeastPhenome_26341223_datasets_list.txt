@@ -1,0 +1,4 @@
+16465	hap a | growth (culture turbidity) | zymolyase [30 U/ml] | YPD | Garcia R~Arroyo J, 2015
+16466	hap a | growth (spot assay) | Congo Red [50 ug/ml] | YPD | García R~Arroyo J, 2015
+16467	hap a | growth (culture turbidity) | caspofungin [10-30 ng/ml] | YPD | Garcia R~Arroyo J, 2015
+16470	hap a | growth (culture turbidity) | caspofungin [60-120 ng/ml] | YPD | Garcia R~Arroyo J, 2015
