@@ -1,0 +1,9 @@
+orf	hap a | growth (spot assay) | LTX-109 [400 ug/ml] | YPD | Bojsen R~Regenberg B, 2013
+YCR034W	1
+YDR072C	1
+YDR297W	1
+YDR326C	1
+YGR143W	1
+YLR338W	1
+YLR350W	1
+YPL057C	1
