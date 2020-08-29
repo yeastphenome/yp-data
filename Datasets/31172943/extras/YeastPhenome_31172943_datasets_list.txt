@@ -1,0 +1,2 @@
+16549	hap a (post-SGA) | protein stability (tFT-Pex15Δ30) | standard | SC - Leu, + Ade [200 mg/L] | Dederer V~Lemberg MK, 2019
+16550	hap a (post-SGA) | protein stability (tFT-Tom5) | standard | SC - Leu, + Ade [200 mg/L] | Dederer V~Lemberg MK, 2019
