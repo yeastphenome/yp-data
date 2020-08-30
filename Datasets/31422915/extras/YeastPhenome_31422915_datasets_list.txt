@@ -1,0 +1,2 @@
+16546	hap a (post-SGA) | protein retention in the ER (Lro1-GFP) | standard | SC - Ura (2) | Barbosa AD~Siniossoglou S, 2019
+16590	hap a (post-SGA) | ER-associated protein degradation (Lro1-GFP) | standard | SC - Ura (2) | Barbosa AD~Siniossoglou S, 2019
