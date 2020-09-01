@@ -51,33 +51,33 @@ original_data = pd.read_excel('raw_data/41419_2011_BFcddis201172_MOESM8_ESM.xls'
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[8]:
+# In[7]:
 
 
 original_data['ORF'] = original_data['ORF'].astype(str)
 
 
-# In[9]:
+# In[8]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['ORF'] = clean_orf(original_data['ORF'])
 
 
-# In[10]:
+# In[9]:
 
 
 # Translate to ORFs 
 original_data['ORF'] = translate_sc(original_data['ORF'], to='orf')
 
 
-# In[12]:
+# In[10]:
 
 
 original_data.loc[original_data['ORF']=='YLR287-A','ORF'] = 'YLR287C-A'
 
 
-# In[13]:
+# In[11]:
 
 
 # Make sure everything translated ok
@@ -85,7 +85,7 @@ t = looks_like_orf(original_data['ORF'])
 print(original_data.loc[~t,])
 
 
-# In[13]:
+# In[12]:
 
 
 original_data.set_index('ORF', inplace=True)
@@ -133,7 +133,7 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Print out
 
-# In[20]:
+# In[21]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
@@ -141,13 +141,13 @@ data.to_csv(paper_name + '.txt', sep='\t')
 
 # # Save to DB
 
-# In[21]:
+# In[22]:
 
 
 from IO.save_data_to_db2 import *
 
 
-# In[22]:
+# In[23]:
 
 
 # Create column index
@@ -157,7 +157,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
 data.columns = idx
 
 
-# In[23]:
+# In[24]:
 
 
 save_data_to_db(data, paper_pmid)
