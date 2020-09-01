@@ -25,6 +25,7 @@ data(1,:) = []; % remove column headers
 % Get the list of ORFs and the correponding data 
 hit_strains = data(:,1);
 
+% Transform  categorical phenotypes into multiple binary phenotypes
 [FILENAMES{end+1}, data2] = read_data('xlsread', './raw_data/phenotype_mapping.xlsx','Sheet1');
 ph_mapping.ph_orig = data2(2:end,1);
 ph_mapping.mat = cell2mat(data2(2:end,2:end));
@@ -75,6 +76,14 @@ szymanski_goodman_2007.orfs = hit_strains;
 szymanski_goodman_2007.ph = hit_data_names;
 szymanski_goodman_2007.data = [hit_data{1} hit_data{2}];
 szymanski_goodman_2007.dataset_ids = hit_data_ids;
+
+% Remove the phenotypes/datasets that (as a result of the conversion 
+% from categorical to binary phenotypes) ended up not having any hits
+
+ix = find(sum(abs(szymanski_goodman_2007.data),1)==0);
+szymanski_goodman_2007.ph(ix) = [];
+szymanski_goodman_2007.data(:,ix) = [];
+szymanski_goodman_2007.dataset_ids(ix) = [];
 
 %% Save
 
