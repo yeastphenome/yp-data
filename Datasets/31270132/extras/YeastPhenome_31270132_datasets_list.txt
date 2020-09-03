@@ -1,0 +1,1 @@
+16548	het | loss of heterozygosity at MAT locus (diploid mating) | standard | YPD + G418 [200 ug/ml] | Hoffert KM~Strome ED, 2019
