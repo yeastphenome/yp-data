@@ -1,0 +1,7 @@
+16570	het | growth (pooled culture, microarray) | doxorubicin [12.5 uM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
+16571	het | growth (pooled culture, microarray) | Tigecycline [51.5 uM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
+16572	het | growth (pooled culture, microarray) | chloramphenicol [0.79 mM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
+16573	het | growth (pooled culture, microarray) | linezolid [47.1 uM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
+16591	het | growth (pooled culture, microarray) | chloramphenicol [0.99 mM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
+16592	het | growth (pooled culture, microarray) | Tigecycline [64.4 uM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
+16593	het | growth (pooled culture, microarray) | Tigecycline [80.5 uM] | YPGE + DMSO [2%] | Skrtic M~Schimmer AD, 2011
