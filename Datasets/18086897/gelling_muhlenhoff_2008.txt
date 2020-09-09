@@ -1,0 +1,22 @@
+orf	hom | growth (culture turbidity) | standard | SD + his + leu + lys + ura | Gelling C~Muhlenhoff U, 2008
+YBR112C	-1
+YBR189W	-1
+YBR242W	-1
+YCR084C	-1
+YDR027C	-1
+YDR034C	-1
+YDR234W	-1
+YGL154C	-1
+YGR037C	-1
+YIL094C	-1
+YIR034C	-1
+YJR104C	-1
+YJR122W	-1
+YLL027W	-1
+YML022W	-1
+YMR135W-A	-1
+YOR140W	-1
+YOR369C	-1
+YPL262W	-1
+YPR067W	-1
+YPR069C	-1
