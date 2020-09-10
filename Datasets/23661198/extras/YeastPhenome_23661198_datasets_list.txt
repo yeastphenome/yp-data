@@ -1,2 +1,2 @@
-95	hom/het | electrical properties | standard [standard] | Vahey MD~Voldman J, 2013
-776	hom/het | electrical properties | standard [standard] | Vahey MD~Voldman J, 2013
+95	hap a | cell conductivity | electric field [300 kHz] | YPD + G418 [100 ug/ml] | Vahey MD~Voldman J, 2013
+16597	hap a | cell conductivity | electric field [10 MHz] | YPD + G418 [100 ug/ml] | Vahey MD~Voldman J, 2013
