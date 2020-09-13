@@ -1,0 +1,2 @@
+16599	hap a | growth (colony size) | butylated hydroxyanisole [0.5 mM] | YPD + G418 [200 ug/ml] + DMSO [1%] | Alhoch B~Tang Z, 2019
+16600	hap a | growth (colony size) | bisphenol [1 mM] | YPD + G418 [200 ug/ml] + DMSO [1%] | Alhoch B~Tang Z, 2019
