@@ -1,0 +1,2 @@
+16612	hom | growth (lagVstall) | UVC [15 J/m2] | SC | Silva E~Ideker T, 2020
+16613	hom | growth (colony size) | UVC [15 J/m2] | SC | Silva E~Ideker T, 2020
