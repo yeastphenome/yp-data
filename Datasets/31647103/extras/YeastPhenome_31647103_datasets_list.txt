@@ -1,0 +1,2 @@
+16441	hap a (post-SGA) | mutation frequency (CanR) | standard | SC - Arg + can | Schmidt TT~Hombauer H, 2020
+16442	hap a (post-SGA) | mutation frequency (lys2-10A) | standard | SC - Lys | Schmidt TT~Hombauer H, 2020
