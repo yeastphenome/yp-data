@@ -1,0 +1,79 @@
+Sensitivity Rank	ORF	Gene Name	Biological process
+1	YCL061C	MRC1	cell cycle (DNA replication)
+2	YOR198C	BFR1	meiosis
+3	YLR180W	SAM1	methionine metabolism
+4	YKR059W	TIF1	telomere maintenance
+5	YLR120C	YPS1	protein processing
+6	YGL049C	TIF4632	translational initiation
+7	YBR120C	CBP6	translation
+8	YDR397C	NCB2	regulation of transcription from polymerase II promoter
+9	YOR036W	PEP12	Golgi to vacuole transport
+10	YGL028C	SCW11	cytokinesis, completion of separation
+11	YNL098C	RAS2	sporulation
+12	YGR162W	TIF4631	ribosome biogenesis and assembly
+13	YNR034W	SOL1	tRNA export from nucleus
+14	YER044C	ERG28	ergosterol biosynthesis
+15	YGR078C	PAC10	tubulin folding
+16	YGL249W	ZIP2	synapsis
+17	YIR033W	MGA2	regulation of transcription from polymerase II promoter
+18	YIL002C	INP51	cell wall organization
+19	YDR191W	HST4	chromatin silencing at telomere
+20	YOR339C	UBC11	protein monoubiquitination
+21	YDR192C	NUP42	mRNA export from nucleus
+22	YCR011C	ADP1	transport
+23	YBL019W	APN2	base-excision repair
+24	YLL054C		unknown
+25	YDL232W	OST4	protein amino acid N-linked glycosylation
+26	YOL088C	MPD2	protein folding
+27	YIL050W	PCL7	regulation of glycogen biosynthesis
+28	YLR372W	SUR4	telomere maintenance
+29	YLL021W	SPA2	pseudohyphal growth
+30	YMR129W	POM152	mRNA export from nucleus
+31	YOR023C	AHC1	histone acetylation
+32	YBR274W	CHK1	protein amino acid phosphorylation
+33	YBR111C	YSA1	unknown
+34	YPL018W	CTF19	chromosome segregation
+35	YDR507C	GIN4	protein amino acid phosphorylation
+36	YLR213C	CRR1	spore wall assembly
+37	YGL212W	VAM7	telomere maintenance
+38	YBR229C	ROT2	cell wall organization
+39	YER167W	BCK2	G1/S transition of mitotic cell cycle
+40	YOR038C	HIR2	regulation of transcription from polymerase II promoter
+41	YAL054C	ACS1	histone acetylation
+42	YDR293C	SSD1	response to drug
+43	YJL128C	PBS2	protein amino acid phosphorylation
+44	YPR072W	NOT5	regulation of transcription from polymerase II promoter
+45	YOR298C-A	MBF1	regulation of transcription from polymerase II promoter
+46	YGR006W	PRP18	nuclear mRNA splicing, via spliceosome
+47	YGR042W		telomere maintenance
+48	YDR500C	RPL37B	translation
+49	YBR236C	ABD1	mRNA capping
+50	YGL195W	GCN1	regulation of translational elongation
+51	YIL160C	POT1	fatty acid beta-oxidation
+52	YPR093C	ASR1	response to ethanol
+53	YDL081C	RPP1A	translational elongation
+54	YDR137W	RGP1	retrograde transport, endosome to Golgi
+55	YBL028C		ribosome biogenesis and assembly
+56	YPR138C	MEP3	nitrogen utilization
+57	YOR140W	SFL1	regulation of transcription from polymerase II promoter
+58	YAL059W	ECM1	cell wall organization
+59	YML061C	PIF1	telomere maintenance
+60	YDL181W	INH1	ATP synthesis coupled proton transport
+61	YBR115C	LYS2	lysine biosynthesis
+62	YBL042C	FUI1	uridine transport
+63	YOR009W	TIR4	unknown
+64	YBR152W	SPP381	nuclear mRNA splicing, via spliceosome
+65	YOR292C		unknown
+66	YJL109C	UTP10	ribosome biogenesis and assembly
+67	YEL061C	CIN8	mitotic sister chromatid segregation
+68	YDL056W	MBP1	DNA replication
+69	YMR035W	IMP2	mitochondrial protein processing
+70	YBR176W	ECM31	pantothenate biosynthesis
+71	YOR109W	INP53	cell wall organization
+72	YOR260W	GCD1	regulation of translational initiation
+73	YEL030W	ECM10	protein refolding
+74	YCR036W	RBK1	ribose metabolism
+75	YDR346C	SVF1	response to oxidative stress
+76	YPL254W	HFI1	telomere maintenance
+77	YPR189W	SKI3	mRNA catabolism
+78	YDR298C	ATP5	ATP synthesis coupled proton transport
