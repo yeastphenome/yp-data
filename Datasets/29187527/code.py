@@ -18,20 +18,20 @@ from Strings.is_a import *
 
 # # Initial setup
 
-# In[2]:
+# In[29]:
 
 
 paper_pmid = 29187527
 paper_name = 'eisenberg_bord_bohnert_2018' 
 
 
-# In[3]:
+# In[30]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[4]:
+# In[31]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -41,39 +41,39 @@ datasets.set_index('pmid', inplace=True)
 
 # ### Part 1
 
-# In[24]:
+# In[32]:
 
 
 original_data = pd.read_csv('raw_data/hits.txt', header=None, names=['genes','data'], sep='\t')
 
 
-# In[25]:
+# In[33]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[26]:
+# In[34]:
 
 
 original_data['genes'] = original_data['genes'].astype(str)
 
 
-# In[27]:
+# In[35]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['genes'] = clean_genename(original_data['genes'])
 
 
-# In[28]:
+# In[36]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['genes'], to='orf')
 
 
-# In[29]:
+# In[37]:
 
 
 # Make sure everything translated ok
@@ -81,7 +81,7 @@ t = looks_like_orf(original_data['orfs'])
 print(original_data.loc[~t,])
 
 
-# In[30]:
+# In[38]:
 
 
 original_data.set_index('orfs', inplace=True)
@@ -89,39 +89,39 @@ original_data.set_index('orfs', inplace=True)
 
 # ### Part 2
 
-# In[35]:
+# In[39]:
 
 
 original_data2 = pd.read_excel('raw_data/JCB_201704122_TableS1.xlsx', sheet_name='HITS from screens', skiprows=2, nrows=30)
 
 
-# In[38]:
+# In[40]:
 
 
 print('Original data dimensions: %d x %d' % (original_data2.shape))
 
 
-# In[39]:
+# In[41]:
 
 
 original_data2['ORF'] = original_data2['ORF'].astype(str)
 
 
-# In[40]:
+# In[42]:
 
 
 # Eliminate all white spaces & capitalize
 original_data2['ORF'] = clean_orf(original_data2['ORF'])
 
 
-# In[41]:
+# In[ ]:
 
 
 # Translate to ORFs 
 original_data2['ORF'] = translate_sc(original_data2['ORF'], to='orf')
 
 
-# In[42]:
+# In[ ]:
 
 
 # Make sure everything translated ok
@@ -129,13 +129,13 @@ t = looks_like_orf(original_data2['ORF'])
 print(original_data2.loc[~t,])
 
 
-# In[43]:
+# In[ ]:
 
 
 original_data2['data'] = 1
 
 
-# In[44]:
+# In[ ]:
 
 
 original_data2.set_index('ORF', inplace=True)
@@ -143,22 +143,48 @@ original_data2.set_index('ORF', inplace=True)
 
 # ### Merge
 
-# In[54]:
+# In[ ]:
 
 
 data = original_data[['data']].join(original_data2[['data']], lsuffix='_lower', rsuffix='_higher', how='outer')
 
 
-# In[55]:
+# In[ ]:
 
 
 data['data'] = data[['data_lower','data_higher']].mean(axis=1)
 
 
-# In[57]:
+# In[ ]:
 
 
 data = data[['data']]
+
+
+# ### Remove essential genes (if any) -- original data included deletions and DAmP strains
+
+# In[ ]:
+
+
+ess = ~is_essential(data.index.values)
+
+
+# In[26]:
+
+
+data.shape
+
+
+# In[27]:
+
+
+data = data.loc[ess.values,:]
+
+
+# In[28]:
+
+
+data.shape
 
 
 # # Prepare the final dataset
@@ -198,6 +224,12 @@ data.index.name='orf'
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
+
+
+# In[ ]:
+
+
+
 
 
 # # Print out
