@@ -1,0 +1,2 @@
+16608	het | growth (pooled culture) | NVP-BHS345 [25 uM] | SC | Shimada K~Gasser SM, 2013
+16609	hom | growth (pooled culture) | NVP-BHS345 [18 uM] | SC | Shimada K~Gasser SM, 2013
