@@ -1,0 +1,2 @@
+16617	hap a (post-SGA) | mitotic recombination rate (leu2-URA3-leu2, patch) | standard | SC - Leu | Novarina D~Chang M, 2020
+16618	hap a (post-SGA) | mitotic recombination rate (leu2-URA3-leu2, replica pinning) | standard | SC - Leu | Novarina D~Chang M, 2020
