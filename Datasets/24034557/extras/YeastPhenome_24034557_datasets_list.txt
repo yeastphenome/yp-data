@@ -1,0 +1,2 @@
+16620	hap a | biofilm formation | standard | YPD | Vandenbosch D~Coenye T, 2013
+16621	hap a | biofilm formation | miconazole [1 mg/ml] | YPD | Vandenbosch D~Coenye T, 2013
