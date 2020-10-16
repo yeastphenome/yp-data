@@ -1,0 +1,4 @@
+16479	hom | growth (culture turbidity) | aluminium sulphate [0.4 mM] | SC | Tun NM~Wu MJ, 2013
+16481	hom | growth (culture turbidity) | diamide [0.8 mM] | SC | Tun NM~Wu MJ, 2013
+16482	hom | growth (culture turbidity) | aluminium sulphate [0.4 mM], diamide [0.8 mM] | SC | Tun NM~Wu MJ, 2013
+16483	hom | growth (culture turbidity) | standard | SC | Tun NM~Wu MJ, 2013
