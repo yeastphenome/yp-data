@@ -1,0 +1,2 @@
+16538	hom | growth (spot assay) | temperature [50ºC], growth phase [stationary] | YPD | Jarolim S~Dawes IW, 2013
+16624	hom | growth (spot assay) | temperature [50ºC], growth phase [log] | YPD | Jarolim S~Dawes IW, 2013
