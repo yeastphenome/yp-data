@@ -1,6 +1,5 @@
-4712	hap a | chronological lifespan | glucose [2%], time [9 days], synthetic complete medium [unknown] | Matecic M~Smith JS, 2010
-5354	hap a | chronological lifespan | glucose [2%], time [21 days], synthetic complete medium [unknown] | Matecic M~Smith JS, 2010
-5355	hap a | chronological lifespan | glucose [2%], time [33 days], synthetic complete medium [unknown] | Matecic M~Smith JS, 2010
-5356	hap a | chronological lifespan | glucose [0.5%], time [9 days], synthetic complete medium [unknown] | Matecic M~Smith JS, 2010
-5357	hap a | chronological lifespan | glucose [0.5%], time [21 days], synthetic complete medium [unknown] | Matecic M~Smith JS, 2010
-5358	hap a | chronological lifespan | glucose [0.5%], time [33 days], synthetic complete medium [unknown] | Matecic M~Smith JS, 2010
+4712	hap a | chronological lifespan | glucose [2%], time [9 d] | SC, Hopkins (-C) | Matecic M~Smith JS, 2010
+5354	hap a | chronological lifespan | glucose [2%], time [21 d] | SC, Hopkins (-C) | Matecic M~Smith JS, 2010
+5356	hap a | chronological lifespan | glucose [0.5%], time [9 d] | SC, Hopkins (-C) | Matecic M~Smith JS, 2010
+5357	hap a | chronological lifespan | glucose [0.5%], time [21 d] | SC, Hopkins (-C) | Matecic M~Smith JS, 2010
+5358	hap a | chronological lifespan | glucose [0.5%], time [33 d] | SC, Hopkins (-C) | Matecic M~Smith JS, 2010

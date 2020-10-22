@@ -22,7 +22,8 @@ datasets.standard_name = d{2};
 hit_strains_dn = data(5:end,1);
 
 % Get the data itself
-hit_data_dn = data(5:end,[11:13 15:17]); 
+% Excluding Day33 on 2% because (unlike other datasets) UP and DN tags show inconsistent results. The average seems to be meaningless for most strains.
+hit_data_dn = data(5:end,[11:12 15:17]);
 hit_data_dn = cell2mat(hit_data_dn);
 
 % Eliminate all white spaces & capitalize
@@ -41,7 +42,8 @@ hit_data_dn(inds, :) = [];
 hit_strains_up = data(5:end,1);
 
 % Get the data itself
-hit_data_up = data(5:end,[11:13 15:17]); 
+% Excluding Day33 on 2% because (unlike other datasets) UP and DN tags show inconsistent results. The average seems to be meaningless for most strains.
+hit_data_up = data(5:end,[11:12 15:17]); 
 hit_data_up = cell2mat(hit_data_up);
 
 % Eliminate all white spaces & capitalize
@@ -60,7 +62,7 @@ hit_data = [hit_data_dn; hit_data_up];
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [4712; 5354; 5355; 5356; 5357; 5358];
+hit_data_ids = [4712; 5354; 5356; 5357; 5358];
 
 %% Prepare final dataset
 % Match the dataset ids with the dataset standard names
