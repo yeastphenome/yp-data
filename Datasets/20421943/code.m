@@ -23,7 +23,7 @@ hit_strains_dn = data(5:end,1);
 
 % Get the data itself
 hit_data_dn = data(5:end,[11:13 15:17]); 
-hit_data_dn = -cell2mat(hit_data_dn);   % taking the opposite to ensure that slow-growing strains have lower values than fast-growing strains.
+hit_data_dn = cell2mat(hit_data_dn);
 
 % Eliminate all white spaces & capitalize
 hit_strains_dn = clean_orf(hit_strains_dn);
@@ -42,7 +42,7 @@ hit_strains_up = data(5:end,1);
 
 % Get the data itself
 hit_data_up = data(5:end,[11:13 15:17]); 
-hit_data_up = -cell2mat(hit_data_up); % taking the opposite to ensure that slow-growing strains have lower values than fast-growing strains.
+hit_data_up = cell2mat(hit_data_up);
 
 % Eliminate all white spaces & capitalize
 hit_strains_up = clean_orf(hit_strains_up);
