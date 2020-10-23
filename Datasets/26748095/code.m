@@ -25,8 +25,9 @@ hit_strains = data(3:end,1);
 t = split(hit_strains, '::');
 hit_strains = t(:,1);
 
-% Get the data itself
-hit_data = cell2mat(data(3:end,3:6));
+% Get the data itself (taking the opposite because the Z-scores were
+% calculated as untreated/treated)
+hit_data = -cell2mat(data(3:end,3:6));
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
