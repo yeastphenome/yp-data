@@ -1,0 +1,2 @@
+16513	het | growth (pooled culture, microarray) | periodic starvation | grape juice | Davey HM~Griffith GW, 2012
+16517	het | cell death (frequency of dead cells) | periodic starvation | grape juice | Davey HM~Griffith GW, 2012
