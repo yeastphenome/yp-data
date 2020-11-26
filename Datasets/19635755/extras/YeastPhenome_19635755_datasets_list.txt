@@ -1,0 +1,12 @@
+16651	hom | growth (pooled culture, microarray) | monomethylarsonous acid [150 uM], time [15 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16652	hom | growth (pooled culture, microarray) | monomethylarsonous acid [75 uM], time [15 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16653	hom | growth (pooled culture, microarray) | monomethylarsonous acid [37.5 uM], time [15 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16654	hom | growth (pooled culture, microarray) | monomethylarsonous acid [150 uM], time [5 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16655	hom | growth (pooled culture, microarray) | monomethylarsonous acid [75 uM], time [5 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16656	hom | growth (pooled culture, microarray) | monomethylarsonous acid [37.5 uM], time [5 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16657	hom | growth (pooled culture, microarray) | sodium arsenite [300 uM], time [5 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16658	hom | growth (pooled culture, microarray) | sodium arsenite [150 uM], time [5 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16659	hom | growth (pooled culture, microarray) | sodium arsenite [75 uM], time [5 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16660	hom | growth (pooled culture, microarray) | sodium arsenite [300 uM], time [15 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16661	hom | growth (pooled culture, microarray) | sodium arsenite [150 uM], time [15 gen] | YPD | Jo WJ~Vulpe CD, 2009
+16662	hom | growth (pooled culture, microarray) | sodium arsenite [75 uM], time [15 gen] | YPD | Jo WJ~Vulpe CD, 2009
