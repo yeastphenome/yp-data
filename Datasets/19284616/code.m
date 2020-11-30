@@ -27,7 +27,9 @@ for s = 1 : length(sheets)
     hit_strains{s} = data(2:end,11);
 
     % Get the data itself
-    hit_data{s} = cell2mat(data(2:end,10));
+    hit_data{s} = data(2:end,4);
+    hit_data{s}(~cellfun(@(x) any(isnumeric(x(:))), hit_data{s})) = {NaN};
+    hit_data{s} = cell2mat(hit_data{s});
 
     % Eliminate all white spaces & capitalize
     hit_strains{s} = clean_orf(hit_strains{s});
