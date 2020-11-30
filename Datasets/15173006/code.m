@@ -40,7 +40,7 @@ disp(hit_strains(inds));
 
 [~,ind1,ind2] = intersect(t.Var2, upper(data.labels_col));
 hit_data_ids = t.Var1(ind1);
-hit_data = hit_data(:,ind1);
+hit_data = hit_data(:,ind2);
 
 %% Prepare final dataset
 
