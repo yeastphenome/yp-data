@@ -1,0 +1,3 @@
+16519	hap a | growth (pooled culture, microarray) | aminocandin [0.00125 mg/L] | YPD | Zeidler U~d'Enfert C, 2013
+16521	hap a | growth (pooled culture, microarray) | colistin [20 mg/L] | YPD | Zeidler U~d'Enfert C, 2013
+16522	hap a | growth (pooled culture, microarray) | aminocandin [0.00125 mg/L], colistin [5 mg/L] | YPD | Zeidler U~d'Enfert C, 2013
