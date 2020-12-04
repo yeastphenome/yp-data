@@ -1,0 +1,1 @@
+16665	hap a | growth (colony size) | AZC [30 ug/ml] | SD + His + Leu + Met + Ura | Berg MD~Brandl CJ, 2020
