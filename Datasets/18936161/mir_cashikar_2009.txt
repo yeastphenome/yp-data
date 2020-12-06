@@ -1,4 +1,4 @@
-ORF	hap a | growth (spot assay) | time [30 min], temperature [50ºC] | Mir SS~Cashikar AG, 2009
+ORF	hap a | growth (spot assay) | temperature [50 C], time [30 min] | YPD | Mir SS~Cashikar AG, 2009
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
