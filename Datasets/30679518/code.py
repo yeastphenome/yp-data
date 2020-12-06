@@ -39,32 +39,32 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[14]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/41598_2018_35979_MOESM2_ESM.xlsx', sheet_name='HOP_Hypoculoside')
 
 
-# In[15]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[16]:
+# In[7]:
 
 
 original_data['genes'] = original_data['genes'].astype(str)
 
 
-# In[17]:
+# In[8]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['genes'] = clean_genename(original_data['genes'])
 
 
-# In[18]:
+# In[9]:
 
 
 # # If possible, fix typos, omissions, etc.
@@ -72,47 +72,47 @@ original_data['genes'] = clean_genename(original_data['genes'])
 # original_data.loc[original_data['genes'].str.contains('YBR160WAS'),'genes'] = 'YBR160W'
 
 
-# In[19]:
+# In[10]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['genes'], to='orf')
 
 
-# In[20]:
+# In[11]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data['orfs'])
 
 
-# In[11]:
+# In[12]:
 
 
 print(original_data.loc[~t,])
 
 
-# In[21]:
+# In[13]:
 
 
 to_remove = original_data.loc[original_data['genes'] == '37165',:].index.values
 original_data.drop(index=to_remove, inplace=True)
 
 
-# In[22]:
+# In[14]:
 
 
 original_data.shape
 
 
-# In[23]:
+# In[22]:
 
 
 # If the same strain is present more than once, average its values
 data = original_data.groupby('orfs')['logFC'].mean().to_frame()
 
 
-# In[24]:
+# In[23]:
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
@@ -120,13 +120,13 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Prepare the final dataset
 
-# In[25]:
+# In[24]:
 
 
 dataset_ids = [16440]
 
 
-# In[26]:
+# In[25]:
 
 
 datasets = datasets.reindex(index=dataset_ids)
@@ -135,23 +135,31 @@ datasets = datasets.reindex(index=dataset_ids)
 # In[27]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
+data.columns = datasets['name'].values
 
 
 # In[28]:
+
+
+data = data.groupby(data.index).mean()
+
+
+# In[29]:
 
 
 # Create row index
 data.index.name='orf'
 
 
+# In[30]:
+
+
+print('Final data dimensions: %d x %d' % (data.shape))
+
+
 # # Print out
 
-# In[20]:
+# In[31]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
@@ -163,6 +171,16 @@ data.to_csv(paper_name + '.txt', sep='\t')
 
 
 from IO.save_data_to_db2 import *
+
+
+# In[ ]:
+
+
+# Create column index
+lst = [datasets.index.values, datasets['name'].values]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
+data.columns = idx
 
 
 # In[22]:
