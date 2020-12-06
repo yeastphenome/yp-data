@@ -1,4 +1,4 @@
-ORF	hap a | transport to/from cell surface (Fus1-Mid2 chimera) | galactose [2%], raffinose [2%] | Proszynski TJ~Walch, 2005	
+ORF	hap a | dot-like protein localization in the cytoplasm (Fus1-Mid2 chimera) | galactose [2%], raffinose [2%] | Proszynski TJ~Walch, 2005	hap a | protein localization to vacuole (Fus1-Mid2 chimera) | galactose [2%], raffinose [2%] | Proszynski TJ~Walch, 2005
 YJL139C	0.000	1.000
 YDR050C	1.000	1.000
 YMR205C	1.000	1.000
