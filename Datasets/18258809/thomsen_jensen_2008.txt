@@ -1,4 +1,4 @@
-ORF	hap a | RNA localization | heat shock, 25°-42°C, 20 min (time [20 min], temperature [42ºC], temperature [25ºC]) | Thomsen R~Jensen TH, 2008
+ORF	hap a | RNA localization | heat shock, 25-42 C, 20 min | YM-1 | Thomsen R~Jensen TH, 2008
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
