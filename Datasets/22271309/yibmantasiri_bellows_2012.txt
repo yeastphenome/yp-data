@@ -1,4 +1,4 @@
-orf	data
+orf	hom | growth (pooled culture, microarray) | neothyonidioside [0.3 uM] | SC + DMSO [0.2%] | Yibmantasiri P~Bellows DS, 2012
 YBL082C	-1
 YBR041W	-1
 YBR078W	-1
