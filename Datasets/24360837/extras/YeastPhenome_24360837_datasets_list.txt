@@ -123,7 +123,7 @@
 1174	hom | growth (pooled culture) | nigericin [8 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1175	hom | growth (pooled culture) | Bleomycin A2 [0.05 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1176	hom | growth (pooled culture) | Azalomycin B [30 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-1177	hom | growth (pooled culture) | zeocin [0.01 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+1177	hom | growth (pooled culture) | phleomycin D1 [0.01 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1178	hom | growth (pooled culture) | mercury(II) chloride [35 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1179	hom | growth (pooled culture) | Methylmercury [0.1 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1180	hom | growth (pooled culture) | AN2690 [0.5 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
@@ -233,10 +233,10 @@
 1289	hom | growth (pooled culture) | Antibiotic X-206 [2 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1290	hom | growth (pooled culture) | nigericin [15 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1291	hom | growth (pooled culture) | Bleomycin A2 [0.075 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-1292	hom | growth (pooled culture) | zeocin [0.012 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-1293	hom | growth (pooled culture) | zeocin [0.05 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-1294	hom | growth (pooled culture) | zeocin [0.1 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-1295	hom | growth (pooled culture) | zeocin [0.3 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+1292	hom | growth (pooled culture) | phleomycin D1 [0.012 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+1293	hom | growth (pooled culture) | phleomycin D1 [0.05 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+1294	hom | growth (pooled culture) | phleomycin D1 [0.1 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+1295	hom | growth (pooled culture) | phleomycin D1 [0.3 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1296	hom | growth (pooled culture) | mercury(II) chloride [50 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1297	hom | growth (pooled culture) | Methylmercury [0.25 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 1298	hom | growth (pooled culture) | Methylmercury [0.5 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
@@ -360,7 +360,7 @@
 11996	het | growth (pooled culture) | nigericin [8 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 11997	het | growth (pooled culture) | Bleomycin A2 [0.05 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 11998	het | growth (pooled culture) | Azalomycin B [30 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-11999	het | growth (pooled culture) | zeocin [0.01 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+11999	het | growth (pooled culture) | phleomycin D1 [0.01 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12000	het | growth (pooled culture) | mercury(II) chloride [35 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12002	het | growth (pooled culture) | AN2690 [0.5 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12003	het | growth (pooled culture) | manganese chloride [5 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
@@ -450,9 +450,9 @@
 12102	het | growth (pooled culture) | Lysolipin X [3 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12104	het | growth (pooled culture) | tunicamycin B [0.2 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12107	het | growth (pooled culture) | nigericin [15 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-12109	het | growth (pooled culture) | zeocin [0.012 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-12110	het | growth (pooled culture) | zeocin [0.05 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
-12111	het | growth (pooled culture) | zeocin [0.1 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+12109	het | growth (pooled culture) | phleomycin D1 [0.012 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+12110	het | growth (pooled culture) | phleomycin D1 [0.05 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+12111	het | growth (pooled culture) | phleomycin D1 [0.1 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12113	het | growth (pooled culture) | mercury(II) chloride [50 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12114	het | growth (pooled culture) | Methylmercury [0.25 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12115	het | growth (pooled culture) | Methylmercury [0.5 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
@@ -461,3 +461,11 @@
 12118	het | growth (pooled culture) | copper sulphate [120 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 12119	het | growth (pooled culture) | copper sulphate [200 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
 16622	het | growth (pooled culture) | benomyl [57.746 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16666	het | growth (pooled culture) | trichostatin A [200 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16667	het | growth (pooled culture) | rapamycin [1 nM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16668	het | growth (pooled culture) | staurosporine [1.088 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16669	het | growth (pooled culture) | clotrimazole [0.471 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16670	het | growth (pooled culture) | gliotoxin [8.723 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16671	het | growth (pooled culture) | Methylmercury [0.1 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16672	het | growth (pooled culture) | Valinomycin Derivative (CMB:3638) [5 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
+16673	het | growth (pooled culture) | Bleomycin A2 [0.075 uM] | YPD + DMSO [2%] | Hoepfner D~Movva NR, 2014
