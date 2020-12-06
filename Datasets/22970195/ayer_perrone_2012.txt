@@ -1,4 +1,4 @@
-ORF	hom | cytosolic redox potential (E(GSH)) | minimal complete -Ura [standard], temperature [25ºC] | Ayer A~Perrone GG, 2012
+ORF	hom | cytosolic redox potential (E(GSH)) | temperature [25 C] | SC - Ura | Ayer A~Perrone GG, 2012
 YPL091W	0.788
 YML007W	0.914
 YHR206W	0.917
