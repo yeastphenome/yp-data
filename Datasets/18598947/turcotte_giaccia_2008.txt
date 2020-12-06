@@ -1,4 +1,4 @@
-ORF	hom | growth (pooled CFU) | STF-62247 [0100 M] | Turcotte S~Giaccia AJ, 2008
+ORF	hom | growth (pooled CFU) | STF-62247 [0-100 uM] | YPD | Turcotte S~Giaccia AJ, 2008
 YPL170W	-1.000
 YHR073W	-1.000
 YLR170C	-1.000
