@@ -1,8 +1,8 @@
-16642	het | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [12 h] | YPD | Sinha H~Steinmetz LM, 2008
-16643	het | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [24 h] | YPD | Sinha H~Steinmetz LM, 2008
-16644	het | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [36 h] | YPD | Sinha H~Steinmetz LM, 2008
-16638	het | growth (pooled culture, microarray) | temperature [37ºC], time [32.5 h] | YPD | Sinha H~Steinmetz LM, 2008
+16511	hom | growth (pooled culture, microarray) | temperature [37 C], time [32.5 h] | YPD | Sinha H~Steinmetz LM, 2008
+16638	het | growth (pooled culture, microarray) | temperature [37 C], time [32.5 h] | YPD | Sinha H~Steinmetz LM, 2008
 16639	hom | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [12 h] | YPD | Sinha H~Steinmetz LM, 2008
 16640	hom | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [24 h] | YPD | Sinha H~Steinmetz LM, 2008
 16641	hom | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [36 h] | YPD | Sinha H~Steinmetz LM, 2008
-16511	hom | growth (pooled culture, microarray) | temperature [37ºC], time [32.5 h] | YPD | Sinha H~Steinmetz LM, 2008
+16642	het | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [12 h] | YPD | Sinha H~Steinmetz LM, 2008
+16643	het | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [24 h] | YPD | Sinha H~Steinmetz LM, 2008
+16644	het | growth (pooled culture, microarray) | rapamycin [10 ng/ml], time [36 h] | YPD | Sinha H~Steinmetz LM, 2008
