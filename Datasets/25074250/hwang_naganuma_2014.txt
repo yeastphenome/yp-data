@@ -1,4 +1,4 @@
-orf	
+orf	hap alpha | growth (culture turbidity) | methulmercuric chloride [60 nM] | SD | Hwang G~Naganuma A, 2014
 YBR026C	-0.31999999999999995
 YBR068C	-0.25
 YCR093W	-0.28
