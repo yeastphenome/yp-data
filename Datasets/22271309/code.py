@@ -91,12 +91,6 @@ original_data['data'] = -1
 original_data.set_index('orfs', inplace=True)
 
 
-# In[18]:
-
-
-original_data.head()
-
-
 # # Prepare the final dataset
 
 # In[13]:
@@ -105,38 +99,38 @@ original_data.head()
 dataset_ids = [16485]
 
 
-# In[14]:
+# In[44]:
 
 
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[26]:
+# In[45]:
 
 
-data = original_data['data'].copy()
+data = original_data[['data']].copy()
 
 
-# In[27]:
+# In[46]:
 
 
 data.columns = datasets['name'].values
 
 
-# In[28]:
+# In[47]:
 
 
-data = data.groupby(data.index).mean().to_frame()
+data = data.groupby(data.index).mean()
 
 
-# In[29]:
+# In[48]:
 
 
 # Create row index
 data.index.name='orf'
 
 
-# In[31]:
+# In[49]:
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
@@ -144,7 +138,7 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Print out
 
-# In[32]:
+# In[51]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
