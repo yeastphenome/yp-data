@@ -1,4 +1,4 @@
-ORF	hom | growth (relative abundance in pooled culture) | Macbecin II [200-400 uM], temperature [30°C] | McClellan AJ~Frydman J, 2007	hom | growth (relative abundance in pooled culture) | Macbecin II [200-400 uM], temperature [37ºC] | McClellan AJ~Frydman J, 2007
+ORF	hom | growth (pooled culture) | macbecin II [200-400 uM], temperature [30 C] | YPD + DMSO | McClellan AJ~Frydman J, 2007	hom | growth (pooled culture) | macbecin II [200-400 uM], temperature [37 C] | YPD + DMSO | McClellan AJ~Frydman J, 2007
 YAL001C	NaN	1.196
 YAL002W	0.450	0.762
 YAL004W	1.162	1.389
