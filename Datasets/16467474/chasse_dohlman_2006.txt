@@ -1,4 +1,4 @@
-ORF	hap a | pheromone sensitivity (FUS1-lacZ EC50) | alpha factor pheromone [0.3-100M] | Chasse SA~Dohlman HG, 2006	hap a | pheromone sensitivity (FUS1-lacZ maximum responsiveness) | alpha factor pheromone [0.3-100M] | Chasse SA~Dohlman HG, 2006	hap a | pheromone sensitivity (FUS1-lacZ basal activity) | alpha factor pheromone [0.3-100M] | Chasse SA~Dohlman HG, 2006
+ORF	hap a | pheromone-induced transcription (prFUS1-lacZ EC50) | alpha factor pheromone [0.3-100 uM] | YPD | Chasse SA~Dohlman HG, 2006	hap a | pheromone-induced transcription (prFUS1-lacZ max responsiveness) | alpha factor pheromone [0.3-100 uM] | YPD | Chasse SA~Dohlman HG, 2006	hap a | pheromone-induced transcription (prFUS1-lacZ basal activity) | alpha factor pheromone [0.3-100 uM] | YPD | Chasse SA~Dohlman HG, 2006
 YAL002W	0.000	0.000	0.000
 YAL004W	0.000	0.000	0.000
 YAL005C	0.000	0.000	0.000
