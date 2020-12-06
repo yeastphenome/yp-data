@@ -1,4 +1,4 @@
-ORF	het | growth (relative abundance in pooled culture) | hypothermia (Macbecin II [200-400 uM], temperature [15ºC]) | Franzosa EA~McClellan AJ, 2011
+ORF	het | growth (pooled culture) | macbecin II [200-400 uM], temperature [15 C] | YPD + DMSO | Franzosa EA~McClellan AJ, 2011
 YOR126C	0.261
 YBR197C	0.317
 YGR255C	0.366
