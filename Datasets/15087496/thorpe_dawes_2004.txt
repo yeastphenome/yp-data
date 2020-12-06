@@ -1,4 +1,4 @@
-ORF	hom | growth (spot assay) | cumene hydroperoxide [0.0350.11 mM] | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | diamide (1,1'-azobis(N,N-dimethylformamide) [0.81.2 mM]) | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | hydrogen peroxide [0.751.6 mM] | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | linoleic acid hydroperoxide [0.0450.08 mM] | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | menadione [0.51.2 mM] | Thorpe GW~Dawes IW, 2004
+ORF	hom | growth (spot assay) | cumene hydroperoxide [0.035-0.11 mM] | SC | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | diamide | SC | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | hydrogen peroxide [0.75-1.6 mM] | SC | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | linoleic acid hydroperoxide [0.045-0.08 mM] | SC | Thorpe GW~Dawes IW, 2004	hom | growth (spot assay) | menadione [0.5-1.2 mM] | SC | Thorpe GW~Dawes IW, 2004
 YFL056C	0.000	-4.000	0.000	0.000	0.000
 YMR072W	0.000	1.000	-6.000	0.000	0.000
 YLR304C	0.000	-1.000	0.000	0.000	0.000
