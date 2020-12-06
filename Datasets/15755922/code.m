@@ -14,9 +14,6 @@ gardocki_lopes_2005.pmid = 15755922;
 datasets.id = d{1};
 datasets.standard_name = d{2};
 
-phenotypes = {'expression of PIS1'};
-treatments = {'glucose 2%';'glycerol 3%'};
-
 %% Load data
 [FILENAMES{end+1}, data.raw] = read_data('xlsread','./raw_data/120_GENES_AFFECTING_PIS1.xlsx');
 
