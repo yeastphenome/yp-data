@@ -1,4 +1,4 @@
-ORF	hap a | growth (colony size) | temperature [39ºC] | Ruiz-Roig C~de Nadal E, 2010
+ORF	hap a | growth (colony size) | temperature [39 C] | YPD | Ruiz-Roig C~de Nadal E, 2010
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
