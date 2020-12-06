@@ -1,4 +1,4 @@
-ORF	hap alpha | expression level of a particular gene (PIS1-lacZ) | glucose [2%], time [2 d], temperature [30°C] | Gardocki ME~Lopes JM, 2005	hap alpha | expression level of a particular gene (PIS1-lacZ) | glycerol [3%], time [2 d], temperature [30°C] | Gardocki ME~Lopes JM, 2005
+ORF	hap alpha | gene expression (PIS1-lacZ) | temperature [30 C], time [2 d] | SC - Ura, X-Gal | Gardocki ME~Lopes JM, 2005	hap alpha | gene expression (PIS1-lacZ) | temperature [30 C], time [2 d] | SC - Ura, X-Gal, Glycerol [3%] | Gardocki ME~Lopes JM, 2005
 YAL068C	-1.000	0.000
 YAL067C	0.000	0.000
 YAL066W	0.000	0.000
