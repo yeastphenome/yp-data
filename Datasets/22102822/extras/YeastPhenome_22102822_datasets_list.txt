@@ -1,19 +1,18 @@
-588	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [1-1.2 mM], sodium chloride [0.7 M] | Berry DB~Gasch AP, 2011
-589	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [1-1.2 mM], temperature [40ºC] | Berry DB~Gasch AP, 2011
-590	hom | growth (relative abundance in pooled culture) | 1,4-dithiothreitol [2.5 mM], hydrogen peroxide [1-1.2 mM] | Berry DB~Gasch AP, 2011
-758	hom | growth (relative abundance in pooled culture) | standard [standard] | Berry DB~Gasch AP, 2011
-759	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [0.4 mM] | Berry DB~Gasch AP, 2011
-760	hom | growth (relative abundance in pooled culture) | sodium chloride [0.7 M] | Berry DB~Gasch AP, 2011
-761	hom | growth (relative abundance in pooled culture) | 1,4-dithiothreitol [2.5 mM] | Berry DB~Gasch AP, 2011
-762	hom | growth (relative abundance in pooled culture) | temperature [40ºC] | Berry DB~Gasch AP, 2011
-763	hom | growth (relative abundance in pooled culture) | tunicamycin [20 uM] | Berry DB~Gasch AP, 2011
-5395	hom | growth (relative abundance in pooled culture) | standard [standard] | Berry DB~Gasch AP, 2011
-5396	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [0.4 mM] | Berry DB~Gasch AP, 2011
-5397	hom | growth (relative abundance in pooled culture) | 1,4-dithiothreitol [2.5 mM] | Berry DB~Gasch AP, 2011
-5398	hom | growth (relative abundance in pooled culture) | sodium chloride [0.7 M] | Berry DB~Gasch AP, 2011
-5399	hom | growth (relative abundance in pooled culture) | temperature [40ºC] | Berry DB~Gasch AP, 2011
-5400	hom | growth (relative abundance in pooled culture) | tunicamycin [20 uM] | Berry DB~Gasch AP, 2011
-5401	hom | growth (relative abundance in pooled culture) | 1,4-dithiothreitol [2.5 mM], hydrogen peroxide [1-1.2 mM] | Berry DB~Gasch AP, 2011
-5402	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [1-1.2 mM], sodium chloride [0.7 M] | Berry DB~Gasch AP, 2011
-5403	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [1-1.2 mM], temperature [40ºC] | Berry DB~Gasch AP, 2011
-5404	hom | growth (relative abundance in pooled culture) | hydrogen peroxide [1-1.2 mM], tunicamycin [20 uM] | Berry DB~Gasch AP, 2011
+588	hom | growth (pooled culture, microarray) | hydrogen peroxide [1-1.2 mM], sodium chloride [0.7 M] | YPD | Berry DB~Gasch AP, 2011
+589	hom | growth (pooled culture, microarray) | hydrogen peroxide [1-1.2 mM], temperature [40ºC] | YPD | Berry DB~Gasch AP, 2011
+590	hom | growth (pooled culture, microarray) | dithiothreitol [2.5 mM], hydrogen peroxide [1-1.2 mM] | YPD | Berry DB~Gasch AP, 2011
+758	hom | growth (pooled culture, microarray) | standard | YPD | Berry DB~Gasch AP, 2011
+759	hom | growth (pooled culture, microarray) | hydrogen peroxide [0.4 mM] | YPD | Berry DB~Gasch AP, 2011
+760	hom | growth (pooled culture, microarray) | sodium chloride [0.7 M] | YPD | Berry DB~Gasch AP, 2011
+761	hom | growth (pooled culture, microarray) | dithiothreitol [2.5 mM] | YPD | Berry DB~Gasch AP, 2011
+762	hom | growth (pooled culture, microarray) | temperature [40ºC] | YPD | Berry DB~Gasch AP, 2011
+5395	hom | growth (pooled culture, barseq) | standard | YPD | Berry DB~Gasch AP, 2011
+5396	hom | growth (pooled culture, barseq) | hydrogen peroxide [0.4 mM] | YPD | Berry DB~Gasch AP, 2011
+5397	hom | growth (pooled culture, barseq) | dithiothreitol [2.5 mM] | YPD | Berry DB~Gasch AP, 2011
+5398	hom | growth (pooled culture, barseq) | sodium chloride [0.7 M] | YPD | Berry DB~Gasch AP, 2011
+5399	hom | growth (pooled culture, barseq) | temperature [40ºC] | YPD | Berry DB~Gasch AP, 2011
+5400	hom | growth (pooled culture, barseq) | tunicamycin [20 uM] | YPD | Berry DB~Gasch AP, 2011
+5401	hom | growth (pooled culture, barseq) | dithiothreitol [2.5 mM], hydrogen peroxide [1-1.2 mM] | YPD | Berry DB~Gasch AP, 2011
+5402	hom | growth (pooled culture, barseq) | hydrogen peroxide [1-1.2 mM], sodium chloride [0.7 M] | YPD | Berry DB~Gasch AP, 2011
+5403	hom | growth (pooled culture, barseq) | hydrogen peroxide [1-1.2 mM], temperature [40ºC] | YPD | Berry DB~Gasch AP, 2011
+5404	hom | growth (pooled culture, barseq) | hydrogen peroxide [1-1.2 mM], tunicamycin [20 uM] | YPD | Berry DB~Gasch AP, 2011
