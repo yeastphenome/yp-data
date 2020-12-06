@@ -1,1 +1,1 @@
-5351	hap a | mother:daughter asymmetric inheritance of protein aggregates (Hsp104-GFP) | transient heat shock (42° [30 min]) | Hill SM~Nystroem T, 2016
+5351	hap a | mother:daughter asymmetric inheritance of protein aggregates (Hsp104-GFP) | temperature [42 C], time [30 min] | unknown | Hill SM~Nystrom T, 2016
