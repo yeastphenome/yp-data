@@ -1,4 +1,4 @@
-ORF	cisplatin
+ORF	hom | growth (pooled CFU) | cisplatin [160 umol/L] | discrete | discrete | discrete
 YAL045C	1.000
 YBR034C	1.000
 YBR045C	1.000

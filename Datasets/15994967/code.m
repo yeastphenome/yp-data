@@ -41,37 +41,6 @@ hit_data = ones(size(hit_strains));
 hit_data_ids = [183];
 
 
-% %% Tested strains (only if the dataset is not quantitative and the tested strains are provided separately)
-% 
-% % Load tested strains
-% [FILENAMES{end+1}, tested_strains] = read_data('xlsread','./raw_data/tested_strains.xlsx', 'Spreadsheet name');
-% 
-% % Eliminate all white spaces & capitalize
-% tested_strains = clean_genename(tested_strains);
-% 
-% % If in gene name form, transform into ORF name
-% tested_strains = translate(tested_strains);
-% 
-% % Find anything that doesn't look like an ORF
-% inds = find(~is_orf(tested_strains));
-% disp(tested_strains(inds));  
-% 
-% % If possible, fix the typo
-% tested_strains(ismember(tested_strains, {'YAL001'})) = {'YAL001C'};
-% 
-% % If not possible, eliminate the entry
-% tested_strains(ismember(tested_strains, {'BLANK'})) = [];
-% 
-% % Finally, take the unique set
-% tested_strains = unique(tested_strains);
-% 
-% % Make sure the that all the hits are part of the tested set
-% [missing,~] = setdiff(hit_strains, tested_strains);
-% disp(missing);
-% 
-% % If it seems reasonable, add the missing hits to the list of tested strains
-% tested_strains = [tested_strains; missing];
-
 %% Prepare final dataset
 
 % Match the dataset ids with the dataset standard names
@@ -85,14 +54,6 @@ huang_kowalski_2005.ph = hit_data_names;
 huang_kowalski_2005.data = hit_data;
 huang_kowalski_2005.dataset_ids = hit_data_ids;
 
-% % If the dataset is discrete/binary and the tested strains were provided separately:
-% firstauthor_lastauthor_YYYY.orfs = tested_strains;
-% firstauthor_lastauthor_YYYY.ph = hit_data_names;
-% firstauthor_lastauthor_YYYY.data = zeros(length(firstauthor_lastauthor_YYYY.orfs),length(firstauthor_lastauthor_YYYY.ph));
-% firstauthor_lastauthor_YYYY.dataset_ids = hit_data_ids;
-% 
-% [~,ind1,ind2] = intersect(hit_strains, firstauthor_lastauthor_YYYY.orfs);
-% firstauthor_lastauthor.data(ind2,:) = hit_data(ind1,:);
 
 %% Save
 
