@@ -1,4 +1,4 @@
-ORF	hom | growth (spot assay) | temperature [12ºC] | Salvado Z~Guillamon JM, 2016	hom | growth (spot assay) | temperature [18ºC] | Salvado Z~Guillamon JM, 2016
+ORF	hom | growth (spot assay) | temperature [12C] | Salvado Z~Guillamon JM, 2016	hom | growth (spot assay) | temperature [18C] | Salvado Z~Guillamon JM, 2016
 YAL002W	0.000	0.000
 YAL004W	0.000	0.000
 YAL005C	0.000	0.000
