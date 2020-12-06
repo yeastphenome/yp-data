@@ -25,7 +25,7 @@ hit_strains = data(4:end,1);
 temp_data = data(4:end, 4);
 hit_data = nan(length(hit_strains),1);
 indx = find(~strcmp(temp_data, 'ND'));
-hit_data(indx) = cell2mat(temp_data(indx));
+hit_data(indx) = cell2mat(temp_data(indx))-1;
    
 % Eliminate all white spaces & capitalize
 hit_strains = clean_orf(hit_strains);
@@ -34,6 +34,9 @@ hit_strains = clean_orf(hit_strains);
 inds = find(~is_orf(hit_strains));
 hit_strains(inds) = [];  
 hit_data(inds) = [];  
+
+% If the same strain is present more than once, average its values
+[hit_strains, hit_data] = grpstats(hit_data, hit_strains, {'gname','mean'});
 
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
