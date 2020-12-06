@@ -1,6 +1,6 @@
-16395	hom | growth (pooled culture) | temperature [40ºC] | YPD | Maclean CJ~Zhang J, 2017
-16396	hom | growth (pooled culture) | sodium chloride [1.25 M] | YPD | Maclean CJ~Zhang J, 2017
+16395	hom | growth (pooled culture) | temperature [40 C] | YPD | Maclean CJ~Zhang J, 2017
+16396	hom | growth (pooled culture) | sodium chloride [1.25 M], sodium chloride [1.25 M] | YPD | Maclean CJ~Zhang J, 2017
 16397	hom | growth (pooled culture) | ethanol [7%] | YPD | Maclean CJ~Zhang J, 2017
 16398	hom | growth (pooled culture) | paraquat [4 mM] | YPD | Maclean CJ~Zhang J, 2017
 16399	hom | growth (pooled culture) | hydrogen peroxide [3 mM] | YPD | Maclean CJ~Zhang J, 2017
-16400	hom | growth (pooled culture) | cobalt dichloride [1 mM] | YPD | Maclean CJ~Zhang J, 2017
+16400	hom | growth (pooled culture) | cobalt chloride [1 mM] | YPD | Maclean CJ~Zhang J, 2017
