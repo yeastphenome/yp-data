@@ -1,4 +1,4 @@
-ORF	hom | growth (spot assay) | temperature [30°C] | SC - Ino - Cho | Villa-Garcia MJ~Henry SA, 2011	hom | growth (spot assay) | temperature [30°C] | SC - Ino + Cho | Villa-Garcia MJ~Henry SA, 2011	hom | growth (spot assay) | temperature [37ºC] | SC - Ino + Cho | Villa-Garcia MJ~Henry SA, 2011
+ORF	hom | growth (spot assay) | temperature [30 C] | SC - Ino - Cho | Villa-Garcia MJ~Henry SA, 2011	hom | growth (spot assay) | temperature [30 C] | SC - Ino + Cho | Villa-Garcia MJ~Henry SA, 2011	hom | growth (spot assay) | temperature [37 C] | SC - Ino + Cho | Villa-Garcia MJ~Henry SA, 2011
 YAL021C	0.000	0.000	-2.000
 YAL023C	-2.000	-2.000	-3.000
 YAL024C	-2.000	-2.000	-2.000
