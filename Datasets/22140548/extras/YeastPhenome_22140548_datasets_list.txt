@@ -1,1 +1,1 @@
-11784	het | growth (relative abundance in pooled culture) | hypothermia (Macbecin II [200-400 uM], temperature [15ºC]) | Franzosa EA~McClellan AJ, 2011
+11784	het | growth (pooled culture) | macbecin II [200-400 uM], temperature [15 C] | YPD + DMSO | Franzosa EA~McClellan AJ, 2011
