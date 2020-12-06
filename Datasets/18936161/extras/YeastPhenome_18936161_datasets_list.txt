@@ -1,1 +1,1 @@
-100	hap a | growth (spot assay) | time [30 min], temperature [50ºC] | Mir SS~Cashikar AG, 2009
+100	hap a | growth (spot assay) | temperature [50 C], time [30 min] | YPD | Mir SS~Cashikar AG, 2009
