@@ -1,1 +1,1 @@
-156	hap a | growth (spot assay) | time [12-58 months], temperature [4ºC] | Postma L~Ralser M, 2009
+156	hap a | growth (spot assay) | temperature [4 C], time [12-58 months] | YPD | Postma L~Ralser M, 2009
