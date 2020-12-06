@@ -1,4 +1,4 @@
-ORF	hap alpha | growth (culture turbidity) | pressure [35 MPa], temperature [24ºC] | Abe F~Minegishi H, 2008	hap alpha | growth (culture turbidity) | pressure [0.1 MPa], temperature [6ºC] | Abe F~Minegishi H, 2008
+ORF	hap alpha | growth (culture turbidity) | pressure [35 MPa], temperature [24 C] | YPD, SC (modified) | Abe F~Minegishi H, 2008	hap alpha | growth (culture turbidity) | pressure [0.1 MPa], temperature [6 C] | YPD, SC (modified) | Abe F~Minegishi H, 2008
 YAL002W	0.000	0.000
 YAL004W	0.000	0.000
 YAL005C	0.000	0.000
