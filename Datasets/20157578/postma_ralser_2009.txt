@@ -1,4 +1,4 @@
-ORF	hap a | growth (spot assay) | time [12-58 months], temperature [4ºC] | Postma L~Ralser M, 2009
+ORF	hap a | growth (spot assay) | temperature [4 C], time [12-58 months] | YPD | Postma L~Ralser M, 2009
 YAL002W	0.000
 YAL004W	0.000
 YAL005C	0.000
