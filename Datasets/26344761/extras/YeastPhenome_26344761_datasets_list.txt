@@ -1,1 +1,2 @@
-16139	hap a | transport to vacuoles (GFP-Yif1) | minimal complete -Ura [standard], temperature [26ºC] | Dobzinski N~Gerst JE, 2015
+16139	hap a | protein transport to the vacuole (GFP-Yif1) | temperature [26 C] | SC - Ura | Dobzinski N~Gerst JE, 2015
+16164	hap a | protein transport to the vacuole (GFP-Yif1) | rapamycin [200 ug/L], temperature [26 C] | SC - Ura | Dobzinski N~Gerst JE, 2015
