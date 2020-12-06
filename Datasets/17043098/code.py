@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import numpy as np
@@ -18,20 +18,20 @@ from Strings.is_a import *
 
 # # Initial setup
 
-# In[3]:
+# In[2]:
 
 
 paper_pmid = 17043098
 paper_name = 'doostzadeh_langston_2007' 
 
 
-# In[4]:
+# In[3]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[5]:
+# In[4]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -39,25 +39,25 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[8]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/kfl131supp.xls', sheet_name='ToxSci Supplementary Data files', skiprows=1)
 
 
-# In[9]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[10]:
+# In[7]:
 
 
 original_data['strain'] = original_data['strain'].astype(str)
 
 
-# In[11]:
+# In[8]:
 
 
 mpp_columns = ['z_result_nq:04_10_28_19:mpp+:250:ug/ml::::20:hom_09_02',
@@ -69,34 +69,34 @@ paraquat_columns = ['z_result_nq:04_10_28_21:paraquat:5000:uM::::20:hom_09_02',
                    'z_result_nq:04_11_04_08:paraquat:5000:uM::::20:hom_09_02']
 
 
-# In[12]:
+# In[9]:
 
 
 # Extract ORF from string
 orfs = original_data['strain'].apply(lambda x: x.split(':')[0])
 
 
-# In[14]:
+# In[10]:
 
 
 original_data['orfs'] = orfs
 
 
-# In[15]:
+# In[11]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orfs'] = clean_orf(original_data['orfs'])
 
 
-# In[16]:
+# In[12]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['orfs'], to='orf')
 
 
-# In[17]:
+# In[13]:
 
 
 # Make sure everything translated ok
@@ -104,19 +104,19 @@ t = looks_like_orf(original_data['orfs'])
 print(original_data.loc[~t,])
 
 
-# In[18]:
+# In[14]:
 
 
 original_data['mpp'] = original_data[mpp_columns].mean(axis=1)
 
 
-# In[19]:
+# In[15]:
 
 
 original_data['paraquat'] = original_data[paraquat_columns].mean(axis=1)
 
 
-# In[20]:
+# In[16]:
 
 
 original_data.set_index('orfs', inplace=True)
@@ -124,37 +124,37 @@ original_data.set_index('orfs', inplace=True)
 
 # # Prepare the final dataset
 
-# In[37]:
+# In[17]:
 
 
 dataset_ids = [16616,16615]
 
 
-# In[38]:
+# In[18]:
 
 
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[39]:
+# In[19]:
 
 
 data = original_data[['mpp','paraquat']].copy()
 
 
-# In[40]:
+# In[20]:
 
 
 data.columns = datasets['name'].values
 
 
-# In[41]:
+# In[21]:
 
 
 data = data.groupby(data.index).mean()
 
 
-# In[42]:
+# In[22]:
 
 
 # The original fitness scores were calculated as UNT/TRT, so that high value = growth defect. 
@@ -162,14 +162,14 @@ data = data.groupby(data.index).mean()
 data = -data
 
 
-# In[43]:
+# In[23]:
 
 
 # Create row index
 data.index.name='orf'
 
 
-# In[44]:
+# In[24]:
 
 
 print('Final data dimensions: %d x %d' % (data.shape))
@@ -177,7 +177,7 @@ print('Final data dimensions: %d x %d' % (data.shape))
 
 # # Print out
 
-# In[47]:
+# In[25]:
 
 
 data.to_csv(paper_name + '.txt', sep='\t')
