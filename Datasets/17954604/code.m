@@ -23,11 +23,11 @@ datasets.standard_name = d{2};
 hit_strains = data{1};
 hit_dataset = data{2};
 
-hit_data = nan(length(hit_strains),2);
+hit_data = nan(length(hit_strains),1);
 inds = find(strcmp('kan', hit_dataset));
 hit_data(inds,1) = -1;
-inds = find(strcmp('tet', hit_dataset));
-hit_data(inds,2) = -1;
+% inds = find(strcmp('tet', hit_dataset));
+% hit_data(inds,2) = -1;
 
   
 % Eliminate all white spaces & capitalize
@@ -46,7 +46,7 @@ disp(hit_strains(inds));
 % MANUAL. Get the dataset ids corresponding to each dataset (in order)
 % Multiple datasets (e.g., replicates) may get the same id, which can then
 % be used to average them out
-hit_data_ids = [171; 428];
+hit_data_ids = [171];
 
 %% Prepare final dataset
 
