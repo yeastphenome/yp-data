@@ -1,15 +1,15 @@
-ORF	hap a | transport to/from ER (Pmp2-LRKR) | standard [standard] | Michelsen K~Schwappach B, 2007	tet | transport to/from ER (Pmp2-LRKR) | standard [standard] | Michelsen K~Schwappach B, 2007
-YIL074C	-1.000	NaN
-YOR290C	-1.000	NaN
-YGR078C	-1.000	NaN
-YLR440C	NaN	-1.000
-YGL233W	NaN	-1.000
-YDR145W	NaN	-1.000
-YDR238C	NaN	-1.000
-YGL137W	NaN	-1.000
-YML105C	NaN	-1.000
-YNL287W	NaN	-1.000
-YGL001C	NaN	-1.000
-YIL126W	NaN	-1.000
-YFR051C	NaN	-1.000
-YCR052W	NaN	-1.000
+ORF	hap a | protein transport to the ER (Pmp2-LRKR) | standard | SC - Ura | Michelsen K~Schwappach B, 2007
+YIL074C	-1.000
+YOR290C	-1.000
+YGR078C	-1.000
+YLR440C	NaN
+YGL233W	NaN
+YDR145W	NaN
+YDR238C	NaN
+YGL137W	NaN
+YML105C	NaN
+YNL287W	NaN
+YGL001C	NaN
+YIL126W	NaN
+YFR051C	NaN
+YCR052W	NaN
