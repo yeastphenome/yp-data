@@ -184,7 +184,7 @@ data.head()
 
 # # Normalize
 
-# In[25]:
+# In[27]:
 
 
 def normalize_phenotypic_scores(df, has_tested=False):
@@ -206,18 +206,18 @@ def normalize_phenotypic_scores(df, has_tested=False):
         
         df = df.reindex(index=consensus_tested, fill_value=0)
         
-    df_norm = z_transform_mode(data)
+    df_norm = z_transform_mode(df)
     
     return df_norm
 
 
-# In[26]:
+# In[28]:
 
 
-data_norm = normalize_phenotypic_scores(data)
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[27]:
+# In[29]:
 
 
 # Assign proper column names
@@ -227,19 +227,19 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[28]:
+# In[30]:
 
 
 data_norm[data.isnull()] = np.nan
 
 
-# In[29]:
+# In[31]:
 
 
 data_all = data.join(data_norm)
 
 
-# In[30]:
+# In[32]:
 
 
 data_all.head()
@@ -247,11 +247,11 @@ data_all.head()
 
 # # Print out
 
-# In[31]:
+# In[33]:
 
 
 for f in ['value','valuez']:
-    df = data_all.xs('value', level='data_type', axis=1).copy()
+    df = data_all.xs(f, level='data_type', axis=1).copy()
     df.columns = datasets['name'].values
     df = df.droplevel('gene_id', axis=0)
     df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
@@ -259,13 +259,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[32]:
+# In[34]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[36]:
+# In[35]:
 
 
 save_data_to_db(data_all, paper_pmid)
