@@ -214,7 +214,7 @@ def normalize_phenotypic_scores(df, has_tested=False):
         
         df = df.reindex(index=consensus_tested, fill_value=0)
         
-    df_norm = z_transform_mode(data)
+    df_norm = z_transform_mode(df)
     
     return df_norm
 
@@ -222,7 +222,7 @@ def normalize_phenotypic_scores(df, has_tested=False):
 # In[26]:
 
 
-data_norm = normalize_phenotypic_scores(data)
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
 # In[27]:
@@ -259,7 +259,7 @@ data_all.head()
 
 
 for f in ['value','valuez']:
-    df = data_all.xs('value', level='data_type', axis=1).copy()
+    df = data_all.xs(f, level='data_type', axis=1).copy()
     df.columns = datasets['name'].values
     df = df.droplevel('gene_id', axis=0)
     df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
