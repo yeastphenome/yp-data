@@ -1,0 +1,2 @@
+16493	hap a (post-SGA) | growth (colony size) | expression of human TDP-43 [GAL] | SC - Ura, Gal [2%] | Armakola M~Gitler AD, 2012
+16494	hap a (post-SGA) | growth (colony size) | expression of human TDP-43 [GAL] | SC - Leu, Gal [2%] | Armakola M~Gitler AD, 2012
