@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -92,94 +83,142 @@ t = looks_like_orf(original_data2['orfs'])
 print(original_data2.loc[~t,])
 
 
-# In[13]:
+# In[12]:
 
 
 data1 = original_data1[['orfs','Score']].groupby('orfs').mean()
 data2 = original_data2[['orfs','Score']].groupby('orfs').mean()
 
 
-# In[14]:
+# In[13]:
 
 
 data = data1.join(data2, lsuffix='_1', rsuffix='_2')
 
 
-# In[15]:
+# In[14]:
 
 
 data['data'] = data[['Score_1','Score_2']].mean(axis=1)
 
 
-# In[18]:
+# In[15]:
 
 
 data = data.drop(columns=['Score_1','Score_2'])
 
 
+# In[17]:
+
+
+data.index.name='orf'
+
+
 # # Prepare the final dataset
+
+# In[18]:
+
+
+dataset_ids = [16408]
+datasets = datasets.reindex(index=dataset_ids)
+
 
 # In[19]:
 
 
-dataset_ids = [16408]
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
 # In[20]:
 
 
-datasets = datasets.reindex(index=dataset_ids)
+print('Final data dimensions: %d x %d' % (data.shape))
 
+
+# ## Subset to the genes currently in SGD
 
 # In[21]:
 
 
-data.columns = datasets['name'].values
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
 # In[22]:
 
 
-# Create row index
-data.index.name='orf'
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
 
+
+# # Normalize
 
 # In[23]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
-
-# # Print out
 
 # In[24]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
 
-
-# # Save to DB
 
 # In[25]:
 
 
-from IO.save_data_to_db2 import *
+data_norm[data.isnull()] = np.nan
 
 
 # In[26]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
+data_all = data.join(data_norm)
 
 
 # In[27]:
 
 
-save_data_to_db(data, paper_pmid)
+data_all.head()
+
+
+# # Print out
+
+# In[28]:
+
+
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
+
+
+# # Save to DB
+
+# In[29]:
+
+
+from IO.save_data_to_db3 import *
+
+
+# In[30]:
+
+
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
