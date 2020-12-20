@@ -1,0 +1,9 @@
+16674	hap a (post-SGA) | growth (colony size) | expression of GFP [prTDH3] | SC - Ura | Kintaka R~Moriya H, 2020
+16675	hap a (post-SGA) | growth (colony size) | expression of GFP [prTDH3] | SC - Leu, Ura | Kintaka R~Moriya H, 2020
+16677	hap a (post-SGA) | growth (colony size) | expression of tGFP [prPYK1] | SC - Leu, Ura | Kintaka R~Moriya H, 2020
+16678	hap a (post-SGA) | growth (colony size) | expression of NES-tGFP [prPYK1] | SC - Leu, Ura | Kintaka R~Moriya H, 2020
+16681	hap a (post-SGA) | growth (colony size) | expression of tGFP [prPYK1] | SC - Ura | Kintaka R~Moriya H, 2020
+16682	hap a (post-SGA) | growth (colony size) | expression of NES-tGFP [prPYK1] | SC - Ura | Kintaka R~Moriya H, 2020
+16683	hap a (post-SGA) | expression of GFP | expression of GFP [prTDH3] | SC - Ura | Kintaka R~Moriya H, 2020
+16684	hap a (post-SGA) | expression of GFP | expression of tGFP [prPYK1] | SC - Ura | Kintaka R~Moriya H, 2020
+16685	hap a (post-SGA) | expression of GFP | expression of NES-tGFP [prPYK1] | SC - Ura | Kintaka R~Moriya H, 2020
