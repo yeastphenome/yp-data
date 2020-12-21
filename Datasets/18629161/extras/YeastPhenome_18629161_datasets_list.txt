@@ -1,4 +1,4 @@
-16259	hap alpha | growth (culture turbidity) | hydrogen peroxide [2 mM] | None | Tucker CL~Fields S, 2004
-16285	hap alpha | growth (culture turbidity) | menadione [67 uM] | None | Tucker CL~Fields S, 2004
-16286	hap alpha | growth (culture turbidity) | ibuprofen [50 uM] | None | Tucker CL~Fields S, 2004
-16287	hap alpha | growth (culture turbidity) | mefloquine [235 uM] | None | Tucker CL~Fields S, 2004
+16259	hap alpha | growth (culture turbidity) | hydrogen peroxide [2 mM] | SC | Tucker CL~Fields S, 2004
+16285	hap alpha | growth (culture turbidity) | menadione [67 uM] | SC | Tucker CL~Fields S, 2004
+16286	hap alpha | growth (culture turbidity) | ibuprofen [50 uM] | SC | Tucker CL~Fields S, 2004
+16287	hap alpha | growth (culture turbidity) | mefloquine [235 uM] | SC | Tucker CL~Fields S, 2004
