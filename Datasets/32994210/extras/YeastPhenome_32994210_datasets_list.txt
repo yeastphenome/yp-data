@@ -1,0 +1,3 @@
+16647	hom | growth (pooled culture, barseq) | aflatoxin B1 [50 uM], expression of human CYP1A2 | SC - Ura + DMSO [0.5%] | St John N~Fasullo M, 2020
+16686	hom | growth (pooled culture, barseq) | aflatoxin B1 [50 uM] | SC + DMSO [0.5%] | St John N~Fasullo M, 2020
+16687	hom | growth (pooled culture, barseq) | aflatoxin B1 [50 uM], expression of human CYP1A2, expression of human NAT2 | SC - Ura + DMSO [0.5%] | St John N~Fasullo M, 2020
