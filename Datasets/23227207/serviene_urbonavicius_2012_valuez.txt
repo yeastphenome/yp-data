@@ -1,4 +1,4 @@
-orf	hap a | growth (colony size) | K2 killer toxin [varied] | MBA | Serviene E~Urbonavicius J, 2012
+orf	hap a | growth (undefined) | K2 killer toxin [mixed] | MBA | Serviene E~Urbonavicius J, 2012
 YAL010C	-2.3817986558254023
 YAL019W	3.4284206524304053
 YAL021C	4.396790537139706

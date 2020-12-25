@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[1]:
 
 
 get_ipython().run_line_magic('run', '../yp_utils.py')
@@ -9,20 +9,20 @@ get_ipython().run_line_magic('run', '../yp_utils.py')
 
 # # Initial setup
 
-# In[5]:
+# In[2]:
 
 
 paper_pmid = 23227207
 paper_name = 'serviene_urbonavicius_2012' 
 
 
-# In[6]:
+# In[3]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['dataset_id', 'name'])
 
 
-# In[7]:
+# In[4]:
 
 
 datasets.set_index('dataset_id', inplace=True)
@@ -30,13 +30,13 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[60]:
+# In[5]:
 
 
 files = ['pone.0050779.s004.xls','pone.0050779.s005.xls']
 
 
-# In[61]:
+# In[6]:
 
 
 def get_score(s):
@@ -52,7 +52,7 @@ def get_score(s):
     return score
 
 
-# In[62]:
+# In[7]:
 
 
 original_data_list = []
@@ -78,25 +78,25 @@ for f  in files:
     original_data_list.append(original_data)
 
 
-# In[63]:
+# In[8]:
 
 
 original_data1, original_data2 = original_data_list
 
 
-# In[64]:
+# In[9]:
 
 
 original_data = original_data1.join(original_data2, how='outer', lsuffix='_1', rsuffix='_2')
 
 
-# In[66]:
+# In[10]:
 
 
 original_data['data'] = original_data.sum(axis=1)
 
 
-# In[69]:
+# In[11]:
 
 
 original_data.sort_values(by='data', ascending=False).head()
@@ -104,20 +104,20 @@ original_data.sort_values(by='data', ascending=False).head()
 
 # # Prepare the final dataset
 
-# In[70]:
+# In[12]:
 
 
 data = original_data[['data']].copy()
 
 
-# In[71]:
+# In[13]:
 
 
 dataset_ids = [16525]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[72]:
+# In[14]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -126,7 +126,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[73]:
+# In[15]:
 
 
 data.head()
@@ -134,7 +134,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[74]:
+# In[16]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -144,7 +144,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[75]:
+# In[17]:
 
 
 data['gene_id'] = gene_ids
@@ -153,7 +153,7 @@ data['gene_id'] = data['gene_id'].astype(int)
 data = data.reset_index().set_index(['gene_id','orf'])
 
 
-# In[76]:
+# In[18]:
 
 
 data.head()
@@ -161,13 +161,13 @@ data.head()
 
 # # Normalize
 
-# In[77]:
+# In[19]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=False)
 
 
-# In[78]:
+# In[20]:
 
 
 # Assign proper column names
@@ -177,14 +177,14 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[79]:
+# In[21]:
 
 
 data_norm[data.isnull()] = np.nan
 data_all = data.join(data_norm)
 
 
-# In[80]:
+# In[22]:
 
 
 data_all.head()
@@ -192,7 +192,7 @@ data_all.head()
 
 # # Print out
 
-# In[81]:
+# In[23]:
 
 
 for f in ['value','valuez']:
@@ -204,26 +204,20 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[82]:
+# In[24]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[83]:
+# In[25]:
 
 
 save_data_to_db(data_all, paper_pmid)
 
 
-# In[84]:
+# In[26]:
 
 
 data_all.shape
-
-
-# In[ ]:
-
-
-
 
