@@ -1,0 +1,24 @@
+orf	hom | growth (relative abundance in pooled culture) | vulpinic acid [14-56 uM] | YPD | Kwon Y~Kwak YS, 2016	het | growth (relative abundance in pooled culture) | vulpinic acid [14-56 uM] | YPD | Kwon Y~Kwak YS, 2016
+YBR211C		0.66
+YEL011W		0.78
+YER133W		0.65
+YGL219C	0.76	
+YGL263W		1.01
+YGR006W		0.72
+YHL019C		0.95
+YIL050W		0.69
+YJR067C		0.6
+YJR068W		0.51
+YJR121W		0.84
+YJR127C		0.97
+YKR038C		0.73
+YLR431C	0.73	
+YLR443W	0.71	
+YNL103W		0.59
+YNL294C	0.6	
+YNL322C		0.88
+YOR272W		0.86
+YOR290C		0.81
+YPR023C	0.47	
+YPR184W		0.84
+YPR187W		0.78
