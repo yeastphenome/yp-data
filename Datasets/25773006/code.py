@@ -4,40 +4,25 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
-
-
-# In[2]:
-
-
-get_ipython().system('pwd')
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
 
-# In[3]:
+# In[2]:
 
 
 paper_pmid = 25773006
 paper_name = 'du_jiang_2015' 
 
 
-# In[4]:
+# In[3]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[5]:
+# In[4]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -45,162 +30,226 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[26]:
+# In[34]:
 
 
 original_data = pd.read_csv('raw_data/hits.txt', header=None, names=['genes'])
 
 
-# In[27]:
+# In[35]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[28]:
+# In[36]:
 
 
 original_data['genes'] = original_data['genes'].astype(str)
 
 
-# In[29]:
+# In[37]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['genes'] = clean_genename(original_data['genes'])
 
 
-# In[30]:
+# In[38]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['genes'], to='orf')
 
 
-# In[31]:
+# In[39]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data['orfs'])
 
 
-# In[32]:
+# In[40]:
 
 
 print(original_data.loc[~t,])
 
 
-# In[33]:
+# In[41]:
 
 
 original_data['data'] = -1
 
 
-# In[34]:
+# In[42]:
 
 
 original_data.set_index('orfs', inplace=True)
+original_data.index.name = 'orf'
 
 
-# In[35]:
+# In[43]:
+
+
+original_data = original_data[['data']].copy()
+
+
+# In[44]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
+
+
+# In[45]:
+
+
+original_data.shape
+
+
+# # Load & process tested strains
+
+# In[46]:
+
+
+tested = pd.read_excel('raw_data/DELETION LIBRARY.xlsx', sheet_name='DELETION LIBRARY', skiprows=1)
+tested['orf'] = tested['ORF name'].astype(str)
+tested['orf'] = clean_orf(tested['orf'])
+tested.loc[tested['orf'] == 'YELOO1C','orf'] = 'YEL001C'
+tested['orf'] = translate_sc(tested['orf'], to='orf')
+# Make sure everything translated ok
+t = looks_like_orf(tested['orf'])
+print(tested.loc[~t])
+
+
+# In[47]:
+
+
+tested = tested.loc[t,:]
+
+
+# In[48]:
+
+
+tested_orfs = np.unique(tested['orf'].values)
+
+
+# In[49]:
+
+
+missing = [orf for orf in original_data.index.values if orf not in tested_orfs]
+missing
+
+
+# In[50]:
+
+
+original_data = original_data.reindex(index=tested_orfs, fill_value=0)
+
+
+# # Prepare the final dataset
+
+# In[51]:
+
+
+data = original_data.copy()
+
+
+# In[52]:
 
 
 dataset_ids = [16461]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[36]:
+# In[53]:
 
 
-original_data = original_data['data'].to_frame()
-original_data.columns = dataset_ids
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
-# # Load & process tested strains
-
-# In[15]:
+# In[54]:
 
 
-tested = pd.read_excel('raw_data/DELETION LIBRARY.xlsx', sheet_name='DELETION LIBRARY', skiprows=1)
-tested = np.array(tested['ORF name'].unique())
-tested = clean_orf(tested)
-tested = translate_sc(tested, to='orf')
-tested[tested == 'YELOO1C'] = 'YEL001C'
-# Make sure everything translated ok
-t = looks_like_orf(tested)
-print(tested[~np.array(t)])
-tested = np.setdiff1d(tested, np.array(['YMR41W']))
+data.head()
 
 
-# In[16]:
+# ## Subset to the genes currently in SGD
+
+# In[55]:
 
 
-tested = pd.DataFrame(index=tested)
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
-# # Prepare the final dataset
-
-# In[38]:
+# In[56]:
 
 
-data = tested.join(original_data, how='outer')
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
 
 
-# In[39]:
+# # Normalize
+
+# In[57]:
 
 
-data.columns = datasets.loc[data.columns,'name']
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[19]:
+# In[58]:
 
 
-data = data.groupby(data.index).mean()
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
 
 
-# In[20]:
+# In[59]:
 
 
-# Create row index
-data.index.name='orf'
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
 
-
-# In[21]:
-
-
-print('Final data dimensions: %d x %d' % (data.shape))
+data_all.head()
 
 
 # # Print out
 
-# In[22]:
+# In[60]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[23]:
+# In[61]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[24]:
+# In[62]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[25]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
