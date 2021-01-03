@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -51,33 +42,33 @@ original_data = pd.read_excel('raw_data/Final results 1 fileLahiruscreening.xls'
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[9]:
+# In[7]:
 
 
 original_data.columns
 
 
-# In[10]:
+# In[8]:
 
 
 original_data['orfs'] = original_data['Mutant '].astype(str)
 
 
-# In[11]:
+# In[9]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orfs'] = clean_orf(original_data['orfs'])
 
 
-# In[12]:
+# In[10]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['orfs'], to='orf')
 
 
-# In[13]:
+# In[11]:
 
 
 # Make sure everything translated ok
@@ -85,67 +76,120 @@ t = looks_like_orf(original_data['orfs'])
 print(original_data.loc[~t,])
 
 
-# In[14]:
+# In[12]:
 
 
 original_data['data'] = original_data['SI AVG']
 
 
-# In[15]:
+# In[13]:
 
 
 original_data.set_index('orfs', inplace=True)
 
 
-# In[26]:
+# In[14]:
+
+
+original_data.index.name='orf'
+
+
+# In[15]:
 
 
 original_data['data'] = pd.to_numeric(original_data['data'], errors='coerce', downcast='float')
 
 
+# In[23]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
+
+
+# In[24]:
+
+
+original_data.shape
+
+
 # # Prepare the final dataset
 
-# In[28]:
-
-
-dataset_ids = [16610]
-
-
-# In[29]:
-
-
-datasets = datasets.reindex(index=dataset_ids)
-
-
-# In[30]:
+# In[25]:
 
 
 data = original_data[['data']].copy()
 
 
-# In[31]:
+# In[26]:
 
 
-data.columns = datasets['name'].values
+dataset_ids = [16610]
+datasets = datasets.reindex(index=dataset_ids)
 
+
+# In[27]:
+
+
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
+
+
+# In[28]:
+
+
+data.head()
+
+
+# ## Subset to the genes currently in SGD
+
+# In[29]:
+
+
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
+
+
+# In[30]:
+
+
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
+
+
+# # Normalize
 
 # In[32]:
 
 
-data = data.groupby(data.index).mean()
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
 # In[33]:
 
 
-# Create row index
-data.index.name='orf'
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
 
 
 # In[34]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
 
 
 # # Print out
@@ -153,7 +197,11 @@ print('Final data dimensions: %d x %d' % (data.shape))
 # In[35]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
@@ -161,23 +209,13 @@ data.to_csv(paper_name + '.txt', sep='\t')
 # In[36]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
 # In[37]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[40]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
