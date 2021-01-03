@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -56,161 +47,210 @@ print('Original data dimensions: %d x %d' % (original_data2.shape))
 # In[7]:
 
 
-original_data1['ORF name'] = original_data1['ORF name'].astype(str)
-original_data2['ORF name'] = original_data2['ORF name'].astype(str)
+original_data1['orf'] = original_data1['ORF name'].astype(str)
+original_data2['orf'] = original_data2['ORF name'].astype(str)
 
 
 # In[8]:
 
 
 # Eliminate all white spaces & capitalize
-original_data1['ORF name'] = clean_orf(original_data1['ORF name'])
-original_data2['ORF name'] = clean_orf(original_data2['ORF name'])
+original_data1['orf'] = clean_orf(original_data1['orf'])
+original_data2['orf'] = clean_orf(original_data2['orf'])
 
 
 # In[9]:
 
 
 # Translate to ORFs 
-original_data1['ORF name'] = translate_sc(original_data1['ORF name'], to='orf')
-original_data2['ORF name'] = translate_sc(original_data2['ORF name'], to='orf')
+original_data1['orf'] = translate_sc(original_data1['orf'], to='orf')
+original_data2['orf'] = translate_sc(original_data2['orf'], to='orf')
 
 
 # In[10]:
 
 
 # Make sure everything translated ok
-t = looks_like_orf(original_data1['ORF name'])
+t = looks_like_orf(original_data1['orf'])
 print(original_data1.loc[~t,])
 
 
-# In[12]:
+# In[11]:
 
 
 original_data1.drop(index=original_data1.loc[~t].index, inplace=True)
 
 
-# In[13]:
+# In[12]:
 
 
 # Make sure everything translated ok
-t = looks_like_orf(original_data2['ORF name'])
+t = looks_like_orf(original_data2['orf'])
 print(original_data2.loc[~t,])
 
 
-# In[14]:
+# In[13]:
 
 
 original_data2.drop(index=original_data2.loc[~t].index, inplace=True)
 
 
-# In[15]:
+# In[14]:
 
 
 original_data1['data'] = -1
 original_data2['data'] = 1
 
 
+# In[15]:
+
+
+original_data1.set_index('orf', inplace=True)
+original_data2.set_index('orf', inplace=True)
+
+
 # In[16]:
 
 
-original_data1.set_index('ORF name', inplace=True)
-original_data2.set_index('ORF name', inplace=True)
+original_data1 = original_data1[['data']].copy()
+original_data2 = original_data2[['data']].copy()
+
+
+# In[17]:
+
+
+original_data1 = original_data1.groupby(original_data1.index).mean()
+original_data2 = original_data2.groupby(original_data2.index).mean()
+
+
+# In[20]:
+
+
+original_data = original_data1.join(original_data2, how='outer', lsuffix='_1', rsuffix='_2')
 
 
 # In[21]:
 
 
-data = original_data1['data'].to_frame().join(original_data2['data'].to_frame(), how='outer', lsuffix='_reduced', rsuffix='_enhanced')
+original_data.head()
+
+
+# In[22]:
+
+
+original_data['data'] = original_data.mean(axis=1)
 
 
 # In[23]:
 
 
-data.shape
-
-
-# In[24]:
-
-
-data['data'] = data[['data_reduced','data_enhanced']].mean(axis=1)
-
-
-# In[31]:
-
-
-data.drop(columns=['data_enhanced','data_reduced'], inplace=True)
+original_data.drop(columns=['data_1','data_2'], inplace=True)
 
 
 # # Prepare the final dataset
 
-# In[28]:
+# In[24]:
+
+
+data = original_data.copy()
+
+
+# In[25]:
 
 
 dataset_ids = [16510]
+datasets = datasets.reindex(index=dataset_ids)
+
+
+# In[26]:
+
+
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
+
+
+# In[27]:
+
+
+data.head()
+
+
+# ## Subset to the genes currently in SGD
+
+# In[28]:
+
+
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
 # In[29]:
 
 
-datasets = datasets.reindex(index=dataset_ids)
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
+
+
+# # Normalize
+
+# In[30]:
+
+
+data_norm = normalize_phenotypic_scores(data, has_tested=False)
+
+
+# In[31]:
+
+
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
 
 
 # In[32]:
 
 
-data.columns = datasets['name'].values
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
 
-
-# In[33]:
-
-
-data = data.groupby(data.index).mean()
-
-
-# In[34]:
-
-
-# Create row index
-data.index.name='orf'
-
-
-# In[35]:
-
-
-print('Final data dimensions: %d x %d' % (data.shape))
+data_all.head()
 
 
 # # Print out
 
-# In[36]:
+# In[34]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[37]:
+# In[35]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[38]:
+# In[36]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[39]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
