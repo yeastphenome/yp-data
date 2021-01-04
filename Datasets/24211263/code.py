@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -39,45 +30,45 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[19]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/mmc5.xlsx', sheet_name='749 YKOs with low aa overgrowth')
 
 
-# In[20]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[21]:
+# In[7]:
 
 
 original_data = original_data.rename(columns={'ORF name of YKOs with overgrowth phenotype':'orfs'})
 
 
-# In[22]:
+# In[8]:
 
 
 original_data['orfs'] = original_data['orfs'].astype(str)
 
 
-# In[23]:
+# In[9]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orfs'] = clean_orf(original_data['orfs'])
 
 
-# In[24]:
+# In[10]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['orfs'], to='orf')
 
 
-# In[25]:
+# In[11]:
 
 
 # Make sure everything translated ok
@@ -85,99 +76,135 @@ t = looks_like_orf(original_data['orfs'])
 print(original_data.loc[~t,])
 
 
-# In[26]:
+# In[12]:
 
 
 original_data = original_data.loc[t,:]
 
 
-# In[27]:
+# In[13]:
 
 
 original_data['data'] = 1
 
 
-# In[28]:
+# In[14]:
 
 
 original_data.set_index('orfs', inplace=True)
+original_data.index.name='orf'
+
+
+# In[23]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
 
 
 # # Prepare the final dataset
 
-# In[39]:
+# In[24]:
+
+
+data = original_data[['data']].copy()
+
+
+# In[25]:
 
 
 dataset_ids = [16393]
-
-
-# In[40]:
-
-
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[51]:
+# In[26]:
 
 
-data = original_data['data'].to_frame()
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
-# In[52]:
+# In[27]:
 
 
-data.columns = datasets['name'].values
+data.head()
 
 
-# In[53]:
+# ## Subset to the genes currently in SGD
+
+# In[28]:
 
 
-data = data.groupby(data.index).mean()
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[54]:
+# In[29]:
 
 
-# Create row index
-data.index.name='orf'
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
 
 
-# In[55]:
+# # Normalize
+
+# In[30]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data_norm = normalize_phenotypic_scores(data, has_tested=False)
+
+
+# In[31]:
+
+
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
+
+
+# In[32]:
+
+
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
 
 
 # # Print out
 
-# In[56]:
+# In[33]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[57]:
+# In[34]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[58]:
+# In[35]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[59]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
