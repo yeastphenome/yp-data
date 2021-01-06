@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -39,39 +30,39 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[44]:
+# In[19]:
 
 
 original_data = pd.read_excel('raw_data/Table1.xlsx', sheet_name='Sheet1')
 
 
-# In[45]:
+# In[20]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[46]:
+# In[21]:
 
 
 original_data['orfs'] = original_data['ORF'].astype(str)
 
 
-# In[47]:
+# In[22]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orfs'] = clean_orf(original_data['orfs'])
 
 
-# In[48]:
+# In[23]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['orfs'], to='orf')
 
 
-# In[49]:
+# In[24]:
 
 
 # Make sure everything translated ok
@@ -79,101 +70,154 @@ t = looks_like_orf(original_data['orfs'])
 print(original_data.loc[~t,])
 
 
-# In[50]:
+# In[25]:
 
 
 original_data = original_data.loc[t,:]
 
 
-# In[51]:
+# In[26]:
 
 
 original_data.set_index('orfs', inplace=True)
+original_data.index.name = 'orf'
+
+
+# In[27]:
+
+
+original_data = original_data[['Colistin','Aminocandin','Combined']].copy()
+
+
+# In[28]:
+
+
+original_data['Colistin'] = pd.to_numeric(original_data['Colistin'], errors='coerce')
+original_data['Aminocandin'] = pd.to_numeric(original_data['Aminocandin'], errors='coerce')
+original_data['Combined'] = pd.to_numeric(original_data['Combined'], errors='coerce')
+
+
+# In[29]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
+
+
+# In[30]:
+
+
+original_data.shape
 
 
 # # Prepare the final dataset
 
-# In[52]:
+# In[31]:
+
+
+data = original_data.copy()
+
+
+# In[32]:
 
 
 dataset_ids = [16521,16519,16522]
 
 
-# In[53]:
+# In[33]:
 
 
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[54]:
+# In[34]:
 
 
-data = original_data[['Colistin','Aminocandin','Combined']].copy()
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
-# In[56]:
+# In[35]:
 
 
-data['Colistin'] = pd.to_numeric(data['Colistin'], errors='coerce')
-data['Aminocandin'] = pd.to_numeric(data['Aminocandin'], errors='coerce')
-data['Combined'] = pd.to_numeric(data['Combined'], errors='coerce')
+data.head()
 
 
-# In[57]:
+# ## Subset to the genes currently in SGD
+
+# In[36]:
 
 
-data.columns = datasets['name'].values
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[58]:
+# In[37]:
 
 
-data = data.groupby(data.index).mean()
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
 
 
-# In[59]:
+# # Normalize
+
+# In[38]:
 
 
-# Create row index
-data.index.name='orf'
+data_norm = normalize_phenotypic_scores(data, has_tested=False)
 
 
-# In[60]:
+# In[39]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
+
+
+# In[40]:
+
+
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
 
 
 # # Print out
 
-# In[61]:
+# In[41]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[62]:
+# In[42]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[63]:
+# In[43]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[64]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
