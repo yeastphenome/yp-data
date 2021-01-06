@@ -1,0 +1,12 @@
+orf	hap a | transport to/from protein storage granules (PSGs) (Rpn5-GFP) | standard | None | Peters LZ~Ben-Aroya S, 2013
+YBR058C-A	-1
+YBR127C	-1
+YCL007C	-1
+YDL185W	-1
+YER143W	-1
+YHR060W	-1
+YJR053W	-1
+YKL080W	-1
+YLR447C	-1
+YOR331C	-1
+YPL234C	-1
