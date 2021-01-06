@@ -1,0 +1,3 @@
+16631	hap a | growth (colony size) | BiQ3 [7 uM] | None | Emadi A~Vuica-Ross M, 2010
+16632	hap a | growth (colony size) | BiQ7 [3 uM] | None | Emadi A~Vuica-Ross M, 2010
+16633	hap a | growth (colony size) | BiQ11 [7 uM] | None | Emadi A~Vuica-Ross M, 2010
