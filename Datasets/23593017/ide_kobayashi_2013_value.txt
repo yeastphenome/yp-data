@@ -1,0 +1,9 @@
+orf	hap a | rDNA copy number | standard | YPD | Ide S~Kobayashi T, 2013
+YAL021C	1
+YBL025W	1
+YDL160C	1
+YGL192W	1
+YLL002W	1
+YLR320W	1
+YNR052C	1
+YPR135W	1
