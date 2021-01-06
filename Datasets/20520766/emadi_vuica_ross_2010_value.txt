@@ -1,0 +1,8 @@
+orf	hap a | growth (colony size) | BiQ7 [3 uM] | None | Emadi A~Vuica-Ross M, 2010	hap a | growth (colony size) | BiQ11 [7 uM] | None | Emadi A~Vuica-Ross M, 2010	hap a | growth (colony size) | BiQ3 [7 uM] | None | Emadi A~Vuica-Ross M, 2010
+YIL160C	2.0	0.0	0.0
+YMR073C	1.0	0.0	0.0
+YMR145C	3.0	3.0	3.0
+YMR302C	1.0	0.0	0.0
+YFR036W	0.0	1.0	0.0
+YDL085W	0.0	0.0	1.0
+YKR090W	0.0	0.0	1.0
