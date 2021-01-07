@@ -4,34 +4,25 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
 
-# In[3]:
+# In[2]:
 
 
 paper_pmid = 23071506
 paper_name = 'lockshon_kennedy_2012' 
 
 
-# In[4]:
+# In[3]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[5]:
+# In[4]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -39,39 +30,39 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[6]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/journal.pone.0045049.s009.XLS', sheet_name='PO inhib order', skiprows=1)
 
 
-# In[7]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[8]:
+# In[7]:
 
 
 original_data['orf'] = original_data['orf'].astype(str)
 
 
-# In[9]:
+# In[8]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[10]:
+# In[9]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[11]:
+# In[10]:
 
 
 # Make sure everything translated ok
@@ -79,37 +70,55 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[13]:
+# In[11]:
 
 
 original_data['PO inh'] = -original_data['PO inh']
 
 
-# In[16]:
+# In[12]:
 
 
 ((original_data['PO inh'] < 0) & (original_data['POstim'] > 0)).sum()
 
 
-# In[14]:
+# In[13]:
 
 
 original_data['data'] = original_data[['PO inh','POstim']].sum(axis=1)
 
 
-# In[17]:
+# In[14]:
 
 
 original_data.head()
 
 
-# In[18]:
+# In[15]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
+# In[16]:
+
+
+original_data = original_data[['data']].copy()
+
+
+# In[17]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
+
+
 # # Prepare the final dataset
+
+# In[18]:
+
+
+data = original_data.copy()
+
 
 # In[19]:
 
@@ -126,64 +135,98 @@ datasets = datasets.reindex(index=dataset_ids)
 # In[21]:
 
 
-data = original_data['data'].to_frame()
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
 # In[22]:
 
 
-data.columns = datasets['name'].values
+data.head()
 
+
+# ## Subset to the genes currently in SGD
 
 # In[23]:
 
 
-data = data.groupby(data.index).mean()
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
 # In[24]:
 
 
-# Create row index
-data.index.name='orf'
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
 
+data.head()
+
+
+# # Normalize
 
 # In[25]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data.shape
 
-
-# # Print out
 
 # In[26]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+data_norm = normalize_phenotypic_scores(data, has_tested=False)
 
-
-# # Save to DB
 
 # In[27]:
 
 
-from IO.save_data_to_db2 import *
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
 
 
 # In[28]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
 
+data_all.head()
+
+
+# # Print out
 
 # In[29]:
 
 
-save_data_to_db(data, paper_pmid)
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
+
+
+# # Save to DB
+
+# In[30]:
+
+
+from IO.save_data_to_db3 import *
+
+
+# In[31]:
+
+
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
