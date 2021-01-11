@@ -1,0 +1,3 @@
+16696	hom | growth (pooled culture, microarray) | dichlorovinyl cysteine [4.5 uM] | YPD | De La Rosa VY~Vulpe CD, 2017
+16697	hom | growth (pooled culture, microarray) | dichlorovinyl cysteine [9 uM] | YPD | De La Rosa VY~Vulpe CD, 2017
+16698	hom | growth (pooled culture, microarray) | dichlorovinyl cysteine [18 uM] | YPD | De La Rosa VY~Vulpe CD, 2017
