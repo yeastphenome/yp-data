@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -39,25 +30,25 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[5]:
+# In[27]:
 
 
 original_data = pd.read_csv('raw_data/het_damp.rawsummary', sep='\t')
 
 
-# In[6]:
+# In[28]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[7]:
+# In[29]:
 
 
 original_data.head()
 
 
-# In[8]:
+# In[30]:
 
 
 # First, eliminate the data for the DAMP strains
@@ -65,34 +56,34 @@ original_data = original_data.loc[~original_data['Hybridization REF'].str.contai
 original_data.shape
 
 
-# In[9]:
+# In[31]:
 
 
 # Now, extract the ORF
 original_data['orf'] = original_data['Hybridization REF'].apply(lambda x: x[0:x.find(':')])
 
 
-# In[10]:
+# In[32]:
 
 
 original_data['orf'] = original_data['orf'].astype(str)
 
 
-# In[11]:
+# In[33]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[12]:
+# In[34]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[13]:
+# In[35]:
 
 
 # Make sure everything translated ok
@@ -100,33 +91,33 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[14]:
+# In[36]:
 
 
 original_data = original_data.loc[t,]
 
 
-# In[15]:
+# In[37]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[16]:
+# In[38]:
 
 
 for c in original_data.columns.values[1:]:
     original_data[c] = pd.to_numeric(original_data[c])
 
 
-# In[17]:
+# In[39]:
 
 
 # Take the average of the 2 YPGE_DMSO controls
 original_data['YPGE_DMSO_avg'] = original_data[['10_11_24_YPGE_DMSO','10_11_24_YPGE_DMSO_2']].mean(axis=1)
 
 
-# In[18]:
+# In[40]:
 
 
 # Divide each treatment by its control
@@ -140,21 +131,7 @@ original_data['10_12_10_tigecyc64.4uM_norm'] = original_data['10_12_10_tigecyc64
 original_data['10_12_10_tigecyc80.5uM_norm'] = original_data['10_12_10_tigecyc80.5uM'] / original_data['10_12_10_tigecycDMSOctrl']
 
 
-# # Prepare the final dataset
-
-# In[19]:
-
-
-dataset_ids = [16572,16591,16570,16573,16571,16592,16593]
-
-
-# In[20]:
-
-
-datasets = datasets.reindex(index=dataset_ids)
-
-
-# In[21]:
+# In[41]:
 
 
 cols_to_keep = ['10_11_24_YPGE_chloramph_0.79_norm','10_11_24_YPGE_chloramph_0.99_norm',
@@ -163,73 +140,134 @@ cols_to_keep = ['10_11_24_YPGE_chloramph_0.79_norm','10_11_24_YPGE_chloramph_0.9
                 '10_12_10_tigecyc51.5uM_norm','10_12_10_tigecyc64.4uM_norm','10_12_10_tigecyc80.5uM_norm']
 
 
-# In[22]:
+# In[42]:
 
 
-data = original_data.loc[:,cols_to_keep]
+original_data = original_data[cols_to_keep]
 
 
-# In[24]:
+# In[43]:
 
 
-data.columns = datasets['name'].values
+original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[25]:
+# In[44]:
 
 
-data = data.groupby(data.index).mean()
+original_data.shape
 
 
-# In[26]:
+# In[45]:
 
 
-# Create row index
-data.index.name='orf'
+original_data.head()
 
 
-# In[27]:
+# # Prepare the final dataset
+
+# In[46]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data = original_data.copy()
 
 
-# In[28]:
+# In[47]:
+
+
+dataset_ids = [16572,16591,16570,16573,16571,16592,16593]
+datasets = datasets.reindex(index=dataset_ids)
+
+
+# In[48]:
+
+
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
+
+
+# In[49]:
 
 
 data.head()
 
 
+# ## Subset to the genes currently in SGD
+
+# In[50]:
+
+
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
+
+
+# In[51]:
+
+
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
+
+
+# # Normalize
+
+# In[52]:
+
+
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
+
+
+# In[53]:
+
+
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
+
+
+# In[54]:
+
+
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
+
+
 # # Print out
 
-# In[39]:
+# In[55]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[40]:
+# In[56]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[41]:
+# In[57]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[42]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
