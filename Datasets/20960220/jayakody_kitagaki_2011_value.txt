@@ -1,5 +1,4 @@
 orf	hom | growth (culture turbidity) | glycolaldehyde [0.01 mM] | CSM | Jayakody LN~Kitagaki H, 2011
-YAR037W	-0.134
 YBL031W	-0.129
 YBR059C	-0.18700000000000006
 YBR092C	-0.16800000000000004
