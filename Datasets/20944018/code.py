@@ -37,7 +37,7 @@ files = ['TABLES4.xlsx','TABLES5.xlsx']
 sheets = ['phoAbs.txt','leuAbs.txt']
 
 
-# In[10]:
+# In[6]:
 
 
 original_data_list = []
@@ -52,7 +52,7 @@ for ixf, f in enumerate(files):
     t = looks_like_orf(original_data['orf'])
     print(original_data.loc[~t,])
     original_data = original_data.loc[t,:]
-    original_data['data'] = original_data['deathrate'].astype(float)
+    original_data['data'] = original_data['halflife'].astype(float)
     original_data.set_index('orf', inplace=True)
     
     original_data = original_data[['data']].copy()
@@ -62,25 +62,25 @@ for ixf, f in enumerate(files):
     original_data_list.append(original_data)
 
 
-# In[11]:
+# In[7]:
 
 
 original_data = pd.concat(original_data_list, axis=1)
 
 
-# In[18]:
+# In[8]:
 
 
 original_data.index.name='orf'
 
 
-# In[19]:
+# In[9]:
 
 
 original_data.shape
 
 
-# In[20]:
+# In[10]:
 
 
 original_data.head()
@@ -88,20 +88,20 @@ original_data.head()
 
 # # Prepare the final dataset
 
-# In[21]:
+# In[11]:
 
 
 data = original_data.copy()
 
 
-# In[22]:
+# In[12]:
 
 
 dataset_ids = [93,451]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[23]:
+# In[13]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -110,7 +110,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[24]:
+# In[14]:
 
 
 data.head()
@@ -118,7 +118,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[25]:
+# In[15]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -128,7 +128,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[26]:
+# In[16]:
 
 
 data['gene_id'] = gene_ids
@@ -141,13 +141,21 @@ data.head()
 
 # # Normalize
 
-# In[27]:
+# In[38]:
+
+
+# Cap the maximum value at 1e10 (due to the database field limitations)
+data[data > 1e9] = 1e9
+data[data < -1e9] = -1e9
+
+
+# In[39]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[28]:
+# In[40]:
 
 
 # Assign proper column names
@@ -157,7 +165,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[29]:
+# In[41]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -168,7 +176,7 @@ data_all.head()
 
 # # Print out
 
-# In[30]:
+# In[42]:
 
 
 for f in ['value','valuez']:
@@ -180,13 +188,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[31]:
+# In[43]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[32]:
+# In[44]:
 
 
 save_data_to_db(data_all, paper_pmid)
