@@ -1,0 +1,22 @@
+VMA6
+VMA9
+VMA1
+VMA5
+VMA8
+VMA10
+VMA13
+VPH2
+VMA21
+VMA22
+VPS16
+CHC1*
+VPS52*
+VPS53*
+VPS54*
+AFT1
+ZAP1*
+OCH1
+FUN32
+RNR4*
+
+*corresponding mutant was only sensitive to 1 g liter−1 hop iso-α-acids. All other mutants were sensitive to 0.2 g liter−1 hop iso-α-acids.
