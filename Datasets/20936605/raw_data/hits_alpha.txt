@@ -1,0 +1,11 @@
+hom3	1
+hom6	1
+met6	1
+met17	1
+mup1	1
+nuc1	1
+skp2	1
+sgf73	1
+ubi4	1
+ycl091c	1
+zsp1	1
