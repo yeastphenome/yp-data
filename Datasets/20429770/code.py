@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -25,13 +16,13 @@ paper_pmid = 20429770
 paper_name = 'mir_rashed_smith_2010' 
 
 
-# In[3]:
+# In[49]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[4]:
+# In[50]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -39,129 +30,89 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[5]:
+# In[24]:
 
 
-original_data = pd.read_excel('raw_data/Ech sup Table work 5.xls', sheet_name='Sheet1', skiprows=4)
+original_data = pd.read_excel('raw_data/Ech sup Table work 5.xls', sheet_name='Sheet1', skiprows=5)
 
 
-# In[6]:
+# In[25]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[10]:
+# In[26]:
 
 
-original_data.drop(columns=original_data.columns[2::3], inplace=True)
+original_data.head()
 
 
-# In[17]:
+# In[27]:
 
 
-cols_orfs = np.arange(32)[0::2]
+original_data.columns.values
 
 
-# In[22]:
+# In[29]:
 
 
-all_orfs = []
-all_datasets = []
-for ix_dataset in np.arange(16):
-    col_orf = cols_orfs[ix_dataset]
-    all_orfs = all_orfs + original_data.iloc[:,col_orf].to_list()
-    all_datasets = all_datasets + [original_data.columns.values[col_orf]]
+cols_orfs = [ic for ic, c in enumerate(original_data.columns.values) if 'Gene ID' in c]
+cols_orfs
 
 
-# In[23]:
+# In[30]:
 
 
-all_orfs = np.unique(np.array(all_orfs))
-
-
-# In[35]:
-
-
-data = pd.DataFrame(index=all_orfs, columns=all_datasets)
-
-
-# In[36]:
-
-
-for ix_dataset in np.arange(16):
-    col_orf = cols_orfs[ix_dataset]
-    col_data = col_orf+1
+original_data_list = []
+for c in cols_orfs:
+    t = original_data.iloc[:,[c,c+1]].copy()
+    t.columns = [0,1]
+    t['orf'] = t[0].astype(str)
+    t['orf'] = clean_orf(t['orf'])
+    t['orf'] = translate_sc(t['orf'], to='orf')
+    tx = looks_like_orf(t['orf'])
+    print(t.loc[~tx,])
+    t = t.loc[tx,:]
+    t['data'] = -t[1].astype(float)
+    t.set_index('orf', inplace=True)
+    t = t[['data']].copy()
+    t = t.groupby(t.index).mean()
     
-    this_dataset_name = original_data.columns.values[col_orf]
-    this_orfs = original_data.iloc[:, col_orf].astype(str).values[1:]
-    this_data = original_data.iloc[:, col_data].values[1:]
-    
-    ix = (this_orfs != 'nan')
-    this_data = this_data[ix]
-    this_orfs = this_orfs[ix]
-    
-    data.loc[this_orfs, this_dataset_name] = this_data
+    original_data_list.append(t)
 
 
-# In[38]:
+# In[31]:
 
 
-orfs = data.index.values
+original_data = pd.concat(original_data_list, axis=1)
 
 
-# In[39]:
+# In[32]:
 
 
-# Eliminate all white spaces & capitalize
-orfs = clean_orf(orfs)
+original_data.index.name='orf'
+original_data[original_data.isnull()] = 0
 
 
-# In[40]:
+# In[45]:
 
 
-# Translate to ORFs 
-orfs = translate_sc(orfs, to='orf')
-
-
-# In[42]:
-
-
-# Make sure everything translated ok
-t = looks_like_orf(orfs)
-print(orfs[~np.array(t),])
-
-
-# In[43]:
-
-
-orfs = orfs[np.array(t)]
-
-
-# In[44]:
-
-
-data = data.reindex(index=orfs)
+col_names = ['SGEPH.Dark','SGEPH.UV','SGEPR.Dark','SGEPR.UV','SG1.Dark','SG1.UV',
+             'SG7a.Dark','SG7a.UV','SGEPF.Dark','SGEPF.UV','SGEPLS.Dark',
+             'SGEPLS.UV','SGEARa.Dark','SGEARa.UV','SGEARb.Dark','SGEARb.UV']
 
 
 # In[47]:
 
 
-# Transform data to follow convention (0 = WT, negative values = less growth than WT)
-data = -data
-data[data.isnull()] = 0
-
-
-# In[60]:
-
-
-data = data.astype(float)
+original_data.columns = col_names
 
 
 # In[48]:
 
 
-data.head()
+original_data.head()
 
 
 # # Prepare the final dataset
@@ -169,12 +120,13 @@ data.head()
 # In[51]:
 
 
-dataset_names = dict.fromkeys(data.columns.values)
+data = original_data.copy()
 
 
 # In[53]:
 
 
+dataset_names = dict()
 dataset_names['SG1.Dark'] = 16457
 dataset_names['SG1.UV'] = 16575
 dataset_names['SGEPR.Dark'] = 16576
@@ -193,73 +145,102 @@ dataset_names['SGEARb.Dark'] = 16588
 dataset_names['SGEARb.UV'] = 16589
 
 
+# In[54]:
+
+
+dataset_ids = [dataset_names[c] for c in data.columns.values]
+datasets = datasets.reindex(index=dataset_ids)
+
+
 # In[55]:
 
 
-dataset_ids = [dataset_names[d] for d in data.columns.values]
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
+
+# In[56]:
+
+
+data.head()
+
+
+# ## Subset to the genes currently in SGD
 
 # In[57]:
 
 
-datasets = datasets.reindex(index=dataset_ids)
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
 # In[58]:
 
 
-data.columns = datasets['name'].values
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
+
+
+# # Normalize
+
+# In[59]:
+
+
+data_norm = normalize_phenotypic_scores(data, has_tested=False)
+
+
+# In[60]:
+
+
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
 
 
 # In[61]:
 
 
-data = data.groupby(data.index).mean()
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
 
-
-# In[62]:
-
-
-# Create row index
-data.index.name='orf'
-
-
-# In[63]:
-
-
-print('Final data dimensions: %d x %d' % (data.shape))
+data_all.head()
 
 
 # # Print out
 
-# In[65]:
+# In[62]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[66]:
+# In[63]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[67]:
+# In[64]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[68]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
