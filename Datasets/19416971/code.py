@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -100,7 +91,7 @@ print(original_data.loc[~t,])
 # In[14]:
 
 
-original_data.drop(index=original_data.loc[~t,:].index, inplace=True)
+original_data = original_data.loc[t,:]
 
 
 # In[15]:
@@ -122,14 +113,20 @@ original_data.drop(index=to_drop.index, inplace=True)
 original_data.shape
 
 
-# In[25]:
+# In[18]:
+
+
+original_data['Growth Ratio (GR)'] = pd.to_numeric(original_data['Growth Ratio (GR)'], errors='coerce')
+
+
+# In[19]:
 
 
 # Reverse the growth ratio so that lower values correspond to decreased growth and viceversa (originally, GR is reported as untreated vs treated)
 original_data['GR2'] = 1 / original_data['Growth Ratio (GR)']
 
 
-# In[26]:
+# In[20]:
 
 
 # Normalize by plate median (as done oridinally)
@@ -139,105 +136,159 @@ def normalize_by_plate_median(plate_data):
     return plate_data
 
 
-# In[27]:
+# In[21]:
 
 
 original_data2 = original_data.groupby('Plate').apply(normalize_by_plate_median)
 
 
-# In[28]:
+# In[22]:
 
 
 original_data2.head()
 
 
-# In[40]:
+# In[23]:
 
 
-data = original_data2[['ORF','GR2_adjusted']].copy()
+original_data2.set_index('ORF', inplace=True)
+original_data2.index.name='orf'
 
 
-# In[41]:
+# In[24]:
 
 
-data['GR2_adjusted'] = data['GR2_adjusted'].astype(float)
+original_data2['data'] = original_data2['GR2_adjusted']
 
 
-# In[42]:
+# In[25]:
 
 
-data.set_index('ORF', inplace=True)
+original_data2 = original_data2[['data']].copy()
+
+
+# In[26]:
+
+
+original_data2 = original_data2.groupby(original_data2.index).mean()
+
+
+# In[27]:
+
+
+original_data2.head()
+
+
+# In[28]:
+
+
+original_data2.shape
 
 
 # # Prepare the final dataset
 
-# In[43]:
+# In[29]:
+
+
+data = original_data2.copy()
+
+
+# In[30]:
 
 
 dataset_ids = [16533]
-
-
-# In[44]:
-
-
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[45]:
+# In[31]:
 
 
-data.columns = datasets['name'].values
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
-# In[47]:
+# In[32]:
 
 
-data = data.groupby(data.index).mean()
+data.head()
 
 
-# In[48]:
+# ## Subset to the genes currently in SGD
+
+# In[33]:
 
 
-# Create row index
-data.index.name='orf'
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[49]:
+# In[34]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
+
+
+# # Normalize
+
+# In[35]:
+
+
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
+
+
+# In[36]:
+
+
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
+
+
+# In[37]:
+
+
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
 
 
 # # Print out
 
-# In[50]:
+# In[38]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[51]:
+# In[39]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[52]:
+# In[40]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[53]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
