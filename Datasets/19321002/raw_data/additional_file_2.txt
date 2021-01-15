@@ -1,4 +1,4 @@
-ORF	Gene	Log2 fitness
+ORF	Gene	Log2 fitness	x
 YDR269C	CCC2	-4.8
 YER145C	FTR1	-4.7
 YNL259C	ATX1	-4.6
