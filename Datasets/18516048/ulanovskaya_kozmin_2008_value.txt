@@ -1,0 +1,14 @@
+orf	hap a | growth (culture turbidity) | Leucascandrolide A [5-25 nM] | Ulanovskaya OA~Kozmin SA, 2008
+YBR011C	-1
+YBR289W	-1
+YCR009C	-1
+YDR017C	-1
+YEL051W	-1
+YER052C	-1
+YGL115W	-1
+YGR208W	-1
+YHL025W	-1
+YLR056W	-1
+YML008C	-1
+YOR184W	-1
+YPR049C	-1
