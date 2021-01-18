@@ -1,0 +1,7 @@
+orf	hom | diploid mating as a | standard | YPD | Schmidlin T~Kennedy BK, 2008	hom | diploid mating as alpha | standard | YPD | Schmidlin T~Kennedy BK, 2008
+YHR191C	1	1
+YIR005W	0	1
+YLR193C	1	1
+YMR078C	1	1
+YOR305W	1	1
+YPR170C	1	0
