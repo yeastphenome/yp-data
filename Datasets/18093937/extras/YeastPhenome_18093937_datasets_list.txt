@@ -1,16 +1,13 @@
-170	hap alpha | lipid particle number | growth phase [log] | Szymanski KM~Goodman JM, 2007
-701	hap alpha | lipid particle size | growth phase [log] | Szymanski KM~Goodman JM, 2007
-702	hap alpha | lipid particle size variation | growth phase [log] | Szymanski KM~Goodman JM, 2007
-703	hap alpha | lipid particle aggregation | growth phase [log] | Szymanski KM~Goodman JM, 2007
-704	hap alpha | lipid particle centralization around nuclear envelope | growth phase [log] | Szymanski KM~Goodman JM, 2007
-705	hap alpha | lipid particle staining intensity | growth phase [log] | Szymanski KM~Goodman JM, 2007
-706	hap alpha | lipid particle resolution | growth phase [log] | Szymanski KM~Goodman JM, 2007
-707	hap alpha | lipid particle ring shape | growth phase [log] | Szymanski KM~Goodman JM, 2007
-5387	hap alpha | lipid particle number | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5388	hap alpha | lipid particle size | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5389	hap alpha | lipid particle size variation | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5390	hap alpha | lipid particle aggregation | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5391	hap alpha | lipid particle centralization around nuclear envelope | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5392	hap alpha | lipid particle staining intensity | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5393	hap alpha | lipid particle resolution | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
-5394	hap alpha | lipid particle ring shape | growth phase [stationary] | Szymanski KM~Goodman JM, 2007
+170	hap alpha | lipid particle number (BODIPY 493/503) | growth phase [log] | YPD | Szymanski KM~Goodman JM, 2007
+701	hap alpha | lipid particle size (BODIPY 493/503) | growth phase [log] | YPD | Szymanski KM~Goodman JM, 2007
+703	hap alpha | lipid particle aggregation (BODIPY 493/503) | growth phase [log] | YPD | Szymanski KM~Goodman JM, 2007
+705	hap alpha | lipid particle staining intensity (BODIPY 493/503) | growth phase [log] | YPD | Szymanski KM~Goodman JM, 2007
+706	hap alpha | lipid particle resolution (BODIPY 493/503) | growth phase [log] | YPD | Szymanski KM~Goodman JM, 2007
+707	hap alpha | lipid particle ring shape (BODIPY 493/503) | growth phase [log] | YPD | Szymanski KM~Goodman JM, 2007
+5387	hap alpha | lipid particle number (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
+5388	hap alpha | lipid particle size (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
+5389	hap alpha | lipid particle size variation (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
+5390	hap alpha | lipid particle aggregation (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
+5391	hap alpha | lipid particle centralization around nuclear envelope (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
+5392	hap alpha | lipid particle staining intensity (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
+5393	hap alpha | lipid particle resolution (BODIPY 493/503) | growth phase [stationary] | YPD | Szymanski KM~Goodman JM, 2007
