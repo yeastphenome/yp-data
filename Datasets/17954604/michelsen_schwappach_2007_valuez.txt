@@ -1,0 +1,4 @@
+orf	hap a | protein transport to the ER (Pmp2-LRKR) | standard | SC - Ura | Michelsen K~Schwappach B, 2007
+YGR078C	-38.957241517677645
+YIL074C	-38.957241517677645
+YOR290C	-38.957241517677645
