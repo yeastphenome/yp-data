@@ -1,0 +1,3 @@
+orf	hom | growth (spot assay) | ethanol [8%] | Yazawa H~Uemura H, 2007
+YBL039C	-1
+YNL239W	-1
