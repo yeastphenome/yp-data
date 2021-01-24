@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -57,13 +48,7 @@ print('Original data dimensions: %d x %d' % (original_data.shape))
 original_data.head()
 
 
-# In[33]:
-
-
-cols
-
-
-# In[35]:
+# In[9]:
 
 
 d_genes = []
@@ -86,142 +71,183 @@ for r in original_data.iterrows():
             mag_genes = mag_genes + genes
 
 
-# In[39]:
+# In[10]:
 
 
 d_genes = [s.strip() for s in d_genes if not s == 'nan']
 mag_genes = [s.strip() for s in mag_genes if not s == 'nan']
 
 
-# In[45]:
+# In[11]:
 
 
 d_genes = clean_genename(d_genes)
 mag_genes = clean_genename(mag_genes)
 
 
-# In[46]:
+# In[12]:
 
 
 d_orfs = translate_sc(d_genes, to='orf')
 mag_orfs = translate_sc(mag_genes, to='orf')
 
 
-# In[51]:
+# In[13]:
 
 
 d_orfs = np.array(d_orfs)
 mag_orfs = np.array(mag_orfs)
 
 
-# In[56]:
+# In[14]:
 
 
 d_orfs[d_orfs=='TMA29'] = 'YMR226C'
 
 
-# In[57]:
+# In[15]:
 
 
 t = looks_like_orf(d_orfs)
 print(d_orfs[~np.array(t)])
 
 
-# In[58]:
+# In[16]:
 
 
 t = looks_like_orf(mag_orfs)
 print(mag_orfs[~np.array(t)])
 
 
-# In[60]:
+# In[17]:
 
 
 all_orfs = np.unique(np.concatenate((d_orfs, mag_orfs)))
 
 
-# In[63]:
+# In[18]:
 
 
 data = pd.DataFrame(index=all_orfs, columns=['D','M'], data=np.zeros((len(all_orfs),2)))
 
 
-# In[64]:
+# In[19]:
 
 
 data.loc[d_orfs,'D'] = -1
 data.loc[mag_orfs,'M'] = -1
 
 
+# In[21]:
+
+
+data.index.name = 'orf'
+
+
 # # Prepare the final dataset
 
-# In[67]:
+# In[22]:
 
 
 dataset_ids = [16536,16535]
-
-
-# In[68]:
-
-
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[69]:
+# In[23]:
 
 
-data.columns = datasets['name'].values
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
-# In[70]:
+# In[24]:
+
+
+data.head()
+
+
+# In[25]:
 
 
 data = data.groupby(data.index).mean()
 
 
-# In[71]:
+# ## Subset to the genes currently in SGD
+
+# In[26]:
 
 
-# Create row index
-data.index.name='orf'
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[72]:
+# In[27]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
+
+
+# # Normalize
+
+# In[29]:
+
+
+data_norm = normalize_phenotypic_scores(data, has_tested=False)
+
+
+# In[30]:
+
+
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
+
+
+# In[31]:
+
+
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
 
 
 # # Print out
 
-# In[75]:
+# In[32]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[76]:
+# In[33]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[77]:
+# In[34]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[79]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
