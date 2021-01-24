@@ -4,16 +4,7 @@
 # In[1]:
 
 
-import numpy as np
-import pandas as pd
-
-import sys
-
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
-
-from Conversions.translate import *
-from Strings.is_a import *
+get_ipython().run_line_magic('run', '../yp_utils.py')
 
 
 # # Initial setup
@@ -39,25 +30,25 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data
 
-# In[5]:
+# In[47]:
 
 
 original_data = pd.read_excel('raw_data/kfl131supp.xls', sheet_name='ToxSci Supplementary Data files', skiprows=1)
 
 
-# In[6]:
+# In[48]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[7]:
+# In[49]:
 
 
 original_data['strain'] = original_data['strain'].astype(str)
 
 
-# In[8]:
+# In[50]:
 
 
 mpp_columns = ['z_result_nq:04_10_28_19:mpp+:250:ug/ml::::20:hom_09_02',
@@ -69,34 +60,34 @@ paraquat_columns = ['z_result_nq:04_10_28_21:paraquat:5000:uM::::20:hom_09_02',
                    'z_result_nq:04_11_04_08:paraquat:5000:uM::::20:hom_09_02']
 
 
-# In[9]:
+# In[51]:
 
 
 # Extract ORF from string
 orfs = original_data['strain'].apply(lambda x: x.split(':')[0])
 
 
-# In[10]:
+# In[52]:
 
 
 original_data['orfs'] = orfs
 
 
-# In[11]:
+# In[53]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orfs'] = clean_orf(original_data['orfs'])
 
 
-# In[12]:
+# In[54]:
 
 
 # Translate to ORFs 
 original_data['orfs'] = translate_sc(original_data['orfs'], to='orf')
 
 
-# In[13]:
+# In[55]:
 
 
 # Make sure everything translated ok
@@ -104,107 +95,152 @@ t = looks_like_orf(original_data['orfs'])
 print(original_data.loc[~t,])
 
 
-# In[14]:
+# In[56]:
 
 
-original_data['mpp'] = original_data[mpp_columns].mean(axis=1)
+original_data['mpp'] = original_data[mpp_columns].apply(pd.to_numeric, axis=1, errors='coerce').mean(axis=1)
 
 
-# In[15]:
+# In[57]:
 
 
-original_data['paraquat'] = original_data[paraquat_columns].mean(axis=1)
+original_data['paraquat'] = original_data[paraquat_columns].apply(pd.to_numeric, axis=1, errors='coerce').mean(axis=1)
 
 
-# In[16]:
+# In[58]:
 
 
 original_data.set_index('orfs', inplace=True)
 
 
+# In[59]:
+
+
+original_data.index.name='orf'
+
+
+# In[60]:
+
+
+original_data = -original_data[['mpp','paraquat']].copy()
+
+
+# In[61]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
+
+
+# In[62]:
+
+
+original_data.shape
+
+
 # # Prepare the final dataset
 
-# In[17]:
+# In[63]:
+
+
+data = original_data.copy()
+
+
+# In[64]:
 
 
 dataset_ids = [16616,16615]
-
-
-# In[18]:
-
-
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[19]:
+# In[65]:
 
 
-data = original_data[['mpp','paraquat']].copy()
+lst = [datasets.index.values, ['value']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data.columns = idx
 
 
-# In[20]:
+# In[66]:
 
 
-data.columns = datasets['name'].values
+data.head()
 
 
-# In[21]:
+# ## Subset to the genes currently in SGD
+
+# In[67]:
 
 
-data = data.groupby(data.index).mean()
+genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
+genes = genes.reset_index().set_index('systematic_name')
+gene_ids = genes.reindex(index=data.index.values)['id'].values
+num_missing = np.sum(np.isnan(gene_ids))
+print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[22]:
+# In[68]:
 
 
-# The original fitness scores were calculated as UNT/TRT, so that high value = growth defect. 
-# Our convention is the opposite (i.e., low value = growth defect), so need to flip the sign of the data.
-data = -data
+data['gene_id'] = gene_ids
+data = data.loc[data['gene_id'].notnull()]
+data['gene_id'] = data['gene_id'].astype(int)
+data = data.reset_index().set_index(['gene_id','orf'])
+
+data.head()
 
 
-# In[23]:
+# # Normalize
+
+# In[69]:
 
 
-# Create row index
-data.index.name='orf'
+data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[24]:
+# In[70]:
 
 
-print('Final data dimensions: %d x %d' % (data.shape))
+# Assign proper column names
+lst = [datasets.index.values, ['valuez']*datasets.shape[0]]
+tuples = list(zip(*lst))
+idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
+data_norm.columns = idx
+
+
+# In[71]:
+
+
+data_norm[data.isnull()] = np.nan
+data_all = data.join(data_norm)
+
+data_all.head()
 
 
 # # Print out
 
-# In[25]:
+# In[72]:
 
 
-data.to_csv(paper_name + '.txt', sep='\t')
+for f in ['value','valuez']:
+    df = data_all.xs(f, level='data_type', axis=1).copy()
+    df.columns = datasets['name'].values
+    df = df.droplevel('gene_id', axis=0)
+    df.to_csv(paper_name + '_' + f + '.txt', sep='\t')
 
 
 # # Save to DB
 
-# In[48]:
+# In[73]:
 
 
-from IO.save_data_to_db2 import *
+from IO.save_data_to_db3 import *
 
 
-# In[49]:
+# In[74]:
 
 
-# Create column index
-lst = [datasets.index.values, datasets['name'].values]
-tuples = list(zip(*lst))
-idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','dataset_name'])
-data.columns = idx
-
-
-# In[50]:
-
-
-save_data_to_db(data, paper_pmid)
+save_data_to_db(data_all, paper_pmid)
 
 
 # In[ ]:
