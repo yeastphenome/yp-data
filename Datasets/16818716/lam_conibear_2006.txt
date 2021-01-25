@@ -1,9 +1,0 @@
-ORF	hap a/hap alpha/hom | transport to/from membrane (Chs3) | standard [standard] | Lam KK~Conibear E, 2006
-YBL061C	0.290
-YBR023C	0.300
-YJL099W	0.300
-YLR330W	0.390
-YAL014C	0.400
-YJL095W	0.460
-YHR142W	0.520
-YOL003C	0.630
