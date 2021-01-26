@@ -108,37 +108,37 @@ original_data.shape
 
 # # Load & process tested strains
 
-# In[19]:
+# In[17]:
 
 
 tested = pd.read_csv('raw_data/FG_array_genes.txt', sep='\t', header=None)
 
 
-# In[20]:
+# In[18]:
 
 
 tested.head()
 
 
-# In[21]:
+# In[19]:
 
 
 tested['orf'] = tested[0].astype(str)
 
 
-# In[22]:
+# In[20]:
 
 
 tested['orf'] = clean_orf(tested['orf'])
 
 
-# In[23]:
+# In[21]:
 
 
 tested['orf'] = translate_sc(tested['orf'], to='orf')
 
 
-# In[24]:
+# In[22]:
 
 
 # Make sure everything translated ok
@@ -146,41 +146,47 @@ t = looks_like_orf(tested['orf'])
 print(tested.loc[~t,])
 
 
-# In[25]:
+# In[23]:
 
 
 tested_orfs = tested['orf'].unique()
 
 
-# In[26]:
+# In[24]:
 
 
 missing = [orf for orf in original_data.index.values if orf not in tested_orfs]
 missing
 
 
-# In[27]:
+# In[25]:
 
 
 original_data = original_data.reindex(index=tested_orfs, fill_value=0)
 
 
+# In[26]:
+
+
+original_data.shape
+
+
 # # Prepare the final dataset
 
-# In[28]:
+# In[27]:
 
 
 data = original_data.copy()
 
 
-# In[29]:
+# In[28]:
 
 
 dataset_ids = [561]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[30]:
+# In[29]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -189,7 +195,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[31]:
+# In[30]:
 
 
 data.head()
@@ -197,7 +203,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[32]:
+# In[31]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -207,7 +213,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[33]:
+# In[32]:
 
 
 data['gene_id'] = gene_ids
@@ -216,6 +222,12 @@ data['gene_id'] = data['gene_id'].astype(int)
 data = data.reset_index().set_index(['gene_id','orf'])
 
 data.head()
+
+
+# In[33]:
+
+
+data.shape
 
 
 # # Normalize
