@@ -1,0 +1,17 @@
+orf	hap a | abundance of a specific protein/peptide (Deg1) | standard [standard] | Ravid T~Hochstrasser M, 2006
+YBR173C	3
+YDL020C	2
+YDR363W-A	3
+YGR188C	3
+YHR191C	2
+YIL009C-A	2
+YIL030C	4
+YJL092W	3
+YLR233C	2
+YLR318W	2
+YMR022W	4
+YMR264W	4
+YOR026W	3
+YPL008W	2
+YPR131C	3
+YPR141C	3
