@@ -1,0 +1,16 @@
+orf	hap a | viral RNA recombination | standard | SC - His - Leu - Ura, Gal [2%] | Serviene E~Nagy PD, 2005
+YDR176W	-1
+YDR323C	-2
+YDR392W	0
+YER151C	2
+YGL168W	2
+YGL173C	2
+YGL212W	-1
+YGR157W	-2
+YHR012W	-1
+YHR189W	-1
+YJL154C	-1
+YMR180C	2
+YOL064C	2
+YOR180C	-2
+YPR069C	0
