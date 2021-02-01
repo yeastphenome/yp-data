@@ -1,0 +1,14 @@
+orf	hap a | growth (colony size) | fluconazole (fluconazole [64 ug/ml]) | Anderson JB~Kohn LM, 2003
+YAR042W	1
+YBR147W	1
+YER044C	1
+YER120W	1
+YGR283C	1
+YLR056W	3
+YLR407W	1
+YML008C	2
+YML058W	1
+YMR099C	2
+YMR102C	2
+YOR061W	1
+YPL056C	2
