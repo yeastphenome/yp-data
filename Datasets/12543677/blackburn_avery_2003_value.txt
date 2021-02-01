@@ -1,0 +1,22 @@
+orf	hap a | growth (MIC) | gentamicin (gentamycin [256 ug/ml]) | Blackburn AS~Avery SV, 2003	hap a | growth (MIC) | oxytetracycline [256 ug/ml] | Blackburn AS~Avery SV, 2003	hap a | growth (MIC) | tetracycline [256 ug/ml] | Blackburn AS~Avery SV, 2003	hap a | growth (MIC) | amoxicillin [256 ug/ml] | Blackburn AS~Avery SV, 2003	hap a | growth (MIC) | benzylpenicillin [256 ug/ml] | Blackburn AS~Avery SV, 2003	hap a | growth (MIC) | rifampicin [256 ug/ml] | Blackburn AS~Avery SV, 2003	hap a | growth (MIC) | vancomycin [256 ug/ml] | Blackburn AS~Avery SV, 2003
+YBL033C	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YBR097W	-568.0	0.0	0.0	0.0	0.0	0.0	0.0
+YDL226C	-88.0	0.0	0.0	0.0	0.0	0.0	0.0
+YDR027C	-344.0	0.0	0.0	0.0	0.0	0.0	0.0
+YDR455C	-344.0	0.0	0.0	0.0	0.0	0.0	0.0
+YDR523C	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YER044C	0.0	-472.0	-472.0	0.0	0.0	0.0	0.0
+YGL206C	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YGR036C	-88.0	0.0	0.0	0.0	0.0	0.0	0.0
+YGR285C	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YJR104C	0.0	-88.0	0.0	0.0	0.0	0.0	0.0
+YKL212W	-472.0	0.0	0.0	0.0	0.0	0.0	0.0
+YLR148W	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YLR240W	-568.0	0.0	0.0	0.0	0.0	0.0	0.0
+YLR396C	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YMR021C	0.0	-88.0	0.0	0.0	0.0	0.0	0.0
+YMR231W	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YNL192W	-88.0	0.0	0.0	0.0	0.0	0.0	0.0
+YOL086C	0.0	-344.0	-344.0	0.0	0.0	0.0	0.0
+YPL045W	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
+YPL050C	-536.0	0.0	0.0	0.0	0.0	0.0	0.0
