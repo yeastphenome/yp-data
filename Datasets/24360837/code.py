@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[219]:
 
 
 get_ipython().run_line_magic('run', '../yp_utils.py')
@@ -9,20 +9,20 @@ get_ipython().run_line_magic('run', '../yp_utils.py')
 
 # # Initial setup
 
-# In[2]:
+# In[220]:
 
 
 paper_pmid = 24360837
 paper_name = 'hoepfner_movva_2014' 
 
 
-# In[3]:
+# In[221]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['pmid', 'name'])
 
 
-# In[4]:
+# In[222]:
 
 
 datasets.set_index('pmid', inplace=True)
@@ -30,54 +30,54 @@ datasets.set_index('pmid', inplace=True)
 
 # # Load & process the data - Benomyl
 
-# In[5]:
+# In[104]:
 
 
 original_data1 = pd.read_csv('large_files/raw_data/HOP_scores-benomyl.txt', sep='\t')
 original_data2 = pd.read_csv('large_files/raw_data/HIP_scores-benomyl.txt', sep='\t')
 
 
-# In[6]:
+# In[105]:
 
 
 print('Original data dimensions: %d x %d' % (original_data1.shape))
 print('Original data dimensions: %d x %d' % (original_data2.shape))
 
 
-# In[7]:
+# In[106]:
 
 
 # Keep the sensitivity scores, not z-scores (z-score normalize each strain to its phenotype to all other compounds in the dataset)
 
 
-# In[8]:
+# In[107]:
 
 
 cols1 = [c for c in original_data1.columns.values if 'z-score' not in c]
 cols2 = [c for c in original_data2.columns.values if 'z-score' not in c]
 
 
-# In[9]:
+# In[108]:
 
 
 original_data1 = original_data1.loc[:, cols1]
 original_data2 = original_data2.loc[:, cols2]
 
 
-# In[10]:
+# In[109]:
 
 
 orf_col = 'Systematic Name'
 
 
-# In[11]:
+# In[110]:
 
 
 original_data1[orf_col] = original_data1[orf_col].astype(str)
 original_data2[orf_col] = original_data2[orf_col].astype(str)
 
 
-# In[12]:
+# In[111]:
 
 
 # Eliminate all white spaces & capitalize
@@ -85,7 +85,7 @@ original_data1[orf_col] = clean_orf(original_data1[orf_col])
 original_data2[orf_col] = clean_orf(original_data2[orf_col])
 
 
-# In[13]:
+# In[112]:
 
 
 # Translate to ORFs 
@@ -93,37 +93,37 @@ original_data1['orfs'] = translate_sc(original_data1[orf_col], to='orf')
 original_data2['orfs'] = translate_sc(original_data2[orf_col], to='orf')
 
 
-# In[14]:
+# In[113]:
 
 
 original_data1.loc[original_data1['orfs'] == 'YBR160WAS','orfs'] = 'YBR160W'
 original_data2.loc[original_data2['orfs'] == 'YBR160WAS','orfs'] = 'YBR160W'
 
 
-# In[15]:
+# In[114]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data1['orfs'])
-print(original_data1.loc[~t,])
+# print(original_data1.loc[~t,])
 
 
-# In[16]:
+# In[115]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data2['orfs'])
-print(original_data2.loc[~t,])
+# print(original_data2.loc[~t,])
 
 
-# In[17]:
+# In[116]:
 
 
 original_data1 = original_data1.loc[t,:]
 original_data2 = original_data2.loc[t,:]
 
 
-# In[18]:
+# In[117]:
 
 
 original_data1.set_index('orfs', inplace=True)
@@ -132,39 +132,39 @@ original_data1.index.name='orf'
 original_data2.index.name='orf'
 
 
-# In[19]:
+# In[118]:
 
 
 original_data1['data'] = original_data1.mean(axis=1)
 original_data2['data'] = original_data2.mean(axis=1)
 
 
-# In[20]:
+# In[119]:
 
 
 original_data = original_data1[['data']].join(original_data2[['data']], how='outer', lsuffix='_hop', rsuffix='_hip')
 
 
-# In[21]:
+# In[120]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[22]:
+# In[121]:
 
 
 dataset_ids = [1087, 16622]
 data_benomyl = original_data[['data_hop','data_hip']].copy()
 
 
-# In[23]:
+# In[122]:
 
 
 data_benomyl.columns = dataset_ids
 
 
-# In[24]:
+# In[123]:
 
 
 data_benomyl.head()
@@ -172,55 +172,69 @@ data_benomyl.head()
 
 # # Load and process data -- all others
 
-# In[25]:
+# In[232]:
 
 
 original_data1 = pd.read_csv('large_files/raw_data/HOP_scores.txt', sep='\t')
 original_data2 = pd.read_csv('large_files/raw_data/HIP_scores.txt', sep='\t')
 
 
-# In[26]:
+# In[239]:
+
+
+original_data1.set_index('Systematic Name', inplace=True)
+
+
+# In[240]:
 
 
 print('Original data dimensions: %d x %d' % (original_data1.shape))
 print('Original data dimensions: %d x %d' % (original_data2.shape))
 
 
-# In[27]:
+# In[245]:
+
+
+random_rows = np.random.choice(original_data1.index, 5)
+random_cols = np.random.choice(original_data1.columns, 5)
+original_data1.loc[random_rows, random_cols]
+
+
+# In[227]:
 
 
 cols1 = [c for c in original_data1.columns.values if 'z-score' not in c]
 cols2 = [c for c in original_data2.columns.values if 'z-score' not in c]
 
 
-# In[28]:
+# In[228]:
 
 
 original_data1 = original_data1.loc[:, cols1]
 original_data2 = original_data2.loc[:, cols2]
 
 
-# In[29]:
+# In[229]:
 
 
 print('Original data dimensions: %d x %d' % (original_data1.shape))
 print('Original data dimensions: %d x %d' % (original_data2.shape))
 
 
-# In[30]:
+# In[129]:
 
 
 orf_col = 'Systematic Name'
 
 
-# In[31]:
+# In[130]:
 
 
 original_data1[orf_col] = original_data1[orf_col].astype(str)
 original_data2[orf_col] = original_data2[orf_col].astype(str)
 
 
-# In[32]:
+# In[131]:
 
 
 # Eliminate all white spaces & capitalize
@@ -228,7 +242,7 @@ original_data1[orf_col] = clean_orf(original_data1[orf_col])
 original_data2[orf_col] = clean_orf(original_data2[orf_col])
 
 
-# In[33]:
+# In[132]:
 
 
 # Translate to ORFs 
@@ -236,37 +250,37 @@ original_data1['orfs'] = translate_sc(original_data1[orf_col], to='orf')
 original_data2['orfs'] = translate_sc(original_data2[orf_col], to='orf')
 
 
-# In[34]:
+# In[133]:
 
 
 original_data1.loc[original_data1['orfs'] == 'YBR160WAS','orfs'] = 'YBR160W'
 original_data2.loc[original_data2['orfs'] == 'YBR160WAS','orfs'] = 'YBR160W'
 
 
-# In[35]:
+# In[134]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data1['orfs'])
-print(original_data1.loc[~t,])
+# print(original_data1.loc[~t,])
 
 
-# In[36]:
+# In[135]:
 
 
 # Make sure everything translated ok
 t = looks_like_orf(original_data2['orfs'])
-print(original_data2.loc[~t,])
+# print(original_data2.loc[~t,])
 
 
-# In[37]:
+# In[136]:
 
 
 original_data1 = original_data1.loc[t,:]
 original_data2 = original_data2.loc[t,:]
 
 
-# In[38]:
+# In[137]:
 
 
 original_data1.set_index('orfs', inplace=True)
@@ -275,247 +289,167 @@ original_data1.index.name='orf'
 original_data2.index.name='orf'
 
 
-# In[39]:
+# In[138]:
 
 
 original_data1.drop(columns=['Systematic Name'], inplace=True)
 
 
-# In[40]:
+# In[139]:
 
 
 original_data2.drop(columns=['Systematic Name'], inplace=True)
 
 
-# ### Map dataset IDs to data columns
-
-# In[41]:
-
-
-compound_map = pd.read_csv('extras/type_cmb_dose_dataset.txt', sep='\t')
-
-
-# In[42]:
-
-
-compound_map.loc[compound_map.loc[:,'Dataset HOP']==1226]
-
-
-# In[43]:
-
-
-dt_ids = []
-for s in original_data1.columns.values:
-    s_parts = re.split(' |_',s)
-    cmb = int(s_parts[4])
-    dose = float(s_parts[5])
-    
-    dt = compound_map.loc[(compound_map['CMB'] == cmb) & (round(compound_map['Dose'],4) == round(dose,4))]
-    if dt.shape[0] > 0:
-        dataset_id = dt['Dataset HOP'].values[0]
-    else:
-        dataset_id = np.nan
-    
-    dt_ids.append(dataset_id)
-
-
-# In[44]:
-
-
-t = original_data1.drop(columns=original_data1.columns[np.isnan(np.array(dt_ids))])
-
-
-# In[45]:
-
-
-dt_ids = np.array(dt_ids)[~np.isnan(np.array(dt_ids))]
-
-
-# In[46]:
-
-
-dt_ids = dt_ids.astype(int)
-
-
-# In[47]:
-
-
-t.columns = dt_ids
-
-
-# In[48]:
-
-
-# Average values for duplicated (replicated) datasets
-t = t.T
-t = t.groupby(t.index).mean().T
-
-
-# In[49]:
-
-
-t.shape
-
-
-# In[50]:
-
-
-original_data1 = t.copy()
-
-
-# In[51]:
-
-
-dt_ids = []
-for s in original_data2.columns.values:
-    s_parts = re.split(' |_',s)
-    cmb = int(s_parts[4])
-    dose = float(s_parts[5])
-    
-    dt = compound_map.loc[(compound_map['CMB'] == cmb) & (round(compound_map['Dose'],4) == round(dose,4))]
-    if dt.shape[0] > 0:
-        dataset_id = dt['Dataset HIP'].values[0]
-    else:
-        dataset_id = np.nan
-    
-    dt_ids.append(dataset_id)
-
-
-# In[52]:
-
-
-t = original_data2.drop(columns=original_data2.columns[np.isnan(np.array(dt_ids))])
-
-
-# In[53]:
-
-
-dt_ids = np.array(dt_ids)[~np.isnan(np.array(dt_ids))]
-
-
-# In[54]:
-
-
-dt_ids = dt_ids.astype(int)
-
-
-# In[55]:
-
-
-t.columns = dt_ids
-
-
-# In[56]:
-
-
-# Average values for duplicated (replicated) datasets
-t = t.T
-t = t.groupby(t.index).mean().T
-
-
-# In[57]:
-
-
-t.shape
-
-
-# In[58]:
-
-
-original_data2 = t.copy()
-
-
-# In[59]:
-
-
-original_data2.shape
-
-
-# ### Average and merge
-
-# In[60]:
+# In[140]:
 
 
 original_data1 = original_data1.groupby(original_data1.index).mean()
 
 
-# In[61]:
+# In[141]:
 
 
 original_data2 = original_data2.groupby(original_data2.index).mean()
 
 
-# In[62]:
+# ### Map data columns to dataset_ids
+
+# In[142]:
 
 
-original_data = original_data1.join(original_data2, how='outer', lsuffix='_hop', rsuffix='_hip')
+dt = pd.read_csv('extras/datasets_name_to_id.txt', sep='\t')
 
 
-# In[63]:
+# In[143]:
 
 
-data_final = data_benomyl.join(original_data, how='outer', lsuffix='_benomyl', rsuffix='_other')
+dt.head()
 
 
-# In[64]:
+# In[144]:
 
 
-data_final.shape
+dt.set_index('name', inplace=True)
 
 
-# In[65]:
+# In[145]:
 
 
-data_benomyl.shape
+dt1 = dt.reindex(index=original_data1.columns.values)
 
 
-# In[66]:
+# In[146]:
+
+
+dt2 = dt.reindex(index=original_data2.columns.values)
+
+
+# In[147]:
+
+
+dt2.head()
+
+
+# In[148]:
+
+
+original_data1.columns = dt1['dataset'].values
+original_data1 = original_data1.T
+original_data1 = original_data1.groupby(original_data1.index).mean()
+original_data1 = original_data1.T
+original_data1.shape
+
+
+# In[149]:
+
+
+original_data2.columns = dt2['dataset'].values
+original_data2 = original_data2.T
+original_data2 = original_data2.groupby(original_data2.index).mean()
+original_data2 = original_data2.T
+original_data2.shape
+
+
+# ### Merge
+
+# In[150]:
+
+
+original_data = original_data1.join(original_data2, how='outer')
+
+
+# In[151]:
 
 
 original_data.shape
 
 
-# In[67]:
+# In[152]:
+
+
+original_data_final = data_benomyl.join(original_data, how='outer', lsuffix='_benomyl', rsuffix='_other')
+
+
+# In[153]:
+
+
+original_data_final.shape
+
+
+# In[154]:
+
+
+data_benomyl.shape
+
+
+# In[155]:
+
+
+original_data.shape
+
+
+# In[156]:
 
 
 # Remove ORFs that are all NaNs
-num_vals = data_final.notnull().sum(axis=1)
+num_vals = original_data_final.notnull().sum(axis=1)
 
 
-# In[68]:
+# In[157]:
 
 
-data_final = data_final.loc[num_vals>0,:]
+original_data_final = original_data_final.loc[num_vals>0,:]
 
 
-# In[69]:
+# In[158]:
 
 
-data_final.shape
+original_data_final.shape
 
 
-# In[70]:
+# In[159]:
 
 
-data_final.head()
+original_data_final.head()
 
 
 # # Prepare final dataset
 
-# In[71]:
+# In[160]:
 
 
-data = data_final.copy()
+data = original_data_final.copy()
 
 
-# In[72]:
+# In[161]:
 
 
-dataset_ids = data_final.columns.values
+dataset_ids = original_data_final.columns.values
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[73]:
+# In[162]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -524,7 +458,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[74]:
+# In[163]:
 
 
 data.head()
@@ -532,7 +466,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[75]:
+# In[164]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -542,7 +476,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[76]:
+# In[165]:
 
 
 data['gene_id'] = gene_ids
@@ -555,13 +489,13 @@ data.head()
 
 # # Normalize
 
-# In[77]:
+# In[166]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[78]:
+# In[167]:
 
 
 # Assign proper column names
@@ -571,7 +505,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[80]:
+# In[168]:
 
 
 data_vals = data.values
@@ -582,7 +516,7 @@ data_norm_vals[np.isnan(data_vals)] = np.nan
 data_norm = pd.DataFrame(index=data_norm.index, columns=data_norm.columns, data=data_norm_vals)
 
 
-# In[81]:
+# In[169]:
 
 
 data_all = data.join(data_norm)
@@ -591,7 +525,7 @@ data_all.head()
 
 # # Print out
 
-# In[82]:
+# In[71]:
 
 
 for f in ['value','valuez']:
@@ -603,16 +537,16 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[83]:
+# In[170]:
 
 
-from IO.save_data_to_db3 import *
+# from IO.save_data_to_db3 import *
 
 
-# In[84]:
+# In[171]:
 
 
-save_data_to_db(data_all, paper_pmid, delete=True)
+# save_data_to_db(data_all, paper_pmid, delete=True)
 
 
 # In[ ]:
