@@ -1,0 +1,4 @@
+21833	hap a | growth (pooled culture, barseq) | plant defensin NaD1 [4 uM] | YPD | Parisi K~Bleackley MR, 2019
+21834	hap a | growth (pooled culture, barseq) | plant defensin DmAMP1 [4 uM] | YPD | Parisi K~Bleackley MR, 2019
+21835	hap a | growth (pooled culture, barseq) | plant defensin NbD6 [3 uM] | YPD | Parisi K~Bleackley MR, 2019
+21836	hap a | growth (pooled culture, barseq) | plant defensin SBI6 [5 uM] | YPD | Parisi K~Bleackley MR, 2019
