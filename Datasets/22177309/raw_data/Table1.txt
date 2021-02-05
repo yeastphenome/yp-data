@@ -1,0 +1,108 @@
+ORF	Description	Lactic acid sensitivity
+ADA2	General transcriptional adaptor or co-activator	- -
+ALF1	Protein implicated in folding of alpha tubulin	- - - -
+ANP1	Protein required for protein glycosylation in the golgi	-
+ARG82	Arginine metabolism transcription factor	-
+ARO1	Arom pentafunctional enzyme	- - -
+ARO2	Chorismate synthase	- - -
+ARO7	Chorismate mutase	- - - -
+BAP2	Broad-specificity amino-acid permease	- -
+BCK1	Ser/Thr protein kinase of the MEKK family	- - -
+BRP1	Questionable protein	- -
+BST1	Negative regulator of COPII vesicle formation	- -
+BUD16	Protein involved in bud-site selection	-
+BUD19	Questionable protein	- - - -
+BUD20	Protein involved in bud-site selection	- - - -
+BUD23	Protein involved in bud-site selection	- - - -
+BUD32	Protein involved in bud-site selection, putative O-sialoglyco-endopeptidase	- - - -
+CAX4	Protein required for full levels of dolichol-linked oligosaccharides in the endoplasmic reticulum	-
+CCH1	Calcium channel (α subunit) of the plasma membrane	-
+CHC1	Clathrin heavy chain	- - - -
+CLC1	Clathrin light chain	- - -
+CNB1	Calcineurin B, regulatory subunit	-
+COG1	Conserved oligomeric golgi complex	-
+CSG2	Calcium dependent regulatory protein	- -
+DEF1	Coordinates repair and RNA pol II proteolysis in response to DNA damage	- -
+ECM3	Protein involved in cell wall biogenesis and architecture	- -
+EFG1	Essential protein required for maturation of 18S rRNA	- - - -
+ERG2	C-8 sterol isomerase	-
+ERG3	C-5 sterol desaturase	- -
+ERG4	Sterol C-24 reductase	- -
+ERG6	S-Adenosyl-methionine delta-24-sterol-c-methyltransferase	- - -
+ERG24	C-14 sterol reductase	-
+FYV8	Protein required for survival upon exposure to K1 killer toxin	-
+GAL11	DNA-directed RNA polymerase II holoenzyme and Kornberg`s mediator subcomplex subunit	- -
+GAS1	Glycophospholipid-anchored surface glycoprotein	-
+GLY1	l-Threonine aldolase	- - - -
+HFI1	Transcriptional coactivator	- - -
+HOG1	Ser/Thr protein kinase of MAP kinase family	-
+HSP150	Member of the Pir1p/Hsp150p/Pir3p family	-
+ILV1	Anabolic serine and threonine dehydratase precursor	- - -
+KEM1	Multifunctional nuclease	- -
+LEM3	Membrane protein of the plasma membrane and ER	- -
+MDJ1	Heat shock protein-chaperone	- - - -
+MID1	Mechanosensitive Ca2 +-permeable channel of the plasma membrane	-
+MON2	Peripheral membrane protein with a role in endocytosis and vacuole integrity	- -
+NAT3	N-Acetyltransferases	-
+NHX1	Na+/H+ exchanger of the prevacuolar compartment	-
+OCH1	α-1,6-Mannosyltransferase	- - - -
+PBS2	Tyrosine protein kinase of the MAP kinase kinase family	-
+PDX3	Pyridoxamine-phosphate oxidase	- - - -
+PEP3	Vacuolar membrane protein	- - -
+PEP5	Vacuolar biogenesis protein	- - -
+PEP7	Vacuolar segregation protein	- -
+PHO85	Cyclin-dependent protein kinase	-
+POP2	Protein required for glucose derepression	- - - -
+PPA1	H+-ATPase V0 domain	- -
+RAD6	E2 ubiquitin-conjugating enzyme	- -
+RCY1	Protein involved in recycling of the SNARE Snc1p	- - - -
+RGD1	GTPase activating protein (GAP) (putative)	-
+RGP1	Reduced growth phenotype protein	- -
+RPB9	DNA-directed RNA polymerase II	- - - -
+RPL1B	60S large subunit ribosomal protein	- -
+RRG1	Protein of unknown function localized to mitochondria, required for vacuolar acidification	- -
+RTF1	Regulates DNA binding properties of TBP	- - - -
+SAC1	Recessive suppressor of secretory defect	- - -
+SAP30	Subunit of the histone deacetylase B complex	-
+SFP1	Zinc finger protein	- - - -
+SNF5	Component of SWI/SNF transcription activator complex	- -
+SNF12	Component of SWI/SNF global transcription activator complex	- -
+SHE4	Protein required for mother cell-specific gene expression	- - - -
+SHP1	Potential regulatory subunit for Glc7p	- -
+SLA2	Cytoskeleton assembly control protein	- - - -
+SLT2	Ser/Thr protein kinase of MAP kinase family	- - -
+SPT20	Member of the TBP class of SPT proteins that alter transcription site selection	- - - -
+SRV2	Adenylate cyclase-associated protein	- -
+SWI3	Transcription regulatory protein	- -
+TFP3	H+-ATPase V0 domain	-
+THR1	Homoserine kinase	- -
+THR4	Threonine synthase	-
+TLG2	Member of the syntaxin family of t-SNAREs	-
+TRK1	Potassium transporter I	- - - -
+TYR1	Prephenate dehydrogenase	- - -
+UBA4	Protein that activates Urm1p before its conjugation to proteins	-
+VAM10	Protein required for normal tethering of vacuoles prior to fusion	-
+VMA1	Encodes 3 region protein which is self-spliced into Tfp1p and PI-SceI	- -
+VMA4	H+-ATPase V1 domain	-
+VMA5	H+-ATPase V1 domain	-
+VMA6	H+-ATPase V0 domain	-
+VMA7	H+-ATPase V1 domain	- -
+VMA8	H+-ATPase V1 domain	-
+VMA10	H+-ATPase V1 domain	- -
+VMA22	Vacuolar ATPase assembly protein	- - - -
+VPS1	Member of the dynamin family of GTPases	- - -
+VPS3	Vacuolar sorting protein	- -
+VPS5	Protein involved in Golgi retention and vacuolar sorting	- -
+VPS15	Ser/Thr protein kinase	- - - -
+VPS16	Vacuolar sorting protein	- - -
+VPS20	Vacuolar protein sorting	- -
+VPS34	Phosphatidylinositol 3-kinase	- - - -
+VPS35	Protein-sorting protein	- -
+VPS45	Vacuolar protein sorting-associated protein	- - -
+VPS51	Subunit of VP51–54 complex, required for protein sorting at the yeast late Golgi	- - -
+VPS52	Subunit of VP51–54 complex, required for protein sorting at the yeast late Golgi	- - -
+VPS54	Subunit of VP51–54 complex, required for protein sorting at the yeast late Golgi	- - -
+VRP1	Verprolin	- -
+YCL007c	Questionable protein	- -
+YPR022c	Protein of unknown function localized to cytoplasm and nucleus	- -
+YPT6	GTP-binding protein of the Rab family	-
