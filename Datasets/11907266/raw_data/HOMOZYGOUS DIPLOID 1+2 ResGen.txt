@@ -4404,9 +4404,9 @@ record no.      ORF name        strain  batch   plate   row     column  RG NOTES
 33730   YDL034W HOM DIP 04_1    348     A       12              
 33732   YDL036C         HOM DIP 04_1    348     B       1               
 33734   YDL038C HOM DIP 04_1    348     B       2               
-33735   YDL 039C        HOM DIP 04_1    348     B       3               
+33735   YDL039C        HOM DIP 04_1    348     B       3               
 33744   YDL047W HOM DIP 04_1    348     B       4               
-33750   YDL 053C        HOM DIP 04_1    348     B       5               
+33750   YDL053C        HOM DIP 04_1    348     B       5               
 33758   YDL061C HOM DIP 04_1    348     B       6               
 33764   YDL067C HOM DIP 04_1    348     B       7               
 33771   YDL074C HOM DIP 04_1    348     B       8               
