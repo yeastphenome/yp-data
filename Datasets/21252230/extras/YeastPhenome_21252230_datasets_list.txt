@@ -1,0 +1,5 @@
+21840	hap a | calcium uptake (calcium-45) | FK506 [1 ug/ml], alpha factor pheromone [40 uM] | YPD | Martin DC~Cunningham KW, 2011
+21841	hap a | calcium uptake (calcium-45) | FK506 [1 ug/ml], tunicamycin [5 ug/ml] | YPD | Martin DC~Cunningham KW, 2011
+21842	hap a | calcium uptake (calcium-45) | alpha factor pheromone [40 uM] | YPD | Martin DC~Cunningham KW, 2011
+21843	hap a | calcium uptake (calcium-45) | tunicamycin [5 ug/ml] | YPD | Martin DC~Cunningham KW, 2011
+21844	hap a | calcium uptake (calcium-45) | FK506 [1 ug/ml] | YPD | Martin DC~Cunningham KW, 2011
