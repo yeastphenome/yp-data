@@ -1,7 +1,3 @@
-69	hap a | growth (MIC) | amoxicillin [256 ug/ml] | Blackburn AS~Avery SV, 2003
-391	hap a | growth (MIC) | gentamicin (gentamycin [256 ug/ml]) | Blackburn AS~Avery SV, 2003
-392	hap a | growth (MIC) | benzylpenicillin [256 ug/ml] | Blackburn AS~Avery SV, 2003
-393	hap a | growth (MIC) | oxytetracycline [256 ug/ml] | Blackburn AS~Avery SV, 2003
-394	hap a | growth (MIC) | rifampicin [256 ug/ml] | Blackburn AS~Avery SV, 2003
-395	hap a | growth (MIC) | tetracycline [256 ug/ml] | Blackburn AS~Avery SV, 2003
-396	hap a | growth (MIC) | vancomycin [256 ug/ml] | Blackburn AS~Avery SV, 2003
+391	hap a | growth (MIC) | gentamicin | YPD | Blackburn AS~Avery SV, 2003
+393	hap a | growth (MIC) | oxytetracyclin [256 ug/ml] | YPD | Blackburn AS~Avery SV, 2003
+395	hap a | growth (MIC) | tetracycline [256 ug/ml] | YPD | Blackburn AS~Avery SV, 2003
