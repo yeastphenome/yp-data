@@ -16,7 +16,7 @@ datasets.standard_name = d{2};
 
 %% Load the data
 
-flds = dir('./raw_data/Sceeningdeletionmutant_rawdata/');
+flds = dir('./raw_data/data_processing/Sceeningdeletionmutant_rawdata/');
 flds(1:3) = [];
 
 % PLATE MAPS: Get the data from the Excel files
@@ -25,9 +25,9 @@ for i = 1 : length(flds)
     tmp = regexp(flds(i).name, '_', 'split');
     plate = str2num(tmp{1});
     
-    files = dir(['./raw_data/Sceeningdeletionmutant_rawdata/' flds(i).name '/']);
+    files = dir(['./raw_data/data_processing/Sceeningdeletionmutant_rawdata/' flds(i).name '/']);
     f = find(~cellfun(@isempty, strfind({files.name},'all.xls')));
-    filename = ['./raw_data/Sceeningdeletionmutant_rawdata/' flds(i).name '/' files(f).name];
+    filename = ['./raw_data/data_processing/Sceeningdeletionmutant_rawdata/' flds(i).name '/' files(f).name];
     [~,sheets] = xlsfinfo(filename);
     
     for sht = 1 : 3
@@ -78,53 +78,53 @@ map_txt = map(:,1:2);
 map_num = cell2mat(map(:,3:5));
 
 
-% TIMEPOINTS (1): TO DO ONLY ONCE. Since this information is not standardized, it is necessary to generate a SUMMARY FILE & process it manually
-fid = fopen('./raw_data/summary.txt','w');
-for i = 1 : length(flds)
-    
-    tmp = regexp(flds(i).name, '_', 'split');
-    plate = str2num(tmp{1});
-    if length(replicates) < plate
-        replicates(plate) = 1;
-    else
-        replicates(plate) = replicates(plates) + 1;
-    end
-    
-    files = dir(['./raw_data/Sceeningdeletionmutant_rawdata/' flds(i).name '/']);
-    
-    f = find(cellfun(@isempty, strfind({files.name},'.dat'))==0);
-    
-    for j = 1 : length(f)
-        
-        filename = ['./raw_data/Sceeningdeletionmutant_rawdata/' flds(i).name '/' files(f(j)).name];
-        
-        [FILENAMES{end+1}, C] = dataread('textread',filename, '%s', 'delimiter', '\n');
-        
-        if length(C) >= 9
-            header = C(1);
-            fprintf(fid,'%s\t%s\t%d\t%d\t%s\n', flds(i).name, files(f(j)).name, plate, replicates(plate_red), header{h});
-        end
-        
-        if length(C) >= 19
-            header = C(11);
-            fprintf(fid,'%s\t%s\t%d\t%d\t%s\n', flds(i).name, files(f(j)).name, plate, replicates(plate_red), header{h});
-        end
-        
-        if length(C) >= 29
-            header = C(21);
-            fprintf(fid,'%s\t%s\t%d\t%d\t%s\n', flds(i).name, files(f(j)).name, plate, replicates(plate_red), header{h});
-        end
-        
-        clear C;
-    end
-    
-end
-fclose(fid);
+% % TIMEPOINTS (1): TO DO ONLY ONCE. Since this information is not standardized, it is necessary to generate a SUMMARY FILE & process it manually
+% fid = fopen('./raw_data/data_processing/summary.txt','w');
+% for i = 1 : length(flds)
+%     
+%     tmp = regexp(flds(i).name, '_', 'split');
+%     plate = str2num(tmp{1});
+%     if length(replicates) < plate
+%         replicates(plate) = 1;
+%     else
+%         replicates(plate) = replicates(plates) + 1;
+%     end
+%     
+%     files = dir(['./raw_data/data_processing/Sceeningdeletionmutant_rawdata/' flds(i).name '/']);
+%     
+%     f = find(cellfun(@isempty, strfind({files.name},'.dat'))==0);
+%     
+%     for j = 1 : length(f)
+%         
+%         filename = ['./raw_data/data_processing/Sceeningdeletionmutant_rawdata/' flds(i).name '/' files(f(j)).name];
+%         
+%         [FILENAMES{end+1}, C] = dataread('textread',filename, '%s', 'delimiter', '\n');
+%         
+%         if length(C) >= 9
+%             header = C(1);
+%             fprintf(fid,'%s\t%s\t%d\t%d\t%s\n', flds(i).name, files(f(j)).name, plate, replicates(plate_red), header{h});
+%         end
+%         
+%         if length(C) >= 19
+%             header = C(11);
+%             fprintf(fid,'%s\t%s\t%d\t%d\t%s\n', flds(i).name, files(f(j)).name, plate, replicates(plate_red), header{h});
+%         end
+%         
+%         if length(C) >= 29
+%             header = C(21);
+%             fprintf(fid,'%s\t%s\t%d\t%d\t%s\n', flds(i).name, files(f(j)).name, plate, replicates(plate_red), header{h});
+%         end
+%         
+%         clear C;
+%     end
+%     
+% end
+% fclose(fid);
 
 % TIMEPOINTS (2): The summary.txt file was processed manually to extract information about 1) Medium, 2) Date, 3) Timepoint.
 
 % TIMEPOINTS (3): Load in the new summary2.txt file
-[FILENAMES{end+1}, C] = read_data('importdata','./raw_data/summary2.txt', '\t');
+[FILENAMES{end+1}, C] = read_data('importdata','./raw_data/data_processing/summary2.txt', '\t');
 fields = regexp(C{1}, '\t', 'split');
 fields(end) = {'TMP'};
 
@@ -137,7 +137,7 @@ end
 
 % DATA (1): Go over all the data and save it properly
 
-flds = dir('./raw_data/Sceeningdeletionmutant_rawdata/');
+flds = dir('./raw_data/data_processing/Sceeningdeletionmutant_rawdata/');
 flds(1:3) = [];
 
 data = struct('plateid',[0], 'medium',{'x'},'plate',[0],'date',{'x'},'hour',{'x'},'timepoint',[0],'replicates',[0],'orfs',{'x'},'rows',[0],'cols',[0],'data',[0],'folder',{'x'}, 'file',{'x'},'header',{'x'});
@@ -161,7 +161,7 @@ for i = 1 : length(flds)
     
     inds_data = sub2ind([8 12], rows, cols);
     
-    files = dir(['./raw_data/Sceeningdeletionmutant_rawdata/' flds(i).name '/']);
+    files = dir(['./raw_data/data_processing/Sceeningdeletionmutant_rawdata/' flds(i).name '/']);
     
     f = find(cellfun(@isempty, strfind({files.name},'.dat'))==0);
     
@@ -169,7 +169,7 @@ for i = 1 : length(flds)
         
         inds2 = find(strcmp(files(f(j)).name, summary.File)); % FILE
         
-        filename = ['./raw_data/Sceeningdeletionmutant_rawdata/' flds(i).name '/' files(f(j)).name];
+        filename = ['./raw_data/data_processing/Sceeningdeletionmutant_rawdata/' flds(i).name '/' files(f(j)).name];
         
         [FILENAMES{end+1}, C] = read_data('textread',filename, '%s', 'delimiter', '\n');
         
@@ -299,47 +299,56 @@ n = sum(~isnan(data_matrix),3);
 % Average data for ORFs across all replicates
 data_matrix2 = nanmean(data_matrix,3);
 
-% Checks on ORFs
-all_orfs = clean_orf(all_orfs);
+%%%% -> BEGIN: printed to TXT and continued in python from this point on
 
-inds = find(~is_orf(all_orfs));
-disp(all_orfs(inds));
-
-all_orfs(inds) = [];
-data_matrix2(inds,:) = [];
-
-% MANUAL. Get the dataset ids corresponding to each dataset (in order)
-% Multiple datasets (e.g., replicates) may get the same id, which can then
-% be used to average them out
-hit_data_ids = [108 245 246]';
-
-%% Prepare final dataset
-
-% Match the dataset ids with the dataset standard names
-[~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
-hit_data_names = cell(size(hit_data_ids));
-hit_data_names(ind2) = datasets.standard_name(ind1);
-
-cai_becker_2006.orfs = all_orfs;
-cai_becker_2006.ph = hit_data_names;
-cai_becker_2006.data = data_matrix2;
-cai_becker_2006.dataset_ids = hit_data_ids;
-
-%% Save
-
-save('./cai_becker_2006.mat','cai_becker_2006');
-
-%% Print out
-
-fid = fopen('./cai_becker_2006.txt','w');
-write_matrix_file(fid, cai_becker_2006.orfs, cai_becker_2006.ph, cai_becker_2006.data);
+fid = fopen('processed_data.txt','w');
+col_headers = {'108','245','246'}';
+write_matrix_file(fid, all_orfs, col_headers, data_matrix2);
 fclose(fid);
 
-%% Save to DB (admin)
+%%%% -> END
 
-addpath(genpath('../../Private-Utils/'));
-if exist('save_data_to_db.m')
-    res = save_data_to_db(cai_becker_2006)
-end
+% % Checks on ORFs
+% all_orfs = clean_orf(all_orfs);
+% 
+% inds = find(~is_orf(all_orfs));
+% disp(all_orfs(inds));
+% 
+% all_orfs(inds) = [];
+% data_matrix2(inds,:) = [];
+% 
+% % MANUAL. Get the dataset ids corresponding to each dataset (in order)
+% % Multiple datasets (e.g., replicates) may get the same id, which can then
+% % be used to average them out
+% hit_data_ids = [108 245 246]';
+% 
+% %% Prepare final dataset
+% 
+% % Match the dataset ids with the dataset standard names
+% [~,ind1,ind2] = intersect(datasets.id, hit_data_ids);
+% hit_data_names = cell(size(hit_data_ids));
+% hit_data_names(ind2) = datasets.standard_name(ind1);
+% 
+% cai_becker_2006.orfs = all_orfs;
+% cai_becker_2006.ph = hit_data_names;
+% cai_becker_2006.data = data_matrix2;
+% cai_becker_2006.dataset_ids = hit_data_ids;
+% 
+% %% Save
+% 
+% save('./cai_becker_2006.mat','cai_becker_2006');
+% 
+% %% Print out
+% 
+% fid = fopen('./cai_becker_2006.txt','w');
+% write_matrix_file(fid, cai_becker_2006.orfs, cai_becker_2006.ph, cai_becker_2006.data);
+% fclose(fid);
+% 
+% %% Save to DB (admin)
+% 
+% addpath(genpath('../../Private-Utils/'));
+% if exist('save_data_to_db.m')
+%     res = save_data_to_db(cai_becker_2006)
+% end
 
 end
