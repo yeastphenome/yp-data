@@ -30,59 +30,59 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[16]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/mmc2.xlsx', sheet_name='Table S1', skiprows=1)
 
 
-# In[17]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[18]:
+# In[7]:
 
 
 original_data.head()
 
 
-# In[19]:
+# In[8]:
 
 
 original_data['orf'] = original_data['ORF'].astype(str)
 
 
-# In[20]:
+# In[9]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[22]:
+# In[10]:
 
 
 typo_fixes = {'YOLO57W':'YOL057W','YBRF182C-A':'YBR182C-A', 'YJL206-A': 'YJL206C-A',
               'YKLO72W':'YKL072W','YOLO62C':'YOL062C','YLR287-A':'YLR287C-A'}
 
 
-# In[23]:
+# In[11]:
 
 
 for typo in typo_fixes.keys():
     original_data.loc[original_data['orf']==typo, 'orf'] = typo_fixes[typo]
 
 
-# In[24]:
+# In[12]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[25]:
+# In[13]:
 
 
 # Make sure everything translated ok
@@ -90,31 +90,50 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[26]:
+# In[14]:
 
 
 original_data['data'] = original_data['Growth with clogger (AU)'] / original_data['Growth with control (mCherry) (AU)']
 
 
-# In[27]:
+# In[15]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[28]:
+# In[16]:
 
 
 original_data = original_data[['data']].copy()
 
 
-# In[29]:
+# In[17]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[30]:
+# In[18]:
+
+
+original_data.shape
+
+
+# In[20]:
+
+
+# Remove essential genes
+essential_orfs = original_data.index[is_essential(original_data.index.values)]
+
+
+# In[23]:
+
+
+original_data.drop(index=essential_orfs, inplace=True)
+
+
+# In[24]:
 
 
 original_data.shape
@@ -122,20 +141,20 @@ original_data.shape
 
 # # Prepare the final dataset
 
-# In[31]:
+# In[25]:
 
 
 data = original_data.copy()
 
 
-# In[32]:
+# In[26]:
 
 
 dataset_ids = [11821]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[33]:
+# In[27]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -144,7 +163,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[34]:
+# In[28]:
 
 
 data.head()
@@ -152,7 +171,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[35]:
+# In[29]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -162,7 +181,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[36]:
+# In[30]:
 
 
 data['gene_id'] = gene_ids
@@ -171,7 +190,7 @@ data['gene_id'] = data['gene_id'].astype(int)
 data = data.reset_index().set_index(['gene_id','orf'])
 
 
-# In[37]:
+# In[31]:
 
 
 data.head()
@@ -179,13 +198,13 @@ data.head()
 
 # # Normalize
 
-# In[38]:
+# In[32]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[39]:
+# In[33]:
 
 
 # Assign proper column names
@@ -195,14 +214,14 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[40]:
+# In[34]:
 
 
 data_norm[data.isnull()] = np.nan
 data_all = data.join(data_norm)
 
 
-# In[41]:
+# In[35]:
 
 
 data_all.head()
@@ -210,7 +229,7 @@ data_all.head()
 
 # # Print out
 
-# In[42]:
+# In[36]:
 
 
 for f in ['value','valuez']:
@@ -222,22 +241,16 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[43]:
+# In[37]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[44]:
+# In[38]:
 
 
 save_data_to_db(data_all, paper_pmid)
-
-
-# In[45]:
-
-
-data_all.shape
 
 
 # In[ ]:
