@@ -30,45 +30,45 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[8]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/chan_zheng_2000_HAP.xlsx', sheet_name='Sheet1', header=None)
 
 
-# In[9]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[10]:
+# In[7]:
 
 
 original_data.head()
 
 
-# In[11]:
+# In[8]:
 
 
 original_data['orf'] = original_data[0].astype(str)
 
 
-# In[12]:
+# In[9]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[13]:
+# In[10]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[14]:
+# In[11]:
 
 
 # Make sure everything translated ok
@@ -76,52 +76,64 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[15]:
+# In[12]:
 
 
 original_data['data'] = pd.to_numeric(original_data[1], errors='coerce')
 
 
-# In[16]:
+# In[13]:
+
+
+original_data['data'] = original_data['data'].apply(lambda x: np.log10(x))
+
+
+# In[14]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[17]:
+# In[15]:
 
 
 original_data = original_data[['data']].copy()
 
 
-# In[18]:
+# In[16]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[19]:
+# In[17]:
 
 
 original_data.shape
 
 
+# In[18]:
+
+
+original_data.head()
+
+
 # # Prepare the final dataset
 
-# In[20]:
+# In[19]:
 
 
 data = original_data.copy()
 
 
-# In[21]:
+# In[20]:
 
 
 dataset_ids = [1]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[22]:
+# In[21]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -130,7 +142,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[23]:
+# In[22]:
 
 
 data.head()
@@ -138,7 +150,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[24]:
+# In[23]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -148,7 +160,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[25]:
+# In[24]:
 
 
 data['gene_id'] = gene_ids
@@ -161,13 +173,13 @@ data.head()
 
 # # Normalize
 
-# In[26]:
+# In[25]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=False)
 
 
-# In[27]:
+# In[26]:
 
 
 # Assign proper column names
@@ -177,7 +189,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[28]:
+# In[27]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -188,7 +200,7 @@ data_all.head()
 
 # # Print out
 
-# In[29]:
+# In[28]:
 
 
 for f in ['value','valuez']:
@@ -200,13 +212,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[30]:
+# In[29]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[31]:
+# In[30]:
 
 
 save_data_to_db(data_all, paper_pmid)
