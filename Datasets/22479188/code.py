@@ -30,45 +30,45 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[29]:
+# In[23]:
 
 
 original_data = pd.read_excel('raw_data/hits.xlsx', sheet_name='Sheet1')
 
 
-# In[30]:
+# In[24]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[31]:
+# In[25]:
 
 
 original_data.head()
 
 
-# In[32]:
+# In[26]:
 
 
 original_data['orf'] = original_data['NAME'].astype(str)
 
 
-# In[33]:
+# In[27]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[34]:
+# In[28]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[35]:
+# In[29]:
 
 
 # Make sure everything translated ok
@@ -76,37 +76,37 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[36]:
+# In[30]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[37]:
+# In[31]:
 
 
 original_data = original_data[['U3','Tef5','Rpl31b','Tub3','Ubc13']].copy()
 
 
-# In[38]:
+# In[32]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[39]:
+# In[33]:
 
 
 original_data.shape
 
 
-# In[41]:
+# In[34]:
 
 
 original_data[original_data.isnull()] = 1
 
 
-# In[42]:
+# In[35]:
 
 
 original_data.head()
@@ -114,44 +114,44 @@ original_data.head()
 
 # # Load & process tested strains
 
-# In[43]:
+# In[36]:
 
 
 tested = pd.read_csv('raw_data/no_hits.txt', sep='\t')
 
 
-# In[44]:
+# In[37]:
 
 
 tested.head()
 
 
-# In[45]:
+# In[38]:
 
 
 tested['orf'] = tested['Systematic name'].astype(str)
 
 
-# In[46]:
+# In[39]:
 
 
 tested['orf'] = clean_orf(tested['orf'])
 
 
-# In[47]:
+# In[40]:
 
 
 tested.loc[tested['orf']=='YLR287-A','orf'] = 'YLR287C-A'
 tested.loc[tested['orf']=='YCRO54C','orf'] = 'YCR054C'
 
 
-# In[48]:
+# In[41]:
 
 
 tested['orf'] = translate_sc(tested['orf'], to='orf')
 
 
-# In[49]:
+# In[42]:
 
 
 # Make sure everything translated ok
@@ -159,47 +159,60 @@ t = looks_like_orf(tested['orf'])
 print(tested.loc[~t,])
 
 
-# In[50]:
+# In[43]:
 
 
 tested = tested.loc[t,:]
 
 
-# In[51]:
+# In[44]:
 
 
 tested_orfs = tested['orf'].unique()
 
 
-# In[52]:
+# In[45]:
 
 
 missing = [orf for orf in original_data.index.values if orf not in tested_orfs]
 missing
 
 
-# In[53]:
+# In[46]:
 
 
 original_data = original_data.reindex(index=tested_orfs, fill_value=1)
 
 
+# In[47]:
+
+
+# Remove the essential genes
+essential_orfs = original_data.index.values[is_essential(original_data.index.values)]
+
+
+# In[49]:
+
+
+original_data.drop(index=essential_orfs, inplace=True)
+
+
 # # Prepare the final dataset
 
-# In[54]:
+# In[50]:
 
 
 data = original_data.copy()
 
 
-# In[55]:
+# In[51]:
 
 
 dataset_ids = [16311, 16315, 16312, 16314, 16313]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[56]:
+# In[52]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -208,7 +221,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[57]:
+# In[53]:
 
 
 data.head()
@@ -216,7 +229,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[58]:
+# In[54]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -226,7 +239,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[59]:
+# In[55]:
 
 
 data['gene_id'] = gene_ids
@@ -239,13 +252,13 @@ data.head()
 
 # # Normalize
 
-# In[60]:
+# In[56]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[61]:
+# In[57]:
 
 
 # Assign proper column names
@@ -255,7 +268,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[62]:
+# In[58]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -266,7 +279,7 @@ data_all.head()
 
 # # Print out
 
-# In[63]:
+# In[59]:
 
 
 for f in ['value','valuez']:
@@ -278,16 +291,22 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[64]:
+# In[60]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[65]:
+# In[61]:
 
 
 save_data_to_db(data_all, paper_pmid)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
