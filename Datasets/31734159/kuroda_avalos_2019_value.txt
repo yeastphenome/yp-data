@@ -1,4 +1,4 @@
-orf	hap a | growth (culture turbidity) | isobutanol [1.4%] | SC | Kuroda K~Avalos J, 2019	hap a | growth (culture turbidity) | standard | SC | Kuroda K~Avalos J, 2019
+orf	hap a | growth (culture turbidity) | standard | SC | Kuroda K~Avalos J, 2019	hap a | growth (culture turbidity) | isobutanol [1.4%] | SC | Kuroda K~Avalos J, 2019
 YAL012W	6.403757456	0.26642441860465116
 YAL016W	6.279963888899999	0.457536682970209
 YAL024C	6.962224676	0.29117647058823526
