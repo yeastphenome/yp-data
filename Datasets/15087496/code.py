@@ -30,45 +30,45 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[36]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/05888Table2.xlsx', sheet_name='Total')
 
 
-# In[37]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[38]:
+# In[7]:
 
 
 original_data.head()
 
 
-# In[39]:
+# In[8]:
 
 
 original_data['orf'] = original_data['ORF'].astype(str)
 
 
-# In[40]:
+# In[9]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[41]:
+# In[10]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[42]:
+# In[11]:
 
 
 # Make sure everything translated ok
@@ -76,28 +76,29 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[43]:
+# In[12]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[44]:
+# In[13]:
 
 
 original_data1 = original_data.loc[:,['CHP','Diamide','H2O2','LoaOOH','Menadione']].copy()
 original_data2 = original_data.loc[:,['Unnamed: 4','Unnamed: 6','Unnamed: 8','Unnamed: 10','Unnamed: 12']].copy()
 
 
-# In[45]:
+# In[14]:
 
 
-data_switch = {'S': -1, 'R': 1}
+data_switch = {'S': -1, 'R': 1, 'nan': 0, 'NAN': 0}
 for c in original_data1.columns:
-    original_data1[c] = original_data1[c].apply(lambda x: data_switch[x] if x in data_switch.keys() else 0)
+    original_data1[c] = original_data1[c].apply(lambda x: str(x).strip().upper())
+    original_data1[c] = original_data1[c].apply(lambda x: data_switch[x] if x in data_switch.keys() else np.nan)
 
 
-# In[46]:
+# In[15]:
 
 
 original_data2 = original_data2.apply(pd.to_numeric, axis=1, errors='coerce')
@@ -105,25 +106,25 @@ original_data2 = original_data2 + 1
 original_data2[original_data2.isnull()] = 1
 
 
-# In[47]:
+# In[16]:
 
 
 original_data = pd.DataFrame(index=original_data1.index, columns=original_data1.columns, data=np.multiply(original_data1.values, original_data2.values) )
 
 
-# In[48]:
+# In[17]:
 
 
 original_data.head()
 
 
-# In[49]:
+# In[18]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[50]:
+# In[19]:
 
 
 original_data.shape
@@ -131,20 +132,20 @@ original_data.shape
 
 # # Prepare the final dataset
 
-# In[51]:
+# In[20]:
 
 
 data = original_data.copy()
 
 
-# In[52]:
+# In[21]:
 
 
 dataset_ids = [4959, 4957, 488, 4954, 4953]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[53]:
+# In[22]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -153,7 +154,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[54]:
+# In[23]:
 
 
 data.head()
@@ -161,7 +162,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[55]:
+# In[24]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -171,7 +172,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[56]:
+# In[25]:
 
 
 data['gene_id'] = gene_ids
@@ -184,13 +185,13 @@ data.head()
 
 # # Normalize
 
-# In[57]:
+# In[26]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=False)
 
 
-# In[58]:
+# In[27]:
 
 
 # Assign proper column names
@@ -200,7 +201,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[59]:
+# In[28]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -211,7 +212,7 @@ data_all.head()
 
 # # Print out
 
-# In[60]:
+# In[29]:
 
 
 for f in ['value','valuez']:
@@ -223,13 +224,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[61]:
+# In[30]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[62]:
+# In[31]:
 
 
 save_data_to_db(data_all, paper_pmid)
