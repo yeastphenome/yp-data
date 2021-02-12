@@ -30,51 +30,58 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[12]:
+# In[21]:
 
 
 original_data = pd.read_csv('raw_data/hits.txt', header=None, sep='\t')
 
 
-# In[13]:
+# In[22]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[14]:
+# In[23]:
 
 
 original_data.head()
 
 
-# In[15]:
+# In[24]:
 
 
 original_data['gene'] = original_data[0].astype(str)
 
 
-# In[16]:
+# In[25]:
 
 
 original_data['gene'] = original_data['gene'].apply(lambda x: x.split(' ')[0])
 
 
-# In[17]:
+# In[26]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['gene'] = clean_genename(original_data['gene'])
 
 
-# In[18]:
+# In[27]:
+
+
+fixes = {'TCI1': 'YDR161W', 'SDF1': 'YPR040W'}
+original_data['gene'] = original_data['gene'].apply(lambda x: fixes[x] if x in fixes.keys() else x)
+
+
+# In[28]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['gene'], to='orf')
 
 
-# In[19]:
+# In[29]:
 
 
 # Make sure everything translated ok
@@ -82,37 +89,37 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[20]:
+# In[30]:
 
 
 original_data = original_data.loc[t,:]
 
 
-# In[21]:
+# In[31]:
 
 
 original_data['data'] = pd.to_numeric(original_data[1], errors='coerce')
 
 
-# In[22]:
+# In[32]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[23]:
+# In[33]:
 
 
 original_data = original_data[['data']].copy()
 
 
-# In[24]:
+# In[34]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[25]:
+# In[35]:
 
 
 original_data.shape
@@ -120,14 +127,14 @@ original_data.shape
 
 # # Load & process tested strains
 
-# In[26]:
+# In[37]:
 
 
 files = ['Res Gen diploid knock01.xlsx','Res Gen diploid knockouts02.xlsx']
 sheets = ['Res Gen diploid knock01.txt','Res Gen diploid knockouts02.txt']
 
 
-# In[33]:
+# In[38]:
 
 
 tested_list = []
@@ -153,38 +160,38 @@ for ixf, f in enumerate(files):
     tested_list.append(tested[['orf']])
 
 
-# In[34]:
+# In[39]:
 
 
 tested = pd.concat(tested_list, axis=0)
 
 
-# In[35]:
+# In[40]:
 
 
 tested.head()
 
 
-# In[36]:
+# In[41]:
 
 
 tested_orfs = tested['orf'].unique()
 
 
-# In[37]:
+# In[42]:
 
 
 missing = [orf for orf in original_data.index.values if orf not in tested_orfs]
 missing
 
 
-# In[38]:
+# In[43]:
 
 
 tested_orfs = list(tested_orfs) + missing
 
 
-# In[39]:
+# In[44]:
 
 
 original_data = original_data.reindex(index=tested_orfs, fill_value=0)
@@ -192,20 +199,20 @@ original_data = original_data.reindex(index=tested_orfs, fill_value=0)
 
 # # Prepare the final dataset
 
-# In[40]:
+# In[45]:
 
 
 data = original_data.copy()
 
 
-# In[41]:
+# In[46]:
 
 
 dataset_ids = [480]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[42]:
+# In[47]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -214,7 +221,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[43]:
+# In[48]:
 
 
 data.head()
@@ -222,7 +229,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[44]:
+# In[49]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -232,7 +239,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[45]:
+# In[50]:
 
 
 data['gene_id'] = gene_ids
@@ -245,13 +252,13 @@ data.head()
 
 # # Normalize
 
-# In[46]:
+# In[51]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[47]:
+# In[52]:
 
 
 # Assign proper column names
@@ -261,7 +268,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[48]:
+# In[53]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -272,7 +279,7 @@ data_all.head()
 
 # # Print out
 
-# In[49]:
+# In[54]:
 
 
 for f in ['value','valuez']:
@@ -284,13 +291,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[50]:
+# In[55]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[51]:
+# In[56]:
 
 
 save_data_to_db(data_all, paper_pmid)
