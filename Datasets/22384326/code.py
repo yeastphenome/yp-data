@@ -30,59 +30,59 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[8]:
+# In[40]:
 
 
 original_data = pd.read_excel('raw_data/TableS1.xlsx', sheet_name='Table 1', skiprows=2)
 
 
-# In[9]:
+# In[41]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[10]:
+# In[42]:
 
 
 original_data.head()
 
 
-# In[13]:
+# In[43]:
 
 
 orfs = pd.concat([original_data.iloc[:,1], 
-                  original_data.iloc[:,4],
-                  original_data.iloc[:,7]], axis=0)
+                  original_data.iloc[:,5],
+                  original_data.iloc[:,9]], axis=0)
 
 
-# In[18]:
+# In[44]:
 
 
 original_data = pd.DataFrame(data={'orf': orfs})
 
 
-# In[20]:
+# In[45]:
 
 
 original_data['orf'] = original_data['orf'].astype(str)
 
 
-# In[21]:
+# In[46]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[23]:
+# In[47]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'].values, to='orf')
 
 
-# In[24]:
+# In[48]:
 
 
 # Make sure everything translated ok
@@ -90,37 +90,37 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[25]:
+# In[50]:
 
 
 original_data = original_data.loc[t,:]
 
 
-# In[26]:
+# In[51]:
 
 
 original_data['data'] = -1
 
 
-# In[27]:
+# In[52]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[28]:
+# In[53]:
 
 
 original_data = original_data[['data']].copy()
 
 
-# In[29]:
+# In[54]:
 
 
 original_data = original_data.groupby(original_data.index).mean()
 
 
-# In[30]:
+# In[55]:
 
 
 original_data.shape
@@ -128,43 +128,43 @@ original_data.shape
 
 # # Load & process tested strains
 
-# In[39]:
+# In[57]:
 
 
 tested = pd.read_excel('raw_data/Homo_diploids_101501.xlsx', sheet_name='Homo_diploids_101501.txt', skiprows=1)
 
 
-# In[40]:
+# In[58]:
 
 
 tested.head()
 
 
-# In[41]:
+# In[59]:
 
 
 tested['orf'] = tested['ORF name'].astype(str)
 
 
-# In[42]:
+# In[60]:
 
 
 tested['orf'] = clean_orf(tested['orf'])
 
 
-# In[43]:
+# In[61]:
 
 
 tested.loc[tested['orf']=='YELOO1C','orf'] = 'YEL001C'
 
 
-# In[44]:
+# In[62]:
 
 
 tested['orf'] = translate_sc(tested['orf'], to='orf')
 
 
-# In[45]:
+# In[63]:
 
 
 # Make sure everything translated ok
@@ -172,26 +172,26 @@ t = looks_like_orf(tested['orf'])
 print(tested.loc[~t,])
 
 
-# In[46]:
+# In[64]:
 
 
 tested = tested.loc[t,:]
 
 
-# In[47]:
+# In[65]:
 
 
 tested_orfs = tested['orf'].unique()
 
 
-# In[48]:
+# In[66]:
 
 
 missing = [orf for orf in original_data.index.values if orf not in tested_orfs]
 missing
 
 
-# In[49]:
+# In[67]:
 
 
 original_data = original_data.reindex(index=tested_orfs, fill_value=0)
@@ -199,20 +199,20 @@ original_data = original_data.reindex(index=tested_orfs, fill_value=0)
 
 # # Prepare the final dataset
 
-# In[50]:
+# In[68]:
 
 
 data = original_data.copy()
 
 
-# In[51]:
+# In[69]:
 
 
 dataset_ids = [16136]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[52]:
+# In[70]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -221,7 +221,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[53]:
+# In[71]:
 
 
 data.head()
@@ -229,7 +229,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[54]:
+# In[72]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -239,7 +239,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[55]:
+# In[73]:
 
 
 data['gene_id'] = gene_ids
@@ -252,13 +252,13 @@ data.head()
 
 # # Normalize
 
-# In[56]:
+# In[74]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[57]:
+# In[75]:
 
 
 # Assign proper column names
@@ -268,7 +268,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[58]:
+# In[76]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -279,7 +279,7 @@ data_all.head()
 
 # # Print out
 
-# In[59]:
+# In[77]:
 
 
 for f in ['value','valuez']:
@@ -291,13 +291,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[60]:
+# In[78]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[61]:
+# In[79]:
 
 
 save_data_to_db(data_all, paper_pmid)
