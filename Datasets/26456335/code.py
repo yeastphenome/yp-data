@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[97]:
+# In[1]:
 
 
 get_ipython().run_line_magic('run', '../yp_utils.py')
@@ -32,20 +32,20 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[73]:
+# In[5]:
 
 
 original_data = pd.read_excel('raw_data/rls-summary-for-Anastasia-Baryshnikova-all-BY-haploid-deletion-YPD-30C-mm042018.xlsx', 
                             sheet_name='rls')
 
 
-# In[74]:
+# In[6]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[75]:
+# In[7]:
 
 
 # Fix a typo
@@ -53,14 +53,14 @@ original_data.loc[original_data['set_background']=='BY4,742','set_background'] =
 original_data['set_mating_type'] = original_data['set_mating_type'].str.lower()
 
 
-# In[76]:
+# In[8]:
 
 
 # Only keep BY4742 (systematic screen)
 original_data = original_data.loc[original_data['set_background'] == 'BY4742',:]
 
 
-# In[77]:
+# In[9]:
 
 
 # Only keep single mutants
@@ -68,39 +68,33 @@ original_data['set_genotype'] = original_data['set_genotype'].str.strip()
 original_data = original_data.loc[~original_data['set_genotype'].str.contains(' '),:]
 
 
-# In[78]:
+# In[10]:
 
 
 original_data.head()
 
 
-# In[79]:
+# In[11]:
 
 
 original_data['genes'] = original_data['set_genotype'].astype(str)
 
 
-# In[80]:
+# In[12]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['genes'] = clean_genename(original_data['genes'])
 
 
-# In[81]:
+# In[13]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['genes'], to='orf')
 
 
-# In[82]:
-
-
-original_data['set_name']
-
-
-# In[83]:
+# In[14]:
 
 
 # Make sure everything translated ok
@@ -108,13 +102,13 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,['set_name','genes','orf']])
 
 
-# In[84]:
+# In[15]:
 
 
 original_data.loc[~t,'orf'] = original_data.loc[~t,'set_name']
 
 
-# In[85]:
+# In[16]:
 
 
 manual_fixes = {'rpl20b':'YOR312C','sus1':'YBR111W-A','afg3::KanMX':'YER017C',
@@ -126,7 +120,7 @@ for typo in manual_fixes.keys():
     original_data.loc[original_data['orf']==typo,'orf'] = manual_fixes[typo]
 
 
-# In[86]:
+# In[17]:
 
 
 # Make sure everything translated ok
@@ -134,25 +128,31 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,['set_name','genes','orf']])
 
 
-# In[87]:
+# In[18]:
 
 
 original_data = original_data.loc[t,:]
 
 
-# In[88]:
+# In[19]:
 
 
 original_data['rls'] = original_data['set_lifespans'].apply(lambda x: [int(t) for t in str(x).split(',')])
 
 
-# In[89]:
+# In[20]:
 
 
 original_data['ref_rls'] = original_data['ref_lifespans'].apply(lambda x: [int(t) for t in str(x).split(',')])
 
 
-# In[103]:
+# In[21]:
+
+
+# original_data.head()
+
+
+# In[22]:
 
 
 # Merge all raw measurements for all replicates
@@ -160,13 +160,13 @@ all_orfs = np.unique(original_data['orf'].values)
 original_data2 = pd.DataFrame(index=all_orfs, columns=['rls','ref_rls'])
 
 
-# In[118]:
+# In[23]:
 
 
 all_orfs.shape
 
 
-# In[107]:
+# In[24]:
 
 
 for orf in all_orfs:
@@ -175,51 +175,58 @@ for orf in all_orfs:
     original_data2.loc[orf,'ref_rls'] = list(itertools.chain.from_iterable(this['ref_rls']))
 
 
-# In[109]:
+# In[25]:
 
 
 original_data2['rls_num'] = original_data2['rls'].apply(lambda x: len(x))
 original_data2['ref_rls_num'] = original_data2['ref_rls'].apply(lambda x: len(x))
 
 
-# In[110]:
+# In[26]:
 
 
 original_data2['rls_mean'] = original_data2['rls'].apply(lambda x: np.nanmean(np.array(x)))
 original_data2['ref_rls_mean'] = original_data2['ref_rls'].apply(lambda x: np.nanmean(np.array(x)))
 
 
-# In[111]:
+# In[27]:
 
 
 original_data2['rls_ratio'] = original_data2['rls_mean'] / original_data2['ref_rls_mean']
 
 
-# In[114]:
+# In[28]:
 
 
-original_data2.loc[(original_data2['rls_num']<=5) & (original_data2['ref_rls_mean']<=5),'ratio'] = 1
+# % Only keep data with n > 5 (rest is unreliable)
+# % The authors subsequently retested these strains but the raw version of that data is
+# % (unfortunately) not recoverable. Only the published results.
+# % Since all but one of the published (most reliable) strains has n > 5,
+# % we've decided to set the n < 5 strains to 1 (instead of NaN) to indicate that they are
+# % likely neither short-lived nor long-lived (instead of "not tested")
+
+original_data2.loc[(original_data2['rls_num']<=5) & (original_data2['ref_rls_num']<=5),'rls_ratio'] = 1
 
 
-# In[115]:
+# In[29]:
 
 
 original_data2['data'] = original_data2['rls_ratio']
 
 
-# In[116]:
+# In[30]:
 
 
 original_data2 = original_data2[['data']].copy()
 
 
-# In[128]:
+# In[31]:
 
 
 original_data2.index.name='orf'
 
 
-# In[129]:
+# In[32]:
 
 
 original_data2.shape
@@ -227,20 +234,20 @@ original_data2.shape
 
 # # Prepare the final dataset
 
-# In[130]:
+# In[34]:
 
 
 data = original_data2.copy()
 
 
-# In[131]:
+# In[35]:
 
 
 dataset_ids = [696]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[132]:
+# In[36]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -249,7 +256,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[133]:
+# In[37]:
 
 
 data.head()
@@ -257,7 +264,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[134]:
+# In[38]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -267,7 +274,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[135]:
+# In[39]:
 
 
 data['gene_id'] = gene_ids
@@ -280,13 +287,13 @@ data.head()
 
 # # Normalize
 
-# In[136]:
+# In[40]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[137]:
+# In[41]:
 
 
 # Assign proper column names
@@ -296,7 +303,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[138]:
+# In[42]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -307,7 +314,7 @@ data_all.head()
 
 # # Print out
 
-# In[139]:
+# In[43]:
 
 
 for f in ['value','valuez']:
@@ -319,13 +326,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[140]:
+# In[44]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[141]:
+# In[45]:
 
 
 save_data_to_db(data_all, paper_pmid)
