@@ -1,2 +1,2 @@
-16513	het | growth (pooled culture, microarray) | periodic starvation | grape juice | Davey HM~Griffith GW, 2012
-16517	het | cell death (frequency of dead cells) | periodic starvation | grape juice | Davey HM~Griffith GW, 2012
+16513	het | growth (pooled culture, microarray) | nutrient starvation (48 h) | grape juice (Sunpride) | Davey HM~Griffith GW, 2012
+16517	het | chronological lifespan (relative abundance of dead cells) | nutrient starvation (7 d) | grape juice (Sunpride) | Davey HM~Griffith GW, 2012
