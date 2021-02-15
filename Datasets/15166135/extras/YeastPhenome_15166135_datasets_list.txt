@@ -1,0 +1,2 @@
+21846	hap a | growth (colony size) | caspofungin [0.1-5 ug/ml] | YPD | Lesage G~Bussey H, 2004
+21848	het | growth (colony size) | caspofungin [0.1-5 ug/ml] | YPD | Lesage G~Bussey H, 2004
