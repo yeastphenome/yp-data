@@ -1,0 +1,12 @@
+APD1	YBR151w	Protein of unknown function
+ATP1	YBL099w	Alpha subunit of the F1 sector of mitochondrial F1Fo ATP synthase
+ATP11	YNL315c	Molecular chaperone required for the assembly of alpha and beta subunits into the F1 sector of mitochondrial F1Fo ATP synthase
+ATP12	YJL180c	Assembly factor for F1 sector of mitochondrial F1Fo ATP synthase
+CLC1	YGR167w	Clathrin light chain
+NAT3	YPR131c	Catalytic subunit of the NatB N-terminal acetyltransferase
+OCH1	YGL038c	Mannosyltransferase of the cis-Golgi apparatus
+ROX3	YBL093c	Subunit of the RNA polymerase II mediator complex
+RPB9	YGL070c	RNA polymerase II subunit B12.6
+SSD1	YDR293c	Translational repressor
+SWI6	YLR182w	Transcription cofactor
+TIM18	YOR297c	Component of the mitochondrial TIM22 complex, involved in insertion of polytopic proteins into the inner membrane
