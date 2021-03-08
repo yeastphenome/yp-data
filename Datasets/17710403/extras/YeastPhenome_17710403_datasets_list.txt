@@ -1,0 +1,2 @@
+16688	hap a | growth (spot assay) | chlorpromazine [10 uM] | YPD, pH [8.0] | De Filippi L~Deloche O, 2007
+16689	hap a | growth (spot assay) | chlorpromazine [20 uM] | YPD, pH [8.0] | De Filippi L~Deloche O, 2007
