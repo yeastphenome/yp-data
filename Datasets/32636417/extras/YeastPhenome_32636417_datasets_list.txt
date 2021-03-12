@@ -1,0 +1,2 @@
+21879	het | growth (pooled culture, microarray) | Jawsamycin [IC30] | YPD + DMSO [2%] | Fu Y~Hoepfner D, 2020
+21880	hom | growth (pooled culture, microarray) | Jawsamycin [IC30] | YPD + DMSO [2%] | Fu Y~Hoepfner D, 2020
