@@ -1,0 +1,2 @@
+16702	hap ? | growth (culture turbidity) | pyrithione zinc [2.5-10 uM] | YPD + DMSO [2.5%] | Reeder NL~Saunders CW, 2011
+16703	hap ? | growth (culture turbidity) | zinc chloride [1.1-2.2 mM] | YPD + DMSO [2.5%] | Reeder NL~Saunders CW, 2011
