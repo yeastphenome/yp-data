@@ -1,0 +1,1 @@
+21873	hap a | growth (colony size) | methylglyoxal [30 mM] | YPD | Nomura W~Inoue Y, 2017
