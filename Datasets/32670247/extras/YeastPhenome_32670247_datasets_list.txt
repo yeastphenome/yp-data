@@ -1,0 +1,10 @@
+21852	hap a | growth (colony size) | FCCP [IC25] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21853	hap a | growth (colony size) | FCCP [LOAEL] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21854	hap a | growth (colony size) | 2,4-Dinitrophenol [IC25] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21855	hap a | growth (colony size) | 2,4-Dinitrophenol [LOAEL] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21856	hap a | growth (colony size) | NaF [IC25] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21857	hap a | growth (colony size) | NaF [LOAEL] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21858	hap a | growth (colony size) | hydrochloric acid [IC25] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21859	hap a | growth (colony size) | hydrochloric acid [LOAEL] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21860	hap a | growth (colony size) | sulfuric acid [IC25] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
+21861	hap a | growth (colony size) | sulfuric acid [LOAEL] | YPD + Ade [10mg/L] | Johnston NR~Strobel SA, 2020
