@@ -1,0 +1,6 @@
+21865	hom | growth (pooled culture, microarray) | drimenol [0.025 mg/ml] | YPD + DMSO | Edouarzin E~Vediyappan G, 2020
+21866	het | growth (pooled culture, microarray) | drimenol [0.025 mg/ml] | YPD + DMSO | Edouarzin E~Vediyappan G, 2020
+21869	het | growth (pooled culture, microarray) | drimenol [0.0375 mg/ml] | YPD + DMSO | Edouarzin E~Vediyappan G, 2020
+21870	hom | growth (pooled culture, microarray) | drimenol [0.0375 mg/ml] | YPD + DMSO | Edouarzin E~Vediyappan G, 2020
+21871	het | growth (pooled culture, microarray) | albicanol [0.05 mg/ml] | YPD + DMSO | Edouarzin E~Vediyappan G, 2020
+21872	hom | growth (pooled culture, microarray) | albicanol [0.05 mg/ml] | YPD + DMSO | Edouarzin E~Vediyappan G, 2020
