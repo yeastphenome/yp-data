@@ -106,22 +106,43 @@ original_data = original_data.groupby(original_data.index).mean()
 original_data.shape
 
 
+# In[18]:
+
+
+t
+
+
+# In[19]:
+
+
+# Remove essential genes (ts mutants)
+t = is_essential(original_data.index.values)
+print(original_data.loc[t.values,])
+
+
+# In[20]:
+
+
+original_data = original_data.loc[~t.values,]
+original_data.shape
+
+
 # # Prepare the final dataset
 
-# In[17]:
+# In[21]:
 
 
 data = original_data.copy()
 
 
-# In[18]:
+# In[22]:
 
 
 dataset_ids = [21849]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[19]:
+# In[23]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -130,7 +151,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[20]:
+# In[24]:
 
 
 data.head()
@@ -138,7 +159,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[21]:
+# In[25]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -148,7 +169,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[22]:
+# In[26]:
 
 
 data['gene_id'] = gene_ids
@@ -161,13 +182,13 @@ data.head()
 
 # # Normalize
 
-# In[23]:
+# In[27]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[24]:
+# In[28]:
 
 
 # Assign proper column names
@@ -177,7 +198,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[25]:
+# In[29]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -188,7 +209,7 @@ data_all.head()
 
 # # Print out
 
-# In[26]:
+# In[30]:
 
 
 for f in ['value','valuez']:
@@ -200,13 +221,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[27]:
+# In[31]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[28]:
+# In[32]:
 
 
 save_data_to_db(data_all, paper_pmid)
