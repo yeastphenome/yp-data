@@ -1,0 +1,2 @@
+16705	hap a | hemolysis | n-butanol [vapors] | blood agar | Shuster A~Rosenberg M, 2007
+21881	hap a | growth (spot assay) | n-butanol [vapors] | blood agar | Shuster A~Rosenberg M, 2007
