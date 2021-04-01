@@ -1,0 +1,24 @@
+ubc7Δ	Yes	Ubiquitin conjugating enzyme
+hul5Δ	Yes	Hect domain E3 ubiquitin-protein ligase
+cue1Δ	No	Recruiting the ubiquitin-conjugating enzyme Ubc7p to the ER
+ubx4Δ	No	UBX (ubiquitin regulatory X) domain-containing protein
+ubp14Δ	Yes	Ubiquitin-specific protease
+rpn10Δ	Yes	Non-ATPase base subunit of the 26S proteasome
+snc1Δ	Yes	v-SNARE involved in membrane fusion
+syn8Δ	Yes	Endosomal SNARE related to mammalian syntaxin 8
+erv46Δ	Yes	Localized to COPII-coated vesicles; membrane fusion
+prm9Δ	No	Involved in COPII binding
+erp1Δ	Yes	Localized to COPII-coated vesicles
+erp2Δ	Yes	Localized to COPII-coated vesicles
+pex22Δ	No	Putative peroxisomal membrane protein
+vps54Δ	No	Vacuolar Protein Sorting
+snx4Δ	Yes	Sorting nexin
+ssa1Δ	Yes	Member of heat shock protein 70 (hsp70) family
+cne1Δ	Yes	Calnexin; integral membrane ER chaperone
+bud14Δ	No	Involved in bud-site selection; A regulator of dynein
+ady3Δ	No	Interact with spindle pole body components
+lap4Δ	Yes	Vacuolar aminopeptidase
+pca1Δ	Yes	Cadmium transporting P-type ATPase
+yml089cΔ	No	Unknown
+yal045cΔ	No	Unknown
+ydr026cΔ	Yes	Protein of unknown function that may interact with ribosomes
