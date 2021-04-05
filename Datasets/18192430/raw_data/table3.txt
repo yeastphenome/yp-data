@@ -1,0 +1,41 @@
+Functiona	Gene(s)b
+Purine biosynthesis	ADE1, ADE2, ADE4, ADE5,7, ADE6, ADE8
+Stress response	RTS1
+Tryptophan biosynthesis	TRP3, TRP4, TRP5
+Amino acid metabolism	GCV1, GCV2
+Protein metabolism	DOA1, GCN1, UBP14
+ATP synthesis	ATP11, CUP5
+Sporulation	EMI5, RMD11
+Transcription	DAL81, RPA34, SNF12, SNF5, SSN8
+Secretion	GOS1, SSO1
+Gluconeogenesis	CAT8
+Meiosis	CBC2, UME6
+Chaperone regulator	HLJ1
+Chromatin structure	HHT2, SPT7
+mRNA splicing	LEA1, MUD1
+Zinc metabolism	IZH3
+Elongator complex subunit	IKI3
+Nitrogen transport	NPR2
+Glutathione biosynthesis	GSH1
+Mitochondrial function	YIA6
+Vacuolar acidification	TFP1, VMA4, VMA5, VMA10, VMA13, VMA21, VMA22, VPH2
+Methionine metabolism	CYS4, HOM2, HOM6, MUP1, MET17, MET31, SAM1, SAM2
+Protein binding	ATG19
+Phospholipid metabolism	DPL1
+Thiamine metabolism	THI2
+Oxidative stress response	MXR1
+Polyamine transport	TPO2
+Histone acetylation	SGF73
+Metal transporter degradation	TRE1
+Protein folding	ALF1
+ABC transporter	MDL2
+Fatty acid elongase	FEN1
+Fatty acid metabolism	SUR4
+Actin filament organization	SIW14
+Serine biosynthesis	SER33
+Nuclear fusion	VIK1
+Purine-cytosine transport	FCY22
+RNA polymerase II transcription factor	CUP9
+NADH kinase	POS5
+Enzyme regulator	RAI1
+Unknown	FMP49 , TED1, YHI9, YBR239C, YCL007C, YDR008C, YDR048C, YDR095C, YKL118W, YLR358C, YMR244W, YOL138C, YOL075C, YOR331C, YPR115W
