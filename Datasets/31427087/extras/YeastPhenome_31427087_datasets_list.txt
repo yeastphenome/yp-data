@@ -1,0 +1,2 @@
+16709	hap a | growth (colony size) | calcofluor white [50 ug/ml] | YPD | Zhao F~Han S, 2019
+16711	hap a | growth (colony size) | calcofluor white [500 ug/ml] | YPD | Zhao F~Han S, 2019
