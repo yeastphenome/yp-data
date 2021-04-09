@@ -1,0 +1,2 @@
+16663	hap a | growth (colony size) | AZC [0.6 mg/ml] | YPD | Babazadeh R~Nystrom T, 2019
+16664	hap a (post-SGA) | protein aggregates (Hsp104-GFP) | temperature [38 C], time [1.5 h] | None | Babazadeh R~Nystrom T, 2019
