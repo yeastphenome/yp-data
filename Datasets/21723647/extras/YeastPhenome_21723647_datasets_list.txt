@@ -1,0 +1,4 @@
+16634	hap ? | growth (pooled culture, microarray) | compound 3 | YPD | Bendaha H~Bellaoui M, 2011
+16635	hom | growth (pooled culture, microarray) | compound 6 | YPD | Bendaha H~Bellaoui M, 2011
+16636	het | growth (pooled culture, microarray) | compound 6 | YPD | Bendaha H~Bellaoui M, 2011
+16637	het | growth (pooled culture, microarray) | compound 3 | YPD | Bendaha H~Bellaoui M, 2011
