@@ -1,0 +1,2 @@
+21863	hap a | growth (colony size) | SDS [0.01-0.025%] | YPD | Zhao F~Han S, 2020
+21864	hap a | growth (colony size) | SDS [0.065-0.07%] | YPD | Zhao F~Han S, 2020
