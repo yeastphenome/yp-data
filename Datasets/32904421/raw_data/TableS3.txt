@@ -12,11 +12,11 @@ YBR179C FZO1 0.75 yes class I
 YBR251W MRPS5 0.75 yes class I
 YBR268W MRPL37 0.75 yes class I
 YBR282W MRPL27 1.00 yes class I
-YCL005W‐A VMA9 1.00 yes class I
+YCL005W-A VMA9 1.00 yes class I
 YCL007C 1.00 yes class I
 YCR003W MRPL32 1.00 yes class I
 YCR024C SLM5 1.00 yes class I
-YCR028C‐A RIM1 1.00 yes class I
+YCR028C-A RIM1 1.00 yes class I
 YCR071C IMG2 1.00 yes class I
 YDL067C COX9 1.00 yes class I
 YDL069C CBS1 0.75 yes class I
@@ -27,7 +27,7 @@ YDL185W VMA1 1.00 yes class I
 YDL198C GGC1 0.75 yes class I
 YDL202W MRPL11 0.75 yes class I
 YDR065W RRG1 1.00 yes class I
-YDR079C‐A TFB5 0.33 no class I
+YDR079C-A TFB5 0.33 no class I
 YDR079W PET100 1.00 yes class I
 YDR114C 1.00 yes class I
 YDR138W HPR1 0.25 yes class I
@@ -49,7 +49,7 @@ YDR477W SNF1 0.75 no class I
 YDR529C QCR7 0.75 yes class I
 YEL024W RIP1 1.00 yes class I
 YEL050C RML2 0.75 yes class I
-YEL059C‐A SOM1 0.67 yes class I
+YEL059C-A SOM1 0.67 yes class I
 YER014W HEM14 0.67 yes class I
 YER050C RSM18 1.00 yes class I
 YER058W PET117 0.75 yes class I
@@ -110,7 +110,7 @@ YKL169C 1.00 yes class I
 YKL170W MRPL38 1.00 yes class I
 YKL194C MST1 1.00 yes class I
 YKR006C MRPL13 1.00 yes class I
-YLL018C‐A COX19 1.00 yes class I
+YLL018C-A COX19 1.00 yes class I
 YLL027W ISA1 1.00 yes class I
 YLR038C COX12 1.00 yes class I
 YLR067C PET309 1.00 yes class I
@@ -120,7 +120,7 @@ YLR202C 1.00 yes class I
 YLR203C MSS51 1.00 yes class I
 YLR239C LIP2 0.75 yes class I
 YLR240W VPS34 0.75 yes class I
-YLR312W‐A MRPL15 1.00 yes class I
+YLR312W-A MRPL15 1.00 yes class I
 YLR368W MDM30 0.25 yes class I
 YLR396C VPS33 0.75 yes class I
 YLR447C VMA6 1.00 yes class I
@@ -194,7 +194,7 @@ YCR046C IMG1 1.00 no class II
 YDL032W 0.50 yes class II
 YDL040C NAT1 0.25 yes class II
 YDL063C SYO1 0.50 yes class II
-YDL133C‐A RPL41B 0.25 yes class II
+YDL133C-A RPL41B 0.25 yes class II
 YDL146W LDB17 0.50 yes class II
 YDL206W 0.25 yes class II
 YDR042C 0.50 yes class II
@@ -223,9 +223,9 @@ YGL240W DOC1 0.75 yes class II
 YGR157W CHO2 0.25 yes class II
 YGR174C CBP4 0.75 yes class II
 YGR183C QCR9 0.50 yes class II
-YHR050W‐A 0.33 yes class II
+YHR050W-A 0.33 yes class II
 YHR120W MSH1 1.00 yes class II
-YHR175W‐A 0.33 yes class II
+YHR175W-A 0.33 yes class II
 YIL012W 0.25 yes class II
 YIL041W GVP36 0.25 yes class II
 YJL027C 0.25 yes class II
@@ -282,11 +282,11 @@ YBR020W GAL1 0.00 yes class III
 YBR036C CSG2 0.25 no class III
 YBR097W VPS15 0.33 yes class III
 YCR053W THR4 0.00 yes class III
-YCR095W‐A 0.00 no class III
+YCR095W-A 0.00 no class III
 YDL041W 0.00 yes class III
 YDL042C SIR2 0.00 yes class III
 YDL090C RAM1 0.00 yes class III
-YDL160C‐A MHF2 0.00 yes class III
+YDL160C-A MHF2 0.00 yes class III
 YDR005C MAF1 0.00 no class III
 YDR076W RAD55 0.00 no class III
 YDR103W STE5 0.00 yes class III
@@ -321,7 +321,7 @@ YIR034C LYS1 0.00 no class III
 YJL088W ARG3 0.00 no class III
 YJL094C KHA1 0.00 no class III
 YJL095W BCK1 0.00 yes class III
-YJR005C‐A LSO1 0.00 yes class III
+YJR005C-A LSO1 0.00 yes class III
 YJR040W GEF1 0.50 no class III
 YJR086W STE18 0.00 yes class III
 YKL135C APL2 0.00 yes class III
@@ -337,7 +337,7 @@ YLR439W MRPL4 0.75 no class III
 YLR442C SIR3 0.00 yes class III
 YML008C ERG6 0.00 no class III
 YML022W APT1 0.00 no class III
-YMR001C‐A 0.00 no class III
+YMR001C-A 0.00 no class III
 YMR058W FET3 0.50 no class III
 YMR097C MTG1 0.75 yes class III
 YMR158W MRPS8 0.75 yes class III

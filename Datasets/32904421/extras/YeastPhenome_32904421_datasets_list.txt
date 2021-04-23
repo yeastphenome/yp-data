@@ -1,0 +1,4 @@
+21874	hap a | growth (colony size) | standard | YPG [3%] | Stenger M~Westermann B, 2020
+21875	hap a | growth (colony size) | EtBr [50 ug/ml] | YPD | Stenger M~Westermann B, 2020
+21876	hap a | growth (colony size) | loss + cytoduction of mtDNA | YPG [3%] | Stenger M~Westermann B, 2020
+21877	hap alpha (post-SGA) | expression of mtDNA (ARG8m) | None | SC - Arg | Stenger M~Westermann B, 2020
