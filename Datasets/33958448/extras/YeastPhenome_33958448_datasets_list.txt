@@ -1,0 +1,14 @@
+21889	hap a (post-SGA) | growth (colony size) | actinomycin D [20 uM] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21890	hap a (post-SGA) | growth (colony size) | benomyl [30 ug/ml] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21891	hap a (post-SGA) | growth (colony size) | Ps-341 [1300 uM] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21892	hap a (post-SGA) | growth (colony size) | caspofungin [0.1 ug/ml] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21893	hap a (post-SGA) | growth (colony size) | concanamycin A [100 nM] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21894	hap a (post-SGA) | growth (colony size) | cycloheximide [0.1 ug/ml] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21895	hap a (post-SGA) | growth (colony size) | fluconazole [16 ug/ml] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21896	hap a (post-SGA) | growth (colony size) | galactose [2%] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21897	hap a (post-SGA) | growth (colony size) | geldanamycin [10 uM] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21898	hap a (post-SGA) | growth (colony size) | MMS [0.01%] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21899	hap a (post-SGA) | growth (colony size) | monensin [50 ug/ml] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21900	hap a (post-SGA) | growth (colony size) | rapamycin [100 nM] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21901	hap a (post-SGA) | growth (colony size) | sorbitol [1 M] | SGA final selection medium | Costanzo M~Andrews B, 2021
+21902	hap a (post-SGA) | growth (colony size) | tunicamycin [1 ug/ml] | SGA final selection medium | Costanzo M~Andrews B, 2021
