@@ -1,0 +1,13 @@
+21906	hom | growth (pooled culture, microarray) | lanthanum(3+) [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21908	hom | growth (pooled culture, microarray) | praseodymium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21909	hom | growth (pooled culture, microarray) | neodymium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21910	hom | growth (pooled culture, microarray) | samarium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21911	hom | growth (pooled culture, microarray) | europium(3+) [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21912	hom | growth (pooled culture, microarray) | gadolinium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21913	hom | growth (pooled culture, microarray) | dysprosium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21914	hom | growth (pooled culture, microarray) | holmium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21915	hom | growth (pooled culture, microarray) | thulium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21916	hom | growth (pooled culture, microarray) | ytterbium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21917	hom | growth (pooled culture, microarray) | lutetium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21918	hom | growth (pooled culture, microarray) | terbium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
+21919	hom | growth (pooled culture, microarray) | erbium [IC20] | YPD | Pallares RM~Abergel RJ, 2021
