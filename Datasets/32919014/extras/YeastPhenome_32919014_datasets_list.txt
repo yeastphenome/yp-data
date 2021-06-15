@@ -1,0 +1,32 @@
+21882	hom | growth (pooled culture, barseq) | propiconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21883	hom | growth (pooled culture, barseq) | penconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21884	hom | growth (pooled culture, barseq) | tebuconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21885	hom | growth (pooled culture, barseq) | flusilazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21886	hom | growth (pooled culture, barseq) | epoxiconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21921	hom | growth (pooled culture, barseq) | epoxiconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21922	hom | growth (pooled culture, barseq) | epoxiconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21923	hom | growth (pooled culture, barseq) | penconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21924	hom | growth (pooled culture, barseq) | penconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21925	hom | growth (pooled culture, barseq) | propiconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21926	hom | growth (pooled culture, barseq) | propiconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21927	hom | growth (pooled culture, barseq) | flusilazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21928	hom | growth (pooled culture, barseq) | flusilazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21929	hom | growth (pooled culture, barseq) | tebuconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21930	hom | growth (pooled culture, barseq) | tebuconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21931	hom | growth (pooled culture, barseq) | standard | YPD + DMSO | Guan M~Zhang X, 2020
+21934	het | growth (pooled culture, barseq) | standard | YPD + DMSO | Guan M~Zhang X, 2020
+21935	het | growth (pooled culture, barseq) | epoxiconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21936	het | growth (pooled culture, barseq) | epoxiconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21937	het | growth (pooled culture, barseq) | epoxiconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21938	het | growth (pooled culture, barseq) | flusilazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21939	het | growth (pooled culture, barseq) | flusilazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21940	het | growth (pooled culture, barseq) | flusilazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21941	het | growth (pooled culture, barseq) | penconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21942	het | growth (pooled culture, barseq) | penconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21943	het | growth (pooled culture, barseq) | penconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21944	het | growth (pooled culture, barseq) | propiconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21945	het | growth (pooled culture, barseq) | propiconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21946	het | growth (pooled culture, barseq) | propiconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
+21947	het | growth (pooled culture, barseq) | tebuconazole [IC10] | YPD + DMSO | Guan M~Zhang X, 2020
+21948	het | growth (pooled culture, barseq) | tebuconazole [IC20] | YPD + DMSO | Guan M~Zhang X, 2020
+21949	het | growth (pooled culture, barseq) | tebuconazole [IC50] | YPD + DMSO | Guan M~Zhang X, 2020
