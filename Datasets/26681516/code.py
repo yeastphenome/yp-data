@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[5]:
 
 
 get_ipython().run_line_magic('run', '../yp_utils.py')
@@ -9,20 +9,20 @@ get_ipython().run_line_magic('run', '../yp_utils.py')
 
 # # Initial setup
 
-# In[2]:
+# In[6]:
 
 
 paper_pmid = 26681516
 paper_name = 'worley_capaldi_2015' 
 
 
-# In[3]:
+# In[7]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['dataset_id', 'name'])
 
 
-# In[4]:
+# In[8]:
 
 
 datasets.set_index('dataset_id', inplace=True)
@@ -30,45 +30,45 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[5]:
+# In[9]:
 
 
 original_data = pd.read_excel('raw_data/TableS1.xlsx', sheet_name='Full Screen 20min 0.375M KCl')
 
 
-# In[6]:
+# In[10]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[7]:
+# In[11]:
 
 
 original_data.head()
 
 
-# In[11]:
+# In[12]:
 
 
 original_data['orf'] = original_data['Standard '].astype(str)
 
 
-# In[12]:
+# In[13]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[13]:
+# In[14]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[14]:
+# In[15]:
 
 
 # Make sure everything translated ok
@@ -76,16 +76,10 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[15]:
-
-
-original_data.loc[original_data['orf']=='YLR287-A','orf'] = 'YLR287C-A'
-
-
 # In[16]:
 
 
-original_data['data'] = pd.to_numeric(original_data['Normalized Fam-Joe'], errors='coerce')
+original_data.loc[original_data['orf']=='YLR287-A','orf'] = 'YLR287C-A'
 
 
 # In[17]:
@@ -97,16 +91,22 @@ original_data.set_index('orf', inplace=True)
 # In[18]:
 
 
-original_data = original_data[['data']].copy()
+data_cols = ['Raw Fam (Nsr1)','Raw Joe (Pex6)','Normalized Fam-Joe']
 
 
 # In[19]:
 
 
-original_data = original_data.groupby(original_data.index).mean()
+original_data = original_data[data_cols].copy()
 
 
 # In[20]:
+
+
+original_data = original_data.groupby(original_data.index).mean()
+
+
+# In[21]:
 
 
 original_data.shape
@@ -114,20 +114,20 @@ original_data.shape
 
 # # Prepare the final dataset
 
-# In[21]:
+# In[22]:
 
 
 data = original_data.copy()
 
 
-# In[22]:
+# In[23]:
 
 
-dataset_ids = [21888]
+dataset_ids = [21888,21932, 21933]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[23]:
+# In[24]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -136,7 +136,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[24]:
+# In[25]:
 
 
 data.head()
@@ -144,7 +144,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[25]:
+# In[26]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -154,7 +154,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[26]:
+# In[27]:
 
 
 data['gene_id'] = gene_ids
@@ -167,13 +167,13 @@ data.head()
 
 # # Normalize
 
-# In[27]:
+# In[28]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[28]:
+# In[29]:
 
 
 # Assign proper column names
@@ -183,7 +183,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[29]:
+# In[30]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -194,7 +194,7 @@ data_all.head()
 
 # # Print out
 
-# In[30]:
+# In[31]:
 
 
 for f in ['value','valuez']:
@@ -206,13 +206,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[31]:
+# In[32]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[32]:
+# In[33]:
 
 
 save_data_to_db(data_all, paper_pmid)

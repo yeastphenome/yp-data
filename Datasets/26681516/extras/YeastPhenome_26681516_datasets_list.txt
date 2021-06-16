@@ -1,1 +1,3 @@
 21888	hap a | expression of NSR1/YGR159C | potassium chloride [0.375 M] | YPD | Worley J~Capaldi AP, 2015
+21932	hap a | expression of PEX6/YNL329C | potassium chloride [0.375 M] | YPD | Worley J~Capaldi AP, 2015
+21933	hap a | ratio of NSR1/PEX6 expression | potassium chloride [0.375 M] | YPD | Worley J~Capaldi AP, 2015
