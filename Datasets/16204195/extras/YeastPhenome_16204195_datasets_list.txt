@@ -1,0 +1,5 @@
+21954	hap a | growth (undefined) | standard | MM (Verduyn mix) + His + Leu + Met + Ura, Glucose (2%) | Kuepfer L~Blank LM, 2005
+21955	hap a | growth (undefined) | standard | MM (Verduyn mix) + His + Leu + Met + Ura, Glycerol (2%) | Kuepfer L~Blank LM, 2005
+21956	hap a | growth (undefined) | standard | MM (Verduyn mix) + His + Leu + Met + Ura, EtOH (2%) | Kuepfer L~Blank LM, 2005
+21957	hap a | growth (undefined) | standard | MM (Verduyn mix) + His + Leu + Met + Ura, Gal (2%) | Kuepfer L~Blank LM, 2005
+21958	hap a | growth (undefined) | oxygen [0%] | MM (Verduyn mix) + His + Leu + Met + Ura, Glucose (2%) | Kuepfer L~Blank LM, 2005
