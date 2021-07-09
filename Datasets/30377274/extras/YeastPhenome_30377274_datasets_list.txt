@@ -1,0 +1,3 @@
+21907	hap ? | growth (pooled culture, barseq) | gradual switch 0.5% glucose to 5% galactose | YP (-C) | Perez-Samper G~Verstrepen KJ, 2018
+21960	hap ? | growth (pooled culture, barseq) | glucose [5%] | YP (-C) | Perez-Samper G~Verstrepen KJ, 2018
+21961	hap ? | growth (pooled culture, barseq) | galactose [5%] | YP (-C) | Perez-Samper G~Verstrepen KJ, 2018
