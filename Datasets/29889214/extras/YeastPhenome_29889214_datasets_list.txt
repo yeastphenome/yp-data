@@ -1,0 +1,48 @@
+21962	hom | growth (pooled culture, barseq) | temperature [30 C], time [2 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21959	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-33 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21976	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-33 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21980	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-33 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21965	hom | growth (pooled culture, barseq) | temperature [36 C], time [2 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21982	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-36 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21989	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-36 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21985	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-36 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21968	hom | growth (pooled culture, barseq) | temperature [39 C], time [2 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21991	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-39 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21997	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-39 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21994	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-39 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21971	hom | growth (pooled culture, barseq) | temperature [42 C], time [2 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22000	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-42 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22006	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-42 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22003	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-42 C) for 2 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21963	hom | growth (pooled culture, barseq) | temperature [30 C], time [4 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21974	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-33 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21977	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-33 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21981	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-33 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21966	hom | growth (pooled culture, barseq) | temperature [36 C], time [4 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21983	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-36 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21988	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-36 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21986	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-36 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21969	hom | growth (pooled culture, barseq) | temperature [39 C], time [4 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21992	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-39 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21998	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-39 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21995	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-39 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21972	hom | growth (pooled culture, barseq) | temperature [42 C], time [4 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22001	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-42 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22007	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-42 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22004	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-42 C) for 4 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21964	hom | growth (pooled culture, barseq) | temperature [30 C], time [6 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21975	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-33 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21978	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-33 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21979	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-33 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21967	hom | growth (pooled culture, barseq) | temperature [36 C], time [6 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21984	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-36 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21990	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-36 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21987	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-36 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21970	hom | growth (pooled culture, barseq) | temperature [39 C], time [6 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21993	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-39 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21999	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-39 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21996	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-39 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+21973	hom | growth (pooled culture, barseq) | temperature [42 C], time [6 d] | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22002	hom | growth (pooled culture, barseq) | temperature oscillation every 2 hours (30-42 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22008	hom | growth (pooled culture, barseq) | temperature oscillation every 6 hours (30-42 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
+22005	hom | growth (pooled culture, barseq) | temperature oscillation every 48 hours (30-42 C) for 6 days | YPD + carb + cam | Wong BG~Khalil AS, 2018
