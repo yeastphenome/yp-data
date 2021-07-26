@@ -1,0 +1,36 @@
+22009	hom | growth (pooled culture, microarray) | standard | SC - Ade | Acton E~Giaever G, 2017
+22010	hom | growth (pooled culture, microarray) | standard | SC - Arg | Acton E~Giaever G, 2017
+22011	hom | growth (pooled culture, microarray) | standard | SC - Lys | Acton E~Giaever G, 2017
+22012	hom | growth (pooled culture, microarray) | standard | SC - Met | Acton E~Giaever G, 2017
+22013	hom | growth (pooled culture, microarray) | standard | SC - Trp | Acton E~Giaever G, 2017
+22014	hom | growth (pooled culture, microarray) | 16001701 | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22015	hom | growth (pooled culture, microarray) | CCCP [32 uM] | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22016	hom | growth (pooled culture, microarray) | cisplatin [200 uM] | YPD | Acton E~Giaever G, 2017
+22017	hom | growth (pooled culture, microarray) | FCCP [6 uM] | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22018	hom | growth (pooled culture, microarray) | standard | YPG [3%] | Acton E~Giaever G, 2017
+22019	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Ade | Acton E~Giaever G, 2017
+22020	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Arg | Acton E~Giaever G, 2017
+22021	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - His | Acton E~Giaever G, 2017
+22022	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Leu | Acton E~Giaever G, 2017
+22023	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Lys | Acton E~Giaever G, 2017
+22024	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Met | Acton E~Giaever G, 2017
+22025	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Trp | Acton E~Giaever G, 2017
+22026	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | SC - Ura | Acton E~Giaever G, 2017
+22027	prototrophic hap a (bc) | growth (pooled culture, microarray) | 16001701 | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22028	prototrophic hap a (bc) | growth (pooled culture, microarray) | CCCP [32 uM] | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22029	prototrophic hap a (bc) | growth (pooled culture, microarray) | cisplatin [200 uM] | YPD | Acton E~Giaever G, 2017
+22030	prototrophic hap a (bc) | growth (pooled culture, microarray) | FCCP [6 uM] | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22031	prototrophic hap a (bc) | growth (pooled culture, microarray) | standard | YPG [3%] | Acton E~Giaever G, 2017
+22032	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Ade | Acton E~Giaever G, 2017
+22033	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Arg | Acton E~Giaever G, 2017
+22034	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - His | Acton E~Giaever G, 2017
+22035	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Leu | Acton E~Giaever G, 2017
+22036	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Lys | Acton E~Giaever G, 2017
+22037	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Met | Acton E~Giaever G, 2017
+22038	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Trp | Acton E~Giaever G, 2017
+22039	protrophic hap a (p) | growth (pooled culture, microarray) | standard | SC - Ura | Acton E~Giaever G, 2017
+22040	protrophic hap a (p) | growth (pooled culture, microarray) | 16001701 | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22041	protrophic hap a (p) | growth (pooled culture, microarray) | CCCP [32 uM] | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22042	protrophic hap a (p) | growth (pooled culture, microarray) | cisplatin [200 uM] | YPD | Acton E~Giaever G, 2017
+22043	protrophic hap a (p) | growth (pooled culture, microarray) | FCCP [6 uM] | YPD + DMSO [2%] | Acton E~Giaever G, 2017
+22044	protrophic hap a (p) | growth (pooled culture, microarray) | standard | YPG [3%] | Acton E~Giaever G, 2017
