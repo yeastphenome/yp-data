@@ -37,7 +37,7 @@ sheets1 = ['0.5 As 24','1 As 24h','1.5 As 24h','0.5As 48h','1 As 48h','1.5 As 48
 sheets2 = ['Cd 75 24h','Cd 100 24h','Cd 150 24h','Cd 75 48h','Cd 100 48h','Cd 150 48h']
 
 
-# In[9]:
+# In[6]:
 
 
 original_data_list1 = []
@@ -59,7 +59,7 @@ for s in sheets1:
     original_data_list1.append(original_data)
 
 
-# In[10]:
+# In[7]:
 
 
 original_data_list2 = []
@@ -81,14 +81,14 @@ for s in sheets2:
     original_data_list2.append(original_data)
 
 
-# In[11]:
+# In[8]:
 
 
 original_data1 = pd.concat(original_data_list1, axis=1)
 original_data2 = pd.concat(original_data_list2, axis=1)
 
 
-# In[14]:
+# In[9]:
 
 
 original_data = original_data1.join(original_data2, how='outer', lsuffix='_1', rsuffix='_2')
@@ -97,25 +97,39 @@ original_data = original_data1.join(original_data2, how='outer', lsuffix='_1', r
 # In[16]:
 
 
+# Despite the description in the Methods ("resistance and sensitivity is indicated by positive and negative values respectively"), 
+# comparison to other published studies of Arsenite and Cadmium suggests that the opposite of the reported values should be taken.
+original_data = -original_data
+
+
+# In[17]:
+
+
 original_data.shape
+
+
+# In[18]:
+
+
+original_data.head()
 
 
 # # Prepare the final dataset
 
-# In[17]:
+# In[20]:
 
 
 data = original_data.copy()
 
 
-# In[18]:
+# In[21]:
 
 
 dataset_ids = [1320, 5362, 5363, 5364, 5365, 5366, 1319, 5367, 5368, 5369, 5370, 5371]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[19]:
+# In[22]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -124,7 +138,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[20]:
+# In[23]:
 
 
 data.head()
@@ -132,7 +146,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[21]:
+# In[24]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -142,7 +156,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[22]:
+# In[25]:
 
 
 data['gene_id'] = gene_ids
@@ -155,13 +169,13 @@ data.head()
 
 # # Normalize
 
-# In[23]:
+# In[26]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[24]:
+# In[27]:
 
 
 # Assign proper column names
@@ -171,7 +185,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[25]:
+# In[28]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -182,7 +196,7 @@ data_all.head()
 
 # # Print out
 
-# In[26]:
+# In[29]:
 
 
 for f in ['value','valuez']:
@@ -194,13 +208,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[27]:
+# In[30]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[28]:
+# In[31]:
 
 
 save_data_to_db(data_all, paper_pmid)
