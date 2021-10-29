@@ -1,0 +1,2 @@
+22055	hap a | growth (colony size) | rapamycin [4 ng/ml] | SC | Nicastro R~De Virgilio C, 2021
+22056	hap a | growth (colony size) | indole-3-acetic acid [3 mM] | SC | Nicastro R~De Virgilio C, 2021
