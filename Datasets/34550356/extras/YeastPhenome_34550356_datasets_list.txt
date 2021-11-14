@@ -1,0 +1,2 @@
+22059	hap ? | growth (colony size) | expression of MELK | SC - Leu, Gal [2%] | Zhou L~Foijer F, 2021
+22060	hap ? | growth (colony size) | expression of MELK-kd | SC - Leu, Gal [2%] | Zhou L~Foijer F, 2021
