@@ -30,45 +30,45 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[5]:
+# In[34]:
 
 
 original_data = pd.read_excel('raw_data/Table S1 Normolized counts.xlsx', sheet_name='69samples normolized bigger tha', skiprows=1)
 
 
-# In[6]:
+# In[35]:
 
 
 print('Original data dimensions: %d x %d' % (original_data.shape))
 
 
-# In[7]:
+# In[36]:
 
 
 original_data.head()
 
 
-# In[8]:
+# In[37]:
 
 
 original_data['orf'] = original_data['Unnamed: 0'].astype(str)
 
 
-# In[9]:
+# In[38]:
 
 
 # Eliminate all white spaces & capitalize
 original_data['orf'] = clean_orf(original_data['orf'])
 
 
-# In[10]:
+# In[39]:
 
 
 # Translate to ORFs 
 original_data['orf'] = translate_sc(original_data['orf'], to='orf')
 
 
-# In[11]:
+# In[40]:
 
 
 # Make sure everything translated ok
@@ -76,75 +76,81 @@ t = looks_like_orf(original_data['orf'])
 print(original_data.loc[~t,])
 
 
-# In[ ]:
-
-
-
-
-
-# In[16]:
+# In[41]:
 
 
 original_data.drop(columns=['Unnamed: 0'], inplace=True)
 
 
-# In[12]:
+# In[42]:
 
 
 original_data.set_index('orf', inplace=True)
 
 
-# In[17]:
+# In[43]:
 
 
 cols = ['_'.join(c.split("_")[0:-1]) for c in original_data.columns]
 
 
-# In[23]:
+# In[44]:
 
 
 original_data.columns = cols
 
 
-# In[24]:
+# In[45]:
 
 
 original_data = original_data.T
 
 
-# In[25]:
+# In[46]:
 
 
 original_data = original_data.groupby(original_data.index.values).mean().T
 
 
-# In[26]:
+# In[47]:
 
 
 original_data.head()
 
 
-# In[27]:
+# In[48]:
 
 
 original_data.shape
 
 
-# In[31]:
+# In[49]:
+
+
+original_data = original_data.groupby(original_data.index.values).mean()
+
+
+# In[50]:
+
+
+original_data.shape
+
+
+# In[51]:
 
 
 orfs_essential = original_data.index.values[is_essential(original_data.index.values)]
 orfs_nonessential = original_data.index.values[~is_essential(original_data.index.values)]
 
 
-# In[32]:
+# In[52]:
 
 
 original_data1 = original_data.loc[orfs_nonessential,:].copy()
 original_data2 = original_data.loc[orfs_essential,:].copy()
 
 
-# In[39]:
+# In[53]:
 
 
 for c in original_data1.columns:
@@ -152,7 +158,7 @@ for c in original_data1.columns:
         original_data1[c] = original_data1[c] / original_data1['DMSO']
 
 
-# In[40]:
+# In[54]:
 
 
 for c in original_data2.columns:
@@ -160,19 +166,19 @@ for c in original_data2.columns:
         original_data2[c] = original_data2[c] / original_data2['DMSO']
 
 
-# In[54]:
+# In[55]:
 
 
 original_data = original_data1.join(original_data2, how='outer', lsuffix='_noness', rsuffix='_ess')
 
 
-# In[55]:
+# In[56]:
 
 
 original_data.shape
 
 
-# In[56]:
+# In[57]:
 
 
 original_data.head()
@@ -180,19 +186,19 @@ original_data.head()
 
 # # Prepare the final dataset
 
-# In[57]:
+# In[70]:
 
 
 data = original_data.copy()
 
 
-# In[58]:
+# In[71]:
 
 
 original_data.columns
 
 
-# In[59]:
+# In[72]:
 
 
 dataset_ids_noness = [21931, 21886, 21921, 21922, 21885, 21927, 21928, 21883, 21923, 21924, 21882, 21925, 21926, 21884, 21929, 21930]
@@ -201,7 +207,7 @@ dataset_ids = dataset_ids_noness + dataset_ids_ess
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[60]:
+# In[73]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -210,7 +216,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[61]:
+# In[74]:
 
 
 data.head()
@@ -218,7 +224,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[62]:
+# In[75]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -228,18 +234,24 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[63]:
+# In[76]:
+
+
+data.head()
+
+
+# In[77]:
 
 
 data['gene_id'] = gene_ids
 data = data.loc[data['gene_id'].notnull()]
 data['gene_id'] = data['gene_id'].astype(int)
-data = data.reset_index().set_index(['gene_id','orf'])
+data = data.reset_index().set_index(['gene_id','index'])
 
 data.head()
 
 
-# In[64]:
+# In[78]:
 
 
 data.shape
@@ -247,13 +259,13 @@ data.shape
 
 # # Normalize
 
-# In[65]:
+# In[79]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[66]:
+# In[80]:
 
 
 # Assign proper column names
@@ -263,7 +275,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[67]:
+# In[81]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -274,7 +286,7 @@ data_all.head()
 
 # # Print out
 
-# In[68]:
+# In[82]:
 
 
 for f in ['value','valuez']:
@@ -286,13 +298,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[69]:
+# In[83]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[70]:
+# In[84]:
 
 
 save_data_to_db(data_all, paper_pmid)
