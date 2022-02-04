@@ -1,0 +1,13 @@
+22075	hap a | growth (colony size + intensity) | acetaminophen [100 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22076	hap a | growth (colony size) | acetaminophen [50 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22082	hap a | growth (colony size) | acetaminophen [60 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22083	hap a | growth (colony size) | acetaminophen [70 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22084	hap a | growth (colony size) | acetaminophen [80 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22085	hap a | growth (colony size) | acetaminophen [90 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22086	hap a | growth (colony size) | acetaminophen [100 mM], temperature [37 C] | YPD | Huseinovic A~Vos JC, 2017
+22087	hap a | growth (colony size) | acetaminophen [100 mM], temperature [30 C] | YPD | Huseinovic A~Vos JC, 2017
+22088	hap a | growth (colony size) | acetaminophen [50 mM], temperature [30 C] | YPD | Huseinovic A~Vos JC, 2017
+22089	hap a | growth (colony size) | acetaminophen [60 mM], temperature [30 C] | YPD | Huseinovic A~Vos JC, 2017
+22090	hap a | growth (colony size) | acetaminophen [70 mM], temperature [30 C] | YPD | Huseinovic A~Vos JC, 2017
+22091	hap a | growth (colony size) | acetaminophen [80 mM], temperature [30 C] | YPD | Huseinovic A~Vos JC, 2017
+22092	hap a | growth (colony size) | acetaminophen [90 mM], temperature [30 C] | YPD | Huseinovic A~Vos JC, 2017
