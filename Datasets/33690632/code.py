@@ -9,20 +9,20 @@ get_ipython().run_line_magic('run', '../yp_utils.py')
 
 # # Initial setup
 
-# In[5]:
+# In[2]:
 
 
 paper_pmid = 33690632
 paper_name = 'nicastro_devirgilio_2021' 
 
 
-# In[6]:
+# In[3]:
 
 
 datasets = pd.read_csv('extras/YeastPhenome_' + str(paper_pmid) + '_datasets_list.txt', sep='\t', header=None, names=['dataset_id', 'name'])
 
 
-# In[7]:
+# In[4]:
 
 
 datasets.set_index('dataset_id', inplace=True)
@@ -30,14 +30,14 @@ datasets.set_index('dataset_id', inplace=True)
 
 # # Load & process the data
 
-# In[8]:
+# In[5]:
 
 
 file = 'raw_data/Rapa-IAA_full.xlsx'
 sheets = ['2017-04-14-IAA','2017-04-03-Rapamycin']
 
 
-# In[18]:
+# In[6]:
 
 
 original_data_list = []
@@ -59,40 +59,93 @@ for s in sheets:
     original_data_list.append(original_data)
 
 
-# In[19]:
+# In[7]:
 
 
 original_data = pd.concat(original_data_list, axis=1)
 
 
-# In[27]:
+# In[8]:
 
 
 original_data.index.name = 'orf'
 
 
-# In[28]:
+# In[9]:
 
 
 original_data.head()
 
 
+# In[10]:
+
+
+original_data.shape
+
+
+# In[12]:
+
+
+# Remove DAMP strains from the list
+damp = pd.read_excel('raw_data/YSC5090 - Yeast DAmP HAPLOID_v2.xls', sheet_name='data')
+
+
+# In[14]:
+
+
+damp['orf'] = damp['ORF'].astype(str)
+damp['orf'] = clean_orf(damp['orf'])
+damp['orf'] = translate_sc(damp['orf'], to='orf')
+
+
+# In[16]:
+
+
+t = looks_like_orf(damp['orf'])
+print(damp.loc[~t,])
+
+
+# In[17]:
+
+
+damp_orfs = damp['orf'].unique()
+
+
+# In[21]:
+
+
+damp_orfs = [orf for orf in damp_orfs if orf in original_data.index.values]
+len(damp_orfs)
+
+
+# In[22]:
+
+
+original_data = original_data.drop(index=damp_orfs)
+
+
+# In[23]:
+
+
+original_data.shape
+
+
 # # Prepare the final dataset
 
-# In[29]:
+# In[24]:
 
 
 data = original_data.copy()
 
 
-# In[30]:
+# In[25]:
 
 
 dataset_ids = [22056,22055]
 datasets = datasets.reindex(index=dataset_ids)
 
 
-# In[31]:
+# In[26]:
 
 
 lst = [datasets.index.values, ['value']*datasets.shape[0]]
@@ -101,7 +154,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data.columns = idx
 
 
-# In[39]:
+# In[27]:
 
 
 data.head()
@@ -109,7 +162,7 @@ data.head()
 
 # ## Subset to the genes currently in SGD
 
-# In[33]:
+# In[28]:
 
 
 genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
@@ -119,7 +172,7 @@ num_missing = np.sum(np.isnan(gene_ids))
 print('ORFs missing from SGD: %d' % num_missing)
 
 
-# In[34]:
+# In[29]:
 
 
 data['gene_id'] = gene_ids
@@ -132,13 +185,13 @@ data.head()
 
 # # Normalize
 
-# In[42]:
+# In[30]:
 
 
 data_norm = normalize_phenotypic_scores(data, has_tested=True)
 
 
-# In[43]:
+# In[31]:
 
 
 # Assign proper column names
@@ -148,7 +201,7 @@ idx = pd.MultiIndex.from_tuples(tuples, names=['dataset_id','data_type'])
 data_norm.columns = idx
 
 
-# In[44]:
+# In[32]:
 
 
 data_norm[data.isnull()] = np.nan
@@ -159,7 +212,7 @@ data_all.head()
 
 # # Print out
 
-# In[45]:
+# In[33]:
 
 
 for f in ['value','valuez']:
@@ -171,13 +224,13 @@ for f in ['value','valuez']:
 
 # # Save to DB
 
-# In[46]:
+# In[34]:
 
 
 from IO.save_data_to_db3 import *
 
 
-# In[47]:
+# In[35]:
 
 
 save_data_to_db(data_all, paper_pmid)
