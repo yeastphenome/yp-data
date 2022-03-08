@@ -1,0 +1,11 @@
+22097	hom | growth (pooled culture, barseq) | 4-nitroquinoline N-oxide [IC50 (4.77 uM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22098	hom | growth (pooled culture, barseq) | 4-nitroquinoline N-oxide [IC20 (2.66 uM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22099	hom | growth (pooled culture, barseq) | 4-nitroquinoline N-oxide [IC10 (1.89 uM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22100	hom | growth (pooled culture, barseq) | 4-nitroquinoline N-oxide [50%IC10 (0.95 uM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22101	hom | growth (pooled culture, barseq) | 4-nitroquinoline N-oxide [25%IC10 (0.47 uM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22103	hom | growth (pooled culture, barseq) | formaldehyde [IC50 (3.2 mM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22104	hom | growth (pooled culture, barseq) | formaldehyde [IC20 (2.6 mM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22105	hom | growth (pooled culture, barseq) | formaldehyde [IC10 (2.3 mM)] | YPD + DMSO | Guan M~Zhang X, 2022
+22107	hom | growth (pooled culture, barseq) | dichloroacetic acid [IC50 (66.5 mM)] | YPD | Guan M~Zhang X, 2022
+22108	hom | growth (pooled culture, barseq) | dichloroacetic acid [IC20 (60.8 mM)] | YPD | Guan M~Zhang X, 2022
+22109	hom | growth (pooled culture, barseq) | dichloroacetic acid [IC10 (57.7 mM)] | YPD | Guan M~Zhang X, 2022
