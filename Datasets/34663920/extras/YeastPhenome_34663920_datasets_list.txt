@@ -1,0 +1,102 @@
+22094	hap a | growth (colony size) | 2,4-dichlorophenoxyacetic acid [3 mM], temperature [30 C], time [48 h] | SC + DMSO | Vieitez C~Beltrao P, 2021
+22111	hap a | growth (colony size) | temperature [20 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22112	hap a | growth (colony size) | temperature [37 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22113	hap a | growth (colony size) | temperature [39 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22114	hap a | growth (colony size) | temperature [39 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22115	hap a | growth (colony size) | temperature [42 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22116	hap a | growth (colony size) | 6-azauracil [8 mM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22117	hap a | growth (colony size) | 6-azauracil [8 mM], temperature [39 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22118	hap a | growth (colony size) | 6-azauracil [8 mM], temperature [39 C], time [72 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22119	hap a | growth (colony size) | acetic acid [0.625%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22120	hap a | growth (colony size) | temperature [30 C], time [48 h] | SD + His + Leu + Lys + Ura (2) | Vieitez C~Beltrao P, 2021
+22121	hap a | growth (colony size) | amphotericin B [100 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22122	hap a | growth (colony size) | amphotericin B [100 uM], oxygen [0%], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22123	hap a | growth (colony size) | oxygen [0%], temperature [37 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22124	hap a | growth (colony size) | oxygen [0%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22125	hap a | growth (colony size) | arsenic oxide hydrate [1 mM], temperature [30 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22126	hap a | growth (colony size) | arsenic oxide hydrate [1 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22127	hap a | growth (colony size) | atorvastatin [100 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22128	hap a | growth (colony size) | atorvastatin [100 uM], oxygen [0%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22129	hap a | growth (colony size) | temperature [30 C], bathocuproine disulfonic acid [5 mM], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22130	hap a | growth (colony size) | benomyl [300 uM], temperature [30 C], time [72 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22131	hap a | growth (colony size) | benomyl [300 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22132	hap a | growth (colony size) | cadmium chloride [250 uM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22133	hap a | growth (colony size) | caffeine [15 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22134	hap a | growth (colony size) | caffeine [20 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22135	hap a | growth (colony size) | calcofluor white [1.25 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22136	hap a | growth (colony size) | cantharidin [150 uM], temperature [30 C], time [72 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22137	hap a | growth (colony size) | cantharidin [150 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22138	hap a | growth (colony size) | caspofungin [6.5 nM], temperature [30 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22139	hap a | growth (colony size) | caspofungin [6.5 nM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22140	hap a | growth (colony size) | mechlorethamine [12 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22141	hap a | growth (colony size) | cisplatin [375 uM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22142	hap a | growth (colony size) | clozapine [350 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22143	hap a | growth (colony size) | copper sulphate [3 mM], temperature [30 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22144	hap a | growth (colony size) | cycloheximide [625 nM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22145	hap a | growth (colony size) | DMSO [1%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22146	hap a | growth (colony size) | DMSO [6%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22147	hap a | growth (colony size) | doxorubicin [75 uM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22148	hap a | growth (colony size) | temperature [30 C], E. coli supernatant [50%], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22149	hap a | growth (colony size) | ethanol [7.5%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22150	hap a | growth (colony size) | ethanol [7.5%], temperature [39 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22151	hap a | growth (colony size) | ethanol [7.5%], temperature [39 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22152	hap a | growth (colony size) | ethanol [7.5%], temperature [20 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22153	hap a | growth (colony size) | EDTA [250 uM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22154	hap a | growth (colony size) | fenofibrate [2 mM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22155	hap a | growth (colony size) | fenofibrate [2 mM], oxygen [0%], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22156	hap a | growth (colony size) | fluconazole [125 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22157	hap a | growth (colony size) | 5-fluoro-uracil [500 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22158	hap a | growth (colony size) | temperature [30 C], time [48 h] | SC, Glucose [0.02%] | Vieitez C~Beltrao P, 2021
+22159	hap a | growth (colony size) | temperature [30 C], time [72 h] | SC, Glucose [0.02%] | Vieitez C~Beltrao P, 2021
+22160	hap a | growth (colony size) | temperature [30 C], time [48 h] | SC, Glucose [0.2%] | Vieitez C~Beltrao P, 2021
+22161	hap a | growth (colony size) | temperature [30 C], time [48 h] | SC, Glucose [20%] | Vieitez C~Beltrao P, 2021
+22162	hap a | growth (colony size) | temperature [30 C], time [48 h] | SC, Glycerol [2%] | Vieitez C~Beltrao P, 2021
+22163	hap a | growth (colony size) | temperature [30 C], time [72 h] | SC, Glycerol [2%] | Vieitez C~Beltrao P, 2021
+22164	hap a | growth (colony size) | temperature [30 C], grape juice [50%], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22165	hap a | growth (colony size) | Haloperidol [1 mM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22166	hap a | growth (colony size) | HU [200 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22167	hap a | growth (colony size) | ketoconazole [30 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22168	hap a | growth (colony size) | lithium chloride [2.5 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22169	hap a | growth (colony size) | temperature [30 C], M. xanthus supernatant [50%], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22170	hap a | growth (colony size) | temperature [30 C], time [48 h] | M. xanthus media (predator) | Vieitez C~Beltrao P, 2021
+22171	hap a | growth (colony size) | temperature [30 C], time [48 h] | M. xanthus media (standard) | Vieitez C~Beltrao P, 2021
+22172	hap a | growth (colony size) | temperature [30 C], time [48 h] | SC, Maltose [2%] | Vieitez C~Beltrao P, 2021
+22173	hap a | growth (colony size) | temperature [30 C], time [72 h] | SC, Maltose [2%] | Vieitez C~Beltrao P, 2021
+22174	hap a | growth (colony size) | methotrexate [350 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22175	hap a | growth (colony size) | MMS [0.1%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22176	hap a | growth (colony size) | MG-132 [100 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22177	hap a | growth (colony size) | myriocin [3 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22178	hap a | growth (colony size) | sodium chloride [0.6 M], temperature [39 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22179	hap a | growth (colony size) | sodium chloride [0.6 M], temperature [39 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22180	hap a | growth (colony size) | nickel sulfate [2 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22181	hap a | growth (colony size) | temperature [30 C], time [48 h] | N starvation medium | Vieitez C~Beltrao P, 2021
+22182	hap a | growth (colony size) | temperature [30 C], time [48 h] | CDM35 | Vieitez C~Beltrao P, 2021
+22183	hap a | growth (colony size) | nocodazole [35 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22184	hap a | growth (colony size) | nystatin [30 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22185	hap a | growth (colony size) | temperature [30 C], P. aeruginosa supernatant [50%], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22186	hap a | growth (colony size) | paraquat [1.2 mM], temperature [30 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22187	hap a | growth (colony size) | paraquat [1.2 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22188	hap a | growth (colony size) | pH [3.0], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22189	hap a | growth (colony size) | pH [4.0], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22190	hap a | growth (colony size) | pH [7.5], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22191	hap a | growth (colony size) | pH [8.5], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22192	hap a | growth (colony size) | PP1 [100 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22193	hap a | growth (colony size) | PP2 [100 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22194	hap a | growth (colony size) | rapamycin [60 nM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22195	hap a | growth (colony size) | rapamycin [60 nM], temperature [39 C], time [72 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22196	hap a | growth (colony size) | rapamycin [60 nM], temperature [39 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22197	hap a | growth (colony size) | simvastatin [500 uM], temperature [30 C], time [48 h] | SC + EtOH + NaOH | Vieitez C~Beltrao P, 2021
+22198	hap a | growth (colony size) | simvastatin [500 uM], oxygen [0%], temperature [30 C], time [48 h] | SC + EtOH + NaOH | Vieitez C~Beltrao P, 2021
+22199	hap a | growth (colony size) | sodium chloride [0.4 M], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22200	hap a | growth (colony size) | sodium chloride [0.4 M], temperature [39 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22201	hap a | growth (colony size) | sodium chloride [0.4 M], temperature [39 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22202	hap a | growth (colony size) | sodium chloride [0.6 M], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22203	hap a | growth (colony size) | sodium chloride [0.6 M], temperature [30 C], time [72 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22204	hap a | growth (colony size) | SDS [0.02%], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22205	hap a | growth (colony size) | sorbitol [1 M], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22206	hap a | growth (colony size) | staurosporine [200 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22207	hap a | growth (colony size) | temperature [30 C], time [48 h] | SC, HEPES [25 mM] | Vieitez C~Beltrao P, 2021
+22208	hap a | growth (colony size) | EGTA [35 mM], temperature [30 C], time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22209	hap a | growth (colony size) | tunicamycin [3.5 uM], temperature [30 C], time [48 h] | SC(MSG) + DMSO | Vieitez C~Beltrao P, 2021
+22210	hap a | growth (colony size) | temperature [39 C], UV, time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
+22211	hap a | growth (colony size) | temperature [30 C], UV, time [48 h] | SC(MSG) | Vieitez C~Beltrao P, 2021
