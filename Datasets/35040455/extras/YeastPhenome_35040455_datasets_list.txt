@@ -1,0 +1,6 @@
+22212	hom | growth (pooled culture, barseq) | gadolinium [IC5], time [10 gen] | YPD | Pallares RM~Abergel RJ, 2022
+22213	hom | growth (pooled culture, barseq) | gadolinium [IC5], time [15 gen] | YPD | Pallares RM~Abergel RJ, 2022
+22214	hom | growth (pooled culture, barseq) | gadolinium [IC10], time [10 gen] | YPD | Pallares RM~Abergel RJ, 2022
+22215	hom | growth (pooled culture, barseq) | gadolinium [IC10], time [15 gen] | YPD | Pallares RM~Abergel RJ, 2022
+22216	hom | growth (pooled culture, barseq) | gadolinium [IC20], time [10 gen] | YPD | Pallares RM~Abergel RJ, 2022
+22217	hom | growth (pooled culture, barseq) | gadolinium [IC20], time [15 gen] | YPD | Pallares RM~Abergel RJ, 2022
