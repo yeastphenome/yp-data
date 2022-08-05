@@ -1,0 +1,13 @@
+orf	hap alpha | mother:daughter asymmetric distribution of proteins (pADH1-PMA1-EGFP) | standard | YPD | Yoon S-Y~Jun Y, 2020
+YAL002W	-58
+YDR080W	-26
+YDR495C	-41
+YGL124C	-23
+YGL212W	-42
+YHR012W	-28
+YJL053W	-32
+YJL154C	-21
+YML001W	-20
+YML097C	-59
+YOR089C	-46
+YOR132W	-35
