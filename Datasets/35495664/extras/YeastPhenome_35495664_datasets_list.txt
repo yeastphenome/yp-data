@@ -1,0 +1,1 @@
+22228	hap a | growth (colony size) | sodium bicarbonate [40 mM] | YPD + G418 [200 ug/ml] | Cao X~Liu B, 2022
