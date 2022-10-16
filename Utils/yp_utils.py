@@ -5,13 +5,10 @@ import pandas as pd
 
 from scipy import stats
 
-from os.path import expanduser
-sys.path.append(expanduser('~') + '/Lab/Utils/Python/')
+from yp_translate import *
 
-from Conversions.translate import *
-
-path_to_genes = '../yp_sgd_features.txt'
-path_to_consensus_tested = '../yp_consensus_tested_20200901.txt'
+path_to_genes = '../../Utils/yp_sgd_features.txt'
+path_to_consensus_tested = '../../Utils/yp_consensus_tested_20200901.txt'
 
 
 def normalize_phenotypic_scores(df, has_tested=False):
