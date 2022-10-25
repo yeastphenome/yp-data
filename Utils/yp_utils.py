@@ -9,6 +9,7 @@ from yp_translate import *
 
 path_to_genes = '../../Utils/yp_sgd_features.txt'
 path_to_consensus_tested = '../../Utils/yp_consensus_tested_20200901.txt'
+path_to_sgd_phenotypes = '../../Utils/yp_sgd_phenotypes.txt'
 
 
 def normalize_phenotypic_scores(df, has_tested=False):
@@ -142,3 +143,24 @@ def looks_like_orf(qq, case_sensitive=True):
     patterns = ['^Y[A-P][RL][0-9]{3}[CW](-[A-H])*$',
                 'Q[0-9]{4}$']
     return looks_like(qq, patterns, case_sensitive)
+
+
+def is_essential(lst):
+   
+    genes = pd.read_csv(path_to_genes, sep='\t', index_col='primary_sgdid')
+
+    # Note: na_filter necessary to prevent pandas recognizing the "null" mutation as a missing value
+    phenotypes = pd.read_csv(path_to_sgd_phenotypes, delimiter='\t', header=None, na_filter=False)
+    phenotypes.index = phenotypes[3]
+
+    phenotypes = phenotypes.loc[
+        (phenotypes[6] == 'null') &
+        (phenotypes[8] == 'S288C') &
+        (phenotypes[5] == 'systematic mutation set') &
+        (phenotypes[9] == 'inviable')
+    ]
+
+    phenotypes['orf'] = genes['systematic_name']
+    lst = pd.Series(lst)
+
+    return lst.isin(phenotypes['orf'])
