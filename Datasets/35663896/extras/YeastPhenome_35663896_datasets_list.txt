@@ -1,0 +1,2 @@
+22225	hap a | growth (colony size) | lanthanum(3+) [4.5 mM] | YPD | Grosjean N~Blaudez D, 2022
+22226	hap a | growth (colony size) | ytterbium [3.8 mM] | YPD | Grosjean N~Blaudez D, 2022
