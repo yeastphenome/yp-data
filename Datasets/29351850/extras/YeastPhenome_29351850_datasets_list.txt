@@ -1,0 +1,7 @@
+16153	hom | growth (colony size) | standard | SC | Jaeger PA~Ideker T, 2018
+16154	hom | growth (colony size) | standard | SC, Gal [2%] | Jaeger PA~Ideker T, 2018
+16155	hom | degradation of misfolded proteins (del-ssCPY*-GFP) | standard | None | Jaeger PA~Ideker T, 2018
+16165	hom | gene expression (prGAL1-GFP) | standard | SC - Ura | Jaeger PA~Ideker T, 2018
+16166	hom | gene expression (prGAL1-GFP) | standard | SC - Ura, Gal [2%] | Jaeger PA~Ideker T, 2018
+16318	hom | gene expression (prTEF1-GFP) | galactose [2%] | None | Jaeger PA~Ideker T, 2018
+16319	hom | gene expression (prTEF1-GFP) | glucose [2%] | None | Jaeger PA~Ideker T, 2018
