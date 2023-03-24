@@ -1,0 +1,3 @@
+22234	het | growth (pooled culture, barseq) | pH [4.5], temperature [16 C], chemostat | YPD | Paget CM~Delneri D, 2014
+22235	het | growth (pooled culture, barseq) | pH [4.5], temperature [16 C], chemostat | F1 (C-lim) | Paget CM~Delneri D, 2014
+22236	het | growth (pooled culture, barseq) | pH [4.5], temperature [16 C], chemostat | F1 (N-lim) | Paget CM~Delneri D, 2014
