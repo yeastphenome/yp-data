@@ -1,0 +1,3 @@
+22231	het | growth (pooled culture, microarray) | alendronate [5 mM] | F1 | Bivi N~Delneri D, 2009
+22232	het | growth (pooled culture, microarray) | ibandronate [0.5 mM] | F1 | Bivi N~Delneri D, 2009
+22233	het | growth (pooled culture, microarray) | risedronate [0.5 mM] | F1 | Bivi N~Delneri D, 2009
