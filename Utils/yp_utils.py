@@ -9,22 +9,45 @@ from yp_translate import *
 
 path_to_genes = '../../Utils/yp_sgd_features.txt'
 path_to_consensus_tested = '../../Utils/yp_consensus_tested_20200901.txt'
+path_to_consensus_tested_het1000 = '../../Utils/yp_consensus_tested_het_1000_20230711.txt'
+path_to_consensus_tested_het5000 = '../../Utils/yp_consensus_tested_het_5000_20230711.txt'
 path_to_sgd_phenotypes = '../../Utils/yp_sgd_phenotypes.txt'
 
 
-def normalize_phenotypic_scores(df, has_tested=False):
+def normalize_phenotypic_scores(df, has_tested=False, space='hom'):
     
     if not has_tested:
         
         genes = pd.read_csv(path_to_genes, sep='\t', index_col='id')
         genes = genes.reset_index().set_index('systematic_name', drop=False)
         
-        yp_orfs = pd.read_csv(path_to_consensus_tested, header=None)
-        yp_orfs = yp_orfs[1].values
+        if space == 'hom':
+            
+            yp_orfs = pd.read_csv(path_to_consensus_tested, header=None)
+            yp_orfs = yp_orfs[1].values        
+        
+        elif space == 'het1000':
+            
+            yp_orfs_het_1000 = pd.read_csv(path_to_consensus_tested_het1000, header=None)
+            yp_orfs = yp_orfs_het_1000[0].values
+        
+        elif space == 'het5000':
+            
+            yp_orfs_het_5000 = pd.read_csv(path_to_consensus_tested_het5000, header=None)
+            yp_orfs = yp_orfs_het_5000[0].values
+        
+        else:   # (space == 'het')
+            
+            yp_orfs_het_1000 = pd.read_csv(path_to_consensus_tested_het1000, header=None)
+            yp_orfs_het_1000 = yp_orfs_het_1000[0].values
+            
+            yp_orfs_het_5000 = pd.read_csv(path_to_consensus_tested_het5000, header=None)
+            yp_orfs_het_5000 = yp_orfs_het_5000[0].values
+            
+            yp_orfs = np.concatenate((yp_orfs_het_1000, yp_orfs_het_5000), axis=0)
+        
         consensus_tested = [tuple(genes.loc[orf,['id','systematic_name']]) for orf in yp_orfs]
-        
         df_index = [tuple(x) for x in df.index]
-        
         consensus_tested = list(set(consensus_tested + df_index))
         
         df = df.reindex(index=consensus_tested, fill_value=0)
