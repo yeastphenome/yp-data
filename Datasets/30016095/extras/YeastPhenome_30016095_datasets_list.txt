@@ -1,0 +1,6 @@
+22237	hom | growth (pooled culture, microarray) | gossypol [400 uM] | YPD + DMSO [2%] | Prescott TAK~Hoepfner D, 2018
+22252	het | growth (pooled culture, microarray) | gossypol [400 uM] | YPD + DMSO [2%] | Prescott TAK~Hoepfner D, 2018
+22253	het | growth (pooled culture, microarray) | gossypol [200 uM] | YPD + DMSO [2%] | Prescott TAK~Hoepfner D, 2018
+22254	het | growth (pooled culture, microarray) | gossypol [300 uM] | YPD + DMSO [2%] | Prescott TAK~Hoepfner D, 2018
+22255	hom | growth (pooled culture, microarray) | gossypol [200 uM] | YPD + DMSO [2%] | Prescott TAK~Hoepfner D, 2018
+22256	hom | growth (pooled culture, microarray) | gossypol [300 uM] | YPD + DMSO [2%] | Prescott TAK~Hoepfner D, 2018
