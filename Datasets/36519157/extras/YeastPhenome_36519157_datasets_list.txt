@@ -1,0 +1,1 @@
+22238	hom | growth (colony size) | Gd(NO3)3 [3.5 mM] | YPD | Cao Y~Wang X, 2022
