@@ -1,0 +1,22 @@
+YHR155W	LAM1	Transport	0.060 ± 0.002	Probable role in retrograde transport of sterols from the PM to the ER
+YDR326C	LAM2	Transport	0.052 ± 0.001	Probable role in retrograde transport of sterols from the PM to the ER
+YNL257C	LAM3	Transport	0.088 ± 0.001	Probable role in retrograde transport of sterols from the PM to the ER
+YHR080C	LAM4	Transport	0.054 ± 0.001	Probable role in retrograde transport of sterols from the PM to the ER
+YGR197C	SNG1	Transport	0.069 ± 0.002	Regulates phospholipid translocation and cell wall organization
+YKR050W	TRK2	Transport	0.055 ± 0.001	Contributes to K+ supply and maintenance of plasma-membrane potential
+YHR136C	SPL2	Transport	0.079 ± 0.002	Putative enzyme inhibitor involved in vacuolar protein targeting
+YML123C	PHO84	Transport	0.081 ± 0.002	High-affinity inorganic phosphate (Pi) transporter
+YDL106C	PHO2	Transcription	0.073 ± 0.004	Homeobox transcription factor
+YFR034C	PHO4	Transcription	0.091 ± 0.001	Transcription factor involved in the response to phosphate starvation
+YOR162C	YRR1	Transcription	0.105 ± 0.001	Zn2-Cys6 zinc-finger transcription factor
+YDR315C	IPK1	Metabolism	0.058 ± 0.003	Inositol 1,3,4,5,6-pentakisphosphate 2-kinase
+YPR118W	MRI1	Metabolism	0.093 ± 0.002	5′-methylthioribose-1-phosphate isomerase
+YGR233C	PHO81	Signal transduction	0.054 ± 0.002	Cyclin-dependent kinase (CDK) inhibitor
+YNL155W	CUZ1	Protein metabolism	0.064 ± 0.001	Protein with a role in the ubiquitin–proteasome pathway
+YCL010C	SGF29	Protein metabolism	0.053 ± 0.001	Methylated-histone binding protein involved in histone acetylation
+YLR063W	BMT6	RNA metabolism	0.055 ± 0.000	Methyltransferase required for m3U2843 methylation of the 25S rRNA
+YIR025W	MND2	Nuclear	0.068 ± 0.001	Necessary for maintaining sister chromatid cohesion in prophase I of meiosis
+YMR263W	SAP30	Nuclear	0.062 ± 0.001	Component of Rpd3L histone deacetylase complex
+YLR307C-A	DPA10	Unknown	0.112 ± 0.003	Unknown function
+YCL046W		Unknown	0.056 ± 0.000	Unknown function
+YML122C		Unknown	0.052 ± 0.001	Unknown function
