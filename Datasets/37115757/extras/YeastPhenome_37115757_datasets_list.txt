@@ -1,0 +1,3 @@
+22249	hap a | growth (pooled culture, barseq) | standard | YPD | Saeki N~Moriya H, 2023
+22250	hap a | growth (pooled culture, barseq) | sodium chloride [1 M] | YPD | Saeki N~Moriya H, 2023
+22251	hap a | growth (pooled culture, barseq) | calcium chloride [5 mM], sodium chloride [1 M] | YPD | Saeki N~Moriya H, 2023
