@@ -1,0 +1,3 @@
+22243	hom | growth (spot assay) | aluminium sulfate octadecahydrate [2.4 mM] | SC | Schulze Y~Tamas MJ, 2023
+22245	hom | growth (spot assay) | indium chloride [2.6 mM] | SC | Schulze Y~Tamas MJ, 2023
+22247	hom | growth (spot assay) | gallium chloride [5.0 mM] | SC | Schulze Y~Tamas MJ, 2023
