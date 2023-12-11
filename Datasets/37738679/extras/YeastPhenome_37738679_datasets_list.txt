@@ -1,0 +1,4 @@
+22260	hom | growth (pooled culture, barseq) | 2-amino-3-methylimidazo[4,5-f] quinoline [400 uM] | YPD + MeOH [2%] | Dolan M~Fasullo M, 2023
+22261	hom | growth (pooled culture, barseq) | 2-amino-3-methylimidazo[4,5-f] quinoline [800 uM] | YPD + MeOH [2%] | Dolan M~Fasullo M, 2023
+22262	hom | growth (pooled culture, barseq) | 2-amino-3-methylimidazo[4,5-f] quinoline [400 uM], expression of human CYP1A2, expression of human NAT2 | SC - Ura + MeOH [2%] | Dolan M~Fasullo M, 2023
+22263	hom | growth (pooled culture, barseq) | 2-amino-3-methylimidazo[4,5-f] quinoline [800 uM], expression of human CYP1A2, expression of human NAT2 | SC - Ura + MeOH [2%] | Dolan M~Fasullo M, 2023
