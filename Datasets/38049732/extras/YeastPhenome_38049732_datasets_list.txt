@@ -1,0 +1,1 @@
+22264	hap a | growth (colony size) | 5-hydroxymethyl-2-furaldehyde [60 mM] | YPD + G418 [100 ug/ml] | Li Q~Wang H, 2023
