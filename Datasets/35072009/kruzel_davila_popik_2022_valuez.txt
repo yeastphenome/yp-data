@@ -1,0 +1,4 @@
+orf	hap a | growth (undefined) | expression of human APOL1-G2 [2u, GAL] | SC - Ura, Gal [2%] | Kruzel-Davila E~Popik W, 2022
+YER019C-A	-38.957241517677645
+YLR292C	-38.957241517677645
+YPL244C	-38.957241517677645
