@@ -1,0 +1,12 @@
+YMR048W	csm3Δ	+++++
+YOR198C	bfr1Δ	+++++
+YLR192C	hcr1Δ	++++++
+YDL101C	dun1Δ	+++++++
+YGR167W	clc1Δ	++
+YPL194W	ddc1Δ	+++++++
+YNR051C	bre5Δ	+++++
+YML062C	mft1Δ	+++++++
+YCL060C	Unknown	++++++
+YMR183C	sso2Δ	+++
+YLR358C	 	+++++
+YML036W	cgi121Δ	+++++

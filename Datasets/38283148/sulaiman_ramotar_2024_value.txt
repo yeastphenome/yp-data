@@ -1,0 +1,13 @@
+orf	hap a | growth (colony size) | quinoxaline [9.5 mM] | YPD | Sulaiman AA~Ramotar D, 2024
+YCL061C	-6
+YDL101C	-7
+YGR167W	-2
+YLR192C	-6
+YLR358C	-5
+YML036W	-5
+YML062C	-7
+YMR048W	-5
+YMR183C	-3
+YNR051C	-5
+YOR198C	-5
+YPL194W	-7
