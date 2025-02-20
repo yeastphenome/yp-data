@@ -42,5 +42,5 @@ Download all contents of the Github `Utils/` folder into the local `Utils/` and 
 Help
 ----
 
-Please direct questions & comments to Anastasia Baryshnikova (<abaryshnikova@calicolabs.com>).
+Please direct questions & comments to Anastasia Baryshnikova (<abaryshk@gmail.com>).
 
