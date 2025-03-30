@@ -99,7 +99,7 @@ def mode_kde(data):
 def clean_orf(lst):
 
     LST = [l.upper() for l in lst]
-    LST = [re.sub("[^a-zA-Z0-9\-]", "", L) for L in LST]
+    LST = [re.sub(r"[^a-zA-Z0-9\-]", "", L) for L in LST]
 
     return LST
 
@@ -107,7 +107,7 @@ def clean_orf(lst):
 def clean_genename(lst):
 
     LST = [l.upper() for l in lst]
-    LST = [re.sub("[^a-zA-Z0-9\',\-]", "", L) for L in LST]
+    LST = [re.sub(r"[^a-zA-Z0-9\',\-]", "", L) for L in LST]
 
     # Fix some common genename issues in yeast
     for idx, L in enumerate(LST):
