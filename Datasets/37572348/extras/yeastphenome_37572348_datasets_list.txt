@@ -1,0 +1,2 @@
+22286	hap a | betaxanthin production (colony color) | expression for Btx-cassette, time [24 h] | YPD | Cachera P~Mortensen UH, 2023
+22288	hap a | betaxanthin production (colony color) | expression for Btx-cassette, time [48 h] | YPD | Cachera P~Mortensen UH, 2023
